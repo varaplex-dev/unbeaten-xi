@@ -15,15 +15,16 @@ interface LeaderboardRow {
   team_rating_out_of_100: number;
 }
 
-// Only three (mode, is_daily) combinations actually occur in gameplay — see
+// Only these (mode, is_daily) combinations occur in gameplay — see
 // startNewGame/startDailyChallenge in src/lib/store/gameStore.ts. Kept as
 // separate boards rather than one merged ranking because a Daily Challenge
 // result (fixed seed, same team for everyone that day) isn't comparable to
-// a free draft (each player picks their own XI).
+// a free draft (each player picks their own XI). The fictional mode is no
+// longer playable, so it has no tab here — any pre-existing fictional
+// results still in season_results just won't show up on this leaderboard.
 const TABS = [
   { key: "daily", label: "Daily Challenge", mode: "all-time-real", isDaily: true },
   { key: "all-time", label: "All-Time XI", mode: "all-time-real", isDaily: false },
-  { key: "fictional", label: "Fictional", mode: "fictional", isDaily: false },
 ] as const;
 
 export default function LeaderboardPage() {

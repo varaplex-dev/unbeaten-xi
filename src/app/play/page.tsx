@@ -7,6 +7,10 @@ import { Button } from "@/components/ui/button";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { useGameStore, type GameMode } from "@/lib/store/gameStore";
 
+// Every playable mode uses real players (see realPlayers.ts and
+// legendPlayers.ts) — the old fictional roster/engine still exists in the
+// codebase but is no longer reachable from any UI entry point.
+
 interface ModeDef {
   id: string;
   name: string;
@@ -17,17 +21,10 @@ interface ModeDef {
 
 const MODES: ModeDef[] = [
   {
-    id: "14-0-t20-league",
-    name: "14-0 T20 League",
-    description: "Draft an XI and try to go unbeaten through a 14-match league season.",
-    available: true,
-    gameMode: "fictional",
-  },
-  {
     id: "all-time-xi",
     name: "All-Time XI",
     description:
-      "Draft real current stars from the IPL, Big Bash, PSL, and other major leagues worldwide — ratings built from real stats. See if you can go 14-0.",
+      "Draft real current stars and all-time legends from the IPL, Big Bash, PSL, and other major leagues worldwide — real players, real stats. See if you can go 14-0.",
     available: true,
     gameMode: "all-time-real",
   },
@@ -44,7 +41,6 @@ const MODES: ModeDef[] = [
 export default function PlayPage() {
   const router = useRouter();
   const startNewGame = useGameStore((s) => s.startNewGame);
-  const spinTheWheel = useGameStore((s) => s.spinTheWheel);
   const spinEraTeam = useGameStore((s) => s.spinEraTeam);
 
   function handleStart(mode: ModeDef) {
@@ -55,17 +51,10 @@ export default function PlayPage() {
 
   function handleSpin(mode: ModeDef) {
     if (!mode.available || !mode.gameMode) return;
-    // All-Time XI's spin reveals a real Era Team (historic or current
-    // national squad) and hands the user a manual picker instead of
-    // auto-drafting; Fictional mode's roster isn't deep enough per-franchise
-    // yet for the same treatment, so it keeps the instant-XI spin for now.
-    if (mode.gameMode === "all-time-real") {
-      spinEraTeam();
-      router.push("/squad-select");
-    } else {
-      spinTheWheel(mode.gameMode);
-      router.push("/team-setup");
-    }
+    // Spin reveals a real Era Team (historic or current national squad) and
+    // hands the user a manual picker instead of auto-drafting.
+    spinEraTeam();
+    router.push("/squad-select");
   }
 
   return (
@@ -76,8 +65,9 @@ export default function PlayPage() {
             Choose a Mode
           </h1>
           <p className="text-foreground-muted mb-8">
-            More modes are on the way. Draft, auto-build your lineup, and
-            simulate the season in one go — fictional or real players.
+            More modes are on the way. Every squad is built from real
+            players — current stars and all-time legends — with ratings
+            drawn from their actual career stats.
           </p>
           <div className="grid gap-4">
             {MODES.map((mode) => (
