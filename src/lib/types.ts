@@ -170,6 +170,21 @@ export interface DraftPick {
   player: Player;
 }
 
+// --- Era Teams ---
+// A specific, named real squad (a historic team's peak era, or a country's
+// current lineup) that "Spin the Wheel" reveals as a whole. The user then
+// manually builds their XI from exactly that squad — no auto-draft. See
+// src/lib/data/eraTeams.ts for the actual roster data.
+export interface EraTeam {
+  id: string;
+  name: string;
+  eraLabel: string;
+  tagline: string;
+  country: string;
+  isHistoric: boolean;
+  players: Player[];
+}
+
 // --- Team composition ---
 
 export const SQUAD_SIZE = 11;
