@@ -1,6 +1,6 @@
 "use client";
 
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -8,9 +8,16 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { useGameStore } from "@/lib/store/gameStore";
+import { useAuthStore } from "@/lib/store/authStore";
+import { isSupabaseConfigured, supabase } from "@/lib/supabase/client";
 import { getPlayerById } from "@/lib/data/players";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
 import { track } from "@/lib/analytics";
+
+// Postgres unique_violation — the Daily Challenge has one row per user per
+// day (see season_results_one_daily_per_user in supabase/schema.sql). A
+// re-submit on revisit isn't an error from the user's point of view.
+const UNIQUE_VIOLATION = "23505";
 
 function StatTile({ label, value }: { label: string; value: string }) {
   return (
@@ -28,11 +35,18 @@ export default function ResultsPage() {
   const hasHydrated = useGameStore((s) => s.hasHydrated);
   const seed = useGameStore((s) => s.seed);
   const mode = useGameStore((s) => s.mode);
+  const isDaily = useGameStore((s) => s.isDaily);
   const stats = useGameStore((s) => s.seasonStats);
   const matches = useGameStore((s) => s.matchResults);
+  const draftPicks = useGameStore((s) => s.draftPicks);
+  const resultSaved = useGameStore((s) => s.resultSaved);
+  const markResultSaved = useGameStore((s) => s.markResultSaved);
   const startNewGame = useGameStore((s) => s.startNewGame);
+  const user = useAuthStore((s) => s.user);
   const lookupPlayer = mode === "all-time-real" ? getRealPlayerById : getPlayerById;
   const [copied, setCopied] = useState(false);
+  const [saveStatus, setSaveStatus] = useState<"idle" | "saved" | "error">("idle");
+  const isSaving = Boolean(isSupabaseConfigured && user && stats && !resultSaved && saveStatus === "idle");
 
   const shareText = useMemo(() => {
     if (!stats) return "";
@@ -41,6 +55,33 @@ export default function ResultsPage() {
       ? `MY XI WENT ${record} — UNBEATEN ALL SEASON.\nCan you go 14-0? Draft your XI in 14-0: Build the Unbeaten XI.`
       : `MY XI FINISHED ${record}.\nCan you go 14-0? Draft your XI in 14-0: Build the Unbeaten XI.`;
   }, [stats]);
+
+  useEffect(() => {
+    if (!isSupabaseConfigured || !supabase || !user || !stats || resultSaved) return;
+    supabase
+      .from("season_results")
+      .insert({
+        user_id: user.id,
+        mode,
+        is_daily: isDaily,
+        seed,
+        wins: stats.wins,
+        losses: stats.losses,
+        team_rating_out_of_100: stats.teamRatingOutOf100,
+        net_run_rate: stats.netRunRate,
+        draft_picks: draftPicks,
+        match_results: matches,
+        season_stats: stats,
+      })
+      .then(({ error }) => {
+        if (!error || error.code === UNIQUE_VIOLATION) {
+          markResultSaved();
+          setSaveStatus("saved");
+        } else {
+          setSaveStatus("error");
+        }
+      });
+  }, [user, stats, resultSaved, mode, isDaily, seed, draftPicks, matches, markResultSaved]);
 
   if (!hasHydrated) return null;
 
@@ -164,6 +205,14 @@ export default function ResultsPage() {
             Play Again
           </Button>
         </div>
+
+        {user && (
+          <p className="mt-3 text-center text-xs text-foreground-muted">
+            {isSaving && "Saving to your account…"}
+            {saveStatus === "saved" && "Saved to your history and the leaderboard."}
+            {saveStatus === "error" && "Couldn't save this result — it's still on this device."}
+          </p>
+        )}
 
         <h2 className="mt-10 mb-3 text-lg font-bold tracking-tight">Match Log</h2>
         <div className="grid gap-2">

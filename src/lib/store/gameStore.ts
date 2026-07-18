@@ -49,6 +49,9 @@ export interface GameState {
   seasonStats: SeasonStats | null;
   decisions: Record<number, string>;
   pendingDecision: MatchDecision | null;
+  /** True once this game's result has been written to Supabase, so the
+   * results page doesn't insert a duplicate row on re-render or revisit. */
+  resultSaved: boolean;
 
   /** True once the persisted state has been read from localStorage. */
   hasHydrated: boolean;
@@ -71,6 +74,7 @@ interface GameActions {
   setBowlingRole: (playerId: string, role: BowlingPhase) => void;
   runSeasonSimulation: () => void;
   resolveDecision: (choiceId: string) => void;
+  markResultSaved: () => void;
 }
 
 // hasHydrated is intentionally excluded here: it must survive resetGame()
@@ -94,6 +98,7 @@ const initialState: Omit<GameState, "hasHydrated"> = {
   seasonStats: null,
   decisions: {},
   pendingDecision: null,
+  resultSaved: false,
 };
 
 function getXi(draftPicks: DraftPickRecord[], mode: GameMode): Player[] {
@@ -271,6 +276,8 @@ export const useGameStore = create<GameState & GameActions>()(
         });
         get().runSeasonSimulation();
       },
+
+      markResultSaved: () => set({ resultSaved: true }),
     }),
     {
       name: "fourteen-zero-game",
