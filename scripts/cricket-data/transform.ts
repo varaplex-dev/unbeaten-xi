@@ -325,11 +325,41 @@ function transformOne(m: Metrics, norms: PoolNorms, legacyNorms: PoolNorms): Gen
   const bowlingStyle = mapBowlingStyle(raw.bowlingStyle);
   const nationalityType: NationalityType = raw.country === "India" ? "indian" : "overseas";
 
-  const roleRaw = (raw.role ?? "Batsman").toLowerCase();
+  // The API's `role` field is reliable for current players (sourced from
+  // official match_squad listings, see discover-squads.mjs) but not for
+  // legends fetched via name search — e.g. Malcolm Marshall (376 Test
+  // wickets, arguably the greatest fast bowler ever) comes back labeled
+  // plain "Batsman". When bowling output clearly dominates batting output,
+  // trust the stats over the label rather than drafting a legendary quick
+  // as a specialist batter.
+  const bowlDominance = bowlingSkill - battingSkill;
+  const statsOverrideRole: "specialist-bowler" | "bowling-allrounder" | null =
+    m.wickets >= 20 && bowlDominance >= 30
+      ? "specialist-bowler"
+      : m.wickets >= 20 && bowlDominance >= 10
+        ? "bowling-allrounder"
+        : null;
+
+  // No stat in the API's `stats` array signals wicketkeeping (no dismissals/
+  // stumpings field), so unlike the bowling override above there's no data
+  // signal to check — this has to be a manually-curated fact. Only two of
+  // the curated legends need it; everyone else's keeper status happened to
+  // come through correctly in the raw `role` field.
+  const KNOWN_LEGEND_WICKETKEEPERS = new Set(["Jeff Dujon", "Moin Khan"]);
+  const isKnownWicketkeeper = IS_LEGENDS && KNOWN_LEGEND_WICKETKEEPERS.has(raw.name);
+
+  const roleRaw = statsOverrideRole ? "" : (raw.role ?? "Batsman").toLowerCase();
   let primaryRole: PlayerRole;
   const secondaryRoles: PlayerRole[] = [];
 
-  if (roleRaw.includes("wk")) {
+  if (isKnownWicketkeeper) {
+    primaryRole = "wicketkeeper-batter";
+  } else if (statsOverrideRole === "specialist-bowler") {
+    primaryRole = bowlingRoleFor(bowlingStyle);
+  } else if (statsOverrideRole === "bowling-allrounder") {
+    primaryRole = "bowling-allrounder";
+    secondaryRoles.push(bowlingRoleFor(bowlingStyle));
+  } else if (roleRaw.includes("wk")) {
     primaryRole = "wicketkeeper-batter";
   } else if (roleRaw === "bowler") {
     primaryRole = bowlingRoleFor(bowlingStyle);

@@ -175,8 +175,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "West Indies",
     "nationalityType": "overseas",
     "currentTeam": "West Indies National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-orthodox",
     "age": 33,
@@ -315,8 +317,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Australia",
     "nationalityType": "overseas",
     "currentTeam": "Australia National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 39,
@@ -338,8 +342,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 32,
@@ -361,8 +367,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-fast",
     "age": 27,
@@ -384,10 +392,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Australia",
     "nationalityType": "overseas",
     "currentTeam": "Australia National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
+    "primaryRole": "left-arm-spinner",
+    "secondaryRoles": [],
     "battingHand": "left",
     "bowlingStyle": "left-arm-orthodox",
     "age": 32,
@@ -576,8 +582,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 36,
@@ -793,7 +801,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Sri Lanka",
     "nationalityType": "overseas",
     "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "batting-allrounder",
+    "primaryRole": "bowling-allrounder",
     "secondaryRoles": [
       "fast-bowler"
     ],
@@ -1316,8 +1324,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Pakistan",
     "nationalityType": "overseas",
     "currentTeam": "Pakistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 32,
@@ -1573,10 +1583,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "off-spinner"
-    ],
+    "primaryRole": "off-spinner",
+    "secondaryRoles": [],
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 31,
@@ -2233,8 +2241,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-fast",
     "age": 28,
@@ -2256,8 +2266,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Australia",
     "nationalityType": "overseas",
     "currentTeam": "Australia National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 39,
@@ -2398,8 +2410,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 37,
@@ -2613,8 +2627,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Oman",
     "nationalityType": "overseas",
     "currentTeam": "Oman National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 33,
@@ -3428,8 +3444,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 35,
@@ -3662,8 +3680,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "New Zealand",
     "nationalityType": "overseas",
     "currentTeam": "New Zealand National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 35,
@@ -3731,7 +3751,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "West Indies",
     "nationalityType": "overseas",
     "currentTeam": "West Indies National Team",
-    "primaryRole": "batting-allrounder",
+    "primaryRole": "bowling-allrounder",
     "secondaryRoles": [
       "off-spinner"
     ],
@@ -3896,8 +3916,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Sri Lanka",
     "nationalityType": "overseas",
     "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "left-arm-orthodox",
     "age": 34,
@@ -4433,8 +4455,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-fast",
     "age": 25,
@@ -4550,8 +4574,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "United Arab Emirates",
     "nationalityType": "overseas",
     "currentTeam": "United Arab Emirates National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-fast",
     "age": 27,
@@ -5091,8 +5117,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "United Arab Emirates",
     "nationalityType": "overseas",
     "currentTeam": "United Arab Emirates National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 33,
@@ -5114,8 +5142,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Sri Lanka",
     "nationalityType": "overseas",
     "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "right-arm-fast",
     "age": 29,
@@ -6536,8 +6566,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Australia",
     "nationalityType": "overseas",
     "currentTeam": "Australia National Team",
-    "primaryRole": "off-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "left",
     "bowlingStyle": "right-arm-offspin",
     "age": 25,
@@ -6910,8 +6942,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 33,
@@ -6956,8 +6990,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 36,
@@ -7386,8 +7422,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "left-arm-orthodox",
     "age": 31,
@@ -7551,8 +7589,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "England",
     "nationalityType": "overseas",
     "currentTeam": "England National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-orthodox",
     "age": 27,
@@ -7737,8 +7777,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Kuwait",
     "nationalityType": "overseas",
     "currentTeam": "Kuwait National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-medium",
     "age": 32,
@@ -7875,8 +7917,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-fast",
     "age": 30,
@@ -7948,8 +7992,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "England",
     "nationalityType": "overseas",
     "currentTeam": "England National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "left-arm-orthodox",
     "age": 29,
@@ -8635,8 +8681,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "England",
     "nationalityType": "overseas",
     "currentTeam": "England National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 29,
@@ -9153,7 +9201,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Kuwait",
     "nationalityType": "overseas",
     "currentTeam": "Kuwait National Team",
-    "primaryRole": "batting-allrounder",
+    "primaryRole": "bowling-allrounder",
     "secondaryRoles": [
       "left-arm-spinner"
     ],
@@ -9506,8 +9554,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "West Indies",
     "nationalityType": "overseas",
     "currentTeam": "West Indies National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "left-arm-orthodox",
     "age": 34,
@@ -10206,8 +10256,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Netherlands",
     "nationalityType": "overseas",
     "currentTeam": "Netherlands National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "left-arm-orthodox",
     "age": 41,
@@ -10624,8 +10676,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Kuwait",
     "nationalityType": "overseas",
     "currentTeam": "Kuwait National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 35,
@@ -11259,8 +11313,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Afghanistan",
     "nationalityType": "overseas",
     "currentTeam": "Afghanistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 26,
@@ -11305,8 +11361,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 23,
@@ -11637,8 +11695,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "West Indies",
     "nationalityType": "overseas",
     "currentTeam": "West Indies National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-orthodox",
     "age": 33,
@@ -11777,8 +11837,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Sri Lanka",
     "nationalityType": "overseas",
     "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "off-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 25,
@@ -11800,7 +11862,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "batting-allrounder",
+    "primaryRole": "bowling-allrounder",
     "secondaryRoles": [
       "leg-spinner"
     ],
@@ -13015,8 +13077,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-medium",
     "age": 31,
@@ -13349,7 +13413,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Italy",
     "nationalityType": "overseas",
     "currentTeam": "Italy National Team",
-    "primaryRole": "batting-allrounder",
+    "primaryRole": "bowling-allrounder",
     "secondaryRoles": [
       "fast-bowler"
     ],
@@ -13468,10 +13532,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
+    "primaryRole": "fast-bowler",
+    "secondaryRoles": [],
     "battingHand": "right",
     "bowlingStyle": "right-arm-medium",
     "age": 31,
@@ -13817,8 +13879,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "off-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 36,
@@ -14001,8 +14065,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "leg-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "leg-spin",
     "age": 24,
@@ -14070,8 +14136,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "United States of America",
     "nationalityType": "overseas",
     "currentTeam": "United States of America National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-medium",
     "age": 33,
@@ -14093,8 +14161,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 30,
@@ -14811,7 +14881,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Sri Lanka",
     "nationalityType": "overseas",
     "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "batting-allrounder",
+    "primaryRole": "bowling-allrounder",
     "secondaryRoles": [
       "fast-bowler"
     ],
@@ -15005,10 +15075,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "United Arab Emirates",
     "nationalityType": "overseas",
     "currentTeam": "United Arab Emirates National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
+    "primaryRole": "left-arm-spinner",
+    "secondaryRoles": [],
     "battingHand": "right",
     "bowlingStyle": "left-arm-orthodox",
     "age": 20,
@@ -15149,8 +15217,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Ireland",
     "nationalityType": "overseas",
     "currentTeam": "Ireland National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 30,
@@ -15546,8 +15616,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Australia",
     "nationalityType": "overseas",
     "currentTeam": "Australia National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 32,
@@ -15617,8 +15689,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 32,
@@ -15686,8 +15760,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Pakistan",
     "nationalityType": "overseas",
     "currentTeam": "Pakistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 23,
@@ -16419,8 +16495,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 36,
@@ -16797,8 +16875,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "leg-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "leg-spin",
     "age": 32,
@@ -16866,7 +16946,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "batting-allrounder",
+    "primaryRole": "bowling-allrounder",
     "secondaryRoles": [
       "left-arm-spinner"
     ],
@@ -17221,8 +17301,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "off-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 37,
@@ -17338,8 +17420,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Saudi Arabia",
     "nationalityType": "overseas",
     "currentTeam": "Saudi Arabia National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "left-arm-orthodox",
     "age": 34,
@@ -18395,8 +18479,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Pakistan",
     "nationalityType": "overseas",
     "currentTeam": "Pakistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 25,
@@ -19042,8 +19128,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Sri Lanka",
     "nationalityType": "overseas",
     "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "off-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "left",
     "bowlingStyle": "right-arm-offspin",
     "age": 32,
@@ -19257,8 +19345,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "off-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 26,
@@ -19725,8 +19815,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Pakistan",
     "nationalityType": "overseas",
     "currentTeam": "Pakistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 24,
@@ -19748,8 +19840,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "leg-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "leg-spin",
     "age": 26,
@@ -19986,7 +20080,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Afghanistan",
     "nationalityType": "overseas",
     "currentTeam": "Afghanistan National Team",
-    "primaryRole": "batting-allrounder",
+    "primaryRole": "bowling-allrounder",
     "secondaryRoles": [
       "leg-spinner"
     ],
@@ -20036,10 +20130,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Australia",
     "nationalityType": "overseas",
     "currentTeam": "Australia National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
+    "primaryRole": "left-arm-spinner",
+    "secondaryRoles": [],
     "battingHand": "left",
     "bowlingStyle": "left-arm-orthodox",
     "age": 32,
@@ -21285,8 +21377,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Saudi Arabia",
     "nationalityType": "overseas",
     "currentTeam": "Saudi Arabia National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-medium",
     "age": 30,
@@ -21492,8 +21586,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Australia",
     "nationalityType": "overseas",
     "currentTeam": "Australia National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 39,
@@ -21657,8 +21753,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 27,
@@ -22037,8 +22135,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Pakistan",
     "nationalityType": "overseas",
     "currentTeam": "Pakistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 32,
@@ -23457,8 +23557,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "right-arm-fast",
     "age": 31,
@@ -23597,8 +23699,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "leg-spinner"
+    ],
     "battingHand": "left",
     "bowlingStyle": "leg-spin",
     "age": 31,
@@ -23737,8 +23841,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Sri Lanka",
     "nationalityType": "overseas",
     "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "off-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 25,
@@ -23977,8 +24083,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Australia",
     "nationalityType": "overseas",
     "currentTeam": "Australia National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-fast",
     "age": 36,
@@ -24096,8 +24204,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 35,
@@ -24119,8 +24229,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 32,
@@ -24236,8 +24348,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-fast",
     "age": 30,
@@ -24259,8 +24373,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Pakistan",
     "nationalityType": "overseas",
     "currentTeam": "Pakistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 23,
@@ -24328,8 +24444,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Afghanistan",
     "nationalityType": "overseas",
     "currentTeam": "Afghanistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 26,
@@ -24443,8 +24561,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "leg-spinner"
+    ],
     "battingHand": "left",
     "bowlingStyle": "leg-spin",
     "age": 37,
@@ -24466,8 +24586,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 30,
@@ -25104,8 +25226,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Pakistan",
     "nationalityType": "overseas",
     "currentTeam": "Pakistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-fast",
     "age": 26,
@@ -25459,8 +25583,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "right-arm-fast",
     "age": 31,
@@ -25574,8 +25700,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "New Zealand",
     "nationalityType": "overseas",
     "currentTeam": "New Zealand National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "left-arm-fast",
     "age": 36,
@@ -25719,8 +25847,10 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-fast",
     "age": 36,
