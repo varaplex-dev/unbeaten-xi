@@ -6,9 +6,9 @@ export default function PrivacyPage() {
       <h1 className="text-3xl font-black tracking-tight mb-6">Privacy</h1>
       <div className="space-y-4 text-foreground-muted text-sm">
         <p>
-          This is a placeholder privacy page for 14-0: Build the Unbeaten XI,
-          a hobby project. It is not a substitute for a reviewed legal privacy
-          policy before any public or commercial launch.
+          This is a placeholder privacy page for The Unbeaten XI, a hobby
+          project. It is not a substitute for a reviewed legal privacy policy
+          before any public or commercial launch.
         </p>
         <p>
           Today, game progress (your draft, lineup, and season results) is

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   // Placeholder until the app has a real domain — needed so og/twitter image
   // URLs resolve to absolute paths instead of warning at build time.
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "14-0: Build the Unbeaten XI",
+  title: "The Unbeaten XI",
   description:
     "Draft a T20 Playing XI and try to finish a 14-match league season undefeated.",
 };

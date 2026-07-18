@@ -52,8 +52,8 @@ export default function ResultsPage() {
     if (!stats) return "";
     const record = `${stats.wins}-${stats.losses}`;
     return stats.losses === 0
-      ? `MY XI WENT ${record} — UNBEATEN ALL SEASON.\nCan you go 14-0? Draft your XI in 14-0: Build the Unbeaten XI.`
-      : `MY XI FINISHED ${record}.\nCan you go 14-0? Draft your XI in 14-0: Build the Unbeaten XI.`;
+      ? `MY XI WENT ${record} — UNBEATEN ALL SEASON.\nCan you go 14-0? Draft your XI in The Unbeaten XI.`
+      : `MY XI FINISHED ${record}.\nCan you go 14-0? Draft your XI in The Unbeaten XI.`;
   }, [stats]);
 
   useEffect(() => {
@@ -107,7 +107,7 @@ export default function ResultsPage() {
     if (stats) track("result_shared", { mode, wins: stats.wins, losses: stats.losses, unbeaten });
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
-        await navigator.share({ text: shareText, title: "14-0: Build the Unbeaten XI" });
+        await navigator.share({ text: shareText, title: "The Unbeaten XI" });
         return;
       } catch {
         // user cancelled the share sheet; fall through to clipboard copy

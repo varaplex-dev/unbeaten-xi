@@ -83,8 +83,8 @@ export default function SettingsPage() {
     <main className="flex-1 px-4 py-10 max-w-2xl mx-auto w-full">
       <h1 className="text-3xl font-black tracking-tight mb-1">Settings</h1>
       <p className="text-foreground-muted mb-8">
-        14-0 saves your progress locally in this browser — nothing is sent
-        anywhere unless you&apos;re signed in.
+        The Unbeaten XI saves your progress locally in this browser — nothing
+        is sent anywhere unless you&apos;re signed in.
       </p>
 
       <div className="grid gap-4">
@@ -126,7 +126,7 @@ export default function SettingsPage() {
             <CardTitle>About</CardTitle>
           </CardHeader>
           <CardContent className="text-sm text-foreground-muted space-y-1">
-            <p>14-0: Build the Unbeaten XI</p>
+            <p>The Unbeaten XI</p>
             <p>A production of 11 Not Out.</p>
           </CardContent>
         </Card>

@@ -1,4 +1,4 @@
-// Core domain types for 14-0: Build the Unbeaten XI.
+// Core domain types for The Unbeaten XI.
 // Kept independent of any UI or storage concerns so they can be reused by
 // the draft engine, the simulation engine, and (later) a real backend.
 
