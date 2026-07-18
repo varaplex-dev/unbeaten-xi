@@ -150,19 +150,23 @@ export default function HowToPlayPage() {
           <CardContent className="text-sm text-foreground-muted space-y-2">
             <p>
               Sign in and every season you complete is tracked automatically
-              across three boards:
+              across four boards:
             </p>
             <ul className="list-disc list-inside space-y-1">
               <li>
                 <span className="font-semibold text-foreground">All-Time</span> — your best-ever result.
               </li>
               <li>
-                <span className="font-semibold text-foreground">Daily</span> — everyone plays the same
-                seed on the same day, so it&apos;s a fair head-to-head.
+                <span className="font-semibold text-foreground">Monthly</span> — resets every month, your
+                best result since the 1st.
               </li>
               <li>
                 <span className="font-semibold text-foreground">Weekly</span> — resets every week, your
                 best result since Monday.
+              </li>
+              <li>
+                <span className="font-semibold text-foreground">Daily</span> — everyone plays the same
+                seed on the same day, so it&apos;s a fair head-to-head.
               </li>
             </ul>
           </CardContent>

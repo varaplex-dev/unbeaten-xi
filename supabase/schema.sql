@@ -170,3 +170,29 @@ where sr.created_at >= date_trunc('week', now())
   and sr.mode = 'all-time-real'
   and sr.is_daily = false
 order by sr.user_id, sr.mode, sr.is_daily, sr.wins desc, sr.losses asc, sr.team_rating_out_of_100 desc, sr.created_at asc;
+
+-- ─────────────────────────────────────────────────────────────────────────
+-- monthly_leaderboard view
+--
+-- Same shape and reasoning as weekly_leaderboard, scoped to the current
+-- calendar month (date_trunc('month', now())) instead of the current week.
+-- ─────────────────────────────────────────────────────────────────────────
+create or replace view public.monthly_leaderboard as
+select distinct on (sr.user_id, sr.mode, sr.is_daily)
+  sr.id,
+  sr.user_id,
+  p.username,
+  sr.mode,
+  sr.is_daily,
+  sr.wins,
+  sr.losses,
+  sr.unbeaten,
+  sr.team_rating_out_of_100,
+  sr.net_run_rate,
+  sr.created_at
+from public.season_results sr
+join public.profiles p on p.id = sr.user_id
+where sr.created_at >= date_trunc('month', now())
+  and sr.mode = 'all-time-real'
+  and sr.is_daily = false
+order by sr.user_id, sr.mode, sr.is_daily, sr.wins desc, sr.losses asc, sr.team_rating_out_of_100 desc, sr.created_at asc;

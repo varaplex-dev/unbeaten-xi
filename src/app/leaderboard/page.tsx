@@ -22,14 +22,16 @@ interface LeaderboardRow {
 // a free draft (each player picks their own XI). The fictional mode is no
 // longer playable, so it has no tab here — any pre-existing fictional
 // results still in season_results just won't show up on this leaderboard.
-// Weekly reuses the same (mode, is_daily) filter as All-Time but reads from
-// the weekly_leaderboard view instead, which additionally scopes rows to
-// the current calendar week (see supabase/schema.sql) — a resetting board
-// alongside the unbounded all-time one.
+// Monthly and Weekly reuse the same (mode, is_daily) filter as All-Time but
+// read from monthly_leaderboard / weekly_leaderboard instead, which
+// additionally scope rows to the current calendar month/week (see
+// supabase/schema.sql) — resetting boards alongside the unbounded all-time
+// one.
 const TABS = [
   { key: "all-time", label: "All-Time", view: "leaderboard", mode: "all-time-real", isDaily: false },
-  { key: "daily", label: "Daily", view: "leaderboard", mode: "all-time-real", isDaily: true },
+  { key: "monthly", label: "Monthly", view: "monthly_leaderboard", mode: "all-time-real", isDaily: false },
   { key: "weekly", label: "Weekly", view: "weekly_leaderboard", mode: "all-time-real", isDaily: false },
+  { key: "daily", label: "Daily", view: "leaderboard", mode: "all-time-real", isDaily: true },
 ] as const;
 
 export default function LeaderboardPage() {
