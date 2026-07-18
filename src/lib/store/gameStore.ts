@@ -10,6 +10,7 @@ import { simulateSeason, type MatchDecision, type MatchResult, type SeasonStats 
 import { generateRandomXI, spinImpactPlayer } from "@/lib/engine/draft";
 import { PLAYERS } from "@/lib/data/players";
 import { REAL_PLAYERS } from "@/lib/data/realPlayers";
+import { track } from "@/lib/analytics";
 
 export interface DraftPickRecord {
   roundNumber: number;
@@ -109,14 +110,17 @@ export const useGameStore = create<GameState & GameActions>()(
 
       startNewGame: (options) => {
         const seed = options?.seed ?? randomSeedString();
+        const isDaily = options?.isDaily ?? false;
+        const mode = options?.mode ?? "fictional";
         set({
           ...initialState,
           gameId: `game-${Date.now()}`,
           seed,
-          mode: options?.mode ?? "fictional",
-          isDaily: options?.isDaily ?? false,
+          mode,
+          isDaily,
           createdAt: new Date().toISOString(),
         });
+        track(isDaily ? "daily_challenge_started" : "game_started", { mode });
       },
 
       startDailyChallenge: () => {
@@ -154,6 +158,7 @@ export const useGameStore = create<GameState & GameActions>()(
           wicketkeeperId: lineup.wicketkeeperId,
           stage: "team-setup",
         });
+        track("game_started", { mode, method: "spin-the-wheel" });
       },
 
       draftPlayer: (player, categoryId) => {
@@ -169,10 +174,13 @@ export const useGameStore = create<GameState & GameActions>()(
             playerId: player.id,
           },
         ];
+        const draftComplete = nextPicks.length >= SQUAD_SIZE;
         set({
           draftPicks: nextPicks,
-          stage: nextPicks.length >= SQUAD_SIZE ? "impact-player" : "draft",
+          stage: draftComplete ? "impact-player" : "draft",
         });
+        track("player_selected", { categoryId, roundNumber: nextPicks.length });
+        if (draftComplete) track("draft_completed", { squadSize: SQUAD_SIZE });
       },
 
       pickImpactPlayer: (player) => {
@@ -223,10 +231,12 @@ export const useGameStore = create<GameState & GameActions>()(
       },
 
       runSeasonSimulation: () => {
-        const { draftPicks, seed, mode, battingOrder, captainId, impactPlayerId, decisions } = get();
+        const { draftPicks, seed, mode, isDaily, battingOrder, captainId, impactPlayerId, decisions, matchResults } =
+          get();
         const xi = getXi(draftPicks, mode);
         if (xi.length !== SQUAD_SIZE || !seed || !captainId) return;
         const impactPlayer = impactPlayerId ? (playerLookup(mode, impactPlayerId) ?? null) : null;
+        const isFirstRun = matchResults.length === 0;
 
         const { matches, stats, pendingDecision } = simulateSeason(
           seed,
@@ -242,12 +252,23 @@ export const useGameStore = create<GameState & GameActions>()(
           pendingDecision,
           stage: stats ? "results" : "season",
         });
+
+        if (isFirstRun) track("season_started", { mode });
+        if (stats) {
+          track("season_completed", { mode, wins: stats.wins, losses: stats.losses });
+          if (isDaily) track("daily_challenge_completed", { wins: stats.wins, losses: stats.losses });
+        }
       },
 
       resolveDecision: (choiceId) => {
         const { pendingDecision, decisions } = get();
         if (!pendingDecision) return;
         set({ decisions: { ...decisions, [pendingDecision.matchNumber]: choiceId } });
+        track("match_decision_made", {
+          matchNumber: pendingDecision.matchNumber,
+          type: pendingDecision.type,
+          choiceId,
+        });
         get().runSeasonSimulation();
       },
     }),

@@ -17,6 +17,7 @@ import { SQUAD_SIZE, canBowl, isWicketkeeper } from "@/lib/types";
 import { getPlayerById } from "@/lib/data/players";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
 import { cn } from "@/lib/utils";
+import { track } from "@/lib/analytics";
 
 const BOWLING_PHASE_CYCLE: BowlingPhase[] = ["powerplay", "middle", "death"];
 
@@ -81,6 +82,7 @@ export default function TeamSetupPage() {
   }
 
   function handleSimulate() {
+    track("lineup_completed", { mode, captainId, wicketkeeperId, impactPlayerId });
     router.push("/season");
   }
 

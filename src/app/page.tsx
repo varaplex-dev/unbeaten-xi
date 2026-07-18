@@ -50,12 +50,14 @@ export default function LandingPage() {
           </Link>
         </div>
 
-        <Link
-          href="/how-to-play"
-          className="relative z-10 mx-auto mt-6 text-sm text-foreground-muted underline underline-offset-4 hover:text-foreground"
-        >
-          How to play
-        </Link>
+        <div className="relative z-10 mx-auto mt-6 flex gap-4 text-sm text-foreground-muted">
+          <Link href="/how-to-play" className="underline underline-offset-4 hover:text-foreground">
+            How to play
+          </Link>
+          <Link href="/settings" className="underline underline-offset-4 hover:text-foreground">
+            Settings
+          </Link>
+        </div>
 
         {/* Venue-style info strip, echoing the reference poster's footer block */}
         <div className="relative z-10 mt-10 border-t border-white/10 pt-4 text-center">

@@ -10,6 +10,7 @@ import { PosterShell } from "@/components/brand/PosterShell";
 import { useGameStore } from "@/lib/store/gameStore";
 import { getPlayerById } from "@/lib/data/players";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
+import { track } from "@/lib/analytics";
 
 function StatTile({ label, value }: { label: string; value: string }) {
   return (
@@ -62,6 +63,7 @@ export default function ResultsPage() {
   const unbeaten = stats.losses === 0;
 
   async function handleShare() {
+    if (stats) track("result_shared", { mode, wins: stats.wins, losses: stats.losses, unbeaten });
     if (typeof navigator !== "undefined" && navigator.share) {
       try {
         await navigator.share({ text: shareText, title: "14-0: Build the Unbeaten XI" });

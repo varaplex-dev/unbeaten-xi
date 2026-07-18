@@ -11,6 +11,7 @@ import { SQUAD_SIZE } from "@/lib/types";
 import { useDraftedPlayers, useGameStore } from "@/lib/store/gameStore";
 import { PLAYERS } from "@/lib/data/players";
 import { REAL_PLAYERS } from "@/lib/data/realPlayers";
+import { track } from "@/lib/analytics";
 
 export default function DraftPage() {
   const router = useRouter();
@@ -46,6 +47,10 @@ export default function DraftPage() {
   }, [seed, stage, draftedPlayers, pool]);
 
   const needs = useMemo(() => computeRosterNeeds(draftedPlayers), [draftedPlayers]);
+
+  useEffect(() => {
+    if (round) track("draft_round_viewed", { roundNumber: round.roundNumber, categoryId: round.category.id });
+  }, [round]);
 
   if (!hasHydrated || !seed) return null;
 
