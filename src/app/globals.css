@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+:root {
+  --background: #0b0f14;
+  --background-elevated: #121822;
+  --foreground: #f4f6f8;
+  --foreground-muted: #97a3b3;
+  --accent: #22e6a8;
+  --accent-strong: #0fcf94;
+  --gold: #e8b34c;
+  --saffron: #ff7a3d;
+  --jersey: #17356b;
+  --jersey-light: #2a58a8;
+  --pad: #f1ece0;
+  --danger: #f2545b;
+  --border: #22303f;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-background-elevated: var(--background-elevated);
+  --color-foreground: var(--foreground);
+  --color-foreground-muted: var(--foreground-muted);
+  --color-accent: var(--accent);
+  --color-accent-strong: var(--accent-strong);
+  --color-gold: var(--gold);
+  --color-saffron: var(--saffron);
+  --color-jersey: var(--jersey);
+  --color-jersey-light: var(--jersey-light);
+  --color-pad: var(--pad);
+  --color-danger: var(--danger);
+  --color-border: var(--border);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+* {
+  border-color: var(--border);
+}
+
+body {
+  background: radial-gradient(ellipse at top, #131c27 0%, var(--background) 55%);
+  color: var(--foreground);
+  font-family: var(--font-sans), Arial, Helvetica, sans-serif;
+  min-height: 100dvh;
+}
+
+::selection {
+  background: var(--accent);
+  color: #04120d;
+}
+
+.field-texture {
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      rgba(34, 230, 168, 0.05) 0px,
+      rgba(34, 230, 168, 0.05) 2px,
+      transparent 2px,
+      transparent 48px
+    );
+}
+
+.stadium-glow {
+  background:
+    radial-gradient(ellipse 60% 45% at 50% 0%, rgba(34, 230, 168, 0.22), transparent 70%),
+    radial-gradient(ellipse 90% 60% at 15% 100%, rgba(255, 122, 61, 0.12), transparent 60%),
+    radial-gradient(ellipse 90% 60% at 85% 100%, rgba(42, 88, 168, 0.25), transparent 60%);
+}
+
+.floodlight-rays {
+  background-image:
+    conic-gradient(
+      from 200deg at 15% -10%,
+      rgba(244, 246, 248, 0.08) 0deg,
+      transparent 12deg,
+      transparent 22deg,
+      rgba(244, 246, 248, 0.06) 30deg,
+      transparent 40deg
+    ),
+    conic-gradient(
+      from -20deg at 85% -10%,
+      rgba(244, 246, 248, 0.08) 0deg,
+      transparent 12deg,
+      transparent 22deg,
+      rgba(244, 246, 248, 0.06) 30deg,
+      transparent 40deg
+    );
+}
+
+.text-stack-shadow {
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.15),
+    0 2px 0 rgba(0, 0, 0, 0.5),
+    0 10px 24px rgba(0, 0, 0, 0.45);
+}
+
