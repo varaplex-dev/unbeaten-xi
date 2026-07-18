@@ -1,19 +1,21 @@
 "use client";
 
-import { useEffect, useMemo } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { PlayerCard } from "@/components/draft/PlayerCard";
+import { SpinReel } from "@/components/draft/SpinReel";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useDraftedPlayers, useGameStore } from "@/lib/store/gameStore";
-import { getEraTeamById } from "@/lib/data/eraTeams";
-import { SQUAD_SIZE } from "@/lib/types";
+import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
+import { SQUAD_SIZE, type EraTeam } from "@/lib/types";
 
 export default function SquadSelectPage() {
   const router = useRouter();
   const seed = useGameStore((s) => s.seed);
+  const mode = useGameStore((s) => s.mode);
   const stage = useGameStore((s) => s.stage);
   const hasHydrated = useGameStore((s) => s.hasHydrated);
   const eraTeamId = useGameStore((s) => s.eraTeamId);
@@ -24,6 +26,8 @@ export default function SquadSelectPage() {
   const selectSquadPlayer = useGameStore((s) => s.selectSquadPlayer);
   const pickImpactPlayer = useGameStore((s) => s.pickImpactPlayer);
   const skipImpactPlayer = useGameStore((s) => s.skipImpactPlayer);
+
+  const [spinTarget, setSpinTarget] = useState<EraTeam | null>(null);
 
   const eraTeam = eraTeamId ? getEraTeamById(eraTeamId) : null;
   const draftedPlayers = useDraftedPlayers();
@@ -41,7 +45,10 @@ export default function SquadSelectPage() {
 
   if (!hasHydrated || !seed) return null;
 
-  if (usedEraTeamIds.length === 0 && draftPicks.length === 0 && !eraTeamId) {
+  // A spin-drafted game always sets mode to "all-time-real" before this page
+  // is reachable — anything else means the user landed here without ever
+  // spinning (e.g. a stale category-draft session), not mid-flow.
+  if (mode !== "all-time-real") {
     return (
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-16 text-center">
         <p className="text-foreground-muted mb-4">No spin started yet.</p>
@@ -53,6 +60,19 @@ export default function SquadSelectPage() {
   }
 
   const roundLabel = squadComplete ? "Impact Player" : `Pick ${draftPicks.length + 1} of ${SQUAD_SIZE}`;
+
+  function handleSpinClick() {
+    if (!seed) return;
+    // Compute the landing team up front (pure, no store write) so the reel
+    // has a real answer to animate toward; the store only commits it once
+    // the animation finishes, via handleSpinComplete below.
+    setSpinTarget(pickNextEraTeam(seed, usedEraTeamIds));
+  }
+
+  function handleSpinComplete() {
+    setSpinTarget(null);
+    spinNextTeam();
+  }
 
   function handlePick(player: Parameters<typeof selectSquadPlayer>[0]) {
     if (squadComplete) {
@@ -96,14 +116,16 @@ export default function SquadSelectPage() {
             </div>
           )}
 
-          {!eraTeam ? (
+          {spinTarget ? (
+            <SpinReel target={spinTarget} onComplete={handleSpinComplete} />
+          ) : !eraTeam ? (
             <div className="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-border py-16 text-center">
               <p className="text-foreground-muted">
                 {squadComplete
                   ? "Spin for a team to draw your Impact Player from."
                   : `Spin for the team your ${draftPicks.length === 0 ? "first" : "next"} pick comes from.`}
               </p>
-              <Button size="lg" onClick={spinNextTeam}>
+              <Button size="lg" onClick={handleSpinClick}>
                 Spin the Wheel
               </Button>
               {squadComplete && (

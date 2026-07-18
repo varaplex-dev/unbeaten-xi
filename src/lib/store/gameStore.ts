@@ -5,8 +5,8 @@ import { SQUAD_SIZE } from "@/lib/types";
 import { getPlayerById } from "@/lib/data/players";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
 import { getLegendPlayerById } from "@/lib/data/legendPlayers";
-import { ERA_TEAMS, getEraTeamById } from "@/lib/data/eraTeams";
-import { randomSeedString, todaySeedString, createRng, pickRandom } from "@/lib/engine/rng";
+import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
+import { randomSeedString, todaySeedString } from "@/lib/engine/rng";
 import { autoAssignLineup, type BowlingPhase } from "@/lib/engine/lineup";
 import { simulateSeason, type MatchDecision, type MatchResult, type SeasonStats } from "@/lib/engine/simulate";
 import { generateRandomXI, spinImpactPlayer } from "@/lib/engine/draft";
@@ -186,11 +186,11 @@ export const useGameStore = create<GameState & GameActions>()(
         track("game_started", { mode, method: "spin-the-wheel" });
       },
 
+      /** Starts a fresh spin-draft game but doesn't pick a team yet — the
+       * squad-select page runs a reel animation for the first spin too, and
+       * commits the actual pick via spinNextTeam() once it finishes. */
       spinEraTeam: () => {
         const seed = randomSeedString();
-        const rng = createRng(`${seed}::era-team-0`);
-        const eraTeam = pickRandom(rng, ERA_TEAMS);
-
         set({
           ...initialState,
           gameId: `game-${Date.now()}`,
@@ -198,11 +198,11 @@ export const useGameStore = create<GameState & GameActions>()(
           mode: "all-time-real",
           isDaily: false,
           createdAt: new Date().toISOString(),
-          eraTeamId: eraTeam.id,
+          eraTeamId: null,
           usedEraTeamIds: [],
           stage: "squad-select",
         });
-        track("game_started", { mode: "all-time-real", method: "spin-era-team", eraTeamId: eraTeam.id });
+        track("game_started", { mode: "all-time-real", method: "spin-era-team" });
       },
 
       /** Reveals the next team for the round in progress — every pick comes
@@ -210,13 +210,7 @@ export const useGameStore = create<GameState & GameActions>()(
       spinNextTeam: () => {
         const { seed, usedEraTeamIds } = get();
         if (!seed) return;
-        const available = ERA_TEAMS.filter((t) => !usedEraTeamIds.includes(t.id));
-        // Only hit if usedEraTeamIds somehow grew past the pool size — not
-        // reachable in practice (89 teams, 12 picks max) but a safe fallback
-        // beats a spin that silently does nothing.
-        const pool = available.length > 0 ? available : ERA_TEAMS;
-        const rng = createRng(`${seed}::era-team-${usedEraTeamIds.length}`);
-        const eraTeam = pickRandom(rng, pool);
+        const eraTeam = pickNextEraTeam(seed, usedEraTeamIds);
         set({ eraTeamId: eraTeam.id });
       },
 

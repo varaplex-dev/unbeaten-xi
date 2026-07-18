@@ -2,6 +2,7 @@ import type { EraTeam, Player } from "@/lib/types";
 import { LEGEND_PLAYERS } from "@/lib/data/legendPlayers";
 import { REAL_PLAYERS } from "@/lib/data/realPlayers";
 import { FRANCHISE_SEASON_TEAMS } from "@/lib/data/franchiseSeasonTeams";
+import { createRng, pickRandom } from "@/lib/engine/rng";
 
 /** Resolves a roster by exact player name so this file stays readable and
  * auditable — no opaque hardcoded IDs. Throws at module-load time (i.e. on
@@ -214,4 +215,20 @@ export const ERA_TEAMS: EraTeam[] = [...HISTORIC_TEAMS, ...CURRENT_TEAMS, ...FRA
 
 export function getEraTeamById(id: string): EraTeam | undefined {
   return ERA_TEAMS.find((t) => t.id === id);
+}
+
+/** Deterministically picks the team for the next spin — every pick draft
+ * (first XI pick, later picks, and the Impact Player round) calls this the
+ * same way, keyed off how many teams have already been used. Pure and
+ * side-effect-free so it can be called twice for the same spin: once to
+ * compute the target the reel animation should land on, and once (identical
+ * result) when the store commits the pick after the animation finishes. */
+export function pickNextEraTeam(seed: string, usedEraTeamIds: string[]): EraTeam {
+  const available = ERA_TEAMS.filter((t) => !usedEraTeamIds.includes(t.id));
+  // Only hit if usedEraTeamIds somehow grew past the pool size — not
+  // reachable in practice (89 teams, 12 picks max) but a safe fallback beats
+  // a spin that silently does nothing.
+  const pool = available.length > 0 ? available : ERA_TEAMS;
+  const rng = createRng(`${seed}::era-team-${usedEraTeamIds.length}`);
+  return pickRandom(rng, pool);
 }
