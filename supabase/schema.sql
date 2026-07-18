@@ -139,3 +139,34 @@ select distinct on (sr.user_id, sr.mode, sr.is_daily)
 from public.season_results sr
 join public.profiles p on p.id = sr.user_id
 order by sr.user_id, sr.mode, sr.is_daily, sr.wins desc, sr.losses asc, sr.team_rating_out_of_100 desc, sr.created_at asc;
+
+-- ─────────────────────────────────────────────────────────────────────────
+-- weekly_leaderboard view
+--
+-- Same "best season per user" shape as the leaderboard view above, but
+-- scoped to results from the current calendar week (Monday-Sunday, per
+-- Postgres's date_trunc('week', ...)) and to the free-draft All-Time XI
+-- mode only — the mode people actually replay often enough for a
+-- resetting weekly board to be meaningful. Being a plain view (not
+-- materialized), "this week" is evaluated fresh on every query, so it
+-- rolls over automatically at the week boundary with no cron job needed.
+-- ─────────────────────────────────────────────────────────────────────────
+create or replace view public.weekly_leaderboard as
+select distinct on (sr.user_id, sr.mode, sr.is_daily)
+  sr.id,
+  sr.user_id,
+  p.username,
+  sr.mode,
+  sr.is_daily,
+  sr.wins,
+  sr.losses,
+  sr.unbeaten,
+  sr.team_rating_out_of_100,
+  sr.net_run_rate,
+  sr.created_at
+from public.season_results sr
+join public.profiles p on p.id = sr.user_id
+where sr.created_at >= date_trunc('week', now())
+  and sr.mode = 'all-time-real'
+  and sr.is_daily = false
+order by sr.user_id, sr.mode, sr.is_daily, sr.wins desc, sr.losses asc, sr.team_rating_out_of_100 desc, sr.created_at asc;

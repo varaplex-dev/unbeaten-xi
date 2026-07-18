@@ -22,13 +22,18 @@ interface LeaderboardRow {
 // a free draft (each player picks their own XI). The fictional mode is no
 // longer playable, so it has no tab here — any pre-existing fictional
 // results still in season_results just won't show up on this leaderboard.
+// Weekly reuses the same (mode, is_daily) filter as All-Time but reads from
+// the weekly_leaderboard view instead, which additionally scopes rows to
+// the current calendar week (see supabase/schema.sql) — a resetting board
+// alongside the unbounded all-time one.
 const TABS = [
-  { key: "daily", label: "Daily Challenge", mode: "all-time-real", isDaily: true },
-  { key: "all-time", label: "All-Time XI", mode: "all-time-real", isDaily: false },
+  { key: "all-time", label: "All-Time", view: "leaderboard", mode: "all-time-real", isDaily: false },
+  { key: "daily", label: "Daily", view: "leaderboard", mode: "all-time-real", isDaily: true },
+  { key: "weekly", label: "Weekly", view: "weekly_leaderboard", mode: "all-time-real", isDaily: false },
 ] as const;
 
 export default function LeaderboardPage() {
-  const [tabKey, setTabKey] = useState<(typeof TABS)[number]["key"]>("daily");
+  const [tabKey, setTabKey] = useState<(typeof TABS)[number]["key"]>("all-time");
   const [rows, setRows] = useState<LeaderboardRow[] | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [loadedKey, setLoadedKey] = useState<string | null>(null);
@@ -40,7 +45,7 @@ export default function LeaderboardPage() {
     let cancelled = false;
 
     supabase
-      .from("leaderboard")
+      .from(tab.view)
       .select("id, user_id, username, wins, losses, unbeaten, team_rating_out_of_100")
       .eq("mode", tab.mode)
       .eq("is_daily", tab.isDaily)
@@ -61,7 +66,7 @@ export default function LeaderboardPage() {
     return () => {
       cancelled = true;
     };
-  }, [tab.key, tab.mode, tab.isDaily]);
+  }, [tab.key, tab.view, tab.mode, tab.isDaily]);
 
   const isLoading = loadedKey !== tab.key;
 
