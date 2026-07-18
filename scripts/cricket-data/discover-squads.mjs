@@ -1,4 +1,4 @@
-// Discovers current, real squads across the top 5 T20 leagues by reading
+// Discovers current, real squads across the world's major T20 leagues by reading
 // each league's most recent series and pulling match_squad for a handful of
 // matches (enough to see every team). This is far more accurate than a
 // hand-typed name list — the API's own squad data can't misidentify a
@@ -29,11 +29,19 @@ if (!API_KEY) {
 }
 
 const LEAGUES = [
-  { key: "ipl", searchTerm: "Indian Premier League", expectedTeams: 10 },
-  { key: "bbl", searchTerm: "Big Bash League", expectedTeams: 8 },
-  { key: "psl", searchTerm: "Pakistan Super League", expectedTeams: 6 },
-  { key: "cpl", searchTerm: "Caribbean Premier League", expectedTeams: 6 },
-  { key: "hundred", searchTerm: "The Hundred Men", expectedTeams: 8 },
+  { key: "ipl", searchTerm: "Indian Premier League", expectedTeams: 10, namePattern: /Indian Premier League/i },
+  { key: "bbl", searchTerm: "Big Bash League", expectedTeams: 8, namePattern: /Big Bash League/i },
+  { key: "psl", searchTerm: "Pakistan Super League", expectedTeams: 6, namePattern: /Pakistan Super League/i },
+  { key: "cpl", searchTerm: "Caribbean Premier League", expectedTeams: 6, namePattern: /Caribbean Premier League/i },
+  { key: "hundred", searchTerm: "The Hundred Men", expectedTeams: 8, namePattern: /The Hundred/i },
+  // "SA20" alone is too short/generic for the API's fuzzy series search — it
+  // was matching unrelated exhibition series with a later startDate. Anchor
+  // to the start of the name so only the real competition matches.
+  { key: "sa20", searchTerm: "SA20", expectedTeams: 6, namePattern: /^SA20\b/i },
+  { key: "ilt20", searchTerm: "International League T20", expectedTeams: 6, namePattern: /International League T20/i },
+  { key: "bpl", searchTerm: "Bangladesh Premier League", expectedTeams: 8, namePattern: /Bangladesh Premier League/i },
+  { key: "lpl", searchTerm: "Lanka Premier League", expectedTeams: 5, namePattern: /Lanka Premier League/i },
+  { key: "mlc", searchTerm: "Major League Cricket", expectedTeams: 6, namePattern: /Major League Cricket/i },
 ];
 
 function sleep(ms) {
@@ -58,16 +66,19 @@ async function apiCall(url) {
 
 /**
  * Picks the most recent men's series whose name contains the search term
- * and has actual squads. The API's substring search happily matches the
- * women's equivalent competition too (e.g. "Big Bash League" also matches
- * "Womens Big Bash League"), so that's excluded explicitly rather than
- * relying on search-term phrasing alone.
+ * and has actual squads. The API's series search is fuzzy, not a strict
+ * substring match — a short search term like "SA20" can rank an unrelated
+ * series above the real competition once results are sorted by date, so
+ * namePattern is required and re-checked here rather than trusting the
+ * search ranking alone. The API's search also happily matches the women's
+ * equivalent competition too (e.g. "Big Bash League" also matches "Womens
+ * Big Bash League"), so that's excluded explicitly as well.
  */
-async function findLatestSeries(searchTerm) {
+async function findLatestSeries(searchTerm, namePattern) {
   const res = await apiCall(`${BASE}/series?apikey=${API_KEY}&offset=0&search=${encodeURIComponent(searchTerm)}`);
   if (res.status !== "success" || !res.data?.length) return null;
   const withSquads = res.data.filter(
-    (s) => s.squads > 0 && s.matches > 0 && !/women/i.test(s.name)
+    (s) => s.squads > 0 && s.matches > 0 && !/women/i.test(s.name) && namePattern.test(s.name)
   );
   if (withSquads.length === 0) return null;
   // Series are typically returned newest-first; sort defensively by startDate string descending.
@@ -120,7 +131,7 @@ async function main() {
 
   for (const league of LEAGUES) {
     try {
-      const series = await findLatestSeries(league.searchTerm);
+      const series = await findLatestSeries(league.searchTerm, league.namePattern);
       if (!series) {
         console.warn(`[skip] ${league.key}: no series with squads found for "${league.searchTerm}"`);
         continue;

@@ -700,14 +700,6 @@
     "country": "Pakistan"
   },
   {
-    "name": "Wasim Akram",
-    "country": "Pakistan"
-  },
-  {
-    "name": "Waqar Younis",
-    "country": "Pakistan"
-  },
-  {
     "name": "Shahid Afridi",
     "country": "Pakistan"
   },
@@ -862,85 +854,5 @@
   {
     "name": "Taskin Ahmed",
     "country": "Bangladesh"
-  },
-  {
-    "name": "Bishan Singh Bedi",
-    "country": "India"
-  },
-  {
-    "name": "Bhagwat Chandrasekhar",
-    "country": "India"
-  },
-  {
-    "name": "Krishnamachari Srikkanth",
-    "country": "India"
-  },
-  {
-    "name": "Mohammad Azharuddin",
-    "country": "India"
-  },
-  {
-    "name": "Javagal Srinath",
-    "country": "India"
-  },
-  {
-    "name": "Anil Kumble",
-    "country": "India"
-  },
-  {
-    "name": "Rodney Marsh",
-    "country": "Australia"
-  },
-  {
-    "name": "Steve Waugh",
-    "country": "Australia"
-  },
-  {
-    "name": "Mark Waugh",
-    "country": "Australia"
-  },
-  {
-    "name": "Curtly Ambrose",
-    "country": "West Indies"
-  },
-  {
-    "name": "Courtney Walsh",
-    "country": "West Indies"
-  },
-  {
-    "name": "Brian Lara",
-    "country": "West Indies"
-  },
-  {
-    "name": "Geoffrey Boycott",
-    "country": "England"
-  },
-  {
-    "name": "Saeed Anwar",
-    "country": "Pakistan"
-  },
-  {
-    "name": "Arjuna Ranatunga",
-    "country": "Sri Lanka"
-  },
-  {
-    "name": "Aravinda de Silva",
-    "country": "Sri Lanka"
-  },
-  {
-    "name": "Sanath Jayasuriya",
-    "country": "Sri Lanka"
-  },
-  {
-    "name": "Chaminda Vaas",
-    "country": "Sri Lanka"
-  },
-  {
-    "name": "Allan Donald",
-    "country": "South Africa"
-  },
-  {
-    "name": "Jonty Rhodes",
-    "country": "South Africa"
   }
 ]

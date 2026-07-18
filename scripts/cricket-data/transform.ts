@@ -174,9 +174,10 @@ function shortNameFor(name: string): string {
 }
 
 const T20_TYPES = ["ipl", "t20i", "t20"];
-// Fallback for players with zero T20/IPL/T20I data — anyone who retired
-// before T20 cricket existed (pre-2003). Rated off ODI first (closer in
-// shape to a T20 innings), falling back to Test if that's all there is.
+// Fallback for players with zero cached T20/IPL/T20I data — e.g. a current
+// Test specialist without a T20 league contract, not necessarily someone
+// retired. Rated off ODI first (closer in shape to a T20 innings), falling
+// back to Test if that's all there is.
 const LEGACY_TYPES = ["odi", "test"];
 
 type Era = "modern" | "legacy";
@@ -274,10 +275,11 @@ function transformOne(m: Metrics, norms: PoolNorms, legacyNorms: PoolNorms): Gen
   const raw = m.raw;
   const isLegacy = m.era === "legacy";
   const activeNorms = isLegacy ? legacyNorms : norms;
-  // A Test-era great's strike rate isn't a meaningful "explosiveness" signal
+  // Strike rate off Test/ODI stats isn't a meaningful "explosiveness" signal
   // the way it is in T20 — a watchful 40-off-120-balls innings can still be
-  // a match-winning knock. Weight average much more heavily for legacy
-  // players; SR/economy still nudge the number but don't dominate it.
+  // a match-winning knock. Weight average much more heavily for players
+  // rated off this pool; SR/economy still nudge the number but don't
+  // dominate it.
   const battingWeights = isLegacy ? ([0.8, 0.2] as const) : ([0.55, 0.45] as const);
   const bowlingWeights = isLegacy ? ([0.35, 0.65] as const) : ([0.5, 0.5] as const);
 
@@ -334,17 +336,15 @@ function transformOne(m: Metrics, norms: PoolNorms, legacyNorms: PoolNorms): Gen
   const rarityTier: RarityTier =
     overallProxy >= 80 ? "legendary" : overallProxy >= 68 ? "rare" : overallProxy >= 50 ? "uncommon" : "common";
 
-  // Legacy legends are represented at a career-prime age, not their real
-  // present-day chronological age (nobody wants to draft a 77-year-old
-  // "finisher") — their real dateOfBirth would otherwise leak straight
-  // through into a nonsensical in-game age.
-  const age = isLegacy ? 31 : computeAge(raw.dateOfBirth);
-  const currentTeam = isLegacy ? `${raw.country} Legends` : `${raw.country} National Team`;
-  const tags = isLegacy
-    ? ["all-time-great", "real-player", "franchise-legend"]
-    : runs > 5000
-      ? ["current-star", "real-player", "big-match-player"]
-      : ["current-star", "real-player"];
+  // The "legacy" era flag only controls which stat pool a player is rated
+  // against (see activeNorms above) — every player reaching this pipeline
+  // comes from a current squad or the curated current-stars list, so age,
+  // team, and tags always use their real, present-day values. A player with
+  // no T20 stats cached (e.g. a Test specialist without a T20 league deal)
+  // is still a current player, just rated off their ODI/Test numbers.
+  const age = computeAge(raw.dateOfBirth);
+  const currentTeam = `${raw.country} National Team`;
+  const tags = runs > 5000 ? ["current-star", "real-player", "big-match-player"] : ["current-star", "real-player"];
 
   return {
     id: `real-${raw.id.slice(0, 8)}`,
@@ -370,7 +370,17 @@ function transformOne(m: Metrics, norms: PoolNorms, legacyNorms: PoolNorms): Gen
 
 function main() {
   const files = readdirSync(CACHE_DIR).filter((f) => f.endsWith(".json"));
-  const rawPlayers: RawPlayer[] = files.map((f) => JSON.parse(readFileSync(path.join(CACHE_DIR, f), "utf8")));
+  const allRawPlayers: RawPlayer[] = files.map((f) => JSON.parse(readFileSync(path.join(CACHE_DIR, f), "utf8")));
+  // A handful of fringe squad entries (mostly newer associate-circuit
+  // leagues like MLC) come back from players_info with no role and no stats
+  // at all — nothing to ground a rating in. Rather than fabricate a
+  // default-skill filler player, skip them; "ratings built from real stats"
+  // only holds if there are real stats to build from.
+  const rawPlayers = allRawPlayers.filter((p) => p.role || (p.stats && p.stats.length > 0));
+  const skipped = allRawPlayers.length - rawPlayers.length;
+  if (skipped > 0) {
+    console.log(`Skipping ${skipped} cached player(s) with no role and no stats.`);
+  }
   const metrics = rawPlayers.map(extractMetrics);
 
   const modernMetrics = metrics.filter((m) => m.era === "modern");

@@ -27,7 +27,7 @@ const MODES: ModeDef[] = [
     id: "all-time-xi",
     name: "All-Time XI",
     description:
-      "Draft real current stars from the IPL, Big Bash, and PSL — ratings built from real stats. See if you can go 14-0.",
+      "Draft real current stars from the IPL, Big Bash, PSL, and other major leagues worldwide — ratings built from real stats. See if you can go 14-0.",
     available: true,
     gameMode: "all-time-real",
   },
