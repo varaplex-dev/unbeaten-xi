@@ -2,6 +2,15 @@ import type { PitchType, Player } from "@/lib/types";
 import { isPaceBowler, isSpinner } from "@/lib/types";
 import { OPPONENT_FRANCHISES, VENUES } from "@/lib/data/franchises";
 import { computeTeamRatings } from "@/lib/engine/teamRatings";
+import {
+  battingProfile,
+  bowlingAverageOnT20Scale,
+  bowlingSuppression,
+  economyOnT20Scale,
+  expectedRunsFromBatting,
+  hasCareerStats,
+  wicketThreat,
+} from "@/lib/engine/statsSimulation";
 import { createRng, pickN, pickRandom, pickWeighted, type RandomFn } from "@/lib/engine/rng";
 
 const SEASON_LENGTH = 14;
@@ -129,6 +138,15 @@ function simulateInningsScore(rng: RandomFn, strength: number, pitch: PitchDef, 
   return Math.max(85, Math.round(base + variance));
 }
 
+/** Same shape as simulateInningsScore, but the baseline is already a real
+ * expected-runs figure (from real batting/bowling stats), not a 0-99
+ * "strength" rating needing conversion into run units first. */
+function simulateInningsScoreFromRuns(rng: RandomFn, expectedRuns: number, pitch: PitchDef, suitability: number): number {
+  const base = expectedRuns + pitch.runsAdjustment + suitability;
+  const variance = (rng() - 0.5) * 34;
+  return Math.max(85, Math.round(base + variance));
+}
+
 function formatMargin(result: "win" | "loss", battingFirst: boolean, teamScore: number, opponentScore: number): string {
   if (battingFirst) {
     const runs = Math.abs(teamScore - opponentScore);
@@ -184,6 +202,19 @@ interface DecisionOutcome {
   resultLabel: string;
 }
 
+/** Lower economy = a better bet for both the pace-or-spin call and picking
+ * who defends the final over — real economy rate (converted onto a common
+ * T20-equivalent scale, see statsSimulation.ts) is a direct, intuitive
+ * "how many runs does this bowler leak" signal, unlike the abstract
+ * paceRating/spinRating/deathOversBowling fields it replaces here. */
+function economyOf(p: Player): number {
+  return (p.careerStats && economyOnT20Scale(p.careerStats)) ?? 9;
+}
+
+function strikeRateOf(p: Player): number {
+  return battingProfile(p).strikeRate;
+}
+
 function resolveDecisionOutcome(
   decision: MatchDecision,
   choiceId: string,
@@ -191,12 +222,26 @@ function resolveDecisionOutcome(
   impactPlayer: Player | null,
   xi: Player[]
 ): DecisionOutcome {
+  const isStatsGame = hasCareerStats(xi);
+
   if (decision.type === "pace-or-spin") {
-    const paceAvg = average(bowlers.filter(isPaceBowler).map((p) => p.paceRating));
-    const spinAvg = average(bowlers.filter(isSpinner).map((p) => p.spinRating));
-    const chosenAvg = choiceId === "pace" ? paceAvg : spinAvg;
-    const otherAvg = choiceId === "pace" ? spinAvg : paceAvg;
-    const good = chosenAvg >= otherAvg;
+    const paceGroup = bowlers.filter(isPaceBowler);
+    const spinGroup = bowlers.filter(isSpinner);
+    let good: boolean;
+    if (isStatsGame) {
+      // Lower economy wins — pick whichever attack leaks fewer runs.
+      const paceEcon = average(paceGroup.map(economyOf));
+      const spinEcon = average(spinGroup.map(economyOf));
+      const chosenEcon = choiceId === "pace" ? paceEcon : spinEcon;
+      const otherEcon = choiceId === "pace" ? spinEcon : paceEcon;
+      good = chosenEcon > 0 && (otherEcon === 0 || chosenEcon <= otherEcon);
+    } else {
+      const paceAvg = average(paceGroup.map((p) => p.paceRating));
+      const spinAvg = average(spinGroup.map((p) => p.spinRating));
+      const chosenAvg = choiceId === "pace" ? paceAvg : spinAvg;
+      const otherAvg = choiceId === "pace" ? spinAvg : paceAvg;
+      good = chosenAvg >= otherAvg;
+    }
     return {
       teamBonus: 0,
       opponentPenalty: good ? 6 : -3,
@@ -205,8 +250,14 @@ function resolveDecisionOutcome(
   }
   if (decision.type === "defend-bowler") {
     const bowler = bowlers.find((p) => p.id === choiceId);
-    const avgDeath = average(bowlers.map((p) => p.deathOversBowling));
-    const good = bowler ? bowler.deathOversBowling >= avgDeath : false;
+    let good: boolean;
+    if (isStatsGame) {
+      const avgEcon = average(bowlers.map(economyOf));
+      good = bowler ? economyOf(bowler) <= avgEcon : false;
+    } else {
+      const avgDeath = average(bowlers.map((p) => p.deathOversBowling));
+      good = bowler ? bowler.deathOversBowling >= avgDeath : false;
+    }
     return {
       teamBonus: 0,
       opponentPenalty: good ? 7 : -4,
@@ -217,9 +268,20 @@ function resolveDecisionOutcome(
   }
   // impact-player
   if (choiceId === "activate" && impactPlayer) {
-    const boost = (impactPlayer.deathOversBatting + impactPlayer.deathOversBowling) / 2;
-    const xiAvg = average(xi.map((p) => p.overallRating));
-    const good = boost > xiAvg;
+    let good: boolean;
+    if (isStatsGame) {
+      // A genuine death-overs weapon: a fast scorer, an economical bowler
+      // (or both), measured against the XI's own average on each axis.
+      const xiSrAvg = average(xi.map(strikeRateOf));
+      const xiEconAvg = average(xi.filter((p) => p.careerStats?.economyRate !== null).map(economyOf));
+      const battingEdge = strikeRateOf(impactPlayer) - xiSrAvg;
+      const bowlingEdge = impactPlayer.careerStats?.economyRate !== null ? xiEconAvg - economyOf(impactPlayer) : 0;
+      good = battingEdge > 5 || bowlingEdge > 0.3;
+    } else {
+      const boost = (impactPlayer.deathOversBatting + impactPlayer.deathOversBowling) / 2;
+      const xiAvg = average(xi.map((p) => p.overallRating));
+      good = boost > xiAvg;
+    }
     return {
       teamBonus: good ? 6 : 2,
       opponentPenalty: 0,
@@ -246,7 +308,17 @@ export function simulateSeason(
   const captain = xi.find((p) => p.id === captainId) ?? xi[0];
   const ratings = computeTeamRatings(xi, battingOrder.length ? battingOrder : xi, captain);
 
-  const topBatters = (battingOrder.length ? battingOrder : xi).slice(0, 7);
+  // Real/legend players carry real career stats — when every player in the
+  // XI has them, the match math below is driven by real batting/bowling
+  // numbers instead of the abstracted 0-99 ratings. Fictional players have
+  // no career stats, so that (now unreachable from the UI, but still
+  // intact) mode keeps running on the rating-based math unchanged.
+  const isStatsGame = hasCareerStats(xi);
+  const orderedForBatting = battingOrder.length ? battingOrder : xi;
+  const expectedRunsFor = isStatsGame ? expectedRunsFromBatting(orderedForBatting) : 0;
+  const teamWicketThreat = isStatsGame ? wicketThreat(xi) : 0;
+
+  const topBatters = orderedForBatting.slice(0, 7);
   const battingWeights = [1.3, 1.2, 1.1, 1.0, 0.9, 0.7, 0.5];
   const bowlers = xi.filter((p) => p.t20BowlingRating > 0);
 
@@ -303,25 +375,45 @@ export function simulateSeason(
     const pitch = pickRandom(rng, PITCHES);
     const suitability = pitchSuitability(pitch, xi);
 
-    const opponentStrength = 48 + rng() * 42; // 48-90 range of league opposition
     const tossWonByUser = rng() < 0.5;
     const battingFirst = tossWonByUser ? rng() < 0.55 : rng() < 0.45;
 
     const teamBonus = decisionOutcome?.teamBonus ?? 0;
     const opponentPenalty = decisionOutcome?.opponentPenalty ?? 0;
 
-    const teamScore = simulateInningsScore(rng, ratings.overallRating + teamBonus, pitch, suitability);
-    const opponentScore = simulateInningsScore(
-      rng,
-      opponentStrength - opponentPenalty,
-      pitch,
-      -suitability * 0.5
-    );
+    // teamBaseline/opponentBaseline are in the same units the tie-break
+    // below compares — run-equivalents for a stats game, 0-99 strength
+    // points for a rating-based one.
+    let teamScore: number;
+    let opponentScore: number;
+    let teamBaseline: number;
+    let opponentBaseline: number;
+    if (isStatsGame) {
+      // A league opponent's own real stats aren't modeled — just a
+      // realistic randomized T20 total — suppressed or inflated by how
+      // economical (and wicket-threatening) this XI's real bowling attack
+      // actually is.
+      const suppression = bowlingSuppression(xi) + (teamWicketThreat - 0.5) * 10;
+      // 120-210 — wide enough to overlap the full range a real T20 batting
+      // order can produce (see expectedRunsFromBatting), so even a genuinely
+      // elite user team can run into an opponent having a big night, and a
+      // weaker team can still catch a break against a modest one.
+      const opponentBaseRuns = 120 + rng() * 90;
+      teamBaseline = expectedRunsFor + teamBonus;
+      opponentBaseline = opponentBaseRuns - suppression - opponentPenalty;
+      teamScore = simulateInningsScoreFromRuns(rng, teamBaseline, pitch, suitability);
+      opponentScore = simulateInningsScoreFromRuns(rng, opponentBaseline, pitch, -suitability * 0.5);
+    } else {
+      teamBaseline = ratings.overallRating + teamBonus;
+      opponentBaseline = 48 + rng() * 42 - opponentPenalty; // 48-90 range of league opposition
+      teamScore = simulateInningsScore(rng, teamBaseline, pitch, suitability);
+      opponentScore = simulateInningsScore(rng, opponentBaseline, pitch, -suitability * 0.5);
+    }
 
     let result: "win" | "loss";
     if (teamScore === opponentScore) {
       // Super-over stand-in: nudge toward the stronger side.
-      result = ratings.overallRating + suitability + teamBonus >= opponentStrength - opponentPenalty ? "win" : "loss";
+      result = teamBaseline + suitability >= opponentBaseline ? "win" : "loss";
     } else {
       result = teamScore > opponentScore ? "win" : "loss";
     }
@@ -337,23 +429,37 @@ export function simulateSeason(
       bestChase = bestChase === null ? teamScore : Math.max(bestChase, teamScore);
     }
 
-    // Distribute this match's runs/wickets across the XI for season totals.
-    const battingWeightSum = topBatters.reduce(
-      (sum, p, i) => sum + (battingWeights[i] ?? 0.3) * (p.t20BattingRating / 100),
-      0
-    );
+    // Distribute this match's runs/wickets across the XI for season totals —
+    // weighted by real strike rate/reliability and real wicket-taking
+    // signal (inverse bowling average) for a stats game, or by the 0-99
+    // ratings otherwise.
+    const battingWeightOf = (p: Player, i: number): number => {
+      const posWeight = battingWeights[i] ?? 0.3;
+      if (isStatsGame) return posWeight * (battingProfile(p).strikeRate / 100) * battingProfile(p).reliability;
+      return posWeight * (p.t20BattingRating / 100);
+    };
+    const bowlingWeightOf = (p: Player): number => {
+      const convertedAvg = isStatsGame && p.careerStats ? bowlingAverageOnT20Scale(p.careerStats) : null;
+      if (convertedAvg !== null) {
+        // Lower average = more wickets per run conceded = higher weight.
+        return 1 / Math.max(10, convertedAvg);
+      }
+      return p.t20BowlingRating;
+    };
+
+    const battingWeightSum = topBatters.reduce((sum, p, i) => sum + battingWeightOf(p, i), 0);
     topBatters.forEach((p, i) => {
-      const weight = (battingWeights[i] ?? 0.3) * (p.t20BattingRating / 100);
+      const weight = battingWeightOf(p, i);
       const share = battingWeightSum > 0 ? weight / battingWeightSum : 1 / topBatters.length;
       const playerRuns = Math.round(teamScore * share * (0.85 + rng() * 0.3));
       runTotals.set(p.id, (runTotals.get(p.id) ?? 0) + Math.max(0, playerRuns));
     });
 
     const wicketsThisMatch = Math.min(10, Math.max(3, Math.round(4 + rng() * 6)));
-    const bowlingWeightSum = bowlers.reduce((sum, p) => sum + p.t20BowlingRating, 0);
+    const bowlingWeightSum = bowlers.reduce((sum, p) => sum + bowlingWeightOf(p), 0);
     let wicketsRemaining = wicketsThisMatch;
     bowlers.forEach((p, i) => {
-      const share = bowlingWeightSum > 0 ? p.t20BowlingRating / bowlingWeightSum : 1 / bowlers.length;
+      const share = bowlingWeightSum > 0 ? bowlingWeightOf(p) / bowlingWeightSum : 1 / bowlers.length;
       const playerWickets =
         i === bowlers.length - 1
           ? wicketsRemaining
@@ -363,7 +469,11 @@ export function simulateSeason(
     });
 
     const standoutPool = topBatters.length ? topBatters : xi;
-    const playerOfMatch = pickWeighted(rng, standoutPool, (p) => p.t20BattingRating + p.clutchRating * 0.3);
+    const playerOfMatch = pickWeighted(rng, standoutPool, (p) =>
+      isStatsGame
+        ? battingProfile(p).strikeRate * battingProfile(p).reliability
+        : p.t20BattingRating + p.clutchRating * 0.3
+    );
 
     const target = opponentScore + 1;
     const margin = formatMargin(result, battingFirst, teamScore, opponentScore);
@@ -411,9 +521,28 @@ export function simulateSeason(
     }
   });
 
-  const byOverall = [...xi].sort((a, b) => b.overallRating - a.overallRating);
-  const bestPickPlayerId = byOverall[0].id;
-  const weakestPickPlayerId = byOverall[byOverall.length - 1].id;
+  // "Best/weakest pick" is a single ranking number purely for this one
+  // callout — not shown to the user as a "rating". For a stats game it's
+  // derived straight from real career numbers (whichever discipline the
+  // player is stronger in); the fictional fallback keeps using the 0-99
+  // overallRating.
+  const pickQuality = (p: Player): number => {
+    if (!isStatsGame) return p.overallRating;
+    const cs = p.careerStats;
+    if (!cs) return 0;
+    const { strikeRate, reliability } = battingProfile(p);
+    const battingScore = cs.battingAverage !== null ? strikeRate * reliability : 0;
+    const convertedBowlingAvg = bowlingAverageOnT20Scale(cs);
+    const convertedEconomy = economyOnT20Scale(cs);
+    const bowlingScore =
+      convertedBowlingAvg !== null && convertedEconomy !== null
+        ? Math.max(0, 60 - convertedBowlingAvg) + Math.max(0, 12 - convertedEconomy) * 5
+        : 0;
+    return Math.max(battingScore, bowlingScore);
+  };
+  const byQuality = [...xi].sort((a, b) => pickQuality(b) - pickQuality(a));
+  const bestPickPlayerId = byQuality[0].id;
+  const weakestPickPlayerId = byQuality[byQuality.length - 1].id;
 
   const netRunRate =
     Math.round(((totalRunsFor - totalRunsAgainst) / (SEASON_LENGTH * 20)) * 100) / 100;

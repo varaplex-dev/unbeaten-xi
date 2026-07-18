@@ -25,7 +25,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 31.87,
+      "strikeRate": 65.51,
+      "runs": 4780,
+      "innings": 155,
+      "bowlingAverage": 43.56,
+      "economyRate": 4.59,
+      "wickets": 85
+    }
   },
   {
     "id": "real-0fc43b97",
@@ -48,7 +58,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 10.68,
+      "strikeRate": 58.55,
+      "runs": 267,
+      "innings": 51,
+      "bowlingAverage": 31.43,
+      "economyRate": 4.28,
+      "wickets": 182
+    }
   },
   {
     "id": "real-77a02164",
@@ -72,7 +92,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 35.89,
+      "strikeRate": 96.95,
+      "runs": 9619,
+      "innings": 279,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5b929269",
@@ -95,7 +125,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 4.32,
+      "strikeRate": 34.05,
+      "runs": 95,
+      "innings": 40,
+      "bowlingAverage": 21.79,
+      "economyRate": 4.15,
+      "wickets": 272
+    }
   },
   {
     "id": "real-525bbd76",
@@ -120,7 +160,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 32.02,
+      "strikeRate": 88.82,
+      "runs": 3394,
+      "innings": 122,
+      "bowlingAverage": 24.38,
+      "economyRate": 4.4,
+      "wickets": 169
+    }
   },
   {
     "id": "real-09570c09",
@@ -143,7 +193,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/09570c09-1629-40ec-a598-35f7fad55fc8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/09570c09-1629-40ec-a598-35f7fad55fc8.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 35.34,
+      "strikeRate": 80.96,
+      "runs": 4205,
+      "innings": 126,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b13dc9b4",
@@ -169,7 +229,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 39.44,
+      "strikeRate": 92.44,
+      "runs": 5088,
+      "innings": 161,
+      "bowlingAverage": 37.26,
+      "economyRate": 5.01,
+      "wickets": 133
+    }
   },
   {
     "id": "real-2ae3e8a7",
@@ -192,7 +262,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 10.04,
+      "strikeRate": 64.71,
+      "runs": 231,
+      "innings": 32,
+      "bowlingAverage": 20.36,
+      "economyRate": 3.41,
+      "wickets": 87
+    }
   },
   {
     "id": "real-1850b3bc",
@@ -215,7 +295,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/1850b3bc-003c-4f35-976d-89a2ed72dbf6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/1850b3bc-003c-4f35-976d-89a2ed72dbf6.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 10.54,
+      "strikeRate": 61.07,
+      "runs": 938,
+      "innings": 136,
+      "bowlingAverage": 30.9,
+      "economyRate": 4.31,
+      "wickets": 337
+    }
   },
   {
     "id": "real-bb245ce6",
@@ -239,7 +329,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 34.9,
+      "strikeRate": 81.13,
+      "runs": 9284,
+      "innings": 296,
+      "bowlingAverage": 39.41,
+      "economyRate": 4.87,
+      "wickets": 106
+    }
   },
   {
     "id": "real-6a44aab4",
@@ -263,7 +363,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 35.85,
+      "strikeRate": 77.91,
+      "runs": 7456,
+      "innings": 255,
+      "bowlingAverage": 47.56,
+      "economyRate": 4.79,
+      "wickets": 79
+    }
   },
   {
     "id": "real-60a9ee80",
@@ -286,7 +396,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 28.28,
+      "strikeRate": 60.88,
+      "runs": 3902,
+      "innings": 143,
+      "bowlingAverage": 52.08,
+      "economyRate": 5.13,
+      "wickets": 26
+    }
   },
   {
     "id": "real-a11b9eae",
@@ -311,7 +431,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a11b9eae-cbc3-42c6-9438-fa304b1eaba1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a11b9eae-cbc3-42c6-9438-fa304b1eaba1.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 5.64,
+      "strikeRate": 57.32,
+      "runs": 141,
+      "innings": 46,
+      "bowlingAverage": 31.73,
+      "economyRate": 5.2,
+      "wickets": 157
+    }
   },
   {
     "id": "real-d6c05a53",
@@ -334,7 +464,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 17.5,
+      "strikeRate": 69.87,
+      "runs": 385,
+      "innings": 35,
+      "bowlingAverage": 37.62,
+      "economyRate": 4.35,
+      "wickets": 55
+    }
   },
   {
     "id": "real-1726de5a",
@@ -357,7 +497,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 26.05,
+      "strikeRate": 63.91,
+      "runs": 1068,
+      "innings": 55,
+      "bowlingAverage": 94,
+      "economyRate": 5.22,
+      "wickets": 7
+    }
   },
   {
     "id": "real-f83903c4",
@@ -382,7 +532,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f83903c4-b65f-45d3-a393-bc2b64d29a23.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f83903c4-b65f-45d3-a393-bc2b64d29a23.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 17.82,
+      "strikeRate": 83.58,
+      "runs": 1176,
+      "innings": 110,
+      "bowlingAverage": 23.36,
+      "economyRate": 4.76,
+      "wickets": 380
+    }
   },
   {
     "id": "real-e8047942",
@@ -406,7 +566,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 40.17,
+      "strikeRate": 79.51,
+      "runs": 10405,
+      "innings": 289,
+      "bowlingAverage": 15.25,
+      "economyRate": 7.47,
+      "wickets": 4
+    }
   },
   {
     "id": "real-6ea758ca",
@@ -431,7 +601,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 13.68,
+      "strikeRate": 72.53,
+      "runs": 2025,
+      "innings": 220,
+      "bowlingAverage": 27.54,
+      "economyRate": 4.19,
+      "wickets": 400
+    }
   },
   {
     "id": "real-beedaf18",
@@ -454,7 +634,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 39.54,
+      "strikeRate": 81.22,
+      "runs": 1977,
+      "innings": 69,
+      "bowlingAverage": 26.25,
+      "economyRate": 3.58,
+      "wickets": 8
+    }
   },
   {
     "id": "real-dedba9af",
@@ -477,7 +667,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 9,
+      "strikeRate": 47.37,
+      "runs": 18,
+      "innings": 6,
+      "bowlingAverage": 20.67,
+      "economyRate": 3.48,
+      "wickets": 30
+    }
   },
   {
     "id": "real-7c27bf91",
@@ -500,7 +700,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 6.98,
+      "strikeRate": 71.18,
+      "runs": 321,
+      "innings": 79,
+      "bowlingAverage": 30.48,
+      "economyRate": 3.84,
+      "wickets": 227
+    }
   },
   {
     "id": "real-0656c53e",
@@ -523,7 +733,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 10.65,
+      "strikeRate": 64.87,
+      "runs": 639,
+      "innings": 96,
+      "bowlingAverage": 24.13,
+      "economyRate": 3.48,
+      "wickets": 225
+    }
   },
   {
     "id": "real-6754503c",
@@ -547,7 +767,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 40.81,
+      "strikeRate": 77.74,
+      "runs": 5346,
+      "innings": 182,
+      "bowlingAverage": 58.67,
+      "economyRate": 5.32,
+      "wickets": 12
+    }
   },
   {
     "id": "real-1103030b",
@@ -570,7 +800,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 32.71,
+      "strikeRate": 70.28,
+      "runs": 3860,
+      "innings": 133,
+      "bowlingAverage": 24.8,
+      "economyRate": 4.28,
+      "wickets": 5
+    }
   },
   {
     "id": "real-478dadc2",
@@ -594,7 +834,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 41.38,
+      "strikeRate": 63.09,
+      "runs": 8648,
+      "innings": 237,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-95da7983",
@@ -618,7 +868,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 40.71,
+      "strikeRate": 72.04,
+      "runs": 6798,
+      "innings": 185,
+      "bowlingAverage": 71,
+      "economyRate": 2.44,
+      "wickets": 2
+    }
   },
   {
     "id": "real-964ec028",
@@ -642,7 +902,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/964ec028-1f17-4727-830c-78617b8de76b.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/964ec028-1f17-4727-830c-78617b8de76b.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 39.68,
+      "strikeRate": 85.25,
+      "runs": 5238,
+      "innings": 143,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4fa3b7a3",
@@ -665,7 +935,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 24.6,
+      "strikeRate": 77.15,
+      "runs": 861,
+      "innings": 43,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-021f619b",
@@ -688,7 +968,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 3.83,
+      "strikeRate": 48.73,
+      "runs": 115,
+      "innings": 68,
+      "bowlingAverage": 22.02,
+      "economyRate": 3.88,
+      "wickets": 381
+    }
   },
   {
     "id": "real-10904b11",
@@ -712,7 +1002,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 45.04,
+      "strikeRate": 64.92,
+      "runs": 5134,
+      "innings": 127,
+      "bowlingAverage": 45,
+      "economyRate": 4.5,
+      "wickets": 1
+    }
   },
   {
     "id": "real-a460e1d6",
@@ -735,7 +1035,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 28.96,
+      "strikeRate": 73.9,
+      "runs": 2809,
+      "innings": 133,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9e93e3e6",
@@ -761,7 +1071,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 38.65,
+      "strikeRate": 76.47,
+      "runs": 5565,
+      "innings": 175,
+      "bowlingAverage": 34.79,
+      "economyRate": 4.44,
+      "wickets": 114
+    }
   },
   {
     "id": "real-8ccbcb5c",
@@ -786,7 +1106,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/8ccbcb5c-1031-442c-b0ee-153a2e49c44d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/8ccbcb5c-1031-442c-b0ee-153a2e49c44d.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 13.3,
+      "strikeRate": 81.06,
+      "runs": 1237,
+      "innings": 128,
+      "bowlingAverage": 33.36,
+      "economyRate": 4.31,
+      "wickets": 269
+    }
   },
   {
     "id": "real-68d29b2c",
@@ -809,7 +1139,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 29.37,
+      "strikeRate": 57.57,
+      "runs": 3789,
+      "innings": 168,
+      "bowlingAverage": 23.5,
+      "economyRate": 4.7,
+      "wickets": 6
+    }
   },
   {
     "id": "real-d6e85ec7",
@@ -833,7 +1173,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 35.81,
+      "strikeRate": 83.26,
+      "runs": 8094,
+      "innings": 240,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-77b581e6",
@@ -857,7 +1207,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 37.87,
+      "strikeRate": 77.16,
+      "runs": 5416,
+      "innings": 157,
+      "bowlingAverage": 14.67,
+      "economyRate": 6,
+      "wickets": 6
+    }
   },
   {
     "id": "real-abedb8ad",
@@ -882,7 +1242,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 33.41,
+      "strikeRate": 72.65,
+      "runs": 3709,
+      "innings": 151,
+      "bowlingAverage": 26.62,
+      "economyRate": 3.9,
+      "wickets": 182
+    }
   },
   {
     "id": "real-1b3f159c",
@@ -906,7 +1276,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 39.53,
+      "strikeRate": 74.24,
+      "runs": 11739,
+      "innings": 350,
+      "bowlingAverage": 21.33,
+      "economyRate": 6.62,
+      "wickets": 3
+    }
   },
   {
     "id": "real-b8cd771a",
@@ -931,7 +1311,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b8cd771a-69f5-4f8d-a143-fe7bca3fbadb.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b8cd771a-69f5-4f8d-a143-fe7bca3fbadb.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 23.39,
+      "strikeRate": 79.55,
+      "runs": 1544,
+      "innings": 87,
+      "bowlingAverage": 29.73,
+      "economyRate": 5.27,
+      "wickets": 173
+    }
   },
   {
     "id": "real-fcea2e94",
@@ -957,7 +1347,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 44.36,
+      "strikeRate": 72.89,
+      "runs": 11579,
+      "innings": 314,
+      "bowlingAverage": 31.79,
+      "economyRate": 4.84,
+      "wickets": 273
+    }
   },
   {
     "id": "real-e3f08d60",
@@ -980,7 +1380,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 12.57,
+      "strikeRate": 78.53,
+      "runs": 289,
+      "innings": 39,
+      "bowlingAverage": 25.43,
+      "economyRate": 4.21,
+      "wickets": 142
+    }
   },
   {
     "id": "real-9ef90810",
@@ -1004,7 +1414,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 41.47,
+      "strikeRate": 67.01,
+      "runs": 7381,
+      "innings": 218,
+      "bowlingAverage": 42.43,
+      "economyRate": 4.64,
+      "wickets": 7
+    }
   },
   {
     "id": "real-918a2397",
@@ -1027,7 +1447,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 23.15,
+      "strikeRate": 67.51,
+      "runs": 1945,
+      "innings": 120,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-903cf952",
@@ -1050,7 +1480,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 9.19,
+      "strikeRate": 66.39,
+      "runs": 239,
+      "innings": 41,
+      "bowlingAverage": 18.85,
+      "economyRate": 3.1,
+      "wickets": 146
+    }
   },
   {
     "id": "real-eca5b568",
@@ -1074,7 +1514,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 35.12,
+      "strikeRate": 80.9,
+      "runs": 5935,
+      "innings": 220,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d71d4326",
@@ -1097,7 +1547,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 32,
+      "strikeRate": 88.89,
+      "runs": 160,
+      "innings": 7,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-23de89ca",
@@ -1120,7 +1580,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 40.73,
+      "strikeRate": 86.58,
+      "runs": 4440,
+      "innings": 125,
+      "bowlingAverage": 52.86,
+      "economyRate": 5.55,
+      "wickets": 7
+    }
   },
   {
     "id": "real-b28140d6",
@@ -1143,7 +1613,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 22.63,
+      "strikeRate": 65.03,
+      "runs": 1222,
+      "innings": 87,
+      "bowlingAverage": 36.22,
+      "economyRate": 4.28,
+      "wickets": 138
+    }
   },
   {
     "id": "real-b21c9c6f",
@@ -1168,7 +1648,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 41.1,
+      "strikeRate": 89.92,
+      "runs": 3576,
+      "innings": 137,
+      "bowlingAverage": 29.95,
+      "economyRate": 4.7,
+      "wickets": 192
+    }
   },
   {
     "id": "real-7dcb8c66",
@@ -1193,7 +1683,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 28.3,
+      "strikeRate": 54.89,
+      "runs": 1415,
+      "innings": 64,
+      "bowlingAverage": 25.49,
+      "economyRate": 4.66,
+      "wickets": 41
+    }
   },
   {
     "id": "real-983b43f5",
@@ -1216,7 +1716,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 8.65,
+      "strikeRate": 66.78,
+      "runs": 199,
+      "innings": 47,
+      "bowlingAverage": 24.66,
+      "economyRate": 4.53,
+      "wickets": 266
+    }
   },
   {
     "id": "real-15af8426",
@@ -1239,7 +1749,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 14.92,
+      "strikeRate": 76.65,
+      "runs": 955,
+      "innings": 83,
+      "bowlingAverage": 26.96,
+      "economyRate": 3.54,
+      "wickets": 157
+    }
   },
   {
     "id": "real-cd1ea778",
@@ -1262,7 +1782,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/cd1ea778-feda-4013-899a-0f656fe30216.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/cd1ea778-feda-4013-899a-0f656fe30216.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 37.37,
+      "strikeRate": 85.22,
+      "runs": 4335,
+      "innings": 122,
+      "bowlingAverage": 54.75,
+      "economyRate": 5.66,
+      "wickets": 4
+    }
   },
   {
     "id": "real-0d267d2d",
@@ -1285,7 +1815,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 28.57,
+      "strikeRate": 84.77,
+      "runs": 4686,
+      "innings": 221,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e0209e22",
@@ -1309,7 +1849,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 39.35,
+      "strikeRate": 76.9,
+      "runs": 8500,
+      "innings": 236,
+      "bowlingAverage": 34.56,
+      "economyRate": 4.78,
+      "wickets": 85
+    }
   },
   {
     "id": "real-cd6292e8",
@@ -1335,7 +1885,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 43.81,
+      "strikeRate": 78.96,
+      "runs": 6133,
+      "innings": 155,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c1bc229e",
@@ -1360,7 +1920,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 4.25,
+      "strikeRate": 56.67,
+      "runs": 17,
+      "innings": 6,
+      "bowlingAverage": 36,
+      "economyRate": 5.29,
+      "wickets": 32
+    }
   },
   {
     "id": "real-f883dbac",
@@ -1384,7 +1954,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 53.17,
+      "strikeRate": 74.16,
+      "runs": 6912,
+      "innings": 196,
+      "bowlingAverage": 45.97,
+      "economyRate": 5.05,
+      "wickets": 36
+    }
   },
   {
     "id": "real-4e03e00c",
@@ -1408,7 +1988,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4e03e00c-3bb1-45bf-a26e-a025157b1a89.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4e03e00c-3bb1-45bf-a26e-a025157b1a89.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 44.59,
+      "strikeRate": 78.99,
+      "runs": 7981,
+      "innings": 223,
+      "bowlingAverage": 37.65,
+      "economyRate": 4.98,
+      "wickets": 57
+    }
   },
   {
     "id": "real-695c2e35",
@@ -1431,7 +2021,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 9.1,
+      "strikeRate": 74.8,
+      "runs": 282,
+      "innings": 42,
+      "bowlingAverage": 21.37,
+      "economyRate": 3.33,
+      "wickets": 142
+    }
   },
   {
     "id": "real-71aa6395",
@@ -1454,7 +2054,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 27.15,
+      "strikeRate": 68.39,
+      "runs": 1982,
+      "innings": 83,
+      "bowlingAverage": 40.56,
+      "economyRate": 4.89,
+      "wickets": 16
+    }
   },
   {
     "id": "real-714e201c",
@@ -1477,7 +2087,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 23,
+      "strikeRate": 81.3,
+      "runs": 3266,
+      "innings": 183,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b6e7aa41",
@@ -1501,7 +2121,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b6e7aa41-b0bb-4b0f-8f59-59f729283be5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b6e7aa41-b0bb-4b0f-8f59-59f729283be5.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 50.58,
+      "strikeRate": 87.56,
+      "runs": 10773,
+      "innings": 297,
+      "bowlingAverage": 31,
+      "economyRate": 5.17,
+      "wickets": 1
+    }
   },
   {
     "id": "real-c455c3bf",
@@ -1524,7 +2154,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 9.5,
+      "strikeRate": 57.16,
+      "runs": 399,
+      "innings": 76,
+      "bowlingAverage": 33.3,
+      "economyRate": 4.26,
+      "wickets": 161
+    }
   },
   {
     "id": "real-64c40db8",
@@ -1547,7 +2187,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 6.81,
+      "strikeRate": 77.56,
+      "runs": 674,
+      "innings": 162,
+      "bowlingAverage": 23.08,
+      "economyRate": 3.93,
+      "wickets": 534
+    }
   },
   {
     "id": "real-fd2cd974",
@@ -1572,7 +2222,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 8.6,
+      "strikeRate": 63.35,
+      "runs": 344,
+      "innings": 64,
+      "bowlingAverage": 39.64,
+      "economyRate": 4.53,
+      "wickets": 109
+    }
   },
   {
     "id": "real-ca0203eb",
@@ -1596,7 +2256,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ca0203eb-78b9-407d-963b-5d40f6588b80.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ca0203eb-78b9-407d-963b-5d40f6588b80.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 39.17,
+      "strikeRate": 71.24,
+      "runs": 10889,
+      "innings": 318,
+      "bowlingAverage": 42.5,
+      "economyRate": 5.48,
+      "wickets": 4
+    }
   },
   {
     "id": "real-4d0f667b",
@@ -1619,7 +2289,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12,
+      "strikeRate": 82.76,
+      "runs": 24,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-959ae98a",
@@ -1643,7 +2323,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 33.23,
+      "strikeRate": 63.75,
+      "runs": 6248,
+      "innings": 217,
+      "bowlingAverage": 46,
+      "economyRate": 4.76,
+      "wickets": 1
+    }
   },
   {
     "id": "real-d603cef8",
@@ -1667,7 +2357,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d603cef8-15ef-4523-a003-889e765b31d8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d603cef8-15ef-4523-a003-889e765b31d8.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 42.04,
+      "strikeRate": 80.39,
+      "runs": 13704,
+      "innings": 365,
+      "bowlingAverage": 34.67,
+      "economyRate": 4.16,
+      "wickets": 3
+    }
   },
   {
     "id": "real-0bb623b7",
@@ -1690,7 +2390,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 22.22,
+      "strikeRate": 77.7,
+      "runs": 3711,
+      "innings": 181,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-265fb213",
@@ -1714,7 +2424,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 28.84,
+      "strikeRate": 60.59,
+      "runs": 5162,
+      "innings": 198,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-64ab5424",
@@ -1738,7 +2458,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/64ab5424-779f-44ad-8135-21097f6eb83c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/64ab5424-779f-44ad-8135-21097f6eb83c.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 44.83,
+      "strikeRate": 86.24,
+      "runs": 18426,
+      "innings": 452,
+      "bowlingAverage": 44.48,
+      "economyRate": 5.1,
+      "wickets": 154
+    }
   },
   {
     "id": "real-38c3e04f",
@@ -1764,7 +2494,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 32.13,
+      "strikeRate": 91.22,
+      "runs": 13430,
+      "innings": 433,
+      "bowlingAverage": 36.75,
+      "economyRate": 4.79,
+      "wickets": 323
+    }
   },
   {
     "id": "real-a53b7dc0",
@@ -1787,7 +2527,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 13.05,
+      "strikeRate": 72.05,
+      "runs": 1018,
+      "innings": 107,
+      "bowlingAverage": 25.74,
+      "economyRate": 4.25,
+      "wickets": 293
+    }
   },
   {
     "id": "real-48badd33",
@@ -1812,7 +2562,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 26.46,
+      "strikeRate": 86.7,
+      "runs": 3519,
+      "innings": 205,
+      "bowlingAverage": 24.51,
+      "economyRate": 3.68,
+      "wickets": 393
+    }
   },
   {
     "id": "real-3a02b4d7",
@@ -1835,7 +2595,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 1,
+      "strikeRate": 50,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": 39.29,
+      "economyRate": 4.74,
+      "wickets": 7
+    }
   },
   {
     "id": "real-bbf6c9b2",
@@ -1859,7 +2629,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/bbf6c9b2-5744-43d7-b1ec-ef7efa23508a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/bbf6c9b2-5744-43d7-b1ec-ef7efa23508a.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 40.73,
+      "strikeRate": 73.71,
+      "runs": 11363,
+      "innings": 300,
+      "bowlingAverage": 38.49,
+      "economyRate": 5.06,
+      "wickets": 100
+    }
   },
   {
     "id": "real-99ab47f9",
@@ -1884,7 +2664,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 8.27,
+      "strikeRate": 64.54,
+      "runs": 91,
+      "innings": 25,
+      "bowlingAverage": 32.64,
+      "economyRate": 5.13,
+      "wickets": 76
+    }
   },
   {
     "id": "real-74ad4c8f",
@@ -1908,7 +2698,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 32.62,
+      "strikeRate": 75.91,
+      "runs": 7569,
+      "innings": 288,
+      "bowlingAverage": 34.67,
+      "economyRate": 4.57,
+      "wickets": 195
+    }
   },
   {
     "id": "real-b71ec2b3",
@@ -1933,7 +2733,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 17.31,
+      "strikeRate": 72.99,
+      "runs": 1627,
+      "innings": 111,
+      "bowlingAverage": 31.91,
+      "economyRate": 4.71,
+      "wickets": 151
+    }
   },
   {
     "id": "real-e20a6a1d",
@@ -1957,7 +2767,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e20a6a1d-4ad7-478b-aff8-bf6c6b0ea67f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e20a6a1d-4ad7-478b-aff8-bf6c6b0ea67f.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 35.06,
+      "strikeRate": 104.34,
+      "runs": 8273,
+      "innings": 245,
+      "bowlingAverage": 40.14,
+      "economyRate": 5.26,
+      "wickets": 96
+    }
   },
   {
     "id": "real-1cd136ee",
@@ -1981,7 +2801,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "hall-of-fame"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 47,
+      "strikeRate": 90.2,
+      "runs": 6721,
+      "innings": 167,
+      "bowlingAverage": 35.83,
+      "economyRate": 4.5,
+      "wickets": 118
+    }
   },
   {
     "id": "real-87d3ee92",
@@ -2004,7 +2834,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/87d3ee92-f7da-481b-93b3-3747611182a0.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/87d3ee92-f7da-481b-93b3-3747611182a0.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 30.76,
+      "strikeRate": 71.24,
+      "runs": 2338,
+      "innings": 83,
+      "bowlingAverage": 63,
+      "economyRate": 2.33,
+      "wickets": 2
+    }
   },
   {
     "id": "real-9c507c0a",
@@ -2027,7 +2867,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 10.31,
+      "strikeRate": 67.06,
+      "runs": 969,
+      "innings": 139,
+      "bowlingAverage": 23.84,
+      "economyRate": 4.69,
+      "wickets": 416
+    }
   },
   {
     "id": "real-a8dfc4ca",
@@ -2052,7 +2902,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 16.52,
+      "strikeRate": 88.33,
+      "runs": 3717,
+      "innings": 280,
+      "bowlingAverage": 23.53,
+      "economyRate": 3.9,
+      "wickets": 502
+    }
   },
   {
     "id": "real-5824facb",
@@ -2075,7 +2935,17 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-469321f1",
@@ -2100,6 +2970,16 @@ export const LEGEND_PLAYER_SPECS: PlayerSpec[] = [
       "legend",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/469321f1-c47f-4a86-83ca-a3110745fb69.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/469321f1-c47f-4a86-83ca-a3110745fb69.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 12,
+      "strikeRate": 73.47,
+      "runs": 792,
+      "innings": 101,
+      "bowlingAverage": 29.44,
+      "economyRate": 4.93,
+      "wickets": 282
+    }
   }
 ];

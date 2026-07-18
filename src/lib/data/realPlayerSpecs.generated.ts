@@ -25,7 +25,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6a7d9525-2310-408b-8167-a6a675ba3ee4.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6a7d9525-2310-408b-8167-a6a675ba3ee4.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 24.89,
+      "strikeRate": 128.2,
+      "runs": 2091,
+      "innings": 90,
+      "bowlingAverage": 67,
+      "economyRate": 9.35,
+      "wickets": 1
+    }
   },
   {
     "id": "real-230b275d",
@@ -49,7 +59,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "big-match-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 39.71,
+      "strikeRate": 151.69,
+      "runs": 5162,
+      "innings": 170,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-83fe6ab6",
@@ -74,7 +94,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/83fe6ab6-d63c-420e-9416-a93d59a9a964.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/83fe6ab6-d63c-420e-9416-a93d59a9a964.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 25.48,
+      "strikeRate": 155.13,
+      "runs": 1376,
+      "innings": 61,
+      "bowlingAverage": 35.36,
+      "economyRate": 8.64,
+      "wickets": 11
+    }
   },
   {
     "id": "real-1971093d",
@@ -97,7 +127,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/1971093d-b87b-43db-8b1d-b2dcc8e68617.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/1971093d-b87b-43db-8b1d-b2dcc8e68617.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 3,
+      "strikeRate": 62.5,
+      "runs": 15,
+      "innings": 5,
+      "bowlingAverage": 19.24,
+      "economyRate": 7.99,
+      "wickets": 29
+    }
   },
   {
     "id": "real-a2e40330",
@@ -120,7 +160,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a2e40330-ea26-4ad7-a21d-f27a00ba3228.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a2e40330-ea26-4ad7-a21d-f27a00ba3228.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 11,
+      "strikeRate": 137.5,
+      "runs": 22,
+      "innings": 2,
+      "bowlingAverage": 45.5,
+      "economyRate": 9.1,
+      "wickets": 2
+    }
   },
   {
     "id": "real-3fef81b0",
@@ -143,7 +193,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3fef81b0-c1e9-45eb-954f-519f3b33d640.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/3fef81b0-c1e9-45eb-954f-519f3b33d640.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 30.15,
+      "strikeRate": 129.73,
+      "runs": 995,
+      "innings": 42,
+      "bowlingAverage": 86,
+      "economyRate": 8.53,
+      "wickets": 2
+    }
   },
   {
     "id": "real-cdc2646c",
@@ -166,7 +226,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/cdc2646c-1fe7-4bc2-b26e-42453f45a212.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/cdc2646c-1fe7-4bc2-b26e-42453f45a212.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 30.14,
+      "strikeRate": 123.42,
+      "runs": 4642,
+      "innings": 171,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7d053d4e",
@@ -191,7 +261,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7d053d4e-a735-4c96-bb98-4098dee523df.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7d053d4e-a735-4c96-bb98-4098dee523df.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 160,
+      "runs": 16,
+      "innings": 1,
+      "bowlingAverage": 26.98,
+      "economyRate": 7.16,
+      "wickets": 60
+    }
   },
   {
     "id": "real-7a5dc10f",
@@ -214,7 +294,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7a5dc10f-09d7-40f2-b412-f042fff54e89.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7a5dc10f-09d7-40f2-b412-f042fff54e89.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 16,
+      "strikeRate": 110.34,
+      "runs": 32,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1f7439f5",
@@ -237,7 +327,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/1f7439f5-c910-47df-9e1a-5d04e5b0253f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/1f7439f5-c910-47df-9e1a-5d04e5b0253f.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 24.67,
+      "strikeRate": 125.42,
+      "runs": 148,
+      "innings": 6,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2ff6091e",
@@ -260,7 +360,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2ff6091e-f412-422d-a5fe-3d8d1a3dd673.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2ff6091e-f412-422d-a5fe-3d8d1a3dd673.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 27,
+      "strikeRate": 84.38,
+      "runs": 27,
+      "innings": 7,
+      "bowlingAverage": 32.9,
+      "economyRate": 9.55,
+      "wickets": 21
+    }
   },
   {
     "id": "real-0e74625b",
@@ -283,7 +393,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-effbb8f2",
@@ -308,7 +428,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/effbb8f2-affa-4d18-93c5-285b243f88d0.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/effbb8f2-affa-4d18-93c5-285b243f88d0.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 29.22,
+      "strikeRate": 174.93,
+      "runs": 2484,
+      "innings": 105,
+      "bowlingAverage": 23.01,
+      "economyRate": 9.36,
+      "wickets": 115
+    }
   },
   {
     "id": "real-0a8d5712",
@@ -333,7 +463,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0a8d5712-5795-4217-9717-531dc0088ddd.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0a8d5712-5795-4217-9717-531dc0088ddd.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10.11,
+      "strikeRate": 119.74,
+      "runs": 91,
+      "innings": 13,
+      "bowlingAverage": 23.31,
+      "economyRate": 8.59,
+      "wickets": 42
+    }
   },
   {
     "id": "real-a8c7ce67",
@@ -358,7 +498,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a8c7ce67-5862-4acb-9297-97eafd0ea3d5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a8c7ce67-5862-4acb-9297-97eafd0ea3d5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8.17,
+      "strikeRate": 100,
+      "runs": 49,
+      "innings": 15,
+      "bowlingAverage": 26.23,
+      "economyRate": 8.96,
+      "wickets": 60
+    }
   },
   {
     "id": "real-607ff10c",
@@ -383,7 +533,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/607ff10c-5619-411d-a822-06ba28992230.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/607ff10c-5619-411d-a822-06ba28992230.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 5.8,
+      "strikeRate": 72.5,
+      "runs": 29,
+      "innings": 12,
+      "bowlingAverage": 27,
+      "economyRate": 9.03,
+      "wickets": 76
+    }
   },
   {
     "id": "real-db17660e",
@@ -406,7 +566,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/db17660e-4add-4123-b963-4215bf4e8660.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/db17660e-4add-4123-b963-4215bf4e8660.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11.62,
+      "strikeRate": 100.36,
+      "runs": 279,
+      "innings": 29,
+      "bowlingAverage": 23.04,
+      "economyRate": 6.5,
+      "wickets": 49
+    }
   },
   {
     "id": "real-da72c2df",
@@ -429,7 +599,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/da72c2df-234d-458f-9335-d65d5b2600b2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/da72c2df-234d-458f-9335-d65d5b2600b2.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 15.18,
+      "strikeRate": 133.87,
+      "runs": 577,
+      "innings": 51,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-332200ad",
@@ -452,7 +632,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/332200ad-d1f8-4035-95c5-b33bd1c9a939.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/332200ad-d1f8-4035-95c5-b33bd1c9a939.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 20.5,
+      "strikeRate": 164,
+      "runs": 41,
+      "innings": 10,
+      "bowlingAverage": 26.68,
+      "economyRate": 8.87,
+      "wickets": 74
+    }
   },
   {
     "id": "real-670ae8ac",
@@ -477,7 +667,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/670ae8ac-4fe9-4f0c-84ee-320b13039f34.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/670ae8ac-4fe9-4f0c-84ee-320b13039f34.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 21.47,
+      "strikeRate": 130.88,
+      "runs": 1653,
+      "innings": 113,
+      "bowlingAverage": 30.55,
+      "economyRate": 7.28,
+      "wickets": 123
+    }
   },
   {
     "id": "real-45afdbc4",
@@ -500,7 +700,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 23.2,
+      "strikeRate": 65.54,
+      "runs": 116,
+      "innings": 5,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7c341a4c",
@@ -525,7 +735,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7c341a4c-d3fa-4054-b95d-f75f94eee00c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7c341a4c-d3fa-4054-b95d-f75f94eee00c.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10.5,
+      "strikeRate": 127.27,
+      "runs": 42,
+      "innings": 4,
+      "bowlingAverage": 46.5,
+      "economyRate": 8.86,
+      "wickets": 4
+    }
   },
   {
     "id": "real-4ffc5d94",
@@ -548,7 +768,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4ffc5d94-5a5f-4489-a09f-60e22090c810.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4ffc5d94-5a5f-4489-a09f-60e22090c810.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 39.84,
+      "strikeRate": 129.22,
+      "runs": 4223,
+      "innings": 121,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fc09ce60",
@@ -573,7 +803,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/fc09ce60-e7e4-44e5-9a53-67a617560161.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/fc09ce60-e7e4-44e5-9a53-67a617560161.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 24.61,
+      "strikeRate": 133.95,
+      "runs": 935,
+      "innings": 44,
+      "bowlingAverage": 35.43,
+      "economyRate": 8.64,
+      "wickets": 28
+    }
   },
   {
     "id": "real-3f3ecf51",
@@ -598,7 +838,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3f3ecf51-8411-4046-9477-18c0fe3da6ac.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/3f3ecf51-8411-4046-9477-18c0fe3da6ac.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8.74,
+      "strikeRate": 93.87,
+      "runs": 306,
+      "innings": 68,
+      "bowlingAverage": 27.23,
+      "economyRate": 7.56,
+      "wickets": 181
+    }
   },
   {
     "id": "real-444e0a55",
@@ -621,7 +871,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/444e0a55-ec85-4ee1-9557-f1a51a96a7d5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/444e0a55-ec85-4ee1-9557-f1a51a96a7d5.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 26.3,
+      "strikeRate": 134.08,
+      "runs": 1499,
+      "innings": 61,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-72b0447f",
@@ -644,7 +904,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 27.69,
+      "strikeRate": 131.75,
+      "runs": 2880,
+      "innings": 109,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-abe58090",
@@ -669,7 +939,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/abe58090-e933-4888-8538-64f4611ee259.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/abe58090-e933-4888-8538-64f4611ee259.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 41.59,
+      "strikeRate": 153.7,
+      "runs": 707,
+      "innings": 28,
+      "bowlingAverage": 41.5,
+      "economyRate": 9.08,
+      "wickets": 16
+    }
   },
   {
     "id": "real-4e7ed023",
@@ -694,7 +974,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4e7ed023-b70d-4956-8662-42cc89bce880.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4e7ed023-b70d-4956-8662-42cc89bce880.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 24.45,
+      "strikeRate": 128.56,
+      "runs": 1247,
+      "innings": 57,
+      "bowlingAverage": 22.17,
+      "economyRate": 8.23,
+      "wickets": 6
+    }
   },
   {
     "id": "real-46f42ff2",
@@ -719,7 +1009,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/46f42ff2-6167-4b13-9e47-030ad9e5bfaf.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/46f42ff2-6167-4b13-9e47-030ad9e5bfaf.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 13,
+      "strikeRate": 101.3,
+      "runs": 78,
+      "innings": 12,
+      "bowlingAverage": 21.93,
+      "economyRate": 8.97,
+      "wickets": 30
+    }
   },
   {
     "id": "real-0574f209",
@@ -744,7 +1044,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0574f209-86cc-4acf-a593-8748ebdafd6c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0574f209-86cc-4acf-a593-8748ebdafd6c.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 18.94,
+      "strikeRate": 134.67,
+      "runs": 303,
+      "innings": 21,
+      "bowlingAverage": 53.17,
+      "economyRate": 8.86,
+      "wickets": 6
+    }
   },
   {
     "id": "real-268905f4",
@@ -767,7 +1077,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/268905f4-059e-405f-8cc8-5a824814dcbe.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/268905f4-059e-405f-8cc8-5a824814dcbe.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 14.75,
+      "strikeRate": 125.53,
+      "runs": 177,
+      "innings": 12,
+      "bowlingAverage": 46.5,
+      "economyRate": 9.46,
+      "wickets": 4
+    }
   },
   {
     "id": "real-f75212f8",
@@ -792,7 +1112,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f75212f8-37fb-4cf0-8f37-d681b4cb66b2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f75212f8-37fb-4cf0-8f37-d681b4cb66b2.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 27,
+      "strikeRate": 131.46,
+      "runs": 351,
+      "innings": 15,
+      "bowlingAverage": 97,
+      "economyRate": 12.12,
+      "wickets": 1
+    }
   },
   {
     "id": "real-9f2db0cf",
@@ -817,7 +1147,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9f2db0cf-2b7a-4722-9134-211f612102b9.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9f2db0cf-2b7a-4722-9134-211f612102b9.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 13,
+      "strikeRate": 100,
+      "runs": 26,
+      "innings": 3,
+      "bowlingAverage": 21.79,
+      "economyRate": 8.26,
+      "wickets": 33
+    }
   },
   {
     "id": "real-2f50df2f",
@@ -840,7 +1180,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2f50df2f-809d-44f9-b5be-ccb846515861.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2f50df2f-809d-44f9-b5be-ccb846515861.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 36.1,
+      "strikeRate": 139.24,
+      "runs": 2924,
+      "innings": 124,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-08da6d78",
@@ -864,7 +1214,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "big-match-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/08da6d78-2316-454b-a7f4-40479bdd9b27.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/08da6d78-2316-454b-a7f4-40479bdd9b27.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 40.52,
+      "strikeRate": 139.77,
+      "runs": 6565,
+      "innings": 184,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-54e5a9b9",
@@ -889,7 +1249,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/54e5a9b9-9b8d-460c-bf6e-8488f0e229f8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/54e5a9b9-9b8d-460c-bf6e-8488f0e229f8.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 26.5,
+      "strikeRate": 85.48,
+      "runs": 53,
+      "innings": 5,
+      "bowlingAverage": 45.33,
+      "economyRate": 7.56,
+      "wickets": 6
+    }
   },
   {
     "id": "real-0ec8da92",
@@ -912,7 +1282,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0ec8da92-1980-4a0e-9059-d0c4d3947ab8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0ec8da92-1980-4a0e-9059-d0c4d3947ab8.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 26,
+      "strikeRate": 100,
+      "runs": 26,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-237a1ef2",
@@ -935,7 +1315,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/237a1ef2-1eae-4877-8b94-d20d84faf635.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/237a1ef2-1eae-4877-8b94-d20d84faf635.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 11.43,
+      "strikeRate": 135.59,
+      "runs": 80,
+      "innings": 13,
+      "bowlingAverage": 28.84,
+      "economyRate": 7.98,
+      "wickets": 77
+    }
   },
   {
     "id": "real-47109b0d",
@@ -960,7 +1350,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/47109b0d-51f0-4a49-931e-e31bf77e69f5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/47109b0d-51f0-4a49-931e-e31bf77e69f5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 18.31,
+      "strikeRate": 129.53,
+      "runs": 1465,
+      "innings": 96,
+      "bowlingAverage": 53.1,
+      "economyRate": 8.54,
+      "wickets": 10
+    }
   },
   {
     "id": "real-74c6584a",
@@ -983,7 +1383,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/74c6584a-45a5-4781-a5e7-c0c9340da954.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/74c6584a-45a5-4781-a5e7-c0c9340da954.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 25.15,
+      "strikeRate": 123.14,
+      "runs": 1559,
+      "innings": 64,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-eac0032b",
@@ -1006,7 +1416,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/eac0032b-055a-497b-9d4e-f54008414515.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/eac0032b-055a-497b-9d4e-f54008414515.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 48.63,
+      "strikeRate": 141.28,
+      "runs": 924,
+      "innings": 22,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b3d830d8",
@@ -1029,7 +1449,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b3d830d8-5349-407a-bc51-59f2d15a92de.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b3d830d8-5349-407a-bc51-59f2d15a92de.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 26.32,
+      "strikeRate": 135.36,
+      "runs": 4842,
+      "innings": 234,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-75fb3972",
@@ -1052,7 +1482,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/75fb3972-0436-40ee-bf45-73b1dba7b53e.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/75fb3972-0436-40ee-bf45-73b1dba7b53e.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10.75,
+      "strikeRate": 153.57,
+      "runs": 43,
+      "innings": 8,
+      "bowlingAverage": 48,
+      "economyRate": 9.19,
+      "wickets": 9
+    }
   },
   {
     "id": "real-eccad6b2",
@@ -1075,7 +1515,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/eccad6b2-7fb5-4be4-a6a1-aeaadbd9f85b.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/eccad6b2-7fb5-4be4-a6a1-aeaadbd9f85b.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 27.25,
+      "strikeRate": 137.11,
+      "runs": 654,
+      "innings": 26,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9d0c0867",
@@ -1100,7 +1550,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9d0c0867-9f62-4141-8555-ecd506b20719.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9d0c0867-9f62-4141-8555-ecd506b20719.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 7,
+      "strikeRate": 73.68,
+      "runs": 14,
+      "innings": 4,
+      "bowlingAverage": 68,
+      "economyRate": 9.07,
+      "wickets": 2
+    }
   },
   {
     "id": "real-e5912efa",
@@ -1123,7 +1583,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e5912efa-da10-4342-981c-f5ae32794672.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e5912efa-da10-4342-981c-f5ae32794672.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 35.99,
+      "strikeRate": 136.37,
+      "runs": 4571,
+      "innings": 138,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-52bd987e",
@@ -1146,7 +1616,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/52bd987e-45af-4ced-a617-0916664f73a7.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/52bd987e-45af-4ced-a617-0916664f73a7.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22.81,
+      "strikeRate": 132.95,
+      "runs": 1848,
+      "innings": 84,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-92045c02",
@@ -1169,7 +1649,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/92045c02-25e9-4980-a58f-daedd067d1ce.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/92045c02-25e9-4980-a58f-daedd067d1ce.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 23.08,
+      "runs": 3,
+      "innings": 2,
+      "bowlingAverage": 37.83,
+      "economyRate": 8.96,
+      "wickets": 6
+    }
   },
   {
     "id": "real-08924d57",
@@ -1192,7 +1682,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/08924d57-b4d3-4ed0-903d-087a8384be12.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/08924d57-b4d3-4ed0-903d-087a8384be12.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 24.28,
+      "strikeRate": 158.69,
+      "runs": 1141,
+      "innings": 47,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-dd632169",
@@ -1215,7 +1715,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/dd632169-52e3-4327-830e-dc5a9d18faa5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/dd632169-52e3-4327-830e-dc5a9d18faa5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 3.5,
+      "strikeRate": 63.64,
+      "runs": 14,
+      "innings": 5,
+      "bowlingAverage": 26.23,
+      "economyRate": 10.18,
+      "wickets": 13
+    }
   },
   {
     "id": "real-4ad2ef53",
@@ -1240,7 +1750,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4ad2ef53-de91-4ac2-a50a-0cde29e69177.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4ad2ef53-de91-4ac2-a50a-0cde29e69177.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 24.74,
+      "strikeRate": 156.73,
+      "runs": 2771,
+      "innings": 129,
+      "bowlingAverage": 35.22,
+      "economyRate": 8.28,
+      "wickets": 37
+    }
   },
   {
     "id": "real-9e6fa482",
@@ -1265,7 +1785,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9e6fa482-3ad3-4831-b05d-4fed2510cdf5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9e6fa482-3ad3-4831-b05d-4fed2510cdf5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9.29,
+      "strikeRate": 118.18,
+      "runs": 65,
+      "innings": 8,
+      "bowlingAverage": 20,
+      "economyRate": 8,
+      "wickets": 2
+    }
   },
   {
     "id": "real-2b031c1b",
@@ -1290,7 +1820,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2b031c1b-6980-49b6-9565-212fbe07ded3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2b031c1b-6980-49b6-9565-212fbe07ded3.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19,
+      "strikeRate": 126.67,
+      "runs": 19,
+      "innings": 1,
+      "bowlingAverage": 26.06,
+      "economyRate": 7.95,
+      "wickets": 33
+    }
   },
   {
     "id": "real-a90b2371",
@@ -1315,7 +1855,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a90b2371-5c53-4c29-a382-9b52d40a7548.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a90b2371-5c53-4c29-a382-9b52d40a7548.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 28.69,
+      "strikeRate": 145.62,
+      "runs": 2525,
+      "innings": 128,
+      "bowlingAverage": 33.59,
+      "economyRate": 9.1,
+      "wickets": 64
+    }
   },
   {
     "id": "real-f54c649a",
@@ -1340,7 +1890,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f54c649a-71a1-4f95-80d0-59e0087b4493.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f54c649a-71a1-4f95-80d0-59e0087b4493.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 6.69,
+      "strikeRate": 119.18,
+      "runs": 87,
+      "innings": 24,
+      "bowlingAverage": 21.27,
+      "economyRate": 8.25,
+      "wickets": 110
+    }
   },
   {
     "id": "real-87e87390",
@@ -1363,7 +1923,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/87e87390-b14f-455b-8526-5eaa19735aed.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/87e87390-b14f-455b-8526-5eaa19735aed.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 21.11,
+      "strikeRate": 123.38,
+      "runs": 190,
+      "innings": 11,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7d662361",
@@ -1386,7 +1956,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7d662361-8f12-4a52-9a4b-01e8734bd31d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7d662361-8f12-4a52-9a4b-01e8734bd31d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 38.19,
+      "strikeRate": 168.31,
+      "runs": 993,
+      "innings": 32,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-868c290a",
@@ -1409,7 +1989,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 29.08,
+      "strikeRate": 107.28,
+      "runs": 1105,
+      "innings": 44,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-004c6593",
@@ -1432,7 +2022,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/004c6593-c61d-4454-b9d5-22435155097d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/004c6593-c61d-4454-b9d5-22435155097d.jpg",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 18.37,
+      "strikeRate": 159.78,
+      "runs": 147,
+      "innings": 19,
+      "bowlingAverage": 33.55,
+      "economyRate": 9.3,
+      "wickets": 34
+    }
   },
   {
     "id": "real-00eea3d3",
@@ -1457,7 +2057,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-00fee12c",
@@ -1480,7 +2090,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/00fee12c-63aa-43ed-a1ed-cd156a2e26bc.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/00fee12c-63aa-43ed-a1ed-cd156a2e26bc.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.23,
+      "strikeRate": 133.8,
+      "runs": 289,
+      "innings": 13,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-014ba4b1",
@@ -1505,7 +2125,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-01966983",
@@ -1528,7 +2158,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 3.5,
+      "strikeRate": 87.5,
+      "runs": 7,
+      "innings": 2,
+      "bowlingAverage": 87,
+      "economyRate": 7.25,
+      "wickets": 1
+    }
   },
   {
     "id": "real-021926fb",
@@ -1551,7 +2191,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 24.72,
+      "strikeRate": 112.66,
+      "runs": 445,
+      "innings": 20,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-02247315",
@@ -1574,7 +2224,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-02627b78",
@@ -1599,7 +2259,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12.93,
+      "strikeRate": 101.69,
+      "runs": 362,
+      "innings": 38,
+      "bowlingAverage": 25.61,
+      "economyRate": 6.53,
+      "wickets": 46
+    }
   },
   {
     "id": "real-026b380a",
@@ -1622,7 +2292,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/026b380a-f440-47ac-97f1-1cee34e43be3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/026b380a-f440-47ac-97f1-1cee34e43be3.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22.56,
+      "strikeRate": 132.68,
+      "runs": 406,
+      "innings": 18,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0284af4f",
@@ -1645,7 +2325,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 85.71,
+      "runs": 6,
+      "innings": 3,
+      "bowlingAverage": 37.75,
+      "economyRate": 9.44,
+      "wickets": 4
+    }
   },
   {
     "id": "real-0385f3ef",
@@ -1668,7 +2358,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0385f3ef-2f75-48fc-bf18-7fc8b173cef1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0385f3ef-2f75-48fc-bf18-7fc8b173cef1.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 7,
+      "strikeRate": 107.69,
+      "runs": 14,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-03a5d55f",
@@ -1693,7 +2393,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 30,
+      "strikeRate": 130.44,
+      "runs": 90,
+      "innings": 5,
+      "bowlingAverage": 10.5,
+      "economyRate": 4.2,
+      "wickets": 2
+    }
   },
   {
     "id": "real-0485d865",
@@ -1718,7 +2428,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 32,
+      "strikeRate": 120.76,
+      "runs": 64,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-04955e84",
@@ -1743,7 +2463,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-04c5f2ba",
@@ -1766,7 +2496,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-04d13220",
@@ -1789,7 +2529,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 2.75,
+      "strikeRate": 57.89,
+      "runs": 11,
+      "innings": 4,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0528c7f4",
@@ -1812,7 +2562,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-05644232",
@@ -1835,7 +2595,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 17.27,
+      "strikeRate": 107.92,
+      "runs": 259,
+      "innings": 17,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-056b8c77",
@@ -1858,7 +2628,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/056b8c77-7156-4b25-94cb-6103b6cad94c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/056b8c77-7156-4b25-94cb-6103b6cad94c.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 6.67,
+      "strikeRate": 95.24,
+      "runs": 20,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-05e837f0",
@@ -1883,7 +2663,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-063c2f9d",
@@ -1906,7 +2696,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-06474b3a",
@@ -1929,7 +2729,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-067a959d",
@@ -1954,7 +2764,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7,
+      "strikeRate": 175,
+      "runs": 7,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-06e5015c",
@@ -1977,7 +2797,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-06eda66e",
@@ -2000,7 +2830,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-07539c60",
@@ -2023,7 +2863,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22,
+      "strikeRate": 137.5,
+      "runs": 22,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-077096d5",
@@ -2046,7 +2896,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-085d49b0",
@@ -2071,7 +2931,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/085d49b0-d5e5-4fc5-955b-39758a134545.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/085d49b0-d5e5-4fc5-955b-39758a134545.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 25.32,
+      "strikeRate": 134.71,
+      "runs": 1013,
+      "innings": 65,
+      "bowlingAverage": 34.72,
+      "economyRate": 7.91,
+      "wickets": 32
+    }
   },
   {
     "id": "real-095d083b",
@@ -2094,7 +2964,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/095d083b-d6dc-42d2-9693-3a14125c958c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/095d083b-d6dc-42d2-9693-3a14125c958c.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 34.51,
+      "strikeRate": 128.09,
+      "runs": 2485,
+      "innings": 93,
+      "bowlingAverage": 22.24,
+      "economyRate": 7.79,
+      "wickets": 17
+    }
   },
   {
     "id": "real-099aa989",
@@ -2117,7 +2997,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-099db6cb",
@@ -2140,7 +3030,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/099db6cb-8f78-42d0-97ff-7a24283076a3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/099db6cb-8f78-42d0-97ff-7a24283076a3.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 16.43,
+      "strikeRate": 116.16,
+      "runs": 115,
+      "innings": 7,
+      "bowlingAverage": 50.33,
+      "economyRate": 7.95,
+      "wickets": 3
+    }
   },
   {
     "id": "real-099fe138",
@@ -2163,7 +3063,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-09ca2fcc",
@@ -2188,7 +3098,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 25.25,
+      "strikeRate": 146.38,
+      "runs": 101,
+      "innings": 7,
+      "bowlingAverage": 50.67,
+      "economyRate": 12.49,
+      "wickets": 6
+    }
   },
   {
     "id": "real-09de32b6",
@@ -2211,7 +3131,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/09de32b6-650f-4ceb-b843-e5ad68704475.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/09de32b6-650f-4ceb-b843-e5ad68704475.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 24,
+      "economyRate": 4.68,
+      "wickets": 4
+    }
   },
   {
     "id": "real-0a4bb087",
@@ -2236,7 +3166,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8.33,
+      "strikeRate": 104.17,
+      "runs": 25,
+      "innings": 5,
+      "bowlingAverage": 25.52,
+      "economyRate": 8.51,
+      "wickets": 27
+    }
   },
   {
     "id": "real-0a9d588e",
@@ -2259,7 +3199,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0ab4f40b",
@@ -2282,7 +3232,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 64,
+      "economyRate": 10.67,
+      "wickets": 1
+    }
   },
   {
     "id": "real-0b4a79ad",
@@ -2307,7 +3267,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0b7ea6c4",
@@ -2332,7 +3302,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10,
+      "strikeRate": 43.48,
+      "runs": 10,
+      "innings": 2,
+      "bowlingAverage": 20.33,
+      "economyRate": 11.26,
+      "wickets": 6
+    }
   },
   {
     "id": "real-0bdf0b5c",
@@ -2355,7 +3335,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0c3d24bb",
@@ -2380,7 +3370,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0c3d24bb-a517-435f-8cc3-60e945327bb3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0c3d24bb-a517-435f-8cc3-60e945327bb3.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9.5,
+      "strikeRate": 82.61,
+      "runs": 57,
+      "innings": 28,
+      "bowlingAverage": 34.48,
+      "economyRate": 8.24,
+      "wickets": 92
+    }
   },
   {
     "id": "real-0c5b1ad8",
@@ -2403,7 +3403,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0c5b1ad8-ca66-4763-afba-ada0d90c1dbf.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0c5b1ad8-ca66-4763-afba-ada0d90c1dbf.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 1.5,
+      "strikeRate": 42.86,
+      "runs": 3,
+      "innings": 2,
+      "bowlingAverage": 26.5,
+      "economyRate": 9.64,
+      "wickets": 4
+    }
   },
   {
     "id": "real-0c820e90",
@@ -2428,7 +3438,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0c820e90-aaba-477b-b77c-b9e967725655.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0c820e90-aaba-477b-b77c-b9e967725655.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 28.67,
+      "strikeRate": 147.32,
+      "runs": 3412,
+      "innings": 171,
+      "bowlingAverage": 31.59,
+      "economyRate": 8.79,
+      "wickets": 69
+    }
   },
   {
     "id": "real-0c996751",
@@ -2453,7 +3473,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0c996751-9b83-4a46-81ac-c9d7304f58c7.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0c996751-9b83-4a46-81ac-c9d7304f58c7.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12.44,
+      "strikeRate": 129.05,
+      "runs": 311,
+      "innings": 33,
+      "bowlingAverage": 27.28,
+      "economyRate": 7.66,
+      "wickets": 36
+    }
   },
   {
     "id": "real-0cf24408",
@@ -2476,7 +3506,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0cfd1f32",
@@ -2501,7 +3541,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0d138ab2",
@@ -2526,7 +3576,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 2.67,
+      "strikeRate": 53.33,
+      "runs": 8,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0d1bda31",
@@ -2549,7 +3609,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 27.68,
+      "strikeRate": 112.39,
+      "runs": 1052,
+      "innings": 43,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0d52b1b4",
@@ -2572,7 +3642,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 6.8,
+      "strikeRate": 72.34,
+      "runs": 34,
+      "innings": 5,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0d608ad7",
@@ -2597,7 +3677,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 27.14,
+      "strikeRate": 121.79,
+      "runs": 1330,
+      "innings": 55,
+      "bowlingAverage": 15.85,
+      "economyRate": 6.06,
+      "wickets": 47
+    }
   },
   {
     "id": "real-0db5b44a",
@@ -2620,7 +3710,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0df1942c",
@@ -2643,7 +3743,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0df1942c-e589-402f-9667-147a7fecd214.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0df1942c-e589-402f-9667-147a7fecd214.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 59,
+      "economyRate": 8.96,
+      "wickets": 2
+    }
   },
   {
     "id": "real-0e29c1e2",
@@ -2668,7 +3778,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 11,
+      "strikeRate": 68.75,
+      "runs": 11,
+      "innings": 1,
+      "bowlingAverage": 9.67,
+      "economyRate": 2.32,
+      "wickets": 3
+    }
   },
   {
     "id": "real-0e2b638b",
@@ -2691,7 +3811,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 18.17,
+      "economyRate": 9.08,
+      "wickets": 6
+    }
   },
   {
     "id": "real-0e544108",
@@ -2714,7 +3844,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 26,
+      "strikeRate": 185.71,
+      "runs": 78,
+      "innings": 5,
+      "bowlingAverage": 76,
+      "economyRate": 8.44,
+      "wickets": 2
+    }
   },
   {
     "id": "real-0e81bac3",
@@ -2737,7 +3877,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0f4dd575",
@@ -2760,7 +3910,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 32.12,
+      "strikeRate": 174.51,
+      "runs": 1349,
+      "innings": 47,
+      "bowlingAverage": 45,
+      "economyRate": 8.85,
+      "wickets": 4
+    }
   },
   {
     "id": "real-0f5502aa",
@@ -2783,7 +3943,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 36,
+      "strikeRate": 206.56,
+      "runs": 252,
+      "innings": 7,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0fa3b27a",
@@ -2806,7 +3976,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0fa3b27a-30a7-493e-973f-51683a26f000.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0fa3b27a-30a7-493e-973f-51683a26f000.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 1.5,
+      "strikeRate": 42.86,
+      "runs": 3,
+      "innings": 3,
+      "bowlingAverage": 31.71,
+      "economyRate": 9.65,
+      "wickets": 7
+    }
   },
   {
     "id": "real-0fbead02",
@@ -2829,7 +4009,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 10,
+      "strikeRate": 66.67,
+      "runs": 20,
+      "innings": 2,
+      "bowlingAverage": 25.7,
+      "economyRate": 3.38,
+      "wickets": 10
+    }
   },
   {
     "id": "real-0fcca9ea",
@@ -2854,7 +4044,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0fcca9ea-bd04-40ec-92d0-3b91e249fad6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0fcca9ea-bd04-40ec-92d0-3b91e249fad6.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 17.72,
+      "strikeRate": 115.94,
+      "runs": 691,
+      "innings": 48,
+      "bowlingAverage": 27.14,
+      "economyRate": 8.19,
+      "wickets": 42
+    }
   },
   {
     "id": "real-0fe9e795",
@@ -2879,7 +4079,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 13.57,
+      "strikeRate": 118.75,
+      "runs": 95,
+      "innings": 13,
+      "bowlingAverage": 18.47,
+      "economyRate": 6.05,
+      "wickets": 19
+    }
   },
   {
     "id": "real-10237113",
@@ -2902,7 +4112,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/10237113-888e-4881-a360-4b08577f38cc.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/10237113-888e-4881-a360-4b08577f38cc.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8,
+      "strikeRate": 160,
+      "runs": 8,
+      "innings": 1,
+      "bowlingAverage": 22.73,
+      "economyRate": 9.32,
+      "wickets": 11
+    }
   },
   {
     "id": "real-10406c3a",
@@ -2925,7 +4145,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 11,
+      "strikeRate": 110,
+      "runs": 22,
+      "innings": 3,
+      "bowlingAverage": 14.1,
+      "economyRate": 6.41,
+      "wickets": 10
+    }
   },
   {
     "id": "real-10933774",
@@ -2948,7 +4178,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/10933774-95c2-444f-8fe6-4980b11661fe.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/10933774-95c2-444f-8fe6-4980b11661fe.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 21.24,
+      "strikeRate": 123.31,
+      "runs": 1317,
+      "innings": 70,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-116e2bfb",
@@ -2971,7 +4211,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10,
+      "strikeRate": 55.56,
+      "runs": 10,
+      "innings": 5,
+      "bowlingAverage": 28.92,
+      "economyRate": 10.44,
+      "wickets": 24
+    }
   },
   {
     "id": "real-11864f31",
@@ -2994,7 +4244,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/11864f31-b766-4766-9cbc-5026015ace48.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/11864f31-b766-4766-9cbc-5026015ace48.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 30.79,
+      "strikeRate": 143.34,
+      "runs": 893,
+      "innings": 40,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-11beb0e3",
@@ -3019,7 +4279,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/11beb0e3-9594-4304-b770-9f65b52a5ff9.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/11beb0e3-9594-4304-b770-9f65b52a5ff9.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23,
+      "strikeRate": 69.7,
+      "runs": 23,
+      "innings": 2,
+      "bowlingAverage": 91,
+      "economyRate": 8.27,
+      "wickets": 1
+    }
   },
   {
     "id": "real-121ba38e",
@@ -3042,7 +4312,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 35,
+      "strikeRate": 112.91,
+      "runs": 35,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-123605fd",
@@ -3065,7 +4345,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 23.75,
+      "strikeRate": 141.79,
+      "runs": 95,
+      "innings": 4,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-12d5fb7e",
@@ -3088,7 +4378,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 192.86,
+      "runs": 27,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-13317337",
@@ -3111,7 +4411,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 8,
+      "strikeRate": 72.73,
+      "runs": 8,
+      "innings": 2,
+      "bowlingAverage": 37,
+      "economyRate": 7.4,
+      "wickets": 1
+    }
   },
   {
     "id": "real-135e6900",
@@ -3134,7 +4444,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/135e6900-2a2f-496c-b31d-c43aedceae1b.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/135e6900-2a2f-496c-b31d-c43aedceae1b.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 3,
+      "bowlingAverage": 32.21,
+      "economyRate": 9.46,
+      "wickets": 19
+    }
   },
   {
     "id": "real-13a05814",
@@ -3157,7 +4477,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 6,
+      "strikeRate": 50,
+      "runs": 6,
+      "innings": 4,
+      "bowlingAverage": 26.66,
+      "economyRate": 7.27,
+      "wickets": 9
+    }
   },
   {
     "id": "real-13d40394",
@@ -3180,7 +4510,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 4.5,
+      "strikeRate": 84.91,
+      "runs": 45,
+      "innings": 15,
+      "bowlingAverage": 23.44,
+      "economyRate": 7.52,
+      "wickets": 43
+    }
   },
   {
     "id": "real-13f82715",
@@ -3203,7 +4543,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/13f82715-aa96-4edf-b002-e9f6cb2ffcf7.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/13f82715-aa96-4edf-b002-e9f6cb2ffcf7.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-14334762",
@@ -3226,7 +4576,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8.8,
+      "strikeRate": 133.33,
+      "runs": 88,
+      "innings": 13,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-14a56d48",
@@ -3249,7 +4609,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/14a56d48-499a-4b03-aa0f-bd3f592e9d94.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/14a56d48-499a-4b03-aa0f-bd3f592e9d94.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23,
+      "strikeRate": 133.72,
+      "runs": 230,
+      "innings": 10,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-14d2eb0c",
@@ -3272,7 +4642,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-14de17cf",
@@ -3295,7 +4675,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-14f35f8b",
@@ -3318,7 +4708,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0.5,
+      "strikeRate": 16.67,
+      "runs": 1,
+      "innings": 2,
+      "bowlingAverage": 19.24,
+      "economyRate": 7.43,
+      "wickets": 17
+    }
   },
   {
     "id": "real-151d6979",
@@ -3343,7 +4743,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 24.38,
+      "strikeRate": 134.04,
+      "runs": 634,
+      "innings": 35,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-153dae3c",
@@ -3366,7 +4776,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 20.5,
+      "strikeRate": 118.27,
+      "runs": 123,
+      "innings": 7,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-15bccb4f",
@@ -3391,7 +4811,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/15bccb4f-8c3c-4da6-acd9-551782278bfd.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/15bccb4f-8c3c-4da6-acd9-551782278bfd.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9.22,
+      "strikeRate": 122.66,
+      "runs": 249,
+      "innings": 42,
+      "bowlingAverage": 23.33,
+      "economyRate": 8.74,
+      "wickets": 135
+    }
   },
   {
     "id": "real-15c1b556",
@@ -3414,7 +4844,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/15c1b556-a5b4-4cad-94da-0417c74b6918.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/15c1b556-a5b4-4cad-94da-0417c74b6918.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 50,
+      "runs": 2,
+      "innings": 1,
+      "bowlingAverage": 60.33,
+      "economyRate": 9.05,
+      "wickets": 3
+    }
   },
   {
     "id": "real-16502836",
@@ -3437,7 +4877,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 166.67,
+      "runs": 5,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-16d88794",
@@ -3460,7 +4910,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18,
+      "strikeRate": 105.88,
+      "runs": 18,
+      "innings": 4,
+      "bowlingAverage": 33.12,
+      "economyRate": 6.88,
+      "wickets": 8
+    }
   },
   {
     "id": "real-16ec245b",
@@ -3485,7 +4945,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/16ec245b-022d-4104-bd8f-ccc780428390.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/16ec245b-022d-4104-bd8f-ccc780428390.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 11.67,
+      "strikeRate": 98.59,
+      "runs": 70,
+      "innings": 11,
+      "bowlingAverage": 28.13,
+      "economyRate": 6.92,
+      "wickets": 15
+    }
   },
   {
     "id": "real-176f1b54",
@@ -3510,7 +4980,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-179d3fa8",
@@ -3533,7 +5013,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 54.5,
+      "strikeRate": 134.57,
+      "runs": 109,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-17d274f9",
@@ -3556,7 +5046,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 36.67,
+      "strikeRate": 234.04,
+      "runs": 330,
+      "innings": 9,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-180036fe",
@@ -3579,7 +5079,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/180036fe-fcb5-4fcf-ba8a-28bb2b750cc6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/180036fe-fcb5-4fcf-ba8a-28bb2b750cc6.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 27.47,
+      "strikeRate": 149.82,
+      "runs": 412,
+      "innings": 17,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-181cc808",
@@ -3602,7 +5112,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 1.5,
+      "strikeRate": 16.67,
+      "runs": 3,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-18249dbf",
@@ -3627,7 +5147,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/18249dbf-6ece-4c0c-bcd7-7e0c6a805b76.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/18249dbf-6ece-4c0c-bcd7-7e0c6a805b76.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 133.33,
+      "runs": 12,
+      "innings": 1,
+      "bowlingAverage": 23.5,
+      "economyRate": 9.1,
+      "wickets": 20
+    }
   },
   {
     "id": "real-18563141",
@@ -3650,7 +5180,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1877c024",
@@ -3673,7 +5213,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 30,
+      "strikeRate": 107.14,
+      "runs": 60,
+      "innings": 3,
+      "bowlingAverage": 15.5,
+      "economyRate": 5.17,
+      "wickets": 4
+    }
   },
   {
     "id": "real-18d1150b",
@@ -3698,7 +5248,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 18.64,
+      "strikeRate": 60.28,
+      "runs": 261,
+      "innings": 17,
+      "bowlingAverage": 37.6,
+      "economyRate": 2.86,
+      "wickets": 35
+    }
   },
   {
     "id": "real-18e2f906",
@@ -3723,7 +5283,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/18e2f906-929d-421d-addf-d806d2a455eb.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/18e2f906-929d-421d-addf-d806d2a455eb.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 20.88,
+      "strikeRate": 126.12,
+      "runs": 898,
+      "innings": 51,
+      "bowlingAverage": 32.39,
+      "economyRate": 8.09,
+      "wickets": 31
+    }
   },
   {
     "id": "real-1911b464",
@@ -3746,7 +5316,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 250,
+      "runs": 5,
+      "innings": 1,
+      "bowlingAverage": 28.57,
+      "economyRate": 8.33,
+      "wickets": 7
+    }
   },
   {
     "id": "real-196f622e",
@@ -3769,7 +5349,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 26.22,
+      "strikeRate": 166.2,
+      "runs": 236,
+      "innings": 12,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-198dcb20",
@@ -3792,7 +5382,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-19d369e8",
@@ -3815,7 +5415,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/19d369e8-de6e-4e02-8f65-1879a2fb7b36.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/19d369e8-de6e-4e02-8f65-1879a2fb7b36.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 9.15,
+      "strikeRate": 88.81,
+      "runs": 119,
+      "innings": 13,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-19f50f53",
@@ -3840,7 +5450,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 10,
+      "strikeRate": 76.92,
+      "runs": 10,
+      "innings": 2,
+      "bowlingAverage": 30.17,
+      "economyRate": 3.18,
+      "wickets": 110
+    }
   },
   {
     "id": "real-1a1e4b52",
@@ -3863,7 +5483,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1aa70d36",
@@ -3888,7 +5518,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 29.5,
+      "strikeRate": 117.22,
+      "runs": 531,
+      "innings": 22,
+      "bowlingAverage": 26.55,
+      "economyRate": 8.5,
+      "wickets": 11
+    }
   },
   {
     "id": "real-1ab26761",
@@ -3911,7 +5551,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 140,
+      "runs": 7,
+      "innings": 1,
+      "bowlingAverage": 86,
+      "economyRate": 8.6,
+      "wickets": 1
+    }
   },
   {
     "id": "real-1ab33ebf",
@@ -3934,7 +5584,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1b3b92b9",
@@ -3957,7 +5617,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1d07857a",
@@ -3980,7 +5650,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1d0a7a62",
@@ -4003,7 +5683,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1e803b3b",
@@ -4026,7 +5716,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 5,
+      "strikeRate": 62.5,
+      "runs": 5,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1e8e08ed",
@@ -4049,7 +5749,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/1e8e08ed-e531-4fa6-a249-d069b96b1899.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/1e8e08ed-e531-4fa6-a249-d069b96b1899.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 1,
+      "strikeRate": 25,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1eb46cbb",
@@ -4072,7 +5782,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1ee41e9e",
@@ -4095,7 +5815,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/1ee41e9e-e219-4df2-9861-2360b28bb307.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/1ee41e9e-e219-4df2-9861-2360b28bb307.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10,
+      "strikeRate": 66.67,
+      "runs": 10,
+      "innings": 1,
+      "bowlingAverage": 23.17,
+      "economyRate": 9.93,
+      "wickets": 6
+    }
   },
   {
     "id": "real-1f8a9042",
@@ -4120,7 +5850,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/1f8a9042-1bc4-4648-a07b-1155371888b5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/1f8a9042-1bc4-4648-a07b-1155371888b5.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 30,
+      "strikeRate": 99.06,
+      "runs": 210,
+      "innings": 7,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1f8ebb86",
@@ -4145,7 +5885,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1fde2adb",
@@ -4168,7 +5918,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-202a348f",
@@ -4193,7 +5953,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-205f9027",
@@ -4216,7 +5986,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/205f9027-2e2f-41e1-b24a-222104528427.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/205f9027-2e2f-41e1-b24a-222104528427.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 50,
+      "runs": 2,
+      "innings": 1,
+      "bowlingAverage": 24.9,
+      "economyRate": 8.89,
+      "wickets": 10
+    }
   },
   {
     "id": "real-20714983",
@@ -4239,7 +6019,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 100,
+      "runs": 2,
+      "innings": 1,
+      "bowlingAverage": 71,
+      "economyRate": 9.06,
+      "wickets": 1
+    }
   },
   {
     "id": "real-2089647a",
@@ -4262,7 +6052,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 4,
+      "strikeRate": 100,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-209404f5",
@@ -4285,7 +6085,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2097f94e",
@@ -4308,7 +6118,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2097f94e-8074-41c5-8c6b-de1c76ec129f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2097f94e-8074-41c5-8c6b-de1c76ec129f.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 17.83,
+      "strikeRate": 122.14,
+      "runs": 1462,
+      "innings": 86,
+      "bowlingAverage": 37.58,
+      "economyRate": 9.4,
+      "wickets": 12
+    }
   },
   {
     "id": "real-20bec503",
@@ -4331,7 +6151,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 75,
+      "runs": 6,
+      "innings": 1,
+      "bowlingAverage": 18,
+      "economyRate": 7.28,
+      "wickets": 6
+    }
   },
   {
     "id": "real-217cafe4",
@@ -4356,7 +6186,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/217cafe4-5b6e-4b2b-b7ac-1b52b2b15a1c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/217cafe4-5b6e-4b2b-b7ac-1b52b2b15a1c.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3.7,
+      "strikeRate": 97.37,
+      "runs": 37,
+      "innings": 17,
+      "bowlingAverage": 24.61,
+      "economyRate": 8.15,
+      "wickets": 46
+    }
   },
   {
     "id": "real-218cc9f0",
@@ -4381,7 +6221,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/218cc9f0-91f3-4927-af4a-a4601336d545.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/218cc9f0-91f3-4927-af4a-a4601336d545.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 17.7,
+      "strikeRate": 116.07,
+      "runs": 354,
+      "innings": 24,
+      "bowlingAverage": 38.5,
+      "economyRate": 8.56,
+      "wickets": 14
+    }
   },
   {
     "id": "real-21b93a7f",
@@ -4404,7 +6254,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-21d693c2",
@@ -4427,7 +6287,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/21d693c2-b4dd-4d24-b747-90dfc8357ef5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/21d693c2-b4dd-4d24-b747-90dfc8357ef5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23.13,
+      "strikeRate": 151.53,
+      "runs": 347,
+      "innings": 22,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-21ffa053",
@@ -4450,7 +6320,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 3,
+      "strikeRate": 40,
+      "runs": 6,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-221ee68f",
@@ -4475,7 +6355,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14,
+      "strikeRate": 87.5,
+      "runs": 14,
+      "innings": 3,
+      "bowlingAverage": 18.72,
+      "economyRate": 7.51,
+      "wickets": 47
+    }
   },
   {
     "id": "real-223583b5",
@@ -4498,7 +6388,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-22564cbf",
@@ -4521,7 +6421,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 28.5,
+      "strikeRate": 129.06,
+      "runs": 684,
+      "innings": 29,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-225ae9ea",
@@ -4546,7 +6456,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 1,
+      "strikeRate": 66.67,
+      "runs": 2,
+      "innings": 3,
+      "bowlingAverage": 23.24,
+      "economyRate": 9.05,
+      "wickets": 25
+    }
   },
   {
     "id": "real-228d880f",
@@ -4571,7 +6491,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 13.92,
+      "strikeRate": 163.06,
+      "runs": 181,
+      "innings": 14,
+      "bowlingAverage": 29.15,
+      "economyRate": 8.95,
+      "wickets": 13
+    }
   },
   {
     "id": "real-22ee45d8",
@@ -4596,7 +6526,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/22ee45d8-0538-4e3e-a758-c515f9b86d11.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/22ee45d8-0538-4e3e-a758-c515f9b86d11.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 30.04,
+      "strikeRate": 146.68,
+      "runs": 1502,
+      "innings": 61,
+      "bowlingAverage": 36,
+      "economyRate": 9.64,
+      "wickets": 5
+    }
   },
   {
     "id": "real-23295fca",
@@ -4619,7 +6559,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/23295fca-e9a4-472a-ac3c-82bc79c3b5bd.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/23295fca-e9a4-472a-ac3c-82bc79c3b5bd.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 8,
+      "strikeRate": 114.29,
+      "runs": 16,
+      "innings": 2,
+      "bowlingAverage": 31.83,
+      "economyRate": 5.03,
+      "wickets": 6
+    }
   },
   {
     "id": "real-232bdf86",
@@ -4642,7 +6592,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2384dece",
@@ -4665,7 +6625,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2384dece-2952-41f8-82e8-7663fe90faa0.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2384dece-2952-41f8-82e8-7663fe90faa0.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 25,
+      "strikeRate": 119.05,
+      "runs": 50,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2518d07c",
@@ -4688,7 +6658,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 5.5,
+      "strikeRate": 137.5,
+      "runs": 22,
+      "innings": 4,
+      "bowlingAverage": 30.5,
+      "economyRate": 10.17,
+      "wickets": 4
+    }
   },
   {
     "id": "real-27257774",
@@ -4711,7 +6691,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-27415ccd",
@@ -4734,7 +6724,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7.5,
+      "strikeRate": 136.36,
+      "runs": 15,
+      "innings": 5,
+      "bowlingAverage": 36.69,
+      "economyRate": 8.49,
+      "wickets": 13
+    }
   },
   {
     "id": "real-27542eb2",
@@ -4757,7 +6757,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12,
+      "strikeRate": 120,
+      "runs": 36,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-27636f55",
@@ -4780,7 +6790,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/27636f55-a71a-4b43-978d-794a05cb6874.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/27636f55-a71a-4b43-978d-794a05cb6874.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-27846304",
@@ -4805,7 +6825,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 2,
+      "strikeRate": 40,
+      "runs": 2,
+      "innings": 1,
+      "bowlingAverage": 20.67,
+      "economyRate": 7.75,
+      "wickets": 3
+    }
   },
   {
     "id": "real-27883e8e",
@@ -4830,7 +6860,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-283a2c2b",
@@ -4853,7 +6893,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2863dc55",
@@ -4876,7 +6926,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2925fea1",
@@ -4899,7 +6959,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2925fea1-aad0-4c6b-8749-8c3deabf5411.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2925fea1-aad0-4c6b-8749-8c3deabf5411.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3,
+      "strikeRate": 78.95,
+      "runs": 15,
+      "innings": 5,
+      "bowlingAverage": 48.33,
+      "economyRate": 9.06,
+      "wickets": 6
+    }
   },
   {
     "id": "real-2958faf6",
@@ -4924,7 +6994,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2958faf6-f7d1-4150-aa9e-e261a629ba0d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2958faf6-f7d1-4150-aa9e-e261a629ba0d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8.67,
+      "strikeRate": 108.33,
+      "runs": 26,
+      "innings": 6,
+      "bowlingAverage": 38.2,
+      "economyRate": 8.43,
+      "wickets": 5
+    }
   },
   {
     "id": "real-298d86dd",
@@ -4949,7 +7029,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/298d86dd-295c-4dbb-b19b-6ab60130fc70.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/298d86dd-295c-4dbb-b19b-6ab60130fc70.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19,
+      "strikeRate": 146.15,
+      "runs": 19,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2997b3e5",
@@ -4974,7 +7064,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8.5,
+      "strikeRate": 103.66,
+      "runs": 85,
+      "innings": 23,
+      "bowlingAverage": 20.79,
+      "economyRate": 7.54,
+      "wickets": 96
+    }
   },
   {
     "id": "real-29ca9460",
@@ -4999,7 +7099,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/29ca9460-ac64-4478-9ae8-ad596d79b148.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/29ca9460-ac64-4478-9ae8-ad596d79b148.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3.33,
+      "strikeRate": 90.91,
+      "runs": 10,
+      "innings": 6,
+      "bowlingAverage": 22.88,
+      "economyRate": 8.33,
+      "wickets": 33
+    }
   },
   {
     "id": "real-2a2c430b",
@@ -5022,7 +7132,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2a2c430b-c0dc-4154-a63f-32ffe8ef02fb.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2a2c430b-c0dc-4154-a63f-32ffe8ef02fb.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 32.32,
+      "strikeRate": 138.6,
+      "runs": 614,
+      "innings": 21,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2a90b6a9",
@@ -5045,7 +7165,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 125,
+      "runs": 5,
+      "innings": 3,
+      "bowlingAverage": 27.1,
+      "economyRate": 9.68,
+      "wickets": 10
+    }
   },
   {
     "id": "real-2b07a09f",
@@ -5070,7 +7200,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2bb9d3d9",
@@ -5095,7 +7235,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2bb9d3d9-4c8a-49fa-9516-76f514e56087.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2bb9d3d9-4c8a-49fa-9516-76f514e56087.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18.6,
+      "strikeRate": 122.37,
+      "runs": 279,
+      "innings": 17,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2bf2258f",
@@ -5118,7 +7268,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 37.2,
+      "economyRate": 8.65,
+      "wickets": 10
+    }
   },
   {
     "id": "real-2ca55074",
@@ -5141,7 +7301,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2ca55074-4a84-40b2-a1c4-e271c8d7395d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2ca55074-4a84-40b2-a1c4-e271c8d7395d.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2cdeaba0",
@@ -5164,7 +7334,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2d8e2171",
@@ -5189,7 +7369,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2d8e2171-5bae-4ecc-a721-6aaed30e87ec.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2d8e2171-5bae-4ecc-a721-6aaed30e87ec.jpg",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 22.5,
+      "strikeRate": 118.42,
+      "runs": 45,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2dbbe6b1",
@@ -5212,7 +7402,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2dde4c0a",
@@ -5237,7 +7437,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2dde4c0a-842b-4ce6-a04a-68c90ba61818.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2dde4c0a-842b-4ce6-a04a-68c90ba61818.jpg",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 16.61,
+      "strikeRate": 131.7,
+      "runs": 216,
+      "innings": 19,
+      "bowlingAverage": 28.93,
+      "economyRate": 8.21,
+      "wickets": 15
+    }
   },
   {
     "id": "real-2e6d7e33",
@@ -5260,7 +7470,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2e72eb5f",
@@ -5285,7 +7505,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2f878b97",
@@ -5308,7 +7538,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-30534747",
@@ -5331,7 +7571,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18,
+      "strikeRate": 257.14,
+      "runs": 18,
+      "innings": 2,
+      "bowlingAverage": 27.5,
+      "economyRate": 7.86,
+      "wickets": 2
+    }
   },
   {
     "id": "real-306f6b88",
@@ -5354,7 +7604,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/306f6b88-0442-476a-be55-1500b3441051.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/306f6b88-0442-476a-be55-1500b3441051.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 29.17,
+      "strikeRate": 121.11,
+      "runs": 3850,
+      "innings": 159,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-309d3ffd",
@@ -5379,7 +7639,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/309d3ffd-3d06-460d-9427-c559a604d471.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/309d3ffd-3d06-460d-9427-c559a604d471.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 14,
+      "strikeRate": 116.31,
+      "runs": 378,
+      "innings": 40,
+      "bowlingAverage": 35.81,
+      "economyRate": 7.54,
+      "wickets": 37
+    }
   },
   {
     "id": "real-313b54fd",
@@ -5404,7 +7674,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-315e39da",
@@ -5427,7 +7707,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/315e39da-c2f8-47a1-a3e0-0e17c2fa3916.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/315e39da-c2f8-47a1-a3e0-0e17c2fa3916.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 93,
+      "economyRate": 5.81,
+      "wickets": 1
+    }
   },
   {
     "id": "real-3187d301",
@@ -5452,7 +7742,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 28.33,
+      "strikeRate": 166.67,
+      "runs": 170,
+      "innings": 13,
+      "bowlingAverage": 10.5,
+      "economyRate": 9.45,
+      "wickets": 6
+    }
   },
   {
     "id": "real-3283d1a0",
@@ -5477,7 +7777,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22.71,
+      "strikeRate": 125.69,
+      "runs": 318,
+      "innings": 17,
+      "bowlingAverage": 62,
+      "economyRate": 7.67,
+      "wickets": 2
+    }
   },
   {
     "id": "real-32f97a55",
@@ -5500,7 +7810,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-332b58d0",
@@ -5525,7 +7845,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3333be17",
@@ -5548,7 +7878,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19.82,
+      "strikeRate": 124.44,
+      "runs": 555,
+      "innings": 30,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-33a8d66f",
@@ -5571,7 +7911,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-33a9be14",
@@ -5594,7 +7944,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18,
+      "strikeRate": 138.46,
+      "runs": 18,
+      "innings": 1,
+      "bowlingAverage": 23.78,
+      "economyRate": 7.64,
+      "wickets": 9
+    }
   },
   {
     "id": "real-34045340",
@@ -5617,7 +7977,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/34045340-2dab-4ef2-9a78-913298847e46.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/34045340-2dab-4ef2-9a78-913298847e46.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 20.53,
+      "strikeRate": 99.74,
+      "runs": 390,
+      "innings": 22,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-347b673e",
@@ -5640,7 +8010,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/347b673e-6aac-4f03-bcfe-3b988347b345.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/347b673e-6aac-4f03-bcfe-3b988347b345.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23.65,
+      "strikeRate": 153.57,
+      "runs": 473,
+      "innings": 22,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-34802a7c",
@@ -5663,7 +8043,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 5.5,
+      "strikeRate": 61.11,
+      "runs": 22,
+      "innings": 4,
+      "bowlingAverage": 39.75,
+      "economyRate": 8.37,
+      "wickets": 4
+    }
   },
   {
     "id": "real-34a0f7a0",
@@ -5686,7 +8076,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-34ae4dde",
@@ -5709,7 +8109,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.67,
+      "strikeRate": 212.5,
+      "runs": 68,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-353aaef6",
@@ -5732,7 +8142,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11,
+      "strikeRate": 91.67,
+      "runs": 11,
+      "innings": 2,
+      "bowlingAverage": 34.5,
+      "economyRate": 7.67,
+      "wickets": 2
+    }
   },
   {
     "id": "real-353c2cd5",
@@ -5757,7 +8177,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3545d689",
@@ -5780,7 +8210,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 1,
+      "strikeRate": 33.33,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": 20.71,
+      "economyRate": 8.53,
+      "wickets": 7
+    }
   },
   {
     "id": "real-35aa8f69",
@@ -5803,7 +8243,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 1,
+      "strikeRate": 33.33,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-35d61f1e",
@@ -5826,7 +8276,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 9,
+      "strikeRate": 56.25,
+      "runs": 9,
+      "innings": 2,
+      "bowlingAverage": 30.33,
+      "economyRate": 5.35,
+      "wickets": 3
+    }
   },
   {
     "id": "real-36046273",
@@ -5851,7 +8311,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/36046273-fe8c-4fb0-9d18-3ff978a7d399.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/36046273-fe8c-4fb0-9d18-3ff978a7d399.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 21.33,
+      "strikeRate": 129.29,
+      "runs": 128,
+      "innings": 8,
+      "bowlingAverage": 25,
+      "economyRate": 8.33,
+      "wickets": 10
+    }
   },
   {
     "id": "real-3676cc16",
@@ -5876,7 +8346,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-367b54a9",
@@ -5899,7 +8379,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/367b54a9-80a5-40f6-bed6-086bbcd90899.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/367b54a9-80a5-40f6-bed6-086bbcd90899.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23.75,
+      "strikeRate": 127.75,
+      "runs": 1496,
+      "innings": 68,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-36a6b9d9",
@@ -5922,7 +8412,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-36e929d1",
@@ -5945,7 +8445,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/36e929d1-32f1-4d41-96c2-7df1364d0bab.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/36e929d1-32f1-4d41-96c2-7df1364d0bab.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 6,
+      "strikeRate": 88.89,
+      "runs": 24,
+      "innings": 7,
+      "bowlingAverage": 90.5,
+      "economyRate": 10.65,
+      "wickets": 2
+    }
   },
   {
     "id": "real-37934643",
@@ -5968,7 +8478,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0.5,
+      "strikeRate": 28.57,
+      "runs": 2,
+      "innings": 5,
+      "bowlingAverage": 31.93,
+      "economyRate": 9.78,
+      "wickets": 15
+    }
   },
   {
     "id": "real-37bfb573",
@@ -5993,7 +8513,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 19,
+      "strikeRate": 79.17,
+      "runs": 19,
+      "innings": 1,
+      "bowlingAverage": 15.8,
+      "economyRate": 3.16,
+      "wickets": 5
+    }
   },
   {
     "id": "real-38246b1c",
@@ -6016,7 +8546,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 2.33,
+      "strikeRate": 100,
+      "runs": 7,
+      "innings": 4,
+      "bowlingAverage": 35,
+      "economyRate": 8.75,
+      "wickets": 5
+    }
   },
   {
     "id": "real-388b664b",
@@ -6039,7 +8579,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/388b664b-de80-4290-ab82-420873293b91.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/388b664b-de80-4290-ab82-420873293b91.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0.5,
+      "strikeRate": 20,
+      "runs": 1,
+      "innings": 3,
+      "bowlingAverage": 22.4,
+      "economyRate": 10.18,
+      "wickets": 5
+    }
   },
   {
     "id": "real-38b89162",
@@ -6062,7 +8612,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-391537b8",
@@ -6085,7 +8645,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-39284e59",
@@ -6108,7 +8678,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 39.8,
+      "economyRate": 11.06,
+      "wickets": 5
+    }
   },
   {
     "id": "real-39b52319",
@@ -6133,7 +8713,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 18.74,
+      "strikeRate": 132.04,
+      "runs": 581,
+      "innings": 44,
+      "bowlingAverage": 31.79,
+      "economyRate": 9.12,
+      "wickets": 29
+    }
   },
   {
     "id": "real-39c31627",
@@ -6156,7 +8746,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 3,
+      "strikeRate": 54.44,
+      "runs": 6,
+      "innings": 4,
+      "bowlingAverage": 30.84,
+      "economyRate": 8.02,
+      "wickets": 19
+    }
   },
   {
     "id": "real-3a51a030",
@@ -6181,7 +8781,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3a93bfb5",
@@ -6206,7 +8816,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3a93bfb5-1fd1-4342-99f1-397161de9d10.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/3a93bfb5-1fd1-4342-99f1-397161de9d10.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 26,
+      "strikeRate": 133.82,
+      "runs": 182,
+      "innings": 9,
+      "bowlingAverage": 47,
+      "economyRate": 10.07,
+      "wickets": 3
+    }
   },
   {
     "id": "real-3b1ea632",
@@ -6231,7 +8851,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11.44,
+      "strikeRate": 121.18,
+      "runs": 103,
+      "innings": 13,
+      "bowlingAverage": 22.68,
+      "economyRate": 7.48,
+      "wickets": 31
+    }
   },
   {
     "id": "real-3b526d69",
@@ -6254,7 +8884,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3b5eb12f",
@@ -6277,7 +8917,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 29.02,
+      "strikeRate": 130.12,
+      "runs": 1538,
+      "innings": 58,
+      "bowlingAverage": 19,
+      "economyRate": 6.04,
+      "wickets": 9
+    }
   },
   {
     "id": "real-3b61b3a5",
@@ -6302,7 +8952,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 30.8,
+      "strikeRate": 129.14,
+      "runs": 616,
+      "innings": 25,
+      "bowlingAverage": 14.61,
+      "economyRate": 7.13,
+      "wickets": 21
+    }
   },
   {
     "id": "real-3bcd3288",
@@ -6327,7 +8987,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3bd0350d",
@@ -6350,7 +9020,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3c0410d4",
@@ -6375,7 +9055,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3c22d6c7",
@@ -6400,7 +9090,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 13.56,
+      "strikeRate": 59.51,
+      "runs": 122,
+      "innings": 10,
+      "bowlingAverage": 28.14,
+      "economyRate": 3.21,
+      "wickets": 22
+    }
   },
   {
     "id": "real-3c28514d",
@@ -6425,7 +9125,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.18,
+      "strikeRate": 137.46,
+      "runs": 422,
+      "innings": 30,
+      "bowlingAverage": 32.77,
+      "economyRate": 8.73,
+      "wickets": 31
+    }
   },
   {
     "id": "real-3c388d52",
@@ -6450,7 +9160,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3c388d52-bb16-4a09-af18-1c562d2d82f6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/3c388d52-bb16-4a09-af18-1c562d2d82f6.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18,
+      "strikeRate": 105.88,
+      "runs": 18,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3c4b871c",
@@ -6473,7 +9193,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3c7c739f",
@@ -6496,7 +9226,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3c7c739f-ac2d-4f94-b9b2-f1831176edb6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/3c7c739f-ac2d-4f94-b9b2-f1831176edb6.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 20,
+      "strikeRate": 100,
+      "runs": 20,
+      "innings": 8,
+      "bowlingAverage": 56.43,
+      "economyRate": 8.01,
+      "wickets": 7
+    }
   },
   {
     "id": "real-3c880c22",
@@ -6519,7 +9259,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3c880c22-dda3-4d20-918f-bb79a6c19535-637955586905618969.png"
+    "imageUrl": "https://h.cricapi.com/img/players/3c880c22-dda3-4d20-918f-bb79a6c19535-637955586905618969.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12.57,
+      "strikeRate": 98.88,
+      "runs": 88,
+      "innings": 7,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3c89df94",
@@ -6542,7 +9292,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23.29,
+      "strikeRate": 155.24,
+      "runs": 163,
+      "innings": 7,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3cbc5a08",
@@ -6565,7 +9325,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3cbc5a08-62af-4ca5-b709-c7712db6e8b6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/3cbc5a08-62af-4ca5-b709-c7712db6e8b6.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 3.25,
+      "strikeRate": 72.22,
+      "runs": 13,
+      "innings": 7,
+      "bowlingAverage": 27.46,
+      "economyRate": 8.04,
+      "wickets": 24
+    }
   },
   {
     "id": "real-3ddbcc02",
@@ -6588,7 +9358,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 0,
+      "strikeRate": 20,
+      "runs": 1,
+      "innings": 2,
+      "bowlingAverage": 37.25,
+      "economyRate": 9.31,
+      "wickets": 4
+    }
   },
   {
     "id": "real-3df5944d",
@@ -6611,7 +9391,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 43.4,
+      "economyRate": 10.76,
+      "wickets": 5
+    }
   },
   {
     "id": "real-3df82408",
@@ -6634,7 +9424,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 2,
+      "strikeRate": 47.62,
+      "runs": 10,
+      "innings": 8,
+      "bowlingAverage": 26.05,
+      "economyRate": 7.9,
+      "wickets": 19
+    }
   },
   {
     "id": "real-3e48620f",
@@ -6657,7 +9457,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3e5af18c",
@@ -6682,7 +9492,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 5,
+      "strikeRate": 100,
+      "runs": 5,
+      "innings": 3,
+      "bowlingAverage": 35.5,
+      "economyRate": 8.88,
+      "wickets": 6
+    }
   },
   {
     "id": "real-3ec5f8da",
@@ -6705,7 +9525,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 12.75,
+      "strikeRate": 118.6,
+      "runs": 51,
+      "innings": 5,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3ec7e30f",
@@ -6728,7 +9558,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3ec7e30f-ea4e-4c9c-9a89-0486d1a85d5b.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/3ec7e30f-ea4e-4c9c-9a89-0486d1a85d5b.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19.82,
+      "strikeRate": 102.83,
+      "runs": 218,
+      "innings": 12,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3f13ffe4",
@@ -6751,7 +9591,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3f18b02d",
@@ -6776,7 +9626,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3f18b02d-0e1a-49be-aec4-c2fc11503505.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/3f18b02d-0e1a-49be-aec4-c2fc11503505.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9,
+      "strikeRate": 77.14,
+      "runs": 54,
+      "innings": 27,
+      "bowlingAverage": 27.07,
+      "economyRate": 7.89,
+      "wickets": 137
+    }
   },
   {
     "id": "real-3f32aaf6",
@@ -6799,7 +9659,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/3f32aaf6-2d91-44ad-b14a-145a55ab5b3d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/3f32aaf6-2d91-44ad-b14a-145a55ab5b3d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 5.67,
+      "strikeRate": 65.38,
+      "runs": 17,
+      "innings": 3,
+      "bowlingAverage": 52.33,
+      "economyRate": 10.47,
+      "wickets": 3
+    }
   },
   {
     "id": "real-3f3fdaea",
@@ -6824,7 +9694,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3f9ced2d",
@@ -6847,7 +9727,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 4,
+      "strikeRate": 72.73,
+      "runs": 8,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3feabeaa",
@@ -6870,7 +9760,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 0,
+      "strikeRate": 25,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": 25.25,
+      "economyRate": 3.26,
+      "wickets": 4
+    }
   },
   {
     "id": "real-4035eb7e",
@@ -6895,7 +9795,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18.08,
+      "strikeRate": 148.73,
+      "runs": 235,
+      "innings": 17,
+      "bowlingAverage": 25.76,
+      "economyRate": 6.79,
+      "wickets": 21
+    }
   },
   {
     "id": "real-403d0bfc",
@@ -6920,7 +9830,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 34.5,
+      "strikeRate": 144.59,
+      "runs": 1725,
+      "innings": 65,
+      "bowlingAverage": 16.94,
+      "economyRate": 5.99,
+      "wickets": 49
+    }
   },
   {
     "id": "real-40ed69da",
@@ -6943,7 +9863,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8.5,
+      "strikeRate": 121.43,
+      "runs": 17,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-40f4e08a",
@@ -6968,7 +9898,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-40f84e49",
@@ -6991,7 +9931,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19.68,
+      "strikeRate": 110.31,
+      "runs": 984,
+      "innings": 57,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-410338ba",
@@ -7014,7 +9964,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19,
+      "strikeRate": 67.86,
+      "runs": 19,
+      "innings": 4,
+      "bowlingAverage": 23.62,
+      "economyRate": 9.59,
+      "wickets": 13
+    }
   },
   {
     "id": "real-417dcfa3",
@@ -7039,7 +9999,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-41f91a34",
@@ -7064,7 +10034,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10.2,
+      "strikeRate": 113.33,
+      "runs": 51,
+      "innings": 9,
+      "bowlingAverage": 34.43,
+      "economyRate": 8.93,
+      "wickets": 7
+    }
   },
   {
     "id": "real-41fa76a7",
@@ -7087,7 +10067,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4269d64c",
@@ -7110,7 +10100,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4269d64c-962d-4cd9-b2d2-1a62f51256b8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4269d64c-962d-4cd9-b2d2-1a62f51256b8.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 31.07,
+      "strikeRate": 153.08,
+      "runs": 1243,
+      "innings": 66,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-42820505",
@@ -7135,7 +10135,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 9.33,
+      "strikeRate": 62.22,
+      "runs": 28,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4377fb73",
@@ -7160,7 +10170,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 24.57,
+      "strikeRate": 96.09,
+      "runs": 172,
+      "innings": 11,
+      "bowlingAverage": 20.17,
+      "economyRate": 8.64,
+      "wickets": 6
+    }
   },
   {
     "id": "real-450da6d1",
@@ -7185,7 +10205,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8.44,
+      "strikeRate": 105.56,
+      "runs": 76,
+      "innings": 16,
+      "bowlingAverage": 28.5,
+      "economyRate": 7.92,
+      "wickets": 20
+    }
   },
   {
     "id": "real-451d9692",
@@ -7210,7 +10240,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/451d9692-8b9d-4905-a300-532f3ba33f11.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/451d9692-8b9d-4905-a300-532f3ba33f11.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7.5,
+      "strikeRate": 109.76,
+      "runs": 45,
+      "innings": 7,
+      "bowlingAverage": 58.5,
+      "economyRate": 9,
+      "wickets": 2
+    }
   },
   {
     "id": "real-45576f91",
@@ -7233,7 +10273,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-456422b1",
@@ -7258,7 +10308,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 4.33,
+      "strikeRate": 61.9,
+      "runs": 13,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-45b573ff",
@@ -7281,7 +10341,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-464e02df",
@@ -7304,7 +10374,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12,
+      "strikeRate": 133.33,
+      "runs": 12,
+      "innings": 3,
+      "bowlingAverage": 22.33,
+      "economyRate": 7.44,
+      "wickets": 3
+    }
   },
   {
     "id": "real-4656e3ad",
@@ -7327,7 +10407,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-46c8c7a0",
@@ -7352,7 +10442,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 0,
+      "strikeRate": 133.33,
+      "runs": 12,
+      "innings": 1,
+      "bowlingAverage": 36.14,
+      "economyRate": 3.17,
+      "wickets": 22
+    }
   },
   {
     "id": "real-46efb0dc",
@@ -7375,7 +10475,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 7.5,
+      "strikeRate": 88.24,
+      "runs": 15,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-475a70da",
@@ -7398,7 +10508,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 9,
+      "strikeRate": 81.82,
+      "runs": 18,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-476d3619",
@@ -7421,7 +10541,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-47770eee",
@@ -7446,7 +10576,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 10.5,
+      "strikeRate": 91.3,
+      "runs": 42,
+      "innings": 4,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-47ef7e3e",
@@ -7469,7 +10609,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/47ef7e3e-5808-49a8-934d-8d98b7889d28.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/47ef7e3e-5808-49a8-934d-8d98b7889d28.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 200,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4812dee7",
@@ -7492,7 +10642,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3.65,
+      "strikeRate": 101.64,
+      "runs": 62,
+      "innings": 28,
+      "bowlingAverage": 21.32,
+      "economyRate": 7.06,
+      "wickets": 78
+    }
   },
   {
     "id": "real-487a5d0a",
@@ -7515,7 +10675,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-48a17474",
@@ -7540,7 +10710,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 2.7,
+      "strikeRate": 93.1,
+      "runs": 27,
+      "innings": 12,
+      "bowlingAverage": 31.06,
+      "economyRate": 7.55,
+      "wickets": 31
+    }
   },
   {
     "id": "real-48da9a39",
@@ -7563,7 +10743,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-490ccd09",
@@ -7586,7 +10776,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/490ccd09-a266-4663-bb64-c660c9a73134.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/490ccd09-a266-4663-bb64-c660c9a73134.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14.75,
+      "strikeRate": 104.42,
+      "runs": 118,
+      "innings": 9,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-494405c6",
@@ -7609,7 +10809,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 53.5,
+      "strikeRate": 80.89,
+      "runs": 107,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4964ded0",
@@ -7632,7 +10842,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4964ded0-f832-4ced-8359-3ea311c39209.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4964ded0-f832-4ced-8359-3ea311c39209.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 100,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": 19.33,
+      "economyRate": 7.25,
+      "wickets": 3
+    }
   },
   {
     "id": "real-49691fad",
@@ -7655,7 +10875,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4a0a483d",
@@ -7680,7 +10910,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4a0a483d-de7f-4313-b2ed-8eceb3d8bb45.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4a0a483d-de7f-4313-b2ed-8eceb3d8bb45.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 13,
+      "strikeRate": 56.52,
+      "runs": 13,
+      "innings": 9,
+      "bowlingAverage": 28.89,
+      "economyRate": 8.14,
+      "wickets": 61
+    }
   },
   {
     "id": "real-4ac9f0d8",
@@ -7705,7 +10945,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 21.65,
+      "strikeRate": 137.95,
+      "runs": 498,
+      "innings": 25,
+      "bowlingAverage": 24.56,
+      "economyRate": 6.89,
+      "wickets": 16
+    }
   },
   {
     "id": "real-4ad413ea",
@@ -7730,7 +10980,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14.75,
+      "strikeRate": 96.72,
+      "runs": 59,
+      "innings": 8,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4b23c29e",
@@ -7755,7 +11015,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 12.94,
+      "strikeRate": 104.01,
+      "runs": 233,
+      "innings": 37,
+      "bowlingAverage": 23.75,
+      "economyRate": 7.61,
+      "wickets": 73
+    }
   },
   {
     "id": "real-4b661541",
@@ -7778,7 +11048,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4bcb5991",
@@ -7801,7 +11081,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 4,
+      "strikeRate": 133.34,
+      "runs": 4,
+      "innings": 3,
+      "bowlingAverage": 24,
+      "economyRate": 7.73,
+      "wickets": 16
+    }
   },
   {
     "id": "real-4c17aaba",
@@ -7826,7 +11116,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4c28bf05",
@@ -7849,7 +11149,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4c44b687",
@@ -7872,7 +11182,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16,
+      "strikeRate": 266.67,
+      "runs": 16,
+      "innings": 1,
+      "bowlingAverage": 40,
+      "economyRate": 9.06,
+      "wickets": 8
+    }
   },
   {
     "id": "real-4c720116",
@@ -7895,7 +11215,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4cea6e1d",
@@ -7920,7 +11250,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4cea6e1d-5808-466b-9a8c-74fc324efb75.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4cea6e1d-5808-466b-9a8c-74fc324efb75.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 29.6,
+      "strikeRate": 146.53,
+      "runs": 148,
+      "innings": 11,
+      "bowlingAverage": 27.5,
+      "economyRate": 8.92,
+      "wickets": 16
+    }
   },
   {
     "id": "real-4d276c88",
@@ -7945,7 +11285,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4d276c88-bbd9-4730-84f2-6874532fccfa.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4d276c88-bbd9-4730-84f2-6874532fccfa.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 23.49,
+      "strikeRate": 126.38,
+      "runs": 1691,
+      "innings": 80,
+      "bowlingAverage": 28.62,
+      "economyRate": 6.94,
+      "wickets": 48
+    }
   },
   {
     "id": "real-4d8d0ef4",
@@ -7968,7 +11318,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4e09d60f",
@@ -7993,7 +11353,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4eb88f90",
@@ -8018,7 +11388,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4eef0b4e",
@@ -8041,7 +11421,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4fb33ef1",
@@ -8066,7 +11456,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22,
+      "strikeRate": 83.02,
+      "runs": 44,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-4ff68cf3",
@@ -8089,7 +11489,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 27.94,
+      "strikeRate": 179.25,
+      "runs": 475,
+      "innings": 17,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-501339cf",
@@ -8112,7 +11522,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/501339cf-c494-4da7-96e3-42627f33efbe.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/501339cf-c494-4da7-96e3-42627f33efbe.jpg",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 18.92,
+      "strikeRate": 112.28,
+      "runs": 265,
+      "innings": 19,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-503859e2",
@@ -8137,7 +11557,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22,
+      "strikeRate": 75.86,
+      "runs": 22,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-50a5d395",
@@ -8162,7 +11592,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/50a5d395-778f-4d06-8cff-7618b8143858.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/50a5d395-778f-4d06-8cff-7618b8143858.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-50b70c71",
@@ -8185,7 +11625,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/50b70c71-1535-41c0-87fd-c12883105ede.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/50b70c71-1535-41c0-87fd-c12883105ede.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 41.75,
+      "strikeRate": 136.86,
+      "runs": 2380,
+      "innings": 65,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-50d3a114",
@@ -8208,7 +11658,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-50e38c9d",
@@ -8231,7 +11691,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/50e38c9d-bf39-44b8-b5e6-0c9f36b8cbdf.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/50e38c9d-bf39-44b8-b5e6-0c9f36b8cbdf.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3.07,
+      "strikeRate": 64.18,
+      "runs": 43,
+      "innings": 27,
+      "bowlingAverage": 21.77,
+      "economyRate": 7.06,
+      "wickets": 77
+    }
   },
   {
     "id": "real-51412d26",
@@ -8256,7 +11726,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 23.5,
+      "strikeRate": 90.38,
+      "runs": 47,
+      "innings": 3,
+      "bowlingAverage": 8.9,
+      "economyRate": 3.87,
+      "wickets": 10
+    }
   },
   {
     "id": "real-5165d25c",
@@ -8279,7 +11759,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 30,
+      "strikeRate": 153.84,
+      "runs": 180,
+      "innings": 7,
+      "bowlingAverage": 21,
+      "economyRate": 9,
+      "wickets": 4
+    }
   },
   {
     "id": "real-51a3ae4d",
@@ -8302,7 +11792,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22.86,
+      "strikeRate": 108.35,
+      "runs": 960,
+      "innings": 47,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-51f121da",
@@ -8327,7 +11827,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/51f121da-1a68-418b-9df9-cf39d75219c6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/51f121da-1a68-418b-9df9-cf39d75219c6.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9,
+      "strikeRate": 81.82,
+      "runs": 9,
+      "innings": 1,
+      "bowlingAverage": 24.38,
+      "economyRate": 9.75,
+      "wickets": 8
+    }
   },
   {
     "id": "real-52a6be27",
@@ -8350,7 +11860,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 9.56,
+      "strikeRate": 95.56,
+      "runs": 86,
+      "innings": 9,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-52bf5e2a",
@@ -8373,7 +11893,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/52bf5e2a-1285-4bf7-a80c-52802636f0ba.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/52bf5e2a-1285-4bf7-a80c-52802636f0ba.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9.23,
+      "strikeRate": 112.15,
+      "runs": 120,
+      "innings": 20,
+      "bowlingAverage": 37.06,
+      "economyRate": 8.67,
+      "wickets": 47
+    }
   },
   {
     "id": "real-52ca730b",
@@ -8396,7 +11926,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/52ca730b-6c0e-41a7-ae21-78d909d7bf12.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/52ca730b-6c0e-41a7-ae21-78d909d7bf12.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 44.44,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": 42.67,
+      "economyRate": 9.85,
+      "wickets": 3
+    }
   },
   {
     "id": "real-52efbeb1",
@@ -8421,7 +11961,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/52efbeb1-7279-47d9-85f4-c8fa5c59f03a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/52efbeb1-7279-47d9-85f4-c8fa5c59f03a.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7,
+      "strikeRate": 77.78,
+      "runs": 35,
+      "innings": 9,
+      "bowlingAverage": 27.9,
+      "economyRate": 9.3,
+      "wickets": 21
+    }
   },
   {
     "id": "real-535e041e",
@@ -8444,7 +11994,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-53b7aeeb",
@@ -8467,7 +12027,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/53b7aeeb-f966-4398-a1cf-6f29d27d934c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/53b7aeeb-f966-4398-a1cf-6f29d27d934c.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 28.43,
+      "strikeRate": 97.07,
+      "runs": 199,
+      "innings": 8,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-53db35ac",
@@ -8492,7 +12062,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22.4,
+      "strikeRate": 135.76,
+      "runs": 224,
+      "innings": 10,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-544bcc22",
@@ -8517,7 +12097,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-545a039e",
@@ -8542,7 +12132,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-54c45d3c",
@@ -8567,7 +12167,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/54c45d3c-9496-4c07-8258-c206074ab681.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/54c45d3c-9496-4c07-8258-c206074ab681.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 21.18,
+      "strikeRate": 115.87,
+      "runs": 847,
+      "innings": 44,
+      "bowlingAverage": 20.44,
+      "economyRate": 6.86,
+      "wickets": 16
+    }
   },
   {
     "id": "real-5521b1ca",
@@ -8590,7 +12200,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/5521b1ca-6abe-44a0-99d9-e00a2c352ee3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/5521b1ca-6abe-44a0-99d9-e00a2c352ee3.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10,
+      "strikeRate": 66.67,
+      "runs": 10,
+      "innings": 6,
+      "bowlingAverage": 29.07,
+      "economyRate": 9.41,
+      "wickets": 15
+    }
   },
   {
     "id": "real-552326f4",
@@ -8613,7 +12233,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-55c01352",
@@ -8636,7 +12266,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 2.5,
+      "strikeRate": 50,
+      "runs": 5,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-55d93a4c",
@@ -8661,7 +12301,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 24.34,
+      "strikeRate": 129.11,
+      "runs": 998,
+      "innings": 55,
+      "bowlingAverage": 43.62,
+      "economyRate": 7.1,
+      "wickets": 8
+    }
   },
   {
     "id": "real-5642aa63",
@@ -8684,7 +12334,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-56564a1d",
@@ -8707,7 +12367,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5673ee27",
@@ -8730,7 +12400,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/5673ee27-bf33-44b8-8973-41fd37923fed.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/5673ee27-bf33-44b8-8973-41fd37923fed.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 16.25,
+      "strikeRate": 118.18,
+      "runs": 65,
+      "innings": 7,
+      "bowlingAverage": 29.89,
+      "economyRate": 9.61,
+      "wickets": 9
+    }
   },
   {
     "id": "real-56ec7d07",
@@ -8753,7 +12433,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/56ec7d07-d0d8-4d25-84df-64b0b3ce963d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/56ec7d07-d0d8-4d25-84df-64b0b3ce963d.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5719bf69",
@@ -8776,7 +12466,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 30.46,
+      "strikeRate": 122.22,
+      "runs": 396,
+      "innings": 17,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-580ab91b",
@@ -8799,7 +12499,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 6.5,
+      "economyRate": 2.6,
+      "wickets": 2
+    }
   },
   {
     "id": "real-5896b5d0",
@@ -8822,7 +12532,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-58acdde0",
@@ -8845,7 +12565,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-58cd4af5",
@@ -8868,7 +12598,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/58cd4af5-3c85-4bf0-94fd-25fe051c9845.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/58cd4af5-3c85-4bf0-94fd-25fe051c9845.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 16,
+      "strikeRate": 88.89,
+      "runs": 48,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-58f54f04",
@@ -8891,7 +12631,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16,
+      "strikeRate": 133.33,
+      "runs": 16,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5933ac2d",
@@ -8916,7 +12666,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 20.62,
+      "strikeRate": 115.11,
+      "runs": 701,
+      "innings": 40,
+      "bowlingAverage": 18.2,
+      "economyRate": 5.95,
+      "wickets": 70
+    }
   },
   {
     "id": "real-593dce85",
@@ -8939,7 +12699,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 19.89,
+      "strikeRate": 41.77,
+      "runs": 358,
+      "innings": 18,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-596d5a37",
@@ -8962,7 +12732,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5975d619",
@@ -8985,7 +12765,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 6.14,
+      "strikeRate": 110.26,
+      "runs": 43,
+      "innings": 10,
+      "bowlingAverage": 15.79,
+      "economyRate": 5.65,
+      "wickets": 29
+    }
   },
   {
     "id": "real-5a1e5f1f",
@@ -9008,7 +12798,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 27.5,
+      "strikeRate": 60.66,
+      "runs": 165,
+      "innings": 6,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5a75be3c",
@@ -9031,7 +12831,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 46,
+      "strikeRate": 56.76,
+      "runs": 63,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5abb1942",
@@ -9054,7 +12864,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5b57f14f",
@@ -9077,7 +12897,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5bf98798",
@@ -9102,7 +12932,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 33.67,
+      "strikeRate": 142.92,
+      "runs": 303,
+      "innings": 11,
+      "bowlingAverage": 69,
+      "economyRate": 11.39,
+      "wickets": 3
+    }
   },
   {
     "id": "real-5c5d4165",
@@ -9127,7 +12967,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/5c5d4165-c9bf-408e-a289-10d8be4baeb1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/5c5d4165-c9bf-408e-a289-10d8be4baeb1.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 26.88,
+      "strikeRate": 134.87,
+      "runs": 3655,
+      "innings": 146,
+      "bowlingAverage": 32.35,
+      "economyRate": 7.44,
+      "wickets": 20
+    }
   },
   {
     "id": "real-5d15a50d",
@@ -9150,7 +13000,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 19,
+      "economyRate": 6.33,
+      "wickets": 2
+    }
   },
   {
     "id": "real-5d1e8463",
@@ -9175,7 +13035,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/5d1e8463-938e-4e25-9b1c-69251965d5f4.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/5d1e8463-938e-4e25-9b1c-69251965d5f4.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 1,
+      "strikeRate": 50,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": 46,
+      "economyRate": 4.6,
+      "wickets": 1
+    }
   },
   {
     "id": "real-5d90a624",
@@ -9198,7 +13068,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5e2464e9",
@@ -9221,7 +13101,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5e250b38",
@@ -9244,7 +13134,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/5e250b38-3d7e-4879-8e34-51684aca4b2f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/5e250b38-3d7e-4879-8e34-51684aca4b2f.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7,
+      "strikeRate": 116.67,
+      "runs": 7,
+      "innings": 1,
+      "bowlingAverage": 27.9,
+      "economyRate": 9.25,
+      "wickets": 11
+    }
   },
   {
     "id": "real-5e50041e",
@@ -9269,7 +13169,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 17.58,
+      "strikeRate": 57.79,
+      "runs": 334,
+      "innings": 33,
+      "bowlingAverage": 27.64,
+      "economyRate": 3.06,
+      "wickets": 73
+    }
   },
   {
     "id": "real-5e757ebf",
@@ -9292,7 +13202,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 22.45,
+      "strikeRate": 158.1,
+      "runs": 449,
+      "innings": 22,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5ee086d2",
@@ -9315,7 +13235,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5f2406ef",
@@ -9338,7 +13268,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-5fd4347d",
@@ -9361,7 +13301,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-60445a80",
@@ -9386,7 +13336,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 23.5,
+      "strikeRate": 167.86,
+      "runs": 47,
+      "innings": 3,
+      "bowlingAverage": 12.4,
+      "economyRate": 4.96,
+      "wickets": 10
+    }
   },
   {
     "id": "real-604d7c88",
@@ -9409,7 +13369,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/604d7c88-4f5d-40d9-b08b-330420964d87.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/604d7c88-4f5d-40d9-b08b-330420964d87.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.67,
+      "strikeRate": 147.83,
+      "runs": 68,
+      "innings": 10,
+      "bowlingAverage": 31,
+      "economyRate": 8.96,
+      "wickets": 46
+    }
   },
   {
     "id": "real-605cf0c1",
@@ -9432,7 +13402,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 29.53,
+      "strikeRate": 133.33,
+      "runs": 1004,
+      "innings": 40,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-608e195a",
@@ -9455,7 +13435,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/608e195a-b9d5-445a-8c54-42c3181702e0.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/608e195a-b9d5-445a-8c54-42c3181702e0.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 58,
+      "economyRate": 8.29,
+      "wickets": 1
+    }
   },
   {
     "id": "real-61001f72",
@@ -9478,7 +13468,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/61001f72-e392-44bb-b65b-97572f97ca2f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/61001f72-e392-44bb-b65b-97572f97ca2f.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10.33,
+      "strikeRate": 58.49,
+      "runs": 31,
+      "innings": 8,
+      "bowlingAverage": 36.18,
+      "economyRate": 9.32,
+      "wickets": 17
+    }
   },
   {
     "id": "real-615b1dc1",
@@ -9503,7 +13503,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 6.5,
+      "strikeRate": 130,
+      "runs": 13,
+      "innings": 2,
+      "bowlingAverage": 79,
+      "economyRate": 9.88,
+      "wickets": 1
+    }
   },
   {
     "id": "real-6177f30d",
@@ -9526,7 +13536,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6177f30d-6d67-4f53-b014-3c41eb8cb757-637955581054240980.png"
+    "imageUrl": "https://h.cricapi.com/img/players/6177f30d-6d67-4f53-b014-3c41eb8cb757-637955581054240980.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3.5,
+      "strikeRate": 46.67,
+      "runs": 7,
+      "innings": 6,
+      "bowlingAverage": 23.36,
+      "economyRate": 7.16,
+      "wickets": 22
+    }
   },
   {
     "id": "real-617fe10d",
@@ -9549,7 +13569,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10.4,
+      "strikeRate": 120.93,
+      "runs": 52,
+      "innings": 5,
+      "bowlingAverage": 154,
+      "economyRate": 8.56,
+      "wickets": 1
+    }
   },
   {
     "id": "real-620cb8ae",
@@ -9572,7 +13602,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6236a6bc",
@@ -9595,7 +13635,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6237a9af",
@@ -9618,7 +13668,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 15,
+      "strikeRate": 115.38,
+      "runs": 15,
+      "innings": 1,
+      "bowlingAverage": 23.21,
+      "economyRate": 8.01,
+      "wickets": 19
+    }
   },
   {
     "id": "real-62e7d0cb",
@@ -9641,7 +13701,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-62f6eb8b",
@@ -9666,7 +13736,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 9,
+      "strikeRate": 150,
+      "runs": 9,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-63075eff",
@@ -9689,7 +13769,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 71,
+      "economyRate": 7.89,
+      "wickets": 1
+    }
   },
   {
     "id": "real-631c0ba9",
@@ -9712,7 +13802,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 15.6,
+      "strikeRate": 97.5,
+      "runs": 78,
+      "innings": 5,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6346e651",
@@ -9735,7 +13835,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 14.27,
+      "strikeRate": 122.66,
+      "runs": 157,
+      "innings": 11,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6364e591",
@@ -9758,7 +13868,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6364e591-1f4b-4fe6-867c-ae61ea21f6f0.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6364e591-1f4b-4fe6-867c-ae61ea21f6f0.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9,
+      "strikeRate": 90,
+      "runs": 18,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-63ea49da",
@@ -9781,7 +13901,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/63ea49da-8242-4cc5-a918-747a9db877b1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/63ea49da-8242-4cc5-a918-747a9db877b1.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 25,
+      "strikeRate": 122.95,
+      "runs": 75,
+      "innings": 4,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6429ea13",
@@ -9806,7 +13936,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 13.38,
+      "strikeRate": 105.45,
+      "runs": 174,
+      "innings": 13,
+      "bowlingAverage": 178,
+      "economyRate": 7.85,
+      "wickets": 1
+    }
   },
   {
     "id": "real-64360dd6",
@@ -9829,7 +13969,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/64360dd6-a8db-47ae-8837-638a5bbbaae6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/64360dd6-a8db-47ae-8837-638a5bbbaae6.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 28.34,
+      "strikeRate": 135.04,
+      "runs": 2636,
+      "innings": 101,
+      "bowlingAverage": 25.2,
+      "economyRate": 8.4,
+      "wickets": 10
+    }
   },
   {
     "id": "real-643c72ef",
@@ -9854,7 +14004,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 6,
+      "strikeRate": 50,
+      "runs": 6,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-64868467",
@@ -9877,7 +14037,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-64cee887",
@@ -9900,7 +14070,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 22.4,
+      "strikeRate": 114.87,
+      "runs": 224,
+      "innings": 13,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-66487d50",
@@ -9923,7 +14103,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 1,
+      "strikeRate": 50,
+      "runs": 2,
+      "innings": 3,
+      "bowlingAverage": 18.83,
+      "economyRate": 8.64,
+      "wickets": 12
+    }
   },
   {
     "id": "real-6731db45",
@@ -9946,7 +14136,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6731db45-8132-49c6-8fcb-f59258d15082.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6731db45-8132-49c6-8fcb-f59258d15082.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 4.75,
+      "strikeRate": 76,
+      "runs": 19,
+      "innings": 5,
+      "bowlingAverage": 28.22,
+      "economyRate": 8.61,
+      "wickets": 18
+    }
   },
   {
     "id": "real-673d09c8",
@@ -9971,7 +14171,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/673d09c8-9d6a-4a40-87b1-25796a848103.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/673d09c8-9d6a-4a40-87b1-25796a848103.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 14.45,
+      "strikeRate": 112.77,
+      "runs": 159,
+      "innings": 15,
+      "bowlingAverage": 23.71,
+      "economyRate": 6.74,
+      "wickets": 21
+    }
   },
   {
     "id": "real-679f3d10",
@@ -9994,7 +14204,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 34.29,
+      "strikeRate": 188.98,
+      "runs": 240,
+      "innings": 7,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-67b145ea",
@@ -10017,7 +14237,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/67b145ea-3419-46db-acf4-35e8cac24f87.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/67b145ea-3419-46db-acf4-35e8cac24f87.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 12,
+      "strikeRate": 92.31,
+      "runs": 36,
+      "innings": 4,
+      "bowlingAverage": 24.84,
+      "economyRate": 8.45,
+      "wickets": 19
+    }
   },
   {
     "id": "real-6860128d",
@@ -10040,7 +14270,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 13,
+      "strikeRate": 123.81,
+      "runs": 26,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-68720fdd",
@@ -10063,7 +14303,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 5,
+      "strikeRate": 71.43,
+      "runs": 10,
+      "innings": 3,
+      "bowlingAverage": 23.57,
+      "economyRate": 5.89,
+      "wickets": 7
+    }
   },
   {
     "id": "real-690c279f",
@@ -10086,7 +14336,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-692d1870",
@@ -10109,7 +14369,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/692d1870-1c50-447b-a156-0ef75f44c7a1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/692d1870-1c50-447b-a156-0ef75f44c7a1.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 27.24,
+      "strikeRate": 128.25,
+      "runs": 463,
+      "innings": 17,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-69718248",
@@ -10132,7 +14402,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/69718248-2a3a-45d4-9a2a-6f4dfc6942a5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/69718248-2a3a-45d4-9a2a-6f4dfc6942a5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 28.65,
+      "strikeRate": 170.28,
+      "runs": 659,
+      "innings": 35,
+      "bowlingAverage": 51,
+      "economyRate": 9.33,
+      "wickets": 5
+    }
   },
   {
     "id": "real-69765bab",
@@ -10155,7 +14435,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-698dfde7",
@@ -10178,7 +14468,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-69bff2f3",
@@ -10201,7 +14501,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 15.48,
+      "strikeRate": 96.67,
+      "runs": 728,
+      "innings": 49,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6b27e617",
@@ -10224,7 +14534,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 13,
+      "strikeRate": 81.25,
+      "runs": 52,
+      "innings": 5,
+      "bowlingAverage": 49,
+      "economyRate": 7.44,
+      "wickets": 2
+    }
   },
   {
     "id": "real-6b5528d8",
@@ -10247,7 +14567,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6c515b6d",
@@ -10270,7 +14600,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6cb5025a",
@@ -10293,7 +14633,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6ce0433e",
@@ -10318,7 +14668,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6ceed869",
@@ -10343,7 +14703,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6ceed869-d2b7-4707-b6fd-cb84419cda12.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6ceed869-d2b7-4707-b6fd-cb84419cda12.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 13,
+      "strikeRate": 144.44,
+      "runs": 13,
+      "innings": 1,
+      "bowlingAverage": 38,
+      "economyRate": 9.37,
+      "wickets": 3
+    }
   },
   {
     "id": "real-6d4e7d4a",
@@ -10366,7 +14736,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 20.29,
+      "strikeRate": 179.75,
+      "runs": 142,
+      "innings": 8,
+      "bowlingAverage": 32.36,
+      "economyRate": 9.13,
+      "wickets": 11
+    }
   },
   {
     "id": "real-6d542f0e",
@@ -10391,7 +14771,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11.83,
+      "strikeRate": 128.16,
+      "runs": 355,
+      "innings": 32,
+      "bowlingAverage": 21.12,
+      "economyRate": 7.86,
+      "wickets": 32
+    }
   },
   {
     "id": "real-6d72445b",
@@ -10414,7 +14804,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19.44,
+      "strikeRate": 132.58,
+      "runs": 175,
+      "innings": 9,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6d751be3",
@@ -10437,7 +14837,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6d751be3-3023-43b9-8415-8259d19689fd.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6d751be3-3023-43b9-8415-8259d19689fd.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6db25d60",
@@ -10460,7 +14870,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 34.37,
+      "strikeRate": 175.54,
+      "runs": 653,
+      "innings": 21,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6e05cbea",
@@ -10483,7 +14903,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6e05cbea-6a4b-42ef-8e2e-b44e4b434c2f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6e05cbea-6a4b-42ef-8e2e-b44e4b434c2f.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8.5,
+      "strikeRate": 89.47,
+      "runs": 17,
+      "innings": 4,
+      "bowlingAverage": 21.37,
+      "economyRate": 7.25,
+      "wickets": 19
+    }
   },
   {
     "id": "real-6eaac800",
@@ -10508,7 +14938,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6eaac800-13e7-4a07-8ee2-14acd04cc53f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6eaac800-13e7-4a07-8ee2-14acd04cc53f.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.56,
+      "strikeRate": 127.64,
+      "runs": 665,
+      "innings": 36,
+      "bowlingAverage": 21.49,
+      "economyRate": 8.52,
+      "wickets": 37
+    }
   },
   {
     "id": "real-6ef77741",
@@ -10533,7 +14973,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 12.08,
+      "strikeRate": 105.83,
+      "runs": 145,
+      "innings": 12,
+      "bowlingAverage": 24.11,
+      "economyRate": 5.71,
+      "wickets": 9
+    }
   },
   {
     "id": "real-70065f9a",
@@ -10556,7 +15006,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-702254aa",
@@ -10579,7 +15039,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/702254aa-2764-4fe4-b28e-20336a0ab069.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/702254aa-2764-4fe4-b28e-20336a0ab069.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 6.25,
+      "strikeRate": 54.35,
+      "runs": 25,
+      "innings": 12,
+      "bowlingAverage": 24.12,
+      "economyRate": 7.56,
+      "wickets": 83
+    }
   },
   {
     "id": "real-70a15514",
@@ -10602,7 +15072,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/70a15514-706c-45ee-bc7b-0665be38326e.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/70a15514-706c-45ee-bc7b-0665be38326e.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 1,
+      "strikeRate": 50,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": 33.8,
+      "economyRate": 9.39,
+      "wickets": 5
+    }
   },
   {
     "id": "real-715107b5",
@@ -10625,7 +15105,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/715107b5-0412-452b-aa0b-04394f7b1327.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/715107b5-0412-452b-aa0b-04394f7b1327.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 34.54,
+      "strikeRate": 144.45,
+      "runs": 1589,
+      "innings": 50,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-71add5ac",
@@ -10648,7 +15138,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23.33,
+      "strikeRate": 177.22,
+      "runs": 140,
+      "innings": 7,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-729b25ee",
@@ -10671,7 +15171,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-737e8cec",
@@ -10694,7 +15204,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 21.27,
+      "strikeRate": 137.22,
+      "runs": 553,
+      "innings": 32,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-73fa7ae2",
@@ -10719,7 +15239,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 20.31,
+      "strikeRate": 119.08,
+      "runs": 1117,
+      "innings": 64,
+      "bowlingAverage": 21.67,
+      "economyRate": 7.65,
+      "wickets": 12
+    }
   },
   {
     "id": "real-74199aa5",
@@ -10744,7 +15274,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7442a6e5",
@@ -10769,7 +15309,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-754a8a32",
@@ -10794,7 +15344,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-75606beb",
@@ -10819,7 +15379,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18,
+      "strikeRate": 120,
+      "runs": 72,
+      "innings": 5,
+      "bowlingAverage": 22.38,
+      "economyRate": 9.26,
+      "wickets": 8
+    }
   },
   {
     "id": "real-759c0006",
@@ -10842,7 +15412,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 4,
+      "strikeRate": 57.14,
+      "runs": 4,
+      "innings": 2,
+      "bowlingAverage": 19,
+      "economyRate": 6.61,
+      "wickets": 8
+    }
   },
   {
     "id": "real-75af89a4",
@@ -10865,7 +15445,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-75b3be27",
@@ -10888,7 +15478,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/75b3be27-b776-4c10-b08f-f27e04e8dca8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/75b3be27-b776-4c10-b08f-f27e04e8dca8.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8.1,
+      "strikeRate": 105.19,
+      "runs": 81,
+      "innings": 13,
+      "bowlingAverage": 35.67,
+      "economyRate": 9.61,
+      "wickets": 30
+    }
   },
   {
     "id": "real-75df214e",
@@ -10911,7 +15511,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-768b596e",
@@ -10934,7 +15544,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 0,
+      "strikeRate": 100,
+      "runs": 1,
+      "innings": 2,
+      "bowlingAverage": 86,
+      "economyRate": 12.29,
+      "wickets": 1
+    }
   },
   {
     "id": "real-77851509",
@@ -10957,7 +15577,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-77ba09b0",
@@ -10982,7 +15612,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/77ba09b0-773a-4008-bed1-e4fd642cffc5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/77ba09b0-773a-4008-bed1-e4fd642cffc5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 18,
+      "strikeRate": 72,
+      "runs": 18,
+      "innings": 6,
+      "bowlingAverage": 23.64,
+      "economyRate": 9.16,
+      "wickets": 25
+    }
   },
   {
     "id": "real-77bf8f68",
@@ -11005,7 +15645,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11.33,
+      "strikeRate": 113.33,
+      "runs": 34,
+      "innings": 6,
+      "bowlingAverage": 19.17,
+      "economyRate": 7.42,
+      "wickets": 12
+    }
   },
   {
     "id": "real-7844d9c9",
@@ -11030,7 +15680,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10,
+      "strikeRate": 84.51,
+      "runs": 60,
+      "innings": 11,
+      "bowlingAverage": 22.83,
+      "economyRate": 8.43,
+      "wickets": 24
+    }
   },
   {
     "id": "real-78d4f412",
@@ -11053,7 +15713,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-78e5a907",
@@ -11078,7 +15748,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11.8,
+      "strikeRate": 90.77,
+      "runs": 59,
+      "innings": 5,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7971816d",
@@ -11101,7 +15781,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 16,
+      "economyRate": 7.27,
+      "wickets": 5
+    }
   },
   {
     "id": "real-79f582a1",
@@ -11124,7 +15814,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 47,
+      "strikeRate": 139.17,
+      "runs": 1034,
+      "innings": 25,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7aa19b4a",
@@ -11147,7 +15847,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 18.31,
+      "economyRate": 8.93,
+      "wickets": 13
+    }
   },
   {
     "id": "real-7aa9a5e9",
@@ -11170,7 +15880,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7aa9a5e9-612f-4233-8aae-42599c3687b1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7aa9a5e9-612f-4233-8aae-42599c3687b1.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.35,
+      "strikeRate": 129.64,
+      "runs": 503,
+      "innings": 27,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7ad720f4",
@@ -11195,7 +15915,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7ad720f4-1bc4-4c79-8b6b-05a667cbdb71.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7ad720f4-1bc4-4c79-8b6b-05a667cbdb71.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 150,
+      "runs": 6,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7bdfc4ae",
@@ -11220,7 +15950,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7c5d3341",
@@ -11243,7 +15983,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 9,
+      "strikeRate": 150,
+      "runs": 9,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7cb23ef6",
@@ -11266,7 +16016,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7cb23ef6-2cd5-4aeb-9047-a5054d220f98.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7cb23ef6-2cd5-4aeb-9047-a5054d220f98.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 38,
+      "economyRate": 4.22,
+      "wickets": 1
+    }
   },
   {
     "id": "real-7cd273d0",
@@ -11291,7 +16051,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7cd273d0-4f3d-4d99-a31c-f2d8ee77b552.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7cd273d0-4f3d-4d99-a31c-f2d8ee77b552.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16.17,
+      "strikeRate": 106.2,
+      "runs": 291,
+      "innings": 34,
+      "bowlingAverage": 39.71,
+      "economyRate": 8.37,
+      "wickets": 24
+    }
   },
   {
     "id": "real-7d1671e6",
@@ -11314,7 +16084,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7d51a595",
@@ -11337,7 +16117,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 36.5,
+      "strikeRate": 128.08,
+      "runs": 73,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7d689fb0",
@@ -11360,7 +16150,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7d689fb0-23c9-49cb-b68c-b51115d252b0.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7d689fb0-23c9-49cb-b68c-b51115d252b0.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19.67,
+      "strikeRate": 103.61,
+      "runs": 1062,
+      "innings": 61,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7d6bbd6c",
@@ -11385,7 +16185,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7d6bbd6c-c5bb-4e1c-9374-aaa829e77611.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7d6bbd6c-c5bb-4e1c-9374-aaa829e77611.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 13,
+      "strikeRate": 216.67,
+      "runs": 13,
+      "innings": 2,
+      "bowlingAverage": 19.85,
+      "economyRate": 8.32,
+      "wickets": 13
+    }
   },
   {
     "id": "real-7e09eef0",
@@ -11410,7 +16220,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7e09eef0-d886-4997-b568-5fd4e0dfbbec.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7e09eef0-d886-4997-b568-5fd4e0dfbbec.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 7,
+      "strikeRate": 100,
+      "runs": 7,
+      "innings": 2,
+      "bowlingAverage": 31.88,
+      "economyRate": 7.66,
+      "wickets": 25
+    }
   },
   {
     "id": "real-7e325876",
@@ -11435,7 +16255,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 17.43,
+      "strikeRate": 123.45,
+      "runs": 279,
+      "innings": 20,
+      "bowlingAverage": 23.77,
+      "economyRate": 7.19,
+      "wickets": 22
+    }
   },
   {
     "id": "real-7e9dc8b1",
@@ -11458,7 +16288,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7e9dc8b1-c44c-44f1-8663-cc42bad7709b.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7e9dc8b1-c44c-44f1-8663-cc42bad7709b.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 50,
+      "runs": 3,
+      "innings": 1,
+      "bowlingAverage": 36.4,
+      "economyRate": 10.71,
+      "wickets": 5
+    }
   },
   {
     "id": "real-7ee6e644",
@@ -11483,7 +16323,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7ee6e644-86fd-4a5b-b332-66a29b34283d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7ee6e644-86fd-4a5b-b332-66a29b34283d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 4.8,
+      "strikeRate": 85.71,
+      "runs": 24,
+      "innings": 6,
+      "bowlingAverage": 20.5,
+      "economyRate": 6.31,
+      "wickets": 4
+    }
   },
   {
     "id": "real-7f53734b",
@@ -11506,7 +16356,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7f53734b-ef11-4980-ac26-5963d439798a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7f53734b-ef11-4980-ac26-5963d439798a.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7.22,
+      "strikeRate": 85.53,
+      "runs": 65,
+      "innings": 17,
+      "bowlingAverage": 21.94,
+      "economyRate": 7.08,
+      "wickets": 71
+    }
   },
   {
     "id": "real-7f748437",
@@ -11529,7 +16389,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19.28,
+      "strikeRate": 136.67,
+      "runs": 559,
+      "innings": 39,
+      "bowlingAverage": 9.4,
+      "economyRate": 5.04,
+      "wickets": 5
+    }
   },
   {
     "id": "real-7fd4fa20",
@@ -11554,7 +16424,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7fd4fa20-bc49-4337-ae8a-540b67cb011d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7fd4fa20-bc49-4337-ae8a-540b67cb011d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23,
+      "strikeRate": 182.54,
+      "runs": 115,
+      "innings": 9,
+      "bowlingAverage": 64.25,
+      "economyRate": 12.24,
+      "wickets": 4
+    }
   },
   {
     "id": "real-7fd680f8",
@@ -11579,7 +16459,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 5.67,
+      "strikeRate": 80.95,
+      "runs": 17,
+      "innings": 3,
+      "bowlingAverage": 24,
+      "economyRate": 6.86,
+      "wickets": 2
+    }
   },
   {
     "id": "real-7fed76e7",
@@ -11604,7 +16494,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 38.23,
+      "strikeRate": 148.8,
+      "runs": 497,
+      "innings": 15,
+      "bowlingAverage": 63,
+      "economyRate": 9,
+      "wickets": 2
+    }
   },
   {
     "id": "real-80193c8f",
@@ -11627,7 +16527,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/80193c8f-687d-47c3-a7e9-b098a83c7812.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/80193c8f-687d-47c3-a7e9-b098a83c7812.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8.25,
+      "strikeRate": 89.19,
+      "runs": 33,
+      "innings": 7,
+      "bowlingAverage": 42.35,
+      "economyRate": 8.88,
+      "wickets": 23
+    }
   },
   {
     "id": "real-80504beb",
@@ -11652,7 +16562,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/80504beb-b413-40aa-bfca-d13e7e585fb5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/80504beb-b413-40aa-bfca-d13e7e585fb5.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 9.22,
+      "strikeRate": 108.5,
+      "runs": 166,
+      "innings": 25,
+      "bowlingAverage": 22.24,
+      "economyRate": 8.92,
+      "wickets": 50
+    }
   },
   {
     "id": "real-806a4432",
@@ -11675,7 +16595,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-80c06194",
@@ -11698,7 +16628,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-80c68f84",
@@ -11723,7 +16663,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-80e6923c",
@@ -11746,7 +16696,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/80e6923c-5773-4292-a4c7-20fcf48bb8c7.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/80e6923c-5773-4292-a4c7-20fcf48bb8c7.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 2,
+      "strikeRate": 50,
+      "runs": 2,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-812fc568",
@@ -11769,7 +16729,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/812fc568-a932-4f29-a1c4-b7c929e6a248.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/812fc568-a932-4f29-a1c4-b7c929e6a248.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8.67,
+      "strikeRate": 113.04,
+      "runs": 26,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8199e3da",
@@ -11792,7 +16762,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 25.71,
+      "strikeRate": 152.54,
+      "runs": 360,
+      "innings": 16,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-81b084df",
@@ -11815,7 +16795,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/81b084df-4619-4d99-8500-3792fd8eef32.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/81b084df-4619-4d99-8500-3792fd8eef32.jpg",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 34.02,
+      "strikeRate": 63.68,
+      "runs": 3130,
+      "innings": 97,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-81c09c1b",
@@ -11840,7 +16830,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/81c09c1b-1b1d-4e87-9eaa-d7d0a89a6159.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/81c09c1b-1b1d-4e87-9eaa-d7d0a89a6159.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 21.96,
+      "strikeRate": 132.82,
+      "runs": 1647,
+      "innings": 111,
+      "bowlingAverage": 34.29,
+      "economyRate": 7.37,
+      "wickets": 76
+    }
   },
   {
     "id": "real-81dff873",
@@ -11863,7 +16863,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 7,
+      "strikeRate": 40,
+      "runs": 14,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-824af55b",
@@ -11888,7 +16898,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 15.06,
+      "strikeRate": 108.56,
+      "runs": 241,
+      "innings": 16,
+      "bowlingAverage": 71,
+      "economyRate": 9.33,
+      "wickets": 3
+    }
   },
   {
     "id": "real-824fb8ee",
@@ -11913,7 +16933,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8267cdc4",
@@ -11936,7 +16966,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-82de5824",
@@ -11959,7 +16999,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 4.5,
+      "strikeRate": 56.25,
+      "runs": 9,
+      "innings": 8,
+      "bowlingAverage": 30.84,
+      "economyRate": 9.18,
+      "wickets": 19
+    }
   },
   {
     "id": "real-83308daa",
@@ -11984,7 +17034,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14.44,
+      "strikeRate": 114.04,
+      "runs": 130,
+      "innings": 10,
+      "bowlingAverage": 40.67,
+      "economyRate": 8.13,
+      "wickets": 3
+    }
   },
   {
     "id": "real-841b1222",
@@ -12007,7 +17067,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 220,
+      "runs": 11,
+      "innings": 3,
+      "bowlingAverage": 52,
+      "economyRate": 10.4,
+      "wickets": 4
+    }
   },
   {
     "id": "real-849877f5",
@@ -12030,7 +17100,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-84af1075",
@@ -12055,7 +17135,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-84d684a7",
@@ -12078,7 +17168,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/84d684a7-85fb-4a96-9e1d-99fd4b6b2b43.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/84d684a7-85fb-4a96-9e1d-99fd4b6b2b43.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 2.75,
+      "strikeRate": 47.83,
+      "runs": 11,
+      "innings": 9,
+      "bowlingAverage": 19.53,
+      "economyRate": 6.81,
+      "wickets": 72
+    }
   },
   {
     "id": "real-851fac45",
@@ -12101,7 +17201,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 53,
+      "strikeRate": 106,
+      "runs": 106,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-852bef3c",
@@ -12126,7 +17236,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 3.6,
+      "strikeRate": 75,
+      "runs": 18,
+      "innings": 6,
+      "bowlingAverage": 26.33,
+      "economyRate": 8.72,
+      "wickets": 9
+    }
   },
   {
     "id": "real-8549cd2f",
@@ -12149,7 +17269,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-85629e8d",
@@ -12172,7 +17302,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-85c706cc",
@@ -12195,7 +17335,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/85c706cc-f99b-47bd-b8a0-f12f1c38626a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/85c706cc-f99b-47bd-b8a0-f12f1c38626a.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 17.41,
+      "strikeRate": 124.69,
+      "runs": 505,
+      "innings": 32,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-85c76b18",
@@ -12220,7 +17370,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/85c76b18-b9c7-48cb-b378-17edb2274e96.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/85c76b18-b9c7-48cb-b378-17edb2274e96.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18.35,
+      "strikeRate": 134.37,
+      "runs": 477,
+      "innings": 38,
+      "bowlingAverage": 27.22,
+      "economyRate": 7.41,
+      "wickets": 50
+    }
   },
   {
     "id": "real-85e9f939",
@@ -12243,7 +17403,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/85e9f939-95e8-44f2-ab6c-20b17bb1b24b.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/85e9f939-95e8-44f2-ab6c-20b17bb1b24b.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12.33,
+      "strikeRate": 94.87,
+      "runs": 37,
+      "innings": 6,
+      "bowlingAverage": 31.05,
+      "economyRate": 8.53,
+      "wickets": 19
+    }
   },
   {
     "id": "real-85f37c8b",
@@ -12268,7 +17438,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-863fd5b5",
@@ -12291,7 +17471,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/863fd5b5-b77f-4168-b514-79a88641c553.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/863fd5b5-b77f-4168-b514-79a88641c553.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.88,
+      "strikeRate": 119.1,
+      "runs": 318,
+      "innings": 21,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8676ac54",
@@ -12316,7 +17506,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-87290920",
@@ -12339,7 +17539,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 23.89,
+      "strikeRate": 131.57,
+      "runs": 2342,
+      "innings": 121,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-87c2cd93",
@@ -12362,7 +17572,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-88215ee9",
@@ -12385,7 +17605,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 34.74,
+      "strikeRate": 158.85,
+      "runs": 799,
+      "innings": 24,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-883ccb1f",
@@ -12410,7 +17640,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12,
+      "strikeRate": 75,
+      "runs": 12,
+      "innings": 2,
+      "bowlingAverage": 15.17,
+      "economyRate": 5.87,
+      "wickets": 6
+    }
   },
   {
     "id": "real-884c5915",
@@ -12433,7 +17673,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/884c5915-5e62-4cef-9b78-2c18261c051c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/884c5915-5e62-4cef-9b78-2c18261c051c.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 0,
+      "strikeRate": 87.5,
+      "runs": 21,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-88ac2b36",
@@ -12458,7 +17708,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-89afe7b6",
@@ -12481,7 +17741,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/89afe7b6-5449-4c6e-857d-f3df17cc7143.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/89afe7b6-5449-4c6e-857d-f3df17cc7143.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-89c88954",
@@ -12506,7 +17776,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18.52,
+      "strikeRate": 114.08,
+      "runs": 389,
+      "innings": 31,
+      "bowlingAverage": 22.11,
+      "economyRate": 7.21,
+      "wickets": 18
+    }
   },
   {
     "id": "real-8a87694e",
@@ -12529,7 +17809,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8aac8d52",
@@ -12554,7 +17844,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8ab5780d",
@@ -12577,7 +17877,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8b306b7d",
@@ -12602,7 +17912,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/8b306b7d-f152-4884-a446-5d4a9ba58f53.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/8b306b7d-f152-4884-a446-5d4a9ba58f53.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 100,
+      "runs": 6,
+      "innings": 1,
+      "bowlingAverage": 22.26,
+      "economyRate": 8.84,
+      "wickets": 30
+    }
   },
   {
     "id": "real-8b30fc91",
@@ -12625,7 +17945,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 1,
+      "strikeRate": 42.86,
+      "runs": 3,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8bea31ce",
@@ -12650,7 +17980,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/8bea31ce-e698-4aea-9375-1f0342edb254.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/8bea31ce-e698-4aea-9375-1f0342edb254.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 25.4,
+      "strikeRate": 118.69,
+      "runs": 127,
+      "innings": 10,
+      "bowlingAverage": 33.08,
+      "economyRate": 10.84,
+      "wickets": 13
+    }
   },
   {
     "id": "real-8c3270be",
@@ -12675,7 +18015,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 17.5,
+      "strikeRate": 132.08,
+      "runs": 70,
+      "innings": 5,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8d90d764",
@@ -12698,7 +18048,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/8d90d764-5da2-47d8-b054-6a141b132a21.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/8d90d764-5da2-47d8-b054-6a141b132a21.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8df6183b",
@@ -12721,7 +18081,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/8df6183b-1c95-46d2-85c0-e185792d03f1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/8df6183b-1c95-46d2-85c0-e185792d03f1.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0.2,
+      "strikeRate": 14.29,
+      "runs": 1,
+      "innings": 5,
+      "bowlingAverage": 25.42,
+      "economyRate": 8.84,
+      "wickets": 74
+    }
   },
   {
     "id": "real-8e2ee7b6",
@@ -12746,7 +18116,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8e59248b",
@@ -12769,7 +18149,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 1,
+      "strikeRate": 33.33,
+      "runs": 1,
+      "innings": 2,
+      "bowlingAverage": 56.25,
+      "economyRate": 9,
+      "wickets": 4
+    }
   },
   {
     "id": "real-8ea2f80b",
@@ -12792,7 +18182,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/8ea2f80b-b310-449a-9976-159607b5b595.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/8ea2f80b-b310-449a-9976-159607b5b595.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 21.17,
+      "strikeRate": 127,
+      "runs": 127,
+      "innings": 6,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8f1937ea",
@@ -12817,7 +18217,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 3,
+      "strikeRate": 75,
+      "runs": 3,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8f4c667c",
@@ -12842,7 +18252,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/8f4c667c-4bb2-4808-a77b-ebece70f4273.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/8f4c667c-4bb2-4808-a77b-ebece70f4273.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.14,
+      "strikeRate": 121.82,
+      "runs": 536,
+      "innings": 37,
+      "bowlingAverage": 39.86,
+      "economyRate": 9.35,
+      "wickets": 21
+    }
   },
   {
     "id": "real-8f631eea",
@@ -12865,7 +18285,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-8f682a31",
@@ -12888,7 +18318,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 62,
+      "economyRate": 7.75,
+      "wickets": 1
+    }
   },
   {
     "id": "real-8fabee3c",
@@ -12913,7 +18353,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-90638afe",
@@ -12938,7 +18388,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22,
+      "strikeRate": 120.4,
+      "runs": 242,
+      "innings": 12,
+      "bowlingAverage": 12.27,
+      "economyRate": 5.96,
+      "wickets": 26
+    }
   },
   {
     "id": "real-9067900b",
@@ -12961,7 +18421,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 15,
+      "economyRate": 8.57,
+      "wickets": 4
+    }
   },
   {
     "id": "real-9069f42f",
@@ -12984,7 +18454,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-90bf31a8",
@@ -13009,7 +18489,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 14.38,
+      "strikeRate": 115.58,
+      "runs": 460,
+      "innings": 41,
+      "bowlingAverage": 31.37,
+      "economyRate": 8.1,
+      "wickets": 38
+    }
   },
   {
     "id": "real-91566035",
@@ -13032,7 +18522,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 75,
+      "runs": 3,
+      "innings": 2,
+      "bowlingAverage": 43,
+      "economyRate": 7.17,
+      "wickets": 1
+    }
   },
   {
     "id": "real-916f7c95",
@@ -13055,7 +18555,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/916f7c95-6801-44da-8cfd-e821a845e314.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/916f7c95-6801-44da-8cfd-e821a845e314.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 21.48,
+      "economyRate": 8.58,
+      "wickets": 54
+    }
   },
   {
     "id": "real-91a04822",
@@ -13078,7 +18588,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9225f259",
@@ -13101,7 +18621,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-92ea89fa",
@@ -13124,7 +18654,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-92ed0d96",
@@ -13147,7 +18687,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19.11,
+      "strikeRate": 109.21,
+      "runs": 344,
+      "innings": 25,
+      "bowlingAverage": 13,
+      "economyRate": 4.88,
+      "wickets": 3
+    }
   },
   {
     "id": "real-934d5891",
@@ -13170,7 +18720,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 45,
+      "strikeRate": 72.58,
+      "runs": 45,
+      "innings": 6,
+      "bowlingAverage": 29.3,
+      "economyRate": 5.86,
+      "wickets": 10
+    }
   },
   {
     "id": "real-93b48a58",
@@ -13193,7 +18753,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-93dc4286",
@@ -13216,7 +18786,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-93eaaabd",
@@ -13239,7 +18819,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 1,
+      "strikeRate": 33.34,
+      "runs": 1,
+      "innings": 2,
+      "bowlingAverage": 30.64,
+      "economyRate": 8.25,
+      "wickets": 14
+    }
   },
   {
     "id": "real-943c1332",
@@ -13262,7 +18852,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/943c1332-8845-460b-93c9-3714d97f8788.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/943c1332-8845-460b-93c9-3714d97f8788.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 30.28,
+      "strikeRate": 131.73,
+      "runs": 2271,
+      "innings": 77,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-94d9cab3",
@@ -13287,7 +18887,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/94d9cab3-8389-458a-b32c-010365e9b3c5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/94d9cab3-8389-458a-b32c-010365e9b3c5.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16.47,
+      "strikeRate": 120.49,
+      "runs": 741,
+      "innings": 45,
+      "bowlingAverage": 25.83,
+      "economyRate": 7.56,
+      "wickets": 6
+    }
   },
   {
     "id": "real-95bbca5a",
@@ -13310,7 +18920,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 100,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": 12.14,
+      "economyRate": 6.99,
+      "wickets": 7
+    }
   },
   {
     "id": "real-95e4705e",
@@ -13333,7 +18953,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/95e4705e-d7b3-4c5a-8cf9-b2176abe7019.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/95e4705e-d7b3-4c5a-8cf9-b2176abe7019.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 28.05,
+      "strikeRate": 127.54,
+      "runs": 4348,
+      "innings": 187,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9614d47f",
@@ -13356,7 +18986,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 5.25,
+      "strikeRate": 131.25,
+      "runs": 21,
+      "innings": 9,
+      "bowlingAverage": 19.43,
+      "economyRate": 6.83,
+      "wickets": 44
+    }
   },
   {
     "id": "real-961a467b",
@@ -13381,7 +19021,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 15.29,
+      "strikeRate": 34.57,
+      "runs": 214,
+      "innings": 17,
+      "bowlingAverage": 41.11,
+      "economyRate": 3.76,
+      "wickets": 37
+    }
   },
   {
     "id": "real-967fe951",
@@ -13404,7 +19054,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 23,
+      "strikeRate": 110.7,
+      "runs": 621,
+      "innings": 36,
+      "bowlingAverage": 18.38,
+      "economyRate": 6.89,
+      "wickets": 8
+    }
   },
   {
     "id": "real-96b0aa6a",
@@ -13427,7 +19087,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9.5,
+      "strikeRate": 158.33,
+      "runs": 19,
+      "innings": 3,
+      "bowlingAverage": 45.57,
+      "economyRate": 11.67,
+      "wickets": 7
+    }
   },
   {
     "id": "real-96da8d81",
@@ -13450,7 +19120,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/96da8d81-ee43-4ec8-8349-085fc2647215.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/96da8d81-ee43-4ec8-8349-085fc2647215.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9713a0a1",
@@ -13473,7 +19153,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23.33,
+      "strikeRate": 140,
+      "runs": 350,
+      "innings": 16,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-97954ec1",
@@ -13498,7 +19188,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 9.14,
+      "strikeRate": 92.75,
+      "runs": 64,
+      "innings": 16,
+      "bowlingAverage": 23.15,
+      "economyRate": 7.32,
+      "wickets": 34
+    }
   },
   {
     "id": "real-97e9fec3",
@@ -13521,7 +19221,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/97e9fec3-81bd-4018-a803-422c7d6d53aa.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/97e9fec3-81bd-4018-a803-422c7d6d53aa.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 1,
+      "strikeRate": 50,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": 19.5,
+      "economyRate": 6.5,
+      "wickets": 2
+    }
   },
   {
     "id": "real-9854d0a6",
@@ -13546,7 +19256,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9854d0a6-9480-4564-99b6-933b070fa23a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9854d0a6-9480-4564-99b6-933b070fa23a.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8.25,
+      "strikeRate": 89.19,
+      "runs": 33,
+      "innings": 9,
+      "bowlingAverage": 20.77,
+      "economyRate": 7.76,
+      "wickets": 82
+    }
   },
   {
     "id": "real-98b5f78b",
@@ -13571,7 +19291,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10.33,
+      "strikeRate": 134.78,
+      "runs": 155,
+      "innings": 19,
+      "bowlingAverage": 19.97,
+      "economyRate": 7.82,
+      "wickets": 38
+    }
   },
   {
     "id": "real-992af9fb",
@@ -13594,7 +19324,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-999d90a9",
@@ -13617,7 +19357,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 32,
+      "strikeRate": 143.28,
+      "runs": 192,
+      "innings": 6,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-99c8de80",
@@ -13642,7 +19392,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8,
+      "strikeRate": 94.62,
+      "runs": 88,
+      "innings": 12,
+      "bowlingAverage": 29.96,
+      "economyRate": 9.06,
+      "wickets": 26
+    }
   },
   {
     "id": "real-99eb6b5c",
@@ -13667,7 +19427,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/99eb6b5c-379f-46da-bab7-dc8fd31ba435.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/99eb6b5c-379f-46da-bab7-dc8fd31ba435.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 3,
+      "strikeRate": 37.5,
+      "runs": 9,
+      "innings": 10,
+      "bowlingAverage": 34.76,
+      "economyRate": 8.92,
+      "wickets": 49
+    }
   },
   {
     "id": "real-9a1893c9",
@@ -13690,7 +19460,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 22,
+      "economyRate": 7.62,
+      "wickets": 3
+    }
   },
   {
     "id": "real-9a26af2a",
@@ -13715,7 +19495,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9a26af2a-3b40-4279-b5ee-7b817337fdb1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9a26af2a-3b40-4279-b5ee-7b817337fdb1.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9a71201c",
@@ -13738,7 +19528,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9a71201c-c377-45aa-a355-1af6d2c4bae3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9a71201c-c377-45aa-a355-1af6d2c4bae3.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 4,
+      "strikeRate": 64,
+      "runs": 32,
+      "innings": 15,
+      "bowlingAverage": 29.14,
+      "economyRate": 7.81,
+      "wickets": 63
+    }
   },
   {
     "id": "real-9ac86842",
@@ -13761,7 +19561,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9b01b418",
@@ -13786,7 +19596,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 25,
+      "strikeRate": 126.4,
+      "runs": 225,
+      "innings": 12,
+      "bowlingAverage": 40.8,
+      "economyRate": 8.21,
+      "wickets": 5
+    }
   },
   {
     "id": "real-9b097cc7",
@@ -13809,7 +19629,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9b097cc7-2ef6-4f99-96b8-cbb893950294.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9b097cc7-2ef6-4f99-96b8-cbb893950294.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 31.01,
+      "strikeRate": 144.21,
+      "runs": 2078,
+      "innings": 72,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9bb94599",
@@ -13834,7 +19664,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9bbc43d1",
@@ -13857,7 +19697,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3.5,
+      "strikeRate": 58.33,
+      "runs": 7,
+      "innings": 6,
+      "bowlingAverage": 16.98,
+      "economyRate": 7.13,
+      "wickets": 43
+    }
   },
   {
     "id": "real-9c19ea39",
@@ -13880,7 +19730,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 24.25,
+      "strikeRate": 110.23,
+      "runs": 97,
+      "innings": 5,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9c6f5e39",
@@ -13903,7 +19763,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9c6f5e39-4ded-4165-805e-910b122f0a84.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9c6f5e39-4ded-4165-805e-910b122f0a84.jpg",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 6.38,
+      "strikeRate": 28.03,
+      "runs": 51,
+      "innings": 14,
+      "bowlingAverage": 45.14,
+      "economyRate": 3.21,
+      "wickets": 14
+    }
   },
   {
     "id": "real-9c777389",
@@ -13928,7 +19798,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9cc79698",
@@ -13951,7 +19831,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9ce5c732",
@@ -13974,7 +19864,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9d412bea",
@@ -13999,7 +19899,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9d670f93",
@@ -14022,7 +19932,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9d6c36bd",
@@ -14047,7 +19967,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 28.25,
+      "strikeRate": 81.88,
+      "runs": 113,
+      "innings": 4,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9d6cb002",
@@ -14072,7 +20002,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 35.25,
+      "strikeRate": 161.45,
+      "runs": 423,
+      "innings": 19,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9d71bd85",
@@ -14095,7 +20035,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9d71bd85-bb6f-4779-90f2-8dbed359b60c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9d71bd85-bb6f-4779-90f2-8dbed359b60c.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 120,
+      "runs": 6,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9d8be8e7",
@@ -14120,7 +20070,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 214.29,
+      "runs": 15,
+      "innings": 2,
+      "bowlingAverage": 16.91,
+      "economyRate": 8.21,
+      "wickets": 11
+    }
   },
   {
     "id": "real-9d9a2664",
@@ -14145,7 +20105,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9dbe3845",
@@ -14168,7 +20138,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9dbe3845-7a3b-4767-a20a-d43219a13334.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9dbe3845-7a3b-4767-a20a-d43219a13334.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 1,
+      "strikeRate": 50,
+      "runs": 1,
+      "innings": 4,
+      "bowlingAverage": 30.67,
+      "economyRate": 7.85,
+      "wickets": 18
+    }
   },
   {
     "id": "real-9ded3a8d",
@@ -14191,7 +20171,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9ded3a8d-3008-40f1-a18c-483af090aab8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9ded3a8d-3008-40f1-a18c-483af090aab8.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23.95,
+      "strikeRate": 147.47,
+      "runs": 1892,
+      "innings": 79,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9e959aff",
@@ -14214,7 +20204,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9e95d9e9",
@@ -14239,7 +20239,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 38.25,
+      "strikeRate": 140.37,
+      "runs": 153,
+      "innings": 8,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9ef87672",
@@ -14262,7 +20272,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9ef87672-4e71-4087-97d1-f30588ca469a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9ef87672-4e71-4087-97d1-f30588ca469a.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 5.67,
+      "strikeRate": 85,
+      "runs": 34,
+      "innings": 9,
+      "bowlingAverage": 21.58,
+      "economyRate": 6.71,
+      "wickets": 36
+    }
   },
   {
     "id": "real-9f06f450",
@@ -14287,7 +20307,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9f06f450-c300-4b49-9359-7876f492f686.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9f06f450-c300-4b49-9359-7876f492f686.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.78,
+      "strikeRate": 141.53,
+      "runs": 1162,
+      "innings": 57,
+      "bowlingAverage": 25.51,
+      "economyRate": 7.07,
+      "wickets": 35
+    }
   },
   {
     "id": "real-9f0b971f",
@@ -14312,7 +20342,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9f0b971f-b01f-47ed-9f42-f52f03158d7f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9f0b971f-b01f-47ed-9f42-f52f03158d7f.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 17,
+      "strikeRate": 115.91,
+      "runs": 51,
+      "innings": 6,
+      "bowlingAverage": 29.67,
+      "economyRate": 11.87,
+      "wickets": 6
+    }
   },
   {
     "id": "real-9f322402",
@@ -14335,7 +20375,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9fa03fdb",
@@ -14358,7 +20408,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9fc99793",
@@ -14383,7 +20443,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9fc99793-a5b5-4eb2-9f7b-48cc3dc3cf8d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9fc99793-a5b5-4eb2-9f7b-48cc3dc3cf8d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10,
+      "strikeRate": 111.11,
+      "runs": 40,
+      "innings": 5,
+      "bowlingAverage": 55.62,
+      "economyRate": 6.85,
+      "wickets": 8
+    }
   },
   {
     "id": "real-9fe96cfe",
@@ -14406,7 +20476,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a040d449",
@@ -14431,7 +20511,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a04ca088",
@@ -14456,7 +20546,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22,
+      "strikeRate": 179.59,
+      "runs": 88,
+      "innings": 5,
+      "bowlingAverage": 93.5,
+      "economyRate": 11.11,
+      "wickets": 2
+    }
   },
   {
     "id": "real-a0ba62b3",
@@ -14481,7 +20581,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a0bc9282",
@@ -14504,7 +20614,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12.69,
+      "strikeRate": 91.16,
+      "runs": 165,
+      "innings": 17,
+      "bowlingAverage": 20.35,
+      "economyRate": 5.96,
+      "wickets": 37
+    }
   },
   {
     "id": "real-a15dfada",
@@ -14527,7 +20647,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a15dfada-704c-42c3-9545-91c332ffca73.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a15dfada-704c-42c3-9545-91c332ffca73.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.24,
+      "strikeRate": 146.23,
+      "runs": 756,
+      "innings": 34,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a16b758d",
@@ -14550,7 +20680,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a1782393",
@@ -14573,7 +20713,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a1782393-3479-4caa-9c27-79cb87df9abc.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a1782393-3479-4caa-9c27-79cb87df9abc.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8.2,
+      "strikeRate": 78.85,
+      "runs": 41,
+      "innings": 13,
+      "bowlingAverage": 17.92,
+      "economyRate": 8.3,
+      "wickets": 25
+    }
   },
   {
     "id": "real-a1c8c897",
@@ -14598,7 +20748,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 5,
+      "strikeRate": 136.36,
+      "runs": 15,
+      "innings": 4,
+      "bowlingAverage": 35.25,
+      "economyRate": 9.72,
+      "wickets": 8
+    }
   },
   {
     "id": "real-a1d6fd56",
@@ -14623,7 +20783,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a1ec1f16",
@@ -14648,7 +20818,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a1ec1f16-0c4a-4733-871d-359cca340fcb.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a1ec1f16-0c4a-4733-871d-359cca340fcb.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14.48,
+      "strikeRate": 125.48,
+      "runs": 724,
+      "innings": 63,
+      "bowlingAverage": 19.2,
+      "economyRate": 7.71,
+      "wickets": 127
+    }
   },
   {
     "id": "real-a1f7a1f3",
@@ -14671,7 +20851,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8,
+      "strikeRate": 100,
+      "runs": 40,
+      "innings": 6,
+      "bowlingAverage": 37.67,
+      "economyRate": 10.43,
+      "wickets": 9
+    }
   },
   {
     "id": "real-a1fb3ba8",
@@ -14694,7 +20884,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 16.5,
+      "strikeRate": 110.93,
+      "runs": 132,
+      "innings": 8,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a214cb79",
@@ -14719,7 +20919,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a214cb79-583f-4864-be65-50b391d266e2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a214cb79-583f-4864-be65-50b391d266e2.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 34,
+      "strikeRate": 135.32,
+      "runs": 816,
+      "innings": 27,
+      "bowlingAverage": 22.64,
+      "economyRate": 5.79,
+      "wickets": 11
+    }
   },
   {
     "id": "real-a254feed",
@@ -14742,7 +20952,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a254feed-0d7c-4f04-a2ab-7bf9ceef156b.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a254feed-0d7c-4f04-a2ab-7bf9ceef156b.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 32.14,
+      "strikeRate": 150.61,
+      "runs": 1607,
+      "innings": 52,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a26d4e30",
@@ -14765,7 +20985,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 19.75,
+      "economyRate": 7.9,
+      "wickets": 4
+    }
   },
   {
     "id": "real-a29c0135",
@@ -14788,7 +21018,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a29c0135-24f6-4eb1-9301-7ce3df2625c3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a29c0135-24f6-4eb1-9301-7ce3df2625c3.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 2,
+      "bowlingAverage": 13.25,
+      "economyRate": 5.89,
+      "wickets": 4
+    }
   },
   {
     "id": "real-a2cc486b",
@@ -14811,7 +21051,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14,
+      "strikeRate": 127.27,
+      "runs": 126,
+      "innings": 9,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a3261fc4",
@@ -14834,7 +21084,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a3d83362",
@@ -14859,7 +21119,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a3f40660",
@@ -14884,7 +21154,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 3,
+      "strikeRate": 75,
+      "runs": 3,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a4ec2320",
@@ -14907,7 +21187,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a4ec2320-e402-4fb4-803d-43e9fe6c7c04.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a4ec2320-e402-4fb4-803d-43e9fe6c7c04.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 2,
+      "strikeRate": 57.14,
+      "runs": 8,
+      "innings": 5,
+      "bowlingAverage": 31.18,
+      "economyRate": 9.85,
+      "wickets": 11
+    }
   },
   {
     "id": "real-a579c9d8",
@@ -14930,7 +21220,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a579c9d8-c5e3-4be6-9848-95cb9077afb2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a579c9d8-c5e3-4be6-9848-95cb9077afb2.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 23.03,
+      "strikeRate": 131.56,
+      "runs": 1359,
+      "innings": 59,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a6686871",
@@ -14953,7 +21253,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 29.85,
+      "strikeRate": 150.98,
+      "runs": 388,
+      "innings": 14,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a67a5fef",
@@ -14976,7 +21286,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 50,
+      "runs": 5,
+      "innings": 2,
+      "bowlingAverage": 75,
+      "economyRate": 9.85,
+      "wickets": 3
+    }
   },
   {
     "id": "real-a79c8f5d",
@@ -14999,7 +21319,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a7b38587",
@@ -15024,7 +21354,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a7b38587-34ba-4f6e-ae24-635fa27a8d6e.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a7b38587-34ba-4f6e-ae24-635fa27a8d6e.jpg",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 6.2,
+      "strikeRate": 96.87,
+      "runs": 31,
+      "innings": 9,
+      "bowlingAverage": 26.24,
+      "economyRate": 8.39,
+      "wickets": 29
+    }
   },
   {
     "id": "real-a7c55e04",
@@ -15049,7 +21389,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.13,
+      "strikeRate": 128.84,
+      "runs": 880,
+      "innings": 68,
+      "bowlingAverage": 34.45,
+      "economyRate": 7.66,
+      "wickets": 22
+    }
   },
   {
     "id": "real-a870c646",
@@ -15072,7 +21422,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 0,
+      "strikeRate": 38.47,
+      "runs": 5,
+      "innings": 3,
+      "bowlingAverage": 29.67,
+      "economyRate": 8.97,
+      "wickets": 6
+    }
   },
   {
     "id": "real-a8eb3336",
@@ -15095,7 +21455,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a8eb3336-cf8b-4f3e-bc4e-6a9032f6aed5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a8eb3336-cf8b-4f3e-bc4e-6a9032f6aed5.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11,
+      "strikeRate": 94.04,
+      "runs": 363,
+      "innings": 35,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a92efeb0",
@@ -15118,7 +21488,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 2.25,
+      "strikeRate": 60,
+      "runs": 9,
+      "innings": 7,
+      "bowlingAverage": 15.8,
+      "economyRate": 7.9,
+      "wickets": 5
+    }
   },
   {
     "id": "real-a93dcc2b",
@@ -15143,7 +21523,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a93dcc2b-b51a-47d1-85fc-e29d331d029d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a93dcc2b-b51a-47d1-85fc-e29d331d029d.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7.29,
+      "strikeRate": 110.87,
+      "runs": 51,
+      "innings": 11,
+      "bowlingAverage": 34.68,
+      "economyRate": 8.02,
+      "wickets": 25
+    }
   },
   {
     "id": "real-a9897a50",
@@ -15166,7 +21556,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-a9bc5cf2",
@@ -15191,7 +21591,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 2,
+      "strikeRate": 40,
+      "runs": 2,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-aa9a6cfb",
@@ -15214,7 +21624,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/aa9a6cfb-b598-4fbb-9062-f2ee0f6782b5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/aa9a6cfb-b598-4fbb-9062-f2ee0f6782b5.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18.46,
+      "strikeRate": 131.15,
+      "runs": 480,
+      "innings": 27,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-aae3a726",
@@ -15239,7 +21659,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-aaed0fcb",
@@ -15262,7 +21692,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 15.47,
+      "strikeRate": 122.75,
+      "runs": 232,
+      "innings": 16,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-aca1a8ce",
@@ -15285,7 +21725,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12.8,
+      "strikeRate": 120.75,
+      "runs": 64,
+      "innings": 6,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ad1a3150",
@@ -15310,7 +21760,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ad68e46b",
@@ -15333,7 +21793,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 34.08,
+      "strikeRate": 140.63,
+      "runs": 1329,
+      "innings": 42,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ad79e1fb",
@@ -15356,7 +21826,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ad79e1fb-8008-46c7-a5d3-a380e2b0e044.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ad79e1fb-8008-46c7-a5d3-a380e2b0e044.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 0,
+      "strikeRate": 150,
+      "runs": 6,
+      "innings": 1,
+      "bowlingAverage": 171,
+      "economyRate": 6.49,
+      "wickets": 1
+    }
   },
   {
     "id": "real-adb93baf",
@@ -15381,7 +21861,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/adb93baf-0615-447a-a80b-0ee921c08bf3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/adb93baf-0615-447a-a80b-0ee921c08bf3.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 18,
+      "strikeRate": 54.55,
+      "runs": 18,
+      "innings": 1,
+      "bowlingAverage": 16.5,
+      "economyRate": 3.88,
+      "wickets": 2
+    }
   },
   {
     "id": "real-adfe8e9b",
@@ -15404,7 +21894,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ae38ef88",
@@ -15429,7 +21929,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 6,
+      "strikeRate": 104.35,
+      "runs": 24,
+      "innings": 5,
+      "bowlingAverage": 25.6,
+      "economyRate": 7.11,
+      "wickets": 5
+    }
   },
   {
     "id": "real-ae9d39aa",
@@ -15452,7 +21962,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 23.26,
+      "strikeRate": 119.29,
+      "runs": 977,
+      "innings": 47,
+      "bowlingAverage": 13.17,
+      "economyRate": 6.49,
+      "wickets": 6
+    }
   },
   {
     "id": "real-aea85638",
@@ -15475,7 +21995,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/aea85638-f6ef-47c5-884f-bc0fafd11d63.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/aea85638-f6ef-47c5-884f-bc0fafd11d63.jpg",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 21.36,
+      "strikeRate": 125.04,
+      "runs": 1303,
+      "innings": 80,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-aece3a23",
@@ -15498,7 +22028,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10,
+      "strikeRate": 200,
+      "runs": 10,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-aefd9074",
@@ -15521,7 +22061,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/aefd9074-da5a-408d-94f1-3be0e79d3b82.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/aefd9074-da5a-408d-94f1-3be0e79d3b82.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 39.86,
+      "strikeRate": 146.33,
+      "runs": 1156,
+      "innings": 38,
+      "bowlingAverage": 13,
+      "economyRate": 5.2,
+      "wickets": 2
+    }
   },
   {
     "id": "real-af27fcd7",
@@ -15546,7 +22096,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 20.8,
+      "strikeRate": 118.18,
+      "runs": 104,
+      "innings": 11,
+      "bowlingAverage": 27.47,
+      "economyRate": 9.22,
+      "wickets": 15
+    }
   },
   {
     "id": "real-af485f9b",
@@ -15569,7 +22129,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 21.09,
+      "economyRate": 11.32,
+      "wickets": 11
+    }
   },
   {
     "id": "real-af6028f3",
@@ -15592,7 +22162,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-af65e6d1",
@@ -15615,7 +22195,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-af71b5ba",
@@ -15640,7 +22230,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 2,
+      "strikeRate": 30.77,
+      "runs": 4,
+      "innings": 2,
+      "bowlingAverage": 76,
+      "economyRate": 6.91,
+      "wickets": 1
+    }
   },
   {
     "id": "real-afe3862c",
@@ -15663,7 +22263,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b0157f82",
@@ -15688,7 +22298,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b0157f82-afec-4e1e-955e-0fc426183561.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b0157f82-afec-4e1e-955e-0fc426183561.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18.73,
+      "strikeRate": 114.44,
+      "runs": 206,
+      "innings": 21,
+      "bowlingAverage": 27.57,
+      "economyRate": 8.72,
+      "wickets": 42
+    }
   },
   {
     "id": "real-b033301e",
@@ -15711,7 +22331,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 21.52,
+      "strikeRate": 130.63,
+      "runs": 904,
+      "innings": 43,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b127d731",
@@ -15734,7 +22364,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 5.25,
+      "strikeRate": 84,
+      "runs": 21,
+      "innings": 5,
+      "bowlingAverage": 43,
+      "economyRate": 11.47,
+      "wickets": 4
+    }
   },
   {
     "id": "real-b209f081",
@@ -15757,7 +22397,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 17,
+      "strikeRate": 68,
+      "runs": 17,
+      "innings": 2,
+      "bowlingAverage": 26.2,
+      "economyRate": 7.48,
+      "wickets": 10
+    }
   },
   {
     "id": "real-b2437e22",
@@ -15780,7 +22430,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 33,
+      "strikeRate": 145.89,
+      "runs": 693,
+      "innings": 22,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b367db88",
@@ -15803,7 +22463,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b367db88-a73e-445f-8cdd-3f6335617b07.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b367db88-a73e-445f-8cdd-3f6335617b07.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 11.5,
+      "strikeRate": 143.75,
+      "runs": 23,
+      "innings": 6,
+      "bowlingAverage": 26.62,
+      "economyRate": 9.4,
+      "wickets": 29
+    }
   },
   {
     "id": "real-b37259a1",
@@ -15828,7 +22498,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b39b013b",
@@ -15853,7 +22533,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b39b013b-cbf8-40fc-a262-92e1c7b89f94.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b39b013b-cbf8-40fc-a262-92e1c7b89f94.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 4,
+      "strikeRate": 55.56,
+      "runs": 20,
+      "innings": 15,
+      "bowlingAverage": 32.57,
+      "economyRate": 9.45,
+      "wickets": 28
+    }
   },
   {
     "id": "real-b3a51613",
@@ -15876,7 +22566,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b43c2877",
@@ -15899,7 +22599,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 27.64,
+      "economyRate": 9.63,
+      "wickets": 14
+    }
   },
   {
     "id": "real-b452a807",
@@ -15922,7 +22632,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 10,
+      "economyRate": 8,
+      "wickets": 4
+    }
   },
   {
     "id": "real-b452b12d",
@@ -15947,7 +22667,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b452b12d-f444-4662-83b7-d42325a0e8ea.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b452b12d-f444-4662-83b7-d42325a0e8ea.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 32.29,
+      "strikeRate": 123.9,
+      "runs": 1550,
+      "innings": 63,
+      "bowlingAverage": 13.98,
+      "economyRate": 5.52,
+      "wickets": 53
+    }
   },
   {
     "id": "real-b45b100e",
@@ -15970,7 +22700,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b48e91c6",
@@ -15993,7 +22733,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b48e91c6-bbc9-40d9-be6e-d48d4d040dd6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b48e91c6-bbc9-40d9-be6e-d48d4d040dd6.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 13.07,
+      "strikeRate": 103.39,
+      "runs": 183,
+      "innings": 14,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b4c7b92e",
@@ -16016,7 +22766,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b4cc5506",
@@ -16041,7 +22801,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23,
+      "strikeRate": 133.34,
+      "runs": 92,
+      "innings": 5,
+      "bowlingAverage": 30,
+      "economyRate": 8.57,
+      "wickets": 2
+    }
   },
   {
     "id": "real-b510e005",
@@ -16064,7 +22834,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b51bb4e5",
@@ -16089,7 +22869,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b51bb4e5-acdf-423b-abb3-7a1e6694d2c2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b51bb4e5-acdf-423b-abb3-7a1e6694d2c2.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 24.44,
+      "strikeRate": 135.14,
+      "runs": 1173,
+      "innings": 58,
+      "bowlingAverage": 76.75,
+      "economyRate": 10.53,
+      "wickets": 4
+    }
   },
   {
     "id": "real-b5208054",
@@ -16112,7 +22902,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b5208054-8543-482d-9d83-a9f0a3bbfada.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b5208054-8543-482d-9d83-a9f0a3bbfada.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 27.41,
+      "strikeRate": 131.89,
+      "runs": 1617,
+      "innings": 73,
+      "bowlingAverage": 24.75,
+      "economyRate": 7.07,
+      "wickets": 4
+    }
   },
   {
     "id": "real-b545383f",
@@ -16137,7 +22937,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b55e1386",
@@ -16160,7 +22970,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b55e1386-231c-4d40-9f6a-4d5a9512079c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b55e1386-231c-4d40-9f6a-4d5a9512079c.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.5,
+      "strikeRate": 127.17,
+      "runs": 117,
+      "innings": 6,
+      "bowlingAverage": 13,
+      "economyRate": 11.38,
+      "wickets": 7
+    }
   },
   {
     "id": "real-b5fe522c",
@@ -16183,7 +23003,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 21.56,
+      "strikeRate": 114.24,
+      "runs": 345,
+      "innings": 18,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b64ccf20",
@@ -16208,7 +23038,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b64ccf20-292a-4834-b3d7-9de55187f44a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b64ccf20-292a-4834-b3d7-9de55187f44a.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 5.5,
+      "strikeRate": 78.57,
+      "runs": 11,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b65be7fe",
@@ -16233,7 +23073,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b65be7fe-33cd-41d1-b601-31f25b4f72a4.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b65be7fe-33cd-41d1-b601-31f25b4f72a4.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 12.86,
+      "strikeRate": 106.51,
+      "runs": 180,
+      "innings": 22,
+      "bowlingAverage": 25.92,
+      "economyRate": 8.16,
+      "wickets": 52
+    }
   },
   {
     "id": "real-b672f837",
@@ -16256,7 +23106,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 119,
+      "economyRate": 3.84,
+      "wickets": 1
+    }
   },
   {
     "id": "real-b70947ac",
@@ -16279,7 +23139,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b75a495d",
@@ -16304,7 +23174,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14.45,
+      "strikeRate": 145.87,
+      "runs": 159,
+      "innings": 12,
+      "bowlingAverage": 19.45,
+      "economyRate": 6.95,
+      "wickets": 20
+    }
   },
   {
     "id": "real-b7d8abd6",
@@ -16327,7 +23207,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22,
+      "strikeRate": 220,
+      "runs": 22,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b7f8b3f5",
@@ -16350,7 +23240,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b7f8b3f5-1759-43fe-914f-d9dc7f4269e2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b7f8b3f5-1759-43fe-914f-d9dc7f4269e2.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 14,
+      "strikeRate": 116.67,
+      "runs": 14,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b848f06d",
@@ -16373,7 +23273,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b8812c36",
@@ -16398,7 +23308,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8,
+      "strikeRate": 133.33,
+      "runs": 8,
+      "innings": 1,
+      "bowlingAverage": 41,
+      "economyRate": 9.11,
+      "wickets": 2
+    }
   },
   {
     "id": "real-b8c83302",
@@ -16421,7 +23341,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b8cf6e54",
@@ -16444,7 +23374,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b8cf6e54-ed6e-4756-8f0c-e06871356b9f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b8cf6e54-ed6e-4756-8f0c-e06871356b9f.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14.33,
+      "strikeRate": 186.96,
+      "runs": 129,
+      "innings": 19,
+      "bowlingAverage": 24.27,
+      "economyRate": 8.46,
+      "wickets": 60
+    }
   },
   {
     "id": "real-b957eb6f",
@@ -16467,7 +23407,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 37.54,
+      "strikeRate": 88.41,
+      "runs": 488,
+      "innings": 14,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b9701b53",
@@ -16490,7 +23440,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/b9701b53-3b9e-4eda-93b1-3543809674d4.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/b9701b53-3b9e-4eda-93b1-3543809674d4.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-b9c5f867",
@@ -16515,7 +23475,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 9.5,
+      "strikeRate": 131.03,
+      "runs": 38,
+      "innings": 6,
+      "bowlingAverage": 25,
+      "economyRate": 9.68,
+      "wickets": 12
+    }
   },
   {
     "id": "real-ba0c736b",
@@ -16538,7 +23508,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ba1209a7",
@@ -16563,7 +23543,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ba1209a7-6d52-492b-b110-d2ab8b8d7266.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ba1209a7-6d52-492b-b110-d2ab8b8d7266.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23.35,
+      "strikeRate": 125.91,
+      "runs": 724,
+      "innings": 42,
+      "bowlingAverage": 39.96,
+      "economyRate": 8.18,
+      "wickets": 27
+    }
   },
   {
     "id": "real-ba18ea55",
@@ -16586,7 +23576,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ba4ba8aa",
@@ -16611,7 +23611,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ba4ba8aa-3ebb-431a-83a9-a78844a68e26.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ba4ba8aa-3ebb-431a-83a9-a78844a68e26.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 7.2,
+      "strikeRate": 98.63,
+      "runs": 72,
+      "innings": 14,
+      "bowlingAverage": 21.37,
+      "economyRate": 8.13,
+      "wickets": 35
+    }
   },
   {
     "id": "real-bad40656",
@@ -16634,7 +23644,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 57,
+      "economyRate": 11.4,
+      "wickets": 1
+    }
   },
   {
     "id": "real-bafedf14",
@@ -16659,7 +23679,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/bafedf14-cf70-4f10-b4ca-fc226de15978.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/bafedf14-cf70-4f10-b4ca-fc226de15978.jpg",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 18.42,
+      "strikeRate": 35.42,
+      "runs": 221,
+      "innings": 14,
+      "bowlingAverage": 27.56,
+      "economyRate": 3.06,
+      "wickets": 39
+    }
   },
   {
     "id": "real-bba164d8",
@@ -16682,7 +23712,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8.5,
+      "strikeRate": 73.91,
+      "runs": 17,
+      "innings": 5,
+      "bowlingAverage": 38.43,
+      "economyRate": 9.61,
+      "wickets": 7
+    }
   },
   {
     "id": "real-bbbf3b4e",
@@ -16705,7 +23745,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/bbbf3b4e-dbc3-4f2a-986d-1a0227ea5a06.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/bbbf3b4e-dbc3-4f2a-986d-1a0227ea5a06.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 29.39,
+      "strikeRate": 120.42,
+      "runs": 1734,
+      "innings": 61,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-bc14b4bb",
@@ -16730,7 +23780,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-bc2e7e87",
@@ -16753,7 +23813,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16,
+      "strikeRate": 152.38,
+      "runs": 64,
+      "innings": 8,
+      "bowlingAverage": 39.5,
+      "economyRate": 8.08,
+      "wickets": 6
+    }
   },
   {
     "id": "real-bcaa79ac",
@@ -16778,7 +23848,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16.53,
+      "strikeRate": 122.17,
+      "runs": 248,
+      "innings": 27,
+      "bowlingAverage": 23.03,
+      "economyRate": 6.02,
+      "wickets": 33
+    }
   },
   {
     "id": "real-bd25b7c1",
@@ -16801,7 +23881,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-bd33ab37",
@@ -16824,7 +23914,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 17.5,
+      "strikeRate": 94.59,
+      "runs": 35,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-bd41dde4",
@@ -16847,7 +23947,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/bd41dde4-a703-4ee9-b052-b733f35c30d5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/bd41dde4-a703-4ee9-b052-b733f35c30d5.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10.58,
+      "strikeRate": 93.38,
+      "runs": 127,
+      "innings": 13,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-bd89a38a",
@@ -16870,7 +23980,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/bd89a38a-3310-40bb-8b9a-80d31fc8a7eb.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/bd89a38a-3310-40bb-8b9a-80d31fc8a7eb.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3.67,
+      "strikeRate": 64.71,
+      "runs": 22,
+      "innings": 6,
+      "bowlingAverage": 26.6,
+      "economyRate": 7.98,
+      "wickets": 20
+    }
   },
   {
     "id": "real-bda09245",
@@ -16893,7 +24013,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 45.4,
+      "economyRate": 9.87,
+      "wickets": 5
+    }
   },
   {
     "id": "real-bdc8d0b1",
@@ -16918,7 +24048,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/bdc8d0b1-c597-45a1-8d94-03236bd0975e.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/bdc8d0b1-c597-45a1-8d94-03236bd0975e.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10,
+      "strikeRate": 105.26,
+      "runs": 40,
+      "innings": 9,
+      "bowlingAverage": 25.07,
+      "economyRate": 6.77,
+      "wickets": 30
+    }
   },
   {
     "id": "real-be6f1e85",
@@ -16941,7 +24081,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11,
+      "strikeRate": 110,
+      "runs": 22,
+      "innings": 4,
+      "bowlingAverage": 36.67,
+      "economyRate": 9.17,
+      "wickets": 6
+    }
   },
   {
     "id": "real-be8fcb59",
@@ -16964,7 +24114,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 15,
+      "strikeRate": 100,
+      "runs": 300,
+      "innings": 20,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-beda15f7",
@@ -16987,7 +24147,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 0,
+      "strikeRate": 57.15,
+      "runs": 8,
+      "innings": 2,
+      "bowlingAverage": 15.2,
+      "economyRate": 6.96,
+      "wickets": 10
+    }
   },
   {
     "id": "real-bf03de4b",
@@ -17010,7 +24180,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-bf15fb3e",
@@ -17033,7 +24213,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22,
+      "strikeRate": 129.41,
+      "runs": 22,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c0272995",
@@ -17056,7 +24246,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 133.33,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c040878f",
@@ -17079,7 +24279,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c040878f-3995-444c-a0f2-10a456f6c84d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c040878f-3995-444c-a0f2-10a456f6c84d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 30.89,
+      "strikeRate": 162.58,
+      "runs": 278,
+      "innings": 11,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c06c697c",
@@ -17102,7 +24312,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c06c697c-9575-4bb0-b1f0-27a56a2f3898.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c06c697c-9575-4bb0-b1f0-27a56a2f3898.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 16,
+      "strikeRate": 114.29,
+      "runs": 48,
+      "innings": 11,
+      "bowlingAverage": 28.89,
+      "economyRate": 8.91,
+      "wickets": 37
+    }
   },
   {
     "id": "real-c088d09d",
@@ -17125,7 +24345,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c088d09d-7f75-40de-ab93-d1760c976e50.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c088d09d-7f75-40de-ab93-d1760c976e50.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 21.31,
+      "strikeRate": 145.03,
+      "runs": 277,
+      "innings": 13,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c0edf1c1",
@@ -17148,7 +24378,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c0edf1c1-65b0-4aca-9f47-42c94e7f3ca7.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c0edf1c1-65b0-4aca-9f47-42c94e7f3ca7.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 20,
+      "strikeRate": 125,
+      "runs": 20,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c0ff3c43",
@@ -17171,7 +24411,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c1257351",
@@ -17196,7 +24446,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c1257351-51ca-446f-b7f5-01fe92e75076.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c1257351-51ca-446f-b7f5-01fe92e75076.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 12.28,
+      "strikeRate": 138.91,
+      "runs": 307,
+      "innings": 37,
+      "bowlingAverage": 30.52,
+      "economyRate": 9.23,
+      "wickets": 94
+    }
   },
   {
     "id": "real-c16847d5",
@@ -17221,7 +24481,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c16847d5-6ab3-4e3b-9190-3c6bc6ffed1d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c16847d5-6ab3-4e3b-9190-3c6bc6ffed1d.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 2.75,
+      "strikeRate": 37.93,
+      "runs": 11,
+      "innings": 4,
+      "bowlingAverage": 79.67,
+      "economyRate": 6.52,
+      "wickets": 3
+    }
   },
   {
     "id": "real-c1b63982",
@@ -17244,7 +24514,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c1b63982-9fd5-44b7-a4ef-48128a1dd413.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c1b63982-9fd5-44b7-a4ef-48128a1dd413.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 15,
+      "strikeRate": 100,
+      "runs": 15,
+      "innings": 1,
+      "bowlingAverage": 27,
+      "economyRate": 5.4,
+      "wickets": 2
+    }
   },
   {
     "id": "real-c1b7eb42",
@@ -17269,7 +24549,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c21153a0",
@@ -17292,7 +24582,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 17,
+      "strikeRate": 170,
+      "runs": 17,
+      "innings": 1,
+      "bowlingAverage": 19.76,
+      "economyRate": 8.19,
+      "wickets": 17
+    }
   },
   {
     "id": "real-c2929c7f",
@@ -17315,7 +24615,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c3236037",
@@ -17340,7 +24650,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c3236037-6694-404a-8f01-9ad880564ea9.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c3236037-6694-404a-8f01-9ad880564ea9.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 31.57,
+      "strikeRate": 137.13,
+      "runs": 1326,
+      "innings": 49,
+      "bowlingAverage": 47.67,
+      "economyRate": 10.59,
+      "wickets": 3
+    }
   },
   {
     "id": "real-c3ecff86",
@@ -17363,7 +24683,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c3ff9725",
@@ -17386,7 +24716,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c4053b82",
@@ -17409,7 +24749,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c4d4fc79",
@@ -17434,7 +24784,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c4dd93aa",
@@ -17459,7 +24819,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c4dd93aa-ca34-4497-a70b-5dbc743c1975.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c4dd93aa-ca34-4497-a70b-5dbc743c1975.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 100,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c510dc77",
@@ -17484,7 +24854,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 2.33,
+      "strikeRate": 63.64,
+      "runs": 7,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c510fbe6",
@@ -17509,7 +24889,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 32.86,
+      "strikeRate": 175.57,
+      "runs": 230,
+      "innings": 8,
+      "bowlingAverage": 50,
+      "economyRate": 11.11,
+      "wickets": 2
+    }
   },
   {
     "id": "real-c553c840",
@@ -17532,7 +24922,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c57237c9",
@@ -17555,7 +24955,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 1,
+      "strikeRate": 50,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c5b11801",
@@ -17578,7 +24988,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c6442879",
@@ -17601,7 +25021,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 16.5,
+      "strikeRate": 173.68,
+      "runs": 33,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c645a0bd",
@@ -17626,7 +25056,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c645a0bd-45f1-42bc-8314-b81235800918.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c645a0bd-45f1-42bc-8314-b81235800918.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 15.83,
+      "strikeRate": 130.05,
+      "runs": 554,
+      "innings": 50,
+      "bowlingAverage": 21.75,
+      "economyRate": 6.2,
+      "wickets": 73
+    }
   },
   {
     "id": "real-c699ec2b",
@@ -17649,7 +25089,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c699ec2b-a5f6-4ee0-a42d-79391b65b293.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c699ec2b-a5f6-4ee0-a42d-79391b65b293.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 18.95,
+      "strikeRate": 147.54,
+      "runs": 360,
+      "innings": 22,
+      "bowlingAverage": 43.4,
+      "economyRate": 9.94,
+      "wickets": 5
+    }
   },
   {
     "id": "real-c6c92ab4",
@@ -17672,7 +25122,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 36.78,
+      "strikeRate": 137.92,
+      "runs": 331,
+      "innings": 9,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c70415fa",
@@ -17695,7 +25155,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 39.3,
+      "strikeRate": 155.53,
+      "runs": 2515,
+      "innings": 69,
+      "bowlingAverage": 19.2,
+      "economyRate": 9.76,
+      "wickets": 5
+    }
   },
   {
     "id": "real-c743fd55",
@@ -17718,7 +25188,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 17.08,
+      "strikeRate": 113.89,
+      "runs": 205,
+      "innings": 15,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c7f855b0",
@@ -17743,7 +25223,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 127.27,
+      "runs": 14,
+      "innings": 3,
+      "bowlingAverage": 55,
+      "economyRate": 7.86,
+      "wickets": 1
+    }
   },
   {
     "id": "real-c7f9b713",
@@ -17766,7 +25256,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c7f9b713-f673-49a5-a76f-9ea253037ac8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c7f9b713-f673-49a5-a76f-9ea253037ac8.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c8108a73",
@@ -17789,7 +25289,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c82ca38f",
@@ -17814,7 +25324,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 30.81,
+      "strikeRate": 133.6,
+      "runs": 986,
+      "innings": 39,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c8424ab9",
@@ -17839,7 +25359,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11.38,
+      "strikeRate": 121.33,
+      "runs": 91,
+      "innings": 11,
+      "bowlingAverage": 14.97,
+      "economyRate": 8.37,
+      "wickets": 30
+    }
   },
   {
     "id": "real-c87a375e",
@@ -17864,7 +25394,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18.33,
+      "strikeRate": 148.65,
+      "runs": 55,
+      "innings": 5,
+      "bowlingAverage": 26.33,
+      "economyRate": 9.06,
+      "wickets": 9
+    }
   },
   {
     "id": "real-c8864ac7",
@@ -17887,7 +25427,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c8864ac7-af66-4719-8100-9dd9fd7e60f3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c8864ac7-af66-4719-8100-9dd9fd7e60f3.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 4,
+      "strikeRate": 80,
+      "runs": 12,
+      "innings": 7,
+      "bowlingAverage": 31.16,
+      "economyRate": 8.18,
+      "wickets": 19
+    }
   },
   {
     "id": "real-c88fc781",
@@ -17910,7 +25460,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c88fc781-1895-4861-ad33-0be97d93101c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c88fc781-1895-4861-ad33-0be97d93101c.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 139.13,
+      "runs": 32,
+      "innings": 5,
+      "bowlingAverage": 18.55,
+      "economyRate": 8.16,
+      "wickets": 11
+    }
   },
   {
     "id": "real-c8b0d1c3",
@@ -17935,7 +25495,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c8b0d1c3-b534-4ac3-b207-620ee2062022.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c8b0d1c3-b534-4ac3-b207-620ee2062022.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c905128d",
@@ -17960,7 +25530,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c905128d-cb52-43f8-b0af-a4cc4d022cd0.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c905128d-cb52-43f8-b0af-a4cc4d022cd0.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14.25,
+      "strikeRate": 158.33,
+      "runs": 57,
+      "innings": 5,
+      "bowlingAverage": 40.33,
+      "economyRate": 7.12,
+      "wickets": 6
+    }
   },
   {
     "id": "real-c921219b",
@@ -17985,7 +25565,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c9361dbc",
@@ -18010,7 +25600,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 1,
+      "strikeRate": 100,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c93ee802",
@@ -18033,7 +25633,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 13.02,
+      "strikeRate": 107.75,
+      "runs": 625,
+      "innings": 55,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-c978ce48",
@@ -18058,7 +25668,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c978ce48-495b-4773-89c9-8a64d0257896.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c978ce48-495b-4773-89c9-8a64d0257896.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 15.14,
+      "strikeRate": 101.92,
+      "runs": 106,
+      "innings": 9,
+      "bowlingAverage": 59,
+      "economyRate": 8.63,
+      "wickets": 1
+    }
   },
   {
     "id": "real-c9fe6ef9",
@@ -18083,7 +25703,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11,
+      "strikeRate": 84.62,
+      "runs": 11,
+      "innings": 2,
+      "bowlingAverage": 21.5,
+      "economyRate": 9.33,
+      "wickets": 6
+    }
   },
   {
     "id": "real-cae3f250",
@@ -18108,7 +25738,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/cae3f250-2552-404d-b3a1-a5515ab184e7.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/cae3f250-2552-404d-b3a1-a5515ab184e7.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 29.15,
+      "strikeRate": 144.11,
+      "runs": 379,
+      "innings": 13,
+      "bowlingAverage": 95.5,
+      "economyRate": 9.55,
+      "wickets": 2
+    }
   },
   {
     "id": "real-caf472eb",
@@ -18131,7 +25771,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 24.25,
+      "strikeRate": 123.68,
+      "runs": 752,
+      "innings": 35,
+      "bowlingAverage": 88,
+      "economyRate": 7.33,
+      "wickets": 1
+    }
   },
   {
     "id": "real-cb4aad81",
@@ -18154,7 +25804,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/cb4aad81-61f7-4f4b-95d5-abde6fd8204f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/cb4aad81-61f7-4f4b-95d5-abde6fd8204f.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 24,
+      "strikeRate": 92.31,
+      "runs": 24,
+      "innings": 12,
+      "bowlingAverage": 35.08,
+      "economyRate": 8.51,
+      "wickets": 25
+    }
   },
   {
     "id": "real-cb8b4427",
@@ -18179,7 +25839,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 13,
+      "strikeRate": 130,
+      "runs": 117,
+      "innings": 12,
+      "bowlingAverage": 42.33,
+      "economyRate": 10.16,
+      "wickets": 3
+    }
   },
   {
     "id": "real-cba19be9",
@@ -18202,7 +25872,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/cba19be9-7aec-4083-ba61-26f0aee31721.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/cba19be9-7aec-4083-ba61-26f0aee31721.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 11,
+      "strikeRate": 73.34,
+      "runs": 11,
+      "innings": 1,
+      "bowlingAverage": 48,
+      "economyRate": 9.6,
+      "wickets": 2
+    }
   },
   {
     "id": "real-cbe808da",
@@ -18227,7 +25907,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 100,
+      "runs": 2,
+      "innings": 1,
+      "bowlingAverage": 57,
+      "economyRate": 11.4,
+      "wickets": 2
+    }
   },
   {
     "id": "real-cc7c9a0b",
@@ -18252,7 +25942,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 19.6,
+      "economyRate": 9.8,
+      "wickets": 5
+    }
   },
   {
     "id": "real-cd41c960",
@@ -18275,7 +25975,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/cd41c960-1414-43b8-a6d9-a29544bf993a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/cd41c960-1414-43b8-a6d9-a29544bf993a.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8.25,
+      "strikeRate": 113.79,
+      "runs": 33,
+      "innings": 5,
+      "bowlingAverage": 13.81,
+      "economyRate": 6.91,
+      "wickets": 16
+    }
   },
   {
     "id": "real-cd5a9124",
@@ -18300,7 +26010,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 27,
+      "strikeRate": 167.26,
+      "runs": 393,
+      "innings": 18,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-cdacd831",
@@ -18323,7 +26043,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-cdf84be5",
@@ -18346,7 +26076,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ce0e7e6b",
@@ -18369,7 +26109,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ce0e7e6b-093c-471d-b63c-77704c71ef8a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ce0e7e6b-093c-471d-b63c-77704c71ef8a.jpg",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 26.69,
+      "strikeRate": 128.74,
+      "runs": 2029,
+      "innings": 81,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-cf0aee74",
@@ -18394,7 +26144,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-cf3169e3",
@@ -18417,7 +26177,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/cf3169e3-f039-4773-910d-09423c27f068.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/cf3169e3-f039-4773-910d-09423c27f068.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 21.5,
+      "strikeRate": 117.89,
+      "runs": 817,
+      "innings": 42,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d008b827",
@@ -18440,7 +26210,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d0a1a9ec",
@@ -18465,7 +26245,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d0a1a9ec-4f19-4fa6-8d1e-5a620f3e8044.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d0a1a9ec-4f19-4fa6-8d1e-5a620f3e8044.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 80,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": 32.17,
+      "economyRate": 8.26,
+      "wickets": 30
+    }
   },
   {
     "id": "real-d0b7129a",
@@ -18488,7 +26278,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 5.67,
+      "strikeRate": 18.15,
+      "runs": 51,
+      "innings": 14,
+      "bowlingAverage": 63,
+      "economyRate": 4.03,
+      "wickets": 8
+    }
   },
   {
     "id": "real-d0d5f87d",
@@ -18513,7 +26313,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 12.78,
+      "strikeRate": 110.58,
+      "runs": 115,
+      "innings": 10,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d0f69230",
@@ -18538,7 +26348,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d0f69230-16e0-4a79-92aa-f9f7c588d5d3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d0f69230-16e0-4a79-92aa-f9f7c588d5d3.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.75,
+      "strikeRate": 141.43,
+      "runs": 553,
+      "innings": 38,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d14f5d21",
@@ -18563,7 +26383,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d1774223",
@@ -18586,7 +26416,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d1c0a448",
@@ -18611,7 +26451,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d1c0a448-6ee6-473a-90a2-e6a486698a8a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d1c0a448-6ee6-473a-90a2-e6a486698a8a.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 28.45,
+      "strikeRate": 162.46,
+      "runs": 939,
+      "innings": 39,
+      "bowlingAverage": 35.73,
+      "economyRate": 9.14,
+      "wickets": 11
+    }
   },
   {
     "id": "real-d1d12e42",
@@ -18634,7 +26484,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d212ea28",
@@ -18657,7 +26517,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 23.97,
+      "strikeRate": 103.43,
+      "runs": 815,
+      "innings": 35,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d22744bb",
@@ -18682,7 +26552,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 14.15,
+      "strikeRate": 41.26,
+      "runs": 184,
+      "innings": 17,
+      "bowlingAverage": 29.39,
+      "economyRate": 3.1,
+      "wickets": 36
+    }
   },
   {
     "id": "real-d22f24dc",
@@ -18705,7 +26585,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d22f24dc-3918-4311-8d03-985f2e9ee09c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d22f24dc-3918-4311-8d03-985f2e9ee09c.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 66.67,
+      "runs": 6,
+      "innings": 2,
+      "bowlingAverage": 29.05,
+      "economyRate": 9.05,
+      "wickets": 19
+    }
   },
   {
     "id": "real-d283655d",
@@ -18728,7 +26618,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d2995816",
@@ -18753,7 +26653,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 5,
+      "strikeRate": 55.56,
+      "runs": 10,
+      "innings": 2,
+      "bowlingAverage": 28.67,
+      "economyRate": 4.3,
+      "wickets": 3
+    }
   },
   {
     "id": "real-d2b2869c",
@@ -18778,7 +26688,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 5,
+      "strikeRate": 45.46,
+      "runs": 5,
+      "innings": 1,
+      "bowlingAverage": 12.2,
+      "economyRate": 2.6,
+      "wickets": 10
+    }
   },
   {
     "id": "real-d2d529b0",
@@ -18801,7 +26721,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d3c53885",
@@ -18826,7 +26756,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d3c53885-7016-4228-8a20-1dd98214489d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d3c53885-7016-4228-8a20-1dd98214489d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9.43,
+      "strikeRate": 100,
+      "runs": 66,
+      "innings": 13,
+      "bowlingAverage": 35.75,
+      "economyRate": 9.53,
+      "wickets": 20
+    }
   },
   {
     "id": "real-d3ce5614",
@@ -18849,7 +26789,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d4123478",
@@ -18872,7 +26822,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d45dec09",
@@ -18895,7 +26855,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16,
+      "strikeRate": 142.22,
+      "runs": 128,
+      "innings": 11,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d4c17948",
@@ -18918,7 +26888,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d4fdb9d3",
@@ -18941,7 +26921,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d4fdb9d3-ab47-4446-b9f5-a48e935eadb3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d4fdb9d3-ab47-4446-b9f5-a48e935eadb3.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d506b762",
@@ -18964,7 +26954,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 15,
+      "strikeRate": 29.41,
+      "runs": 15,
+      "innings": 2,
+      "bowlingAverage": 102,
+      "economyRate": 6,
+      "wickets": 1
+    }
   },
   {
     "id": "real-d50e7092",
@@ -18987,7 +26987,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7.4,
+      "strikeRate": 127.59,
+      "runs": 37,
+      "innings": 6,
+      "bowlingAverage": 15.07,
+      "economyRate": 8.07,
+      "wickets": 15
+    }
   },
   {
     "id": "real-d59bfc6b",
@@ -19010,7 +27020,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3.4,
+      "strikeRate": 53.12,
+      "runs": 17,
+      "innings": 9,
+      "bowlingAverage": 17.41,
+      "economyRate": 7.88,
+      "wickets": 34
+    }
   },
   {
     "id": "real-d5efbba6",
@@ -19033,7 +27053,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d5efbba6-8c15-44aa-9476-b01f8202f29d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d5efbba6-8c15-44aa-9476-b01f8202f29d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.5,
+      "strikeRate": 101.3,
+      "runs": 78,
+      "innings": 5,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d614f263",
@@ -19056,7 +27086,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d614f263-602a-40a5-ba9a-ec30b464ccde.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d614f263-602a-40a5-ba9a-ec30b464ccde.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 3.5,
+      "strikeRate": 53.85,
+      "runs": 28,
+      "innings": 25,
+      "bowlingAverage": 17.44,
+      "economyRate": 6.78,
+      "wickets": 110
+    }
   },
   {
     "id": "real-d65eaea3",
@@ -19079,7 +27119,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d65eaea3-7ae0-484c-b4bc-aff9876f3499.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d65eaea3-7ae0-484c-b4bc-aff9876f3499.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7.67,
+      "strikeRate": 60.53,
+      "runs": 23,
+      "innings": 7,
+      "bowlingAverage": 24.22,
+      "economyRate": 7.27,
+      "wickets": 23
+    }
   },
   {
     "id": "real-d6a14619",
@@ -19104,7 +27154,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-d73e2471",
@@ -19127,7 +27187,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 0,
+      "strikeRate": 80,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": 31.5,
+      "economyRate": 4.72,
+      "wickets": 4
+    }
   },
   {
     "id": "real-d767274f",
@@ -19152,7 +27222,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d767274f-82b9-413d-9f8b-2539f444891d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d767274f-82b9-413d-9f8b-2539f444891d.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11.5,
+      "strikeRate": 86.79,
+      "runs": 46,
+      "innings": 11,
+      "bowlingAverage": 20.83,
+      "economyRate": 8.14,
+      "wickets": 36
+    }
   },
   {
     "id": "real-d774adaf",
@@ -19177,7 +27257,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d774adaf-78f0-4bf3-965e-8182c05b4517.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d774adaf-78f0-4bf3-965e-8182c05b4517.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 8.06,
+      "strikeRate": 104.03,
+      "runs": 129,
+      "innings": 24,
+      "bowlingAverage": 28.55,
+      "economyRate": 7.72,
+      "wickets": 75
+    }
   },
   {
     "id": "real-d7c5942c",
@@ -19202,7 +27292,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 26.5,
+      "strikeRate": 176.66,
+      "runs": 53,
+      "innings": 7,
+      "bowlingAverage": 57.2,
+      "economyRate": 9.27,
+      "wickets": 5
+    }
   },
   {
     "id": "real-d8826d0d",
@@ -19225,7 +27325,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d8826d0d-ef95-4dce-a47a-b09b97f49f07.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d8826d0d-ef95-4dce-a47a-b09b97f49f07.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 60,
+      "runs": 3,
+      "innings": 4,
+      "bowlingAverage": 29.39,
+      "economyRate": 8.84,
+      "wickets": 67
+    }
   },
   {
     "id": "real-d8b0e01b",
@@ -19250,7 +27360,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 33.5,
+      "strikeRate": 171.8,
+      "runs": 67,
+      "innings": 2,
+      "bowlingAverage": 27.75,
+      "economyRate": 10.09,
+      "wickets": 4
+    }
   },
   {
     "id": "real-d8e19f31",
@@ -19275,7 +27395,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-da06302d",
@@ -19298,7 +27428,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-da6820cb",
@@ -19323,7 +27463,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/da6820cb-29e7-4b09-a611-ea244f8d84f5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/da6820cb-29e7-4b09-a611-ea244f8d84f5.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 15.75,
+      "strikeRate": 109.25,
+      "runs": 189,
+      "innings": 14,
+      "bowlingAverage": 45.86,
+      "economyRate": 7.64,
+      "wickets": 7
+    }
   },
   {
     "id": "real-da8eab48",
@@ -19346,7 +27496,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 33.69,
+      "strikeRate": 129.2,
+      "runs": 438,
+      "innings": 17,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-da90b15d",
@@ -19369,7 +27529,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 22,
+      "strikeRate": 169.23,
+      "runs": 22,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-dac83be4",
@@ -19394,7 +27564,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 21.83,
+      "strikeRate": 118.4,
+      "runs": 1004,
+      "innings": 55,
+      "bowlingAverage": 24.56,
+      "economyRate": 6.52,
+      "wickets": 27
+    }
   },
   {
     "id": "real-db0d8285",
@@ -19419,7 +27599,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 20.83,
+      "strikeRate": 42.96,
+      "runs": 125,
+      "innings": 6,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-db83f0cb",
@@ -19442,7 +27632,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-dc2f7f59",
@@ -19465,7 +27665,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 6,
+      "strikeRate": 100,
+      "runs": 6,
+      "innings": 2,
+      "bowlingAverage": 28.19,
+      "economyRate": 9.7,
+      "wickets": 16
+    }
   },
   {
     "id": "real-dc75068c",
@@ -19488,7 +27698,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 4,
+      "strikeRate": 80,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-dc904a2f",
@@ -19513,7 +27733,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 7.33,
+      "strikeRate": 75.86,
+      "runs": 22,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-dcbc34de",
@@ -19536,7 +27766,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-dd665f5d",
@@ -19561,7 +27801,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/dd665f5d-04e8-436b-b376-8fd2a9b8bf8a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/dd665f5d-04e8-436b-b376-8fd2a9b8bf8a.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.23,
+      "strikeRate": 146.08,
+      "runs": 577,
+      "innings": 40,
+      "bowlingAverage": 56.5,
+      "economyRate": 12.56,
+      "wickets": 2
+    }
   },
   {
     "id": "real-de19a93e",
@@ -19584,7 +27834,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 36.82,
+      "strikeRate": 173.82,
+      "runs": 405,
+      "innings": 17,
+      "bowlingAverage": 93,
+      "economyRate": 8.45,
+      "wickets": 1
+    }
   },
   {
     "id": "real-de2b3327",
@@ -19609,7 +27869,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-de60a340",
@@ -19634,7 +27904,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/de60a340-5eb8-4160-861e-182aafd279c5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/de60a340-5eb8-4160-861e-182aafd279c5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 25.34,
+      "strikeRate": 129.8,
+      "runs": 1115,
+      "innings": 60,
+      "bowlingAverage": 38.22,
+      "economyRate": 8.67,
+      "wickets": 9
+    }
   },
   {
     "id": "real-de7c0983",
@@ -19657,7 +27937,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-df05e760",
@@ -19680,7 +27970,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/df05e760-48fb-4f5b-bc1c-8c7be6477f2b.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/df05e760-48fb-4f5b-bc1c-8c7be6477f2b.jpg",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 26.84,
+      "strikeRate": 55.64,
+      "runs": 671,
+      "innings": 27,
+      "bowlingAverage": 44.33,
+      "economyRate": 3.09,
+      "wickets": 3
+    }
   },
   {
     "id": "real-df364910",
@@ -19705,7 +28005,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/df364910-9b38-41f9-8290-c2234cbbf71c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/df364910-9b38-41f9-8290-c2234cbbf71c.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 22.67,
+      "strikeRate": 89.47,
+      "runs": 68,
+      "innings": 5,
+      "bowlingAverage": 58.2,
+      "economyRate": 5.67,
+      "wickets": 5
+    }
   },
   {
     "id": "real-df5ab4f7",
@@ -19728,7 +28038,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-dfb8b429",
@@ -19751,7 +28071,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e0072d7b",
@@ -19774,7 +28104,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 4,
+      "strikeRate": 80,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e01a4f78",
@@ -19797,7 +28137,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e01a4f78-50a6-48cf-bf0c-5e216bcbed98.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e01a4f78-50a6-48cf-bf0c-5e216bcbed98.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 18,
+      "strikeRate": 99.71,
+      "runs": 342,
+      "innings": 23,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e08d06c3",
@@ -19820,7 +28170,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9.33,
+      "strikeRate": 98.25,
+      "runs": 56,
+      "innings": 6,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e091b387",
@@ -19843,7 +28203,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 5.5,
+      "strikeRate": 47.83,
+      "runs": 11,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e0cee753",
@@ -19866,7 +28236,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e0cee753-5f0b-4fa9-8ff6-a7f8addbc883.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e0cee753-5f0b-4fa9-8ff6-a7f8addbc883.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16.48,
+      "strikeRate": 118.35,
+      "runs": 445,
+      "innings": 41,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e119d6a5",
@@ -19889,7 +28269,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e218ae76",
@@ -19912,7 +28302,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e218ae76-f2e4-4802-b20a-ac9b21ab24a9.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e218ae76-f2e4-4802-b20a-ac9b21ab24a9.jpg",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 144,
+      "strikeRate": 52.55,
+      "runs": 144,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e2418cc1",
@@ -19935,7 +28335,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e28de73b",
@@ -19958,7 +28368,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e28de73b-f5df-49eb-bdf6-c50471319404.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e28de73b-f5df-49eb-bdf6-c50471319404.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.81,
+      "strikeRate": 151.14,
+      "runs": 730,
+      "innings": 36,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e2a2bbfb",
@@ -19981,7 +28401,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10.5,
+      "strikeRate": 116.67,
+      "runs": 21,
+      "innings": 3,
+      "bowlingAverage": 22.25,
+      "economyRate": 10.17,
+      "wickets": 8
+    }
   },
   {
     "id": "real-e3005322",
@@ -20004,7 +28434,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e3005322-b01a-4c58-9b26-a2ca150ad1d1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e3005322-b01a-4c58-9b26-a2ca150ad1d1.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 21.18,
+      "strikeRate": 122.63,
+      "runs": 233,
+      "innings": 24,
+      "bowlingAverage": 35.8,
+      "economyRate": 7.91,
+      "wickets": 25
+    }
   },
   {
     "id": "real-e318825f",
@@ -20027,7 +28467,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e3686ffa",
@@ -20050,7 +28500,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8,
+      "strikeRate": 100,
+      "runs": 8,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e3ad4212",
@@ -20075,7 +28535,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10,
+      "strikeRate": 79.37,
+      "runs": 50,
+      "innings": 5,
+      "bowlingAverage": 13,
+      "economyRate": 5.2,
+      "wickets": 2
+    }
   },
   {
     "id": "real-e49a4d73",
@@ -20098,7 +28568,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e4a9da20",
@@ -20121,7 +28601,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e4a9da20-15ca-4b1b-bb5d-044beb161ea8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e4a9da20-15ca-4b1b-bb5d-044beb161ea8.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 7.33,
+      "strikeRate": 122.22,
+      "runs": 22,
+      "innings": 3,
+      "bowlingAverage": 104,
+      "economyRate": 11.56,
+      "wickets": 1
+    }
   },
   {
     "id": "real-e4d354f1",
@@ -20144,7 +28634,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e532d0c9",
@@ -20167,7 +28667,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e532d0c9-a4a4-465c-9276-13b9f6c5bb95.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e532d0c9-a4a4-465c-9276-13b9f6c5bb95.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e550bca2",
@@ -20190,7 +28700,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e5700821",
@@ -20213,7 +28733,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 32.23,
+      "strikeRate": 124.69,
+      "runs": 1515,
+      "innings": 62,
+      "bowlingAverage": 17,
+      "economyRate": 7.8,
+      "wickets": 13
+    }
   },
   {
     "id": "real-e5790c27",
@@ -20236,7 +28766,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e5790c27-c428-4de8-82f7-d69a5452923e.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e5790c27-c428-4de8-82f7-d69a5452923e.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.88,
+      "strikeRate": 150,
+      "runs": 183,
+      "innings": 9,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e5932c98",
@@ -20259,7 +28799,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e64ac708",
@@ -20282,7 +28832,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e66a9f60",
@@ -20305,7 +28865,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 16,
+      "strikeRate": 59.26,
+      "runs": 16,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e6d28951",
@@ -20330,7 +28900,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e6d28951-8524-43ca-95cf-9e73ae68bc12.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e6d28951-8524-43ca-95cf-9e73ae68bc12.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.2,
+      "strikeRate": 160.87,
+      "runs": 222,
+      "innings": 10,
+      "bowlingAverage": 20.77,
+      "economyRate": 6.59,
+      "wickets": 13
+    }
   },
   {
     "id": "real-e6ef73e8",
@@ -20353,7 +28933,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e85efb8b",
@@ -20378,7 +28968,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e85efb8b-a635-425e-87bc-cbd5ff6738c0.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e85efb8b-a635-425e-87bc-cbd5ff6738c0.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 27.78,
+      "strikeRate": 126.9,
+      "runs": 1000,
+      "innings": 54,
+      "bowlingAverage": 30.69,
+      "economyRate": 8.14,
+      "wickets": 42
+    }
   },
   {
     "id": "real-e87caa86",
@@ -20403,7 +29003,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 24.45,
+      "strikeRate": 127.19,
+      "runs": 538,
+      "innings": 29,
+      "bowlingAverage": 47.09,
+      "economyRate": 10.46,
+      "wickets": 11
+    }
   },
   {
     "id": "real-e9e32106",
@@ -20426,7 +29036,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-eaddf13e",
@@ -20451,7 +29071,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-eaea0d44",
@@ -20476,7 +29106,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 4.5,
+      "strikeRate": 112.5,
+      "runs": 9,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-eb4a660a",
@@ -20499,7 +29139,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/eb4a660a-e234-4e8c-b762-9fb3d4eb43a4.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/eb4a660a-e234-4e8c-b762-9fb3d4eb43a4.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 27.64,
+      "strikeRate": 132.84,
+      "runs": 1161,
+      "innings": 45,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-eb7da2ba",
@@ -20524,7 +29174,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/eb7da2ba-4ee5-4f11-aaf1-c0c9e9169bd5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/eb7da2ba-4ee5-4f11-aaf1-c0c9e9169bd5.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16.67,
+      "strikeRate": 105.26,
+      "runs": 100,
+      "innings": 9,
+      "bowlingAverage": 22.71,
+      "economyRate": 7.17,
+      "wickets": 7
+    }
   },
   {
     "id": "real-eb911b3b",
@@ -20547,7 +29207,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/eb911b3b-10b3-40f8-9294-e63ba030af83.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/eb911b3b-10b3-40f8-9294-e63ba030af83.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 4.5,
+      "strikeRate": 52.94,
+      "runs": 9,
+      "innings": 7,
+      "bowlingAverage": 32.12,
+      "economyRate": 9.88,
+      "wickets": 8
+    }
   },
   {
     "id": "real-eba243e1",
@@ -20572,7 +29242,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/eba243e1-33b7-42b8-8b8a-8b9e381a96f5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/eba243e1-33b7-42b8-8b8a-8b9e381a96f5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 11,
+      "strikeRate": 157.14,
+      "runs": 44,
+      "innings": 5,
+      "bowlingAverage": 39.67,
+      "economyRate": 9.52,
+      "wickets": 6
+    }
   },
   {
     "id": "real-ec016985",
@@ -20597,7 +29277,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 24.62,
+      "strikeRate": 118.32,
+      "runs": 394,
+      "innings": 17,
+      "bowlingAverage": 13.5,
+      "economyRate": 9,
+      "wickets": 4
+    }
   },
   {
     "id": "real-ec1b806b",
@@ -20620,7 +29310,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ec1b806b-de33-4b79-b3ba-8a5ad78df163.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ec1b806b-de33-4b79-b3ba-8a5ad78df163.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.5,
+      "strikeRate": 130.58,
+      "runs": 585,
+      "innings": 37,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ec3800d1",
@@ -20645,7 +29345,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 15,
+      "strikeRate": 121.95,
+      "runs": 150,
+      "innings": 16,
+      "bowlingAverage": 17.12,
+      "economyRate": 7.84,
+      "wickets": 50
+    }
   },
   {
     "id": "real-ec51b682",
@@ -20668,7 +29378,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 20,
+      "economyRate": 9.23,
+      "wickets": 7
+    }
   },
   {
     "id": "real-eca04c78",
@@ -20691,7 +29411,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 1,
+      "strikeRate": 25,
+      "runs": 1,
+      "innings": 2,
+      "bowlingAverage": 24,
+      "economyRate": 5.4,
+      "wickets": 3
+    }
   },
   {
     "id": "real-ecdcec86",
@@ -20714,7 +29444,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ece56755",
@@ -20737,7 +29477,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 28.11,
+      "strikeRate": 140.56,
+      "runs": 253,
+      "innings": 13,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ed198fa1",
@@ -20760,7 +29510,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ed198fa1-9e5b-46dc-819d-dcfc1454b90e.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ed198fa1-9e5b-46dc-819d-dcfc1454b90e.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-edcc938a",
@@ -20783,7 +29543,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 17,
+      "strikeRate": 170,
+      "runs": 17,
+      "innings": 1,
+      "bowlingAverage": 51,
+      "economyRate": 4.64,
+      "wickets": 1
+    }
   },
   {
     "id": "real-edcf2b0f",
@@ -20806,7 +29576,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11.33,
+      "strikeRate": 100,
+      "runs": 34,
+      "innings": 4,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ee305698",
@@ -20831,7 +29611,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ee305698-0a4d-4340-a7f3-ef971bc23a8a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ee305698-0a4d-4340-a7f3-ef971bc23a8a.jpg",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 14.33,
+      "strikeRate": 30.5,
+      "runs": 43,
+      "innings": 9,
+      "bowlingAverage": 30.65,
+      "economyRate": 3.23,
+      "wickets": 34
+    }
   },
   {
     "id": "real-ee407267",
@@ -20856,7 +29646,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ee9772fa",
@@ -20879,7 +29679,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 28.77,
+      "strikeRate": 122.22,
+      "runs": 374,
+      "innings": 20,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-eecdd9ab",
@@ -20902,7 +29712,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ef3d8d48",
@@ -20925,7 +29745,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-efddf707",
@@ -20950,7 +29780,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 58,
+      "strikeRate": 134.88,
+      "runs": 58,
+      "innings": 5,
+      "bowlingAverage": 55,
+      "economyRate": 9.17,
+      "wickets": 6
+    }
   },
   {
     "id": "real-eff809fc",
@@ -20973,7 +29813,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 7,
+      "strikeRate": 116.67,
+      "runs": 14,
+      "innings": 4,
+      "bowlingAverage": 30.38,
+      "economyRate": 10.26,
+      "wickets": 13
+    }
   },
   {
     "id": "real-f00ccdba",
@@ -20998,7 +29848,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f00ccdba-6137-4852-a490-ba782044b866.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f00ccdba-6137-4852-a490-ba782044b866.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 5.67,
+      "strikeRate": 91.07,
+      "runs": 51,
+      "innings": 12,
+      "bowlingAverage": 31.4,
+      "economyRate": 8.71,
+      "wickets": 30
+    }
   },
   {
     "id": "real-f05171e1",
@@ -21021,7 +29881,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 1.5,
+      "strikeRate": 100,
+      "runs": 3,
+      "innings": 3,
+      "bowlingAverage": 16.75,
+      "economyRate": 6.87,
+      "wickets": 8
+    }
   },
   {
     "id": "real-f059d7fe",
@@ -21046,7 +29916,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f059d7fe-16dc-4065-bcfc-51decb09e58d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f059d7fe-16dc-4065-bcfc-51decb09e58d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 29,
+      "strikeRate": 123.4,
+      "runs": 58,
+      "innings": 4,
+      "bowlingAverage": 15.83,
+      "economyRate": 8.64,
+      "wickets": 6
+    }
   },
   {
     "id": "real-f061b5fc",
@@ -21069,7 +29949,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": 32.86,
+      "economyRate": 9.57,
+      "wickets": 28
+    }
   },
   {
     "id": "real-f0c1c769",
@@ -21094,7 +29984,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f0c1c769-847b-4871-a4d3-1b27a2d8cdf5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f0c1c769-847b-4871-a4d3-1b27a2d8cdf5.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f0c61710",
@@ -21119,7 +30019,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f14c155f",
@@ -21142,7 +30052,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 16,
+      "economyRate": 4.1,
+      "wickets": 5
+    }
   },
   {
     "id": "real-f183c67e",
@@ -21165,7 +30085,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 55.5,
+      "economyRate": 9.84,
+      "wickets": 6
+    }
   },
   {
     "id": "real-f186e3f1",
@@ -21190,7 +30120,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 20.35,
+      "strikeRate": 107.54,
+      "runs": 285,
+      "innings": 18,
+      "bowlingAverage": 23.95,
+      "economyRate": 8.11,
+      "wickets": 21
+    }
   },
   {
     "id": "real-f1dea685",
@@ -21215,7 +30155,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f1dea685-fa68-4339-b582-ba70839e5ca9.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f1dea685-fa68-4339-b582-ba70839e5ca9.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 23.5,
+      "strikeRate": 146.88,
+      "runs": 47,
+      "innings": 2,
+      "bowlingAverage": 55,
+      "economyRate": 7.86,
+      "wickets": 1
+    }
   },
   {
     "id": "real-f291cb07",
@@ -21238,7 +30188,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": 28.79,
+      "economyRate": 10.26,
+      "wickets": 24
+    }
   },
   {
     "id": "real-f2a1f322",
@@ -21261,7 +30221,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f3876b65",
@@ -21284,7 +30254,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f3876b65-0643-49df-9255-4a06dd3fa051.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f3876b65-0643-49df-9255-4a06dd3fa051.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 21,
+      "strikeRate": 150,
+      "runs": 21,
+      "innings": 4,
+      "bowlingAverage": 29.6,
+      "economyRate": 9.65,
+      "wickets": 42
+    }
   },
   {
     "id": "real-f49539fc",
@@ -21307,7 +30287,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f49539fc-c565-4779-83c1-df3dfdaae171.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f49539fc-c565-4779-83c1-df3dfdaae171.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 5.75,
+      "strikeRate": 79.31,
+      "runs": 23,
+      "innings": 6,
+      "bowlingAverage": 46.71,
+      "economyRate": 9.48,
+      "wickets": 7
+    }
   },
   {
     "id": "real-f4ca483c",
@@ -21330,7 +30320,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f4ca483c-c574-49c9-a26e-d0512dd04bcd.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f4ca483c-c574-49c9-a26e-d0512dd04bcd.jpg",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 31.33,
+      "strikeRate": 79.52,
+      "runs": 1316,
+      "innings": 46,
+      "bowlingAverage": 99.5,
+      "economyRate": 3.9,
+      "wickets": 2
+    }
   },
   {
     "id": "real-f540dcd8",
@@ -21355,7 +30355,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 6,
+      "strikeRate": 120,
+      "runs": 6,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f589ad55",
@@ -21378,7 +30388,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f589d2a9",
@@ -21401,7 +30421,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f589d2a9-4e44-464d-9741-e224354a1370.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f589d2a9-4e44-464d-9741-e224354a1370.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 12.31,
+      "strikeRate": 118.67,
+      "runs": 197,
+      "innings": 32,
+      "bowlingAverage": 32.21,
+      "economyRate": 8.98,
+      "wickets": 99
+    }
   },
   {
     "id": "real-f639602d",
@@ -21424,7 +30454,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 0,
+      "strikeRate": 0,
+      "runs": 0,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f63eb69e",
@@ -21449,7 +30489,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f668f7ea",
@@ -21474,7 +30524,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f668f7ea-c720-4352-9435-840c3749b1e5.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f668f7ea-c720-4352-9435-840c3749b1e5.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.82,
+      "strikeRate": 124.49,
+      "runs": 793,
+      "innings": 52,
+      "bowlingAverage": 29.19,
+      "economyRate": 7.44,
+      "wickets": 63
+    }
   },
   {
     "id": "real-f6c1bfd0",
@@ -21497,7 +30557,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f6c1bfd0-ab6b-4860-80ee-4c3a49d35ad2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f6c1bfd0-ab6b-4860-80ee-4c3a49d35ad2.jpg",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f6fa8ae5",
@@ -21520,7 +30590,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f6fa8ae5-fb3c-43fa-8e85-3823ff1df766.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f6fa8ae5-fb3c-43fa-8e85-3823ff1df766.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 2,
+      "strikeRate": 50,
+      "runs": 2,
+      "innings": 3,
+      "bowlingAverage": 45,
+      "economyRate": 9,
+      "wickets": 3
+    }
   },
   {
     "id": "real-f705612a",
@@ -21543,7 +30623,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 14,
+      "strikeRate": 93.33,
+      "runs": 14,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f811a8e9",
@@ -21566,7 +30656,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f8178689",
@@ -21589,7 +30689,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 13,
+      "strikeRate": 78.79,
+      "runs": 26,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f8215285",
@@ -21612,7 +30722,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f8d73504",
@@ -21635,7 +30755,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f8e6accd",
@@ -21660,7 +30790,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f8e6accd-6b73-4869-93a6-d45519a361f0.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f8e6accd-6b73-4869-93a6-d45519a361f0.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 12.33,
+      "strikeRate": 123.33,
+      "runs": 259,
+      "innings": 27,
+      "bowlingAverage": 27.57,
+      "economyRate": 8.81,
+      "wickets": 53
+    }
   },
   {
     "id": "real-f8fdffff",
@@ -21685,7 +30825,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f8fdffff-13a9-4c84-939d-f5db814519cc.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f8fdffff-13a9-4c84-939d-f5db814519cc.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10.22,
+      "strikeRate": 98.92,
+      "runs": 92,
+      "innings": 10,
+      "bowlingAverage": 41.75,
+      "economyRate": 9.28,
+      "wickets": 8
+    }
   },
   {
     "id": "real-f9267401",
@@ -21708,7 +30858,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f9267401-81bf-4a02-b500-a6133712b596.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f9267401-81bf-4a02-b500-a6133712b596.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 1,
+      "strikeRate": 33.33,
+      "runs": 1,
+      "innings": 3,
+      "bowlingAverage": 26.11,
+      "economyRate": 9.4,
+      "wickets": 9
+    }
   },
   {
     "id": "real-f9b9c5c9",
@@ -21733,7 +30893,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f9f1d5ff",
@@ -21758,7 +30928,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fa2c40e5",
@@ -21783,7 +30963,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 11,
+      "strikeRate": 100,
+      "runs": 22,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fa3b78af",
@@ -21808,7 +30998,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fa6a4416",
@@ -21831,7 +31031,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fa6f288a",
@@ -21856,7 +31066,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fa7d13ce",
@@ -21879,7 +31099,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 84.21,
+      "runs": 16,
+      "innings": 3,
+      "bowlingAverage": 89,
+      "economyRate": 14.83,
+      "wickets": 1
+    }
   },
   {
     "id": "real-fae967d9",
@@ -21904,7 +31134,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 66.67,
+      "runs": 2,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fb0c5b73",
@@ -21927,7 +31167,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fb115153",
@@ -21950,7 +31200,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/fb115153-bbc8-4d63-9a2b-f76a8e20bdfe.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/fb115153-bbc8-4d63-9a2b-f76a8e20bdfe.jpg",
+    "careerStats": {
+      "format": "Test",
+      "battingAverage": 25.29,
+      "strikeRate": 45.92,
+      "runs": 607,
+      "innings": 26,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fb313a9a",
@@ -21973,7 +31233,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/fb313a9a-0a14-499d-a8d1-7561bccea8cb.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/fb313a9a-0a14-499d-a8d1-7561bccea8cb.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 26.94,
+      "strikeRate": 139.31,
+      "runs": 2236,
+      "innings": 93,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fb46a43c",
@@ -21996,7 +31266,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fb8fcc16",
@@ -22019,7 +31299,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fbde22e3",
@@ -22042,7 +31332,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fc2a4c84",
@@ -22065,7 +31365,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fc6df3ee",
@@ -22090,7 +31400,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fcc54602",
@@ -22113,7 +31433,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fcdc8c19",
@@ -22138,7 +31468,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fcf70a0d",
@@ -22163,7 +31503,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/fcf70a0d-188e-4331-8b33-652a8a358b99.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/fcf70a0d-188e-4331-8b33-652a8a358b99.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 4.89,
+      "strikeRate": 100,
+      "runs": 44,
+      "innings": 13,
+      "bowlingAverage": 37.36,
+      "economyRate": 8.72,
+      "wickets": 14
+    }
   },
   {
     "id": "real-fd2ee2dd",
@@ -22186,7 +31536,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-fd977da6",
@@ -22209,7 +31569,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 16.47,
+      "strikeRate": 132.56,
+      "runs": 346,
+      "innings": 26,
+      "bowlingAverage": 26.8,
+      "economyRate": 8.83,
+      "wickets": 20
+    }
   },
   {
     "id": "real-fe5f4f96",
@@ -22232,7 +31602,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/fe5f4f96-c207-4e3f-b0d5-cebc74435448.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/fe5f4f96-c207-4e3f-b0d5-cebc74435448.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 300,
+      "runs": 9,
+      "innings": 1,
+      "bowlingAverage": 93,
+      "economyRate": 15.5,
+      "wickets": 1
+    }
   },
   {
     "id": "real-fe93a297",
@@ -22257,7 +31637,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20",
+      "battingAverage": 21,
+      "strikeRate": 110.53,
+      "runs": 21,
+      "innings": 2,
+      "bowlingAverage": 22.25,
+      "economyRate": 7.85,
+      "wickets": 4
+    }
   },
   {
     "id": "real-fedd7523",
@@ -22280,7 +31670,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ff17824f",
@@ -22303,7 +31703,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ff17824f-0e1c-4eb7-acd3-8b5d116934bc.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ff17824f-0e1c-4eb7-acd3-8b5d116934bc.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 3.25,
+      "strikeRate": 81.25,
+      "runs": 13,
+      "innings": 7,
+      "bowlingAverage": 47.53,
+      "economyRate": 10.14,
+      "wickets": 15
+    }
   },
   {
     "id": "real-ff1b8b0d",
@@ -22328,7 +31738,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 16,
+      "strikeRate": 123.08,
+      "runs": 16,
+      "innings": 2,
+      "bowlingAverage": 17.5,
+      "economyRate": 7.78,
+      "wickets": 4
+    }
   },
   {
     "id": "real-ff852d7c",
@@ -22351,7 +31771,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "ODI",
+      "battingAverage": 0,
+      "strikeRate": 100,
+      "runs": 1,
+      "innings": 1,
+      "bowlingAverage": 48,
+      "economyRate": 5.33,
+      "wickets": 1
+    }
   },
   {
     "id": "real-ffdec101",
@@ -22376,7 +31806,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 8,
+      "strikeRate": 160,
+      "runs": 16,
+      "innings": 2,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-42aa48a4",
@@ -22399,7 +31839,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-e49a1d96",
@@ -22422,7 +31872,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e49a1d96-2ddf-43aa-88eb-a560c50decdc.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e49a1d96-2ddf-43aa-88eb-a560c50decdc.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 3.5,
+      "strikeRate": 41.18,
+      "runs": 7,
+      "innings": 2,
+      "bowlingAverage": 22.44,
+      "economyRate": 6.7,
+      "wickets": 9
+    }
   },
   {
     "id": "real-9ae68636",
@@ -22445,7 +31905,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9ae68636-48d9-488f-8adc-e62a19815d85.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9ae68636-48d9-488f-8adc-e62a19815d85.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 28.43,
+      "strikeRate": 135.87,
+      "runs": 2644,
+      "innings": 99,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6602d875",
@@ -22468,7 +31938,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6602d875-cf56-46a3-866c-de80aaa006bc.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6602d875-cf56-46a3-866c-de80aaa006bc.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 9.71,
+      "strikeRate": 87.18,
+      "runs": 68,
+      "innings": 30,
+      "bowlingAverage": 22.52,
+      "economyRate": 7.3,
+      "wickets": 165
+    }
   },
   {
     "id": "real-19758cd7",
@@ -22491,7 +31971,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/19758cd7-4cce-47d8-b1fe-5975609de802.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/19758cd7-4cce-47d8-b1fe-5975609de802.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 15.31,
+      "strikeRate": 155.47,
+      "runs": 199,
+      "innings": 25,
+      "bowlingAverage": 24.4,
+      "economyRate": 7.43,
+      "wickets": 48
+    }
   },
   {
     "id": "real-7567e305",
@@ -22514,7 +32004,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7567e305-1b40-4eee-9290-e2fcb8804496.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7567e305-1b40-4eee-9290-e2fcb8804496.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 38.11,
+      "strikeRate": 147.53,
+      "runs": 3582,
+      "innings": 106,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2190c28d",
@@ -22537,7 +32037,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2190c28d-1712-4fd2-ae44-9ac54319fc21.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2190c28d-1712-4fd2-ae44-9ac54319fc21.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 0,
+      "strikeRate": 67.86,
+      "runs": 19,
+      "innings": 6,
+      "bowlingAverage": 23.14,
+      "economyRate": 8.06,
+      "wickets": 35
+    }
   },
   {
     "id": "real-a81da20a",
@@ -22562,7 +32072,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a81da20a-e420-476a-baf6-204fc219dbdd.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a81da20a-e420-476a-baf6-204fc219dbdd.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 12.12,
+      "strikeRate": 106.74,
+      "runs": 206,
+      "innings": 31,
+      "bowlingAverage": 21.97,
+      "economyRate": 8.48,
+      "wickets": 117
+    }
   },
   {
     "id": "real-a46cfa8b",
@@ -22585,7 +32105,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a46cfa8b-96ae-4fb1-9499-65b8ce7e9634.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a46cfa8b-96ae-4fb1-9499-65b8ce7e9634.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 35.47,
+      "strikeRate": 125.62,
+      "runs": 2128,
+      "innings": 77,
+      "bowlingAverage": 27.33,
+      "economyRate": 8.34,
+      "wickets": 6
+    }
   },
   {
     "id": "real-a034346c",
@@ -22608,7 +32138,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a034346c-b408-4d29-a0f0-8b12430be28e.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a034346c-b408-4d29-a0f0-8b12430be28e.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 45.47,
+      "strikeRate": 134.61,
+      "runs": 4683,
+      "innings": 123,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1e651cfb",
@@ -22633,7 +32173,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/1e651cfb-57f1-48da-bf9d-83cbff1733d1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/1e651cfb-57f1-48da-bf9d-83cbff1733d1.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 15.25,
+      "strikeRate": 84.72,
+      "runs": 183,
+      "innings": 33,
+      "bowlingAverage": 27.45,
+      "economyRate": 8.21,
+      "wickets": 87
+    }
   },
   {
     "id": "real-d17bb85d",
@@ -22656,7 +32206,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d17bb85d-cb7c-416b-8563-613c4eb543f9.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d17bb85d-cb7c-416b-8563-613c4eb543f9.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 20,
+      "strikeRate": 200,
+      "runs": 20,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-185c8905",
@@ -22679,7 +32239,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/185c8905-4ca3-4e13-93f6-563d99600b58.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/185c8905-4ca3-4e13-93f6-563d99600b58.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 4,
+      "strikeRate": 100,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-80a056bf",
@@ -22704,7 +32274,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/80a056bf-343f-44e8-82de-db59340f77bb.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/80a056bf-343f-44e8-82de-db59340f77bb.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 23.49,
+      "strikeRate": 117.28,
+      "runs": 2443,
+      "innings": 130,
+      "bowlingAverage": 27.68,
+      "economyRate": 7.17,
+      "wickets": 41
+    }
   },
   {
     "id": "real-11340697",
@@ -22729,7 +32309,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/11340697-6443-4c3e-ab27-d9d30ba95671.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/11340697-6443-4c3e-ab27-d9d30ba95671.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 28.27,
+      "strikeRate": 142.01,
+      "runs": 1866,
+      "innings": 88,
+      "bowlingAverage": 29.63,
+      "economyRate": 9.52,
+      "wickets": 43
+    }
   },
   {
     "id": "real-e8041203",
@@ -22752,7 +32342,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e8041203-33e0-498f-b1e6-186f72b18260.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e8041203-33e0-498f-b1e6-186f72b18260.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 6,
+      "strikeRate": 150,
+      "runs": 12,
+      "innings": 3,
+      "bowlingAverage": 16.27,
+      "economyRate": 8.95,
+      "wickets": 11
+    }
   },
   {
     "id": "real-0eb2e571",
@@ -22775,7 +32375,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0eb2e571-a372-4068-8bde-2f85ad7e972a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0eb2e571-a372-4068-8bde-2f85ad7e972a.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 22.5,
+      "strikeRate": 137.76,
+      "runs": 270,
+      "innings": 13,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-bceb7084",
@@ -22800,7 +32410,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/bceb7084-1dda-4d76-b691-43c5a29d39a7.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/bceb7084-1dda-4d76-b691-43c5a29d39a7.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 11.67,
+      "strikeRate": 96.33,
+      "runs": 105,
+      "innings": 17,
+      "bowlingAverage": 22.29,
+      "economyRate": 8.21,
+      "wickets": 51
+    }
   },
   {
     "id": "real-e4e9ba08",
@@ -22825,7 +32445,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/e4e9ba08-61cf-45d7-90cd-ec7c1a1b3ff2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/e4e9ba08-61cf-45d7-90cd-ec7c1a1b3ff2.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 13.44,
+      "strikeRate": 143.33,
+      "runs": 215,
+      "innings": 19,
+      "bowlingAverage": 34.47,
+      "economyRate": 7.44,
+      "wickets": 15
+    }
   },
   {
     "id": "real-78b310fd",
@@ -22848,7 +32478,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/78b310fd-7403-4abf-83e4-8ac8357be790.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/78b310fd-7403-4abf-83e4-8ac8357be790.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 46.77,
+      "strikeRate": 125.38,
+      "runs": 3414,
+      "innings": 93,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-11d06633",
@@ -22873,7 +32513,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/11d06633-aa20-469c-8fbb-676a1ae33eed.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/11d06633-aa20-469c-8fbb-676a1ae33eed.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 5.69,
+      "strikeRate": 93.67,
+      "runs": 74,
+      "innings": 25,
+      "bowlingAverage": 26.86,
+      "economyRate": 8.44,
+      "wickets": 127
+    }
   },
   {
     "id": "real-2a8d8640",
@@ -22898,7 +32548,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2a8d8640-2213-4cf6-ac7e-309d8b733e96.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2a8d8640-2213-4cf6-ac7e-309d8b733e96.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10.9,
+      "strikeRate": 91.6,
+      "runs": 109,
+      "innings": 25,
+      "bowlingAverage": 30.34,
+      "economyRate": 8.65,
+      "wickets": 93
+    }
   },
   {
     "id": "real-a72bb5d3",
@@ -22921,7 +32581,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-3c6eac03",
@@ -22946,7 +32616,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
+    "imageUrl": "https://h.cricapi.com/img/icon512.png",
+    "careerStats": {
+      "format": "Unknown",
+      "battingAverage": null,
+      "strikeRate": null,
+      "runs": 0,
+      "innings": 0,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7bb5f657",
@@ -22969,7 +32649,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7bb5f657-2d95-4d37-a7d9-0b7b03a43f17.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7bb5f657-2d95-4d37-a7d9-0b7b03a43f17.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 19.23,
+      "strikeRate": 114.94,
+      "runs": 1500,
+      "innings": 93,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-6cdf754e",
@@ -22992,7 +32682,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6cdf754e-15d0-4220-a35a-8b5d87b1ee61.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6cdf754e-15d0-4220-a35a-8b5d87b1ee61.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 0,
+      "strikeRate": 100,
+      "runs": 4,
+      "innings": 1,
+      "bowlingAverage": 48,
+      "economyRate": 9.6,
+      "wickets": 1
+    }
   },
   {
     "id": "real-4e8ab9cd",
@@ -23015,7 +32715,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4e8ab9cd-c5af-430e-887b-d22bf74ad052.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4e8ab9cd-c5af-430e-887b-d22bf74ad052.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 32.16,
+      "strikeRate": 162.29,
+      "runs": 1769,
+      "innings": 73,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-13b3d56e",
@@ -23038,7 +32748,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/13b3d56e-0fba-4d31-a174-d211211404e2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/13b3d56e-0fba-4d31-a174-d211211404e2.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 19.81,
+      "strikeRate": 149.71,
+      "runs": 515,
+      "innings": 41,
+      "bowlingAverage": 30.52,
+      "economyRate": 8.75,
+      "wickets": 63
+    }
   },
   {
     "id": "real-f236dae0",
@@ -23063,7 +32783,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f236dae0-e7df-4084-a9b1-1bc3c7793f60.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f236dae0-e7df-4084-a9b1-1bc3c7793f60.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 11.14,
+      "strikeRate": 110.83,
+      "runs": 624,
+      "innings": 92,
+      "bowlingAverage": 26.6,
+      "economyRate": 7.96,
+      "wickets": 192
+    }
   },
   {
     "id": "real-000f9f7c",
@@ -23086,7 +32816,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/000f9f7c-cc24-4a85-8638-b013b0f4760e.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/000f9f7c-cc24-4a85-8638-b013b0f4760e.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 31.26,
+      "strikeRate": 134.23,
+      "runs": 3157,
+      "innings": 107,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f0687183",
@@ -23111,7 +32851,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f0687183-ad9a-44f7-9cbf-4f7eb0cbfb5a.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f0687183-ad9a-44f7-9cbf-4f7eb0cbfb5a.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 14.73,
+      "strikeRate": 161.72,
+      "runs": 545,
+      "innings": 60,
+      "bowlingAverage": 21.83,
+      "economyRate": 6.82,
+      "wickets": 149
+    }
   },
   {
     "id": "real-4952c32d",
@@ -23134,7 +32884,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/4952c32d-ffb2-4070-bc15-ceb3989c229b.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/4952c32d-ffb2-4070-bc15-ceb3989c229b.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 11,
+      "strikeRate": 91.67,
+      "runs": 22,
+      "innings": 3,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-0068c9d8",
@@ -23159,7 +32919,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0068c9d8-be69-46b9-bbef-62c74e480781.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0068c9d8-be69-46b9-bbef-62c74e480781.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 13.33,
+      "strikeRate": 118.52,
+      "runs": 800,
+      "innings": 94,
+      "bowlingAverage": 29.83,
+      "economyRate": 7.12,
+      "wickets": 180
+    }
   },
   {
     "id": "real-81b446e1",
@@ -23184,7 +32954,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/81b446e1-bfea-45a7-a15e-062b8157a323.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/81b446e1-bfea-45a7-a15e-062b8157a323.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 27.4,
+      "strikeRate": 129.72,
+      "runs": 2959,
+      "innings": 184,
+      "bowlingAverage": 30.4,
+      "economyRate": 7.62,
+      "wickets": 160
+    }
   },
   {
     "id": "real-a52b2d20",
@@ -23207,7 +32987,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/a52b2d20-7c98-4238-9ba4-ec78419a5cc2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/a52b2d20-7c98-4238-9ba4-ec78419a5cc2.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 35.31,
+      "strikeRate": 148.93,
+      "runs": 3284,
+      "innings": 110,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-2a6fc54c",
@@ -23230,7 +33020,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/2a6fc54c-4852-4f41-954a-40cd3950cf31.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/2a6fc54c-4852-4f41-954a-40cd3950cf31.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 27.51,
+      "strikeRate": 130.35,
+      "runs": 4952,
+      "innings": 197,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-03bda674",
@@ -23254,7 +33054,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "big-match-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/03bda674-3916-4d64-952e-00a6c19c01e1.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/03bda674-3916-4d64-952e-00a6c19c01e1.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 29.72,
+      "strikeRate": 131.14,
+      "runs": 6628,
+      "innings": 252,
+      "bowlingAverage": 30.2,
+      "economyRate": 8.02,
+      "wickets": 15
+    }
   },
   {
     "id": "real-0095ee03",
@@ -23277,7 +33087,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0095ee03-e9a5-4418-b568-fc6eaa60ea72.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0095ee03-e9a5-4418-b568-fc6eaa60ea72.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 25.43,
+      "strikeRate": 123.72,
+      "runs": 1017,
+      "innings": 54,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-45613012",
@@ -23302,7 +33122,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/45613012-5c4f-4a7a-a1c4-d9827939b2bf.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/45613012-5c4f-4a7a-a1c4-d9827939b2bf.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 25.23,
+      "strikeRate": 136.48,
+      "runs": 883,
+      "innings": 48,
+      "bowlingAverage": 32.76,
+      "economyRate": 9.65,
+      "wickets": 58
+    }
   },
   {
     "id": "real-35ed1b20",
@@ -23325,7 +33155,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/35ed1b20-38f3-4013-be2e-dc28ffbecfd6.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/35ed1b20-38f3-4013-be2e-dc28ffbecfd6.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 30.69,
+      "strikeRate": 138.96,
+      "runs": 4419,
+      "innings": 163,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-f56f4395",
@@ -23348,7 +33188,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/f56f4395-af31-466a-8762-d5908964ec69.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/f56f4395-af31-466a-8762-d5908964ec69.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 27.27,
+      "strikeRate": 125.27,
+      "runs": 818,
+      "innings": 42,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-26c7e157",
@@ -23373,7 +33223,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/26c7e157-99e8-46b3-9675-5350e8e79270.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/26c7e157-99e8-46b3-9675-5350e8e79270.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 17.87,
+      "strikeRate": 139.71,
+      "runs": 679,
+      "innings": 52,
+      "bowlingAverage": 23.57,
+      "economyRate": 7.24,
+      "wickets": 107
+    }
   },
   {
     "id": "real-df7bffbc",
@@ -23398,7 +33258,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/df7bffbc-02e6-41ef-8049-fd256c850fe8.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/df7bffbc-02e6-41ef-8049-fd256c850fe8.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 12.13,
+      "strikeRate": 127.27,
+      "runs": 182,
+      "innings": 24,
+      "bowlingAverage": 21.24,
+      "economyRate": 7.79,
+      "wickets": 100
+    }
   },
   {
     "id": "real-05bb5069",
@@ -23422,7 +33292,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "big-match-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/05bb5069-68d9-422d-9676-ba5656672227.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/05bb5069-68d9-422d-9676-ba5656672227.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 35.07,
+      "strikeRate": 127.12,
+      "runs": 6768,
+      "innings": 221,
+      "bowlingAverage": 16.5,
+      "economyRate": 8.25,
+      "wickets": 4
+    }
   },
   {
     "id": "real-77791963",
@@ -23445,7 +33325,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/77791963-6c1b-4979-b07a-f910dee28cd9.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/77791963-6c1b-4979-b07a-f910dee28cd9.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 32.24,
+      "strikeRate": 127.48,
+      "runs": 3127,
+      "innings": 115,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-7263e990",
@@ -23468,7 +33358,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/7263e990-a9e9-4829-8adf-760d18d1315c.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/7263e990-a9e9-4829-8adf-760d18d1315c.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 37.84,
+      "strikeRate": 135.7,
+      "runs": 3216,
+      "innings": 100,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-ef2e9c01",
@@ -23493,7 +33393,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/ef2e9c01-41f2-4349-a945-45d8b11dbd19.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/ef2e9c01-41f2-4349-a945-45d8b11dbd19.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 17.04,
+      "strikeRate": 165.84,
+      "runs": 1534,
+      "innings": 110,
+      "bowlingAverage": 25.39,
+      "economyRate": 6.73,
+      "wickets": 180
+    }
   },
   {
     "id": "real-0409f66c",
@@ -23517,7 +33427,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "big-match-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0409f66c-1aec-49d0-be29-cce1e086543d.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0409f66c-1aec-49d0-be29-cce1e086543d.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 32.52,
+      "strikeRate": 136.73,
+      "runs": 5528,
+      "innings": 200,
+      "bowlingAverage": 44.72,
+      "economyRate": 7.39,
+      "wickets": 25
+    }
   },
   {
     "id": "real-8c579447",
@@ -23540,7 +33460,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/8c579447-bfbd-4cf6-a283-db4dc1d5ac33.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/8c579447-bfbd-4cf6-a283-db4dc1d5ac33.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 32.09,
+      "strikeRate": 145.33,
+      "runs": 3594,
+      "innings": 135,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-1fca0272",
@@ -23563,7 +33493,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/1fca0272-a33e-4ee8-ac06-bc2b61e24e84.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/1fca0272-a33e-4ee8-ac06-bc2b61e24e84.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 24.08,
+      "strikeRate": 117.2,
+      "runs": 1758,
+      "innings": 78,
+      "bowlingAverage": null,
+      "economyRate": null,
+      "wickets": 0
+    }
   },
   {
     "id": "real-9b19bd38",
@@ -23588,7 +33528,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/9b19bd38-a54b-4071-b1e1-8ad78743235f.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/9b19bd38-a54b-4071-b1e1-8ad78743235f.jpg",
+    "careerStats": {
+      "format": "T20I",
+      "battingAverage": 10.16,
+      "strikeRate": 94.61,
+      "runs": 193,
+      "innings": 35,
+      "bowlingAverage": 23.29,
+      "economyRate": 7.52,
+      "wickets": 82
+    }
   },
   {
     "id": "real-d6720897",
@@ -23611,7 +33561,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/d6720897-e81d-4703-bf33-d2b60c973d30.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/d6720897-e81d-4703-bf33-d2b60c973d30.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 36.76,
+      "strikeRate": 173.87,
+      "runs": 772,
+      "innings": 25,
+      "bowlingAverage": 56.5,
+      "economyRate": 11.69,
+      "wickets": 2
+    }
   },
   {
     "id": "real-6004fd3f",
@@ -23636,7 +33596,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6004fd3f-2264-470d-b39f-340d530b19b3.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6004fd3f-2264-470d-b39f-340d530b19b3.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 10.38,
+      "strikeRate": 106.41,
+      "runs": 83,
+      "innings": 27,
+      "bowlingAverage": 26.69,
+      "economyRate": 8.29,
+      "wickets": 121
+    }
   },
   {
     "id": "real-c61d247d",
@@ -23660,7 +33630,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player",
       "big-match-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/c61d247d-7f77-452c-b495-2813a9cd0ac4.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/c61d247d-7f77-452c-b495-2813a9cd0ac4.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 38.67,
+      "strikeRate": 131.97,
+      "runs": 8004,
+      "innings": 244,
+      "bowlingAverage": 92,
+      "economyRate": 8.8,
+      "wickets": 4
+    }
   },
   {
     "id": "real-6efb08ed",
@@ -23685,7 +33665,17 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/6efb08ed-3316-40db-ad25-d8992fdf1a87.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/6efb08ed-3316-40db-ad25-d8992fdf1a87.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 6.5,
+      "strikeRate": 81.25,
+      "runs": 65,
+      "innings": 14,
+      "bowlingAverage": 26.77,
+      "economyRate": 7.78,
+      "wickets": 35
+    }
   },
   {
     "id": "real-0d704a13",
@@ -23708,6 +33698,16 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "current-star",
       "real-player"
     ],
-    "imageUrl": "https://h.cricapi.com/img/players/0d704a13-518a-40a7-bb93-0fc0d92af9e2.jpg"
+    "imageUrl": "https://h.cricapi.com/img/players/0d704a13-518a-40a7-bb93-0fc0d92af9e2.jpg",
+    "careerStats": {
+      "format": "IPL",
+      "battingAverage": 5.29,
+      "strikeRate": 43.02,
+      "runs": 37,
+      "innings": 20,
+      "bowlingAverage": 22.45,
+      "economyRate": 7.84,
+      "wickets": 205
+    }
   }
 ];

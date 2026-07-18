@@ -49,6 +49,25 @@ export interface PitchPreference {
   affinity: number;
 }
 
+/** A real player's actual career numbers, drawn from whichever single
+ * format (IPL/T20I/T20/ODI/Test) their rating is calibrated against — see
+ * scripts/cricket-data/transform.ts. null for fields that don't apply (e.g.
+ * bowlingAverage for a player with no bowling record). Absent entirely for
+ * fictional players, who have no real career to report. */
+export interface CareerStats {
+  /** Which competition/format these numbers are drawn from, e.g. "IPL",
+   * "ODI", "Test", "T20I" — shown alongside the numbers since an average of
+   * 44 means something different in Tests than in a T20 league. */
+  format: string;
+  battingAverage: number | null;
+  strikeRate: number | null;
+  runs: number;
+  innings: number;
+  bowlingAverage: number | null;
+  economyRate: number | null;
+  wickets: number;
+}
+
 export interface Player {
   id: string;
   name: string;
@@ -90,6 +109,14 @@ export interface Player {
   venuePreferences: string[];
   tags: string[];
   rarityTier: RarityTier;
+
+  /** Present only for real/legend players. When set, this is what player
+   * cards display and what season simulation uses to drive real-player
+   * games — the 0-99 fields above still exist (composition legality, draft
+   * category filters, and rarity tiers still key off them) but are no
+   * longer the primary signal shown to the user or fed into match outcomes
+   * for a player who has real numbers to use instead. */
+  careerStats: CareerStats | null;
 }
 
 export function canBowl(player: Player): boolean {

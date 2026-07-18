@@ -1,6 +1,7 @@
 import type {
   BattingHand,
   BowlingStyle,
+  CareerStats,
   NationalityType,
   PitchPreference,
   Player,
@@ -53,6 +54,10 @@ export interface PlayerSpec {
   venuePreferences?: string[];
   tags?: string[];
   imageUrl?: string | null;
+
+  /** Real career numbers for real/legend players — see CareerStats. Left
+   * unset for fictional players. */
+  careerStats?: CareerStats | null;
 }
 
 function clamp(value: number, min = 0, max = 99): number {
@@ -143,5 +148,6 @@ export function buildPlayer(spec: PlayerSpec): Player {
     venuePreferences: spec.venuePreferences ?? [],
     tags: spec.tags ?? [],
     rarityTier: spec.rarityTier,
+    careerStats: spec.careerStats ?? null,
   };
 }

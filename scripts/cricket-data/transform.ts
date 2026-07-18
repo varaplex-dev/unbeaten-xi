@@ -55,6 +55,17 @@ interface RawPlayer {
 // Mirrors PlayerSpec in src/lib/data/playerFactory.ts (kept structurally
 // compatible rather than imported, since this script runs outside Next's
 // module graph).
+interface GeneratedCareerStats {
+  format: string;
+  battingAverage: number | null;
+  strikeRate: number | null;
+  runs: number;
+  innings: number;
+  bowlingAverage: number | null;
+  economyRate: number | null;
+  wickets: number;
+}
+
 interface GeneratedSpec {
   id: string;
   name: string;
@@ -74,6 +85,7 @@ interface GeneratedSpec {
   wicketkeepingSkill: number;
   tags: string[];
   imageUrl: string;
+  careerStats: GeneratedCareerStats;
 }
 
 function clamp(v: number, min = 0, max = 99): number {
@@ -202,7 +214,20 @@ interface Metrics {
   bowlingAvg: number | null;
   economy: number | null;
   wickets: number;
+  /** Which matchtype bucket these numbers were pulled from (e.g. "ipl",
+   * "odi") — carried through to the generated spec's careerStats.format so
+   * the UI can label real numbers with the format they actually represent. */
+  battingType: string | null;
+  bowlingType: string | null;
 }
+
+const FORMAT_LABELS: Record<string, string> = {
+  ipl: "IPL",
+  t20i: "T20I",
+  t20: "T20",
+  odi: "ODI",
+  test: "Test",
+};
 
 function extractMetrics(raw: RawPlayer): Metrics {
   const stats = raw.stats ?? [];
@@ -242,6 +267,8 @@ function extractMetrics(raw: RawPlayer): Metrics {
     bowlingAvg: bowlingType ? getStatForType(stats, "bowling", bowlingType, "avg") : null,
     economy: bowlingType ? getStatForType(stats, "bowling", bowlingType, "econ") : null,
     wickets: bowlingType ? (getStatForType(stats, "bowling", bowlingType, "wkts") ?? 0) : 0,
+    battingType,
+    bowlingType,
   };
 }
 
@@ -404,6 +431,18 @@ function transformOne(m: Metrics, norms: PoolNorms, legacyNorms: PoolNorms): Gen
       ? ["current-star", "real-player", "big-match-player"]
       : ["current-star", "real-player"];
 
+  const formatKey = m.battingType ?? m.bowlingType;
+  const careerStats: GeneratedCareerStats = {
+    format: formatKey ? (FORMAT_LABELS[formatKey] ?? formatKey.toUpperCase()) : "Unknown",
+    battingAverage: m.innings > 0 ? m.battingAvg : null,
+    strikeRate: m.innings > 0 ? m.strikeRate : null,
+    runs: m.runs,
+    innings: m.innings,
+    bowlingAverage: m.wickets > 0 ? m.bowlingAvg : null,
+    economyRate: m.wickets > 0 ? m.economy : null,
+    wickets: m.wickets,
+  };
+
   return {
     id: `real-${raw.id.slice(0, 8)}`,
     name: raw.name,
@@ -423,6 +462,7 @@ function transformOne(m: Metrics, norms: PoolNorms, legacyNorms: PoolNorms): Gen
     wicketkeepingSkill: primaryRole === "wicketkeeper-batter" ? 78 : 0,
     tags,
     imageUrl: raw.playerImg ?? "",
+    careerStats,
   };
 }
 

@@ -35,7 +35,13 @@ interface PlayerCardProps {
   disabled?: boolean;
 }
 
+function formatStat(value: number | null, decimals = 1): string {
+  return value === null ? "—" : value.toFixed(decimals);
+}
+
 export function PlayerCard({ player, onSelect, selected, disabled }: PlayerCardProps) {
+  const stats = player.careerStats;
+
   return (
     <button
       type="button"
@@ -59,32 +65,60 @@ export function PlayerCard({ player, onSelect, selected, disabled }: PlayerCardP
             </p>
           </div>
         </div>
-        <span className="shrink-0 rounded-full bg-white/5 px-2.5 py-1 text-sm font-bold tabular-nums">
-          {player.overallRating}
-        </span>
+        {stats ? (
+          <span className="shrink-0 rounded-full bg-white/5 px-2.5 py-1 text-xs font-bold uppercase tracking-wide text-foreground-muted">
+            {stats.format}
+          </span>
+        ) : (
+          <span className="shrink-0 rounded-full bg-white/5 px-2.5 py-1 text-sm font-bold tabular-nums">
+            {player.overallRating}
+          </span>
+        )}
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1.5">
         <Badge variant="accent">{ROLE_LABELS[player.primaryRole]}</Badge>
         <Badge>{player.nationalityType === "overseas" ? "Overseas" : "Indian"}</Badge>
         <Badge>{player.battingHand === "left" ? "LHB" : "RHB"}</Badge>
-        {player.rarityTier === "legendary" && <Badge variant="gold">Legend</Badge>}
+        {player.rarityTier === "legendary" && <Badge variant="gold">Elite</Badge>}
+        {player.tags.includes("legend") && <Badge variant="gold">Legend</Badge>}
       </div>
 
-      <dl className="mt-3 grid grid-cols-3 gap-2 text-center">
-        <div>
-          <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Bat</dt>
-          <dd className="text-sm font-semibold tabular-nums">{player.t20BattingRating}</dd>
-        </div>
-        <div>
-          <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Bowl</dt>
-          <dd className="text-sm font-semibold tabular-nums">{player.t20BowlingRating}</dd>
-        </div>
-        <div>
-          <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Field</dt>
-          <dd className="text-sm font-semibold tabular-nums">{player.fieldingRating}</dd>
-        </div>
-      </dl>
+      {stats ? (
+        <dl className="mt-3 grid grid-cols-4 gap-2 text-center">
+          <div>
+            <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Avg</dt>
+            <dd className="text-sm font-semibold tabular-nums">{formatStat(stats.battingAverage)}</dd>
+          </div>
+          <div>
+            <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">SR</dt>
+            <dd className="text-sm font-semibold tabular-nums">{formatStat(stats.strikeRate)}</dd>
+          </div>
+          <div>
+            <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Econ</dt>
+            <dd className="text-sm font-semibold tabular-nums">{formatStat(stats.economyRate, 2)}</dd>
+          </div>
+          <div>
+            <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Wkts</dt>
+            <dd className="text-sm font-semibold tabular-nums">{stats.wickets || "—"}</dd>
+          </div>
+        </dl>
+      ) : (
+        <dl className="mt-3 grid grid-cols-3 gap-2 text-center">
+          <div>
+            <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Bat</dt>
+            <dd className="text-sm font-semibold tabular-nums">{player.t20BattingRating}</dd>
+          </div>
+          <div>
+            <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Bowl</dt>
+            <dd className="text-sm font-semibold tabular-nums">{player.t20BowlingRating}</dd>
+          </div>
+          <div>
+            <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Field</dt>
+            <dd className="text-sm font-semibold tabular-nums">{player.fieldingRating}</dd>
+          </div>
+        </dl>
+      )}
     </button>
   );
 }
