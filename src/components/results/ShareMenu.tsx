@@ -1,7 +1,9 @@
 "use client";
 
 import { useState } from "react";
-import { Button, buttonVariants } from "@/components/ui/button";
+import { Check, Copy } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { XIcon, WhatsAppIcon, FacebookIcon } from "@/components/icons/SocialIcons";
 import { cn } from "@/lib/utils";
 import { track } from "@/lib/analytics";
 
@@ -11,11 +13,15 @@ interface ShareMenuProps {
   losses: number;
 }
 
+const ICON_BUTTON =
+  "inline-flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background-elevated transition-colors duration-150 active:scale-[0.98] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-accent/60";
+
 /** Big primary "Share Result" button (tries the native OS share sheet first,
  * which on mobile already lists WhatsApp/Facebook/X/etc. installed apps),
- * plus a row of direct platform links as a fallback for desktop browsers
+ * plus a row of icon-only platform links as a fallback for desktop browsers
  * that don't support navigator.share and for anyone who wants a specific
- * platform without going through the OS sheet. */
+ * platform without going through the OS sheet. Instagram has no public
+ * share-intent URL (unlike X/WhatsApp/Facebook) so it isn't offered here. */
 export function ShareMenu({ shareText, wins, losses }: ShareMenuProps) {
   const [copied, setCopied] = useState(false);
 
@@ -50,19 +56,25 @@ export function ShareMenu({ shareText, wins, losses }: ShareMenuProps) {
 
   const platformLinks = [
     {
-      label: "X",
+      label: "Share on X",
       method: "twitter",
       href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(fullText)}`,
+      icon: XIcon,
+      hoverClass: "hover:border-foreground/40 hover:bg-white/10",
     },
     {
-      label: "WhatsApp",
+      label: "Share on WhatsApp",
       method: "whatsapp",
       href: `https://wa.me/?text=${encodeURIComponent(fullText)}`,
+      icon: WhatsAppIcon,
+      hoverClass: "hover:border-[#25D366]/50 hover:text-[#25D366]",
     },
     {
-      label: "Facebook",
+      label: "Share on Facebook",
       method: "facebook",
       href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}&quote=${encodeURIComponent(shareText)}`,
+      icon: FacebookIcon,
+      hoverClass: "hover:border-[#1877F2]/50 hover:text-[#1877F2]",
     },
   ];
 
@@ -73,21 +85,29 @@ export function ShareMenu({ shareText, wins, losses }: ShareMenuProps) {
           Share Result
         </Button>
       </div>
-      <div className="flex flex-wrap gap-2">
+      <div className="flex items-center gap-2">
         {platformLinks.map((link) => (
           <a
             key={link.method}
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
+            aria-label={link.label}
+            title={link.label}
             onClick={() => logShare(link.method)}
-            className={cn(buttonVariants({ variant: "secondary", size: "sm" }))}
+            className={cn(ICON_BUTTON, link.hoverClass)}
           >
-            {link.label}
+            <link.icon className="h-5 w-5" />
           </a>
         ))}
-        <button type="button" onClick={handleCopy} className={cn(buttonVariants({ variant: "secondary", size: "sm" }))}>
-          {copied ? "Copied!" : "Copy Text"}
+        <button
+          type="button"
+          onClick={handleCopy}
+          aria-label={copied ? "Copied" : "Copy result text"}
+          title={copied ? "Copied" : "Copy result text"}
+          className={cn(ICON_BUTTON, "hover:border-accent/50 hover:text-accent")}
+        >
+          {copied ? <Check className="h-5 w-5 text-accent" /> : <Copy className="h-5 w-5" />}
         </button>
       </div>
     </div>
