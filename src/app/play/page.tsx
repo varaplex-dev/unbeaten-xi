@@ -80,7 +80,7 @@ export default function PlayPage() {
                   {mode.available && (
                     <div className="flex shrink-0 gap-2">
                       <Button size="sm" variant="secondary" onClick={() => handleSpin(mode)}>
-                        Spin the Wheel
+                        Spin
                       </Button>
                       <Button size="sm" onClick={() => handleStart(mode)}>
                         Draft

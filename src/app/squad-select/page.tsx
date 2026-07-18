@@ -126,7 +126,7 @@ export default function SquadSelectPage() {
                   : `Spin for the team your ${draftPicks.length === 0 ? "first" : "next"} pick comes from.`}
               </p>
               <Button size="lg" onClick={handleSpinClick}>
-                Spin the Wheel
+                Spin
               </Button>
               {squadComplete && (
                 <Button variant="ghost" onClick={skipImpactPlayer}>

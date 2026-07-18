@@ -1,17 +1,21 @@
 "use client";
 
-import { useMemo } from "react";
+import { useCallback, useEffect, useMemo, useRef } from "react";
 import { motion } from "framer-motion";
 import { ERA_TEAMS } from "@/lib/data/eraTeams";
 import { createRng, pickRandom } from "@/lib/engine/rng";
 import type { EraTeam } from "@/lib/types";
 
 const ITEM_HEIGHT = 52;
-const REEL_LENGTH = 16;
-const DURATION = 1.7;
-// A gentle ease-out — fast start, long deceleration into the landing item —
-// so the reel reads as "spinning down" rather than a linear slide.
-const EASE: [number, number, number, number] = [0.1, 0.7, 0.2, 1];
+const REEL_LENGTH = 26;
+// The team column settles a beat before the era column — a small stagger
+// reads as more natural than both reels stopping in perfect lockstep.
+const TEAM_DURATION = 3.1;
+const ERA_DURATION = 3.9;
+// A smooth, long-tailed ease-out (close to "easeOutExpo") — quick to get
+// moving, then a slow, gentle glide into the landing item rather than an
+// abrupt stop.
+const EASE: [number, number, number, number] = [0.16, 1, 0.3, 1];
 
 function buildReelSequence(seedKey: string, pool: string[], finalValue: string): string[] {
   const rng = createRng(seedKey);
@@ -22,10 +26,12 @@ function buildReelSequence(seedKey: string, pool: string[], finalValue: string):
 function ReelColumn({
   label,
   items,
+  duration,
   onAnimationComplete,
 }: {
   label: string;
   items: string[];
+  duration: number;
   onAnimationComplete?: () => void;
 }) {
   const finalY = -(items.length - 1) * ITEM_HEIGHT;
@@ -41,7 +47,7 @@ function ReelColumn({
         <motion.div
           initial={{ y: 0 }}
           animate={{ y: finalY }}
-          transition={{ duration: DURATION, ease: EASE }}
+          transition={{ duration, ease: EASE }}
           onAnimationComplete={onAnimationComplete}
         >
           {items.map((item, i) => (
@@ -85,12 +91,31 @@ export function SpinReel({ target, onComplete }: SpinReelProps) {
     [target, eraLabels]
   );
 
+  // onAnimationComplete relies on requestAnimationFrame, which browsers can
+  // throttle or pause entirely for a backgrounded tab (e.g. a user switches
+  // apps mid-spin on their phone) — a plain setTimeout still fires in that
+  // case, so this guarantees the pick resolves even if the visual settle
+  // got cut short. completedRef guards against firing the commit twice if
+  // the real animation callback does still land.
+  const completedRef = useRef(false);
+  const handleComplete = useCallback(() => {
+    if (completedRef.current) return;
+    completedRef.current = true;
+    onComplete();
+  }, [onComplete]);
+
+  useEffect(() => {
+    completedRef.current = false;
+    const timer = setTimeout(handleComplete, ERA_DURATION * 1000 + 500);
+    return () => clearTimeout(timer);
+  }, [target, handleComplete]);
+
   return (
     <div className="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-border py-10">
       <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase">Spinning…</p>
       <div className="grid w-full max-w-md grid-cols-2 gap-3 px-6">
-        <ReelColumn label="Team" items={teamSequence} />
-        <ReelColumn label="Era" items={eraSequence} onAnimationComplete={onComplete} />
+        <ReelColumn label="Team" items={teamSequence} duration={TEAM_DURATION} />
+        <ReelColumn label="Era" items={eraSequence} duration={ERA_DURATION} onAnimationComplete={handleComplete} />
       </div>
     </div>
   );
