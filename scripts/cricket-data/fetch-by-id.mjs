@@ -1,18 +1,26 @@
-// Fetches players_info for every player in discovered-players.json, caching
-// each to scripts/cricket-data/cache/. Since IDs come straight from official
-// squad listings (discover-squads.mjs), there's no name-collision risk here
-// — unlike the name-search path (fetch.mjs), we already know exactly who
-// each ID refers to. This script's only job is dedup + stats.
+// Fetches players_info for every player in a discovered-players-style file,
+// caching each to a cache dir. Since IDs come straight from official squad
+// listings (discover-squads.mjs / discover-season-squads.mjs), there's no
+// name-collision risk here — unlike the name-search path (fetch.mjs), we
+// already know exactly who each ID refers to. This script's only job is
+// dedup + stats.
 //
 // Run with: node --env-file=.env.local scripts/cricket-data/fetch-by-id.mjs
+//   node --env-file=.env.local scripts/cricket-data/fetch-by-id.mjs <discovered-file> <cache-dir> [<extra-cache-dir-to-check>...]
+//
+// The extra-cache-dir args are checked for "already have this player" but
+// never written to — used so e.g. a season-squads fetch doesn't re-fetch
+// someone already sitting in cache/ or legends-cache/ from a different run.
 
-import { readFileSync, readdirSync, mkdirSync, writeFileSync } from "fs";
+import { readFileSync, readdirSync, mkdirSync, writeFileSync, existsSync } from "fs";
 import { fileURLToPath } from "url";
 import path from "path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CACHE_DIR = path.join(__dirname, "cache");
-const DISCOVERED_PATH = path.join(__dirname, "discovered-players.json");
+const args = process.argv.slice(2);
+const CACHE_DIR = path.join(__dirname, args[1] ?? "cache");
+const DISCOVERED_PATH = path.join(__dirname, args[0] ?? "discovered-players.json");
+const EXTRA_CHECK_DIRS = args.slice(2).map((d) => path.join(__dirname, d));
 const API_KEY = process.env.CRICKETDATA_API_KEY;
 const BASE = "https://api.cricapi.com/v1";
 const HITS_BUDGET = 1900;
@@ -34,19 +42,23 @@ async function fetchJson(url) {
   return res.json();
 }
 
-/** Every player already cached under ANY filename, keyed by their real id —
- * both the old name-search cache and this script's id-based cache write into
- * the same directory, so this is how we avoid double-fetching (and later,
- * double-counting) someone who's in both the curated legend list and a
- * current squad, like most contemporary stars. */
+/** Every player already cached under ANY filename in CACHE_DIR or any of
+ * EXTRA_CHECK_DIRS, keyed by their real id — both the old name-search cache
+ * and this script's id-based cache write into the same directory, so this
+ * is how we avoid double-fetching (and later, double-counting) someone
+ * who's in both the curated legend list and a current squad, like most
+ * contemporary stars. */
 function loadCachedIds() {
   const ids = new Set();
-  for (const file of readdirSync(CACHE_DIR).filter((f) => f.endsWith(".json"))) {
-    try {
-      const data = JSON.parse(readFileSync(path.join(CACHE_DIR, file), "utf8"));
-      if (data.id) ids.add(data.id);
-    } catch {
-      // skip unreadable/partial files
+  for (const dir of [CACHE_DIR, ...EXTRA_CHECK_DIRS]) {
+    if (!existsSync(dir)) continue;
+    for (const file of readdirSync(dir).filter((f) => f.endsWith(".json"))) {
+      try {
+        const data = JSON.parse(readFileSync(path.join(dir, file), "utf8"));
+        if (data.id) ids.add(data.id);
+      } catch {
+        // skip unreadable/partial files
+      }
     }
   }
   return ids;

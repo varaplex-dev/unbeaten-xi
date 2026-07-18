@@ -24,7 +24,7 @@ const MODES: ModeDef[] = [
     id: "all-time-xi",
     name: "All-Time XI",
     description:
-      "Draft real current stars and all-time legends from the IPL, Big Bash, PSL, and other major leagues worldwide — real players, real stats. See if you can go 14-0.",
+      "Draft real current stars and all-time legends — or spin to land on a real historic squad, national team, or an actual past-season IPL/BBL/PSL franchise roster. Real players, real stats. See if you can go 14-0.",
     available: true,
     gameMode: "all-time-real",
   },
@@ -32,7 +32,6 @@ const MODES: ModeDef[] = [
   { id: "defend-160", name: "Defend 160", description: "Defend a target with the ball.", available: false },
   { id: "world-cup-run", name: "World Cup Run", description: "A knockout tournament format.", available: false },
   { id: "test-invincibles", name: "Test Invincibles", description: "A five-day format challenge.", available: false },
-  { id: "franchise-legends", name: "Franchise Legends", description: "Build a squad from one franchise's history.", available: false },
   { id: "india-xi", name: "India XI", description: "Indian players only.", available: false },
   { id: "auction-mode", name: "Auction Mode", description: "Bid for players with a salary cap.", available: false },
   { id: "head-to-head", name: "Head-to-Head Challenge", description: "Compare your XI against a friend's.", available: false },

@@ -1,6 +1,7 @@
 import type { EraTeam, Player } from "@/lib/types";
 import { LEGEND_PLAYERS } from "@/lib/data/legendPlayers";
 import { REAL_PLAYERS } from "@/lib/data/realPlayers";
+import { FRANCHISE_SEASON_TEAMS } from "@/lib/data/franchiseSeasonTeams";
 
 /** Resolves a roster by exact player name so this file stays readable and
  * auditable — no opaque hardcoded IDs. Throws at module-load time (i.e. on
@@ -209,7 +210,7 @@ const CURRENT_TEAMS: EraTeam[] = CURRENT_ERA_COUNTRIES.map((country) => ({
   players: currentSquadFor(country),
 })).filter((team) => team.players.length >= SQUAD_MIN_FOR_ERA_TEAM);
 
-export const ERA_TEAMS: EraTeam[] = [...HISTORIC_TEAMS, ...CURRENT_TEAMS];
+export const ERA_TEAMS: EraTeam[] = [...HISTORIC_TEAMS, ...CURRENT_TEAMS, ...FRANCHISE_SEASON_TEAMS];
 
 export function getEraTeamById(id: string): EraTeam | undefined {
   return ERA_TEAMS.find((t) => t.id === id);
