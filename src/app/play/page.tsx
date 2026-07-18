@@ -24,7 +24,7 @@ const MODES: ModeDef[] = [
     id: "all-time-xi",
     name: "All-Time XI",
     description:
-      "Draft real current stars and all-time legends — or spin to land on a real historic squad, national team, or an actual past-season IPL/BBL/PSL franchise roster. Real players, real stats. See if you can go 14-0.",
+      "Spin to land on a real historic squad, current national team, or an actual past-season IPL/BBL/PSL franchise roster — then pick one player from it. Real players, real stats. See if you can go 14-0.",
     available: true,
     gameMode: "all-time-real",
   },
@@ -39,19 +39,10 @@ const MODES: ModeDef[] = [
 
 export default function PlayPage() {
   const router = useRouter();
-  const startNewGame = useGameStore((s) => s.startNewGame);
   const spinEraTeam = useGameStore((s) => s.spinEraTeam);
-
-  function handleStart(mode: ModeDef) {
-    if (!mode.available || !mode.gameMode) return;
-    startNewGame({ mode: mode.gameMode });
-    router.push("/draft");
-  }
 
   function handleSpin(mode: ModeDef) {
     if (!mode.available || !mode.gameMode) return;
-    // Spin reveals a real Era Team (historic or current national squad) and
-    // hands the user a manual picker instead of auto-drafting.
     spinEraTeam();
     router.push("/squad-select");
   }
@@ -64,9 +55,9 @@ export default function PlayPage() {
             Choose a Mode
           </h1>
           <p className="text-foreground-muted mb-8">
-            More modes are on the way. Every squad is built from real
-            players — current stars and all-time legends — with ratings
-            drawn from their actual career stats.
+            More modes are on the way. Every squad is spun together from
+            real players — current stars, all-time legends, and actual
+            franchise-season rosters — using their real career stats.
           </p>
           <div className="grid gap-4">
             {MODES.map((mode) => (
@@ -79,11 +70,8 @@ export default function PlayPage() {
                   <p className="text-sm text-foreground-muted">{mode.description}</p>
                   {mode.available && (
                     <div className="flex shrink-0 gap-2">
-                      <Button size="sm" variant="secondary" onClick={() => handleSpin(mode)}>
+                      <Button size="sm" onClick={() => handleSpin(mode)}>
                         Spin
-                      </Button>
-                      <Button size="sm" onClick={() => handleStart(mode)}>
-                        Draft
                       </Button>
                     </div>
                   )}
