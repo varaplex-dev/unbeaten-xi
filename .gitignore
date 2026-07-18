@@ -42,4 +42,5 @@ next-env.d.ts
 
 # cached raw API responses (regenerate via scripts/cricket-data/fetch.mjs)
 /scripts/cricket-data/cache/
+/scripts/cricket-data/legends-cache/
 /scripts/cricket-data/ambiguous.json

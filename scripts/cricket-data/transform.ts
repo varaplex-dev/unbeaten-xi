@@ -3,10 +3,18 @@
 // fictional roster, so real and fictional players stay on one consistent
 // scale. Run with:
 //   npx tsx scripts/cricket-data/transform.ts
+//   npx tsx scripts/cricket-data/transform.ts <cache-dir> <output-path> --legends
 //
 // Output: src/lib/data/realPlayerSpecs.generated.ts (checked in — this is
 // the actual data the app reads at runtime; re-run this script to refresh
 // it after fetch.mjs pulls newer stats).
+//
+// The --legends flag switches to retired-player mode (fixed career-prime
+// age, "{country} Legends" team, "legend" tag) for the isolated
+// legends-cache/ pipeline — see legendPlayerSpecs.generated.ts. Kept
+// separate from the default current-player run specifically so retired
+// legends can never leak into realPlayerSpecs.generated.ts (the flat
+// current-player pool used by regular Draft mode).
 
 import { readFileSync, readdirSync, writeFileSync } from "fs";
 import path from "path";
@@ -20,8 +28,10 @@ import type {
 } from "../../src/lib/types";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CACHE_DIR = path.join(__dirname, "cache");
-const OUT_PATH = path.join(__dirname, "../../src/lib/data/realPlayerSpecs.generated.ts");
+const args = process.argv.slice(2).filter((a) => a !== "--legends");
+const IS_LEGENDS = process.argv.includes("--legends");
+const CACHE_DIR = path.join(__dirname, args[0] ?? "cache");
+const OUT_PATH = path.join(__dirname, args[1] ?? "../../src/lib/data/realPlayerSpecs.generated.ts");
 
 interface RawStat {
   fn: "batting" | "bowling";
@@ -197,17 +207,28 @@ interface Metrics {
 function extractMetrics(raw: RawPlayer): Metrics {
   const stats = raw.stats ?? [];
 
-  let battingType = pickMatchType(stats, "batting", T20_TYPES);
-  let bowlingType = pickMatchType(stats, "bowling", T20_TYPES);
-  let era: Era = "modern";
+  // Current players are rated off T20-format stats first since that's their
+  // primary competitive identity. Legends are rated off Test/ODI first
+  // instead — several (Tendulkar, Warne, Gilchrist, Kallis...) picked up a
+  // handful of IPL innings in their final playing years, and a small,
+  // unrepresentative late-career T20 sample shouldn't outrank the much
+  // larger body of work that actually made them a legend.
+  const primaryTypes = IS_LEGENDS ? LEGACY_TYPES : T20_TYPES;
+  const secondaryTypes = IS_LEGENDS ? T20_TYPES : LEGACY_TYPES;
+  const primaryEra: Era = IS_LEGENDS ? "legacy" : "modern";
+  const secondaryEra: Era = IS_LEGENDS ? "modern" : "legacy";
+
+  let battingType = pickMatchType(stats, "batting", primaryTypes);
+  let bowlingType = pickMatchType(stats, "bowling", primaryTypes);
+  let era: Era = primaryEra;
 
   if (!battingType && !bowlingType) {
-    const legacyBattingType = pickMatchType(stats, "batting", LEGACY_TYPES);
-    const legacyBowlingType = pickMatchType(stats, "bowling", LEGACY_TYPES);
-    if (legacyBattingType || legacyBowlingType) {
-      battingType = legacyBattingType;
-      bowlingType = legacyBowlingType;
-      era = "legacy";
+    const fallbackBattingType = pickMatchType(stats, "batting", secondaryTypes);
+    const fallbackBowlingType = pickMatchType(stats, "bowling", secondaryTypes);
+    if (fallbackBattingType || fallbackBowlingType) {
+      battingType = fallbackBattingType;
+      bowlingType = fallbackBowlingType;
+      era = secondaryEra;
     }
   }
 
@@ -337,14 +358,21 @@ function transformOne(m: Metrics, norms: PoolNorms, legacyNorms: PoolNorms): Gen
     overallProxy >= 80 ? "legendary" : overallProxy >= 68 ? "rare" : overallProxy >= 50 ? "uncommon" : "common";
 
   // The "legacy" era flag only controls which stat pool a player is rated
-  // against (see activeNorms above) — every player reaching this pipeline
-  // comes from a current squad or the curated current-stars list, so age,
-  // team, and tags always use their real, present-day values. A player with
-  // no T20 stats cached (e.g. a Test specialist without a T20 league deal)
-  // is still a current player, just rated off their ODI/Test numbers.
-  const age = computeAge(raw.dateOfBirth);
-  const currentTeam = `${raw.country} National Team`;
-  const tags = runs > 5000 ? ["current-star", "real-player", "big-match-player"] : ["current-star", "real-player"];
+  // against (see activeNorms above) — it does NOT mean "retired". Whether a
+  // player is a current pro or a retired legend is determined entirely by
+  // which pipeline invocation they came through (IS_LEGENDS), not by which
+  // stat bucket their rating happens to be normalized against. A current
+  // Test specialist without a T20 league deal is still current, just rated
+  // off ODI/Test numbers.
+  const age = IS_LEGENDS ? 29 : computeAge(raw.dateOfBirth);
+  const currentTeam = IS_LEGENDS ? `${raw.country} Legends` : `${raw.country} National Team`;
+  const tags = IS_LEGENDS
+    ? runs > 5000
+      ? ["legend", "real-player", "hall-of-fame"]
+      : ["legend", "real-player"]
+    : runs > 5000
+      ? ["current-star", "real-player", "big-match-player"]
+      : ["current-star", "real-player"];
 
   return {
     id: `real-${raw.id.slice(0, 8)}`,
@@ -389,19 +417,23 @@ function main() {
   const legacyNorms = computePoolNorms(legacyMetrics.length > 0 ? legacyMetrics : modernMetrics);
 
   const specs = metrics.map((m) => transformOne(m, norms, legacyNorms));
+  const exportName = IS_LEGENDS ? "LEGEND_PLAYER_SPECS" : "REAL_PLAYER_SPECS";
+  const cacheDirName = args[0] ?? "cache";
+  const rerunCmd = IS_LEGENDS
+    ? `npx tsx scripts/cricket-data/transform.ts ${args[0]} ${args[1]} --legends`
+    : `npx tsx scripts/cricket-data/transform.ts`;
 
   const header = `// AUTO-GENERATED by scripts/cricket-data/transform.ts — do not hand-edit.
-// Source: cricketdata.org (CricAPI v1), cached responses in scripts/cricket-data/cache/.
-// Re-run \`npx tsx scripts/cricket-data/transform.ts\` after refreshing the cache
-// (scripts/cricket-data/fetch.mjs / fetch-by-id.mjs) to regenerate this file.
+// Source: cricketdata.org (CricAPI v1), cached responses in scripts/cricket-data/${cacheDirName}/.
+// Re-run \`${rerunCmd}\` after refreshing the cache to regenerate this file.
 import type { PlayerSpec } from "@/lib/data/playerFactory";
 
-export const REAL_PLAYER_SPECS: PlayerSpec[] = ${JSON.stringify(specs, null, 2)};
+export const ${exportName}: PlayerSpec[] = ${JSON.stringify(specs, null, 2)};
 `;
 
   writeFileSync(OUT_PATH, header);
   console.log(
-    `Wrote ${specs.length} real player specs (${modernMetrics.length} modern, ${legacyMetrics.length} legacy) to ${OUT_PATH}`
+    `Wrote ${specs.length} ${IS_LEGENDS ? "legend" : "real"} player specs (${modernMetrics.length} modern, ${legacyMetrics.length} legacy) to ${OUT_PATH}`
   );
 }
 

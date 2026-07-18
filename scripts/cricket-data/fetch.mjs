@@ -2,6 +2,14 @@
 // name list, caching raw responses to disk so re-runs don't re-spend quota
 // on players already fetched. Run with:
 //   node --env-file=.env.local scripts/cricket-data/fetch.mjs
+//   node --env-file=.env.local scripts/cricket-data/fetch.mjs <names-file> <cache-dir>
+//
+// The two positional args are optional and default to names.json/cache/ (the
+// current-players pipeline). The legends pipeline calls this with
+// legends-names.json and legends-cache/ so historic players are fetched into
+// an isolated cache — kept separate from cache/ specifically so they can
+// never leak into realPlayerSpecs.generated.ts (see transform.ts's era
+// scoping) the way the old pre-2000 legends leftover bug did.
 //
 // This is a periodic data-refresh script (designed to run unattended via a
 // daily scheduled task), NOT called at runtime by the app — the free tier's
@@ -13,8 +21,10 @@ import { fileURLToPath } from "url";
 import path from "path";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const CACHE_DIR = path.join(__dirname, "cache");
-const NAMES_PATH = path.join(__dirname, "names.json");
+const namesArg = process.argv[2] ?? "names.json";
+const cacheArg = process.argv[3] ?? "cache";
+const CACHE_DIR = path.join(__dirname, cacheArg);
+const NAMES_PATH = path.join(__dirname, namesArg);
 const AMBIGUOUS_LOG = path.join(__dirname, "ambiguous.json");
 const API_KEY = process.env.CRICKETDATA_API_KEY;
 const BASE = "https://api.cricapi.com/v1";

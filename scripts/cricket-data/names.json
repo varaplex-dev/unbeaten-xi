@@ -4,10 +4,6 @@
     "country": "India"
   },
   {
-    "name": "MS Dhoni",
-    "country": "India"
-  },
-  {
     "name": "Jasprit Bumrah",
     "country": "India"
   },
@@ -77,42 +73,6 @@
   },
   {
     "name": "Ishan Kishan",
-    "country": "India"
-  },
-  {
-    "name": "Sachin Tendulkar",
-    "country": "India"
-  },
-  {
-    "name": "Sourav Ganguly",
-    "country": "India"
-  },
-  {
-    "name": "Rahul Dravid",
-    "country": "India"
-  },
-  {
-    "name": "Virender Sehwag",
-    "country": "India"
-  },
-  {
-    "name": "Yuvraj Singh",
-    "country": "India"
-  },
-  {
-    "name": "Gautam Gambhir",
-    "country": "India"
-  },
-  {
-    "name": "Zaheer Khan",
-    "country": "India"
-  },
-  {
-    "name": "Harbhajan Singh",
-    "country": "India"
-  },
-  {
-    "name": "Irfan Pathan",
     "country": "India"
   },
   {
@@ -284,38 +244,6 @@
     "country": "Australia"
   },
   {
-    "name": "Ricky Ponting",
-    "country": "Australia"
-  },
-  {
-    "name": "Adam Gilchrist",
-    "country": "Australia"
-  },
-  {
-    "name": "Shane Warne",
-    "country": "Australia"
-  },
-  {
-    "name": "Glenn McGrath",
-    "country": "Australia"
-  },
-  {
-    "name": "Michael Clarke",
-    "country": "Australia"
-  },
-  {
-    "name": "Michael Hussey",
-    "country": "Australia"
-  },
-  {
-    "name": "Brett Lee",
-    "country": "Australia"
-  },
-  {
-    "name": "Shane Watson",
-    "country": "Australia"
-  },
-  {
     "name": "Aaron Finch",
     "country": "Australia"
   },
@@ -393,14 +321,6 @@
   },
   {
     "name": "Sam Curran",
-    "country": "England"
-  },
-  {
-    "name": "Kevin Pietersen",
-    "country": "England"
-  },
-  {
-    "name": "Eoin Morgan",
     "country": "England"
   },
   {
@@ -548,31 +468,7 @@
     "country": "South Africa"
   },
   {
-    "name": "Jacques Kallis",
-    "country": "South Africa"
-  },
-  {
     "name": "Faf du Plessis",
-    "country": "South Africa"
-  },
-  {
-    "name": "Dale Steyn",
-    "country": "South Africa"
-  },
-  {
-    "name": "Hashim Amla",
-    "country": "South Africa"
-  },
-  {
-    "name": "JP Duminy",
-    "country": "South Africa"
-  },
-  {
-    "name": "Imran Tahir",
-    "country": "South Africa"
-  },
-  {
-    "name": "Chris Morris",
     "country": "South Africa"
   },
   {
@@ -625,18 +521,6 @@
   },
   {
     "name": "Sunil Narine",
-    "country": "West Indies"
-  },
-  {
-    "name": "Chris Gayle",
-    "country": "West Indies"
-  },
-  {
-    "name": "Dwayne Bravo",
-    "country": "West Indies"
-  },
-  {
-    "name": "Kieron Pollard",
     "country": "West Indies"
   },
   {
@@ -700,10 +584,6 @@
     "country": "Pakistan"
   },
   {
-    "name": "Shahid Afridi",
-    "country": "Pakistan"
-  },
-  {
     "name": "Mohammad Amir",
     "country": "Pakistan"
   },
@@ -729,10 +609,6 @@
   },
   {
     "name": "Asif Ali",
-    "country": "Pakistan"
-  },
-  {
-    "name": "Mohammad Hafeez",
     "country": "Pakistan"
   },
   {
@@ -778,26 +654,6 @@
   {
     "name": "Mujeeb Ur Rahman",
     "country": "Afghanistan"
-  },
-  {
-    "name": "Kumar Sangakkara",
-    "country": "Sri Lanka"
-  },
-  {
-    "name": "Mahela Jayawardene",
-    "country": "Sri Lanka"
-  },
-  {
-    "name": "Lasith Malinga",
-    "country": "Sri Lanka"
-  },
-  {
-    "name": "Muttiah Muralitharan",
-    "country": "Sri Lanka"
-  },
-  {
-    "name": "Tillakaratne Dilshan",
-    "country": "Sri Lanka"
   },
   {
     "name": "Wanindu Hasaranga",

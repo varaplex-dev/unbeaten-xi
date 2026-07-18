@@ -172,7 +172,18 @@ export interface CompositionCheckResult {
   issues: { code: string; message: string; severity: "error" | "warning" }[];
 }
 
-export function checkComposition(drafted: Player[]): CompositionCheckResult {
+export interface CompositionCheckOptions {
+  /** Era Team squads are single-nation by construction — every player is
+   * "overseas" by the nationalityType === "overseas" definition used for the
+   * mixed-country All-Time XI pool, so the IPL-style foreign-quota rule
+   * doesn't apply there and must be skipped. */
+  skipOverseasLimit?: boolean;
+}
+
+export function checkComposition(
+  drafted: Player[],
+  options: CompositionCheckOptions = {}
+): CompositionCheckResult {
   const issues: CompositionCheckResult["issues"] = [];
 
   if (drafted.length !== SQUAD_SIZE) {
@@ -219,13 +230,15 @@ export function checkComposition(drafted: Player[]): CompositionCheckResult {
     });
   }
 
-  const overseas = drafted.filter((p) => p.nationalityType === "overseas").length;
-  if (overseas > MAX_OVERSEAS) {
-    issues.push({
-      code: "overseas-limit",
-      message: `No more than ${MAX_OVERSEAS} overseas players are allowed.`,
-      severity: "error",
-    });
+  if (!options.skipOverseasLimit) {
+    const overseas = drafted.filter((p) => p.nationalityType === "overseas").length;
+    if (overseas > MAX_OVERSEAS) {
+      issues.push({
+        code: "overseas-limit",
+        message: `No more than ${MAX_OVERSEAS} overseas players are allowed.`,
+        severity: "error",
+      });
+    }
   }
 
   return { legal: issues.every((i) => i.severity !== "error"), issues };
