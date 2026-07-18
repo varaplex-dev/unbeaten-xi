@@ -38,6 +38,7 @@ export default function TeamSetupPage() {
   const setCaptain = useGameStore((s) => s.setCaptain);
   const setWicketkeeper = useGameStore((s) => s.setWicketkeeper);
   const setBowlingRole = useGameStore((s) => s.setBowlingRole);
+  const setBattingOrder = useGameStore((s) => s.setBattingOrder);
   const eraTeamId = useGameStore((s) => s.eraTeamId);
   const drafted = useDraftedPlayers();
   const impactPlayer = impactPlayerId
@@ -48,11 +49,20 @@ export default function TeamSetupPage() {
 
   const isSquadComplete = draftPicks.length === SQUAD_SIZE;
 
+  // An Era Team squad was hand-picked player-by-player, so the lineup
+  // shouldn't be pre-filled the way the category-based draft's is — the
+  // user places every player into a position themselves (captain, keeper,
+  // batting order) via the controls below. Only the initial ORDER needs a
+  // starting value (pick order) so the reorder buttons have something to
+  // operate on; captain/keeper/bowling roles stay unset until chosen.
   useEffect(() => {
-    if (hasHydrated && isSquadComplete && battingOrder.length === 0) {
+    if (!hasHydrated || !isSquadComplete || battingOrder.length !== 0) return;
+    if (eraTeamId) {
+      setBattingOrder(drafted.map((p) => p.id));
+    } else {
       autoBuildLineup();
     }
-  }, [hasHydrated, isSquadComplete, battingOrder.length, autoBuildLineup]);
+  }, [hasHydrated, isSquadComplete, battingOrder.length, autoBuildLineup, eraTeamId, drafted, setBattingOrder]);
 
   const orderedXi = useMemo(() => {
     if (battingOrder.length === 0) return drafted;
@@ -74,6 +84,15 @@ export default function TeamSetupPage() {
         : null,
     [orderedXi, eraTeamId]
   );
+
+  // Era Team games require the user to actively assign captain/keeper
+  // rather than inheriting an auto-picked default — the category-based
+  // draft's auto-lineup already asks nothing of the user here, so this only
+  // gates the flow that used to be silently pre-filled.
+  const needsExplicitCaptain = eraTeamId !== null && !captainId;
+  const squadHasEligibleKeeper = orderedXi.some(isWicketkeeper);
+  const needsExplicitKeeper = eraTeamId !== null && squadHasEligibleKeeper && !wicketkeeperId;
+  const canSimulate = !needsExplicitCaptain && !needsExplicitKeeper;
 
   if (!hasHydrated) return null;
 
@@ -110,9 +129,9 @@ export default function TeamSetupPage() {
           Ready For Game Day
         </h1>
         <p className="text-foreground-muted mb-6">
-          We&apos;ve set a lineup automatically — reorder the batting order,
-          change your captain, keeper, or bowling roles below, then simulate
-          when you&apos;re ready.
+          {eraTeamId
+            ? "Set your batting order, captain, and keeper below — nothing's chosen for you."
+            : "We've set a lineup automatically — reorder the batting order, change your captain, keeper, or bowling roles below, then simulate when you're ready."}
         </p>
 
         {composition && !composition.legal && (
@@ -211,7 +230,15 @@ export default function TeamSetupPage() {
           </div>
         )}
 
-        <Button size="lg" className="w-full" onClick={handleSimulate}>
+        {!canSimulate && (
+          <p className="mb-3 text-center text-sm text-danger">
+            {needsExplicitCaptain && "Pick a captain "}
+            {needsExplicitCaptain && needsExplicitKeeper && "and "}
+            {needsExplicitKeeper && "pick a wicketkeeper "}
+            before you simulate.
+          </p>
+        )}
+        <Button size="lg" className="w-full" onClick={handleSimulate} disabled={!canSimulate}>
           Simulate the Season
         </Button>
       </PosterShell>
