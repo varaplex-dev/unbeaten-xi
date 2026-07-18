@@ -4,8 +4,68 @@ import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useGameStore } from "@/lib/store/gameStore";
+import { useAuthStore } from "@/lib/store/authStore";
+import { isSupabaseConfigured } from "@/lib/supabase/client";
+
+function AccountCard() {
+  const user = useAuthStore((s) => s.user);
+  const profile = useAuthStore((s) => s.profile);
+  const magicLinkSentTo = useAuthStore((s) => s.magicLinkSentTo);
+  const authError = useAuthStore((s) => s.authError);
+  const requestMagicLink = useAuthStore((s) => s.requestMagicLink);
+  const signOut = useAuthStore((s) => s.signOut);
+  const [email, setEmail] = useState("");
+
+  if (!isSupabaseConfigured) return null;
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>Account</CardTitle>
+      </CardHeader>
+      <CardContent>
+        {user ? (
+          <div>
+            <p className="text-sm text-foreground-muted mb-4">
+              Signed in as <span className="text-foreground font-semibold">{profile?.username ?? user.email}</span>.
+              Your season results save to your account and count toward the leaderboard.
+            </p>
+            <Button variant="secondary" onClick={() => signOut()}>
+              Sign Out
+            </Button>
+          </div>
+        ) : magicLinkSentTo ? (
+          <p className="text-sm text-foreground-muted">
+            Check <span className="text-foreground font-semibold">{magicLinkSentTo}</span> for a sign-in link.
+          </p>
+        ) : (
+          <form
+            className="flex flex-col gap-3 sm:flex-row"
+            onSubmit={(e) => {
+              e.preventDefault();
+              if (email.trim()) requestMagicLink(email.trim());
+            }}
+          >
+            <Input
+              type="email"
+              required
+              placeholder="you@example.com"
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+            />
+            <Button type="submit" className="shrink-0">
+              Email Me a Sign-In Link
+            </Button>
+          </form>
+        )}
+        {authError && <p className="mt-3 text-sm text-danger">{authError}</p>}
+      </CardContent>
+    </Card>
+  );
+}
 
 export default function SettingsPage() {
   const router = useRouter();
@@ -28,6 +88,8 @@ export default function SettingsPage() {
       </p>
 
       <div className="grid gap-4">
+        <AccountCard />
+
         <Card>
           <CardHeader>
             <CardTitle>Active Game</CardTitle>
