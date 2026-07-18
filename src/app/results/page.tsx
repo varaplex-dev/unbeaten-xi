@@ -7,13 +7,13 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { PosterShell } from "@/components/brand/PosterShell";
+import { ShareMenu } from "@/components/results/ShareMenu";
 import { useGameStore } from "@/lib/store/gameStore";
 import { useAuthStore } from "@/lib/store/authStore";
 import { isSupabaseConfigured, supabase } from "@/lib/supabase/client";
 import { getPlayerById } from "@/lib/data/players";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
 import { getLegendPlayerById } from "@/lib/data/legendPlayers";
-import { track } from "@/lib/analytics";
 
 // Postgres unique_violation — the Daily Challenge has one row per user per
 // day (see season_results_one_daily_per_user in supabase/schema.sql). A
@@ -48,7 +48,6 @@ export default function ResultsPage() {
   const user = useAuthStore((s) => s.user);
   const lookupPlayer = (id: string) =>
     mode === "all-time-real" ? (getRealPlayerById(id) ?? getLegendPlayerById(id)) : getPlayerById(id);
-  const [copied, setCopied] = useState(false);
   const [saveStatus, setSaveStatus] = useState<"idle" | "saved" | "error">("idle");
   const isSaving = Boolean(isSupabaseConfigured && user && stats && !resultSaved && saveStatus === "idle");
 
@@ -106,23 +105,6 @@ export default function ResultsPage() {
   const bestPick = lookupPlayer(stats.bestPickPlayerId);
   const weakestPick = lookupPlayer(stats.weakestPickPlayerId);
   const unbeaten = stats.losses === 0;
-
-  async function handleShare() {
-    if (stats) track("result_shared", { mode, wins: stats.wins, losses: stats.losses, unbeaten });
-    if (typeof navigator !== "undefined" && navigator.share) {
-      try {
-        await navigator.share({ text: shareText, title: "The Unbeaten XI" });
-        return;
-      } catch {
-        // user cancelled the share sheet; fall through to clipboard copy
-      }
-    }
-    if (typeof navigator !== "undefined" && navigator.clipboard) {
-      await navigator.clipboard.writeText(shareText);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 2000);
-    }
-  }
 
   function handlePlayAgain() {
     // A spin-drafted squad (usedEraTeamIds non-empty) was built by spinning
@@ -209,10 +191,8 @@ export default function ResultsPage() {
           </Card>
         </div>
 
-        <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-          <Button size="lg" onClick={handleShare} className="w-full sm:w-auto">
-            {copied ? "Copied!" : "Share Result"}
-          </Button>
+        <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+          <ShareMenu shareText={shareText} wins={stats.wins} losses={stats.losses} />
           <Button size="lg" variant="secondary" onClick={handlePlayAgain} className="w-full sm:w-auto">
             Play Again
           </Button>
