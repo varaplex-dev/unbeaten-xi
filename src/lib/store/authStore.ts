@@ -18,6 +18,7 @@ interface AuthState {
   magicLinkSentTo: string | null;
   authError: string | null;
   requestMagicLink: (email: string) => Promise<void>;
+  signInWithOAuth: (provider: "google" | "facebook") => Promise<void>;
   signOut: () => Promise<void>;
 }
 
@@ -66,6 +67,22 @@ export const useAuthStore = create<AuthState>()((set) => {
         return;
       }
       set({ magicLinkSentTo: email });
+    },
+
+    signInWithOAuth: async (provider) => {
+      if (!supabase) {
+        set({ authError: "Accounts aren't configured for this app yet." });
+        return;
+      }
+      set({ authError: null });
+      // Redirects the browser away to the provider's consent screen and
+      // back — errors here are almost always "this provider isn't enabled
+      // in the Supabase dashboard yet," not a bug in this call.
+      const { error } = await supabase.auth.signInWithOAuth({
+        provider,
+        options: { redirectTo: typeof window !== "undefined" ? window.location.origin : undefined },
+      });
+      if (error) set({ authError: error.message });
     },
 
     signOut: async () => {

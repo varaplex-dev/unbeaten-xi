@@ -16,6 +16,7 @@ function AccountCard() {
   const magicLinkSentTo = useAuthStore((s) => s.magicLinkSentTo);
   const authError = useAuthStore((s) => s.authError);
   const requestMagicLink = useAuthStore((s) => s.requestMagicLink);
+  const signInWithOAuth = useAuthStore((s) => s.signInWithOAuth);
   const signOut = useAuthStore((s) => s.signOut);
   const [email, setEmail] = useState("");
 
@@ -42,24 +43,39 @@ function AccountCard() {
             Check <span className="text-foreground font-semibold">{magicLinkSentTo}</span> for a sign-in link.
           </p>
         ) : (
-          <form
-            className="flex flex-col gap-3 sm:flex-row"
-            onSubmit={(e) => {
-              e.preventDefault();
-              if (email.trim()) requestMagicLink(email.trim());
-            }}
-          >
-            <Input
-              type="email"
-              required
-              placeholder="you@example.com"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <Button type="submit" className="shrink-0">
-              Email Me a Sign-In Link
-            </Button>
-          </form>
+          <div className="flex flex-col gap-3">
+            <div className="flex flex-col gap-2 sm:flex-row">
+              <Button variant="secondary" className="flex-1" onClick={() => signInWithOAuth("google")}>
+                Continue with Google
+              </Button>
+              <Button variant="secondary" className="flex-1" onClick={() => signInWithOAuth("facebook")}>
+                Continue with Facebook
+              </Button>
+            </div>
+            <div className="flex items-center gap-3 text-xs text-foreground-muted">
+              <span className="h-px flex-1 bg-border" />
+              or
+              <span className="h-px flex-1 bg-border" />
+            </div>
+            <form
+              className="flex flex-col gap-3 sm:flex-row"
+              onSubmit={(e) => {
+                e.preventDefault();
+                if (email.trim()) requestMagicLink(email.trim());
+              }}
+            >
+              <Input
+                type="email"
+                required
+                placeholder="you@example.com"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <Button type="submit" variant="secondary" className="shrink-0">
+                Email Me a Sign-In Link
+              </Button>
+            </form>
+          </div>
         )}
         {authError && <p className="mt-3 text-sm text-danger">{authError}</p>}
       </CardContent>
