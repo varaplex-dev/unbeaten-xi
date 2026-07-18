@@ -40,10 +40,17 @@ export interface GameState {
   createdAt: string | null;
   stage: GameStage;
   draftPicks: DraftPickRecord[];
-  /** Set once "Spin the Wheel" reveals an Era Team; drives squad-select's
-   * player pool and tells team-setup to skip the overseas-quota rule (a
-   * single-nation squad is entirely "overseas" by that rule's definition). */
+  /** The Era Team currently revealed for the round in progress — drives
+   * squad-select's player pool for this pick. Cleared after every pick (XI
+   * or Impact Player), since each pick comes from spinning into a fresh
+   * team; null between spins, while waiting for the user to spin again. */
   eraTeamId: string | null;
+  /** Every team already drafted from this game, oldest first — excluded
+   * from future spins (one pick per team) and used by team-setup to detect
+   * "this squad was assembled via spin-drafting" (skip the overseas-quota
+   * rule, which doesn't apply to a squad stitched together from many
+   * single-nation-by-construction teams). */
+  usedEraTeamIds: string[];
 
   battingOrder: string[];
   bowlingRoleAssignments: Record<string, BowlingPhase>;
@@ -69,8 +76,8 @@ interface GameActions {
   startNewGame: (options?: { seed?: string; isDaily?: boolean; mode?: GameMode }) => void;
   spinTheWheel: (mode: GameMode) => void;
   spinEraTeam: () => void;
+  spinNextTeam: () => void;
   selectSquadPlayer: (player: Player) => void;
-  deselectSquadPlayer: (playerId: string) => void;
   draftPlayer: (player: Player, categoryId: DraftCategoryId) => void;
   pickImpactPlayer: (player: Player) => void;
   skipImpactPlayer: () => void;
@@ -100,6 +107,7 @@ const initialState: Omit<GameState, "hasHydrated"> = {
   stage: "draft",
   draftPicks: [],
   eraTeamId: null,
+  usedEraTeamIds: [],
   battingOrder: [],
   bowlingRoleAssignments: {},
   captainId: null,
@@ -180,7 +188,7 @@ export const useGameStore = create<GameState & GameActions>()(
 
       spinEraTeam: () => {
         const seed = randomSeedString();
-        const rng = createRng(`${seed}::era-team`);
+        const rng = createRng(`${seed}::era-team-0`);
         const eraTeam = pickRandom(rng, ERA_TEAMS);
 
         set({
@@ -191,13 +199,29 @@ export const useGameStore = create<GameState & GameActions>()(
           isDaily: false,
           createdAt: new Date().toISOString(),
           eraTeamId: eraTeam.id,
+          usedEraTeamIds: [],
           stage: "squad-select",
         });
         track("game_started", { mode: "all-time-real", method: "spin-era-team", eraTeamId: eraTeam.id });
       },
 
+      /** Reveals the next team for the round in progress — every pick comes
+       * from a fresh spin, so this excludes teams already drafted from. */
+      spinNextTeam: () => {
+        const { seed, usedEraTeamIds } = get();
+        if (!seed) return;
+        const available = ERA_TEAMS.filter((t) => !usedEraTeamIds.includes(t.id));
+        // Only hit if usedEraTeamIds somehow grew past the pool size — not
+        // reachable in practice (89 teams, 12 picks max) but a safe fallback
+        // beats a spin that silently does nothing.
+        const pool = available.length > 0 ? available : ERA_TEAMS;
+        const rng = createRng(`${seed}::era-team-${usedEraTeamIds.length}`);
+        const eraTeam = pickRandom(rng, pool);
+        set({ eraTeamId: eraTeam.id });
+      },
+
       selectSquadPlayer: (player) => {
-        const { draftPicks, eraTeamId } = get();
+        const { draftPicks, eraTeamId, usedEraTeamIds } = get();
         if (!eraTeamId) return;
         const eraTeam = getEraTeamById(eraTeamId);
         if (!eraTeam) return;
@@ -212,15 +236,13 @@ export const useGameStore = create<GameState & GameActions>()(
         const squadComplete = nextPicks.length >= SQUAD_SIZE;
         set({
           draftPicks: nextPicks,
-          stage: squadComplete ? "impact-player" : "squad-select",
+          usedEraTeamIds: [...usedEraTeamIds, eraTeamId],
+          // Cleared regardless of squadComplete — squad-select shows the
+          // Impact Player spin prompt next, same "spin for your pick" UI.
+          eraTeamId: null,
         });
         track("player_selected", { categoryId: "wildcard", roundNumber: nextPicks.length });
         if (squadComplete) track("draft_completed", { squadSize: SQUAD_SIZE });
-      },
-
-      deselectSquadPlayer: (playerId) => {
-        const { draftPicks } = get();
-        set({ draftPicks: draftPicks.filter((pick) => pick.playerId !== playerId) });
       },
 
       draftPlayer: (player, categoryId) => {
@@ -246,11 +268,19 @@ export const useGameStore = create<GameState & GameActions>()(
       },
 
       pickImpactPlayer: (player) => {
-        set({ impactPlayerId: player.id, stage: "team-setup" });
+        const { eraTeamId, usedEraTeamIds } = get();
+        set({
+          impactPlayerId: player.id,
+          stage: "team-setup",
+          // Spin-draft games reveal one more team for the Impact Player
+          // pick; category-draft games never set eraTeamId, so this is a
+          // no-op there.
+          ...(eraTeamId ? { usedEraTeamIds: [...usedEraTeamIds, eraTeamId], eraTeamId: null } : {}),
+        });
       },
 
       skipImpactPlayer: () => {
-        set({ impactPlayerId: null, stage: "team-setup" });
+        set({ impactPlayerId: null, stage: "team-setup", eraTeamId: null });
       },
 
       resetGame: () => set(initialState),

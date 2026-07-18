@@ -39,7 +39,12 @@ export default function TeamSetupPage() {
   const setWicketkeeper = useGameStore((s) => s.setWicketkeeper);
   const setBowlingRole = useGameStore((s) => s.setBowlingRole);
   const setBattingOrder = useGameStore((s) => s.setBattingOrder);
-  const eraTeamId = useGameStore((s) => s.eraTeamId);
+  const usedEraTeamIds = useGameStore((s) => s.usedEraTeamIds);
+  // eraTeamId itself is cleared after every spin-draft pick (it only holds
+  // the team revealed for the round in progress), so "was this game built
+  // via spin-drafting" is detected from usedEraTeamIds instead — non-empty
+  // once at least one pick has been made that way.
+  const isSpinDraft = usedEraTeamIds.length > 0;
   const drafted = useDraftedPlayers();
   const impactPlayer = impactPlayerId
     ? (mode === "all-time-real"
@@ -57,12 +62,12 @@ export default function TeamSetupPage() {
   // operate on; captain/keeper/bowling roles stay unset until chosen.
   useEffect(() => {
     if (!hasHydrated || !isSquadComplete || battingOrder.length !== 0) return;
-    if (eraTeamId) {
+    if (isSpinDraft) {
       setBattingOrder(drafted.map((p) => p.id));
     } else {
       autoBuildLineup();
     }
-  }, [hasHydrated, isSquadComplete, battingOrder.length, autoBuildLineup, eraTeamId, drafted, setBattingOrder]);
+  }, [hasHydrated, isSquadComplete, battingOrder.length, autoBuildLineup, isSpinDraft, drafted, setBattingOrder]);
 
   const orderedXi = useMemo(() => {
     if (battingOrder.length === 0) return drafted;
@@ -79,19 +84,17 @@ export default function TeamSetupPage() {
 
   const composition = useMemo(
     () =>
-      orderedXi.length === SQUAD_SIZE
-        ? checkComposition(orderedXi, { skipOverseasLimit: eraTeamId !== null })
-        : null,
-    [orderedXi, eraTeamId]
+      orderedXi.length === SQUAD_SIZE ? checkComposition(orderedXi, { skipOverseasLimit: isSpinDraft }) : null,
+    [orderedXi, isSpinDraft]
   );
 
-  // Era Team games require the user to actively assign captain/keeper
+  // Spin-drafted squads require the user to actively assign captain/keeper
   // rather than inheriting an auto-picked default — the category-based
   // draft's auto-lineup already asks nothing of the user here, so this only
   // gates the flow that used to be silently pre-filled.
-  const needsExplicitCaptain = eraTeamId !== null && !captainId;
+  const needsExplicitCaptain = isSpinDraft && !captainId;
   const squadHasEligibleKeeper = orderedXi.some(isWicketkeeper);
-  const needsExplicitKeeper = eraTeamId !== null && squadHasEligibleKeeper && !wicketkeeperId;
+  const needsExplicitKeeper = isSpinDraft && squadHasEligibleKeeper && !wicketkeeperId;
   const canSimulate = !needsExplicitCaptain && !needsExplicitKeeper;
 
   if (!hasHydrated) return null;
@@ -129,7 +132,7 @@ export default function TeamSetupPage() {
           Ready For Game Day
         </h1>
         <p className="text-foreground-muted mb-6">
-          {eraTeamId
+          {isSpinDraft
             ? "Set your batting order, captain, and keeper below — nothing's chosen for you."
             : "We've set a lineup automatically — reorder the batting order, change your captain, keeper, or bowling roles below, then simulate when you're ready."}
         </p>
