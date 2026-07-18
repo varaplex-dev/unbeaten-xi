@@ -12,6 +12,7 @@ import { useAuthStore } from "@/lib/store/authStore";
 import { isSupabaseConfigured, supabase } from "@/lib/supabase/client";
 import { getPlayerById } from "@/lib/data/players";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
+import { getLegendPlayerById } from "@/lib/data/legendPlayers";
 import { track } from "@/lib/analytics";
 
 // Postgres unique_violation — the Daily Challenge has one row per user per
@@ -43,7 +44,8 @@ export default function ResultsPage() {
   const markResultSaved = useGameStore((s) => s.markResultSaved);
   const startNewGame = useGameStore((s) => s.startNewGame);
   const user = useAuthStore((s) => s.user);
-  const lookupPlayer = mode === "all-time-real" ? getRealPlayerById : getPlayerById;
+  const lookupPlayer = (id: string) =>
+    mode === "all-time-real" ? (getRealPlayerById(id) ?? getLegendPlayerById(id)) : getPlayerById(id);
   const [copied, setCopied] = useState(false);
   const [saveStatus, setSaveStatus] = useState<"idle" | "saved" | "error">("idle");
   const isSaving = Boolean(isSupabaseConfigured && user && stats && !resultSaved && saveStatus === "idle");

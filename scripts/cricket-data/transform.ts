@@ -428,7 +428,24 @@ function transformOne(m: Metrics, norms: PoolNorms, legacyNorms: PoolNorms): Gen
 
 function main() {
   const files = readdirSync(CACHE_DIR).filter((f) => f.endsWith(".json"));
-  const allRawPlayers: RawPlayer[] = files.map((f) => JSON.parse(readFileSync(path.join(CACHE_DIR, f), "utf8")));
+  const rawWithDupes: RawPlayer[] = files.map((f) => JSON.parse(readFileSync(path.join(CACHE_DIR, f), "utf8")));
+  // The same real person can be cached under two different filenames — once
+  // by fetch.mjs's name-based slug (e.g. devon-conway.json) if they're in
+  // names.json, and again by fetch-by-id.mjs's id-based filename (e.g.
+  // id-eac0032b.json) if squad discovery also found them, which is common
+  // for anyone both curated by name AND on a current official squad. Keep
+  // only one record per real id so they don't end up duplicated in the
+  // output — e.g. a spun Era Team's squad grid showing "Devon Conway" twice.
+  const seenIds = new Set<string>();
+  const allRawPlayers = rawWithDupes.filter((p) => {
+    if (seenIds.has(p.id)) return false;
+    seenIds.add(p.id);
+    return true;
+  });
+  const duplicatesRemoved = rawWithDupes.length - allRawPlayers.length;
+  if (duplicatesRemoved > 0) {
+    console.log(`Removed ${duplicatesRemoved} duplicate cache entr${duplicatesRemoved === 1 ? "y" : "ies"} (same player, different filename).`);
+  }
   // A handful of fringe squad entries (mostly newer associate-circuit
   // leagues like MLC) come back from players_info with no role and no stats
   // at all — nothing to ground a rating in. Rather than fabricate a

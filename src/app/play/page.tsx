@@ -45,6 +45,7 @@ export default function PlayPage() {
   const router = useRouter();
   const startNewGame = useGameStore((s) => s.startNewGame);
   const spinTheWheel = useGameStore((s) => s.spinTheWheel);
+  const spinEraTeam = useGameStore((s) => s.spinEraTeam);
 
   function handleStart(mode: ModeDef) {
     if (!mode.available || !mode.gameMode) return;
@@ -54,8 +55,17 @@ export default function PlayPage() {
 
   function handleSpin(mode: ModeDef) {
     if (!mode.available || !mode.gameMode) return;
-    spinTheWheel(mode.gameMode);
-    router.push("/team-setup");
+    // All-Time XI's spin reveals a real Era Team (historic or current
+    // national squad) and hands the user a manual picker instead of
+    // auto-drafting; Fictional mode's roster isn't deep enough per-franchise
+    // yet for the same treatment, so it keeps the instant-XI spin for now.
+    if (mode.gameMode === "all-time-real") {
+      spinEraTeam();
+      router.push("/squad-select");
+    } else {
+      spinTheWheel(mode.gameMode);
+      router.push("/team-setup");
+    }
   }
 
   return (

@@ -11,6 +11,7 @@ import { SQUAD_SIZE } from "@/lib/types";
 import { useDraftedPlayers, useGameStore } from "@/lib/store/gameStore";
 import { PLAYERS } from "@/lib/data/players";
 import { REAL_PLAYERS } from "@/lib/data/realPlayers";
+import { getEraTeamById } from "@/lib/data/eraTeams";
 import { track } from "@/lib/analytics";
 
 export default function DraftPage() {
@@ -18,13 +19,18 @@ export default function DraftPage() {
   const seed = useGameStore((s) => s.seed);
   const mode = useGameStore((s) => s.mode);
   const stage = useGameStore((s) => s.stage);
+  const eraTeamId = useGameStore((s) => s.eraTeamId);
   const hasHydrated = useGameStore((s) => s.hasHydrated);
   const draftPicks = useGameStore((s) => s.draftPicks);
   const draftPlayer = useGameStore((s) => s.draftPlayer);
   const pickImpactPlayer = useGameStore((s) => s.pickImpactPlayer);
   const skipImpactPlayer = useGameStore((s) => s.skipImpactPlayer);
   const draftedPlayers = useDraftedPlayers();
-  const pool = mode === "all-time-real" ? REAL_PLAYERS : PLAYERS;
+  const eraTeam = eraTeamId ? getEraTeamById(eraTeamId) : null;
+  // A spun Era Team's impact-player options must come from that same
+  // squad, not the full cross-country pool — otherwise "pick a bonus
+  // player" could hand you someone who was never on the revealed team.
+  const pool = eraTeam ? eraTeam.players : mode === "all-time-real" ? REAL_PLAYERS : PLAYERS;
 
   useEffect(() => {
     if (hasHydrated && !seed) router.replace("/play");
@@ -32,6 +38,10 @@ export default function DraftPage() {
 
   useEffect(() => {
     if (hasHydrated && seed && stage === "team-setup") router.replace("/team-setup");
+  }, [hasHydrated, seed, stage, router]);
+
+  useEffect(() => {
+    if (hasHydrated && seed && stage === "squad-select") router.replace("/squad-select");
   }, [hasHydrated, seed, stage, router]);
 
   const roundNumber = draftPicks.length + 1;

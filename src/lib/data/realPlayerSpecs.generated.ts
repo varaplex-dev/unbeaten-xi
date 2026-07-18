@@ -66,8 +66,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 25,
     "rarityTier": "legendary",
-    "battingSkill": 91,
-    "bowlingSkill": 70,
+    "battingSkill": 92,
+    "bowlingSkill": 69,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -90,7 +90,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 34,
     "rarityTier": "legendary",
     "battingSkill": 46,
-    "bowlingSkill": 87,
+    "bowlingSkill": 86,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -112,7 +112,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 38,
     "rarityTier": "rare",
-    "battingSkill": 72,
+    "battingSkill": 73,
     "bowlingSkill": 58,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -158,7 +158,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 38,
     "rarityTier": "legendary",
-    "battingSkill": 88,
+    "battingSkill": 89,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -252,8 +252,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 29,
     "rarityTier": "rare",
-    "battingSkill": 75,
-    "bowlingSkill": 64,
+    "battingSkill": 76,
+    "bowlingSkill": 63,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -326,7 +326,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 39,
     "rarityTier": "rare",
     "battingSkill": 67,
-    "bowlingSkill": 79,
+    "bowlingSkill": 78,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -399,7 +399,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 64,
-    "bowlingSkill": 97,
+    "bowlingSkill": 96,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -445,7 +445,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "legendary",
     "battingSkill": 89,
-    "bowlingSkill": 74,
+    "bowlingSkill": 73,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -469,8 +469,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 32,
     "rarityTier": "legendary",
-    "battingSkill": 81,
-    "bowlingSkill": 85,
+    "battingSkill": 82,
+    "bowlingSkill": 84,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -518,7 +518,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "rare",
     "battingSkill": 69,
-    "bowlingSkill": 60,
+    "bowlingSkill": 59,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -565,8 +565,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 35,
     "rarityTier": "legendary",
-    "battingSkill": 85,
-    "bowlingSkill": 70,
+    "battingSkill": 86,
+    "bowlingSkill": 69,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -591,7 +591,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "legendary",
     "battingSkill": 59,
-    "bowlingSkill": 85,
+    "bowlingSkill": 84,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -687,7 +687,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "legendary",
     "battingSkill": 84,
-    "bowlingSkill": 83,
+    "bowlingSkill": 82,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -711,7 +711,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 37,
     "rarityTier": "rare",
-    "battingSkill": 65,
+    "battingSkill": 66,
     "bowlingSkill": 76,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -760,7 +760,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 39,
     "rarityTier": "rare",
     "battingSkill": 73,
-    "bowlingSkill": 55,
+    "bowlingSkill": 54,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -810,7 +810,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 34,
     "rarityTier": "legendary",
     "battingSkill": 65,
-    "bowlingSkill": 83,
+    "bowlingSkill": 82,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -832,7 +832,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 37,
     "rarityTier": "legendary",
-    "battingSkill": 98,
+    "battingSkill": 99,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -882,7 +882,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "rare",
     "battingSkill": 75,
-    "bowlingSkill": 72,
+    "bowlingSkill": 71,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -904,7 +904,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 38,
     "rarityTier": "rare",
-    "battingSkill": 78,
+    "battingSkill": 79,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -926,9 +926,9 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 33,
-    "rarityTier": "legendary",
+    "rarityTier": "rare",
     "battingSkill": 72,
-    "bowlingSkill": 80,
+    "bowlingSkill": 79,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -953,7 +953,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "rare",
     "battingSkill": 78,
-    "bowlingSkill": 58,
+    "bowlingSkill": 57,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -1021,7 +1021,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 41,
     "rarityTier": "legendary",
-    "battingSkill": 87,
+    "battingSkill": 88,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -1092,7 +1092,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 31,
     "rarityTier": "uncommon",
-    "battingSkill": 52,
+    "battingSkill": 53,
     "bowlingSkill": 42,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -1115,7 +1115,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 42,
     "rarityTier": "legendary",
-    "battingSkill": 97,
+    "battingSkill": 98,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -1207,7 +1207,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 25,
     "rarityTier": "uncommon",
-    "battingSkill": 46,
+    "battingSkill": 47,
     "bowlingSkill": 63,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -1233,7 +1233,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 37,
     "rarityTier": "legendary",
     "battingSkill": 91,
-    "bowlingSkill": 73,
+    "bowlingSkill": 72,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -1307,7 +1307,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 32,
     "rarityTier": "legendary",
-    "battingSkill": 92,
+    "battingSkill": 93,
     "bowlingSkill": 67,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -1332,7 +1332,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 32,
     "rarityTier": "legendary",
-    "battingSkill": 63,
+    "battingSkill": 64,
     "bowlingSkill": 83,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -1424,7 +1424,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 33,
     "rarityTier": "legendary",
-    "battingSkill": 85,
+    "battingSkill": 86,
     "bowlingSkill": 65,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -1583,14 +1583,16 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "off-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "off-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 31,
     "rarityTier": "legendary",
-    "battingSkill": 65,
-    "bowlingSkill": 95,
+    "battingSkill": 66,
+    "bowlingSkill": 94,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -1708,7 +1710,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 24,
     "rarityTier": "legendary",
-    "battingSkill": 89,
+    "battingSkill": 90,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -1825,7 +1827,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 30,
     "rarityTier": "rare",
-    "battingSkill": 71,
+    "battingSkill": 72,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -1848,7 +1850,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 34,
     "rarityTier": "uncommon",
-    "battingSkill": 57,
+    "battingSkill": 58,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -2072,29 +2074,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/085d49b0-d5e5-4fc5-955b-39758a134545.jpg"
   },
   {
-    "id": "real-08924d57",
-    "name": "Finn Allen",
-    "shortName": "F Allen",
-    "country": "New Zealand",
-    "nationalityType": "overseas",
-    "currentTeam": "New Zealand National Team",
-    "primaryRole": "finisher",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "none",
-    "age": 27,
-    "rarityTier": "legendary",
-    "battingSkill": 91,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/08924d57-b4d3-4ed0-903d-087a8384be12.jpg"
-  },
-  {
     "id": "real-095d083b",
     "name": "Steven Smith",
     "shortName": "S Smith",
@@ -2154,7 +2133,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "rare",
     "battingSkill": 73,
-    "bowlingSkill": 65,
+    "bowlingSkill": 64,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -2249,8 +2228,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-fast",
     "age": 28,
     "rarityTier": "rare",
-    "battingSkill": 61,
-    "bowlingSkill": 78,
+    "battingSkill": 62,
+    "bowlingSkill": 77,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -2258,31 +2237,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-0a8d5712",
-    "name": "Andrew Tye",
-    "shortName": "A Tye",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 39,
-    "rarityTier": "rare",
-    "battingSkill": 67,
-    "bowlingSkill": 79,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/0a8d5712-5795-4217-9717-531dc0088ddd.jpg"
   },
   {
     "id": "real-0a9d588e",
@@ -2321,7 +2275,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 25,
     "rarityTier": "common",
     "battingSkill": 15,
-    "bowlingSkill": 32,
+    "bowlingSkill": 31,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -2419,7 +2373,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 37,
     "rarityTier": "rare",
     "battingSkill": 57,
-    "bowlingSkill": 74,
+    "bowlingSkill": 73,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -2492,7 +2446,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 72,
-    "bowlingSkill": 84,
+    "bowlingSkill": 83,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -2786,29 +2740,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-0ec8da92",
-    "name": "Dawid Malan",
-    "shortName": "D Malan",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "leg-spin",
-    "age": 38,
-    "rarityTier": "rare",
-    "battingSkill": 78,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/0ec8da92-1980-4a0e-9059-d0c4d3947ab8.jpg"
-  },
-  {
     "id": "real-0f4dd575",
     "name": "Faisal Khan",
     "shortName": "F Khan",
@@ -2868,7 +2799,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 37,
     "rarityTier": "uncommon",
     "battingSkill": 39,
-    "bowlingSkill": 64,
+    "bowlingSkill": 63,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -2964,7 +2895,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "rare",
     "battingSkill": 75,
-    "bowlingSkill": 73,
+    "bowlingSkill": 72,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -2986,7 +2917,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 23,
     "rarityTier": "legendary",
-    "battingSkill": 65,
+    "battingSkill": 66,
     "bowlingSkill": 99,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -3126,7 +3057,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 42,
     "rarityTier": "legendary",
-    "battingSkill": 86,
+    "battingSkill": 87,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -3218,8 +3149,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 29,
     "rarityTier": "legendary",
-    "battingSkill": 45,
-    "bowlingSkill": 88,
+    "battingSkill": 46,
+    "bowlingSkill": 87,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -3242,7 +3173,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 33,
     "rarityTier": "legendary",
     "battingSkill": 53,
-    "bowlingSkill": 88,
+    "bowlingSkill": 87,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -3380,7 +3311,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 33,
     "rarityTier": "legendary",
     "battingSkill": 32,
-    "bowlingSkill": 92,
+    "bowlingSkill": 91,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -3475,7 +3406,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 36,
     "rarityTier": "common",
-    "battingSkill": 39,
+    "battingSkill": 40,
     "bowlingSkill": 48,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -3546,7 +3477,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 34,
     "rarityTier": "legendary",
-    "battingSkill": 63,
+    "battingSkill": 64,
     "bowlingSkill": 89,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -3841,29 +3772,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-1971093d",
-    "name": "Adam Zampa",
-    "shortName": "A Zampa",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "leg-spin",
-    "age": 34,
-    "rarityTier": "legendary",
-    "battingSkill": 46,
-    "bowlingSkill": 87,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/1971093d-b87b-43db-8b1d-b2dcc8e68617.jpg"
-  },
-  {
     "id": "real-198dcb20",
     "name": "Haroon Arshad",
     "shortName": "H Arshad",
@@ -3899,7 +3807,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 39,
     "rarityTier": "uncommon",
-    "battingSkill": 58,
+    "battingSkill": 59,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -4190,29 +4098,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/1ee41e9e-e219-4df2-9861-2360b28bb307.jpg"
   },
   {
-    "id": "real-1f7439f5",
-    "name": "Alex Hales",
-    "shortName": "A Hales",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-medium",
-    "age": 37,
-    "rarityTier": "legendary",
-    "battingSkill": 83,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/1f7439f5-c910-47df-9e1a-5d04e5b0253f.jpg"
-  },
-  {
     "id": "real-1f8a9042",
     "name": "Kamran Ghulam",
     "shortName": "K Ghulam",
@@ -4323,7 +4208,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 24,
     "rarityTier": "rare",
-    "battingSkill": 39,
+    "battingSkill": 40,
     "bowlingSkill": 75,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -4415,8 +4300,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 33,
     "rarityTier": "rare",
-    "battingSkill": 75,
-    "bowlingSkill": 62,
+    "battingSkill": 76,
+    "bowlingSkill": 61,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -4439,7 +4324,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 23,
     "rarityTier": "legendary",
     "battingSkill": 46,
-    "bowlingSkill": 94,
+    "bowlingSkill": 93,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -4464,7 +4349,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 25,
     "rarityTier": "legendary",
     "battingSkill": 55,
-    "bowlingSkill": 82,
+    "bowlingSkill": 81,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -4645,14 +4530,16 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "India",
     "nationalityType": "indian",
     "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "fast-bowler"
+    ],
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 24,
     "rarityTier": "rare",
     "battingSkill": 45,
-    "bowlingSkill": 75,
+    "bowlingSkill": 74,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -4702,7 +4589,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 33,
     "rarityTier": "legendary",
     "battingSkill": 94,
-    "bowlingSkill": 61,
+    "bowlingSkill": 60,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -4758,29 +4645,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-237a1ef2",
-    "name": "Deepak Chahar",
-    "shortName": "D Chahar",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 33,
-    "rarityTier": "legendary",
-    "battingSkill": 72,
-    "bowlingSkill": 80,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/237a1ef2-1eae-4877-8b94-d20d84faf635.jpg"
-  },
-  {
     "id": "real-2384dece",
     "name": "Wes Agar",
     "shortName": "W Agar",
@@ -4825,29 +4689,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-268905f4",
-    "name": "Colin Munro",
-    "shortName": "C Munro",
-    "country": "New Zealand",
-    "nationalityType": "overseas",
-    "currentTeam": "New Zealand National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-medium",
-    "age": 39,
-    "rarityTier": "rare",
-    "battingSkill": 73,
-    "bowlingSkill": 55,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/268905f4-059e-405f-8cc8-5a824814dcbe.jpg"
   },
   {
     "id": "real-27257774",
@@ -4957,7 +4798,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "legendary",
     "battingSkill": 39,
-    "bowlingSkill": 88,
+    "bowlingSkill": 87,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -5051,7 +4892,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 28,
     "rarityTier": "uncommon",
     "battingSkill": 50,
-    "bowlingSkill": 57,
+    "bowlingSkill": 56,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -5125,7 +4966,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 33,
     "rarityTier": "legendary",
-    "battingSkill": 61,
+    "battingSkill": 62,
     "bowlingSkill": 89,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -5173,7 +5014,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 35,
     "rarityTier": "legendary",
-    "battingSkill": 94,
+    "battingSkill": 95,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -5197,7 +5038,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "uncommon",
     "battingSkill": 58,
-    "bowlingSkill": 67,
+    "bowlingSkill": 66,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -5246,7 +5087,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 34,
     "rarityTier": "rare",
-    "battingSkill": 76,
+    "battingSkill": 77,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -5339,8 +5180,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "battingHand": "right",
     "bowlingStyle": "right-arm-offspin",
     "age": 30,
-    "rarityTier": "rare",
-    "battingSkill": 79,
+    "rarityTier": "legendary",
+    "battingSkill": 80,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -5389,7 +5230,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "rare",
     "battingSkill": 77,
-    "bowlingSkill": 78,
+    "bowlingSkill": 77,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -5483,7 +5324,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 23,
     "rarityTier": "legendary",
     "battingSkill": 99,
-    "bowlingSkill": 82,
+    "bowlingSkill": 81,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -5531,7 +5372,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "rare",
     "battingSkill": 70,
-    "bowlingSkill": 79,
+    "bowlingSkill": 78,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -5604,7 +5445,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "legendary",
     "battingSkill": 97,
-    "bowlingSkill": 81,
+    "bowlingSkill": 80,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -5628,8 +5469,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 25,
     "rarityTier": "legendary",
-    "battingSkill": 81,
-    "bowlingSkill": 59,
+    "battingSkill": 82,
+    "bowlingSkill": 58,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -5660,29 +5501,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-332200ad",
-    "name": "Avesh Khan",
-    "shortName": "A Khan",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 29,
-    "rarityTier": "legendary",
-    "battingSkill": 89,
-    "bowlingSkill": 74,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/332200ad-d1f8-4035-95c5-b33bd1c9a939.jpg"
   },
   {
     "id": "real-332b58d0",
@@ -5838,7 +5656,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 23,
     "rarityTier": "rare",
     "battingSkill": 48,
-    "bowlingSkill": 69,
+    "bowlingSkill": 68,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6026,7 +5844,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 27,
     "rarityTier": "legendary",
     "battingSkill": 81,
-    "bowlingSkill": 80,
+    "bowlingSkill": 79,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6213,8 +6031,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-fast",
     "age": 32,
     "rarityTier": "uncommon",
-    "battingSkill": 32,
-    "bowlingSkill": 66,
+    "battingSkill": 33,
+    "bowlingSkill": 65,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6283,7 +6101,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "common",
     "battingSkill": 27,
-    "bowlingSkill": 46,
+    "bowlingSkill": 45,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6406,7 +6224,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "legendary",
     "battingSkill": 69,
-    "bowlingSkill": 89,
+    "bowlingSkill": 88,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6476,7 +6294,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 29,
     "rarityTier": "legendary",
-    "battingSkill": 90,
+    "battingSkill": 91,
     "bowlingSkill": 97,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -6600,7 +6418,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 37,
     "rarityTier": "legendary",
     "battingSkill": 81,
-    "bowlingSkill": 71,
+    "bowlingSkill": 70,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6671,7 +6489,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "rare",
     "battingSkill": 72,
-    "bowlingSkill": 60,
+    "bowlingSkill": 59,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6693,7 +6511,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 24,
     "rarityTier": "uncommon",
-    "battingSkill": 64,
+    "battingSkill": 65,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -6763,7 +6581,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 33,
     "rarityTier": "uncommon",
     "battingSkill": 32,
-    "bowlingSkill": 63,
+    "bowlingSkill": 62,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6786,7 +6604,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 34,
     "rarityTier": "common",
     "battingSkill": 15,
-    "bowlingSkill": 46,
+    "bowlingSkill": 45,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6809,7 +6627,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "legendary",
     "battingSkill": 41,
-    "bowlingSkill": 83,
+    "bowlingSkill": 82,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -6879,7 +6697,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 22,
     "rarityTier": "rare",
-    "battingSkill": 69,
+    "battingSkill": 70,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -6950,7 +6768,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 33,
     "rarityTier": "legendary",
-    "battingSkill": 55,
+    "battingSkill": 56,
     "bowlingSkill": 82,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -6982,31 +6800,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/3f32aaf6-2d91-44ad-b14a-145a55ab5b3d.jpg"
-  },
-  {
-    "id": "real-3f3ecf51",
-    "name": "Bhuvneshwar Kumar",
-    "shortName": "B Kumar",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 36,
-    "rarityTier": "legendary",
-    "battingSkill": 59,
-    "bowlingSkill": 85,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/3f3ecf51-8411-4046-9477-18c0fe3da6ac.jpg"
   },
   {
     "id": "real-3f3fdaea",
@@ -7080,29 +6873,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-3fef81b0",
-    "name": "Aiden Markram",
-    "shortName": "A Markram",
-    "country": "South Africa",
-    "nationalityType": "overseas",
-    "currentTeam": "South Africa National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 31,
-    "rarityTier": "legendary",
-    "battingSkill": 90,
-    "bowlingSkill": 34,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/3fef81b0-c1e9-45eb-954f-519f3b33d640.jpg"
-  },
-  {
     "id": "real-4035eb7e",
     "name": "Harmeet Singh",
     "shortName": "H Singh",
@@ -7117,7 +6887,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 33,
     "rarityTier": "legendary",
-    "battingSkill": 82,
+    "battingSkill": 83,
     "bowlingSkill": 92,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -7213,7 +6983,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 38,
     "rarityTier": "rare",
-    "battingSkill": 74,
+    "battingSkill": 75,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -7285,9 +7055,9 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "battingHand": "right",
     "bowlingStyle": "left-arm-orthodox",
     "age": 35,
-    "rarityTier": "rare",
+    "rarityTier": "uncommon",
     "battingSkill": 66,
-    "bowlingSkill": 68,
+    "bowlingSkill": 67,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -7383,7 +7153,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "legendary",
     "battingSkill": 76,
-    "bowlingSkill": 81,
+    "bowlingSkill": 80,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -7391,29 +7161,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-444e0a55",
-    "name": "Brandon King",
-    "shortName": "B King",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "none",
-    "age": 31,
-    "rarityTier": "legendary",
-    "battingSkill": 87,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/444e0a55-ec85-4ee1-9557-f1a51a96a7d5.jpg"
   },
   {
     "id": "real-450da6d1",
@@ -7431,7 +7178,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "legendary",
     "battingSkill": 62,
-    "bowlingSkill": 81,
+    "bowlingSkill": 80,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -7549,7 +7296,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 37,
     "rarityTier": "legendary",
-    "battingSkill": 72,
+    "battingSkill": 73,
     "bowlingSkill": 89,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -7643,7 +7390,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 24,
     "rarityTier": "uncommon",
-    "battingSkill": 56,
+    "battingSkill": 57,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -7691,7 +7438,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 27,
     "rarityTier": "uncommon",
-    "battingSkill": 60,
+    "battingSkill": 61,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -7878,7 +7625,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 41,
     "rarityTier": "legendary",
     "battingSkill": 52,
-    "bowlingSkill": 93,
+    "bowlingSkill": 92,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -7926,7 +7673,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 30,
     "rarityTier": "rare",
     "battingSkill": 54,
-    "bowlingSkill": 79,
+    "bowlingSkill": 78,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8001,7 +7748,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "legendary",
     "battingSkill": 66,
-    "bowlingSkill": 87,
+    "bowlingSkill": 86,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8047,7 +7794,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 23,
     "rarityTier": "legendary",
     "battingSkill": 64,
-    "bowlingSkill": 86,
+    "bowlingSkill": 85,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8118,7 +7865,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 27,
     "rarityTier": "legendary",
     "battingSkill": 99,
-    "bowlingSkill": 63,
+    "bowlingSkill": 62,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8165,8 +7912,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 41,
     "rarityTier": "legendary",
-    "battingSkill": 93,
-    "bowlingSkill": 73,
+    "battingSkill": 94,
+    "bowlingSkill": 72,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8191,7 +7938,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 39,
     "rarityTier": "legendary",
     "battingSkill": 82,
-    "bowlingSkill": 89,
+    "bowlingSkill": 88,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8477,7 +8224,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "legendary",
     "battingSkill": 46,
-    "bowlingSkill": 93,
+    "bowlingSkill": 92,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8501,7 +8248,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 35,
     "rarityTier": "legendary",
-    "battingSkill": 73,
+    "battingSkill": 74,
     "bowlingSkill": 99,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -8525,7 +8272,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "legendary",
     "battingSkill": 96,
-    "bowlingSkill": 77,
+    "bowlingSkill": 76,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8572,7 +8319,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 28,
     "rarityTier": "rare",
-    "battingSkill": 56,
+    "battingSkill": 57,
     "bowlingSkill": 68,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -8595,7 +8342,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 30,
     "rarityTier": "uncommon",
-    "battingSkill": 60,
+    "battingSkill": 61,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -8604,29 +8351,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-52bd987e",
-    "name": "Fakhar Zaman",
-    "shortName": "F Zaman",
-    "country": "Pakistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Pakistan National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 36,
-    "rarityTier": "legendary",
-    "battingSkill": 83,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/52bd987e-45af-4ced-a617-0916664f73a7.jpg"
   },
   {
     "id": "real-52bf5e2a",
@@ -8689,7 +8413,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 29,
     "rarityTier": "rare",
-    "battingSkill": 53,
+    "battingSkill": 54,
     "bowlingSkill": 69,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -8760,7 +8484,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 35,
     "rarityTier": "legendary",
-    "battingSkill": 83,
+    "battingSkill": 84,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -8835,8 +8559,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 34,
     "rarityTier": "legendary",
-    "battingSkill": 77,
-    "bowlingSkill": 96,
+    "battingSkill": 78,
+    "bowlingSkill": 95,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8844,31 +8568,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/54c45d3c-9496-4c07-8258-c206074ab681.jpg"
-  },
-  {
-    "id": "real-54e5a9b9",
-    "name": "David Willey",
-    "shortName": "D Willey",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-fast",
-    "age": 36,
-    "rarityTier": "rare",
-    "battingSkill": 75,
-    "bowlingSkill": 72,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/54e5a9b9-9b8d-460c-bf6e-8488f0e229f8.jpg"
   },
   {
     "id": "real-5521b1ca",
@@ -8882,9 +8581,9 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 39,
-    "rarityTier": "rare",
+    "rarityTier": "uncommon",
     "battingSkill": 54,
-    "bowlingSkill": 68,
+    "bowlingSkill": 67,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -8955,7 +8654,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "legendary",
     "battingSkill": 84,
-    "bowlingSkill": 77,
+    "bowlingSkill": 76,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -9069,7 +8768,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 36,
     "rarityTier": "legendary",
-    "battingSkill": 88,
+    "battingSkill": 89,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -9161,7 +8860,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 31,
     "rarityTier": "uncommon",
-    "battingSkill": 65,
+    "battingSkill": 66,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -9184,7 +8883,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 27,
     "rarityTier": "rare",
-    "battingSkill": 76,
+    "battingSkill": 77,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -9538,7 +9237,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 28,
     "rarityTier": "rare",
     "battingSkill": 63,
-    "bowlingSkill": 70,
+    "bowlingSkill": 69,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -9797,7 +9496,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 22,
     "rarityTier": "uncommon",
     "battingSkill": 66,
-    "bowlingSkill": 28,
+    "bowlingSkill": 27,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -9820,7 +9519,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "legendary",
     "battingSkill": 42,
-    "bowlingSkill": 91,
+    "bowlingSkill": 90,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -9912,7 +9611,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 28,
     "rarityTier": "legendary",
     "battingSkill": 71,
-    "bowlingSkill": 84,
+    "bowlingSkill": 83,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -9959,7 +9658,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 25,
     "rarityTier": "rare",
-    "battingSkill": 73,
+    "battingSkill": 74,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -10051,7 +9750,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 27,
     "rarityTier": "uncommon",
-    "battingSkill": 58,
+    "battingSkill": 59,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -10122,7 +9821,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 32,
     "rarityTier": "legendary",
-    "battingSkill": 89,
+    "battingSkill": 90,
     "bowlingSkill": 79,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -10147,7 +9846,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 29,
     "rarityTier": "common",
-    "battingSkill": 45,
+    "battingSkill": 46,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -10193,7 +9892,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 29,
     "rarityTier": "rare",
-    "battingSkill": 78,
+    "battingSkill": 79,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -10216,8 +9915,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 32,
     "rarityTier": "legendary",
-    "battingSkill": 40,
-    "bowlingSkill": 82,
+    "battingSkill": 41,
+    "bowlingSkill": 81,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -10311,7 +10010,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "rare",
     "battingSkill": 62,
-    "bowlingSkill": 79,
+    "bowlingSkill": 78,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -10402,7 +10101,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 35,
     "rarityTier": "legendary",
-    "battingSkill": 86,
+    "battingSkill": 87,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -10425,7 +10124,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 30,
     "rarityTier": "legendary",
-    "battingSkill": 98,
+    "battingSkill": 99,
     "bowlingSkill": 52,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -10517,7 +10216,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 27,
     "rarityTier": "uncommon",
-    "battingSkill": 60,
+    "battingSkill": 61,
     "bowlingSkill": 70,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -10660,7 +10359,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 21,
     "rarityTier": "legendary",
     "battingSkill": 92,
-    "bowlingSkill": 68,
+    "bowlingSkill": 67,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -10685,7 +10384,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "legendary",
     "battingSkill": 71,
-    "bowlingSkill": 87,
+    "bowlingSkill": 86,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -10777,7 +10476,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "legendary",
     "battingSkill": 58,
-    "bowlingSkill": 92,
+    "bowlingSkill": 91,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -10802,7 +10501,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 34,
     "rarityTier": "legendary",
     "battingSkill": 79,
-    "bowlingSkill": 81,
+    "bowlingSkill": 80,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -10873,7 +10572,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 34,
     "rarityTier": "legendary",
     "battingSkill": 47,
-    "bowlingSkill": 87,
+    "bowlingSkill": 86,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -10895,7 +10594,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 35,
     "rarityTier": "uncommon",
-    "battingSkill": 40,
+    "battingSkill": 41,
     "bowlingSkill": 64,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -11013,7 +10712,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "legendary",
     "battingSkill": 77,
-    "bowlingSkill": 88,
+    "bowlingSkill": 87,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -11073,29 +10772,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-74c6584a",
-    "name": "Devdutt Padikkal",
-    "shortName": "D Padikkal",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 26,
-    "rarityTier": "legendary",
-    "battingSkill": 83,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/74c6584a-45a5-4781-a5e7-c0c9340da954.jpg"
-  },
-  {
     "id": "real-754a8a32",
     "name": "Dewan Marais",
     "shortName": "D Marais",
@@ -11136,7 +10812,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "rare",
     "battingSkill": 75,
-    "bowlingSkill": 74,
+    "bowlingSkill": 73,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -11159,7 +10835,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "legendary",
     "battingSkill": 45,
-    "bowlingSkill": 99,
+    "bowlingSkill": 98,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -11204,7 +10880,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 37,
     "rarityTier": "uncommon",
-    "battingSkill": 61,
+    "battingSkill": 62,
     "bowlingSkill": 61,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -11236,29 +10912,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-75fb3972",
-    "name": "Dushmantha Chameera",
-    "shortName": "D Chameera",
-    "country": "Sri Lanka",
-    "nationalityType": "overseas",
-    "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 34,
-    "rarityTier": "rare",
-    "battingSkill": 76,
-    "bowlingSkill": 56,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/75fb3972-0436-40ee-bf45-73b1dba7b53e.jpg"
   },
   {
     "id": "real-768b596e",
@@ -11322,7 +10975,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "rare",
     "battingSkill": 63,
-    "bowlingSkill": 74,
+    "bowlingSkill": 73,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -11345,7 +10998,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 39,
     "rarityTier": "legendary",
     "battingSkill": 67,
-    "bowlingSkill": 92,
+    "bowlingSkill": 91,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -11417,7 +11070,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 36,
     "rarityTier": "uncommon",
-    "battingSkill": 61,
+    "battingSkill": 62,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -11472,29 +11125,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-7a5dc10f",
-    "name": "Alex Carey",
-    "shortName": "A Carey",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "wicketkeeper-batter",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "none",
-    "age": 34,
-    "rarityTier": "rare",
-    "battingSkill": 71,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 78,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/7a5dc10f-09d7-40f2-b412-f042fff54e89.jpg"
   },
   {
     "id": "real-7aa19b4a",
@@ -11593,31 +11223,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-7c341a4c",
-    "name": "Azmatullah Omarzai",
-    "shortName": "A Omarzai",
-    "country": "Afghanistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Afghanistan National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 26,
-    "rarityTier": "rare",
-    "battingSkill": 69,
-    "bowlingSkill": 60,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/7c341a4c-d3fa-4054-b95d-f75f94eee00c.jpg"
-  },
-  {
     "id": "real-7c5d3341",
     "name": "Shevon Daniel",
     "shortName": "S Daniel",
@@ -11630,7 +11235,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 22,
     "rarityTier": "rare",
-    "battingSkill": 73,
+    "battingSkill": 74,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -11679,7 +11284,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 30,
     "rarityTier": "rare",
     "battingSkill": 70,
-    "bowlingSkill": 69,
+    "bowlingSkill": 68,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -11687,31 +11292,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/7cd273d0-4f3d-4d99-a31c-f2d8ee77b552.jpg"
-  },
-  {
-    "id": "real-7d053d4e",
-    "name": "Akeal Hosein",
-    "shortName": "A Hosein",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 33,
-    "rarityTier": "legendary",
-    "battingSkill": 67,
-    "bowlingSkill": 88,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/7d053d4e-a735-4c96-bb98-4098dee523df.jpg"
   },
   {
     "id": "real-7d1671e6",
@@ -11760,29 +11340,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-7d662361",
-    "name": "Heinrich Klaasen",
-    "shortName": "H Klaasen",
-    "country": "South Africa",
-    "nationalityType": "overseas",
-    "currentTeam": "South Africa National Team",
-    "primaryRole": "wicketkeeper-batter",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 34,
-    "rarityTier": "legendary",
-    "battingSkill": 99,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 78,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/7d662361-8f12-4a52-9a4b-01e8734bd31d.jpg"
-  },
-  {
     "id": "real-7d689fb0",
     "name": "Dinesh Chandimal",
     "shortName": "D Chandimal",
@@ -11821,7 +11378,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "legendary",
     "battingSkill": 94,
-    "bowlingSkill": 84,
+    "bowlingSkill": 83,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -11870,7 +11427,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 34,
     "rarityTier": "legendary",
-    "battingSkill": 75,
+    "battingSkill": 76,
     "bowlingSkill": 90,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -11893,7 +11450,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-fast",
     "age": 32,
     "rarityTier": "uncommon",
-    "battingSkill": 39,
+    "battingSkill": 40,
     "bowlingSkill": 51,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -11942,7 +11499,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 34,
     "rarityTier": "legendary",
     "battingSkill": 56,
-    "bowlingSkill": 93,
+    "bowlingSkill": 92,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -12015,7 +11572,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "legendary",
     "battingSkill": 53,
-    "bowlingSkill": 93,
+    "bowlingSkill": 92,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -12040,7 +11597,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "legendary",
     "battingSkill": 99,
-    "bowlingSkill": 47,
+    "bowlingSkill": 46,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -12063,7 +11620,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 33,
     "rarityTier": "uncommon",
     "battingSkill": 58,
-    "bowlingSkill": 63,
+    "bowlingSkill": 62,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -12087,8 +11644,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 30,
     "rarityTier": "rare",
-    "battingSkill": 63,
-    "bowlingSkill": 77,
+    "battingSkill": 64,
+    "bowlingSkill": 76,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -12181,7 +11738,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 32,
     "rarityTier": "common",
-    "battingSkill": 41,
+    "battingSkill": 42,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -12275,7 +11832,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 35,
     "rarityTier": "legendary",
-    "battingSkill": 82,
+    "battingSkill": 83,
     "bowlingSkill": 81,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -12394,7 +11951,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 28,
     "rarityTier": "rare",
-    "battingSkill": 45,
+    "battingSkill": 46,
     "bowlingSkill": 68,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -12430,31 +11987,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-83fe6ab6",
-    "name": "Abhishek Sharma",
-    "shortName": "A Sharma",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 25,
-    "rarityTier": "legendary",
-    "battingSkill": 91,
-    "bowlingSkill": 70,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/83fe6ab6-d63c-420e-9416-a93d59a9a964.jpg"
-  },
-  {
     "id": "real-841b1222",
     "name": "Asitha Fernando",
     "shortName": "A Fernando",
@@ -12468,7 +12000,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 28,
     "rarityTier": "legendary",
     "battingSkill": 82,
-    "bowlingSkill": 43,
+    "bowlingSkill": 42,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -12539,7 +12071,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 37,
     "rarityTier": "legendary",
     "battingSkill": 42,
-    "bowlingSkill": 97,
+    "bowlingSkill": 96,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -12681,7 +12213,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 79,
-    "bowlingSkill": 86,
+    "bowlingSkill": 85,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -12704,7 +12236,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "rare",
     "battingSkill": 63,
-    "bowlingSkill": 74,
+    "bowlingSkill": 73,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -12831,29 +12363,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-87e87390",
-    "name": "Harry Brook",
-    "shortName": "H Brook",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-medium",
-    "age": 27,
-    "rarityTier": "rare",
-    "battingSkill": 79,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/87e87390-b14f-455b-8526-5eaa19735aed.jpg"
   },
   {
     "id": "real-88215ee9",
@@ -13133,8 +12642,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 31,
     "rarityTier": "legendary",
-    "battingSkill": 82,
-    "bowlingSkill": 53,
+    "battingSkill": 83,
+    "bowlingSkill": 52,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -13445,7 +12954,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 23,
     "rarityTier": "legendary",
     "battingSkill": 27,
-    "bowlingSkill": 85,
+    "bowlingSkill": 84,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -13492,7 +13001,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 43,
     "rarityTier": "rare",
-    "battingSkill": 70,
+    "battingSkill": 71,
     "bowlingSkill": 77,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -13516,7 +13025,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 34,
     "rarityTier": "rare",
     "battingSkill": 46,
-    "bowlingSkill": 77,
+    "bowlingSkill": 76,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -13570,29 +13079,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-92045c02",
-    "name": "Fazalhaq Farooqi",
-    "shortName": "F Farooqi",
-    "country": "Afghanistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Afghanistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "left-arm-fast",
-    "age": 25,
-    "rarityTier": "uncommon",
-    "battingSkill": 33,
-    "bowlingSkill": 65,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/92045c02-25e9-4980-a58f-daedd067d1ce.jpg"
   },
   {
     "id": "real-9225f259",
@@ -13768,7 +13254,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 36,
     "rarityTier": "legendary",
-    "battingSkill": 90,
+    "battingSkill": 91,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -13794,7 +13280,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "legendary",
     "battingSkill": 74,
-    "bowlingSkill": 86,
+    "bowlingSkill": 85,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -13911,7 +13397,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "legendary",
     "battingSkill": 78,
-    "bowlingSkill": 97,
+    "bowlingSkill": 96,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -13979,7 +13465,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 25,
     "rarityTier": "legendary",
-    "battingSkill": 85,
+    "battingSkill": 86,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -13996,14 +13482,16 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Bangladesh",
     "nationalityType": "overseas",
     "currentTeam": "Bangladesh National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "left",
     "bowlingStyle": "left-arm-orthodox",
     "age": 31,
     "rarityTier": "legendary",
-    "battingSkill": 59,
-    "bowlingSkill": 90,
+    "battingSkill": 60,
+    "bowlingSkill": 89,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -14025,7 +13513,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 36,
     "rarityTier": "legendary",
-    "battingSkill": 40,
+    "battingSkill": 41,
     "bowlingSkill": 99,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -14042,14 +13530,16 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "South Africa",
     "nationalityType": "overseas",
     "currentTeam": "South Africa National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "leg-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "leg-spin",
     "age": 47,
     "rarityTier": "legendary",
     "battingSkill": 58,
-    "bowlingSkill": 88,
+    "bowlingSkill": 87,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -14074,7 +13564,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 24,
     "rarityTier": "legendary",
     "battingSkill": 71,
-    "bowlingSkill": 88,
+    "bowlingSkill": 87,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -14168,9 +13658,9 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 30,
-    "rarityTier": "rare",
-    "battingSkill": 39,
-    "bowlingSkill": 68,
+    "rarityTier": "uncommon",
+    "battingSkill": 40,
+    "bowlingSkill": 67,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -14311,7 +13801,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 33,
     "rarityTier": "legendary",
-    "battingSkill": 94,
+    "battingSkill": 95,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -14360,7 +13850,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 33,
     "rarityTier": "legendary",
     "battingSkill": 45,
-    "bowlingSkill": 96,
+    "bowlingSkill": 95,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -14485,31 +13975,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-9d0c0867",
-    "name": "Fabian Allen",
-    "shortName": "F Allen",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 31,
-    "rarityTier": "uncommon",
-    "battingSkill": 52,
-    "bowlingSkill": 42,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/9d0c0867-9f62-4141-8555-ecd506b20719.jpg"
   },
   {
     "id": "real-9d412bea",
@@ -14648,7 +14113,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 80,
-    "bowlingSkill": 87,
+    "bowlingSkill": 86,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -14694,9 +14159,9 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "battingHand": "left",
     "bowlingStyle": "right-arm-fast",
     "age": 43,
-    "rarityTier": "legendary",
-    "battingSkill": 40,
-    "bowlingSkill": 80,
+    "rarityTier": "rare",
+    "battingSkill": 41,
+    "bowlingSkill": 79,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -14727,31 +14192,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/9ded3a8d-3008-40f1-a18c-483af090aab8.jpg"
-  },
-  {
-    "id": "real-9e6fa482",
-    "name": "Glenn Phillips",
-    "shortName": "G Phillips",
-    "country": "New Zealand",
-    "nationalityType": "overseas",
-    "currentTeam": "New Zealand National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "off-spinner"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 29,
-    "rarityTier": "legendary",
-    "battingSkill": 66,
-    "bowlingSkill": 86,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/9e6fa482-3ad3-4831-b05d-4fed2510cdf5.jpg"
   },
   {
     "id": "real-9e959aff",
@@ -14815,7 +14255,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 34,
     "rarityTier": "legendary",
     "battingSkill": 54,
-    "bowlingSkill": 96,
+    "bowlingSkill": 95,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -14839,7 +14279,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 39,
     "rarityTier": "legendary",
-    "battingSkill": 85,
+    "battingSkill": 86,
     "bowlingSkill": 90,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -14873,31 +14313,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/9f0b971f-b01f-47ed-9f42-f52f03158d7f.jpg"
-  },
-  {
-    "id": "real-9f2db0cf",
-    "name": "Dasun Shanaka",
-    "shortName": "D Shanaka",
-    "country": "Sri Lanka",
-    "nationalityType": "overseas",
-    "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-medium",
-    "age": 34,
-    "rarityTier": "legendary",
-    "battingSkill": 65,
-    "bowlingSkill": 83,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/9f2db0cf-2b7a-4722-9134-211f612102b9.jpg"
   },
   {
     "id": "real-9f322402",
@@ -15081,7 +14496,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 20,
     "rarityTier": "legendary",
-    "battingSkill": 62,
+    "battingSkill": 63,
     "bowlingSkill": 99,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -15249,7 +14664,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "uncommon",
     "battingSkill": 60,
-    "bowlingSkill": 53,
+    "bowlingSkill": 52,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -15271,7 +14686,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 20,
     "rarityTier": "rare",
-    "battingSkill": 71,
+    "battingSkill": 72,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -15397,29 +14812,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-a2e40330",
-    "name": "Adil Rashid",
-    "shortName": "A Rashid",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "leg-spin",
-    "age": 38,
-    "rarityTier": "rare",
-    "battingSkill": 72,
-    "bowlingSkill": 58,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/a2e40330-ea26-4ad7-a21d-f27a00ba3228.jpg"
   },
   {
     "id": "real-a3261fc4",
@@ -15576,7 +14968,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 24,
     "rarityTier": "common",
-    "battingSkill": 39,
+    "battingSkill": 40,
     "bowlingSkill": 31,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -15624,7 +15016,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 32,
     "rarityTier": "rare",
-    "battingSkill": 57,
+    "battingSkill": 58,
     "bowlingSkill": 78,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -15649,8 +15041,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 42,
     "rarityTier": "rare",
-    "battingSkill": 78,
-    "bowlingSkill": 79,
+    "battingSkill": 79,
+    "bowlingSkill": 78,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -15672,8 +15064,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-fast",
     "age": 24,
     "rarityTier": "rare",
-    "battingSkill": 36,
-    "bowlingSkill": 71,
+    "battingSkill": 37,
+    "bowlingSkill": 70,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -15681,31 +15073,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-a8c7ce67",
-    "name": "Anrich Nortje",
-    "shortName": "A Nortje",
-    "country": "South Africa",
-    "nationalityType": "overseas",
-    "currentTeam": "South Africa National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 32,
-    "rarityTier": "rare",
-    "battingSkill": 60,
-    "bowlingSkill": 73,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/a8c7ce67-5862-4acb-9297-97eafd0ea3d5.jpg"
   },
   {
     "id": "real-a8eb3336",
@@ -15744,7 +15111,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "legendary",
     "battingSkill": 44,
-    "bowlingSkill": 90,
+    "bowlingSkill": 89,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -15839,7 +15206,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 33,
     "rarityTier": "rare",
-    "battingSkill": 78,
+    "battingSkill": 79,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -15896,31 +15263,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-abe58090",
-    "name": "Cameron Green",
-    "shortName": "C Green",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 27,
-    "rarityTier": "legendary",
-    "battingSkill": 99,
-    "bowlingSkill": 61,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/abe58090-e933-4888-8538-64f4611ee259.jpg"
   },
   {
     "id": "real-aca1a8ce",
@@ -16080,7 +15422,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 59,
-    "bowlingSkill": 90,
+    "bowlingSkill": 89,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -16102,7 +15444,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 34,
     "rarityTier": "legendary",
-    "battingSkill": 80,
+    "battingSkill": 81,
     "bowlingSkill": 99,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -16196,7 +15538,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 37,
     "rarityTier": "rare",
-    "battingSkill": 77,
+    "battingSkill": 78,
     "bowlingSkill": 70,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -16338,8 +15680,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 29,
     "rarityTier": "rare",
-    "battingSkill": 74,
-    "bowlingSkill": 75,
+    "battingSkill": 75,
+    "bowlingSkill": 74,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -16361,7 +15703,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 32,
     "rarityTier": "legendary",
-    "battingSkill": 81,
+    "battingSkill": 82,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -16453,7 +15795,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 26,
     "rarityTier": "rare",
-    "battingSkill": 74,
+    "battingSkill": 75,
     "bowlingSkill": 69,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -16504,7 +15846,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "uncommon",
     "battingSkill": 45,
-    "bowlingSkill": 65,
+    "bowlingSkill": 64,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -16550,7 +15892,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 29,
     "rarityTier": "uncommon",
     "battingSkill": 27,
-    "bowlingSkill": 67,
+    "bowlingSkill": 66,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -16691,7 +16033,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 27,
     "rarityTier": "legendary",
-    "battingSkill": 83,
+    "battingSkill": 84,
     "bowlingSkill": 74,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -16739,7 +16081,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 24,
     "rarityTier": "legendary",
-    "battingSkill": 85,
+    "battingSkill": 86,
     "bowlingSkill": 24,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -16763,7 +16105,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 88,
-    "bowlingSkill": 91,
+    "bowlingSkill": 90,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -16810,7 +16152,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 30,
     "rarityTier": "rare",
-    "battingSkill": 78,
+    "battingSkill": 79,
     "bowlingSkill": 62,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -16833,7 +16175,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 25,
     "rarityTier": "rare",
-    "battingSkill": 77,
+    "battingSkill": 78,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -17049,7 +16391,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 25,
     "rarityTier": "rare",
     "battingSkill": 68,
-    "bowlingSkill": 62,
+    "bowlingSkill": 61,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -17474,7 +16816,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 33,
     "rarityTier": "rare",
-    "battingSkill": 68,
+    "battingSkill": 69,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -17521,7 +16863,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "legendary",
     "battingSkill": 47,
-    "bowlingSkill": 82,
+    "bowlingSkill": 81,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -17560,14 +16902,16 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "country": "Afghanistan",
     "nationalityType": "overseas",
     "currentTeam": "Afghanistan National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
+    "primaryRole": "bowling-allrounder",
+    "secondaryRoles": [
+      "left-arm-spinner"
+    ],
     "battingHand": "right",
     "bowlingStyle": "left-arm-orthodox",
     "age": 34,
     "rarityTier": "legendary",
-    "battingSkill": 63,
-    "bowlingSkill": 93,
+    "battingSkill": 64,
+    "bowlingSkill": 92,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -17589,7 +16933,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 23,
     "rarityTier": "uncommon",
-    "battingSkill": 65,
+    "battingSkill": 66,
     "bowlingSkill": 64,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -17681,7 +17025,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "none",
     "age": 24,
     "rarityTier": "legendary",
-    "battingSkill": 81,
+    "battingSkill": 82,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -17796,7 +17140,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 30,
     "rarityTier": "rare",
-    "battingSkill": 78,
+    "battingSkill": 79,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -17941,7 +17285,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 30,
     "rarityTier": "legendary",
     "battingSkill": 87,
-    "bowlingSkill": 85,
+    "bowlingSkill": 84,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18203,7 +17547,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 23,
     "rarityTier": "common",
-    "battingSkill": 40,
+    "battingSkill": 41,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -18274,7 +17618,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-orthodox",
     "age": 37,
     "rarityTier": "legendary",
-    "battingSkill": 75,
+    "battingSkill": 76,
     "bowlingSkill": 99,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -18298,7 +17642,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 83,
-    "bowlingSkill": 53,
+    "bowlingSkill": 52,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18344,7 +17688,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 99,
-    "bowlingSkill": 72,
+    "bowlingSkill": 71,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18462,7 +17806,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 23,
     "rarityTier": "legendary",
-    "battingSkill": 91,
+    "battingSkill": 92,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -18488,7 +17832,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 25,
     "rarityTier": "legendary",
     "battingSkill": 69,
-    "bowlingSkill": 87,
+    "bowlingSkill": 86,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18513,7 +17857,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 24,
     "rarityTier": "legendary",
     "battingSkill": 83,
-    "bowlingSkill": 73,
+    "bowlingSkill": 72,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18536,7 +17880,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 25,
     "rarityTier": "rare",
     "battingSkill": 51,
-    "bowlingSkill": 77,
+    "bowlingSkill": 76,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18559,7 +17903,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 62,
-    "bowlingSkill": 86,
+    "bowlingSkill": 85,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18707,7 +18051,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 27,
     "rarityTier": "rare",
     "battingSkill": 68,
-    "bowlingSkill": 53,
+    "bowlingSkill": 52,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18732,7 +18076,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 23,
     "rarityTier": "rare",
     "battingSkill": 59,
-    "bowlingSkill": 74,
+    "bowlingSkill": 73,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18756,7 +18100,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 33,
     "rarityTier": "legendary",
-    "battingSkill": 92,
+    "battingSkill": 93,
     "bowlingSkill": 18,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -18779,7 +18123,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 30,
     "rarityTier": "legendary",
-    "battingSkill": 82,
+    "battingSkill": 83,
     "bowlingSkill": 43,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -18802,7 +18146,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 26,
     "rarityTier": "rare",
-    "battingSkill": 74,
+    "battingSkill": 75,
     "bowlingSkill": 71,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -18828,7 +18172,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 39,
     "rarityTier": "rare",
     "battingSkill": 73,
-    "bowlingSkill": 52,
+    "bowlingSkill": 51,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -18850,7 +18194,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 27,
     "rarityTier": "uncommon",
-    "battingSkill": 56,
+    "battingSkill": 57,
     "bowlingSkill": 52,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -18980,29 +18324,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-cdc2646c",
-    "name": "Ajinkya Rahane",
-    "shortName": "A Rahane",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-medium",
-    "age": 38,
-    "rarityTier": "legendary",
-    "battingSkill": 88,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/cdc2646c-1fe7-4bc2-b26e-42453f45a212.jpg"
   },
   {
     "id": "real-cdf84be5",
@@ -19183,8 +18504,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "battingHand": "right",
     "bowlingStyle": "right-arm-fast",
     "age": 29,
-    "rarityTier": "uncommon",
-    "battingSkill": 67,
+    "rarityTier": "rare",
+    "battingSkill": 68,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -19282,7 +18603,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 32,
     "rarityTier": "legendary",
-    "battingSkill": 96,
+    "battingSkill": 97,
     "bowlingSkill": 65,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -19377,7 +18698,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "rare",
     "battingSkill": 44,
-    "bowlingSkill": 71,
+    "bowlingSkill": 70,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -19497,8 +18818,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-fast",
     "age": 26,
     "rarityTier": "uncommon",
-    "battingSkill": 61,
-    "bowlingSkill": 62,
+    "battingSkill": 62,
+    "bowlingSkill": 61,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -19922,7 +19243,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 22,
     "rarityTier": "legendary",
     "battingSkill": 99,
-    "bowlingSkill": 63,
+    "bowlingSkill": 62,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -19995,7 +19316,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 41,
     "rarityTier": "rare",
     "battingSkill": 70,
-    "bowlingSkill": 71,
+    "bowlingSkill": 70,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -20003,29 +19324,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/da6820cb-29e7-4b09-a611-ea244f8d84f5.jpg"
-  },
-  {
-    "id": "real-da72c2df",
-    "name": "Asif Ali",
-    "shortName": "A Ali",
-    "country": "Pakistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Pakistan National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-medium",
-    "age": 34,
-    "rarityTier": "rare",
-    "battingSkill": 76,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/da72c2df-234d-458f-9335-d65d5b2600b2.jpg"
   },
   {
     "id": "real-da8eab48",
@@ -20040,7 +19338,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 28,
     "rarityTier": "legendary",
-    "battingSkill": 93,
+    "battingSkill": 94,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -20063,7 +19361,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 25,
     "rarityTier": "legendary",
-    "battingSkill": 91,
+    "battingSkill": 92,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -20124,29 +19422,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-db17660e",
-    "name": "Ashton Agar",
-    "shortName": "A Agar",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "left-arm-spinner",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 32,
-    "rarityTier": "legendary",
-    "battingSkill": 64,
-    "bowlingSkill": 97,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/db17660e-4add-4123-b963-4215bf4e8660.jpg"
-  },
-  {
     "id": "real-db83f0cb",
     "name": "Pritom Kumar",
     "shortName": "P Kumar",
@@ -20183,7 +19458,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 30,
     "rarityTier": "uncommon",
     "battingSkill": 58,
-    "bowlingSkill": 66,
+    "bowlingSkill": 65,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -20931,7 +20206,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "legendary",
     "battingSkill": 91,
-    "bowlingSkill": 90,
+    "bowlingSkill": 89,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -21048,7 +20323,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 26,
     "rarityTier": "legendary",
     "battingSkill": 90,
-    "bowlingSkill": 98,
+    "bowlingSkill": 97,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -21120,8 +20395,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-fast",
     "age": 35,
     "rarityTier": "legendary",
-    "battingSkill": 83,
-    "bowlingSkill": 46,
+    "battingSkill": 84,
+    "bowlingSkill": 45,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -21152,29 +20427,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-eac0032b",
-    "name": "Devon Conway",
-    "shortName": "D Conway",
-    "country": "New Zealand",
-    "nationalityType": "overseas",
-    "currentTeam": "New Zealand National Team",
-    "primaryRole": "wicketkeeper-batter",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-medium",
-    "age": 35,
-    "rarityTier": "legendary",
-    "battingSkill": 99,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 78,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/eac0032b-055a-497b-9d4e-f54008414515.jpg"
   },
   {
     "id": "real-eaddf13e",
@@ -21337,7 +20589,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 30,
     "rarityTier": "legendary",
-    "battingSkill": 81,
+    "battingSkill": 82,
     "bowlingSkill": 82,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -21360,7 +20612,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 28,
     "rarityTier": "legendary",
-    "battingSkill": 82,
+    "battingSkill": 83,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -21386,7 +20638,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 30,
     "rarityTier": "legendary",
     "battingSkill": 73,
-    "bowlingSkill": 90,
+    "bowlingSkill": 89,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -21409,7 +20661,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "rare",
     "battingSkill": 15,
-    "bowlingSkill": 76,
+    "bowlingSkill": 75,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -21440,29 +20692,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-eccad6b2",
-    "name": "Evin Lewis",
-    "shortName": "E Lewis",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "none",
-    "age": 34,
-    "rarityTier": "legendary",
-    "battingSkill": 89,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/eccad6b2-7fb5-4be4-a6a1-aeaadbd9f85b.jpg"
   },
   {
     "id": "real-ecdcec86",
@@ -21500,7 +20729,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 31,
     "rarityTier": "legendary",
-    "battingSkill": 90,
+    "battingSkill": 91,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -21569,7 +20798,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 35,
     "rarityTier": "uncommon",
-    "battingSkill": 63,
+    "battingSkill": 64,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -21761,8 +20990,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 27,
     "rarityTier": "rare",
-    "battingSkill": 55,
-    "bowlingSkill": 72,
+    "battingSkill": 56,
+    "bowlingSkill": 71,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -21784,7 +21013,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-fast",
     "age": 32,
     "rarityTier": "legendary",
-    "battingSkill": 53,
+    "battingSkill": 54,
     "bowlingSkill": 98,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -21810,7 +21039,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "legendary",
     "battingSkill": 87,
-    "bowlingSkill": 84,
+    "bowlingSkill": 83,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -21953,7 +21182,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 29,
     "rarityTier": "legendary",
-    "battingSkill": 74,
+    "battingSkill": 75,
     "bowlingSkill": 82,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -21978,7 +21207,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 31,
     "rarityTier": "legendary",
-    "battingSkill": 87,
+    "battingSkill": 88,
     "bowlingSkill": 62,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -22002,7 +21231,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 27,
     "rarityTier": "uncommon",
     "battingSkill": 15,
-    "bowlingSkill": 61,
+    "bowlingSkill": 60,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -22127,31 +21356,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-f54c649a",
-    "name": "Haris Rauf",
-    "shortName": "H Rauf",
-    "country": "Pakistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Pakistan National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 32,
-    "rarityTier": "legendary",
-    "battingSkill": 63,
-    "bowlingSkill": 83,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/f54c649a-71a1-4f95-80d0-59e0087b4493.jpg"
   },
   {
     "id": "real-f589ad55",
@@ -22308,8 +21512,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "left-arm-fast",
     "age": 29,
     "rarityTier": "uncommon",
-    "battingSkill": 41,
-    "bowlingSkill": 60,
+    "battingSkill": 42,
+    "bowlingSkill": 59,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -22331,7 +21535,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 27,
     "rarityTier": "uncommon",
-    "battingSkill": 64,
+    "battingSkill": 65,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -22340,31 +21544,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-f75212f8",
-    "name": "Daryl Mitchell",
-    "shortName": "D Mitchell",
-    "country": "New Zealand",
-    "nationalityType": "overseas",
-    "currentTeam": "New Zealand National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-medium",
-    "age": 35,
-    "rarityTier": "legendary",
-    "battingSkill": 87,
-    "bowlingSkill": 15,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/f75212f8-37fb-4cf0-8f37-d681b4cb66b2.jpg"
   },
   {
     "id": "real-f811a8e9",
@@ -22474,7 +21653,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 34,
     "rarityTier": "rare",
     "battingSkill": 70,
-    "bowlingSkill": 74,
+    "bowlingSkill": 73,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -22499,7 +21678,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "uncommon",
     "battingSkill": 62,
-    "bowlingSkill": 60,
+    "bowlingSkill": 59,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -22522,7 +21701,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "rare",
     "battingSkill": 36,
-    "bowlingSkill": 70,
+    "bowlingSkill": 69,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -23071,7 +22250,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 32,
     "rarityTier": "legendary",
     "battingSkill": 76,
-    "bowlingSkill": 86,
+    "bowlingSkill": 85,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -23116,7 +22295,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 25,
     "rarityTier": "uncommon",
-    "battingSkill": 50,
+    "battingSkill": 51,
     "bowlingSkill": 48,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -23142,7 +22321,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 25,
     "rarityTier": "legendary",
     "battingSkill": 74,
-    "bowlingSkill": 90,
+    "bowlingSkill": 89,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -23223,31 +22402,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-c645a0bd",
-    "name": "Imad Wasim",
-    "shortName": "I Wasim",
-    "country": "Pakistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Pakistan National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 37,
-    "rarityTier": "legendary",
-    "battingSkill": 75,
-    "bowlingSkill": 99,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/c645a0bd-45f1-42bc-8314-b81235800918.jpg"
-  },
-  {
     "id": "real-e49a1d96",
     "name": "Ish Sodhi",
     "shortName": "I Sodhi",
@@ -23294,79 +22448,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/9ae68636-48d9-488f-8adc-e62a19815d85.jpg"
   },
   {
-    "id": "real-d8b0e01b",
-    "name": "Jacob Bethell",
-    "shortName": "J Bethell",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 22,
-    "rarityTier": "legendary",
-    "battingSkill": 99,
-    "bowlingSkill": 63,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-f8e6accd",
-    "name": "Jason Holder",
-    "shortName": "J Holder",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 34,
-    "rarityTier": "rare",
-    "battingSkill": 70,
-    "bowlingSkill": 74,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/f8e6accd-6b73-4869-93a6-d45519a361f0.jpg"
-  },
-  {
-    "id": "real-2a2c430b",
-    "name": "Jason Roy",
-    "shortName": "J Roy",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "none",
-    "age": 35,
-    "rarityTier": "legendary",
-    "battingSkill": 94,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/2a2c430b-c0dc-4154-a63f-32ffe8ef02fb.jpg"
-  },
-  {
     "id": "real-6602d875",
     "name": "Jasprit Bumrah",
     "shortName": "J Bumrah",
@@ -23379,7 +22460,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 32,
     "rarityTier": "legendary",
-    "battingSkill": 58,
+    "battingSkill": 59,
     "bowlingSkill": 90,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -23388,52 +22469,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/6602d875-cf56-46a3-866c-de80aaa006bc.jpg"
-  },
-  {
-    "id": "real-f589d2a9",
-    "name": "Jaydev Unadkat",
-    "shortName": "J Unadkat",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "left-arm-fast",
-    "age": 34,
-    "rarityTier": "rare",
-    "battingSkill": 69,
-    "bowlingSkill": 69,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/f589d2a9-4e44-464d-9741-e224354a1370.jpg"
-  },
-  {
-    "id": "real-1ee41e9e",
-    "name": "Joe Root",
-    "shortName": "J Root",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 35,
-    "rarityTier": "uncommon",
-    "battingSkill": 54,
-    "bowlingSkill": 67,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/1ee41e9e-e219-4df2-9861-2360b28bb307.jpg"
   },
   {
     "id": "real-19758cd7",
@@ -23449,7 +22484,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "legendary",
     "battingSkill": 81,
-    "bowlingSkill": 88,
+    "bowlingSkill": 87,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -23457,29 +22492,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/19758cd7-4cce-47d8-b1fe-5975609de802.jpg"
-  },
-  {
-    "id": "real-715107b5",
-    "name": "Jonny Bairstow",
-    "shortName": "J Bairstow",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "wicketkeeper-batter",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-medium",
-    "age": 36,
-    "rarityTier": "legendary",
-    "battingSkill": 98,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 78,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/715107b5-0412-452b-aa0b-04394f7b1327.jpg"
   },
   {
     "id": "real-7567e305",
@@ -23528,29 +22540,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/2190c28d-1712-4fd2-ae44-9ac54319fc21.jpg"
   },
   {
-    "id": "real-c040878f",
-    "name": "Josh Inglis",
-    "shortName": "J Inglis",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "wicketkeeper-batter",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "none",
-    "age": 31,
-    "rarityTier": "legendary",
-    "battingSkill": 99,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 78,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/c040878f-3995-444c-a0f2-10a456f6c84d.jpg"
-  },
-  {
     "id": "real-a81da20a",
     "name": "Kagiso Rabada",
     "shortName": "K Rabada",
@@ -23566,7 +22555,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "legendary",
     "battingSkill": 66,
-    "bowlingSkill": 81,
+    "bowlingSkill": 80,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -23574,29 +22563,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/a81da20a-e420-476a-baf6-204fc219dbdd.jpg"
-  },
-  {
-    "id": "real-67b145ea",
-    "name": "Kane Richardson",
-    "shortName": "K Richardson",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 35,
-    "rarityTier": "rare",
-    "battingSkill": 62,
-    "bowlingSkill": 79,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/67b145ea-3419-46db-acf4-35e8cac24f87.jpg"
   },
   {
     "id": "real-a46cfa8b",
@@ -23611,7 +22577,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-offspin",
     "age": 35,
     "rarityTier": "legendary",
-    "battingSkill": 94,
+    "battingSkill": 95,
     "bowlingSkill": 78,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -23620,29 +22586,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/a46cfa8b-96ae-4fb1-9499-65b8ce7e9634.jpg"
-  },
-  {
-    "id": "real-8df6183b",
-    "name": "Khaleel Ahmed",
-    "shortName": "K Ahmed",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "left-arm-fast",
-    "age": 28,
-    "rarityTier": "rare",
-    "battingSkill": 31,
-    "bowlingSkill": 75,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/8df6183b-1c95-46d2-85c0-e185792d03f1.jpg"
   },
   {
     "id": "real-a034346c",
@@ -23668,31 +22611,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/a034346c-b408-4d29-a0f0-8b12430be28e.jpg"
   },
   {
-    "id": "real-81c09c1b",
-    "name": "Krunal Pandya",
-    "shortName": "K Pandya",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 35,
-    "rarityTier": "legendary",
-    "battingSkill": 82,
-    "bowlingSkill": 81,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/81c09c1b-1b1d-4e87-9eaa-d7d0a89a6159.jpg"
-  },
-  {
     "id": "real-1e651cfb",
     "name": "Kuldeep Yadav",
     "shortName": "K Yadav",
@@ -23707,7 +22625,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 31,
     "rarityTier": "rare",
-    "battingSkill": 63,
+    "battingSkill": 64,
     "bowlingSkill": 79,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -23741,31 +22659,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/d17bb85d-cb7c-416b-8563-613c4eb543f9.jpg"
   },
   {
-    "id": "real-d1c0a448",
-    "name": "Liam Livingstone",
-    "shortName": "L Livingstone",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "leg-spinner"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "leg-spin",
-    "age": 32,
-    "rarityTier": "legendary",
-    "battingSkill": 96,
-    "bowlingSkill": 65,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/d1c0a448-6ee6-473a-90a2-e6a486698a8a.jpg"
-  },
-  {
     "id": "real-185c8905",
     "name": "Litton Das",
     "shortName": "L Das",
@@ -23789,77 +22682,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/185c8905-4ca3-4e13-93f6-563d99600b58.jpg"
   },
   {
-    "id": "real-604d7c88",
-    "name": "Lockie Ferguson",
-    "shortName": "L Ferguson",
-    "country": "New Zealand",
-    "nationalityType": "overseas",
-    "currentTeam": "New Zealand National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 35,
-    "rarityTier": "legendary",
-    "battingSkill": 87,
-    "bowlingSkill": 70,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/604d7c88-4f5d-40d9-b08b-330420964d87.jpg"
-  },
-  {
-    "id": "real-a1782393",
-    "name": "Lungi Ngidi",
-    "shortName": "L Ngidi",
-    "country": "South Africa",
-    "nationalityType": "overseas",
-    "currentTeam": "South Africa National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 30,
-    "rarityTier": "legendary",
-    "battingSkill": 55,
-    "bowlingSkill": 85,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/a1782393-3479-4caa-9c27-79cb87df9abc.jpg"
-  },
-  {
-    "id": "real-7e09eef0",
-    "name": "Maheesh Theekshana",
-    "shortName": "M Theekshana",
-    "country": "Sri Lanka",
-    "nationalityType": "overseas",
-    "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "off-spinner"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 25,
-    "rarityTier": "legendary",
-    "battingSkill": 59,
-    "bowlingSkill": 80,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/7e09eef0-d886-4997-b568-5fd4e0dfbbec.jpg"
-  },
-  {
     "id": "real-80a056bf",
     "name": "Mahmudullah",
     "shortName": "Mahmudullah",
@@ -23875,7 +22697,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 40,
     "rarityTier": "legendary",
     "battingSkill": 80,
-    "bowlingSkill": 88,
+    "bowlingSkill": 87,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -23883,31 +22705,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/80a056bf-343f-44e8-82de-db59340f77bb.jpg"
-  },
-  {
-    "id": "real-d3c53885",
-    "name": "Marco Jansen",
-    "shortName": "M Jansen",
-    "country": "South Africa",
-    "nationalityType": "overseas",
-    "currentTeam": "South Africa National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "left-arm-fast",
-    "age": 26,
-    "rarityTier": "uncommon",
-    "battingSkill": 61,
-    "bowlingSkill": 62,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/d3c53885-7016-4228-8a20-1dd98214489d.jpg"
   },
   {
     "id": "real-11340697",
@@ -23947,8 +22744,8 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 36,
     "rarityTier": "legendary",
-    "battingSkill": 70,
-    "bowlingSkill": 81,
+    "battingSkill": 71,
+    "bowlingSkill": 80,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -23956,29 +22753,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/e8041203-33e0-498f-b1e6-186f72b18260.jpg"
-  },
-  {
-    "id": "real-80e6923c",
-    "name": "Marnus Labuschagne",
-    "shortName": "M Labuschagne",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "leg-spin",
-    "age": 32,
-    "rarityTier": "common",
-    "battingSkill": 41,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/80e6923c-5773-4292-a4c7-20fcf48bb8c7.jpg"
   },
   {
     "id": "real-0eb2e571",
@@ -24004,79 +22778,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/0eb2e571-a372-4068-8bde-2f85ad7e972a.jpg"
   },
   {
-    "id": "real-b48e91c6",
-    "name": "Matthew Wade",
-    "shortName": "M Wade",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "wicketkeeper-batter",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "none",
-    "age": 38,
-    "rarityTier": "uncommon",
-    "battingSkill": 66,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 78,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/b48e91c6-bbc9-40d9-be6e-d48d4d040dd6.jpg"
-  },
-  {
-    "id": "real-6eaac800",
-    "name": "Mitchell Marsh",
-    "shortName": "M Marsh",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 34,
-    "rarityTier": "legendary",
-    "battingSkill": 79,
-    "bowlingSkill": 81,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/6eaac800-13e7-4a07-8ee2-14acd04cc53f.jpg"
-  },
-  {
-    "id": "real-16ec245b",
-    "name": "Mitchell Santner",
-    "shortName": "M Santner",
-    "country": "New Zealand",
-    "nationalityType": "overseas",
-    "currentTeam": "New Zealand National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 34,
-    "rarityTier": "legendary",
-    "battingSkill": 63,
-    "bowlingSkill": 89,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/16ec245b-022d-4104-bd8f-ccc780428390.jpg"
-  },
-  {
     "id": "real-bceb7084",
     "name": "Mitchell Starc",
     "shortName": "M Starc",
@@ -24092,7 +22793,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "legendary",
     "battingSkill": 63,
-    "bowlingSkill": 83,
+    "bowlingSkill": 82,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -24100,54 +22801,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/bceb7084-1dda-4d76-b691-43c5a29d39a7.jpg"
-  },
-  {
-    "id": "real-9f06f450",
-    "name": "Moeen Ali",
-    "shortName": "M Ali",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "off-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 39,
-    "rarityTier": "legendary",
-    "battingSkill": 85,
-    "bowlingSkill": 90,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/9f06f450-c300-4b49-9359-7876f492f686.jpg"
-  },
-  {
-    "id": "real-7f53734b",
-    "name": "Mohammad Amir",
-    "shortName": "M Amir",
-    "country": "Pakistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Pakistan National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-fast",
-    "age": 34,
-    "rarityTier": "legendary",
-    "battingSkill": 56,
-    "bowlingSkill": 93,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/7f53734b-ef11-4980-ac26-5963d439798a.jpg"
   },
   {
     "id": "real-e4e9ba08",
@@ -24271,29 +22924,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
-    "id": "real-c8864ac7",
-    "name": "Mujeeb Ur Rahman",
-    "shortName": "M Rahman",
-    "country": "Afghanistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Afghanistan National Team",
-    "primaryRole": "off-spinner",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 25,
-    "rarityTier": "rare",
-    "battingSkill": 51,
-    "bowlingSkill": 77,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/c8864ac7-af66-4719-8100-9dd9fd7e60f3.jpg"
-  },
-  {
     "id": "real-3c6eac03",
     "name": "Mukesh Kumar",
     "shortName": "M Kumar",
@@ -24342,56 +22972,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/7bb5f657-2d95-4d37-a7d9-0b7b03a43f17.jpg"
   },
   {
-    "id": "real-4a0a483d",
-    "name": "Mustafizur Rahman",
-    "shortName": "M Rahman",
-    "country": "Bangladesh",
-    "nationalityType": "overseas",
-    "currentTeam": "Bangladesh National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-fast",
-    "age": 30,
-    "rarityTier": "rare",
-    "battingSkill": 54,
-    "bowlingSkill": 79,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/4a0a483d-de7f-4313-b2ed-8eceb3d8bb45.jpg"
-  },
-  {
-    "id": "real-a93dcc2b",
-    "name": "Naseem Shah",
-    "shortName": "N Shah",
-    "country": "Pakistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Pakistan National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 23,
-    "rarityTier": "rare",
-    "battingSkill": 62,
-    "bowlingSkill": 75,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/a93dcc2b-b51a-47d1-85fc-e29d331d029d.jpg"
-  },
-  {
     "id": "real-6cdf754e",
     "name": "Nathan Lyon",
     "shortName": "N Lyon",
@@ -24413,54 +22993,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/6cdf754e-15d0-4220-a35a-8b5d87b1ee61.jpg"
-  },
-  {
-    "id": "real-80193c8f",
-    "name": "Navdeep Saini",
-    "shortName": "N Saini",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 33,
-    "rarityTier": "uncommon",
-    "battingSkill": 58,
-    "bowlingSkill": 63,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/80193c8f-687d-47c3-a7e9-b098a83c7812.jpg"
-  },
-  {
-    "id": "real-77ba09b0",
-    "name": "Naveen-ul-Haq",
-    "shortName": "Naveen-ul-Haq",
-    "country": "Afghanistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Afghanistan National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 26,
-    "rarityTier": "rare",
-    "battingSkill": 63,
-    "bowlingSkill": 74,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/77ba09b0-773a-4008-bed1-e4fd642cffc5.jpg"
   },
   {
     "id": "real-4e8ab9cd",
@@ -24486,29 +23018,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/4e8ab9cd-c5af-430e-887b-d22bf74ad052.jpg"
   },
   {
-    "id": "real-10237113",
-    "name": "Obed McCoy",
-    "shortName": "O McCoy",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-fast",
-    "age": 29,
-    "rarityTier": "rare",
-    "battingSkill": 75,
-    "bowlingSkill": 73,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/10237113-888e-4881-a360-4b08577f38cc.jpg"
-  },
-  {
     "id": "real-13b3d56e",
     "name": "Pat Cummins",
     "shortName": "P Cummins",
@@ -24521,7 +23030,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-fast",
     "age": 33,
     "rarityTier": "legendary",
-    "battingSkill": 84,
+    "battingSkill": 85,
     "bowlingSkill": 72,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -24530,29 +23039,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/13b3d56e-0fba-4d31-a174-d211211404e2.jpg"
-  },
-  {
-    "id": "real-bbbf3b4e",
-    "name": "Pathum Nissanka",
-    "shortName": "P Nissanka",
-    "country": "Sri Lanka",
-    "nationalityType": "overseas",
-    "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "none",
-    "age": 28,
-    "rarityTier": "legendary",
-    "battingSkill": 87,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/bbbf3b4e-dbc3-4f2a-986d-1a0227ea5a06.jpg"
   },
   {
     "id": "real-f236dae0",
@@ -24570,7 +23056,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 37,
     "rarityTier": "legendary",
     "battingSkill": 66,
-    "bowlingSkill": 82,
+    "bowlingSkill": 81,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -24578,54 +23064,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/f236dae0-e7df-4084-a9b1-1bc3c7793f60.jpg"
-  },
-  {
-    "id": "real-99eb6b5c",
-    "name": "Prasidh Krishna",
-    "shortName": "P Krishna",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 30,
-    "rarityTier": "rare",
-    "battingSkill": 39,
-    "bowlingSkill": 68,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/99eb6b5c-379f-46da-bab7-dc8fd31ba435.jpg"
-  },
-  {
-    "id": "real-9ded3a8d",
-    "name": "Prithvi Shaw",
-    "shortName": "P Shaw",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "finisher",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 26,
-    "rarityTier": "legendary",
-    "battingSkill": 88,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/9ded3a8d-3008-40f1-a18c-483af090aab8.jpg"
   },
   {
     "id": "real-000f9f7c",
@@ -24651,54 +23089,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/000f9f7c-cc24-4a85-8638-b013b0f4760e.jpg"
   },
   {
-    "id": "real-00fee12c",
-    "name": "Rahmanullah Gurbaz",
-    "shortName": "R Gurbaz",
-    "country": "Afghanistan",
-    "nationalityType": "overseas",
-    "currentTeam": "Afghanistan National Team",
-    "primaryRole": "wicketkeeper-batter",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-medium",
-    "age": 24,
-    "rarityTier": "legendary",
-    "battingSkill": 83,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 78,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/00fee12c-63aa-43ed-a1ed-cd156a2e26bc.jpg"
-  },
-  {
-    "id": "real-085d49b0",
-    "name": "Rahul Tewatia",
-    "shortName": "R Tewatia",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "leg-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "leg-spin",
-    "age": 33,
-    "rarityTier": "legendary",
-    "battingSkill": 86,
-    "bowlingSkill": 76,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/085d49b0-d5e5-4fc5-955b-39758a134545.jpg"
-  },
-  {
     "id": "real-f0687183",
     "name": "Rashid Khan",
     "shortName": "R Khan",
@@ -24714,7 +23104,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 27,
     "rarityTier": "legendary",
     "battingSkill": 82,
-    "bowlingSkill": 95,
+    "bowlingSkill": 94,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -24747,29 +23137,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/4952c32d-ffb2-4070-bc15-ceb3989c229b.jpg"
   },
   {
-    "id": "real-9a71201c",
-    "name": "Ravi Bishnoi",
-    "shortName": "R Bishnoi",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "leg-spin",
-    "age": 25,
-    "rarityTier": "legendary",
-    "battingSkill": 47,
-    "bowlingSkill": 81,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/9a71201c-c377-45aa-a355-1af6d2c4bae3.jpg"
-  },
-  {
     "id": "real-0068c9d8",
     "name": "Ravichandran Ashwin",
     "shortName": "R Ashwin",
@@ -24785,7 +23152,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 39,
     "rarityTier": "legendary",
     "battingSkill": 70,
-    "bowlingSkill": 87,
+    "bowlingSkill": 86,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -24810,7 +23177,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 37,
     "rarityTier": "legendary",
     "battingSkill": 87,
-    "bowlingSkill": 82,
+    "bowlingSkill": 81,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -24818,75 +23185,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/81b446e1-bfea-45a7-a15e-062b8157a323.jpg"
-  },
-  {
-    "id": "real-7e9dc8b1",
-    "name": "Reece Topley",
-    "shortName": "R Topley",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "left-arm-fast",
-    "age": 32,
-    "rarityTier": "uncommon",
-    "battingSkill": 39,
-    "bowlingSkill": 51,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/7e9dc8b1-c44c-44f1-8663-cc42bad7709b.jpg"
-  },
-  {
-    "id": "real-943c1332",
-    "name": "Reeza Hendricks",
-    "shortName": "R Hendricks",
-    "country": "South Africa",
-    "nationalityType": "overseas",
-    "currentTeam": "South Africa National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 36,
-    "rarityTier": "legendary",
-    "battingSkill": 90,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/943c1332-8845-460b-93c9-3714d97f8788.jpg"
-  },
-  {
-    "id": "real-11864f31",
-    "name": "Rinku Singh",
-    "shortName": "R Singh",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 28,
-    "rarityTier": "legendary",
-    "battingSkill": 94,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/11864f31-b766-4766-9cbc-5026015ace48.jpg"
   },
   {
     "id": "real-a52b2d20",
@@ -24912,31 +23210,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/a52b2d20-7c98-4238-9ba4-ec78419a5cc2.jpg"
   },
   {
-    "id": "real-b51bb4e5",
-    "name": "Riyan Parag",
-    "shortName": "R Parag",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "leg-spinner"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "leg-spin",
-    "age": 24,
-    "rarityTier": "legendary",
-    "battingSkill": 85,
-    "bowlingSkill": 24,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/b51bb4e5-acdf-423b-abb3-7a1e6694d2c2.jpg"
-  },
-  {
     "id": "real-2a6fc54c",
     "name": "Robin Uthappa",
     "shortName": "R Uthappa",
@@ -24949,7 +23222,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "right-arm-medium",
     "age": 40,
     "rarityTier": "legendary",
-    "battingSkill": 87,
+    "battingSkill": 88,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 78,
@@ -24973,7 +23246,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 39,
     "rarityTier": "legendary",
     "battingSkill": 90,
-    "bowlingSkill": 79,
+    "bowlingSkill": 78,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -24982,31 +23255,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "big-match-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/03bda674-3916-4d64-952e-00a6c19c01e1.jpg"
-  },
-  {
-    "id": "real-7fd4fa20",
-    "name": "Romario Shepherd",
-    "shortName": "R Shepherd",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 31,
-    "rarityTier": "legendary",
-    "battingSkill": 96,
-    "bowlingSkill": 18,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/7fd4fa20-bc49-4337-ae8a-540b67cb011d.jpg"
   },
   {
     "id": "real-0095ee03",
@@ -25030,75 +23278,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/0095ee03-e9a5-4418-b568-fc6eaa60ea72.jpg"
-  },
-  {
-    "id": "real-c699ec2b",
-    "name": "Rovman Powell",
-    "shortName": "R Powell",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "finisher",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 32,
-    "rarityTier": "legendary",
-    "battingSkill": 83,
-    "bowlingSkill": 53,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/c699ec2b-a5f6-4ee0-a42d-79391b65b293.jpg"
-  },
-  {
-    "id": "real-50b70c71",
-    "name": "Ruturaj Gaikwad",
-    "shortName": "R Gaikwad",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 29,
-    "rarityTier": "legendary",
-    "battingSkill": 99,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/50b70c71-1535-41c0-87fd-c12883105ede.jpg"
-  },
-  {
-    "id": "real-79f582a1",
-    "name": "Sai Sudharsan",
-    "shortName": "S Sudharsan",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "top-order",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "leg-spin",
-    "age": 24,
-    "rarityTier": "legendary",
-    "battingSkill": 99,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
   },
   {
     "id": "real-45613012",
@@ -25172,29 +23351,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/f56f4395-af31-466a-8762-d5908964ec69.jpg"
   },
   {
-    "id": "real-e4a9da20",
-    "name": "Sean Abbott",
-    "shortName": "S Abbott",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 34,
-    "rarityTier": "uncommon",
-    "battingSkill": 65,
-    "bowlingSkill": 15,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/e4a9da20-15ca-4b1b-bb5d-044beb161ea8.jpg"
-  },
-  {
     "id": "real-26c7e157",
     "name": "Shadab Khan",
     "shortName": "S Khan",
@@ -25245,79 +23401,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/df7bffbc-02e6-41ef-8049-fd256c850fe8.jpg"
   },
   {
-    "id": "real-e5790c27",
-    "name": "Shai Hope",
-    "shortName": "S Hope",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "wicketkeeper-batter",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "none",
-    "age": 32,
-    "rarityTier": "legendary",
-    "battingSkill": 88,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 78,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/e5790c27-c428-4de8-82f7-d69a5452923e.jpg"
-  },
-  {
-    "id": "real-f668f7ea",
-    "name": "Shakib Al Hasan",
-    "shortName": "S Hasan",
-    "country": "Bangladesh",
-    "nationalityType": "overseas",
-    "currentTeam": "Bangladesh National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "left-arm-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-orthodox",
-    "age": 39,
-    "rarityTier": "legendary",
-    "battingSkill": 78,
-    "bowlingSkill": 84,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/f668f7ea-c720-4352-9435-840c3749b1e5.jpg"
-  },
-  {
-    "id": "real-c1257351",
-    "name": "Shardul Thakur",
-    "shortName": "S Thakur",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 34,
-    "rarityTier": "rare",
-    "battingSkill": 74,
-    "bowlingSkill": 68,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/c1257351-51ca-446f-b7f5-01fe92e75076.jpg"
-  },
-  {
     "id": "real-05bb5069",
     "name": "Shikhar Dhawan",
     "shortName": "S Dhawan",
@@ -25331,7 +23414,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 40,
     "rarityTier": "legendary",
     "battingSkill": 94,
-    "bowlingSkill": 87,
+    "bowlingSkill": 86,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -25340,54 +23423,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "big-match-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/05bb5069-68d9-422d-9676-ba5656672227.jpg"
-  },
-  {
-    "id": "real-4269d64c",
-    "name": "Shimron Hetmyer",
-    "shortName": "S Hetmyer",
-    "country": "West Indies",
-    "nationalityType": "overseas",
-    "currentTeam": "West Indies National Team",
-    "primaryRole": "finisher",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "none",
-    "age": 29,
-    "rarityTier": "legendary",
-    "battingSkill": 97,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/4269d64c-962d-4cd9-b2d2-1a62f51256b8.jpg"
-  },
-  {
-    "id": "real-22ee45d8",
-    "name": "Shivam Dube",
-    "shortName": "S Dube",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-medium",
-    "age": 33,
-    "rarityTier": "legendary",
-    "battingSkill": 94,
-    "bowlingSkill": 61,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/22ee45d8-0538-4e3e-a758-c515f9b86d11.jpg"
   },
   {
     "id": "real-77791963",
@@ -25402,7 +23437,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "bowlingStyle": "leg-spin",
     "age": 31,
     "rarityTier": "legendary",
-    "battingSkill": 91,
+    "battingSkill": 92,
     "bowlingSkill": 0,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
@@ -25508,52 +23543,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/8c579447-bfbd-4cf6-a283-db4dc1d5ac33.jpg"
   },
   {
-    "id": "real-d8826d0d",
-    "name": "T Natarajan",
-    "shortName": "T Natarajan",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "left-arm-fast",
-    "age": 35,
-    "rarityTier": "rare",
-    "battingSkill": 42,
-    "bowlingSkill": 72,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/d8826d0d-ef95-4dce-a47a-b09b97f49f07.jpg"
-  },
-  {
-    "id": "real-15c1b556",
-    "name": "Tabraiz Shamsi",
-    "shortName": "T Shamsi",
-    "country": "South Africa",
-    "nationalityType": "overseas",
-    "currentTeam": "South Africa National Team",
-    "primaryRole": "leg-spinner",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "leg-spin",
-    "age": 36,
-    "rarityTier": "common",
-    "battingSkill": 39,
-    "bowlingSkill": 48,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/15c1b556-a5b4-4cad-94da-0417c74b6918.jpg"
-  },
-  {
     "id": "real-1fca0272",
     "name": "Tamim Iqbal",
     "shortName": "T Iqbal",
@@ -25592,7 +23581,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 31,
     "rarityTier": "legendary",
     "battingSkill": 61,
-    "bowlingSkill": 88,
+    "bowlingSkill": 87,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -25600,75 +23589,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/9b19bd38-a54b-4071-b1e1-8ad78743235f.jpg"
-  },
-  {
-    "id": "real-aefd9074",
-    "name": "Tilak Varma",
-    "shortName": "T Varma",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "finisher",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 23,
-    "rarityTier": "legendary",
-    "battingSkill": 99,
-    "bowlingSkill": 99,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/aefd9074-da5a-408d-94f1-3be0e79d3b82.jpg"
-  },
-  {
-    "id": "real-69718248",
-    "name": "Tim David",
-    "shortName": "T David",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "finisher",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 30,
-    "rarityTier": "legendary",
-    "battingSkill": 98,
-    "bowlingSkill": 52,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/69718248-2a3a-45d4-9a2a-6f4dfc6942a5.jpg"
-  },
-  {
-    "id": "real-52bf5e2a",
-    "name": "Tim Southee",
-    "shortName": "T Southee",
-    "country": "New Zealand",
-    "nationalityType": "overseas",
-    "currentTeam": "New Zealand National Team",
-    "primaryRole": "fast-bowler",
-    "secondaryRoles": [],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-fast",
-    "age": 37,
-    "rarityTier": "rare",
-    "battingSkill": 64,
-    "bowlingSkill": 68,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/52bf5e2a-1285-4bf7-a80c-52802636f0ba.jpg"
   },
   {
     "id": "real-d6720897",
@@ -25709,7 +23629,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 36,
     "rarityTier": "rare",
     "battingSkill": 64,
-    "bowlingSkill": 79,
+    "bowlingSkill": 78,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [
@@ -25717,54 +23637,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "real-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/6004fd3f-2264-470d-b39f-340d530b19b3.jpg"
-  },
-  {
-    "id": "real-8ea2f80b",
-    "name": "Usman Khawaja",
-    "shortName": "U Khawaja",
-    "country": "Australia",
-    "nationalityType": "overseas",
-    "currentTeam": "Australia National Team",
-    "primaryRole": "middle-order",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 39,
-    "rarityTier": "legendary",
-    "battingSkill": 80,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/8ea2f80b-b310-449a-9976-159607b5b595.jpg"
-  },
-  {
-    "id": "real-c3236037",
-    "name": "Venkatesh Iyer",
-    "shortName": "V Iyer",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "fast-bowler"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-medium",
-    "age": 31,
-    "rarityTier": "legendary",
-    "battingSkill": 93,
-    "bowlingSkill": 44,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/c3236037-6694-404a-8f01-9ad880564ea9.jpg"
   },
   {
     "id": "real-c61d247d",
@@ -25789,56 +23661,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
       "big-match-player"
     ],
     "imageUrl": "https://h.cricapi.com/img/players/c61d247d-7f77-452c-b495-2813a9cd0ac4.jpg"
-  },
-  {
-    "id": "real-ba4ba8aa",
-    "name": "Wanindu Hasaranga",
-    "shortName": "W Hasaranga",
-    "country": "Sri Lanka",
-    "nationalityType": "overseas",
-    "currentTeam": "Sri Lanka National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "leg-spinner"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "leg-spin",
-    "age": 28,
-    "rarityTier": "legendary",
-    "battingSkill": 59,
-    "bowlingSkill": 84,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/ba4ba8aa-3ebb-431a-83a9-a78844a68e26.jpg"
-  },
-  {
-    "id": "real-309d3ffd",
-    "name": "Washington Sundar",
-    "shortName": "W Sundar",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "bowling-allrounder",
-    "secondaryRoles": [
-      "off-spinner"
-    ],
-    "battingHand": "left",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 26,
-    "rarityTier": "rare",
-    "battingSkill": 70,
-    "bowlingSkill": 79,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/309d3ffd-3d06-460d-9427-c559a604d471.jpg"
   },
   {
     "id": "real-6efb08ed",
@@ -25866,54 +23688,6 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "imageUrl": "https://h.cricapi.com/img/players/6efb08ed-3316-40db-ad25-d8992fdf1a87.jpg"
   },
   {
-    "id": "real-c510fbe6",
-    "name": "Will Jacks",
-    "shortName": "W Jacks",
-    "country": "England",
-    "nationalityType": "overseas",
-    "currentTeam": "England National Team",
-    "primaryRole": "batting-allrounder",
-    "secondaryRoles": [
-      "off-spinner"
-    ],
-    "battingHand": "right",
-    "bowlingStyle": "right-arm-offspin",
-    "age": 27,
-    "rarityTier": "legendary",
-    "battingSkill": 99,
-    "bowlingSkill": 38,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/icon512.png"
-  },
-  {
-    "id": "real-a254feed",
-    "name": "Yashasvi Jaiswal",
-    "shortName": "Y Jaiswal",
-    "country": "India",
-    "nationalityType": "indian",
-    "currentTeam": "India National Team",
-    "primaryRole": "finisher",
-    "secondaryRoles": [],
-    "battingHand": "left",
-    "bowlingStyle": "leg-spin",
-    "age": 24,
-    "rarityTier": "legendary",
-    "battingSkill": 97,
-    "bowlingSkill": 0,
-    "fieldingSkill": 65,
-    "wicketkeepingSkill": 0,
-    "tags": [
-      "current-star",
-      "real-player"
-    ],
-    "imageUrl": "https://h.cricapi.com/img/players/a254feed-0d7c-4f04-a2ab-7bf9ceef156b.jpg"
-  },
-  {
     "id": "real-0d704a13",
     "name": "Yuzvendra Chahal",
     "shortName": "Y Chahal",
@@ -25927,7 +23701,7 @@ export const REAL_PLAYER_SPECS: PlayerSpec[] = [
     "age": 35,
     "rarityTier": "legendary",
     "battingSkill": 43,
-    "bowlingSkill": 86,
+    "bowlingSkill": 85,
     "fieldingSkill": 65,
     "wicketkeepingSkill": 0,
     "tags": [

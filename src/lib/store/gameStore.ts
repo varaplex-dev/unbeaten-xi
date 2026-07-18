@@ -4,7 +4,9 @@ import type { DraftCategoryId, Player } from "@/lib/types";
 import { SQUAD_SIZE } from "@/lib/types";
 import { getPlayerById } from "@/lib/data/players";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
-import { randomSeedString, todaySeedString } from "@/lib/engine/rng";
+import { getLegendPlayerById } from "@/lib/data/legendPlayers";
+import { ERA_TEAMS, getEraTeamById } from "@/lib/data/eraTeams";
+import { randomSeedString, todaySeedString, createRng, pickRandom } from "@/lib/engine/rng";
 import { autoAssignLineup, type BowlingPhase } from "@/lib/engine/lineup";
 import { simulateSeason, type MatchDecision, type MatchResult, type SeasonStats } from "@/lib/engine/simulate";
 import { generateRandomXI, spinImpactPlayer } from "@/lib/engine/draft";
@@ -18,14 +20,16 @@ export interface DraftPickRecord {
   playerId: string;
 }
 
-export type GameStage = "draft" | "impact-player" | "team-setup" | "season" | "results";
+export type GameStage = "draft" | "squad-select" | "impact-player" | "team-setup" | "season" | "results";
 
 /** "fictional" is the original mock roster; "all-time-real" draws from the
- * real, stats-derived pool in realPlayers.ts. */
+ * real, stats-derived pool in realPlayers.ts — including, when eraTeamId is
+ * set, the legends pool a spun Era Team's roster might reference. */
 export type GameMode = "fictional" | "all-time-real";
 
 function playerLookup(mode: GameMode, id: string): Player | undefined {
-  return mode === "all-time-real" ? getRealPlayerById(id) : getPlayerById(id);
+  if (mode === "all-time-real") return getRealPlayerById(id) ?? getLegendPlayerById(id);
+  return getPlayerById(id);
 }
 
 export interface GameState {
@@ -36,6 +40,10 @@ export interface GameState {
   createdAt: string | null;
   stage: GameStage;
   draftPicks: DraftPickRecord[];
+  /** Set once "Spin the Wheel" reveals an Era Team; drives squad-select's
+   * player pool and tells team-setup to skip the overseas-quota rule (a
+   * single-nation squad is entirely "overseas" by that rule's definition). */
+  eraTeamId: string | null;
 
   battingOrder: string[];
   bowlingRoleAssignments: Record<string, BowlingPhase>;
@@ -60,6 +68,9 @@ export interface GameState {
 interface GameActions {
   startNewGame: (options?: { seed?: string; isDaily?: boolean; mode?: GameMode }) => void;
   spinTheWheel: (mode: GameMode) => void;
+  spinEraTeam: () => void;
+  selectSquadPlayer: (player: Player) => void;
+  deselectSquadPlayer: (playerId: string) => void;
   draftPlayer: (player: Player, categoryId: DraftCategoryId) => void;
   pickImpactPlayer: (player: Player) => void;
   skipImpactPlayer: () => void;
@@ -88,6 +99,7 @@ const initialState: Omit<GameState, "hasHydrated"> = {
   createdAt: null,
   stage: "draft",
   draftPicks: [],
+  eraTeamId: null,
   battingOrder: [],
   bowlingRoleAssignments: {},
   captainId: null,
@@ -164,6 +176,51 @@ export const useGameStore = create<GameState & GameActions>()(
           stage: "team-setup",
         });
         track("game_started", { mode, method: "spin-the-wheel" });
+      },
+
+      spinEraTeam: () => {
+        const seed = randomSeedString();
+        const rng = createRng(`${seed}::era-team`);
+        const eraTeam = pickRandom(rng, ERA_TEAMS);
+
+        set({
+          ...initialState,
+          gameId: `game-${Date.now()}`,
+          seed,
+          mode: "all-time-real",
+          isDaily: false,
+          createdAt: new Date().toISOString(),
+          eraTeamId: eraTeam.id,
+          stage: "squad-select",
+        });
+        track("game_started", { mode: "all-time-real", method: "spin-era-team", eraTeamId: eraTeam.id });
+      },
+
+      selectSquadPlayer: (player) => {
+        const { draftPicks, eraTeamId } = get();
+        if (!eraTeamId) return;
+        const eraTeam = getEraTeamById(eraTeamId);
+        if (!eraTeam) return;
+        if (draftPicks.length >= SQUAD_SIZE) return;
+        if (draftPicks.some((pick) => pick.playerId === player.id)) return;
+        if (!eraTeam.players.some((p) => p.id === player.id)) return;
+
+        const nextPicks: DraftPickRecord[] = [
+          ...draftPicks,
+          { roundNumber: draftPicks.length + 1, categoryId: "wildcard", playerId: player.id },
+        ];
+        const squadComplete = nextPicks.length >= SQUAD_SIZE;
+        set({
+          draftPicks: nextPicks,
+          stage: squadComplete ? "impact-player" : "squad-select",
+        });
+        track("player_selected", { categoryId: "wildcard", roundNumber: nextPicks.length });
+        if (squadComplete) track("draft_completed", { squadSize: SQUAD_SIZE });
+      },
+
+      deselectSquadPlayer: (playerId) => {
+        const { draftPicks } = get();
+        set({ draftPicks: draftPicks.filter((pick) => pick.playerId !== playerId) });
       },
 
       draftPlayer: (player, categoryId) => {

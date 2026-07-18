@@ -16,6 +16,7 @@ import { checkComposition } from "@/lib/engine/draft";
 import { SQUAD_SIZE, canBowl, isWicketkeeper } from "@/lib/types";
 import { getPlayerById } from "@/lib/data/players";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
+import { getLegendPlayerById } from "@/lib/data/legendPlayers";
 import { cn } from "@/lib/utils";
 import { track } from "@/lib/analytics";
 
@@ -37,9 +38,12 @@ export default function TeamSetupPage() {
   const setCaptain = useGameStore((s) => s.setCaptain);
   const setWicketkeeper = useGameStore((s) => s.setWicketkeeper);
   const setBowlingRole = useGameStore((s) => s.setBowlingRole);
+  const eraTeamId = useGameStore((s) => s.eraTeamId);
   const drafted = useDraftedPlayers();
   const impactPlayer = impactPlayerId
-    ? (mode === "all-time-real" ? getRealPlayerById(impactPlayerId) : getPlayerById(impactPlayerId))
+    ? (mode === "all-time-real"
+        ? (getRealPlayerById(impactPlayerId) ?? getLegendPlayerById(impactPlayerId))
+        : getPlayerById(impactPlayerId))
     : null;
 
   const isSquadComplete = draftPicks.length === SQUAD_SIZE;
@@ -64,8 +68,11 @@ export default function TeamSetupPage() {
   }, [orderedXi, captainId]);
 
   const composition = useMemo(
-    () => (orderedXi.length === SQUAD_SIZE ? checkComposition(orderedXi) : null),
-    [orderedXi]
+    () =>
+      orderedXi.length === SQUAD_SIZE
+        ? checkComposition(orderedXi, { skipOverseasLimit: eraTeamId !== null })
+        : null,
+    [orderedXi, eraTeamId]
   );
 
   if (!hasHydrated) return null;
