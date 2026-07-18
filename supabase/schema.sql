@@ -113,13 +113,18 @@ create index if not exists season_results_user_history
 -- ─────────────────────────────────────────────────────────────────────────
 -- leaderboard view
 --
--- Each user's single best season per mode (wins desc, then fewest losses,
--- then highest team rating as a tiebreaker), joined to their public
--- username. The app queries this directly rather than reimplementing the
--- "best result per user" logic in application code.
+-- Each user's single best season per (mode, is_daily) combination — kept
+-- separate because the Daily Challenge uses one fixed seed shared by every
+-- player that day (a fair head-to-head comparison), while a free draft in
+-- the same mode lets each player pick their own dream team (a much easier
+-- road to 14-0). Mixing the two into one ranking would let free-draft runs
+-- crowd out genuinely hard-earned Daily Challenge results. Best is defined
+-- as wins desc, then fewest losses, then highest team rating as a
+-- tiebreaker. The app queries this view directly rather than reimplementing
+-- "best result per user" in application code.
 -- ─────────────────────────────────────────────────────────────────────────
 create or replace view public.leaderboard as
-select distinct on (sr.user_id, sr.mode)
+select distinct on (sr.user_id, sr.mode, sr.is_daily)
   sr.id,
   sr.user_id,
   p.username,
@@ -133,4 +138,4 @@ select distinct on (sr.user_id, sr.mode)
   sr.created_at
 from public.season_results sr
 join public.profiles p on p.id = sr.user_id
-order by sr.user_id, sr.mode, sr.wins desc, sr.losses asc, sr.team_rating_out_of_100 desc, sr.created_at asc;
+order by sr.user_id, sr.mode, sr.is_daily, sr.wins desc, sr.losses asc, sr.team_rating_out_of_100 desc, sr.created_at asc;

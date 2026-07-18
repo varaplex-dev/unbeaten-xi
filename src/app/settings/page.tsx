@@ -138,6 +138,16 @@ export default function SettingsPage() {
           <Link href="/privacy" className="text-accent underline underline-offset-4">
             Privacy
           </Link>
+          {isSupabaseConfigured && (
+            <>
+              <Link href="/leaderboard" className="text-accent underline underline-offset-4">
+                Leaderboard
+              </Link>
+              <Link href="/history" className="text-accent underline underline-offset-4">
+                My History
+              </Link>
+            </>
+          )}
         </div>
       </div>
     </main>
