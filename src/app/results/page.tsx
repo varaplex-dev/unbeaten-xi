@@ -43,6 +43,8 @@ export default function ResultsPage() {
   const resultSaved = useGameStore((s) => s.resultSaved);
   const markResultSaved = useGameStore((s) => s.markResultSaved);
   const startNewGame = useGameStore((s) => s.startNewGame);
+  const spinEraTeam = useGameStore((s) => s.spinEraTeam);
+  const usedEraTeamIds = useGameStore((s) => s.usedEraTeamIds);
   const user = useAuthStore((s) => s.user);
   const lookupPlayer = (id: string) =>
     mode === "all-time-real" ? (getRealPlayerById(id) ?? getLegendPlayerById(id)) : getPlayerById(id);
@@ -123,8 +125,16 @@ export default function ResultsPage() {
   }
 
   function handlePlayAgain() {
-    startNewGame({ mode });
-    router.push("/draft");
+    // A spin-drafted squad (usedEraTeamIds non-empty) was built by spinning
+    // into a fresh team per pick, not the category-based draft — Play Again
+    // should hand the user straight into another spin, not the old picker.
+    if (usedEraTeamIds.length > 0) {
+      spinEraTeam();
+      router.push("/squad-select");
+    } else {
+      startNewGame({ mode });
+      router.push("/draft");
+    }
   }
 
   return (
