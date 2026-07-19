@@ -143,6 +143,8 @@ async function run() {
       continue;
     }
     if (!T20_MATCH_TYPES.has(info.match_type)) continue;
+    // Men's only by default (set INCLUDE_WOMENS=1 to include women's cricket).
+    if (process.env.INCLUDE_WOMENS !== "1" && info.gender && info.gender !== "male") continue;
 
     const registry = info.registry?.people ?? {};
     const idOf = (name) => registry[name] ?? `name:${name}`;
