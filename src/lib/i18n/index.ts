@@ -1,5 +1,7 @@
 import { en } from "./dictionaries/en";
 import { hi } from "./dictionaries/hi";
+import { ur } from "./dictionaries/ur";
+import { ps } from "./dictionaries/ps";
 import { ta } from "./dictionaries/ta";
 import { kn } from "./dictionaries/kn";
 import { te } from "./dictionaries/te";
@@ -19,7 +21,7 @@ export type { LocaleCode } from "./locales";
 // adding keys to dictionaries/en.ts and the same key to every other locale
 // file; TypeScript enforces every locale stays complete since each is typed
 // against Dictionary.
-const DICTIONARIES: Record<LocaleCode, Dictionary> = { en, hi, ta, kn, te, mr, bn };
+const DICTIONARIES: Record<LocaleCode, Dictionary> = { en, hi, ur, ps, ta, kn, te, mr, bn };
 
 export function getDictionary(locale: LocaleCode): Dictionary {
   return DICTIONARIES[locale] ?? en;

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { HomeButton } from "@/components/nav/HomeButton";
 import { TopNav } from "@/components/nav/TopNav";
+import { LocaleDirection } from "@/components/nav/LocaleDirection";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -37,6 +38,7 @@ export default function RootLayout({
     >
       <body className="min-h-full flex flex-col">
         <div className="app-backdrop" aria-hidden />
+        <LocaleDirection />
         <HomeButton />
         <TopNav />
         {children}
