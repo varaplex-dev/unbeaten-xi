@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { useGameStore, type GameMode } from "@/lib/store/gameStore";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 
 // Every playable mode uses real players (see realPlayers.ts and
 // legendPlayers.ts) — the old fictional roster/engine still exists in the
@@ -40,6 +41,7 @@ const MODES: ModeDef[] = [
 export default function PlayPage() {
   const router = useRouter();
   const spinEraTeam = useGameStore((s) => s.spinEraTeam);
+  const { t } = useTranslation();
 
   function handleSpin(mode: ModeDef) {
     if (!mode.available || !mode.gameMode) return;
@@ -52,26 +54,24 @@ export default function PlayPage() {
       <PosterShell kicker="11 Not Out">
         <div className="mx-auto w-full max-w-2xl">
           <h1 className="text-stack-shadow text-4xl font-black italic tracking-tight mb-1">
-            Choose a Mode
+            {t("play.chooseMode")}
           </h1>
-          <p className="text-foreground-muted mb-8">
-            More modes are on the way. Every squad is spun together from
-            real players — current stars, all-time legends, and actual
-            franchise-season rosters — using their real career stats.
-          </p>
+          <p className="text-foreground-muted mb-8">{t("play.intro")}</p>
           <div className="grid gap-4">
             {MODES.map((mode) => (
               <Card key={mode.id} className={!mode.available ? "opacity-60" : undefined}>
                 <CardHeader className="flex flex-row items-start justify-between gap-4">
-                  <CardTitle>{mode.name}</CardTitle>
-                  {!mode.available && <Badge variant="gold">Coming Soon</Badge>}
+                  <CardTitle>{mode.id === "all-time-xi" ? t("play.allTimeXi") : mode.name}</CardTitle>
+                  {!mode.available && <Badge variant="gold">{t("play.comingSoon")}</Badge>}
                 </CardHeader>
                 <CardContent className="flex items-end justify-between gap-4">
-                  <p className="text-sm text-foreground-muted">{mode.description}</p>
+                  <p className="text-sm text-foreground-muted">
+                    {mode.id === "all-time-xi" ? t("play.allTimeXiDesc") : mode.description}
+                  </p>
                   {mode.available && (
                     <div className="flex shrink-0 gap-2">
                       <Button size="sm" onClick={() => handleSpin(mode)}>
-                        Spin
+                        {t("play.spin")}
                       </Button>
                     </div>
                   )}

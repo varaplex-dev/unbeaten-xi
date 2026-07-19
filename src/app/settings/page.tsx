@@ -8,7 +8,11 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useGameStore } from "@/lib/store/gameStore";
 import { useAuthStore } from "@/lib/store/authStore";
+import { useLocaleStore } from "@/lib/store/localeStore";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
+import { useTranslation } from "@/lib/i18n/useTranslation";
+import { LOCALES } from "@/lib/i18n/locales";
+import { cn } from "@/lib/utils";
 
 function AccountCard() {
   const user = useAuthStore((s) => s.user);
@@ -19,42 +23,42 @@ function AccountCard() {
   const signInWithOAuth = useAuthStore((s) => s.signInWithOAuth);
   const signOut = useAuthStore((s) => s.signOut);
   const [email, setEmail] = useState("");
+  const { t } = useTranslation();
 
   if (!isSupabaseConfigured) return null;
 
   return (
     <Card>
       <CardHeader>
-        <CardTitle>Account</CardTitle>
+        <CardTitle>{t("settings.account")}</CardTitle>
       </CardHeader>
       <CardContent>
         {user ? (
           <div>
             <p className="text-sm text-foreground-muted mb-4">
-              Signed in as <span className="text-foreground font-semibold">{profile?.username ?? user.email}</span>.
-              Your season results save to your account and count toward the leaderboard.
+              {t("settings.signedInAs")}{" "}
+              <span className="text-foreground font-semibold">{profile?.username ?? user.email}</span>.{" "}
+              {t("settings.signedInDesc")}
             </p>
             <Button variant="secondary" onClick={() => signOut()}>
-              Sign Out
+              {t("settings.signOut")}
             </Button>
           </div>
         ) : magicLinkSentTo ? (
-          <p className="text-sm text-foreground-muted">
-            Check <span className="text-foreground font-semibold">{magicLinkSentTo}</span> for a sign-in link.
-          </p>
+          <p className="text-sm text-foreground-muted">{t("settings.checkEmail")}</p>
         ) : (
           <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-2 sm:flex-row">
               <Button variant="secondary" className="flex-1" onClick={() => signInWithOAuth("google")}>
-                Continue with Google
+                {t("settings.continueWithGoogle")}
               </Button>
               <Button variant="secondary" className="flex-1" onClick={() => signInWithOAuth("facebook")}>
-                Continue with Facebook
+                {t("settings.continueWithFacebook")}
               </Button>
             </div>
             <div className="flex items-center gap-3 text-xs text-foreground-muted">
               <span className="h-px flex-1 bg-border" />
-              or
+              {t("settings.or")}
               <span className="h-px flex-1 bg-border" />
             </div>
             <form
@@ -72,7 +76,7 @@ function AccountCard() {
                 onChange={(e) => setEmail(e.target.value)}
               />
               <Button type="submit" variant="secondary" className="shrink-0">
-                Email Me a Sign-In Link
+                {t("settings.emailSignIn")}
               </Button>
             </form>
           </div>
@@ -83,11 +87,46 @@ function AccountCard() {
   );
 }
 
+function LanguageCard() {
+  const locale = useLocaleStore((s) => s.locale);
+  const setLocale = useLocaleStore((s) => s.setLocale);
+  const { t } = useTranslation();
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>{t("settings.language")}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <p className="text-sm text-foreground-muted mb-4">{t("settings.languageDesc")}</p>
+        <div className="flex flex-wrap gap-2">
+          {LOCALES.map((l) => (
+            <button
+              key={l.code}
+              type="button"
+              onClick={() => setLocale(l.code)}
+              className={cn(
+                "rounded-full px-4 py-2 text-sm font-semibold transition-colors",
+                l.code === locale
+                  ? "bg-accent text-[#04120d]"
+                  : "bg-background-elevated text-foreground-muted border border-border hover:text-foreground"
+              )}
+            >
+              {l.native}
+            </button>
+          ))}
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
 export default function SettingsPage() {
   const router = useRouter();
   const resetGame = useGameStore((s) => s.resetGame);
   const hasActiveGame = useGameStore((s) => Boolean(s.seed));
   const [confirmingReset, setConfirmingReset] = useState(false);
+  const { t } = useTranslation();
 
   function handleResetConfirmed() {
     resetGame();
@@ -97,28 +136,24 @@ export default function SettingsPage() {
 
   return (
     <main className="flex-1 px-4 py-10 max-w-2xl mx-auto w-full">
-      <h1 className="text-3xl font-black tracking-tight mb-1">Settings</h1>
-      <p className="text-foreground-muted mb-8">
-        The Unbeaten XI saves your progress locally in this browser — nothing
-        is sent anywhere unless you&apos;re signed in.
-      </p>
+      <h1 className="text-3xl font-black tracking-tight mb-1">{t("settings.title")}</h1>
+      <p className="text-foreground-muted mb-8">{t("settings.description")}</p>
 
       <div className="grid gap-4">
         <AccountCard />
+        <LanguageCard />
 
         <Card>
           <CardHeader>
-            <CardTitle>Active Game</CardTitle>
+            <CardTitle>{t("settings.activeGame")}</CardTitle>
           </CardHeader>
           <CardContent>
             <p className="text-sm text-foreground-muted mb-4">
-              {hasActiveGame
-                ? "Clear your current draft, lineup, and season progress. This can't be undone."
-                : "No active game right now."}
+              {hasActiveGame ? t("settings.activeGameDesc") : t("settings.noActiveGame")}
             </p>
             {hasActiveGame && !confirmingReset && (
               <Button variant="secondary" onClick={() => setConfirmingReset(true)}>
-                Reset Current Game
+                {t("settings.resetGame")}
               </Button>
             )}
             {confirmingReset && (
@@ -127,10 +162,10 @@ export default function SettingsPage() {
                   className="bg-danger text-white hover:bg-danger/90"
                   onClick={handleResetConfirmed}
                 >
-                  Yes, Clear It
+                  {t("settings.confirmReset")}
                 </Button>
                 <Button variant="ghost" onClick={() => setConfirmingReset(false)}>
-                  Cancel
+                  {t("settings.cancel")}
                 </Button>
               </div>
             )}
@@ -139,34 +174,34 @@ export default function SettingsPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>About</CardTitle>
+            <CardTitle>{t("settings.about")}</CardTitle>
           </CardHeader>
           <CardContent className="text-sm text-foreground-muted space-y-2">
             <p>The Unbeaten XI</p>
-            <p>A Varaplex Studios game.</p>
+            <p>{t("settings.aboutTagline")}</p>
             <Link href="/about" className="inline-block text-accent underline underline-offset-4">
-              Read More
+              {t("settings.readMore")}
             </Link>
           </CardContent>
         </Card>
 
         <div className="flex flex-wrap gap-3 text-sm">
           <Link href="/how-to-play" className="text-accent underline underline-offset-4">
-            How to Play
+            {t("nav.howToPlay")}
           </Link>
           <Link href="/about" className="text-accent underline underline-offset-4">
-            About
+            {t("nav.about")}
           </Link>
           <Link href="/privacy" className="text-accent underline underline-offset-4">
-            Privacy
+            {t("nav.privacy")}
           </Link>
           {isSupabaseConfigured && (
             <>
               <Link href="/leaderboard" className="text-accent underline underline-offset-4">
-                Leaderboard
+                {t("nav.leaderboard")}
               </Link>
               <Link href="/history" className="text-accent underline underline-offset-4">
-                My History
+                {t("nav.myHistory")}
               </Link>
             </>
           )}
