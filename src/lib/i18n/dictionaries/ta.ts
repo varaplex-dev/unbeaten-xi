@@ -7,6 +7,11 @@ export const ta: Dictionary = {
   "nav.leaderboard": "தலைமை பட்டியல்",
   "nav.myHistory": "எனது வரலாறு",
   "nav.settings": "அமைப்புகள்",
+  "nav.menu": "மெனு",
+  "nav.language": "மொழி",
+  "nav.contact": "தொடர்பு கொள்ளவும்",
+  "nav.signIn": "உள்நுழையவும்",
+  "nav.account": "கணக்கு",
 
   "landing.seasonTag": "டி20 லீக் · சீசன் ஒன்று",
   "landing.tagline": "நீங்கள் தோற்காமல் இருக்க முடியுமா?",
@@ -30,6 +35,8 @@ export const ta: Dictionary = {
   "settings.description":
     "The Unbeaten XI உங்கள் முன்னேற்றத்தை இந்த உலாவியில் உள்ளூரில் சேமிக்கிறது — நீங்கள் உள்நுழையாத வரை, எதுவும் எங்கும் அனுப்பப்படாது.",
   "settings.account": "கணக்கு",
+  "settings.playingAsGuest": "விருந்தினராக விளையாடுகிறீர்கள்",
+  "settings.guestDesc": "உங்கள் முன்னேற்றம் இந்தச் சாதனத்தில் சேமிக்கப்படுகிறது. அதை ஒரு கணக்கில் சேமிக்கவும் லீடர்போர்டில் தோன்றவும் உள்நுழையவும்.",
   "settings.signedInAs": "இதாக உள்நுழைந்துள்ளீர்கள்:",
   "settings.signedInDesc": "உங்கள் சீசன் முடிவுகள் உங்கள் கணக்கில் சேமிக்கப்பட்டு தலைமை பட்டியலில் கணக்கிடப்படும்.",
   "settings.signOut": "வெளியேறு",
@@ -55,6 +62,12 @@ export const ta: Dictionary = {
 
   "landing.getTheApp": "ஆப்பைப் பெறுங்கள்",
   "landing.getTheAppSoon": "App Store மற்றும் Google Play இல் விரைவில் வருகிறது.",
+  "landing.feature1": "உண்மையான அணிகளில் ஸ்பின் செய்து உண்மையான வீரர்களைத் தேர்ந்தெடுங்கள்.",
+  "landing.feature2": "உங்கள் XI-ஐ உருவாக்குங்கள் — பேட்டிங் வரிசை, கேப்டன், பந்துவீச்சுத் திட்டம், அனைத்தும் உங்கள் விருப்பம்.",
+  "landing.feature3": "உண்மையான கரியர் புள்ளிவிவரங்களில் 14 போட்டிகள் கொண்ட சீசனை உருவகப்படுத்தி சரியான 14-0-ஐ துரத்துங்கள்.",
+  "landing.bestRecord": "சிறந்த சாதனை",
+  "landing.matches": "போட்டிகள்",
+  "landing.losses": "தோல்விகள்",
 
   "hardcore.label": "ஹார்ட்கோர் முறை",
   "hardcore.noStatsBanner":

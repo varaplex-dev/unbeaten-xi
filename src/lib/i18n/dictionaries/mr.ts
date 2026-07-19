@@ -7,6 +7,11 @@ export const mr: Dictionary = {
   "nav.leaderboard": "लीडरबोर्ड",
   "nav.myHistory": "माझा इतिहास",
   "nav.settings": "सेटिंग्ज",
+  "nav.menu": "मेनू",
+  "nav.language": "भाषा",
+  "nav.contact": "संपर्क करा",
+  "nav.signIn": "साइन इन करा",
+  "nav.account": "खाते",
 
   "landing.seasonTag": "टी20 लीग · सीझन वन",
   "landing.tagline": "तुम्ही अजिंक्य राहू शकता का?",
@@ -30,6 +35,8 @@ export const mr: Dictionary = {
   "settings.description":
     "The Unbeaten XI तुमची प्रगती या ब्राउझरमध्ये स्थानिक पातळीवर सेव्ह करते — तुम्ही साइन इन केल्याशिवाय, काहीही कुठेही पाठवले जात नाही.",
   "settings.account": "खाते",
+  "settings.playingAsGuest": "अतिथी म्हणून खेळत आहात",
+  "settings.guestDesc": "तुमची प्रगती या डिव्हाइसवर सेव्ह केली जाते. ती खात्यात सेव्ह करण्यासाठी आणि लीडरबोर्डवर दिसण्यासाठी साइन इन करा.",
   "settings.signedInAs": "या रूपात साइन इन:",
   "settings.signedInDesc": "तुमचे सीझन निकाल तुमच्या खात्यात सेव्ह होतात आणि लीडरबोर्डवर मोजले जातात.",
   "settings.signOut": "साइन आउट करा",
@@ -55,6 +62,12 @@ export const mr: Dictionary = {
 
   "landing.getTheApp": "अ‍ॅप मिळवा",
   "landing.getTheAppSoon": "App Store आणि Google Play वर लवकरच येत आहे.",
+  "landing.feature1": "खऱ्या संघांमध्ये स्पिन करा आणि खरे खेळाडू निवडा.",
+  "landing.feature2": "तुमची XI तयार करा — बॅटिंग ऑर्डर, कर्णधार, गोलंदाजी योजना, सर्व तुमच्या मर्जीनुसार.",
+  "landing.feature3": "खऱ्या करिअर आकडेवारीवर 14 सामन्यांचा हंगाम सिम्युलेट करा आणि परिपूर्ण 14-0 चा पाठलाग करा.",
+  "landing.bestRecord": "सर्वोत्तम विक्रम",
+  "landing.matches": "सामने",
+  "landing.losses": "पराभव",
 
   "hardcore.label": "हार्डकोर मोड",
   "hardcore.noStatsBanner":

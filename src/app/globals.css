@@ -121,3 +121,50 @@ body {
     0 10px 24px rgba(0, 0, 0, 0.45);
 }
 
+/* --- Poster-style decorative helpers (see the landing hero) --- */
+
+/* Thin gold gradient hairline that fades at both ends, used to flank the
+   kicker / subtitle / footer the way the reference poster does. */
+.gold-hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(232, 179, 76, 0.7), transparent);
+}
+.teal-hairline {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(34, 230, 168, 0.6), transparent);
+}
+
+/* Glowing teal primary call-to-action, matching the poster's "START
+   BUILDING" button. */
+.cta-glow {
+  box-shadow:
+    0 0 28px rgba(34, 230, 168, 0.45),
+    0 8px 24px rgba(0, 0, 0, 0.45),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+/* Angular gold corner brackets on the hero card — the esports-frame look
+   from the reference. Applied to a `position: relative` container. */
+.esports-frame::before,
+.esports-frame::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  border-color: rgba(232, 179, 76, 0.65);
+  border-style: solid;
+  pointer-events: none;
+}
+.esports-frame::before {
+  top: 10px;
+  left: 10px;
+  border-width: 2px 0 0 2px;
+  border-top-left-radius: 6px;
+}
+.esports-frame::after {
+  bottom: 10px;
+  right: 10px;
+  border-width: 0 2px 2px 0;
+  border-bottom-right-radius: 6px;
+}
+

@@ -7,6 +7,11 @@ export const kn: Dictionary = {
   "nav.leaderboard": "ಲೀಡರ್‌ಬೋರ್ಡ್",
   "nav.myHistory": "ನನ್ನ ಇತಿಹಾಸ",
   "nav.settings": "ಸೆಟ್ಟಿಂಗ್‌ಗಳು",
+  "nav.menu": "ಮೆನು",
+  "nav.language": "ಭಾಷೆ",
+  "nav.contact": "ಸಂಪರ್ಕಿಸಿ",
+  "nav.signIn": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
+  "nav.account": "ಖಾತೆ",
 
   "landing.seasonTag": "ಟಿ20 ಲೀಗ್ · ಸೀಸನ್ ಒಂದು",
   "landing.tagline": "ನೀವು ಅಜೇಯರಾಗಿ ಉಳಿಯಬಹುದೇ?",
@@ -30,6 +35,8 @@ export const kn: Dictionary = {
   "settings.description":
     "The Unbeaten XI ನಿಮ್ಮ ಪ್ರಗತಿಯನ್ನು ಈ ಬ್ರೌಸರ್‌ನಲ್ಲಿ ಸ್ಥಳೀಯವಾಗಿ ಉಳಿಸುತ್ತದೆ — ನೀವು ಸೈನ್ ಇನ್ ಆಗದ ಹೊರತು, ಏನೂ ಎಲ್ಲಿಗೂ ಕಳುಹಿಸಲಾಗುವುದಿಲ್ಲ.",
   "settings.account": "ಖಾತೆ",
+  "settings.playingAsGuest": "ಅತಿಥಿಯಾಗಿ ಆಡುತ್ತಿದ್ದೀರಿ",
+  "settings.guestDesc": "ನಿಮ್ಮ ಪ್ರಗತಿ ಈ ಸಾಧನದಲ್ಲಿ ಉಳಿಸಲ್ಪಡುತ್ತದೆ. ಅದನ್ನು ಖಾತೆಗೆ ಉಳಿಸಲು ಮತ್ತು ಲೀಡರ್‌ಬೋರ್ಡ್‌ನಲ್ಲಿ ಕಾಣಿಸಿಕೊಳ್ಳಲು ಸೈನ್ ಇನ್ ಮಾಡಿ.",
   "settings.signedInAs": "ಈ ರೂಪದಲ್ಲಿ ಸೈನ್ ಇನ್ ಆಗಿದ್ದೀರಿ:",
   "settings.signedInDesc": "ನಿಮ್ಮ ಸೀಸನ್ ಫಲಿತಾಂಶಗಳು ನಿಮ್ಮ ಖಾತೆಗೆ ಉಳಿಸಲ್ಪಡುತ್ತವೆ ಮತ್ತು ಲೀಡರ್‌ಬೋರ್ಡ್‌ನಲ್ಲಿ ಎಣಿಕೆಯಾಗುತ್ತವೆ.",
   "settings.signOut": "ಸೈನ್ ಔಟ್ ಮಾಡಿ",
@@ -55,6 +62,12 @@ export const kn: Dictionary = {
 
   "landing.getTheApp": "ಆ್ಯಪ್ ಪಡೆಯಿರಿ",
   "landing.getTheAppSoon": "App Store ಮತ್ತು Google Play ನಲ್ಲಿ ಶೀಘ್ರದಲ್ಲೇ ಬರಲಿದೆ.",
+  "landing.feature1": "ನಿಜವಾದ ತಂಡಗಳಲ್ಲಿ ಸ್ಪಿನ್ ಮಾಡಿ ಮತ್ತು ನಿಜವಾದ ಆಟಗಾರರನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
+  "landing.feature2": "ನಿಮ್ಮ XI ಅನ್ನು ನಿರ್ಮಿಸಿ — ಬ್ಯಾಟಿಂಗ್ ಕ್ರಮ, ನಾಯಕ, ಬೌಲಿಂಗ್ ಯೋಜನೆ, ಎಲ್ಲವೂ ನಿಮ್ಮ ಆಯ್ಕೆ.",
+  "landing.feature3": "ನಿಜವಾದ ವೃತ್ತಿಜೀವನದ ಅಂಕಿಅಂಶಗಳ ಮೇಲೆ 14 ಪಂದ್ಯಗಳ ಸೀಸನ್ ಸಿಮ್ಯುಲೇಟ್ ಮಾಡಿ ಮತ್ತು ಪರಿಪೂರ್ಣ 14-0 ಅನ್ನು ಬೆನ್ನಟ್ಟಿ.",
+  "landing.bestRecord": "ಅತ್ಯುತ್ತಮ ದಾಖಲೆ",
+  "landing.matches": "ಪಂದ್ಯಗಳು",
+  "landing.losses": "ಸೋಲುಗಳು",
 
   "hardcore.label": "ಹಾರ್ಡ್‌ಕೋರ್ ಮೋಡ್",
   "hardcore.noStatsBanner":

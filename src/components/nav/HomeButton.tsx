@@ -17,7 +17,7 @@ export function HomeButton() {
       href="/"
       aria-label="Home"
       title="Home"
-      className="fixed left-4 top-4 z-50 flex h-11 w-11 items-center justify-center rounded-full border border-border bg-background-elevated/90 text-foreground-muted shadow-lg backdrop-blur transition-colors hover:border-accent/50 hover:text-accent"
+      className="fixed left-4 top-4 z-50 flex h-11 w-11 items-center justify-center rounded-full border border-accent/60 bg-background-elevated text-accent shadow-lg shadow-black/40 ring-1 ring-black/30 transition-colors hover:bg-accent hover:text-[#04120d]"
     >
       <Home className="h-5 w-5" />
     </Link>

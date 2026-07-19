@@ -1,4 +1,7 @@
+"use client";
+
 import type { ReactNode } from "react";
+import { usePathname } from "next/navigation";
 import { ScoreDigit } from "@/components/brand/ScoreDigit";
 import { cn } from "@/lib/utils";
 
@@ -11,6 +14,13 @@ interface PosterShellProps {
 
 /** Shared stadium-glow poster background + top bar used across every screen. */
 export function PosterShell({ kicker, digits, children, className }: PosterShellProps) {
+  // Two sets of floating controls overlap this top bar: the HomeButton
+  // (top-left, every page except "/") and the TopNav globe+menu (top-right,
+  // every page). Pad the kicker clear of the home button, and reserve room
+  // on the right so any score digits don't slide under the globe+menu.
+  const pathname = usePathname();
+  const hasHomeButton = pathname !== "/";
+
   return (
     <section
       className={cn(
@@ -18,8 +28,10 @@ export function PosterShell({ kicker, digits, children, className }: PosterShell
         className
       )}
     >
-      <div className="relative z-10 flex items-center justify-between">
-        <p className="text-xs font-bold tracking-[0.3em] text-accent uppercase">{kicker}</p>
+      <div className="relative z-10 flex items-center justify-between pr-28">
+        <p className={cn("text-xs font-bold tracking-[0.3em] text-accent uppercase", hasHomeButton && "pl-14")}>
+          {kicker}
+        </p>
         {digits && digits.length > 0 && (
           <div className="flex gap-3">
             {digits.map((d) => (

@@ -9,6 +9,11 @@ export const en = {
   "nav.leaderboard": "Leaderboard",
   "nav.myHistory": "My History",
   "nav.settings": "Settings",
+  "nav.menu": "Menu",
+  "nav.language": "Language",
+  "nav.contact": "Contact Us",
+  "nav.signIn": "Sign In",
+  "nav.account": "Account",
 
   "landing.seasonTag": "T20 League · Season One",
   "landing.tagline": "Can You Go Undefeated?",
@@ -18,6 +23,12 @@ export const en = {
   "landing.dailyChallenge": "Daily Challenge",
   "landing.getTheApp": "Get the App",
   "landing.getTheAppSoon": "Coming soon to the App Store and Google Play.",
+  "landing.feature1": "Spin into real teams and pick real players.",
+  "landing.feature2": "Build your XI — batting order, captain, and bowling plan, all your call.",
+  "landing.feature3": "Simulate a 14-match season on real career stats and chase a perfect 14-0.",
+  "landing.bestRecord": "Best Record",
+  "landing.matches": "Matches",
+  "landing.losses": "Losses",
   "landing.footerKicker": "Spin. Build. Simulate.",
   "landing.footerTagline": "Real Players · Real Stats · 14 League Matches",
 
@@ -34,6 +45,8 @@ export const en = {
   "settings.description":
     "The Unbeaten XI saves your progress locally in this browser — nothing is sent anywhere unless you're signed in.",
   "settings.account": "Account",
+  "settings.playingAsGuest": "Playing as guest",
+  "settings.guestDesc": "Your progress is saved on this device. Sign in to save it to an account and appear on the leaderboard.",
   "settings.signedInAs": "Signed in as",
   "settings.signedInDesc": "Your season results save to your account and count toward the leaderboard.",
   "settings.signOut": "Sign Out",

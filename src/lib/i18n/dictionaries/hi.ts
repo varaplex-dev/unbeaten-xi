@@ -7,6 +7,11 @@ export const hi: Dictionary = {
   "nav.leaderboard": "लीडरबोर्ड",
   "nav.myHistory": "मेरा इतिहास",
   "nav.settings": "सेटिंग्स",
+  "nav.menu": "मेनू",
+  "nav.language": "भाषा",
+  "nav.contact": "संपर्क करें",
+  "nav.signIn": "साइन इन करें",
+  "nav.account": "खाता",
 
   "landing.seasonTag": "टी20 लीग · सीज़न वन",
   "landing.tagline": "क्या आप अजेय रह सकते हैं?",
@@ -30,6 +35,8 @@ export const hi: Dictionary = {
   "settings.description":
     "The Unbeaten XI आपकी प्रगति इस ब्राउज़र में स्थानीय रूप से सहेजता है — जब तक आप साइन इन नहीं करते, कुछ भी कहीं नहीं भेजा जाता।",
   "settings.account": "खाता",
+  "settings.playingAsGuest": "अतिथि के रूप में खेल रहे हैं",
+  "settings.guestDesc": "आपकी प्रगति इस डिवाइस पर सहेजी जाती है। इसे किसी खाते में सहेजने और लीडरबोर्ड पर दिखने के लिए साइन इन करें।",
   "settings.signedInAs": "इस रूप में साइन इन:",
   "settings.signedInDesc": "आपके सीज़न के नतीजे आपके खाते में सहेजे जाते हैं और लीडरबोर्ड में गिने जाते हैं।",
   "settings.signOut": "साइन आउट करें",
@@ -55,6 +62,12 @@ export const hi: Dictionary = {
 
   "landing.getTheApp": "ऐप डाउनलोड करें",
   "landing.getTheAppSoon": "App Store और Google Play पर जल्द ही आ रहा है।",
+  "landing.feature1": "असली टीमों में स्पिन करें और असली खिलाड़ी चुनें।",
+  "landing.feature2": "अपनी एकादश बनाएं — बैटिंग ऑर्डर, कप्तान और गेंदबाज़ी योजना, सब आपकी मर्ज़ी।",
+  "landing.feature3": "असली करियर आंकड़ों पर 14 मैचों का सीज़न सिम्युलेट करें और परफेक्ट 14-0 का पीछा करें।",
+  "landing.bestRecord": "सर्वश्रेष्ठ रिकॉर्ड",
+  "landing.matches": "मैच",
+  "landing.losses": "हार",
 
   "hardcore.label": "हार्डकोर मोड",
   "hardcore.noStatsBanner":

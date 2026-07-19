@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { Button } from "@/components/ui/button";
@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { useGameStore } from "@/lib/store/gameStore";
 import { useAuthStore } from "@/lib/store/authStore";
+import { useGuestStore } from "@/lib/store/guestStore";
 import { useLocaleStore } from "@/lib/store/localeStore";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslation } from "@/lib/i18n/useTranslation";
@@ -22,8 +23,16 @@ function AccountCard() {
   const requestMagicLink = useAuthStore((s) => s.requestMagicLink);
   const signInWithOAuth = useAuthStore((s) => s.signInWithOAuth);
   const signOut = useAuthStore((s) => s.signOut);
+  const guestId = useGuestStore((s) => s.guestId);
+  const ensureGuestId = useGuestStore((s) => s.ensureGuestId);
   const [email, setEmail] = useState("");
   const { t } = useTranslation();
+
+  // Mint a stable guest id for signed-out players (client-only, so it isn't
+  // generated during SSR). It persists until they create an account.
+  useEffect(() => {
+    if (!user) ensureGuestId();
+  }, [user, ensureGuestId]);
 
   if (!isSupabaseConfigured) return null;
 
@@ -48,6 +57,15 @@ function AccountCard() {
           <p className="text-sm text-foreground-muted">{t("settings.checkEmail")}</p>
         ) : (
           <div className="flex flex-col gap-3">
+            {guestId && (
+              <div className="rounded-xl border border-border bg-background px-4 py-3">
+                <p className="text-xs font-semibold uppercase tracking-[0.15em] text-foreground-muted">
+                  {t("settings.playingAsGuest")}
+                </p>
+                <p className="mt-0.5 font-mono text-sm font-semibold text-accent">{guestId}</p>
+                <p className="mt-2 text-xs text-foreground-muted">{t("settings.guestDesc")}</p>
+              </div>
+            )}
             <div className="flex flex-col gap-2 sm:flex-row">
               <Button variant="secondary" className="flex-1" onClick={() => signInWithOAuth("google")}>
                 {t("settings.continueWithGoogle")}

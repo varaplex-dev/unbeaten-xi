@@ -7,6 +7,11 @@ export const bn: Dictionary = {
   "nav.leaderboard": "লিডারবোর্ড",
   "nav.myHistory": "আমার ইতিহাস",
   "nav.settings": "সেটিংস",
+  "nav.menu": "মেনু",
+  "nav.language": "ভাষা",
+  "nav.contact": "যোগাযোগ করুন",
+  "nav.signIn": "সাইন ইন করুন",
+  "nav.account": "অ্যাকাউন্ট",
 
   "landing.seasonTag": "টি২০ লিগ · সিজন ওয়ান",
   "landing.tagline": "আপনি কি অপরাজিত থাকতে পারবেন?",
@@ -30,6 +35,8 @@ export const bn: Dictionary = {
   "settings.description":
     "The Unbeaten XI আপনার অগ্রগতি এই ব্রাউজারে স্থানীয়ভাবে সংরক্ষণ করে — আপনি সাইন ইন না করা পর্যন্ত, কিছুই কোথাও পাঠানো হয় না।",
   "settings.account": "অ্যাকাউন্ট",
+  "settings.playingAsGuest": "অতিথি হিসেবে খেলছেন",
+  "settings.guestDesc": "আপনার অগ্রগতি এই ডিভাইসে সংরক্ষিত হয়। এটি একটি অ্যাকাউন্টে সংরক্ষণ করতে এবং লিডারবোর্ডে দেখাতে সাইন ইন করুন।",
   "settings.signedInAs": "এই হিসেবে সাইন ইন করা আছে:",
   "settings.signedInDesc": "আপনার সিজনের ফলাফল আপনার অ্যাকাউন্টে সংরক্ষিত হয় এবং লিডারবোর্ডে গণনা করা হয়।",
   "settings.signOut": "সাইন আউট করুন",
@@ -55,6 +62,12 @@ export const bn: Dictionary = {
 
   "landing.getTheApp": "অ্যাপটি ডাউনলোড করুন",
   "landing.getTheAppSoon": "App Store এবং Google Play-তে শীঘ্রই আসছে।",
+  "landing.feature1": "আসল দলে স্পিন করুন এবং আসল খেলোয়াড় বেছে নিন।",
+  "landing.feature2": "আপনার একাদশ তৈরি করুন — ব্যাটিং অর্ডার, অধিনায়ক, বোলিং পরিকল্পনা, সবকিছুই আপনার পছন্দ।",
+  "landing.feature3": "আসল ক্যারিয়ার পরিসংখ্যানে ১৪ ম্যাচের একটি মৌসুম সিমুলেট করুন এবং নিখুঁত ১৪-০ এর পিছনে ছুটুন।",
+  "landing.bestRecord": "সেরা রেকর্ড",
+  "landing.matches": "ম্যাচ",
+  "landing.losses": "হার",
 
   "hardcore.label": "হার্ডকোর মোড",
   "hardcore.noStatsBanner":

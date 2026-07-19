@@ -7,6 +7,11 @@ export const te: Dictionary = {
   "nav.leaderboard": "లీడర్‌బోర్డ్",
   "nav.myHistory": "నా చరిత్ర",
   "nav.settings": "సెట్టింగ్‌లు",
+  "nav.menu": "మెను",
+  "nav.language": "భాష",
+  "nav.contact": "సంప్రదించండి",
+  "nav.signIn": "సైన్ ఇన్ చేయండి",
+  "nav.account": "ఖాతా",
 
   "landing.seasonTag": "టి20 లీగ్ · సీజన్ వన్",
   "landing.tagline": "మీరు అజేయంగా ఉండగలరా?",
@@ -30,6 +35,8 @@ export const te: Dictionary = {
   "settings.description":
     "The Unbeaten XI మీ పురోగతిని ఈ బ్రౌజర్‌లో స్థానికంగా సేవ్ చేస్తుంది — మీరు సైన్ ఇన్ అయితే తప్ప, ఏదీ ఎక్కడికీ పంపబడదు.",
   "settings.account": "ఖాతా",
+  "settings.playingAsGuest": "అతిథిగా ఆడుతున్నారు",
+  "settings.guestDesc": "మీ పురోగతి ఈ పరికరంలో సేవ్ చేయబడుతుంది. దాన్ని ఖాతాలో సేవ్ చేయడానికి మరియు లీడర్‌బోర్డ్‌లో కనిపించడానికి సైన్ ఇన్ చేయండి.",
   "settings.signedInAs": "ఇలా సైన్ ఇన్ అయ్యారు:",
   "settings.signedInDesc": "మీ సీజన్ ఫలితాలు మీ ఖాతాలో సేవ్ అవుతాయి మరియు లీడర్‌బోర్డ్‌లో లెక్కించబడతాయి.",
   "settings.signOut": "సైన్ అవుట్ చేయండి",
@@ -55,6 +62,12 @@ export const te: Dictionary = {
 
   "landing.getTheApp": "యాప్‌ను పొందండి",
   "landing.getTheAppSoon": "App Store మరియు Google Play లో త్వరలో వస్తుంది.",
+  "landing.feature1": "నిజమైన జట్లలో స్పిన్ చేసి నిజమైన ఆటగాళ్లను ఎంచుకోండి.",
+  "landing.feature2": "మీ XI ని నిర్మించండి — బ్యాటింగ్ ఆర్డర్, కెప్టెన్, బౌలింగ్ ప్రణాళిక, అన్నీ మీ ఎంపికే.",
+  "landing.feature3": "నిజమైన కెరీర్ గణాంకాలపై 14 మ్యాచ్‌ల సీజన్‌ను సిమ్యులేట్ చేసి పరిపూర్ణ 14-0 కోసం ప్రయత్నించండి.",
+  "landing.bestRecord": "అత్యుత్తమ రికార్డు",
+  "landing.matches": "మ్యాచ్‌లు",
+  "landing.losses": "ఓటములు",
 
   "hardcore.label": "హార్డ్‌కోర్ మోడ్",
   "hardcore.noStatsBanner":
