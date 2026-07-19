@@ -1,10 +1,10 @@
 "use client";
 
 import { useRouter } from "next/navigation";
-import { Trophy, Target, Shield, Globe, CalendarDays, Flag, Gavel, Swords, type LucideIcon } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { ModeBadge } from "@/components/play/ModeBadge";
 import { useGameStore, type GameMode } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 
@@ -12,11 +12,17 @@ import { useTranslation } from "@/lib/i18n/useTranslation";
 // legendPlayers.ts) — the old fictional roster/engine still exists in the
 // codebase but is no longer reachable from any UI entry point. Only
 // All-Time XI is live for now; the rest are shown as a roadmap so the plan
-// is visible, not because they're playable yet.
+// is visible, not because they're playable yet. Chase 200 / Defend 160 are
+// left out of the roadmap entirely for now — not worth showing as a
+// destination until the classic All-Time XI mode is fully dialed in.
 
 interface ModeDef {
   id: string;
-  icon: LucideIcon;
+  emoji: string;
+  /** A real badge image in public/logos/, when one was provided for this
+   * mode — takes over from the emoji badge when set. */
+  image?: string;
+  tone: "accent" | "gold";
   name: string;
   description: string;
   available: boolean;
@@ -26,40 +32,54 @@ interface ModeDef {
 const MODES: ModeDef[] = [
   {
     id: "all-time-xi",
-    icon: Trophy,
+    emoji: "🏆",
+    image: "/logos/badge-all-time-xi.png",
+    tone: "accent",
     name: "All-Time XI",
     description:
       "Spin to land on a real historic squad, current national team, or an actual past-season IPL/BBL/PSL franchise roster — then pick one player from it. Real players, real stats. See if you can go 14-0.",
     available: true,
     gameMode: "all-time-real",
   },
-  { id: "chase-200", icon: Target, name: "Chase 200", description: "One high-pressure run chase.", available: false },
-  { id: "defend-160", icon: Shield, name: "Defend 160", description: "Defend a target with the ball.", available: false },
   {
     id: "world-cup-run",
-    icon: Globe,
+    emoji: "🌍",
+    image: "/logos/badge-world-cup.png",
+    tone: "gold",
     name: "World Cup Run",
     description: "A knockout tournament format.",
     available: false,
   },
   {
     id: "test-invincibles",
-    icon: CalendarDays,
+    emoji: "📅",
+    tone: "gold",
     name: "Test Invincibles",
     description: "A five-day format challenge.",
     available: false,
   },
-  { id: "india-xi", icon: Flag, name: "India XI", description: "Indian players only.", available: false },
+  {
+    id: "india-xi",
+    emoji: "🇮🇳",
+    image: "/logos/badge-india-xi.png",
+    tone: "gold",
+    name: "India XI",
+    description: "Indian players only.",
+    available: false,
+  },
   {
     id: "auction-mode",
-    icon: Gavel,
+    emoji: "🔨",
+    image: "/logos/badge-auction.png",
+    tone: "gold",
     name: "Auction Mode",
     description: "Bid for players with a salary cap.",
     available: false,
   },
   {
     id: "head-to-head",
-    icon: Swords,
+    emoji: "⚔️",
+    tone: "gold",
     name: "Head-to-Head Challenge",
     description: "Compare your XI against a friend's.",
     available: false,
@@ -83,9 +103,7 @@ export function ModeGrid() {
         <Card key={mode.id} className={!mode.available ? "opacity-60" : undefined}>
           <CardHeader className="flex flex-row items-start justify-between gap-4">
             <div className="flex items-center gap-3">
-              <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-xl bg-accent/10 text-accent">
-                <mode.icon className="h-5 w-5" />
-              </div>
+              <ModeBadge emoji={mode.emoji} image={mode.image} tone={mode.tone} />
               <CardTitle>{mode.id === "all-time-xi" ? t("play.allTimeXi") : mode.name}</CardTitle>
             </div>
             {!mode.available && <Badge variant="gold">{t("play.comingSoon")}</Badge>}

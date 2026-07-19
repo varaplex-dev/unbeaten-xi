@@ -33,13 +33,17 @@ interface PlayerCardProps {
   onSelect?: (player: Player) => void;
   selected?: boolean;
   disabled?: boolean;
+  /** Hardcore Mode: hide the performance-number grid so the pick rides on
+   * the user's own knowledge of the player, not a stat readout. Identity
+   * info (name, country, role) still shows — only the numbers are hidden. */
+  hideStats?: boolean;
 }
 
 function formatStat(value: number | null, decimals = 1): string {
   return value === null ? "—" : value.toFixed(decimals);
 }
 
-export function PlayerCard({ player, onSelect, selected, disabled }: PlayerCardProps) {
+export function PlayerCard({ player, onSelect, selected, disabled, hideStats }: PlayerCardProps) {
   const stats = player.careerStats;
 
   return (
@@ -84,7 +88,11 @@ export function PlayerCard({ player, onSelect, selected, disabled }: PlayerCardP
         {player.tags.includes("legend") && <Badge variant="gold">Legend</Badge>}
       </div>
 
-      {stats ? (
+      {hideStats ? (
+        <p className="mt-3 text-center text-[10px] font-semibold uppercase tracking-wide text-gold/70">
+          Stats hidden — Hardcore Mode
+        </p>
+      ) : stats ? (
         <dl className="mt-3 grid grid-cols-4 gap-2 text-center">
           <div>
             <dt className="text-[10px] uppercase tracking-wide text-foreground-muted">Avg</dt>

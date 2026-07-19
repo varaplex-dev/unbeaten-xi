@@ -92,6 +92,11 @@ export interface GameState {
    * handling right below hasHydrated) so toggling it in Settings doesn't
    * get wiped out the next time a game starts. */
   hardcoreMode: boolean;
+  /** The user's best-ever local result (wins always implies losses =
+   * SQUAD_SIZE - wins, so only wins needs comparing). A lifetime record,
+   * not per-game progress — excluded from initialState for the same reason
+   * as hardcoreMode, so starting or resetting a game never erases it. */
+  bestSeason: { wins: number; losses: number } | null;
 
   /** True once the persisted state has been read from localStorage. */
   hasHydrated: boolean;
@@ -124,12 +129,13 @@ interface GameActions {
   assignFieldingPosition: (positionId: string) => void;
 }
 
-// hasHydrated and hardcoreMode are intentionally excluded here: hasHydrated
-// reflects localStorage load status, and hardcoreMode is a standing user
-// preference — neither is per-game progress, so both must survive
+// hasHydrated, hardcoreMode, and bestSeason are intentionally excluded here:
+// hasHydrated reflects localStorage load status, hardcoreMode is a standing
+// user preference, and bestSeason is a lifetime record — none of these is
+// per-game progress, so all three must survive
 // resetGame()/startNewGame()/spinEraTeam()/spinTheWheel()'s `...initialState`
 // spreads instead of getting wiped every time a new game starts.
-const initialState: Omit<GameState, "hasHydrated" | "hardcoreMode"> = {
+const initialState: Omit<GameState, "hasHydrated" | "hardcoreMode" | "bestSeason"> = {
   gameId: null,
   seed: null,
   mode: "fictional",
@@ -166,6 +172,7 @@ export const useGameStore = create<GameState & GameActions>()(
       ...initialState,
       hasHydrated: false,
       hardcoreMode: false,
+      bestSeason: null,
 
       setHasHydrated: (hydrated) => set({ hasHydrated: hydrated }),
 
@@ -417,17 +424,18 @@ export const useGameStore = create<GameState & GameActions>()(
           battingOrder,
           captainId,
           impactPlayerId,
-          decisions,
           matchResults,
           hardcoreMode,
           fieldingAssignments,
+          bestSeason,
         } = get();
         const xi = getXi(draftPicks, mode);
         if (xi.length !== SQUAD_SIZE || !seed || !captainId) return;
         const impactPlayer = impactPlayerId ? (playerLookup(mode, impactPlayerId) ?? null) : null;
         const isFirstRun = matchResults.length === 0;
 
-        const { matches, stats, pendingDecision } = simulateSeason(
+        let decisions = get().decisions;
+        let result = simulateSeason(
           seed,
           xi,
           battingOrder,
@@ -436,10 +444,29 @@ export const useGameStore = create<GameState & GameActions>()(
           decisions,
           hardcoreMode ? fieldingAssignments : undefined
         );
+
+        // Classic mode never surfaces in-match decisions — that interactive
+        // layer is Hardcore Mode's territory. Auto-resolve with the first
+        // option (a neutral default, not a claimed-optimal one) and keep
+        // re-running until the season actually finishes, so the user sees a
+        // single straight-through simulation with no further input needed.
+        while (result.pendingDecision && !hardcoreMode) {
+          decisions = { ...decisions, [result.pendingDecision.matchNumber]: result.pendingDecision.options[0].id };
+          result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions, undefined);
+        }
+
+        const { matches, stats, pendingDecision } = result;
+        const nextBestSeason =
+          stats && (!bestSeason || stats.wins > bestSeason.wins)
+            ? { wins: stats.wins, losses: stats.losses }
+            : bestSeason;
+
         set({
           matchResults: matches,
           seasonStats: stats,
           pendingDecision,
+          decisions,
+          bestSeason: nextBestSeason,
           stage: stats ? "results" : "season",
         });
 

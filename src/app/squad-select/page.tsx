@@ -36,6 +36,7 @@ export default function SquadSelectPage() {
   const placeSquadPlayer = useGameStore((s) => s.placeSquadPlayer);
   const pickImpactPlayer = useGameStore((s) => s.pickImpactPlayer);
   const skipImpactPlayer = useGameStore((s) => s.skipImpactPlayer);
+  const hardcoreMode = useGameStore((s) => s.hardcoreMode);
 
   const [spinTarget, setSpinTarget] = useState<EraTeam | null>(null);
 
@@ -112,38 +113,38 @@ export default function SquadSelectPage() {
           <p className="text-foreground-muted mb-6">
             {squadComplete
               ? "Spin one more time for a shot at an Impact Player — or skip it and lock in your XI."
-              : "Spin the wheel, land on a real team, pick a player from it — then place them in your batting order. Where you put them matters: the season simulation weights the top of the order more heavily."}
+              : "Spin the wheel, land on a real team, pick a player from it — then place them in your batting order. Where you put them matters."}
           </p>
 
-          <div className="mb-4 h-1.5 w-full rounded-full bg-white/5 overflow-hidden">
+          <div className="mb-6 h-1.5 w-full rounded-full bg-white/5 overflow-hidden">
             <div
               className="h-full bg-accent transition-all duration-300"
               style={{ width: `${(filledCount / SQUAD_SIZE) * 100}%` }}
             />
           </div>
 
-          <div className="mb-6">
-            <SquadField
-              slots={fieldSlots}
-              placing={pendingPlayerId !== null}
-              onSlotClick={(index) => placeSquadPlayer(index)}
-              impactPlayer={impactPlayer}
-              impactActive={squadComplete && !impactResolved}
-            />
-          </div>
+          {hardcoreMode && (
+            <div className="mb-6 rounded-xl border border-gold/40 bg-gold/5 px-4 py-3">
+              <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">Hardcore Mode</p>
+              <p className="mt-1 text-sm text-foreground-muted">
+                No stats shown on player cards. Draft on your own historical and current knowledge of the sport and
+                its players.
+              </p>
+            </div>
+          )}
 
           {spinTarget ? (
             <SpinReel target={spinTarget} onComplete={handleSpinComplete} />
           ) : pendingPlayer ? (
-            <div className="flex flex-col items-center gap-1 rounded-2xl border border-accent/40 bg-accent/5 py-10 text-center">
+            <div className="mb-6 flex flex-col items-center gap-1 rounded-2xl border border-accent/40 bg-accent/5 py-10 text-center">
               <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase">Placing</p>
               <p className="text-2xl font-black italic tracking-tight">{pendingPlayer.name}</p>
               <p className="mt-1 max-w-xs text-sm text-foreground-muted">
-                Tap an open slot on the field above to set their spot in the batting order.
+                Tap an open slot on the field below to set their spot in the batting order.
               </p>
             </div>
           ) : !eraTeam ? (
-            <div className="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-border py-16 text-center">
+            <div className="mb-6 flex flex-col items-center gap-3 rounded-2xl border border-dashed border-border py-16 text-center">
               <p className="text-foreground-muted">
                 {squadComplete
                   ? "Spin for a team to draw your Impact Player from."
@@ -159,7 +160,7 @@ export default function SquadSelectPage() {
               )}
             </div>
           ) : (
-            <>
+            <div className="mb-6">
               <div className="mb-4 rounded-xl border border-accent/30 bg-accent/5 px-4 py-3">
                 <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase">{eraTeam.eraLabel}</p>
                 <p className="text-lg font-bold leading-tight">{eraTeam.name}</p>
@@ -174,13 +175,22 @@ export default function SquadSelectPage() {
                       key={player.id}
                       player={player}
                       disabled={alreadyDrafted}
+                      hideStats={hardcoreMode}
                       onSelect={() => handlePick(player)}
                     />
                   );
                 })}
               </div>
-            </>
+            </div>
           )}
+
+          <SquadField
+            slots={fieldSlots}
+            placing={pendingPlayerId !== null}
+            onSlotClick={(index) => placeSquadPlayer(index)}
+            impactPlayer={impactPlayer}
+            impactActive={squadComplete && !impactResolved}
+          />
 
           {squadComplete && impactResolved && (
             <div className="mt-6 flex items-center justify-center gap-2">

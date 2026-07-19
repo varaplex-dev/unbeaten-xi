@@ -5,24 +5,24 @@ import { Button } from "@/components/ui/button";
 import { HeroPlayerImage } from "@/components/brand/HeroPlayerImage";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { ModeGrid } from "@/components/play/ModeGrid";
+import { useGameStore } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 
 export default function LandingPage() {
   const { t } = useTranslation();
+  const bestSeason = useGameStore((s) => s.bestSeason);
 
   return (
     <main className="flex-1 flex flex-col">
       <PosterShell
         kicker="11 Not Out"
         digits={[
-          { value: "14", label: "Matches" },
-          { value: "0", label: "Losses" },
+          {
+            value: bestSeason ? `${bestSeason.wins}-${bestSeason.losses}` : "—",
+            label: "Best Record",
+          },
         ]}
       >
-        <p className="relative z-10 text-center text-sm font-bold tracking-[0.35em] text-saffron uppercase mb-4">
-          {t("landing.seasonTag")}
-        </p>
-
         {/* Hero badge art */}
         <div className="relative z-10 mx-auto w-full max-w-[240px] sm:max-w-xs">
           <HeroPlayerImage className="w-full rounded-3xl drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]" />
