@@ -4,6 +4,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { HeroPlayerImage } from "@/components/brand/HeroPlayerImage";
 import { PosterShell } from "@/components/brand/PosterShell";
+import { ModeGrid } from "@/components/play/ModeGrid";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 
 export default function LandingPage() {
@@ -66,6 +67,14 @@ export default function LandingPage() {
         <div className="relative z-10 mt-10 border-t border-white/10 pt-4 text-center">
           <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">{t("landing.footerKicker")}</p>
           <p className="mt-1 text-xs text-foreground-muted">{t("landing.footerTagline")}</p>
+        </div>
+
+        <div className="relative z-10 mx-auto mt-10 w-full max-w-2xl">
+          <h2 className="text-stack-shadow mb-1 text-2xl font-black italic tracking-tight">
+            {t("play.chooseMode")}
+          </h2>
+          <p className="text-foreground-muted mb-6 text-sm">{t("play.intro")}</p>
+          <ModeGrid />
         </div>
       </PosterShell>
     </main>
