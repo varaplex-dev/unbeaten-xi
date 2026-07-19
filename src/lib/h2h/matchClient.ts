@@ -7,8 +7,16 @@ import { compareRosters, simulateH2HMatch, h2hPoints } from "@/lib/engine/headTo
 
 export const H2H_ROSTER_SIZE = SQUAD_SIZE;
 
-export type MatchStatus = "waiting" | "drafting" | "completed" | "abandoned";
+export type MatchStatus = "waiting" | "drafting" | "trading" | "completed" | "abandoned";
 export type Side = "host" | "guest";
+
+export interface TradeOffer {
+  by: Side;
+  /** A player the proposer gives up (from their own roster). */
+  give: string;
+  /** A player the proposer wants (from the opponent's roster). */
+  want: string;
+}
 
 export interface H2HMatchRow {
   id: string;
@@ -16,10 +24,14 @@ export interface H2HMatchRow {
   host_id: string;
   guest_id: string | null;
   seed: string;
+  host_rating: number;
   turn: Side;
   host_picks: string[];
   guest_picks: string[];
   used_team_eras: string[];
+  trade_offer: TradeOffer | null;
+  host_ready: boolean;
+  guest_ready: boolean;
   winner_id: string | null;
   result: H2HStoredResult | null;
   created_at: string;
@@ -62,11 +74,25 @@ export function isDraftComplete(match: H2HMatchRow): boolean {
   return match.host_picks.length >= H2H_ROSTER_SIZE && match.guest_picks.length >= H2H_ROSTER_SIZE;
 }
 
-/** Random matchmaking: claim the oldest open room hosted by someone else, or
- * open a new one and wait. The claim is an atomic conditional update, so if
- * two players grab the same room only one wins and the loser opens its own. */
+/** This user's current ladder rating (total points), or 0 if unranked. Used
+ * to pair players of similar standing. */
+export async function fetchMyRating(userId: string): Promise<number> {
+  if (!supabase) return 0;
+  const { data } = await supabase.from("h2h_ladder").select("points").eq("user_id", userId).maybeSingle();
+  return (data?.points as number | undefined) ?? 0;
+}
+
+/** Skill-aware matchmaking: among the open rooms, claim the one whose host's
+ * ladder rating is closest to this player's (ties broken by who's waited
+ * longest), so games are competitive rather than purely first-come. It still
+ * always matches if any room exists — closeness only orders the candidates,
+ * it never blocks a pairing — and opens a new room only when the queue is
+ * empty. The claim itself is an atomic conditional update, so if two players
+ * grab the same room only one wins and the other falls through to the next
+ * candidate or opens its own. */
 export async function findOrCreateMatch(userId: string): Promise<H2HMatchRow> {
   if (!supabase) throw new Error("Supabase not configured");
+  const myRating = await fetchMyRating(userId);
 
   const { data: openRooms } = await supabase
     .from("h2h_matches")
@@ -74,10 +100,15 @@ export async function findOrCreateMatch(userId: string): Promise<H2HMatchRow> {
     .eq("status", "waiting")
     .neq("host_id", userId)
     .is("guest_id", null)
-    .order("created_at", { ascending: true })
-    .limit(3);
+    .limit(20);
 
-  for (const room of openRooms ?? []) {
+  const ranked = ((openRooms as H2HMatchRow[] | null) ?? []).sort((a, b) => {
+    const da = Math.abs((a.host_rating ?? 0) - myRating);
+    const db = Math.abs((b.host_rating ?? 0) - myRating);
+    return da - db || a.created_at.localeCompare(b.created_at);
+  });
+
+  for (const room of ranked) {
     const { data: claimed } = await supabase
       .from("h2h_matches")
       .update({ guest_id: userId, status: "drafting", updated_at: new Date().toISOString() })
@@ -91,7 +122,7 @@ export async function findOrCreateMatch(userId: string): Promise<H2HMatchRow> {
 
   const { data: created, error } = await supabase
     .from("h2h_matches")
-    .insert({ host_id: userId, seed: randomSeedString(), status: "waiting", turn: "host" })
+    .insert({ host_id: userId, seed: randomSeedString(), status: "waiting", turn: "host", host_rating: myRating })
     .select()
     .single();
   if (error || !created) throw error ?? new Error("Could not create match");
@@ -120,26 +151,16 @@ export async function commitPick(
   const guestPicks = side === "guest" ? [...match.guest_picks, playerId] : match.guest_picks;
   const complete = hostPicks.length >= H2H_ROSTER_SIZE && guestPicks.length >= H2H_ROSTER_SIZE;
 
+  // When the last pick lands, move into the trading phase rather than
+  // simulating straight away — players get to negotiate roster swaps and
+  // ready up first (see proposeTrade / setReady).
   const update: Record<string, unknown> = {
     host_picks: hostPicks,
     guest_picks: guestPicks,
     turn: side === "host" ? "guest" : "host",
     updated_at: new Date().toISOString(),
+    ...(complete ? { status: "trading", host_ready: false, guest_ready: false } : {}),
   };
-
-  if (complete) {
-    const hostXi = hostPicks.map(resolvePlayer).filter((p): p is Player => Boolean(p));
-    const guestXi = guestPicks.map(resolvePlayer).filter((p): p is Player => Boolean(p));
-    const sim = simulateH2HMatch(match.id, hostXi, guestXi);
-    update.status = "completed";
-    update.winner_id = sim.winner === "a" ? match.host_id : match.guest_id;
-    update.result = {
-      hostScore: sim.a.score,
-      guestScore: sim.b.score,
-      winner: sim.winner === "a" ? "host" : "guest",
-      margin: sim.margin,
-    } satisfies H2HStoredResult;
-  }
 
   const { data } = await supabase
     .from("h2h_matches")
@@ -147,6 +168,129 @@ export async function commitPick(
     .eq("id", match.id)
     .eq("turn", side)
     .eq("status", "drafting")
+    .select()
+    .single();
+  return (data as H2HMatchRow) ?? null;
+}
+
+/** Proposes a 1-for-1 swap during the trading phase: `give` (one of the
+ * proposer's players) for `want` (one of the opponent's). Overwrites any
+ * existing pending offer. */
+export async function proposeTrade(
+  match: H2HMatchRow,
+  side: Side,
+  give: string,
+  want: string
+): Promise<H2HMatchRow | null> {
+  if (!supabase) return null;
+  const mine = picksFor(match, side);
+  const theirs = picksFor(match, side === "host" ? "guest" : "host");
+  if (!mine.includes(give) || !theirs.includes(want)) return null;
+
+  const { data } = await supabase
+    .from("h2h_matches")
+    .update({ trade_offer: { by: side, give, want }, updated_at: new Date().toISOString() })
+    .eq("id", match.id)
+    .eq("status", "trading")
+    .select()
+    .single();
+  return (data as H2HMatchRow) ?? null;
+}
+
+/** Responds to the pending offer. Accepting swaps the two players between
+ * rosters and clears both ready flags (the rosters changed, so each side
+ * re-confirms); rejecting just clears the offer. Only the player who did NOT
+ * make the offer may respond. */
+export async function respondTrade(
+  match: H2HMatchRow,
+  side: Side,
+  accept: boolean
+): Promise<H2HMatchRow | null> {
+  if (!supabase || !match.trade_offer || match.trade_offer.by === side) return null;
+
+  if (!accept) {
+    const { data } = await supabase
+      .from("h2h_matches")
+      .update({ trade_offer: null, updated_at: new Date().toISOString() })
+      .eq("id", match.id)
+      .eq("status", "trading")
+      .select()
+      .single();
+    return (data as H2HMatchRow) ?? null;
+  }
+
+  const { give, want, by } = match.trade_offer;
+  const swap = (picks: string[], out: string, inn: string) => picks.map((id) => (id === out ? inn : id));
+  // Proposer loses `give`, gains `want`; responder loses `want`, gains `give`.
+  const hostPicks =
+    by === "host" ? swap(match.host_picks, give, want) : swap(match.host_picks, want, give);
+  const guestPicks =
+    by === "host" ? swap(match.guest_picks, want, give) : swap(match.guest_picks, give, want);
+
+  const { data } = await supabase
+    .from("h2h_matches")
+    .update({
+      host_picks: hostPicks,
+      guest_picks: guestPicks,
+      trade_offer: null,
+      host_ready: false,
+      guest_ready: false,
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", match.id)
+    .eq("status", "trading")
+    .select()
+    .single();
+  return (data as H2HMatchRow) ?? null;
+}
+
+/** Marks this side ready, then attempts to close out the match. The
+ * completion write is guarded on BOTH ready flags being true server-side, so
+ * whichever client readies second (in any order) triggers exactly one
+ * simulation — see completeIfReady. */
+export async function setReady(match: H2HMatchRow, side: Side): Promise<H2HMatchRow | null> {
+  if (!supabase) return null;
+  const field = side === "host" ? "host_ready" : "guest_ready";
+  const { data } = await supabase
+    .from("h2h_matches")
+    .update({ [field]: true, updated_at: new Date().toISOString() })
+    .eq("id", match.id)
+    .eq("status", "trading")
+    .select()
+    .single();
+  const updated = (data as H2HMatchRow) ?? null;
+  return (await completeIfReady(match.id, updated ?? match)) ?? updated;
+}
+
+/** Simulates and closes the match, but only if both players are ready. The
+ * `status = 'trading'` + both-ready guards make it idempotent and race-safe
+ * (both clients may call it; only the first write wins). Result is computed
+ * from the current — possibly traded — rosters. */
+export async function completeIfReady(matchId: string, snapshot: H2HMatchRow): Promise<H2HMatchRow | null> {
+  if (!supabase) return null;
+  if (!(snapshot.host_ready && snapshot.guest_ready)) return null;
+
+  const hostXi = snapshot.host_picks.map(resolvePlayer).filter((p): p is Player => Boolean(p));
+  const guestXi = snapshot.guest_picks.map(resolvePlayer).filter((p): p is Player => Boolean(p));
+  const sim = simulateH2HMatch(matchId, hostXi, guestXi);
+
+  const { data } = await supabase
+    .from("h2h_matches")
+    .update({
+      status: "completed",
+      winner_id: sim.winner === "a" ? snapshot.host_id : snapshot.guest_id,
+      result: {
+        hostScore: sim.a.score,
+        guestScore: sim.b.score,
+        winner: sim.winner === "a" ? "host" : "guest",
+        margin: sim.margin,
+      } satisfies H2HStoredResult,
+      updated_at: new Date().toISOString(),
+    })
+    .eq("id", matchId)
+    .eq("status", "trading")
+    .eq("host_ready", true)
+    .eq("guest_ready", true)
     .select()
     .single();
   return (data as H2HMatchRow) ?? null;

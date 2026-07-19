@@ -46,6 +46,17 @@ const MODES: ModeDef[] = [
     gameMode: "all-time-real",
   },
   {
+    id: "head-to-head",
+    emoji: "⚔️",
+    image: "/logos/badge-head-to-head.png",
+    tone: "accent",
+    name: "Head-to-Head Challenge",
+    description:
+      "Get matched online against another player. Take turns spinning and drafting an XI — no duplicate players — then your rosters clash for ladder points and a shot at the playoffs.",
+    available: true,
+    href: "/head-to-head",
+  },
+  {
     id: "world-cup-run",
     emoji: "🌍",
     image: "/logos/badge-world-cup.png",
@@ -71,17 +82,6 @@ const MODES: ModeDef[] = [
     name: "Auction Mode",
     description: "Bid for players with a salary cap.",
     available: false,
-  },
-  {
-    id: "head-to-head",
-    emoji: "⚔️",
-    image: "/logos/badge-head-to-head.png",
-    tone: "accent",
-    name: "Head-to-Head Challenge",
-    description:
-      "Get matched online against another player. Take turns spinning and drafting an XI — no duplicate players — then your rosters clash for ladder points and a shot at the playoffs.",
-    available: true,
-    href: "/head-to-head",
   },
 ];
 

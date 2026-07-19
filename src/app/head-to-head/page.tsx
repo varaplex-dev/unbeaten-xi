@@ -1,8 +1,8 @@
 "use client";
 
-import { useCallback, useEffect, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { Swords, Loader2, Trophy } from "lucide-react";
+import { Swords, Loader2, Trophy, Send, ArrowLeftRight, Check } from "lucide-react";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -11,7 +11,7 @@ import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
 import { SpinReel } from "@/components/draft/SpinReel";
 import { useAuthStore } from "@/lib/store/authStore";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
-import { useH2HMatch } from "@/lib/h2h/useH2HMatch";
+import { useH2HMatch, type ChatMessage } from "@/lib/h2h/useH2HMatch";
 import {
   H2H_ROSTER_SIZE,
   resolvePlayer,
@@ -19,6 +19,7 @@ import {
   isDraftComplete,
   rosterBreakdown,
   totalPicks,
+  picksFor,
   fetchLadder,
   type H2HMatchRow,
   type Side,
@@ -146,10 +147,198 @@ function Ladder({ rows }: { rows: LadderEntry[] }) {
   );
 }
 
+function ChatBox({
+  messages,
+  myUserId,
+  onSend,
+}: {
+  messages: ChatMessage[];
+  myUserId: string;
+  onSend: (text: string) => void;
+}) {
+  const [text, setText] = useState("");
+  const endRef = useRef<HTMLDivElement>(null);
+  useEffect(() => {
+    endRef.current?.scrollIntoView({ block: "nearest" });
+  }, [messages.length]);
+
+  return (
+    <div className="mt-4 rounded-2xl border border-border bg-background-elevated/60">
+      <div className="max-h-40 overflow-y-auto px-3 py-2">
+        {messages.length === 0 ? (
+          <p className="py-2 text-center text-xs text-foreground-muted">Say hi to your opponent.</p>
+        ) : (
+          <ul className="space-y-1.5">
+            {messages.map((m, i) => {
+              const mine = m.userId === myUserId;
+              return (
+                <li key={i} className={cn("flex", mine ? "justify-end" : "justify-start")}>
+                  <span
+                    className={cn(
+                      "max-w-[75%] rounded-2xl px-3 py-1.5 text-sm",
+                      mine ? "bg-accent/20 text-foreground" : "bg-white/5 text-foreground"
+                    )}
+                  >
+                    {m.text}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+        )}
+        <div ref={endRef} />
+      </div>
+      <form
+        className="flex items-center gap-2 border-t border-border p-2"
+        onSubmit={(e) => {
+          e.preventDefault();
+          onSend(text);
+          setText("");
+        }}
+      >
+        <input
+          value={text}
+          onChange={(e) => setText(e.target.value)}
+          maxLength={300}
+          placeholder="Message…"
+          className="flex-1 rounded-full bg-background px-3 py-2 text-sm outline-none placeholder:text-foreground-muted focus:ring-1 focus:ring-accent/50"
+        />
+        <button
+          type="submit"
+          aria-label="Send"
+          className="flex h-9 w-9 items-center justify-center rounded-full bg-accent text-[#04120d]"
+        >
+          <Send className="h-4 w-4" />
+        </button>
+      </form>
+    </div>
+  );
+}
+
+function TradePhase({
+  match,
+  side,
+  onOffer,
+  onAnswer,
+  onReady,
+}: {
+  match: H2HMatchRow;
+  side: Side;
+  onOffer: (give: string, want: string) => void;
+  onAnswer: (accept: boolean) => void;
+  onReady: () => void;
+}) {
+  const myPicks = picksFor(match, side);
+  const theirPicks = picksFor(match, side === "host" ? "guest" : "host");
+  const [give, setGive] = useState<string | null>(null);
+  const [want, setWant] = useState<string | null>(null);
+  const iAmReady = side === "host" ? match.host_ready : match.guest_ready;
+  const theyReady = side === "host" ? match.guest_ready : match.host_ready;
+  const offer = match.trade_offer;
+  const incomingOffer = offer && offer.by !== side;
+  const myOfferPending = offer && offer.by === side;
+
+  const nameOf = (id: string) => resolvePlayer(id)?.shortName ?? id;
+
+  return (
+    <div className="mx-auto w-full max-w-2xl">
+      <div className="mb-4 text-center">
+        <h1 className="text-2xl font-black italic tracking-tight">Trade & Ready Up</h1>
+        <p className="text-sm text-foreground-muted">
+          Propose a one-for-one swap, or lock in. Both players ready = the match is simulated.
+        </p>
+      </div>
+
+      {incomingOffer && offer && (
+        <div className="mb-4 rounded-2xl border border-gold/40 bg-gold/5 p-4 text-center">
+          <p className="text-sm">
+            Opponent offers <span className="font-bold text-accent">{nameOf(offer.give)}</span> for your{" "}
+            <span className="font-bold text-saffron">{nameOf(offer.want)}</span>.
+          </p>
+          <div className="mt-3 flex justify-center gap-2">
+            <Button size="sm" onClick={() => onAnswer(true)}>
+              Accept
+            </Button>
+            <Button size="sm" variant="secondary" onClick={() => onAnswer(false)}>
+              Reject
+            </Button>
+          </div>
+        </div>
+      )}
+      {myOfferPending && offer && (
+        <p className="mb-4 rounded-xl border border-border bg-background-elevated/60 px-4 py-2 text-center text-sm text-foreground-muted">
+          Offer sent — {nameOf(offer.give)} for {nameOf(offer.want)}. Waiting for a response…
+        </p>
+      )}
+
+      <div className="grid grid-cols-2 gap-3">
+        <div>
+          <p className="mb-1 text-xs font-bold uppercase tracking-wide text-accent">You give</p>
+          <ul className="space-y-1">
+            {myPicks.map((id) => (
+              <li key={id}>
+                <button
+                  type="button"
+                  onClick={() => setGive(give === id ? null : id)}
+                  className={cn(
+                    "w-full truncate rounded-lg border px-2 py-1.5 text-left text-xs transition-colors",
+                    give === id ? "border-accent bg-accent/15" : "border-border hover:border-accent/40"
+                  )}
+                >
+                  {nameOf(id)}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <p className="mb-1 text-xs font-bold uppercase tracking-wide text-saffron">You want</p>
+          <ul className="space-y-1">
+            {theirPicks.map((id) => (
+              <li key={id}>
+                <button
+                  type="button"
+                  onClick={() => setWant(want === id ? null : id)}
+                  className={cn(
+                    "w-full truncate rounded-lg border px-2 py-1.5 text-left text-xs transition-colors",
+                    want === id ? "border-saffron bg-saffron/15" : "border-border hover:border-saffron/40"
+                  )}
+                >
+                  {nameOf(id)}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
+      <div className="mt-4 flex flex-col gap-2 sm:flex-row">
+        <Button
+          variant="secondary"
+          className="flex-1 gap-2"
+          disabled={!give || !want || Boolean(offer)}
+          onClick={() => give && want && (onOffer(give, want), setGive(null), setWant(null))}
+        >
+          <ArrowLeftRight className="h-4 w-4" />
+          Propose Trade
+        </Button>
+        <Button className="flex-1 gap-2" disabled={iAmReady} onClick={onReady}>
+          {iAmReady ? <Check className="h-4 w-4" /> : null}
+          {iAmReady ? "Ready — waiting" : "Ready to Simulate"}
+        </Button>
+      </div>
+      <p className="mt-2 text-center text-xs text-foreground-muted">
+        You: {iAmReady ? "ready" : "not ready"} · Opponent: {theyReady ? "ready" : "not ready"}
+      </p>
+    </div>
+  );
+}
+
 export default function HeadToHeadPage() {
   const hasLoaded = useAuthStore((s) => s.hasLoaded);
   const user = useAuthStore((s) => s.user);
-  const { match, phase, error, side, find, pick, leave } = useH2HMatch(user?.id ?? null);
+  const { match, phase, error, side, messages, find, pick, offerTrade, answerTrade, ready, sendChat, leave } =
+    useH2HMatch(user?.id ?? null);
   const [ladder, setLadder] = useState<LadderEntry[]>([]);
 
   // Local spin state for the active player's turn, tagged with the pick index
@@ -289,9 +478,23 @@ export default function HeadToHeadPage() {
 
           {isDraftComplete(match) && (
             <div className="mt-4 flex justify-center">
-              <Badge variant="accent">Simulating the match…</Badge>
+              <Badge variant="accent">Draft complete — moving to trades…</Badge>
             </div>
           )}
+
+          <ChatBox messages={messages} myUserId={user.id} onSend={sendChat} />
+        </div>
+      </Shell>
+    );
+  }
+
+  // ---- Trading + ready-up --------------------------------------------------
+  if (match && match.status === "trading" && side) {
+    return (
+      <Shell>
+        <TradePhase match={match} side={side} onOffer={offerTrade} onAnswer={answerTrade} onReady={ready} />
+        <div className="mx-auto w-full max-w-2xl">
+          <ChatBox messages={messages} myUserId={user.id} onSend={sendChat} />
         </div>
       </Shell>
     );

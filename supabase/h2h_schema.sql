@@ -23,16 +23,29 @@
 -- ─────────────────────────────────────────────────────────────────────────
 create table if not exists public.h2h_matches (
   id uuid primary key default gen_random_uuid(),
+  -- 'waiting'  → open room in the queue
+  -- 'drafting' → both joined, alternating spin/pick
+  -- 'trading'  → rosters drafted; optional 1-for-1 player trades, then both
+  --              players ready up before the match is simulated
+  -- 'completed' / 'abandoned'
   status text not null default 'waiting'
-    check (status in ('waiting', 'drafting', 'completed', 'abandoned')),
+    check (status in ('waiting', 'drafting', 'trading', 'completed', 'abandoned')),
   host_id uuid not null references auth.users (id) on delete cascade,
   guest_id uuid references auth.users (id) on delete set null,
   seed text not null,
+  -- Denormalized host ladder rating (points) at room creation, so the
+  -- matchmaker can pick the closest-rated open room without a join.
+  host_rating int not null default 0,
   -- 'host' | 'guest' — whose turn it is to spin and pick.
   turn text not null default 'host' check (turn in ('host', 'guest')),
   host_picks jsonb not null default '[]',   -- player ids, in draft order
   guest_picks jsonb not null default '[]',
-  used_team_eras jsonb not null default '[]', -- eraTeamIds already drafted from
+  used_team_eras jsonb not null default '[]', -- reserved (teams may repeat)
+  -- Pending trade offer during the 'trading' phase:
+  --   { by: 'host'|'guest', give: <playerId>, want: <playerId> }
+  trade_offer jsonb,
+  host_ready boolean not null default false,
+  guest_ready boolean not null default false,
   winner_id uuid references auth.users (id) on delete set null,
   result jsonb,  -- H2HMatchResult + points, written on completion
   created_at timestamptz not null default now(),
