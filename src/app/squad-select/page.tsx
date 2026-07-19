@@ -5,12 +5,15 @@ import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { PlayerCard } from "@/components/draft/PlayerCard";
 import { SpinReel } from "@/components/draft/SpinReel";
+import { SquadField } from "@/components/draft/SquadField";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useDraftedPlayers, useGameStore } from "@/lib/store/gameStore";
 import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
-import { SQUAD_SIZE, type EraTeam } from "@/lib/types";
+import { getRealPlayerById } from "@/lib/data/realPlayers";
+import { getLegendPlayerById } from "@/lib/data/legendPlayers";
+import { SQUAD_SIZE, type EraTeam, type Player } from "@/lib/types";
 
 export default function SquadSelectPage() {
   const router = useRouter();
@@ -34,6 +37,13 @@ export default function SquadSelectPage() {
   const draftedIds = useMemo(() => new Set(draftPicks.map((p) => p.playerId)), [draftPicks]);
   const squadComplete = draftPicks.length >= SQUAD_SIZE;
   const impactResolved = impactPlayerId !== null;
+  const impactPlayer: Player | null = impactPlayerId
+    ? (getRealPlayerById(impactPlayerId) ?? getLegendPlayerById(impactPlayerId) ?? null)
+    : null;
+  const fieldSlots: (Player | null)[] = useMemo(
+    () => Array.from({ length: SQUAD_SIZE }, (_, i) => draftedPlayers[i] ?? null),
+    [draftedPlayers]
+  );
 
   useEffect(() => {
     if (hasHydrated && !seed) router.replace("/play");
@@ -106,15 +116,14 @@ export default function SquadSelectPage() {
             />
           </div>
 
-          {draftedPlayers.length > 0 && (
-            <div className="mb-6 flex flex-wrap gap-1.5">
-              {draftedPlayers.map((player, i) => (
-                <Badge key={player.id} variant="accent">
-                  {i + 1}. {player.shortName}
-                </Badge>
-              ))}
-            </div>
-          )}
+          <div className="mb-6">
+            <SquadField
+              slots={fieldSlots}
+              activeIndex={squadComplete ? null : draftPicks.length}
+              impactPlayer={impactPlayer}
+              impactActive={squadComplete && !impactResolved}
+            />
+          </div>
 
           {spinTarget ? (
             <SpinReel target={spinTarget} onComplete={handleSpinComplete} />
