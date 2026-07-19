@@ -71,6 +71,7 @@ export const en = {
     "Adds real fielding-position placement to your XI — a bowler or all-rounder at slip or gully sharpens your wicket-taking; a specialist batter there is a gamble.",
 
   "hardcore.label": "Hardcore Mode",
+  "hardcore.toggleHint": "Hide player stats — draft on cricket knowledge alone.",
   "hardcore.noStatsBanner":
     "No stats shown on player cards. Draft on your own historical and current knowledge of the sport and its players.",
   "hardcore.statsHidden": "Stats hidden — Hardcore Mode",

@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import { ModeBadge } from "@/components/play/ModeBadge";
 import { useGameStore, type GameMode } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
+import { cn } from "@/lib/utils";
 
 // Every playable mode uses real players (see realPlayers.ts and
 // legendPlayers.ts) — the old fictional roster/engine still exists in the
@@ -79,6 +80,39 @@ const MODES: ModeDef[] = [
   },
 ];
 
+function HardcoreToggle() {
+  const hardcoreMode = useGameStore((s) => s.hardcoreMode);
+  const setHardcoreMode = useGameStore((s) => s.setHardcoreMode);
+  const { t } = useTranslation();
+
+  return (
+    <div className="mt-3 flex items-center justify-between gap-3 rounded-xl border border-gold/30 bg-gold/5 px-3 py-2.5">
+      <div className="min-w-0">
+        <p className="text-xs font-bold uppercase tracking-wide text-gold">{t("hardcore.label")}</p>
+        <p className="text-xs text-foreground-muted">{t("hardcore.toggleHint")}</p>
+      </div>
+      <button
+        type="button"
+        role="switch"
+        aria-checked={hardcoreMode}
+        aria-label={t("hardcore.label")}
+        onClick={() => setHardcoreMode(!hardcoreMode)}
+        className={cn(
+          "relative h-7 w-12 shrink-0 rounded-full border transition-colors",
+          hardcoreMode ? "border-accent bg-accent/30" : "border-border bg-background-elevated"
+        )}
+      >
+        <span
+          className={cn(
+            "absolute top-0.5 h-5 w-5 rounded-full transition-transform",
+            hardcoreMode ? "translate-x-[22px] bg-accent" : "translate-x-0.5 bg-foreground"
+          )}
+        />
+      </button>
+    </div>
+  );
+}
+
 export function ModeGrid() {
   const router = useRouter();
   const spinEraTeam = useGameStore((s) => s.spinEraTeam);
@@ -101,17 +135,22 @@ export function ModeGrid() {
             </div>
             {!mode.available && <Badge variant="gold">{t("play.comingSoon")}</Badge>}
           </CardHeader>
-          <CardContent className="flex items-end justify-between gap-4">
-            <p className="text-sm text-foreground-muted">
-              {mode.id === "all-time-xi" ? t("play.allTimeXiDesc") : mode.description}
-            </p>
-            {mode.available && (
-              <div className="flex shrink-0 gap-2">
-                <Button size="sm" onClick={() => handleSpin(mode)}>
-                  {t("play.spin")}
-                </Button>
-              </div>
-            )}
+          <CardContent>
+            <div className="flex items-end justify-between gap-4">
+              <p className="text-sm text-foreground-muted">
+                {mode.id === "all-time-xi" ? t("play.allTimeXiDesc") : mode.description}
+              </p>
+              {mode.available && (
+                <div className="flex shrink-0 gap-2">
+                  <Button size="sm" onClick={() => handleSpin(mode)}>
+                    {t("play.spin")}
+                  </Button>
+                </div>
+              )}
+            </div>
+            {/* Opt into Hardcore Mode before starting the classic game — off
+                by default, so a normal spin-and-draft never hides stats. */}
+            {mode.id === "all-time-xi" && mode.available && <HardcoreToggle />}
           </CardContent>
         </Card>
       ))}
