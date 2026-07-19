@@ -28,6 +28,7 @@ function currentSquadFor(country: string, count = 16): Player[] {
 const HISTORIC_TEAMS: EraTeam[] = [
   {
     id: "west-indies-1980s",
+    year: 1985,
     name: "West Indies",
     eraLabel: "1980s — The Pace Battery",
     tagline: "Four fast bowlers, no mercy, and Viv Richards walking out without a helmet.",
@@ -54,6 +55,7 @@ const HISTORIC_TEAMS: EraTeam[] = [
   },
   {
     id: "australia-1995-2007",
+    year: 2001,
     name: "Australia",
     eraLabel: "1995–2007 — The Invincibles",
     tagline: "Bat first, bowl you out twice, and sledge you the whole way through.",
@@ -78,6 +80,7 @@ const HISTORIC_TEAMS: EraTeam[] = [
   },
   {
     id: "india-2000s-golden-generation",
+    year: 2005,
     name: "India",
     eraLabel: "2000s — The Golden Generation",
     tagline: "The batting order that made the rest of the world nervous for a decade.",
@@ -101,6 +104,7 @@ const HISTORIC_TEAMS: EraTeam[] = [
   },
   {
     id: "pakistan-1992-world-cup",
+    year: 1992,
     name: "Pakistan",
     eraLabel: "1992 — World Cup Champions",
     tagline: "Cornered tigers. Imran's men peaked at exactly the right moment.",
@@ -122,6 +126,7 @@ const HISTORIC_TEAMS: EraTeam[] = [
   },
   {
     id: "sri-lanka-1996-world-cup",
+    year: 1996,
     name: "Sri Lanka",
     eraLabel: "1996 — World Cup Champions",
     tagline: "Reinvented the opening over and blitzed the world in 15 overs flat.",
@@ -144,6 +149,7 @@ const HISTORIC_TEAMS: EraTeam[] = [
   },
   {
     id: "south-africa-1990s-2000s",
+    year: 2000,
     name: "South Africa",
     eraLabel: "1990s–2000s — The Proteas Era",
     tagline: "Ruthlessly professional, one run short of a world title more than once.",
@@ -165,6 +171,7 @@ const HISTORIC_TEAMS: EraTeam[] = [
   },
   {
     id: "england-2005-ashes",
+    year: 2005,
     name: "England",
     eraLabel: "2005 — Ashes Winners",
     tagline: "The summer that ended eighteen years of Australian dominance.",
@@ -204,7 +211,8 @@ const SQUAD_MIN_FOR_ERA_TEAM = 11;
 // The current international season these squads represent — labelled with the
 // running year rather than "Today", so a spin reads like "England · 2026
 // Season" the way 82-0 shows a team + a concrete era.
-const CURRENT_SEASON_LABEL = `${new Date().getFullYear()} Season`;
+const CURRENT_SEASON_YEAR = new Date().getFullYear();
+const CURRENT_SEASON_LABEL = `${CURRENT_SEASON_YEAR} Season`;
 
 const CURRENT_TEAMS: EraTeam[] = CURRENT_ERA_COUNTRIES.map((country) => ({
   id: `current-${country.toLowerCase().replace(/\s+/g, "-")}`,
@@ -213,6 +221,7 @@ const CURRENT_TEAMS: EraTeam[] = CURRENT_ERA_COUNTRIES.map((country) => ({
   tagline: `${country}'s strongest current squad this season.`,
   country,
   isHistoric: false,
+  year: CURRENT_SEASON_YEAR,
   players: currentSquadFor(country),
 })).filter((team) => team.players.length >= SQUAD_MIN_FOR_ERA_TEAM);
 

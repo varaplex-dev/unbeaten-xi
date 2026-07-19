@@ -63,6 +63,11 @@ export interface GameState {
    * choose which batting-order slot to place them in — see
    * selectSquadPlayer()/placeSquadPlayer(). Null when nothing is pending. */
   pendingPlayerId: string | null;
+  /** playerId -> the era year of the team they were drafted from (see
+   * EraTeam.year). Averaged at simulation time so a spin-drafted squad's
+   * season is played against era-appropriate opponents. Empty for the old
+   * flat-draft modes, which then simulate with no era adjustment. */
+  pickSourceYears: Record<string, number>;
 
   battingOrder: string[];
   bowlingRoleAssignments: Record<string, BowlingPhase>;
@@ -147,6 +152,7 @@ const initialState: Omit<GameState, "hasHydrated" | "hardcoreMode" | "bestSeason
   usedEraTeamIds: [],
   squadSlots: Array<string | null>(SQUAD_SIZE).fill(null),
   pendingPlayerId: null,
+  pickSourceYears: {},
   battingOrder: [],
   bowlingRoleAssignments: {},
   captainId: null,
@@ -287,7 +293,7 @@ export const useGameStore = create<GameState & GameActions>()(
        * to choose where in the order they go via placeSquadPlayer(), which
        * is the actual strategic decision (see that function's comment). */
       selectSquadPlayer: (player) => {
-        const { squadSlots, eraTeamId, usedEraTeamIds } = get();
+        const { squadSlots, eraTeamId, usedEraTeamIds, pickSourceYears } = get();
         if (!eraTeamId) return;
         const eraTeam = getEraTeamById(eraTeamId);
         if (!eraTeam) return;
@@ -299,6 +305,7 @@ export const useGameStore = create<GameState & GameActions>()(
           pendingPlayerId: player.id,
           usedEraTeamIds: [...usedEraTeamIds, eraTeamId],
           eraTeamId: null,
+          pickSourceYears: { ...pickSourceYears, [player.id]: eraTeam.year },
         });
         track("player_selected", {
           categoryId: "wildcard",
@@ -361,7 +368,8 @@ export const useGameStore = create<GameState & GameActions>()(
       },
 
       pickImpactPlayer: (player) => {
-        const { eraTeamId, usedEraTeamIds } = get();
+        const { eraTeamId, usedEraTeamIds, pickSourceYears } = get();
+        const eraTeam = eraTeamId ? getEraTeamById(eraTeamId) : null;
         set({
           impactPlayerId: player.id,
           stage: "team-setup",
@@ -369,6 +377,7 @@ export const useGameStore = create<GameState & GameActions>()(
           // pick; category-draft games never set eraTeamId, so this is a
           // no-op there.
           ...(eraTeamId ? { usedEraTeamIds: [...usedEraTeamIds, eraTeamId], eraTeamId: null } : {}),
+          ...(eraTeam ? { pickSourceYears: { ...pickSourceYears, [player.id]: eraTeam.year } } : {}),
         });
       },
 
@@ -428,11 +437,23 @@ export const useGameStore = create<GameState & GameActions>()(
           hardcoreMode,
           fieldingAssignments,
           bestSeason,
+          pickSourceYears,
         } = get();
         const xi = getXi(draftPicks, mode);
         if (xi.length !== SQUAD_SIZE || !seed || !captainId) return;
         const impactPlayer = impactPlayerId ? (playerLookup(mode, impactPlayerId) ?? null) : null;
         const isFirstRun = matchResults.length === 0;
+
+        // Average the era of the drafted XI (only spin-draft games record a
+        // source year per pick) so the season is played against opponents
+        // anchored to that era — a 1980s legends side isn't measured against
+        // modern T20 run-rates, and vice versa.
+        const eraYears = xi
+          .map((p) => pickSourceYears[p.id])
+          .filter((y): y is number => typeof y === "number");
+        const averageEra = eraYears.length
+          ? Math.round(eraYears.reduce((sum, y) => sum + y, 0) / eraYears.length)
+          : undefined;
 
         let decisions = get().decisions;
         let result = simulateSeason(
@@ -442,7 +463,8 @@ export const useGameStore = create<GameState & GameActions>()(
           captainId,
           impactPlayer,
           decisions,
-          hardcoreMode ? fieldingAssignments : undefined
+          hardcoreMode ? fieldingAssignments : undefined,
+          averageEra
         );
 
         // Classic mode never surfaces in-match decisions — that interactive
@@ -452,7 +474,7 @@ export const useGameStore = create<GameState & GameActions>()(
         // single straight-through simulation with no further input needed.
         while (result.pendingDecision && !hardcoreMode) {
           decisions = { ...decisions, [result.pendingDecision.matchNumber]: result.pendingDecision.options[0].id };
-          result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions, undefined);
+          result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions, undefined, averageEra);
         }
 
         const { matches, stats, pendingDecision } = result;

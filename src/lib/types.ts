@@ -209,6 +209,12 @@ export interface EraTeam {
   tagline: string;
   country: string;
   isHistoric: boolean;
+  /** A representative calendar year for this squad's era — the central year
+   * of a historic side, the season year of a franchise team, or the current
+   * year for a "this season" national squad. Used to average the era of a
+   * drafted XI so its season is simulated against era-appropriate opponents
+   * (see the averageEra path in simulate.ts). */
+  year: number;
   players: Player[];
 }
 

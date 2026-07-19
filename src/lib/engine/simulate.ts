@@ -294,6 +294,20 @@ function resolveDecisionOutcome(
   return { teamBonus: 0, opponentPenalty: 0, resultLabel: "Held the Impact Player in reserve." };
 }
 
+// League run-scoring is anchored to this "modern" year; a drafted XI whose
+// average era predates it faces proportionally lower-scoring opposition, so
+// a legends side isn't measured against present-day T20 run-rates (its own
+// real stats already convert to lower T20-equivalent outputs). Capped so the
+// adjustment stays a fairness nudge, not a free win.
+const MODERN_ERA_YEAR = 2020;
+const MAX_ERA_SCALE_DOWN = 0.15;
+
+function eraOpponentScale(averageEra?: number): number {
+  if (!averageEra) return 1;
+  const yearsBack = Math.max(0, MODERN_ERA_YEAR - averageEra);
+  return 1 - Math.min(MAX_ERA_SCALE_DOWN, yearsBack * 0.0035);
+}
+
 export function simulateSeason(
   seed: string,
   xi: Player[],
@@ -301,7 +315,8 @@ export function simulateSeason(
   captainId: string,
   impactPlayer: Player | null,
   decisions: Record<number, string>,
-  fieldingAssignments?: FieldingAssignments
+  fieldingAssignments?: FieldingAssignments,
+  averageEra?: number
 ): SeasonSimulationResult {
   const rng = createRng(`${seed}::season`);
   const battingOrder = battingOrderIds
@@ -323,6 +338,8 @@ export function simulateSeason(
   // normal game is completely unaffected.
   const fieldingBonus = fieldingAssignments ? fieldingWicketBonus(xi, fieldingAssignments) : 0;
   const teamWicketThreat = isStatsGame ? wicketThreat(xi, fieldingBonus) : 0;
+  // Cross-era fairness: scales league opponents down toward the squad's era.
+  const eraScale = eraOpponentScale(averageEra);
 
   const topBatters = orderedForBatting.slice(0, 7);
   const battingWeights = [1.3, 1.2, 1.1, 1.0, 0.9, 0.7, 0.5];
@@ -403,8 +420,9 @@ export function simulateSeason(
       // 120-210 — wide enough to overlap the full range a real T20 batting
       // order can produce (see expectedRunsFromBatting), so even a genuinely
       // elite user team can run into an opponent having a big night, and a
-      // weaker team can still catch a break against a modest one.
-      const opponentBaseRuns = 120 + rng() * 90;
+      // weaker team can still catch a break against a modest one. Scaled by
+      // the squad's era so older sides face era-appropriate opposition.
+      const opponentBaseRuns = (120 + rng() * 90) * eraScale;
       teamBaseline = expectedRunsFor + teamBonus;
       opponentBaseline = opponentBaseRuns - suppression - opponentPenalty;
       teamScore = simulateInningsScoreFromRuns(rng, teamBaseline, pitch, suitability);

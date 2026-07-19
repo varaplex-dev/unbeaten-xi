@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import { simulateSeason, type SeasonStats } from "./simulate";
 import { autoAssignLineup } from "./lineup";
 import { PLAYERS } from "@/lib/data/players";
+import { REAL_PLAYERS } from "@/lib/data/realPlayers";
 import { isWicketkeeper, isPaceBowler, isSpinner, canBowl, type Player } from "@/lib/types";
 
 /** Runs a full season to completion, auto-resolving every decision with its first option. */
@@ -10,11 +11,12 @@ function runFullSeason(
   xi: Player[],
   battingOrder: string[],
   captainId: string,
-  impactPlayer: Player | null
+  impactPlayer: Player | null,
+  averageEra?: number
 ): SeasonStats {
   const decisions: Record<number, string> = {};
   for (let guard = 0; guard < 20; guard++) {
-    const result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions);
+    const result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions, undefined, averageEra);
     if (result.stats) return result.stats;
     if (!result.pendingDecision) throw new Error("simulateSeason paused without a pendingDecision");
     decisions[result.pendingDecision.matchNumber] = result.pendingDecision.options[0].id;
@@ -74,6 +76,18 @@ describe("simulateSeason", () => {
     const a = runFullSeason("determinism-season", xi, lineup.battingOrder, lineup.captainId, null);
     const b = runFullSeason("determinism-season", xi, lineup.battingOrder, lineup.captainId, null);
     expect(a).toEqual(b);
+  });
+
+  it("older-era squads face lower-scoring opposition (cross-era fairness)", () => {
+    // A real, stats-backed XI so the sim runs its stats-game path (the only
+    // one the era adjustment touches).
+    const xi = REAL_PLAYERS.filter((p) => p.careerStats).slice(0, 11);
+    const lineup = autoAssignLineup(xi);
+    const modern = runFullSeason("era-fair", xi, lineup.battingOrder, lineup.captainId, null, 2022);
+    const legends = runFullSeason("era-fair", xi, lineup.battingOrder, lineup.captainId, null, 1980);
+    // Same seed and team, older era → opponents scaled down → they concede
+    // no more runs than in a modern-era season.
+    expect(legends.totalRunsAgainst).toBeLessThanOrEqual(modern.totalRunsAgainst);
   });
 
   it("resuming with a growing decisions map replays already-decided matches identically", () => {

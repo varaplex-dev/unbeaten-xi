@@ -74,6 +74,10 @@ function buildFranchiseSeasonTeams(): EraTeam[] {
 
     const leagueLabel = LEAGUE_LABELS[raw.league] ?? raw.league.toUpperCase();
     const yearLabel = seasonYearLabel(raw.season);
+    // The first four digits of the season label are the calendar year the
+    // squad played (a "2024-25" BBL season is anchored to 2024); falls back
+    // to the current year if a season string is ever unparseable.
+    const year = Number(yearLabel.slice(0, 4)) || new Date().getFullYear();
     const possessive = raw.teamName.endsWith("s") ? `${raw.teamName}'` : `${raw.teamName}'s`;
     teams.push({
       id: `${raw.league}-${slugify(raw.season)}-${slugify(raw.teamName)}`,
@@ -82,6 +86,7 @@ function buildFranchiseSeasonTeams(): EraTeam[] {
       tagline: `${possessive} actual ${yearLabel} squad — everyone who played at least half the season.`,
       country: leagueLabel,
       isHistoric: true,
+      year,
       players,
     });
   }
