@@ -11,6 +11,8 @@ import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
 import { SpinReel } from "@/components/draft/SpinReel";
 import { useAuthStore } from "@/lib/store/authStore";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
+import { useTranslation } from "@/lib/i18n/useTranslation";
+import type { TranslationKey } from "@/lib/i18n";
 import { useH2HMatch, type ChatMessage } from "@/lib/h2h/useH2HMatch";
 import {
   H2H_ROSTER_SIZE,
@@ -29,7 +31,18 @@ import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
 import type { EraTeam, Player } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
+// The comparison metric keys (from headToHead.ts) mapped to their i18n keys,
+// so the roster breakdown renders in the active language.
+const METRIC_LABEL_KEYS: Record<string, TranslationKey> = {
+  expectedRuns: "h2h.metric.expectedRuns",
+  strikeRate: "h2h.metric.strikeRate",
+  reliability: "h2h.metric.reliability",
+  wicketThreat: "h2h.metric.wicketThreat",
+  economy: "h2h.metric.economy",
+};
+
 function RosterColumn({ title, picks, active }: { title: string; picks: string[]; active: boolean }) {
+  const { t } = useTranslation();
   return (
     <div className={cn("flex-1 rounded-xl border p-3", active ? "border-accent/60 bg-accent/5" : "border-border")}>
       <p className="mb-2 flex items-center justify-between text-xs font-bold uppercase tracking-wide">
@@ -49,13 +62,14 @@ function RosterColumn({ title, picks, active }: { title: string; picks: string[]
             </li>
           );
         })}
-        {picks.length === 0 && <li className="text-xs text-foreground-muted">No picks yet.</li>}
+        {picks.length === 0 && <li className="text-xs text-foreground-muted">{t("h2h.noPicks")}</li>}
       </ul>
     </div>
   );
 }
 
 function ResultView({ match, side }: { match: H2HMatchRow; side: Side }) {
+  const { t } = useTranslation();
   const breakdown = useMemo(() => rosterBreakdown(match), [match]);
   if (!match.result) return null;
   const won = match.result.winner === side;
@@ -66,18 +80,20 @@ function ResultView({ match, side }: { match: H2HMatchRow; side: Side }) {
     <div className="mx-auto w-full max-w-md">
       <div className="mb-5 text-center">
         <p className={cn("text-3xl font-black italic tracking-tight", won ? "text-accent" : "text-danger")}>
-          {won ? "You Win!" : "You Lose"}
+          {won ? t("h2h.youWin") : t("h2h.youLose")}
         </p>
         <p className="mt-1 font-mono text-lg tabular-nums text-foreground">
-          {myScore} <span className="text-foreground-muted">vs</span> {oppScore}
+          {myScore} <span className="text-foreground-muted">{t("h2h.vs")}</span> {oppScore}
         </p>
-        <p className="text-xs text-foreground-muted">by {match.result.margin} runs</p>
+        <p className="text-xs text-foreground-muted">
+          {t("h2h.margin")} · {match.result.margin} {t("h2h.runs")}
+        </p>
       </div>
 
       {breakdown && (
         <div className="rounded-2xl border border-border bg-background-elevated/70 p-4">
           <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-foreground-muted">
-            Roster Breakdown — You vs Opponent
+            {t("h2h.breakdownTitle")}
           </p>
           <ul className="space-y-2">
             {breakdown.metrics.map((m) => {
@@ -94,7 +110,7 @@ function ResultView({ match, side }: { match: H2HMatchRow; side: Side }) {
                     {mine}
                   </span>
                   <span className="px-2 text-center text-[10px] uppercase tracking-wide text-foreground-muted">
-                    {m.label}
+                    {t(METRIC_LABEL_KEYS[m.key] ?? "h2h.metric.expectedRuns")}
                   </span>
                   <span
                     className={cn(
@@ -109,7 +125,8 @@ function ResultView({ match, side }: { match: H2HMatchRow; side: Side }) {
             })}
           </ul>
           <p className="mt-3 text-center text-xs text-foreground-muted">
-            Categories won: <span className="font-bold text-accent">{side === "host" ? breakdown.aCategories : breakdown.bCategories}</span>{" "}
+            {t("h2h.categoriesWon")}:{" "}
+            <span className="font-bold text-accent">{side === "host" ? breakdown.aCategories : breakdown.bCategories}</span>{" "}
             — <span className="font-bold text-saffron">{side === "host" ? breakdown.bCategories : breakdown.aCategories}</span>
           </p>
         </div>
@@ -119,11 +136,12 @@ function ResultView({ match, side }: { match: H2HMatchRow; side: Side }) {
 }
 
 function Ladder({ rows }: { rows: LadderEntry[] }) {
+  const { t } = useTranslation();
   if (rows.length === 0) return null;
   return (
     <div className="mx-auto mt-8 w-full max-w-md">
       <h2 className="mb-2 flex items-center gap-2 text-lg font-black italic tracking-tight">
-        <Trophy className="h-4 w-4 text-gold" /> Head-to-Head Ladder
+        <Trophy className="h-4 w-4 text-gold" /> {t("h2h.ladderTitle")}
       </h2>
       <ol className="overflow-hidden rounded-xl border border-border">
         {rows.map((r, i) => (
@@ -140,9 +158,7 @@ function Ladder({ rows }: { rows: LadderEntry[] }) {
           </li>
         ))}
       </ol>
-      <p className="mt-1 text-center text-[10px] text-foreground-muted">
-        Win 3 · dominant win +1 · narrow loss +1. Top finishers seed the playoff bracket.
-      </p>
+      <p className="mt-1 text-center text-[10px] text-foreground-muted">{t("h2h.ladderRules")}</p>
     </div>
   );
 }
@@ -156,6 +172,7 @@ function ChatBox({
   myUserId: string;
   onSend: (text: string) => void;
 }) {
+  const { t } = useTranslation();
   const [text, setText] = useState("");
   const endRef = useRef<HTMLDivElement>(null);
   useEffect(() => {
@@ -166,7 +183,7 @@ function ChatBox({
     <div className="mt-4 rounded-2xl border border-border bg-background-elevated/60">
       <div className="max-h-40 overflow-y-auto px-3 py-2">
         {messages.length === 0 ? (
-          <p className="py-2 text-center text-xs text-foreground-muted">Say hi to your opponent.</p>
+          <p className="py-2 text-center text-xs text-foreground-muted">{t("h2h.sayHi")}</p>
         ) : (
           <ul className="space-y-1.5">
             {messages.map((m, i) => {
@@ -200,7 +217,7 @@ function ChatBox({
           value={text}
           onChange={(e) => setText(e.target.value)}
           maxLength={300}
-          placeholder="Message…"
+          placeholder={t("h2h.message")}
           className="flex-1 rounded-full bg-background px-3 py-2 text-sm outline-none placeholder:text-foreground-muted focus:ring-1 focus:ring-accent/50"
         />
         <button
@@ -228,6 +245,7 @@ function TradePhase({
   onAnswer: (accept: boolean) => void;
   onReady: () => void;
 }) {
+  const { t } = useTranslation();
   const myPicks = picksFor(match, side);
   const theirPicks = picksFor(match, side === "host" ? "guest" : "host");
   const [give, setGive] = useState<string | null>(null);
@@ -243,37 +261,36 @@ function TradePhase({
   return (
     <div className="mx-auto w-full max-w-2xl">
       <div className="mb-4 text-center">
-        <h1 className="text-2xl font-black italic tracking-tight">Trade & Ready Up</h1>
-        <p className="text-sm text-foreground-muted">
-          Propose a one-for-one swap, or lock in. Both players ready = the match is simulated.
-        </p>
+        <h1 className="text-2xl font-black italic tracking-tight">{t("h2h.tradeTitle")}</h1>
+        <p className="text-sm text-foreground-muted">{t("h2h.tradeIntro")}</p>
       </div>
 
       {incomingOffer && offer && (
         <div className="mb-4 rounded-2xl border border-gold/40 bg-gold/5 p-4 text-center">
-          <p className="text-sm">
-            Opponent offers <span className="font-bold text-accent">{nameOf(offer.give)}</span> for your{" "}
-            <span className="font-bold text-saffron">{nameOf(offer.want)}</span>.
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-gold">{t("h2h.incomingTrade")}</p>
+          <p className="mt-1 text-sm">
+            {t("h2h.youGet")} <span className="font-bold text-accent">{nameOf(offer.give)}</span> · {t("h2h.youGive")}{" "}
+            <span className="font-bold text-saffron">{nameOf(offer.want)}</span>
           </p>
           <div className="mt-3 flex justify-center gap-2">
             <Button size="sm" onClick={() => onAnswer(true)}>
-              Accept
+              {t("h2h.accept")}
             </Button>
             <Button size="sm" variant="secondary" onClick={() => onAnswer(false)}>
-              Reject
+              {t("h2h.reject")}
             </Button>
           </div>
         </div>
       )}
       {myOfferPending && offer && (
         <p className="mb-4 rounded-xl border border-border bg-background-elevated/60 px-4 py-2 text-center text-sm text-foreground-muted">
-          Offer sent — {nameOf(offer.give)} for {nameOf(offer.want)}. Waiting for a response…
+          {t("h2h.offerPending")}
         </p>
       )}
 
       <div className="grid grid-cols-2 gap-3">
         <div>
-          <p className="mb-1 text-xs font-bold uppercase tracking-wide text-accent">You give</p>
+          <p className="mb-1 text-xs font-bold uppercase tracking-wide text-accent">{t("h2h.youGive")}</p>
           <ul className="space-y-1">
             {myPicks.map((id) => (
               <li key={id}>
@@ -292,7 +309,7 @@ function TradePhase({
           </ul>
         </div>
         <div>
-          <p className="mb-1 text-xs font-bold uppercase tracking-wide text-saffron">You want</p>
+          <p className="mb-1 text-xs font-bold uppercase tracking-wide text-saffron">{t("h2h.youWant")}</p>
           <ul className="space-y-1">
             {theirPicks.map((id) => (
               <li key={id}>
@@ -320,15 +337,16 @@ function TradePhase({
           onClick={() => give && want && (onOffer(give, want), setGive(null), setWant(null))}
         >
           <ArrowLeftRight className="h-4 w-4" />
-          Propose Trade
+          {t("h2h.proposeTrade")}
         </Button>
         <Button className="flex-1 gap-2" disabled={iAmReady} onClick={onReady}>
           {iAmReady ? <Check className="h-4 w-4" /> : null}
-          {iAmReady ? "Ready — waiting" : "Ready to Simulate"}
+          {iAmReady ? t("h2h.readyWaiting") : t("h2h.readyToSim")}
         </Button>
       </div>
       <p className="mt-2 text-center text-xs text-foreground-muted">
-        You: {iAmReady ? "ready" : "not ready"} · Opponent: {theyReady ? "ready" : "not ready"}
+        {t("h2h.you")}: {iAmReady ? t("h2h.ready") : t("h2h.notReady")} · {t("h2h.opponent")}:{" "}
+        {theyReady ? t("h2h.ready") : t("h2h.notReady")}
       </p>
     </div>
   );
@@ -339,6 +357,7 @@ export default function HeadToHeadPage() {
   const user = useAuthStore((s) => s.user);
   const { match, phase, error, side, messages, find, pick, offerTrade, answerTrade, ready, sendChat, leave } =
     useH2HMatch(user?.id ?? null);
+  const { t } = useTranslation();
   const [ladder, setLadder] = useState<LadderEntry[]>([]);
 
   // Local spin state for the active player's turn, tagged with the pick index
@@ -375,7 +394,7 @@ export default function HeadToHeadPage() {
   if (!isSupabaseConfigured) {
     return (
       <Shell>
-        <Gate title="Online play isn't set up yet" body="Head-to-Head needs the online backend configured. Check back soon." />
+        <Gate title={t("h2h.notSetup")} body={t("h2h.notSetupBody")} />
       </Shell>
     );
   }
@@ -384,11 +403,11 @@ export default function HeadToHeadPage() {
     return (
       <Shell>
         <Gate
-          title="Sign in to play online"
-          body="Head-to-Head matches you against another player and ranks you on the online ladder — that needs an account."
+          title={t("h2h.signInTitle")}
+          body={t("h2h.signInBody")}
           action={
             <Link href="/settings">
-              <Button size="lg">Sign In</Button>
+              <Button size="lg">{t("nav.signIn")}</Button>
             </Link>
           }
         />
@@ -403,7 +422,7 @@ export default function HeadToHeadPage() {
         <ResultView match={match} side={side} />
         <div className="mx-auto mt-6 flex w-full max-w-md justify-center">
           <Button size="lg" onClick={leave}>
-            Play Again
+            {t("h2h.playAgain")}
           </Button>
         </div>
       </Shell>
@@ -416,10 +435,10 @@ export default function HeadToHeadPage() {
       <Shell>
         <div className="mx-auto flex w-full max-w-md flex-col items-center gap-4 py-12 text-center">
           <Loader2 className="h-8 w-8 animate-spin text-accent" />
-          <p className="text-lg font-bold">Searching for an opponent…</p>
-          <p className="text-sm text-foreground-muted">You&apos;ll be matched as soon as another player joins the queue.</p>
+          <p className="text-lg font-bold">{t("h2h.searchingTitle")}</p>
+          <p className="text-sm text-foreground-muted">{t("h2h.searchingBody")}</p>
           <Button variant="ghost" onClick={leave}>
-            Cancel
+            {t("settings.cancel")}
           </Button>
         </div>
       </Shell>
@@ -435,14 +454,14 @@ export default function HeadToHeadPage() {
       <Shell>
         <div className="mx-auto w-full max-w-2xl">
           <div className="mb-4 flex gap-3">
-            <RosterColumn title="You" picks={myPicks} active={myTurn} />
-            <RosterColumn title="Opponent" picks={oppPicks} active={!myTurn} />
+            <RosterColumn title={t("h2h.you")} picks={myPicks} active={myTurn} />
+            <RosterColumn title={t("h2h.opponent")} picks={oppPicks} active={!myTurn} />
           </div>
 
           {!myTurn && (
             <div className="flex flex-col items-center gap-2 rounded-2xl border border-dashed border-border py-10 text-center">
               <Loader2 className="h-6 w-6 animate-spin text-foreground-muted" />
-              <p className="text-sm text-foreground-muted">Waiting for your opponent to pick…</p>
+              <p className="text-sm text-foreground-muted">{t("h2h.waitingPick")}</p>
             </div>
           )}
 
@@ -455,9 +474,9 @@ export default function HeadToHeadPage() {
 
           {myTurn && !spinTarget && !revealedTeam && (
             <div className="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-border py-12 text-center">
-              <p className="text-foreground-muted">Your turn — spin for a team, then pick a player.</p>
+              <p className="text-foreground-muted">{t("h2h.yourTurnSpin")}</p>
               <Button size="lg" onClick={handleSpin}>
-                Spin
+                {t("play.spin")}
               </Button>
             </div>
           )}
@@ -478,7 +497,7 @@ export default function HeadToHeadPage() {
 
           {isDraftComplete(match) && (
             <div className="mt-4 flex justify-center">
-              <Badge variant="accent">Draft complete — moving to trades…</Badge>
+              <Badge variant="accent">{t("h2h.draftComplete")}</Badge>
             </div>
           )}
 
@@ -506,13 +525,10 @@ export default function HeadToHeadPage() {
       <div className="mx-auto flex w-full max-w-md flex-col items-center gap-4 py-8 text-center">
         <Swords className="h-10 w-10 text-accent" />
         <h1 className="text-3xl font-black italic tracking-tight">Head-to-Head</h1>
-        <p className="text-sm text-foreground-muted">
-          Get matched against another player. Take turns spinning and drafting an XI — no duplicate players — then your
-          rosters clash and the winner banks ladder points.
-        </p>
+        <p className="text-sm text-foreground-muted">{t("h2h.intro")}</p>
         {phase === "error" && <p className="text-sm text-danger">{error}</p>}
         <Button size="lg" className="w-full" onClick={find} disabled={phase === "searching"}>
-          {phase === "searching" ? "Searching…" : "Find Opponent"}
+          {phase === "searching" ? t("h2h.searching") : t("h2h.findOpponent")}
         </Button>
       </div>
       <Ladder rows={ladder} />
