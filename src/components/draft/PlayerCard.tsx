@@ -3,6 +3,7 @@
 import type { Player } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 import { cn } from "@/lib/utils";
 
 const RARITY_STYLES: Record<Player["rarityTier"], string> = {
@@ -45,6 +46,7 @@ function formatStat(value: number | null, decimals = 1): string {
 
 export function PlayerCard({ player, onSelect, selected, disabled, hideStats }: PlayerCardProps) {
   const stats = player.careerStats;
+  const { t } = useTranslation();
 
   return (
     <button
@@ -90,7 +92,7 @@ export function PlayerCard({ player, onSelect, selected, disabled, hideStats }: 
 
       {hideStats ? (
         <p className="mt-3 text-center text-[10px] font-semibold uppercase tracking-wide text-gold/70">
-          Stats hidden — Hardcore Mode
+          {t("hardcore.statsHidden")}
         </p>
       ) : stats ? (
         <dl className="mt-3 grid grid-cols-4 gap-2 text-center">

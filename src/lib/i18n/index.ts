@@ -12,12 +12,13 @@ export type { Dictionary, TranslationKey };
 export { LOCALES, DEFAULT_LOCALE } from "./locales";
 export type { LocaleCode } from "./locales";
 
-// Only the UI chrome covered so far (nav, landing, play, settings) is
-// translated — deeper gameplay screens (squad-select, team-setup, results,
-// match commentary) still render in English regardless of locale. Extending
-// coverage just means adding keys to dictionaries/en.ts and the same key to
-// every other locale file; TypeScript enforces every locale stays complete
-// since each is typed against Dictionary.
+// Translated so far: the UI chrome (nav, landing, play, settings) plus all
+// Hardcore Mode strings (hardcore.*). The remaining deep-gameplay copy
+// (squad-select/team-setup headings, results, match commentary) still
+// renders in English regardless of locale — extending coverage just means
+// adding keys to dictionaries/en.ts and the same key to every other locale
+// file; TypeScript enforces every locale stays complete since each is typed
+// against Dictionary.
 const DICTIONARIES: Record<LocaleCode, Dictionary> = { en, hi, ta, kn, te, mr, bn };
 
 export function getDictionary(locale: LocaleCode): Dictionary {

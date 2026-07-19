@@ -11,6 +11,7 @@ import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
 import { FieldingBoard } from "@/components/draft/FieldingBoard";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { useDraftedPlayers, useGameStore } from "@/lib/store/gameStore";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 import type { BowlingPhase } from "@/lib/engine/lineup";
 import { computeTeamRatings } from "@/lib/engine/teamRatings";
 import { checkComposition } from "@/lib/engine/draft";
@@ -46,6 +47,7 @@ export default function TeamSetupPage() {
   const pendingFieldingPlayerId = useGameStore((s) => s.pendingFieldingPlayerId);
   const selectPlayerForFielding = useGameStore((s) => s.selectPlayerForFielding);
   const assignFieldingPosition = useGameStore((s) => s.assignFieldingPosition);
+  const { t } = useTranslation();
   // eraTeamId itself is cleared after every spin-draft pick (it only holds
   // the team revealed for the round in progress), so "was this game built
   // via spin-drafting" is detected from usedEraTeamIds instead — non-empty
@@ -246,13 +248,9 @@ export default function TeamSetupPage() {
 
         {hardcoreMode && (
           <div className="mb-6">
-            <p className="mb-1 text-xs font-semibold tracking-[0.2em] text-gold uppercase">Hardcore Mode</p>
-            <h2 className="mb-1 text-xl font-black italic tracking-tight">Set Your Fielding Positions</h2>
-            <p className="mb-4 text-sm text-foreground-muted">
-              Pick a player, then tap a real position on the field — Slip and Gully are catching spots, so a bowler
-              or all-rounder there sharpens your wicket-taking; a specialist batter parked there is a bit of a
-              gamble. Everything else is your call.
-            </p>
+            <p className="mb-1 text-xs font-semibold tracking-[0.2em] text-gold uppercase">{t("hardcore.label")}</p>
+            <h2 className="mb-1 text-xl font-black italic tracking-tight">{t("hardcore.setFieldingTitle")}</h2>
+            <p className="mb-4 text-sm text-foreground-muted">{t("hardcore.setFieldingDesc")}</p>
             <FieldingBoard
               outfieldPlayers={outfieldPlayers}
               assignments={fieldingAssignments}

@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
 import { FIELDING_POSITIONS } from "@/lib/data/fieldingPositions";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 import type { Player } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -32,6 +33,7 @@ export function FieldingBoard({
   onSelectPlayer,
   onSelectPosition,
 }: FieldingBoardProps) {
+  const { t } = useTranslation();
   const assignedPlayerIds = new Set(Object.values(assignments));
   const unassigned = outfieldPlayers.filter((p) => !assignedPlayerIds.has(p.id));
   const pendingPlayer = pendingPlayerId ? outfieldPlayers.find((p) => p.id === pendingPlayerId) : null;
@@ -105,7 +107,8 @@ export function FieldingBoard({
 
       {pendingPlayer && (
         <p className="mx-auto mt-3 max-w-sm text-center text-xs text-accent">
-          Placing <span className="font-semibold">{pendingPlayer.shortName}</span> — tap a position on the field.
+          {t("hardcore.placing")} <span className="font-semibold">{pendingPlayer.shortName}</span> —{" "}
+          {t("hardcore.placingHint")}
         </p>
       )}
 

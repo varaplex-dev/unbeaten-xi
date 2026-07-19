@@ -38,11 +38,37 @@
   border-color: var(--border);
 }
 
+html {
+  /* Solid fallback that sits behind the fixed stadium backdrop, shown
+     before the image loads and anywhere it doesn't reach. */
+  background: var(--background);
+}
+
 body {
-  background: radial-gradient(ellipse at top, #131c27 0%, var(--background) 55%);
+  /* Transparent so the fixed .app-backdrop below shows through; the base
+     color is provided by html above. */
+  background: transparent;
   color: var(--foreground);
   font-family: var(--font-sans), Arial, Helvetica, sans-serif;
   min-height: 100dvh;
+}
+
+/* Fixed, full-viewport night-stadium backdrop shared by every screen. It
+   sits behind all content (z-index below the app root) and never scrolls,
+   so the whole game reads as one continuous stadium. The gradient overlay
+   keeps the lower/upper edges dark enough for foreground text to stay
+   legible over the brightest part of the pitch. */
+.app-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image:
+    linear-gradient(to bottom, rgba(11, 15, 20, 0.72) 0%, rgba(11, 15, 20, 0.5) 45%, rgba(11, 15, 20, 0.85) 100%),
+    url("/bg-stadium.png");
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  pointer-events: none;
 }
 
 ::selection {

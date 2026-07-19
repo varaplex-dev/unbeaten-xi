@@ -16,6 +16,8 @@ export const en = {
     "Spin into real teams and pick real players — then it's on you to build the XI: batting order, captain, bowling plan, all your call. The season simulation runs on real career stats, so how well you actually know the game decides how close you get to 14-0.",
   "landing.startSpinning": "Start Spinning",
   "landing.dailyChallenge": "Daily Challenge",
+  "landing.getTheApp": "Get the App",
+  "landing.getTheAppSoon": "Coming soon to the App Store and Google Play.",
   "landing.footerKicker": "Spin. Build. Simulate.",
   "landing.footerTagline": "Real Players · Real Stats · 14 League Matches",
 
@@ -54,6 +56,16 @@ export const en = {
   "settings.hardcoreMode": "Hardcore Mode",
   "settings.hardcoreModeDesc":
     "Adds real fielding-position placement to your XI — a bowler or all-rounder at slip or gully sharpens your wicket-taking; a specialist batter there is a gamble.",
+
+  "hardcore.label": "Hardcore Mode",
+  "hardcore.noStatsBanner":
+    "No stats shown on player cards. Draft on your own historical and current knowledge of the sport and its players.",
+  "hardcore.statsHidden": "Stats hidden — Hardcore Mode",
+  "hardcore.setFieldingTitle": "Set Your Fielding Positions",
+  "hardcore.setFieldingDesc":
+    "Pick a player, then tap a real position on the field — Slip and Gully are catching spots, so a bowler or all-rounder there sharpens your wicket-taking; a specialist batter parked there is a bit of a gamble. Everything else is your call.",
+  "hardcore.placing": "Placing",
+  "hardcore.placingHint": "tap a position on the field.",
 } satisfies Record<string, string>;
 
 // Keys are literal (drawn from `en`, the source of truth for what keys

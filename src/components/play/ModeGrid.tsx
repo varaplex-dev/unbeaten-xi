@@ -79,6 +79,7 @@ const MODES: ModeDef[] = [
   {
     id: "head-to-head",
     emoji: "⚔️",
+    image: "/logos/badge-head-to-head.png",
     tone: "gold",
     name: "Head-to-Head Challenge",
     description: "Compare your XI against a friend's.",

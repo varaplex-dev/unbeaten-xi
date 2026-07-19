@@ -10,6 +10,7 @@ import { PosterShell } from "@/components/brand/PosterShell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useGameStore } from "@/lib/store/gameStore";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
 import { getLegendPlayerById } from "@/lib/data/legendPlayers";
@@ -37,6 +38,7 @@ export default function SquadSelectPage() {
   const pickImpactPlayer = useGameStore((s) => s.pickImpactPlayer);
   const skipImpactPlayer = useGameStore((s) => s.skipImpactPlayer);
   const hardcoreMode = useGameStore((s) => s.hardcoreMode);
+  const { t } = useTranslation();
 
   const [spinTarget, setSpinTarget] = useState<EraTeam | null>(null);
 
@@ -125,11 +127,8 @@ export default function SquadSelectPage() {
 
           {hardcoreMode && (
             <div className="mb-6 rounded-xl border border-gold/40 bg-gold/5 px-4 py-3">
-              <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">Hardcore Mode</p>
-              <p className="mt-1 text-sm text-foreground-muted">
-                No stats shown on player cards. Draft on your own historical and current knowledge of the sport and
-                its players.
-              </p>
+              <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">{t("hardcore.label")}</p>
+              <p className="mt-1 text-sm text-foreground-muted">{t("hardcore.noStatsBanner")}</p>
             </div>
           )}
 

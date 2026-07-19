@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { HeroPlayerImage } from "@/components/brand/HeroPlayerImage";
@@ -11,6 +12,10 @@ import { useTranslation } from "@/lib/i18n/useTranslation";
 export default function LandingPage() {
   const { t } = useTranslation();
   const bestSeason = useGameStore((s) => s.bestSeason);
+  // The native apps aren't published yet, so "Get the App" reveals a
+  // coming-soon note rather than deep-linking to a store listing that
+  // doesn't exist. Swap this for real App Store / Play links on launch.
+  const [showAppNote, setShowAppNote] = useState(false);
 
   return (
     <main className="flex-1 flex flex-col">
@@ -47,12 +52,21 @@ export default function LandingPage() {
               {t("landing.startSpinning")}
             </Button>
           </Link>
-          <Link href="/daily" className="w-full sm:w-auto">
-            <Button size="lg" variant="secondary" className="w-full">
-              {t("landing.dailyChallenge")}
-            </Button>
-          </Link>
+          <Button
+            size="lg"
+            variant="secondary"
+            className="w-full sm:w-auto"
+            onClick={() => setShowAppNote(true)}
+          >
+            {t("landing.getTheApp")}
+          </Button>
         </div>
+
+        {showAppNote && (
+          <p className="relative z-10 mx-auto mt-3 max-w-xs text-center text-xs text-foreground-muted">
+            {t("landing.getTheAppSoon")}
+          </p>
+        )}
 
         <div className="relative z-10 mx-auto mt-6 flex gap-4 text-sm text-foreground-muted">
           <Link href="/how-to-play" className="underline underline-offset-4 hover:text-foreground">
