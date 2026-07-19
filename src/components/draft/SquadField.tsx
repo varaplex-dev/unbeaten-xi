@@ -24,17 +24,21 @@ const SLOT_POSITIONS: { x: number; y: number }[] = [
   { x: 50, y: 8 },
 ];
 
-/** Soft, non-restrictive labels for the batting-order slot — a hint for
- * strategy, not an eligibility rule. Any player can go in any slot; where
- * you actually place a strong batter changes the simulation (see
- * expectedRunsFromBatting's position weighting), so this is a nudge toward
- * thinking about it, not a lock. */
+/** Soft, non-restrictive role hints for each batting-order slot, modeled on
+ * a realistic XI balance (2 openers, 3 middle-order batters, 1 wicketkeeper-
+ * batter, 2 all-rounders, 3 specialist bowlers — 11 in total). This is a
+ * strategy nudge, not an eligibility rule: any player can go in any slot,
+ * and only the actual composition check (team-setup's checkComposition —
+ * a keeper, 4+ bowling options, a pace bowler, a spinner) is enforced.
+ * Where you place a strong batter still changes the simulation for real
+ * (see expectedRunsFromBatting's position weighting), so the label is
+ * there to help you think about it, not to lock you into it. */
 function slotRoleLabel(index: number): string {
   if (index < 2) return "Opener";
-  if (index < 5) return "Top Order";
-  if (index < 7) return "Middle";
-  if (index < 9) return "Lower Order";
-  return "Tail";
+  if (index < 5) return "Middle Order";
+  if (index < 6) return "WK-Batter";
+  if (index < 8) return "All-Rounder";
+  return "Bowler";
 }
 
 interface SlotProps {

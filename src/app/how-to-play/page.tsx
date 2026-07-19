@@ -126,6 +126,16 @@ export default function HowToPlayPage() {
               there&apos;s no overseas-quota limit here — mix players from as
               many countries as you spin into.
             </p>
+            <p className="pt-1">
+              A realistic XI generally breaks down as{" "}
+              <span className="font-semibold text-foreground">2 openers</span>,{" "}
+              <span className="font-semibold text-foreground">3 middle-order batters</span>,{" "}
+              <span className="font-semibold text-foreground">1 wicketkeeper-batter</span>,{" "}
+              <span className="font-semibold text-foreground">2 all-rounders</span>, and{" "}
+              <span className="font-semibold text-foreground">3 specialist bowlers</span> — the
+              field&apos;s 11 batting slots are labeled with that structure as a guide, though
+              nothing stops you placing a player anywhere you choose.
+            </p>
           </CardContent>
         </Card>
 
