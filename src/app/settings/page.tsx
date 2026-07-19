@@ -141,15 +141,21 @@ export default function SettingsPage() {
           <CardHeader>
             <CardTitle>About</CardTitle>
           </CardHeader>
-          <CardContent className="text-sm text-foreground-muted space-y-1">
+          <CardContent className="text-sm text-foreground-muted space-y-2">
             <p>The Unbeaten XI</p>
-            <p>A production of 11 Not Out.</p>
+            <p>A Varaplex Studios game.</p>
+            <Link href="/about" className="inline-block text-accent underline underline-offset-4">
+              Read More
+            </Link>
           </CardContent>
         </Card>
 
         <div className="flex flex-wrap gap-3 text-sm">
           <Link href="/how-to-play" className="text-accent underline underline-offset-4">
             How to Play
+          </Link>
+          <Link href="/about" className="text-accent underline underline-offset-4">
+            About
           </Link>
           <Link href="/privacy" className="text-accent underline underline-offset-4">
             Privacy
