@@ -9,11 +9,15 @@ import { SquadField } from "@/components/draft/SquadField";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useDraftedPlayers, useGameStore } from "@/lib/store/gameStore";
+import { useGameStore } from "@/lib/store/gameStore";
 import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
 import { getRealPlayerById } from "@/lib/data/realPlayers";
 import { getLegendPlayerById } from "@/lib/data/legendPlayers";
 import { SQUAD_SIZE, type EraTeam, type Player } from "@/lib/types";
+
+function resolvePlayer(id: string): Player | null {
+  return getRealPlayerById(id) ?? getLegendPlayerById(id) ?? null;
+}
 
 export default function SquadSelectPage() {
   const router = useRouter();
@@ -24,25 +28,30 @@ export default function SquadSelectPage() {
   const eraTeamId = useGameStore((s) => s.eraTeamId);
   const usedEraTeamIds = useGameStore((s) => s.usedEraTeamIds);
   const draftPicks = useGameStore((s) => s.draftPicks);
+  const squadSlots = useGameStore((s) => s.squadSlots);
+  const pendingPlayerId = useGameStore((s) => s.pendingPlayerId);
   const impactPlayerId = useGameStore((s) => s.impactPlayerId);
   const spinNextTeam = useGameStore((s) => s.spinNextTeam);
   const selectSquadPlayer = useGameStore((s) => s.selectSquadPlayer);
+  const placeSquadPlayer = useGameStore((s) => s.placeSquadPlayer);
   const pickImpactPlayer = useGameStore((s) => s.pickImpactPlayer);
   const skipImpactPlayer = useGameStore((s) => s.skipImpactPlayer);
 
   const [spinTarget, setSpinTarget] = useState<EraTeam | null>(null);
 
   const eraTeam = eraTeamId ? getEraTeamById(eraTeamId) : null;
-  const draftedPlayers = useDraftedPlayers();
-  const draftedIds = useMemo(() => new Set(draftPicks.map((p) => p.playerId)), [draftPicks]);
+  const filledCount = useMemo(() => squadSlots.filter((id) => id !== null).length, [squadSlots]);
+  const draftedIds = useMemo(
+    () => new Set([...squadSlots.filter((id): id is string => id !== null), ...(pendingPlayerId ? [pendingPlayerId] : [])]),
+    [squadSlots, pendingPlayerId]
+  );
   const squadComplete = draftPicks.length >= SQUAD_SIZE;
   const impactResolved = impactPlayerId !== null;
-  const impactPlayer: Player | null = impactPlayerId
-    ? (getRealPlayerById(impactPlayerId) ?? getLegendPlayerById(impactPlayerId) ?? null)
-    : null;
+  const impactPlayer: Player | null = impactPlayerId ? resolvePlayer(impactPlayerId) : null;
+  const pendingPlayer: Player | null = pendingPlayerId ? resolvePlayer(pendingPlayerId) : null;
   const fieldSlots: (Player | null)[] = useMemo(
-    () => Array.from({ length: SQUAD_SIZE }, (_, i) => draftedPlayers[i] ?? null),
-    [draftedPlayers]
+    () => squadSlots.map((id) => (id ? resolvePlayer(id) : null)),
+    [squadSlots]
   );
 
   useEffect(() => {
@@ -69,7 +78,7 @@ export default function SquadSelectPage() {
     );
   }
 
-  const roundLabel = squadComplete ? "Impact Player" : `Pick ${draftPicks.length + 1} of ${SQUAD_SIZE}`;
+  const roundLabel = squadComplete ? "Impact Player" : `Pick ${filledCount + 1} of ${SQUAD_SIZE}`;
 
   function handleSpinClick() {
     if (!seed) return;
@@ -94,10 +103,7 @@ export default function SquadSelectPage() {
 
   return (
     <main className="flex-1 flex flex-col">
-      <PosterShell
-        kicker="Spin & Pick"
-        digits={[{ value: String(draftPicks.length), label: `Of ${SQUAD_SIZE} Picked` }]}
-      >
+      <PosterShell kicker="Spin & Pick" digits={[{ value: String(filledCount), label: `Of ${SQUAD_SIZE} Picked` }]}>
         <div className="mx-auto w-full max-w-2xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase mb-1">{roundLabel}</p>
           <h1 className="text-stack-shadow text-4xl font-black italic tracking-tight mb-1">
@@ -106,20 +112,21 @@ export default function SquadSelectPage() {
           <p className="text-foreground-muted mb-6">
             {squadComplete
               ? "Spin one more time for a shot at an Impact Player — or skip it and lock in your XI."
-              : "Spin the wheel, land on a real team, pick exactly one player from it — then spin again for a fresh team. No two picks come from the same squad."}
+              : "Spin the wheel, land on a real team, pick a player from it — then place them in your batting order. Where you put them matters: the season simulation weights the top of the order more heavily."}
           </p>
 
           <div className="mb-4 h-1.5 w-full rounded-full bg-white/5 overflow-hidden">
             <div
               className="h-full bg-accent transition-all duration-300"
-              style={{ width: `${(draftPicks.length / SQUAD_SIZE) * 100}%` }}
+              style={{ width: `${(filledCount / SQUAD_SIZE) * 100}%` }}
             />
           </div>
 
           <div className="mb-6">
             <SquadField
               slots={fieldSlots}
-              activeIndex={squadComplete ? null : draftPicks.length}
+              placing={pendingPlayerId !== null}
+              onSlotClick={(index) => placeSquadPlayer(index)}
               impactPlayer={impactPlayer}
               impactActive={squadComplete && !impactResolved}
             />
@@ -127,12 +134,20 @@ export default function SquadSelectPage() {
 
           {spinTarget ? (
             <SpinReel target={spinTarget} onComplete={handleSpinComplete} />
+          ) : pendingPlayer ? (
+            <div className="flex flex-col items-center gap-1 rounded-2xl border border-accent/40 bg-accent/5 py-10 text-center">
+              <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase">Placing</p>
+              <p className="text-2xl font-black italic tracking-tight">{pendingPlayer.name}</p>
+              <p className="mt-1 max-w-xs text-sm text-foreground-muted">
+                Tap an open slot on the field above to set their spot in the batting order.
+              </p>
+            </div>
           ) : !eraTeam ? (
             <div className="flex flex-col items-center gap-3 rounded-2xl border border-dashed border-border py-16 text-center">
               <p className="text-foreground-muted">
                 {squadComplete
                   ? "Spin for a team to draw your Impact Player from."
-                  : `Spin for the team your ${draftPicks.length === 0 ? "first" : "next"} pick comes from.`}
+                  : `Spin for the team your ${filledCount === 0 ? "first" : "next"} pick comes from.`}
               </p>
               <Button size="lg" onClick={handleSpinClick}>
                 Spin

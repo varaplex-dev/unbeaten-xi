@@ -51,6 +51,17 @@ export interface GameState {
    * rule, which doesn't apply to a squad stitched together from many
    * single-nation-by-construction teams). */
   usedEraTeamIds: string[];
+  /** Batting-order slots (index 0 = position 1) for a spin-drafted squad —
+   * null until the user places a player there. Distinct from draftPicks:
+   * a slot can be filled out of order (pick #3 might get placed in slot 7),
+   * so this needs to support gaps in a way draftPicks' append-only list
+   * can't. draftPicks/battingOrder are only populated, in slot order, once
+   * every slot here is filled — see placeSquadPlayer(). */
+  squadSlots: (string | null)[];
+  /** The player just picked from the revealed team, waiting for the user to
+   * choose which batting-order slot to place them in — see
+   * selectSquadPlayer()/placeSquadPlayer(). Null when nothing is pending. */
+  pendingPlayerId: string | null;
 
   battingOrder: string[];
   bowlingRoleAssignments: Record<string, BowlingPhase>;
@@ -78,6 +89,7 @@ interface GameActions {
   spinEraTeam: () => void;
   spinNextTeam: () => void;
   selectSquadPlayer: (player: Player) => void;
+  placeSquadPlayer: (slotIndex: number) => void;
   draftPlayer: (player: Player, categoryId: DraftCategoryId) => void;
   pickImpactPlayer: (player: Player) => void;
   skipImpactPlayer: () => void;
@@ -108,6 +120,8 @@ const initialState: Omit<GameState, "hasHydrated"> = {
   draftPicks: [],
   eraTeamId: null,
   usedEraTeamIds: [],
+  squadSlots: Array<string | null>(SQUAD_SIZE).fill(null),
+  pendingPlayerId: null,
   battingOrder: [],
   bowlingRoleAssignments: {},
   captainId: null,
@@ -214,28 +228,59 @@ export const useGameStore = create<GameState & GameActions>()(
         set({ eraTeamId: eraTeam.id });
       },
 
+      /** Marks a player as this spin's pick, pending a batting-order
+       * placement — selecting doesn't finalize a slot. The user still has
+       * to choose where in the order they go via placeSquadPlayer(), which
+       * is the actual strategic decision (see that function's comment). */
       selectSquadPlayer: (player) => {
-        const { draftPicks, eraTeamId, usedEraTeamIds } = get();
+        const { squadSlots, eraTeamId, usedEraTeamIds } = get();
         if (!eraTeamId) return;
         const eraTeam = getEraTeamById(eraTeamId);
         if (!eraTeam) return;
-        if (draftPicks.length >= SQUAD_SIZE) return;
-        if (draftPicks.some((pick) => pick.playerId === player.id)) return;
+        if (squadSlots.every((id) => id !== null)) return;
+        if (squadSlots.includes(player.id)) return;
         if (!eraTeam.players.some((p) => p.id === player.id)) return;
 
-        const nextPicks: DraftPickRecord[] = [
-          ...draftPicks,
-          { roundNumber: draftPicks.length + 1, categoryId: "wildcard", playerId: player.id },
-        ];
-        const squadComplete = nextPicks.length >= SQUAD_SIZE;
         set({
-          draftPicks: nextPicks,
+          pendingPlayerId: player.id,
           usedEraTeamIds: [...usedEraTeamIds, eraTeamId],
-          // Cleared regardless of squadComplete — squad-select shows the
-          // Impact Player spin prompt next, same "spin for your pick" UI.
           eraTeamId: null,
         });
-        track("player_selected", { categoryId: "wildcard", roundNumber: nextPicks.length });
+        track("player_selected", {
+          categoryId: "wildcard",
+          roundNumber: squadSlots.filter((id) => id !== null).length + 1,
+        });
+      },
+
+      /** Confirms the pending pick's batting-order slot — the actual
+       * strategic choice this whole flow builds up to. expectedRunsFromBatting()
+       * in statsSimulation.ts weights the top of the order more heavily than
+       * the tail, so where a player lands genuinely changes the season
+       * simulation, not just the display order. Once every slot is filled,
+       * draftPicks and battingOrder (read by composition checks, team-setup,
+       * and the simulation itself) are populated in slot order in one shot. */
+      placeSquadPlayer: (slotIndex) => {
+        const { pendingPlayerId, squadSlots } = get();
+        if (!pendingPlayerId) return;
+        if (slotIndex < 0 || slotIndex >= SQUAD_SIZE) return;
+        if (squadSlots[slotIndex] !== null) return;
+
+        const nextSlots = [...squadSlots];
+        nextSlots[slotIndex] = pendingPlayerId;
+        const squadComplete = nextSlots.every((id) => id !== null);
+
+        set({
+          squadSlots: nextSlots,
+          pendingPlayerId: null,
+          ...(squadComplete
+            ? {
+                draftPicks: nextSlots.map(
+                  (id, i): DraftPickRecord => ({ roundNumber: i + 1, categoryId: "wildcard", playerId: id as string })
+                ),
+                battingOrder: nextSlots as string[],
+              }
+            : {}),
+        });
         if (squadComplete) track("draft_completed", { squadSize: SQUAD_SIZE });
       },
 

@@ -38,6 +38,13 @@ export default function HowToPlayPage() {
               team&apos;s actual roster.
             </p>
             <p>
+              Picking doesn&apos;t lock in their spot — you then tap an open
+              slot on the field to place them in your batting order. That
+              choice is real: the top of the order carries more weight in the
+              season simulation than the tail, so where you put a strong
+              batter matters, not just who you pick.
+            </p>
+            <p>
               Spin again for your next pick and you&apos;ll land on a
               completely different team — no two picks in your XI can come
               from the same squad. Repeat until all 11 spots are filled, then
