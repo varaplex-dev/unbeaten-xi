@@ -9,6 +9,7 @@ import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
 import { randomSeedString, todaySeedString } from "@/lib/engine/rng";
 import { autoAssignLineup, type BowlingPhase } from "@/lib/engine/lineup";
 import { simulateSeason, type MatchDecision, type MatchResult, type SeasonStats } from "@/lib/engine/simulate";
+import type { FieldingAssignments } from "@/lib/engine/fielding";
 import { generateRandomXI, spinImpactPlayer } from "@/lib/engine/draft";
 import { PLAYERS } from "@/lib/data/players";
 import { REAL_PLAYERS } from "@/lib/data/realPlayers";
@@ -79,6 +80,19 @@ export interface GameState {
    * results page doesn't insert a duplicate row on re-render or revisit. */
   resultSaved: boolean;
 
+  /** Real fielding-position assignments (position id -> player id) for
+   * Hardcore Mode — see fielding.ts. Empty/unused in a normal game. */
+  fieldingAssignments: FieldingAssignments;
+  /** The XI player selected for fielding placement, waiting for a position
+   * tap — same select-then-place pattern as selectSquadPlayer/
+   * placeSquadPlayer. Only used in Hardcore Mode. */
+  pendingFieldingPlayerId: string | null;
+  /** A standing preference, not per-game progress — deliberately excluded
+   * from initialState's reset-on-new-game spread (see hardcoreMode's
+   * handling right below hasHydrated) so toggling it in Settings doesn't
+   * get wiped out the next time a game starts. */
+  hardcoreMode: boolean;
+
   /** True once the persisted state has been read from localStorage. */
   hasHydrated: boolean;
 }
@@ -105,12 +119,17 @@ interface GameActions {
   runSeasonSimulation: () => void;
   resolveDecision: (choiceId: string) => void;
   markResultSaved: () => void;
+  setHardcoreMode: (enabled: boolean) => void;
+  selectPlayerForFielding: (playerId: string) => void;
+  assignFieldingPosition: (positionId: string) => void;
 }
 
-// hasHydrated is intentionally excluded here: it must survive resetGame()
-// and startNewGame() spreads, since it reflects localStorage load status,
-// not game progress.
-const initialState: Omit<GameState, "hasHydrated"> = {
+// hasHydrated and hardcoreMode are intentionally excluded here: hasHydrated
+// reflects localStorage load status, and hardcoreMode is a standing user
+// preference — neither is per-game progress, so both must survive
+// resetGame()/startNewGame()/spinEraTeam()/spinTheWheel()'s `...initialState`
+// spreads instead of getting wiped every time a new game starts.
+const initialState: Omit<GameState, "hasHydrated" | "hardcoreMode"> = {
   gameId: null,
   seed: null,
   mode: "fictional",
@@ -133,6 +152,8 @@ const initialState: Omit<GameState, "hasHydrated"> = {
   decisions: {},
   pendingDecision: null,
   resultSaved: false,
+  fieldingAssignments: {},
+  pendingFieldingPlayerId: null,
 };
 
 function getXi(draftPicks: DraftPickRecord[], mode: GameMode): Player[] {
@@ -144,8 +165,34 @@ export const useGameStore = create<GameState & GameActions>()(
     (set, get) => ({
       ...initialState,
       hasHydrated: false,
+      hardcoreMode: false,
 
       setHasHydrated: (hydrated) => set({ hasHydrated: hydrated }),
+
+      setHardcoreMode: (enabled) => set({ hardcoreMode: enabled }),
+
+      /** Marks an XI player as ready to be placed on the field — same
+       * select-then-place pattern as squad-select's placement mechanic.
+       * Hardcore Mode only; a normal game never calls this. */
+      selectPlayerForFielding: (playerId) => {
+        const { fieldingAssignments } = get();
+        if (Object.values(fieldingAssignments).includes(playerId)) return;
+        set({ pendingFieldingPlayerId: playerId });
+      },
+
+      /** Confirms the pending player's real fielding position. Only the two
+       * close-catching spots (slip, gully) feed into the simulation (see
+       * fieldingWicketBonus) — the rest of the board is genuine strategic
+       * depth without a fabricated stat behind it. */
+      assignFieldingPosition: (positionId) => {
+        const { pendingFieldingPlayerId, fieldingAssignments } = get();
+        if (!pendingFieldingPlayerId) return;
+        if (fieldingAssignments[positionId]) return;
+        set({
+          fieldingAssignments: { ...fieldingAssignments, [positionId]: pendingFieldingPlayerId },
+          pendingFieldingPlayerId: null,
+        });
+      },
 
       startNewGame: (options) => {
         const seed = options?.seed ?? randomSeedString();
@@ -362,8 +409,19 @@ export const useGameStore = create<GameState & GameActions>()(
       },
 
       runSeasonSimulation: () => {
-        const { draftPicks, seed, mode, isDaily, battingOrder, captainId, impactPlayerId, decisions, matchResults } =
-          get();
+        const {
+          draftPicks,
+          seed,
+          mode,
+          isDaily,
+          battingOrder,
+          captainId,
+          impactPlayerId,
+          decisions,
+          matchResults,
+          hardcoreMode,
+          fieldingAssignments,
+        } = get();
         const xi = getXi(draftPicks, mode);
         if (xi.length !== SQUAD_SIZE || !seed || !captainId) return;
         const impactPlayer = impactPlayerId ? (playerLookup(mode, impactPlayerId) ?? null) : null;
@@ -375,7 +433,8 @@ export const useGameStore = create<GameState & GameActions>()(
           battingOrder,
           captainId,
           impactPlayer,
-          decisions
+          decisions,
+          hardcoreMode ? fieldingAssignments : undefined
         );
         set({
           matchResults: matches,

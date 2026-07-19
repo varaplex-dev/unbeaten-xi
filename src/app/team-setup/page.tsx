@@ -8,6 +8,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
+import { FieldingBoard } from "@/components/draft/FieldingBoard";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { useDraftedPlayers, useGameStore } from "@/lib/store/gameStore";
 import type { BowlingPhase } from "@/lib/engine/lineup";
@@ -40,6 +41,11 @@ export default function TeamSetupPage() {
   const setBowlingRole = useGameStore((s) => s.setBowlingRole);
   const setBattingOrder = useGameStore((s) => s.setBattingOrder);
   const usedEraTeamIds = useGameStore((s) => s.usedEraTeamIds);
+  const hardcoreMode = useGameStore((s) => s.hardcoreMode);
+  const fieldingAssignments = useGameStore((s) => s.fieldingAssignments);
+  const pendingFieldingPlayerId = useGameStore((s) => s.pendingFieldingPlayerId);
+  const selectPlayerForFielding = useGameStore((s) => s.selectPlayerForFielding);
+  const assignFieldingPosition = useGameStore((s) => s.assignFieldingPosition);
   // eraTeamId itself is cleared after every spin-draft pick (it only holds
   // the team revealed for the round in progress), so "was this game built
   // via spin-drafting" is detected from usedEraTeamIds instead — non-empty
@@ -96,6 +102,11 @@ export default function TeamSetupPage() {
   const squadHasEligibleKeeper = orderedXi.some(isWicketkeeper);
   const needsExplicitKeeper = isSpinDraft && squadHasEligibleKeeper && !wicketkeeperId;
   const canSimulate = !needsExplicitCaptain && !needsExplicitKeeper;
+
+  // The keeper stands behind the stumps, not out on the field — everyone
+  // else in the XI is fair game for a Hardcore Mode position. If no keeper
+  // is set yet, nobody's excluded rather than guessing.
+  const outfieldPlayers = orderedXi.filter((p) => p.id !== wicketkeeperId);
 
   if (!hasHydrated) return null;
 
@@ -230,6 +241,25 @@ export default function TeamSetupPage() {
               <p className="text-xs text-foreground-muted">Impact Player (bench)</p>
             </div>
             <Badge variant="gold">Sub</Badge>
+          </div>
+        )}
+
+        {hardcoreMode && (
+          <div className="mb-6">
+            <p className="mb-1 text-xs font-semibold tracking-[0.2em] text-gold uppercase">Hardcore Mode</p>
+            <h2 className="mb-1 text-xl font-black italic tracking-tight">Set Your Fielding Positions</h2>
+            <p className="mb-4 text-sm text-foreground-muted">
+              Pick a player, then tap a real position on the field — Slip and Gully are catching spots, so a bowler
+              or all-rounder there sharpens your wicket-taking; a specialist batter parked there is a bit of a
+              gamble. Everything else is your call.
+            </p>
+            <FieldingBoard
+              outfieldPlayers={outfieldPlayers}
+              assignments={fieldingAssignments}
+              pendingPlayerId={pendingFieldingPlayerId}
+              onSelectPlayer={selectPlayerForFielding}
+              onSelectPosition={assignFieldingPosition}
+            />
           </div>
         )}
 

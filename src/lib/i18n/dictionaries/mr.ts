@@ -49,4 +49,7 @@ export const mr: Dictionary = {
   "settings.readMore": "अधिक वाचा",
   "settings.language": "भाषा",
   "settings.languageDesc": "अ‍ॅपसाठी तुमची आवडती भाषा निवडा.",
+  "settings.hardcoreMode": "हार्डकोर मोड",
+  "settings.hardcoreModeDesc":
+    "तुमच्या XI मध्ये खरी फिल्डिंग पोझिशन नेमणूक जोडते — स्लिप किंवा गलीवर गोलंदाज किंवा अष्टपैलू खेळाडू तुमची विकेट घेण्याची क्षमता वाढवतो; तिथे स्पेशालिस्ट फलंदाज ठेवणे हा एक जुगार आहे.",
 };

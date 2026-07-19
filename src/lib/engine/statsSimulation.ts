@@ -171,14 +171,15 @@ export function bowlingAverageOnT20Scale(stats: CareerStats): number | null {
 /** Real bowling-average-derived wicket-taking threat, 0-1 scale (already
  * converted onto the T20-equivalent scale, for the same cross-format
  * reason as everything else here), used to bias how many wickets a bowling
- * attack takes in a given match. */
-export function wicketThreat(xi: Player[]): number {
+ * attack takes in a given match. `fieldingBonus` is Hardcore Mode's small,
+ * optional nudge from fieldingWicketBonus() — 0 for a normal game. */
+export function wicketThreat(xi: Player[], fieldingBonus = 0): number {
   const convertedAverages = xi
     .map((p) => (p.careerStats ? bowlingAverageOnT20Scale(p.careerStats) : null))
     .filter((v): v is number => v !== null);
-  if (convertedAverages.length === 0) return 0.4;
+  if (convertedAverages.length === 0) return Math.max(0.15, Math.min(0.9, 0.4 + fieldingBonus));
   const avgBowlingAverage = convertedAverages.reduce((a, b) => a + b, 0) / convertedAverages.length;
   // A (T20-equivalent) bowling average of ~20 is elite, ~35+ is weak; map
   // that range to 0-1.
-  return Math.max(0.15, Math.min(0.9, 1 - (avgBowlingAverage - 18) / 30));
+  return Math.max(0.15, Math.min(0.9, 1 - (avgBowlingAverage - 18) / 30 + fieldingBonus));
 }

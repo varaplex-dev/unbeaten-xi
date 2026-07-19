@@ -49,4 +49,7 @@ export const hi: Dictionary = {
   "settings.readMore": "और पढ़ें",
   "settings.language": "भाषा",
   "settings.languageDesc": "ऐप के लिए अपनी पसंदीदा भाषा चुनें।",
+  "settings.hardcoreMode": "हार्डकोर मोड",
+  "settings.hardcoreModeDesc":
+    "आपकी एकादश में असली फील्डिंग पोजीशन जोड़ता है — स्लिप या गली पर गेंदबाज़ या ऑलराउंडर आपकी विकेट लेने की क्षमता बढ़ाता है; वहां स्पेशलिस्ट बल्लेबाज़ रखना एक जोखिम है।",
 };

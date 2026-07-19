@@ -11,6 +11,7 @@ import {
   hasCareerStats,
   wicketThreat,
 } from "@/lib/engine/statsSimulation";
+import { fieldingWicketBonus, type FieldingAssignments } from "@/lib/engine/fielding";
 import { createRng, pickN, pickRandom, pickWeighted, type RandomFn } from "@/lib/engine/rng";
 
 const SEASON_LENGTH = 14;
@@ -299,7 +300,8 @@ export function simulateSeason(
   battingOrderIds: string[],
   captainId: string,
   impactPlayer: Player | null,
-  decisions: Record<number, string>
+  decisions: Record<number, string>,
+  fieldingAssignments?: FieldingAssignments
 ): SeasonSimulationResult {
   const rng = createRng(`${seed}::season`);
   const battingOrder = battingOrderIds
@@ -316,7 +318,11 @@ export function simulateSeason(
   const isStatsGame = hasCareerStats(xi);
   const orderedForBatting = battingOrder.length ? battingOrder : xi;
   const expectedRunsFor = isStatsGame ? expectedRunsFromBatting(orderedForBatting) : 0;
-  const teamWicketThreat = isStatsGame ? wicketThreat(xi) : 0;
+  // Hardcore Mode's real-fielding-position layer nudges wicket-taking
+  // threat a little — 0 when fieldingAssignments is absent/empty, so a
+  // normal game is completely unaffected.
+  const fieldingBonus = fieldingAssignments ? fieldingWicketBonus(xi, fieldingAssignments) : 0;
+  const teamWicketThreat = isStatsGame ? wicketThreat(xi, fieldingBonus) : 0;
 
   const topBatters = orderedForBatting.slice(0, 7);
   const battingWeights = [1.3, 1.2, 1.1, 1.0, 0.9, 0.7, 0.5];

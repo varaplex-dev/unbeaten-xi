@@ -51,6 +51,9 @@ export const en = {
   "settings.readMore": "Read More",
   "settings.language": "Language",
   "settings.languageDesc": "Choose your preferred language for the app.",
+  "settings.hardcoreMode": "Hardcore Mode",
+  "settings.hardcoreModeDesc":
+    "Adds real fielding-position placement to your XI — a bowler or all-rounder at slip or gully sharpens your wicket-taking; a specialist batter there is a gamble.",
 } satisfies Record<string, string>;
 
 // Keys are literal (drawn from `en`, the source of truth for what keys

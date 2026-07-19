@@ -87,6 +87,42 @@ function AccountCard() {
   );
 }
 
+function HardcoreModeCard() {
+  const hardcoreMode = useGameStore((s) => s.hardcoreMode);
+  const setHardcoreMode = useGameStore((s) => s.setHardcoreMode);
+  const { t } = useTranslation();
+
+  return (
+    <Card>
+      <CardHeader>
+        <CardTitle>{t("settings.hardcoreMode")}</CardTitle>
+      </CardHeader>
+      <CardContent>
+        <div className="flex items-start justify-between gap-4">
+          <p className="text-sm text-foreground-muted">{t("settings.hardcoreModeDesc")}</p>
+          <button
+            type="button"
+            role="switch"
+            aria-checked={hardcoreMode}
+            onClick={() => setHardcoreMode(!hardcoreMode)}
+            className={cn(
+              "relative h-7 w-12 shrink-0 rounded-full border transition-colors",
+              hardcoreMode ? "border-accent bg-accent/30" : "border-border bg-background-elevated"
+            )}
+          >
+            <span
+              className={cn(
+                "absolute top-0.5 h-5 w-5 rounded-full bg-foreground transition-transform",
+                hardcoreMode ? "translate-x-[22px] bg-accent" : "translate-x-0.5"
+              )}
+            />
+          </button>
+        </div>
+      </CardContent>
+    </Card>
+  );
+}
+
 function LanguageCard() {
   const locale = useLocaleStore((s) => s.locale);
   const setLocale = useLocaleStore((s) => s.setLocale);
@@ -141,6 +177,7 @@ export default function SettingsPage() {
 
       <div className="grid gap-4">
         <AccountCard />
+        <HardcoreModeCard />
         <LanguageCard />
 
         <Card>

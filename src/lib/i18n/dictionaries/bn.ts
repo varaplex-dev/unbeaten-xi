@@ -49,4 +49,7 @@ export const bn: Dictionary = {
   "settings.readMore": "আরও পড়ুন",
   "settings.language": "ভাষা",
   "settings.languageDesc": "অ্যাপের জন্য আপনার পছন্দের ভাষা বেছে নিন।",
+  "settings.hardcoreMode": "হার্ডকোর মোড",
+  "settings.hardcoreModeDesc":
+    "আপনার একাদশে আসল ফিল্ডিং পজিশন বসানো যোগ করে — স্লিপ বা গালিতে একজন বোলার বা অলরাউন্ডার আপনার উইকেট নেওয়ার ক্ষমতা বাড়ায়; সেখানে একজন স্পেশালিস্ট ব্যাটসম্যান রাখা একটি জুয়া।",
 };
