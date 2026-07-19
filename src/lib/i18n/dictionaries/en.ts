@@ -81,6 +81,7 @@ export const en = {
     "Pick a player, then tap a real position on the field — Slip and Gully are catching spots, so a bowler or all-rounder there sharpens your wicket-taking; a specialist batter parked there is a bit of a gamble. Everything else is your call.",
   "hardcore.placing": "Placing",
   "hardcore.placingHint": "tap a position on the field.",
+  "hardcore.suggested": "Suggested",
 } satisfies Record<string, string>;
 
 // Keys are literal (drawn from `en`, the source of truth for what keys

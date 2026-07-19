@@ -158,6 +158,28 @@ export default function TeamSetupPage() {
           </div>
         )}
 
+        {(needsExplicitCaptain || needsExplicitKeeper) && (
+          <div className="mb-4 rounded-xl border border-gold/40 bg-gold/5 px-4 py-3 text-sm">
+            <p className="mb-1 flex items-center gap-2 font-semibold text-gold">
+              <Star className="h-4 w-4" fill="currentColor" /> Choose your leaders
+            </p>
+            <p className="text-foreground-muted">
+              {needsExplicitCaptain && (
+                <>
+                  Tap the <Star className="inline h-3.5 w-3.5 -mt-0.5 text-gold" /> next to a player to name your{" "}
+                  <span className="font-semibold text-foreground">captain</span>.
+                </>
+              )}{" "}
+              {needsExplicitKeeper && (
+                <>
+                  Tap the <Shield className="inline h-3.5 w-3.5 -mt-0.5 text-accent" /> to set your{" "}
+                  <span className="font-semibold text-foreground">wicketkeeper</span>.
+                </>
+              )}
+            </p>
+          </div>
+        )}
+
         <ol className="grid gap-2 mb-4">
           {orderedXi.map((player, i) => {
             const isCaptain = player.id === captainId;
@@ -203,10 +225,15 @@ export default function TeamSetupPage() {
                   <button
                     type="button"
                     aria-label="Set as captain"
+                    title="Set as captain"
                     onClick={() => setCaptain(player.id)}
                     className={cn(
-                      "rounded-full p-1.5",
-                      isCaptain ? "bg-gold/20 text-gold" : "text-foreground-muted hover:text-gold"
+                      "rounded-full p-1.5 ring-1 transition-colors",
+                      isCaptain
+                        ? "bg-gold/20 text-gold ring-gold/50"
+                        : needsExplicitCaptain
+                          ? "animate-pulse text-gold ring-gold/40"
+                          : "text-foreground-muted ring-transparent hover:text-gold"
                     )}
                   >
                     <Star className="h-3.5 w-3.5" fill={isCaptain ? "currentColor" : "none"} />
@@ -215,10 +242,15 @@ export default function TeamSetupPage() {
                     <button
                       type="button"
                       aria-label="Set as wicketkeeper"
+                      title="Set as wicketkeeper"
                       onClick={() => setWicketkeeper(player.id)}
                       className={cn(
-                        "rounded-full p-1.5",
-                        isKeeper ? "bg-accent/20 text-accent" : "text-foreground-muted hover:text-accent"
+                        "rounded-full p-1.5 ring-1 transition-colors",
+                        isKeeper
+                          ? "bg-accent/20 text-accent ring-accent/50"
+                          : needsExplicitKeeper
+                            ? "animate-pulse text-accent ring-accent/40"
+                            : "text-foreground-muted ring-transparent hover:text-accent"
                       )}
                     >
                       <Shield className="h-3.5 w-3.5" fill={isKeeper ? "currentColor" : "none"} />

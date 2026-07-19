@@ -51,6 +51,18 @@ export default function SquadSelectPage() {
   const squadComplete = draftPicks.length >= SQUAD_SIZE;
   const impactResolved = impactPlayerId !== null;
   const impactPlayer: Player | null = impactPlayerId ? resolvePlayer(impactPlayerId) : null;
+  // The same real player can appear under different ids across pools (a
+  // legend entry vs a franchise-season entry), so dedupe by name too —
+  // otherwise a player drafted from, say, Sri Lanka could be re-picked from
+  // a club side. Includes the pending pick and the Impact Player.
+  const draftedNames = useMemo(() => {
+    const ids = [
+      ...squadSlots.filter((id): id is string => id !== null),
+      ...(pendingPlayerId ? [pendingPlayerId] : []),
+      ...(impactPlayerId ? [impactPlayerId] : []),
+    ];
+    return new Set(ids.map((id) => resolvePlayer(id)?.name).filter((n): n is string => Boolean(n)));
+  }, [squadSlots, pendingPlayerId, impactPlayerId]);
   const pendingPlayer: Player | null = pendingPlayerId ? resolvePlayer(pendingPlayerId) : null;
   const fieldSlots: (Player | null)[] = useMemo(
     () => squadSlots.map((id) => (id ? resolvePlayer(id) : null)),
@@ -167,18 +179,23 @@ export default function SquadSelectPage() {
               </div>
 
               <div className="grid gap-3 sm:grid-cols-2">
-                {eraTeam.players.map((player) => {
-                  const alreadyDrafted = draftedIds.has(player.id) || player.id === impactPlayerId;
-                  return (
-                    <PlayerCard
-                      key={player.id}
-                      player={player}
-                      disabled={alreadyDrafted}
-                      hideStats={hardcoreMode}
-                      onSelect={() => handlePick(player)}
-                    />
-                  );
-                })}
+                {/* Show the roster strongest-first (by overall rating), the
+                    way 82-0 lists a team's players best-to-worst. */}
+                {[...eraTeam.players]
+                  .sort((a, b) => b.overallRating - a.overallRating)
+                  .map((player) => {
+                    const alreadyDrafted =
+                      draftedIds.has(player.id) || draftedNames.has(player.name) || player.id === impactPlayerId;
+                    return (
+                      <PlayerCard
+                        key={player.id}
+                        player={player}
+                        disabled={alreadyDrafted}
+                        hideStats={hardcoreMode}
+                        onSelect={() => handlePick(player)}
+                      />
+                    );
+                  })}
               </div>
             </div>
           )}

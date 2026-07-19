@@ -201,11 +201,16 @@ const CURRENT_ERA_COUNTRIES = [
 
 const SQUAD_MIN_FOR_ERA_TEAM = 11;
 
+// The current international season these squads represent — labelled with the
+// running year rather than "Today", so a spin reads like "England · 2026
+// Season" the way 82-0 shows a team + a concrete era.
+const CURRENT_SEASON_LABEL = `${new Date().getFullYear()} Season`;
+
 const CURRENT_TEAMS: EraTeam[] = CURRENT_ERA_COUNTRIES.map((country) => ({
   id: `current-${country.toLowerCase().replace(/\s+/g, "-")}`,
   name: country,
-  eraLabel: "Today",
-  tagline: `${country}'s strongest current squad, straight off today's team sheet.`,
+  eraLabel: CURRENT_SEASON_LABEL,
+  tagline: `${country}'s strongest current squad this season.`,
   country,
   isHistoric: false,
   players: currentSquadFor(country),

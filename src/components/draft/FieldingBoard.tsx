@@ -1,11 +1,27 @@
 "use client";
 
+import { useMemo } from "react";
 import { motion } from "framer-motion";
 import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
-import { FIELDING_POSITIONS } from "@/lib/data/fieldingPositions";
+import { FIELDING_POSITIONS, getFieldingPositionById } from "@/lib/data/fieldingPositions";
 import { useTranslation } from "@/lib/i18n/useTranslation";
-import type { Player } from "@/lib/types";
+import { canBowl, type Player } from "@/lib/types";
 import { cn } from "@/lib/utils";
+
+// Suggests where a selected player fits best: bowlers and all-rounders are
+// steered to the close-catching spots (slip/gully), which actually sharpen
+// wicket-taking in the sim; pure batters are steered outfield, where a
+// missed chance costs less. Only ever returns an OPEN position.
+function suggestPosition(player: Player, assignments: Record<string, string>): string | null {
+  const zoneRank = (zone: string) => (zone === "catching" ? 0 : zone === "infield" ? 1 : 2);
+  const prefersCatching = canBowl(player);
+  const open = FIELDING_POSITIONS.filter((p) => !assignments[p.id]);
+  if (open.length === 0) return null;
+  const ordered = [...open].sort((a, b) =>
+    prefersCatching ? zoneRank(a.zone) - zoneRank(b.zone) : zoneRank(b.zone) - zoneRank(a.zone)
+  );
+  return ordered[0].id;
+}
 
 interface FieldingBoardProps {
   /** The 10 non-keeper XI players — the keeper always stands behind the
@@ -37,6 +53,11 @@ export function FieldingBoard({
   const assignedPlayerIds = new Set(Object.values(assignments));
   const unassigned = outfieldPlayers.filter((p) => !assignedPlayerIds.has(p.id));
   const pendingPlayer = pendingPlayerId ? outfieldPlayers.find((p) => p.id === pendingPlayerId) : null;
+  const suggestedPositionId = useMemo(
+    () => (pendingPlayer ? suggestPosition(pendingPlayer, assignments) : null),
+    [pendingPlayer, assignments]
+  );
+  const suggestedPosition = suggestedPositionId ? getFieldingPositionById(suggestedPositionId) : null;
 
   return (
     <div>
@@ -63,6 +84,7 @@ export function FieldingBoard({
           const player = playerId ? outfieldPlayers.find((p) => p.id === playerId) : null;
           const clickable = Boolean(pendingPlayerId) && !player;
           const isCatching = pos.zone === "catching";
+          const isSuggested = clickable && pos.id === suggestedPositionId;
           return (
             <div
               key={pos.id}
@@ -91,13 +113,19 @@ export function FieldingBoard({
                     className={cn(
                       "flex h-8 w-8 items-center justify-center rounded-full border-2 text-[8px] font-bold",
                       isCatching ? "text-gold/70" : "text-foreground-muted",
-                      clickable ? "border-solid border-accent text-accent" : "border-dashed border-white/20"
+                      clickable ? "border-solid border-accent text-accent" : "border-dashed border-white/20",
+                      isSuggested && "border-gold text-gold ring-2 ring-gold/60"
                     )}
                     animate={clickable ? { opacity: [0.55, 1, 0.55] } : { opacity: 1 }}
                     transition={clickable ? { duration: 1.3, repeat: Infinity, ease: "easeInOut" } : undefined}
                   >
                     {pos.short.length > 6 ? pos.short.slice(0, 5) : pos.short}
                   </motion.div>
+                  {isSuggested && (
+                    <span className="mt-0.5 rounded-full bg-gold/20 px-1.5 text-[7px] font-bold uppercase tracking-wide text-gold">
+                      ★ {t("hardcore.suggested")}
+                    </span>
+                  )}
                 </button>
               )}
             </div>
@@ -106,10 +134,17 @@ export function FieldingBoard({
       </div>
 
       {pendingPlayer && (
-        <p className="mx-auto mt-3 max-w-sm text-center text-xs text-accent">
-          {t("hardcore.placing")} <span className="font-semibold">{pendingPlayer.shortName}</span> —{" "}
-          {t("hardcore.placingHint")}
-        </p>
+        <div className="mx-auto mt-3 max-w-sm text-center text-xs">
+          <p className="text-accent">
+            {t("hardcore.placing")} <span className="font-semibold">{pendingPlayer.shortName}</span> —{" "}
+            {t("hardcore.placingHint")}
+          </p>
+          {suggestedPosition && (
+            <p className="mt-1 text-gold">
+              ★ {t("hardcore.suggested")}: <span className="font-semibold">{suggestedPosition.name}</span>
+            </p>
+          )}
+        </div>
       )}
 
       {unassigned.length > 0 && (
