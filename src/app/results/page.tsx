@@ -192,7 +192,14 @@ export default function ResultsPage() {
         </div>
 
         <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <ShareMenu shareText={shareText} wins={stats.wins} losses={stats.losses} />
+          <ShareMenu
+            shareText={shareText}
+            wins={stats.wins}
+            losses={stats.losses}
+            teamRating={stats.teamRatingOutOf100}
+            netRunRate={stats.netRunRate}
+            mvpName={mvp?.name ?? null}
+          />
           <Button size="lg" variant="secondary" onClick={handlePlayAgain} className="w-full sm:w-auto">
             Play Again
           </Button>
