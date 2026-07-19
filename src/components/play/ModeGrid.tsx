@@ -51,14 +51,6 @@ const MODES: ModeDef[] = [
     available: false,
   },
   {
-    id: "test-invincibles",
-    emoji: "📅",
-    tone: "gold",
-    name: "Test Invincibles",
-    description: "A five-day format challenge.",
-    available: false,
-  },
-  {
     id: "india-xi",
     emoji: "🇮🇳",
     image: "/logos/badge-india-xi.png",

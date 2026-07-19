@@ -28,9 +28,10 @@ export default function LandingPage() {
           },
         ]}
       >
-        {/* Hero badge art */}
+        {/* Hero badge art — transparent PNG, so no rounded frame; just a
+            soft drop-shadow to lift it off the stadium backdrop. */}
         <div className="relative z-10 mx-auto w-full max-w-[240px] sm:max-w-xs">
-          <HeroPlayerImage className="w-full rounded-3xl drop-shadow-[0_20px_40px_rgba(0,0,0,0.55)]" />
+          <HeroPlayerImage className="w-full drop-shadow-[0_16px_32px_rgba(0,0,0,0.6)]" />
         </div>
 
         <div className="relative z-20 mt-5 text-center">
