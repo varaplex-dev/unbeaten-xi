@@ -32,15 +32,16 @@ export default function LandingPage() {
         </div>
 
         <p className="relative z-10 mx-auto mt-5 max-w-md text-center text-foreground-muted">
-          Draft a T20 Playing XI in 11 quick picks. We&apos;ll build your
-          lineup and simulate the season instantly — see your record in
-          seconds, not innings.
+          Spin into real teams and pick real players — then it&apos;s on you
+          to build the XI: batting order, captain, bowling plan, all your
+          call. The season simulation runs on real career stats, so how well
+          you actually know the game decides how close you get to 14-0.
         </p>
 
         <div className="relative z-10 mx-auto mt-8 flex w-full max-w-xs flex-col gap-3 sm:max-w-none sm:w-auto sm:flex-row">
           <Link href="/play" className="w-full sm:w-auto">
             <Button size="lg" className="w-full">
-              Start a New Draft
+              Start Spinning
             </Button>
           </Link>
           <Link href="/daily" className="w-full sm:w-auto">
@@ -62,10 +63,10 @@ export default function LandingPage() {
         {/* Venue-style info strip, echoing the reference poster's footer block */}
         <div className="relative z-10 mt-10 border-t border-white/10 pt-4 text-center">
           <p className="text-xs font-semibold tracking-[0.2em] text-gold uppercase">
-            Draft. Simulate. See Your Record.
+            Spin. Build. Simulate.
           </p>
           <p className="mt-1 text-xs text-foreground-muted">
-            11 Draft Rounds &middot; 14 League Matches &middot; Results In Seconds
+            Real Players &middot; Real Stats &middot; 14 League Matches
           </p>
         </div>
       </PosterShell>
