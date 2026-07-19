@@ -41,6 +41,36 @@ function slotRoleLabel(index: number): string {
   return "Bowler";
 }
 
+// The batting-order slot group that best fits a player's primary role — a
+// helpful nudge for regular play (Hardcore Mode passes suggest=false so the
+// player gets no hint). Mirrors slotRoleLabel's 2/3/1/2/3 structure.
+function preferredSlotGroup(role: Player["primaryRole"]): number[] {
+  switch (role) {
+    case "opener":
+    case "top-order":
+      return [0, 1];
+    case "middle-order":
+    case "finisher":
+      return [2, 3, 4];
+    case "wicketkeeper-batter":
+      return [5];
+    case "batting-allrounder":
+    case "bowling-allrounder":
+      return [6, 7];
+    default:
+      // fast/swing/death bowlers and all spinners
+      return [8, 9, 10];
+  }
+}
+
+/** The first still-open slot in the pending player's preferred group, or
+ * null if that group is full (or suggestions are off). */
+function suggestedSlotIndex(pendingPlayer: Player | null, slots: (Player | null)[]): number | null {
+  if (!pendingPlayer) return null;
+  const open = preferredSlotGroup(pendingPlayer.primaryRole).find((i) => !slots[i]);
+  return open ?? null;
+}
+
 interface SlotProps {
   index: number;
   x: number;
@@ -48,10 +78,11 @@ interface SlotProps {
   player: Player | null;
   clickable: boolean;
   impact?: boolean;
+  suggested?: boolean;
   onClick?: () => void;
 }
 
-function Slot({ index, x, y, player, clickable, impact, onClick }: SlotProps) {
+function Slot({ index, x, y, player, clickable, impact, suggested, onClick }: SlotProps) {
   const size = impact ? 40 : 44;
   return (
     <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: `${x}%`, top: `${y}%` }}>
@@ -100,7 +131,8 @@ function Slot({ index, x, y, player, clickable, impact, onClick }: SlotProps) {
               className={cn(
                 "flex items-center justify-center rounded-full border-2 text-xs font-bold",
                 impact ? "border-gold/50 text-gold/70" : "border-white/20 text-foreground-muted",
-                clickable && (impact ? "border-solid border-gold" : "border-solid border-accent text-accent")
+                clickable && (impact ? "border-solid border-gold" : "border-solid border-accent text-accent"),
+                clickable && suggested && "border-gold text-gold ring-2 ring-gold/60"
               )}
               style={{ width: size, height: size, borderStyle: clickable ? "solid" : "dashed" }}
               animate={clickable ? { opacity: [0.55, 1, 0.55], scale: [1, 1.08, 1] } : { opacity: 1 }}
@@ -111,10 +143,10 @@ function Slot({ index, x, y, player, clickable, impact, onClick }: SlotProps) {
             <span
               className={cn(
                 "mt-1 h-[14px] max-w-[64px] truncate text-center text-[10px]",
-                clickable ? "font-semibold text-accent" : "text-foreground-muted"
+                clickable && suggested ? "font-bold text-gold" : clickable ? "font-semibold text-accent" : "text-foreground-muted"
               )}
             >
-              {clickable ? "Place here" : impact ? "" : slotRoleLabel(index)}
+              {clickable && suggested ? "★ Suggested" : clickable ? "Place here" : impact ? "" : slotRoleLabel(index)}
             </span>
           </motion.button>
         )}
@@ -129,6 +161,11 @@ interface SquadFieldProps {
   /** True while a picked player is waiting to be placed — empty slots
    * become clickable and pulse to invite the placement tap. */
   placing: boolean;
+  /** The player currently waiting to be placed — used to suggest a slot. */
+  pendingPlayer?: Player | null;
+  /** Whether to highlight a suggested slot for the pending player. Off in
+   * Hardcore Mode, which is user-reliant. */
+  suggest?: boolean;
   onSlotClick?: (index: number) => void;
   impactPlayer?: Player | null;
   impactActive?: boolean;
@@ -141,8 +178,17 @@ interface SquadFieldProps {
  * up top versus burying one at #11 genuinely changes the season sim, not
  * just the display order. The 12th slot (Impact Player, in the bench strip
  * below) skips placement — it's a single bench spot, picked directly. */
-export function SquadField({ slots, placing, onSlotClick, impactPlayer, impactActive }: SquadFieldProps) {
+export function SquadField({
+  slots,
+  placing,
+  pendingPlayer,
+  suggest,
+  onSlotClick,
+  impactPlayer,
+  impactActive,
+}: SquadFieldProps) {
   const showImpact = impactPlayer !== undefined || impactActive !== undefined;
+  const suggestedIndex = placing && suggest ? suggestedSlotIndex(pendingPlayer ?? null, slots) : null;
   return (
     <div>
       <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-border bg-[radial-gradient(ellipse_at_50%_45%,#0f2a22_0%,#0b0f14_72%)]">
@@ -162,6 +208,7 @@ export function SquadField({ slots, placing, onSlotClick, impactPlayer, impactAc
             y={pos.y}
             player={slots[i] ?? null}
             clickable={placing && !slots[i]}
+            suggested={i === suggestedIndex}
             onClick={() => onSlotClick?.(i)}
           />
         ))}

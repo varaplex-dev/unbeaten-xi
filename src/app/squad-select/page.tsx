@@ -203,6 +203,8 @@ export default function SquadSelectPage() {
           <SquadField
             slots={fieldSlots}
             placing={pendingPlayerId !== null}
+            pendingPlayer={pendingPlayer}
+            suggest={!hardcoreMode}
             onSlotClick={(index) => placeSquadPlayer(index)}
             impactPlayer={impactPlayer}
             impactActive={squadComplete && !impactResolved}
