@@ -39,6 +39,7 @@ export const en = {
   "play.allTimeXiDesc":
     "Spin to land on a real historic squad, current national team, or an actual past-season IPL/BBL/PSL franchise roster — then pick one player from it. Real players, real stats. See if you can go 14-0.",
   "play.spin": "Spin",
+  "play.play": "Play",
   "play.comingSoon": "Coming Soon",
 
   "settings.title": "Settings",

@@ -28,6 +28,9 @@ interface ModeDef {
   description: string;
   available: boolean;
   gameMode?: GameMode;
+  /** A mode that navigates to its own route (e.g. online Head-to-Head)
+   * rather than starting the local spin-draft flow. */
+  href?: string;
 }
 
 const MODES: ModeDef[] = [
@@ -73,10 +76,12 @@ const MODES: ModeDef[] = [
     id: "head-to-head",
     emoji: "⚔️",
     image: "/logos/badge-head-to-head.png",
-    tone: "gold",
+    tone: "accent",
     name: "Head-to-Head Challenge",
-    description: "Compare your XI against a friend's.",
-    available: false,
+    description:
+      "Get matched online against another player. Take turns spinning and drafting an XI — no duplicate players — then your rosters clash for ladder points and a shot at the playoffs.",
+    available: true,
+    href: "/head-to-head",
   },
 ];
 
@@ -118,8 +123,13 @@ export function ModeGrid() {
   const spinEraTeam = useGameStore((s) => s.spinEraTeam);
   const { t } = useTranslation();
 
-  function handleSpin(mode: ModeDef) {
-    if (!mode.available || !mode.gameMode) return;
+  function handleStart(mode: ModeDef) {
+    if (!mode.available) return;
+    if (mode.href) {
+      router.push(mode.href);
+      return;
+    }
+    if (!mode.gameMode) return;
     spinEraTeam();
     router.push("/squad-select");
   }
@@ -142,8 +152,8 @@ export function ModeGrid() {
               </p>
               {mode.available && (
                 <div className="flex shrink-0 gap-2">
-                  <Button size="sm" onClick={() => handleSpin(mode)}>
-                    {t("play.spin")}
+                  <Button size="sm" onClick={() => handleStart(mode)}>
+                    {mode.href ? t("play.play") : t("play.spin")}
                   </Button>
                 </div>
               )}
