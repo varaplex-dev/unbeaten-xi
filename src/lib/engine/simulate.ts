@@ -1,15 +1,14 @@
-import type { PitchType, Player } from "@/lib/types";
+import type { EraTeam, PitchType, Player } from "@/lib/types";
 import { isPaceBowler, isSpinner } from "@/lib/types";
 import { OPPONENT_FRANCHISES, VENUES } from "@/lib/data/franchises";
+import { ERA_TEAMS } from "@/lib/data/eraTeams";
+import { projectInnings, teamStrength } from "@/lib/engine/matchEngine";
 import { computeTeamRatings } from "@/lib/engine/teamRatings";
 import {
   battingProfile,
   bowlingAverageOnT20Scale,
-  bowlingSuppression,
   economyOnT20Scale,
-  expectedRunsFromBatting,
   hasCareerStats,
-  wicketThreat,
 } from "@/lib/engine/statsSimulation";
 import { fieldingWicketBonus, type FieldingAssignments } from "@/lib/engine/fielding";
 import { createRng, pickN, pickRandom, pickWeighted, type RandomFn } from "@/lib/engine/rng";
@@ -135,15 +134,6 @@ function pitchSuitability(pitch: PitchDef, xi: Player[]): number {
 
 function simulateInningsScore(rng: RandomFn, strength: number, pitch: PitchDef, suitability: number): number {
   const base = 128 + (strength - 65) * 1.6 + pitch.runsAdjustment + suitability;
-  const variance = (rng() - 0.5) * 34;
-  return Math.max(85, Math.round(base + variance));
-}
-
-/** Same shape as simulateInningsScore, but the baseline is already a real
- * expected-runs figure (from real batting/bowling stats), not a 0-99
- * "strength" rating needing conversion into run units first. */
-function simulateInningsScoreFromRuns(rng: RandomFn, expectedRuns: number, pitch: PitchDef, suitability: number): number {
-  const base = expectedRuns + pitch.runsAdjustment + suitability;
   const variance = (rng() - 0.5) * 34;
   return Math.max(85, Math.round(base + variance));
 }
@@ -302,6 +292,35 @@ function resolveDecisionOutcome(
 const MODERN_ERA_YEAR = 2020;
 const MAX_ERA_SCALE_DOWN = 0.15;
 
+/** The strongest XI a real era team can field, used as a season opponent. */
+function opponentXiFor(team: EraTeam): Player[] {
+  return [...team.players].sort((a, b) => b.overallRating - a.overallRating).slice(0, 11);
+}
+
+/**
+ * Builds the season's 14 real opponents: rank every era team by net strength,
+ * then walk that ranking in even steps so the schedule spans the full range
+ * of difficulty. The seeded rng only picks the starting offset, so the spread
+ * is guaranteed while the exact fixtures still vary by season.
+ */
+function buildOpponentSchedule(rng: RandomFn): { name: string; xi: Player[] }[] {
+  const ranked = ERA_TEAMS.filter((t) => t.players.length >= 11)
+    .map((t) => ({ team: t, xi: opponentXiFor(t) }))
+    .map((e) => ({ ...e, strength: teamStrength(e.xi) }))
+    .sort((a, b) => a.strength - b.strength);
+  if (ranked.length === 0) return [];
+
+  const schedule: { name: string; xi: Player[] }[] = [];
+  const step = ranked.length / SEASON_LENGTH;
+  const offset = rng() * step;
+  for (let i = 0; i < SEASON_LENGTH; i++) {
+    const idx = Math.min(ranked.length - 1, Math.floor(offset + i * step));
+    const entry = ranked[idx];
+    schedule.push({ name: `${entry.team.name} (${entry.team.eraLabel})`, xi: entry.xi });
+  }
+  return schedule;
+}
+
 function eraOpponentScale(averageEra?: number): number {
   if (!averageEra) return 1;
   const yearsBack = Math.max(0, MODERN_ERA_YEAR - averageEra);
@@ -332,12 +351,10 @@ export function simulateSeason(
   // intact) mode keeps running on the rating-based math unchanged.
   const isStatsGame = hasCareerStats(xi);
   const orderedForBatting = battingOrder.length ? battingOrder : xi;
-  const expectedRunsFor = isStatsGame ? expectedRunsFromBatting(orderedForBatting) : 0;
   // Hardcore Mode's real-fielding-position layer nudges wicket-taking
   // threat a little — 0 when fieldingAssignments is absent/empty, so a
   // normal game is completely unaffected.
   const fieldingBonus = fieldingAssignments ? fieldingWicketBonus(xi, fieldingAssignments) : 0;
-  const teamWicketThreat = isStatsGame ? wicketThreat(xi, fieldingBonus) : 0;
   // Cross-era fairness: scales league opponents down toward the squad's era.
   const eraScale = eraOpponentScale(averageEra);
 
@@ -361,6 +378,12 @@ export function simulateSeason(
     if (type === "defend-bowler" && bowlers.length < 2) type = "pace-or-spin";
     decisionMatchMap.set(matchNumber, type);
   });
+
+  // A season of REAL opponents. Every era team is ranked by its net strength,
+  // then the schedule takes an even spread across that range — so a season
+  // includes genuinely weak sides, mid-table ones and elite attacks, and 14-0
+  // means beating all of them rather than clearing a random number 14 times.
+  const opponentSchedule = isStatsGame ? buildOpponentSchedule(rng) : [];
 
   const runTotals = new Map<string, number>();
   const wicketTotals = new Map<string, number>();
@@ -393,7 +416,10 @@ export function simulateSeason(
       decisionRecord = { type: decisionType, choiceId, resultLabel: decisionOutcome.resultLabel };
     }
 
-    const opponent = pickRandom(rng, OPPONENT_FRANCHISES);
+    // A real opposing side for a stats game; the fictional fallback keeps the
+    // old generic franchise names.
+    const fixture = opponentSchedule[matchNumber - 1];
+    const opponent = fixture ? fixture.name : pickRandom(rng, OPPONENT_FRANCHISES);
     const venue = pickRandom(rng, VENUES);
     const pitch = pickRandom(rng, PITCHES);
     const suitability = pitchSuitability(pitch, xi);
@@ -411,22 +437,24 @@ export function simulateSeason(
     let opponentScore: number;
     let teamBaseline: number;
     let opponentBaseline: number;
-    if (isStatsGame) {
-      // A league opponent's own real stats aren't modeled — just a
-      // realistic randomized T20 total — suppressed or inflated by how
-      // economical (and wicket-threatening) this XI's real bowling attack
-      // actually is.
-      const suppression = bowlingSuppression(xi) + (teamWicketThreat - 0.5) * 10;
-      // 120-210 — wide enough to overlap the full range a real T20 batting
-      // order can produce (see expectedRunsFromBatting), so even a genuinely
-      // elite user team can run into an opponent having a big night, and a
-      // weaker team can still catch a break against a modest one. Scaled by
-      // the squad's era so older sides face era-appropriate opposition.
-      const opponentBaseRuns = (120 + rng() * 90) * eraScale;
-      teamBaseline = expectedRunsFor + teamBonus;
-      opponentBaseline = opponentBaseRuns - suppression - opponentPenalty;
-      teamScore = simulateInningsScoreFromRuns(rng, teamBaseline, pitch, suitability);
-      opponentScore = simulateInningsScoreFromRuns(rng, opponentBaseline, pitch, -suitability * 0.5);
+    if (isStatsGame && fixture) {
+      // A real contest: this XI's batting order against that side's actual
+      // attack, phase by phase, and then the reverse. Pitch, in-match
+      // decisions and the era scale enter as runs-per-over adjustments
+      // (the raw values are per-innings, hence the /20).
+      const teamInnings = projectInnings(rng, orderedForBatting, fixture.xi, {
+        pitchAdjustment: (pitch.runsAdjustment + suitability + teamBonus) / 20,
+        eraScale,
+        fieldingBonus,
+      });
+      const opponentInnings = projectInnings(rng, fixture.xi, xi, {
+        pitchAdjustment: (pitch.runsAdjustment - suitability * 0.5 - opponentPenalty) / 20,
+        eraScale,
+      });
+      teamScore = teamInnings.runs;
+      opponentScore = opponentInnings.runs;
+      teamBaseline = teamInnings.baseline;
+      opponentBaseline = opponentInnings.baseline;
     } else {
       teamBaseline = ratings.overallRating + teamBonus;
       opponentBaseline = 48 + rng() * 42 - opponentPenalty; // 48-90 range of league opposition
