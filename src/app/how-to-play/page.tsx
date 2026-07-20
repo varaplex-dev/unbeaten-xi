@@ -88,29 +88,82 @@ export default function HowToPlayPage() {
           <CardHeader>
             <CardTitle>3. The 14-Match Season</CardTitle>
           </CardHeader>
-          <CardContent className="text-sm text-foreground-muted space-y-2">
+          <CardContent className="text-sm text-foreground-muted space-y-3">
             <p>
-              Once your XI is set, the engine simulates 14 matches from your
-              squad&apos;s combined batting and bowling strength. The
-              relationship between team strength and wins isn&apos;t
-              linear — each additional win gets harder to earn as your
-              squad&apos;s output climbs, so a genuinely unbeaten 14-0 season
-              takes real strength across{" "}
-              <span className="font-semibold text-foreground">both</span>{" "}
-              batting and bowling at once. A stacked batting order with no
-              bowling attack behind it will still drop matches.
+              Your XI plays{" "}
+              <span className="font-semibold text-foreground">14 real opposing sides</span>, drawn as
+              an even spread across every squad in the game ranked by strength — weak, mid-table and
+              elite. Going 14-0 means beating all of them, not clearing the same number fourteen
+              times.
             </p>
             <p>
-              Along the way you&apos;ll make in-match calls — how to attack
-              with the ball, when to bring on your Impact Player — that shift
-              individual results on the margins.
+              Every match is a full two-innings contest: your batting order against their attack,
+              then theirs against yours. An innings is simulated in the three phases a T20 actually
+              splits into — the{" "}
+              <span className="font-semibold text-foreground">powerplay</span> (overs 1-6), the{" "}
+              <span className="font-semibold text-foreground">middle</span> (7-15) and the{" "}
+              <span className="font-semibold text-foreground">death</span> (16-20). Each phase is its
+              own contest: what the batters who actually face it score, weighed against what that
+              attack concedes in it, tilted slightly toward batting — in T20 a side&apos;s scoring
+              ability moves a total a little more than the bowling suppresses it.
+            </p>
+            <p>
+              Where ball-by-ball data covers a player, their{" "}
+              <span className="font-semibold text-foreground">real phase numbers</span> are used
+              rather than a career average spread evenly across the innings. Two players with the
+              same overall strike rate can be completely different cricketers at the death — one
+              striking at 190, the other at 90 — and the simulation knows the difference.
+            </p>
+            <p>
+              Wickets accrue from the attack&apos;s real balls-per-wicket against your top
+              order&apos;s resilience. Lose ten and the innings ends early, with the overs you
+              never batted going unscored. Because both disciplines are scored, a stacked batting
+              order with no attack behind it still drops matches.
+            </p>
+            <p>
+              Randomness is deliberately{" "}
+              <span className="font-semibold text-foreground">bounded and seeded</span>: the same
+              fixture always replays identically, and the stronger side wins on merit. Upsets
+              happen at a believable rate rather than a coin-flip one.
+            </p>
+            <p>
+              In Hardcore Mode you also make in-match calls — how to attack with the ball, when to
+              bring on your Impact Player. Classic resolves those for you so a season runs straight
+              through.
             </p>
           </CardContent>
         </Card>
 
         <Card>
           <CardHeader>
-            <CardTitle>4. Squad Requirements</CardTitle>
+            <CardTitle>4. Fair Across Eras</CardTitle>
+          </CardHeader>
+          <CardContent className="text-sm text-foreground-muted space-y-3">
+            <p>
+              You can spin a 1980s great and a current IPL star into the same XI, so the engine
+              corrects for era twice — once per player, once per squad.
+            </p>
+            <p>
+              <span className="font-semibold text-foreground">Per player.</span> A 1980s Test
+              average and a 2020s T20 strike rate aren&apos;t comparable numbers as they stand. Each
+              player&apos;s raw figures are read relative to what genuinely good looked like in{" "}
+              <em>their</em> own format and era, then mapped onto one common T20-equivalent scale.
+              Nobody is rewarded or punished for the conditions they happened to play in.
+            </p>
+            <p>
+              <span className="font-semibold text-foreground">Per squad.</span> Every team you spin
+              into carries a real year — a historic side its central year, a franchise team its
+              actual season. Your XI&apos;s average era is worked out from where your picks came
+              from, and the league you play scales toward it, so an older side meets
+              era-appropriate scoring instead of modern T20 run-rates. The adjustment is capped: it
+              levels the field, it never hands you a free win.
+            </p>
+          </CardContent>
+        </Card>
+
+        <Card>
+          <CardHeader>
+            <CardTitle>5. Squad Requirements</CardTitle>
           </CardHeader>
           <CardContent className="text-sm text-foreground-muted space-y-2">
             <p>Before you can simulate, your XI needs:</p>
@@ -141,7 +194,7 @@ export default function HowToPlayPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>5. The Slot Machine</CardTitle>
+            <CardTitle>6. The Slot Machine</CardTitle>
           </CardHeader>
           <CardContent className="text-sm text-foreground-muted space-y-2">
             <p>
@@ -162,7 +215,7 @@ export default function HowToPlayPage() {
 
         <Card>
           <CardHeader>
-            <CardTitle>6. Leaderboards</CardTitle>
+            <CardTitle>7. Leaderboards</CardTitle>
           </CardHeader>
           <CardContent className="text-sm text-foreground-muted space-y-2">
             <p>

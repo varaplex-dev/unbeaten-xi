@@ -40,7 +40,6 @@ export default function ResultsPage() {
   const stats = useGameStore((s) => s.seasonStats);
   const matches = useGameStore((s) => s.matchResults);
   const draftPicks = useGameStore((s) => s.draftPicks);
-  const pickSourceYears = useGameStore((s) => s.pickSourceYears);
   const resultSaved = useGameStore((s) => s.resultSaved);
   const markResultSaved = useGameStore((s) => s.markResultSaved);
   const startNewGame = useGameStore((s) => s.startNewGame);
@@ -107,15 +106,6 @@ export default function ResultsPage() {
   const weakestPick = lookupPlayer(stats.weakestPickPlayerId);
   const unbeaten = stats.losses === 0;
 
-  // The drafted XI's average era (only spin-drafted picks carry a source
-  // year) — shown so the era-scaled simulation is visible to the player.
-  const eraYears = draftPicks
-    .map((p) => pickSourceYears[p.playerId])
-    .filter((y): y is number => typeof y === "number");
-  const squadEra = eraYears.length
-    ? Math.round(eraYears.reduce((sum, y) => sum + y, 0) / eraYears.length)
-    : null;
-
   function handlePlayAgain() {
     // A spin-drafted squad (usedEraTeamIds non-empty) was built by spinning
     // into a fresh team per pick, not the category-based draft — Play Again
@@ -149,11 +139,6 @@ export default function ResultsPage() {
           <p className="mt-2 text-sm text-foreground-muted">
             Better than {stats.percentile}% of simulated managers
           </p>
-          {squadEra && (
-            <p className="mt-1 text-xs text-foreground-muted">
-              Squad era ~{squadEra} — season simulated against era-appropriate opposition
-            </p>
-          )}
         </div>
 
         <div className="mt-8 grid grid-cols-3 gap-2">
