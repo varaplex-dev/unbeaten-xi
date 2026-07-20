@@ -1,0 +1,5 @@
+# Fetched directory + generated join output — regenerated locally, never
+# committed. Anchored with a leading slash so fixtures/players.json (a small
+# committed test file) is NOT ignored.
+/players.json
+/unified-players.json
