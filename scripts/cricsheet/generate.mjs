@@ -1,0 +1,169 @@
+// Merges Cricsheet stats onto the app's existing player pool.
+//
+// Cricsheet gives far better numbers (ball-by-ball → phase splits, boundary %,
+// real T20 economy) but names players "V Kohli"; the app's pool comes from
+// CricAPI with full names ("Virat Kohli") plus the metadata Cricsheet lacks
+// (country, batting hand, bowling style). So this reconciles the two by
+// surname + first initial and writes a stats-only overlay keyed by app player
+// id — leaving both source pipelines independent and re-runnable.
+//
+// Ambiguous matches (two players sharing a surname + initial) are skipped
+// rather than guessed: a wrong stat line is worse than a missing one.
+//
+// Run:  node scripts/cricsheet/generate.mjs
+// In:   scripts/cricsheet/cricsheet-players.json  (from aggregate.mjs)
+// Out:  src/lib/data/cricsheetStats.generated.ts
+
+import { readFile, writeFile } from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+
+const HERE = path.dirname(fileURLToPath(import.meta.url));
+const REPO = path.resolve(HERE, "..", "..");
+const CRICSHEET_FILE = path.join(HERE, "cricsheet-players.json");
+const SPECS_FILE = path.join(REPO, "src", "lib", "data", "realPlayerSpecs.generated.ts");
+const OUT_FILE = path.join(REPO, "src", "lib", "data", "cricsheetStats.generated.ts");
+
+// Require a real sample before we trust/override a player's numbers.
+const MIN_BAT_INNINGS = 5;
+const MIN_BOWL_BALLS = 60;
+
+function normalize(s) {
+  return s
+    .normalize("NFD")
+    .replace(/[̀-ͯ]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z\s]/g, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+/** "V Kohli" -> { surname: "kohli", initial: "v" }; "Virat Kohli" -> same. */
+function nameKey(name) {
+  const tokens = normalize(name).split(" ").filter(Boolean);
+  if (tokens.length === 0) return null;
+  const surname = tokens[tokens.length - 1];
+  const initial = tokens[0][0];
+  return { surname, initial, full: tokens.join(" ") };
+}
+
+/** Extract the JSON array literal out of the generated specs TS file. */
+async function readSpecs() {
+  const src = await readFile(SPECS_FILE, "utf8");
+  const decl = src.indexOf("REAL_PLAYER_SPECS");
+  // Skip past the type annotation ("PlayerSpec[]") to the real "= [".
+  const assign = src.indexOf("= [", decl);
+  const start = assign === -1 ? -1 : assign + 2;
+  const end = src.lastIndexOf("]");
+  if (decl === -1 || start === -1 || end === -1) {
+    throw new Error("Could not locate the REAL_PLAYER_SPECS array literal");
+  }
+  return JSON.parse(src.slice(start, end + 1));
+}
+
+function hasSample(cs) {
+  return cs.batting.innings >= MIN_BAT_INNINGS || cs.bowling.balls >= MIN_BOWL_BALLS;
+}
+
+function phaseOut(p) {
+  return {
+    powerplay: p.powerplay,
+    middle: p.middle,
+    death: p.death,
+  };
+}
+
+function toCareerStats(cs) {
+  return {
+    format: "T20",
+    battingAverage: cs.batting.average,
+    strikeRate: cs.batting.strikeRate,
+    runs: cs.batting.runs,
+    innings: cs.batting.innings,
+    bowlingAverage: cs.bowling.average,
+    economyRate: cs.bowling.economy,
+    wickets: cs.bowling.wickets,
+    matches: cs.matches,
+    boundaryPct: cs.batting.boundaryPct,
+    bowlingStrikeRate: cs.bowling.strikeRate,
+    battingPhases: phaseOut(cs.batting.phases),
+    bowlingPhases: phaseOut(cs.bowling.phases),
+    source: "cricsheet",
+  };
+}
+
+async function main() {
+  const cricsheet = JSON.parse(await readFile(CRICSHEET_FILE, "utf8"));
+  const specs = await readSpecs();
+
+  // Index Cricsheet players by surname+initial, and by full normalized name.
+  const bySurnameInitial = new Map();
+  const byFullName = new Map();
+  for (const c of cricsheet) {
+    if (!hasSample(c)) continue;
+    const key = nameKey(c.name);
+    if (!key) continue;
+    const si = `${key.surname}|${key.initial}`;
+    if (!bySurnameInitial.has(si)) bySurnameInitial.set(si, []);
+    bySurnameInitial.get(si).push(c);
+    if (!byFullName.has(key.full)) byFullName.set(key.full, []);
+    byFullName.get(key.full).push(c);
+  }
+
+  const overlay = {};
+  let exact = 0;
+  let initialMatch = 0;
+  let ambiguous = 0;
+  let unmatched = 0;
+
+  for (const spec of specs) {
+    const key = nameKey(spec.name);
+    if (!key) continue;
+
+    // 1) exact full-name hit (e.g. "Rashid Khan")
+    let candidates = byFullName.get(key.full);
+    let via = "exact";
+    // 2) otherwise surname + first initial ("Virat Kohli" -> "V Kohli")
+    if (!candidates || candidates.length === 0) {
+      candidates = bySurnameInitial.get(`${key.surname}|${key.initial}`);
+      via = "initial";
+    }
+    if (!candidates || candidates.length === 0) {
+      unmatched++;
+      continue;
+    }
+    if (candidates.length > 1) {
+      // Two real players share the name shape — don't guess.
+      ambiguous++;
+      continue;
+    }
+    overlay[spec.id] = toCareerStats(candidates[0]);
+    if (via === "exact") exact++;
+    else initialMatch++;
+  }
+
+  const matched = exact + initialMatch;
+  const banner =
+    `// AUTO-GENERATED by scripts/cricsheet/generate.mjs — do not hand-edit.\n` +
+    `// Source: Cricsheet ball-by-ball data (https://cricsheet.org), aggregated by\n` +
+    `// scripts/cricsheet/aggregate.mjs. Keyed by the app's own player id; merged\n` +
+    `// over each player's aggregate CareerStats in realPlayers.ts.\n` +
+    `// Matched ${matched} of ${specs.length} players (${exact} exact, ${initialMatch} by surname+initial).\n` +
+    `import type { CareerStats } from "@/lib/types";\n\n` +
+    `export const CRICSHEET_STATS: Record<string, CareerStats> = ${JSON.stringify(overlay, null, 2)};\n`;
+
+  await writeFile(OUT_FILE, banner);
+
+  console.log(`Cricsheet players with a usable sample: ${bySurnameInitial.size} name-keys`);
+  console.log(`Matched   : ${matched} / ${specs.length} app players`);
+  console.log(`  exact   : ${exact}`);
+  console.log(`  initial : ${initialMatch}`);
+  console.log(`Ambiguous : ${ambiguous} (skipped — same surname + initial)`);
+  console.log(`Unmatched : ${unmatched}`);
+  console.log(`Wrote ${path.relative(process.cwd(), OUT_FILE)}`);
+}
+
+main().catch((err) => {
+  console.error(err);
+  process.exit(1);
+});

@@ -66,6 +66,37 @@ export interface CareerStats {
   bowlingAverage: number | null;
   economyRate: number | null;
   wickets: number;
+
+  // --- Optional enrichment, derived from Cricsheet ball-by-ball data ---
+  // (see scripts/cricsheet/). Absent for players we only have aggregate
+  // numbers for, so the simulation always falls back gracefully.
+  matches?: number;
+  /** % of balls faced hit for four or six — a finishing/intent signal. */
+  boundaryPct?: number | null;
+  /** Balls per wicket. Lower = strikes more often. */
+  bowlingStrikeRate?: number | null;
+  battingPhases?: PhaseSplits;
+  bowlingPhases?: PhaseSplits;
+  /** Where these numbers came from, so the UI/engine can prefer the richer set. */
+  source?: "cricsheet" | "aggregate";
+}
+
+/** A stat line split by T20 innings phase — powerplay (ov 1-6), middle
+ * (7-15), death (16-20). What separates a genuine finisher from a player
+ * with the same overall strike rate. */
+export interface PhaseSplits {
+  powerplay: PhaseStat;
+  middle: PhaseStat;
+  death: PhaseStat;
+}
+
+export interface PhaseStat {
+  runs: number;
+  balls: number;
+  /** Batting strike rate in this phase (null when no balls). */
+  strikeRate: number | null;
+  /** Runs conceded per over in this phase (null when no balls). */
+  economy: number | null;
 }
 
 export interface Player {
