@@ -59,12 +59,16 @@ export interface CareerStats {
    * "ODI", "Test", "T20I" — shown alongside the numbers since an average of
    * 44 means something different in Tests than in a T20 league. */
   format: string;
-  battingAverage: number | null;
-  strikeRate: number | null;
+  // These are `| null` for players the stat genuinely doesn't apply to (a
+  // specialist batter has no bowling average), and optional because the
+  // generated data omits null entries rather than shipping them — every
+  // consumer tests `!= null`, which treats absent and null identically.
+  battingAverage?: number | null;
+  strikeRate?: number | null;
   runs: number;
   innings: number;
-  bowlingAverage: number | null;
-  economyRate: number | null;
+  bowlingAverage?: number | null;
+  economyRate?: number | null;
   wickets: number;
 
   // --- Optional enrichment, derived from Cricsheet ball-by-ball data ---
@@ -85,13 +89,24 @@ export interface CareerStats {
  * (7-15), death (16-20). What separates a genuine finisher from a player
  * with the same overall strike rate. */
 export interface PhaseSplits {
-  powerplay: PhaseStat;
-  middle: PhaseStat;
-  death: PhaseStat;
+  // Each phase is optional: a split with no balls faced/bowled is omitted by
+  // the generators, since phaseStat() in matchEngine already discards splits
+  // below MIN_PHASE_BALLS — an absent phase and an empty one behave the same,
+  // and 24% of phase objects were empty.
+  powerplay?: PhaseStat;
+  middle?: PhaseStat;
+  death?: PhaseStat;
 }
 
 export interface PhaseStat {
-  runs: number;
+  /** Runs scored/conceded in this phase. Optional because the generated data
+   * no longer ships it: nothing in the engine or UI reads phase runs, and this
+   * data goes into the client bundle, so it was pure download weight. It stays
+   * in the Cricsheet source (scripts/cricsheet/cricsheet-players.json) and can
+   * be re-emitted if a feature ever needs it. */
+  runs?: number;
+  /** Balls faced/bowled — the sample-size gate. A phase under MIN_PHASE_BALLS
+   * is ignored by the engine, so splits with no balls are omitted entirely. */
   balls: number;
   /** Batting strike rate in this phase (null when no balls). */
   strikeRate: number | null;

@@ -8,8 +8,12 @@ import { PosterShell } from "@/components/brand/PosterShell";
 import { ModeGrid } from "@/components/play/ModeGrid";
 import { useGameStore } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
+import { matchesFor } from "@/lib/engine/competitions";
 
-const SEASON_MATCHES = 14;
+// The hero advertises the flagship league campaign, so it reads its length
+// from that competition rather than restating 14 as a literal — World Cup Run
+// is 9, and the number shown must never drift from the one simulated.
+const SEASON_MATCHES = matchesFor("league-major");
 
 export default function LandingPage() {
   const { t } = useTranslation();

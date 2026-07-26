@@ -65,16 +65,34 @@ function hasSample(cs) {
   return cs.batting.innings >= MIN_BAT_INNINGS || cs.bowling.balls >= MIN_BOWL_BALLS;
 }
 
+/** Ships only what the app reads. `runs` inside a phase is never consumed
+ * (matchEngine uses `balls` as a sample gate plus strikeRate/economy), and a
+ * split with no balls is skipped by phaseStat() anyway — so an absent object
+ * behaves identically to an empty one, minus the bytes. This file ends up in
+ * the client bundle, so the waste is paid by every player on every load. */
 function phaseOut(p) {
-  return {
-    powerplay: p.powerplay,
-    middle: p.middle,
-    death: p.death,
-  };
+  const out = {};
+  for (const key of ["powerplay", "middle", "death"]) {
+    const split = p?.[key];
+    if (!split?.balls) continue;
+    out[key] = { balls: split.balls };
+    if (split.strikeRate != null) out[key].strikeRate = split.strikeRate;
+    if (split.economy != null) out[key].economy = split.economy;
+  }
+  return Object.keys(out).length > 0 ? out : undefined;
+}
+
+/** Drops null/undefined entries — every consumer tests `!= null`, so an absent
+ * field and a null one are indistinguishable to the app. */
+function dropEmpty(obj) {
+  for (const key of Object.keys(obj)) {
+    if (obj[key] == null) delete obj[key];
+  }
+  return obj;
 }
 
 function toCareerStats(cs) {
-  return {
+  return dropEmpty({
     format: "T20",
     battingAverage: cs.batting.average,
     strikeRate: cs.batting.strikeRate,
@@ -89,7 +107,7 @@ function toCareerStats(cs) {
     battingPhases: phaseOut(cs.batting.phases),
     bowlingPhases: phaseOut(cs.bowling.phases),
     source: "cricsheet",
-  };
+  });
 }
 
 async function main() {

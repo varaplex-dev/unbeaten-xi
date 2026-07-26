@@ -1,5 +1,8 @@
-import type { Player } from "@/lib/types";
+import { isWicketkeeper, type Player } from "@/lib/types";
 import { createRng } from "@/lib/engine/rng";
+import { simulateSeason, type SeasonStats } from "@/lib/engine/simulate";
+import type { FieldingAssignments } from "@/lib/engine/fielding";
+import type { CompetitionId } from "@/lib/engine/competitions";
 import {
   battingProfile,
   bowlingSuppression,
@@ -163,16 +166,19 @@ export interface H2HPoints {
 }
 
 // League points, chosen to reward decisive play while keeping close games
-// competitive (a familiar bonus-point structure):
-//   Win .................. 3
-//   Bonus win (margin ≥ BONUS_MARGIN) ... +1  → 4
-//   Narrow loss (margin ≤ CLOSE_MARGIN) . +1  → 1
-//   Loss ................. 0
+// competitive (a familiar bonus-point structure). Head-to-Head is decided by
+// each XI's full SEASON (see simulateH2HSeason), so `margin` here is the gap in
+// SEASON WINS between the two sides, not a single match's run margin:
+//   Win .................................... 3
+//   Bonus win (won by ≥ BONUS_MARGIN games) . +1  → 4
+//   Narrow loss (within CLOSE_MARGIN game) .. +1  → 1
+//   Loss ................................... 0
+// These thresholds MUST match the ones in h2h_submit_result() (SQL).
 export const H2H_WIN_POINTS = 3;
 export const H2H_BONUS_WIN_POINTS = 1;
 export const H2H_NARROW_LOSS_POINTS = 1;
-export const BONUS_MARGIN = 30;
-export const CLOSE_MARGIN = 10;
+export const BONUS_MARGIN = 5;
+export const CLOSE_MARGIN = 1;
 
 export function h2hPoints(result: H2HMatchResult): H2HPoints {
   const winnerPoints = H2H_WIN_POINTS + (result.margin >= BONUS_MARGIN ? H2H_BONUS_WIN_POINTS : 0);
@@ -221,4 +227,104 @@ export function seedPlayoffBracket(ladder: LadderRow[], size: 4 | 8): PlayoffPai
     pairings.push({ round: 1, high: seeds[i], low: seeds[size - 1 - i] });
   }
   return pairings;
+}
+
+// ---------------------------------------------------------------------------
+// Season-vs-season Head-to-Head. Instead of a single match, each player's XI
+// plays its own full season (the same engine the solo game uses), and the
+// better record wins — more wins, then net run rate. Both sides face an
+// IDENTICAL opponent slate (same base seed) so the comparison is purely a test
+// of the two XIs, and the whole thing is deterministic from the match id so
+// both online clients compute the same outcome for peer-agreement.
+// ---------------------------------------------------------------------------
+
+/** How each side arranged its XI on the team-setup step. All fields optional so
+ * a match finalized before setup (or by an idle auto-pick) still simulates from
+ * sensible defaults. */
+export interface H2HLineup {
+  battingOrder: string[];
+  captainId: string | null;
+  keeperId: string | null;
+  fielding?: FieldingAssignments;
+}
+
+export interface H2HSeasonSide {
+  wins: number;
+  losses: number;
+  netRunRate: number;
+}
+
+export interface H2HSeasonResult {
+  host: H2HSeasonSide;
+  guest: H2HSeasonSide;
+  winner: "host" | "guest";
+  /** Gap in season wins (0 when the tiebreak came down to net run rate). */
+  marginWins: number;
+}
+
+// Head-to-Head seasons run the standard league length. Kept fixed (rather than
+// a per-match choice) so every ladder result is comparable.
+const H2H_SEASON_COMPETITION: CompetitionId = "league-major";
+// A season has a fixed handful of in-match decisions; H2H has no interactive
+// prompt, so we auto-resolve each with its first option until the season
+// completes. This bound just guards the loop.
+const H2H_MAX_DECISION_ROUNDS = 8;
+
+/** A lineup from the raw drafted XI when the player hasn't set one: pick order
+ * for batting, highest-rated as captain, first eligible keeper. */
+function defaultLineup(xi: Player[]): H2HLineup {
+  const byRating = [...xi].sort((a, b) => b.overallRating - a.overallRating);
+  return {
+    battingOrder: xi.map((p) => p.id),
+    captainId: byRating[0]?.id ?? null,
+    keeperId: xi.find(isWicketkeeper)?.id ?? null,
+  };
+}
+
+/** Runs one XI's season to completion, auto-resolving any in-match decisions,
+ * and returns its final stats (or null if the season couldn't complete). */
+function runSeasonToCompletion(seed: string, xi: Player[], lineup: H2HLineup): SeasonStats | null {
+  const battingOrder = lineup.battingOrder.length ? lineup.battingOrder : xi.map((p) => p.id);
+  const captainId = lineup.captainId ?? xi[0]?.id ?? "";
+  let decisions: Record<number, string> = {};
+  for (let round = 0; round < H2H_MAX_DECISION_ROUNDS; round++) {
+    const res = simulateSeason(seed, xi, battingOrder, captainId, null, decisions, {
+      competition: H2H_SEASON_COMPETITION,
+      fieldingAssignments: lineup.fielding,
+    });
+    if (res.stats) return res.stats;
+    if (!res.pendingDecision) return null;
+    decisions = { ...decisions, [res.pendingDecision.matchNumber]: res.pendingDecision.options[0].id };
+  }
+  return null;
+}
+
+function sideFrom(stats: SeasonStats | null): H2HSeasonSide {
+  if (!stats) return { wins: 0, losses: 0, netRunRate: 0 };
+  return { wins: stats.wins, losses: stats.losses, netRunRate: stats.netRunRate };
+}
+
+/** Simulates a full season for each XI and decides the Head-to-Head by record.
+ * Deterministic for a given match id (both sides share the base seed, so they
+ * face the same opponents), so both online clients agree on the outcome. */
+export function simulateH2HSeason(
+  matchId: string,
+  hostXi: Player[],
+  hostLineup: H2HLineup | null,
+  guestXi: Player[],
+  guestLineup: H2HLineup | null
+): H2HSeasonResult {
+  const host = sideFrom(runSeasonToCompletion(matchId, hostXi, hostLineup ?? defaultLineup(hostXi)));
+  const guest = sideFrom(runSeasonToCompletion(matchId, guestXi, guestLineup ?? defaultLineup(guestXi)));
+
+  const winner: "host" | "guest" =
+    host.wins !== guest.wins
+      ? host.wins > guest.wins
+        ? "host"
+        : "guest"
+      : host.netRunRate >= guest.netRunRate
+        ? "host"
+        : "guest";
+
+  return { host, guest, winner, marginWins: Math.abs(host.wins - guest.wins) };
 }

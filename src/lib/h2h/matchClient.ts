@@ -1,11 +1,32 @@
 import { supabase } from "@/lib/supabase/client";
 import { randomSeedString } from "@/lib/engine/rng";
-import { getRealPlayerById } from "@/lib/data/realPlayers";
-import { getLegendPlayerById } from "@/lib/data/legendPlayers";
+import { getRealPoolPlayerById } from "@/lib/data/gameData";
 import { SQUAD_SIZE, type Player } from "@/lib/types";
-import { compareRosters, simulateH2HMatch, h2hPoints } from "@/lib/engine/headToHead";
+import { compareRosters, simulateH2HSeason, type H2HLineup } from "@/lib/engine/headToHead";
 
 export const H2H_ROSTER_SIZE = SQUAD_SIZE;
+
+// A waiting room is only joinable while a live client is behind it. Each
+// searching client heartbeats its own room every poll tick (~3s), so a room
+// untouched for longer than this has no one waiting in it (browser closed,
+// tab killed) and matchmaking skips it — otherwise a new player would claim a
+// dead room and wait forever for a host who will never draft.
+const ROOM_FRESH_MS = 12_000;
+function freshRoomCutoff(): string {
+  return new Date(Date.now() - ROOM_FRESH_MS).toISOString();
+}
+
+/** Keeps this player's own waiting room "alive" in the queue. Called on each
+ * poll tick while searching; a room that stops heartbeating ages out of every
+ * matchmaking query (see freshRoomCutoff). */
+export async function heartbeatRoom(matchId: string): Promise<void> {
+  if (!supabase) return;
+  await supabase
+    .from("h2h_matches")
+    .update({ updated_at: new Date().toISOString() })
+    .eq("id", matchId)
+    .eq("status", "waiting");
+}
 
 export type MatchStatus = "waiting" | "drafting" | "trading" | "completed" | "abandoned";
 export type Side = "host" | "guest";
@@ -34,19 +55,33 @@ export interface H2HMatchRow {
   guest_ready: boolean;
   winner_id: string | null;
   result: H2HStoredResult | null;
+  // How each player arranged their XI on the team-setup step (batting order,
+  // captain, keeper, fielding). Feeds the season sim; null until set, in which
+  // case a sensible default lineup is used.
+  host_lineup: H2HLineup | null;
+  guest_lineup: H2HLineup | null;
+  // Each player's independently-computed result, submitted to
+  // h2h_submit_result(). The server finalizes only when both agree; if they
+  // disagree the match is marked `disputed` and no ladder points are awarded.
+  host_report: H2HStoredResult | null;
+  guest_report: H2HStoredResult | null;
+  disputed: boolean;
   created_at: string;
   updated_at: string;
 }
 
 export interface H2HStoredResult {
+  // Season wins for each side — Head-to-Head is decided by a full season per
+  // XI (see simulateH2HSeason), not a single match.
   hostScore: number;
   guestScore: number;
   winner: Side;
+  // Gap in season wins (0 when the tiebreak was net run rate).
   margin: number;
 }
 
 export function resolvePlayer(id: string): Player | null {
-  return getRealPlayerById(id) ?? getLegendPlayerById(id) ?? null;
+  return getRealPoolPlayerById(id) ?? null;
 }
 
 export function sideForUser(match: H2HMatchRow, userId: string): Side | null {
@@ -100,6 +135,7 @@ export async function findOrCreateMatch(userId: string): Promise<H2HMatchRow> {
     .eq("status", "waiting")
     .neq("host_id", userId)
     .is("guest_id", null)
+    .gt("updated_at", freshRoomCutoff())
     .limit(20);
 
   const ranked = ((openRooms as H2HMatchRow[] | null) ?? []).sort((a, b) => {
@@ -244,11 +280,10 @@ export async function respondTrade(
   return (data as H2HMatchRow) ?? null;
 }
 
-/** Marks this side ready, then attempts to close out the match. The
- * completion write is guarded on BOTH ready flags being true server-side, so
- * whichever client readies second (in any order) triggers exactly one
- * simulation — see completeIfReady. */
-export async function setReady(match: H2HMatchRow, side: Side): Promise<H2HMatchRow | null> {
+/** Marks this side ready, then attempts to finalize. Finalization is
+ * server-authoritative (see submitResultIfReady) — this client only reports
+ * the result its own engine computed; the server awards points. */
+export async function setReady(match: H2HMatchRow, side: Side, userId: string): Promise<H2HMatchRow | null> {
   if (!supabase) return null;
   const field = side === "host" ? "host_ready" : "guest_ready";
   const { data } = await supabase
@@ -259,80 +294,67 @@ export async function setReady(match: H2HMatchRow, side: Side): Promise<H2HMatch
     .select()
     .single();
   const updated = (data as H2HMatchRow) ?? null;
-  return (await completeIfReady(match.id, updated ?? match)) ?? updated;
+  return (await submitResultIfReady(updated ?? match, userId)) ?? updated;
 }
 
-/** Simulates and closes the match, but only if both players are ready. The
- * `status = 'trading'` + both-ready guards make it idempotent and race-safe
- * (both clients may call it; only the first write wins). Result is computed
- * from the current — possibly traded — rosters. */
-export async function completeIfReady(matchId: string, snapshot: H2HMatchRow): Promise<H2HMatchRow | null> {
+/** Persists this player's XI arrangement (batting order, captain, keeper,
+ * fielding) to their own side of the match. The season sim reads it at
+ * finalize; null just falls back to a default lineup. */
+export async function setLineup(
+  match: H2HMatchRow,
+  side: Side,
+  lineup: H2HLineup
+): Promise<H2HMatchRow | null> {
   if (!supabase) return null;
-  if (!(snapshot.host_ready && snapshot.guest_ready)) return null;
-
-  const hostXi = snapshot.host_picks.map(resolvePlayer).filter((p): p is Player => Boolean(p));
-  const guestXi = snapshot.guest_picks.map(resolvePlayer).filter((p): p is Player => Boolean(p));
-  const sim = simulateH2HMatch(matchId, hostXi, guestXi);
-
+  const field = side === "host" ? "host_lineup" : "guest_lineup";
   const { data } = await supabase
     .from("h2h_matches")
-    .update({
-      status: "completed",
-      winner_id: sim.winner === "a" ? snapshot.host_id : snapshot.guest_id,
-      result: {
-        hostScore: sim.a.score,
-        guestScore: sim.b.score,
-        winner: sim.winner === "a" ? "host" : "guest",
-        margin: sim.margin,
-      } satisfies H2HStoredResult,
-      updated_at: new Date().toISOString(),
-    })
-    .eq("id", matchId)
+    .update({ [field]: lineup, updated_at: new Date().toISOString() })
+    .eq("id", match.id)
     .eq("status", "trading")
-    .eq("host_ready", true)
-    .eq("guest_ready", true)
     .select()
     .single();
   return (data as H2HMatchRow) ?? null;
 }
 
-/** Writes this user's own result row once the match is complete (each client
- * inserts only its own row; the unique(match_id,user_id) constraint makes it
- * idempotent, so a re-render or both clients trying is harmless). */
-export async function recordMyResult(match: H2HMatchRow, userId: string): Promise<void> {
-  if (!supabase || !match.result || !match.guest_id) return;
-  const side = sideForUser(match, userId);
-  if (!side) return;
-  const myScore = side === "host" ? match.result.hostScore : match.result.guestScore;
-  const oppScore = side === "host" ? match.result.guestScore : match.result.hostScore;
-  const won = match.result.winner === side;
-  const points = pointsForRow(won, match.result.margin);
-  const opponentId = side === "host" ? match.guest_id : match.host_id;
+/** Reports this client's computed result to the server once both players are
+ * ready. The heavy lifting is server-side: h2h_submit_result() stores each
+ * side's report and finalizes the match only when the two agree, deriving
+ * winner_id, the scoreline and both players' ladder points itself. A lone
+ * cheater's forged report can't match the honest opponent's, so it's rejected
+ * (the match is marked `disputed`, no points). Safe to call from both clients
+ * and repeatedly — the RPC serializes on the row and is idempotent once the
+ * match is completed. Returns the (possibly finalized) match row. */
+export async function submitResultIfReady(
+  snapshot: H2HMatchRow,
+  userId: string
+): Promise<H2HMatchRow | null> {
+  if (!supabase) return null;
+  if (snapshot.status !== "trading" || !(snapshot.host_ready && snapshot.guest_ready)) return null;
+  if (!sideForUser(snapshot, userId)) return null;
 
-  await supabase.from("h2h_results").upsert(
-    {
-      match_id: match.id,
-      user_id: userId,
-      opponent_id: opponentId,
-      won,
-      points,
-      runs_for: myScore,
-      runs_against: oppScore,
-    },
-    { onConflict: "match_id,user_id", ignoreDuplicates: true }
+  // The result is deterministic from the match id + the two server-stored
+  // rosters and lineups, so an honest client always produces the same numbers
+  // its opponent does. Each XI plays its own full season; the better record
+  // (wins, then net run rate) wins the Head-to-Head.
+  const hostXi = snapshot.host_picks.map(resolvePlayer).filter((p): p is Player => Boolean(p));
+  const guestXi = snapshot.guest_picks.map(resolvePlayer).filter((p): p is Player => Boolean(p));
+  const sim = simulateH2HSeason(
+    snapshot.id,
+    hostXi,
+    snapshot.host_lineup,
+    guestXi,
+    snapshot.guest_lineup
   );
-}
 
-// Mirrors h2hPoints() but from a single row's perspective (win/loss + margin).
-function pointsForRow(won: boolean, margin: number): number {
-  const fake = {
-    a: { score: 0, baseline: 0 },
-    b: { score: 0, baseline: 0 },
-    winner: (won ? "a" : "b") as "a" | "b",
-    margin,
-  };
-  const pts = h2hPoints(fake);
-  return won ? pts.a : pts.b;
+  const { data } = await supabase.rpc("h2h_submit_result", {
+    p_match_id: snapshot.id,
+    p_host_score: sim.host.wins,
+    p_guest_score: sim.guest.wins,
+    p_winner: sim.winner,
+    p_margin: sim.marginWins,
+  });
+  return (data as H2HMatchRow) ?? null;
 }
 
 export interface LadderEntry {
@@ -363,4 +385,48 @@ export function rosterBreakdown(match: H2HMatchRow) {
 export async function abandonMatch(matchId: string): Promise<void> {
   if (!supabase) return;
   await supabase.from("h2h_matches").update({ status: "abandoned" }).eq("id", matchId);
+}
+
+/**
+ * Resolves the case where two players both created their own waiting room at
+ * the same moment (each scanned an empty queue before the other's room
+ * existed) and would otherwise wait forever. While hosting `myRoom`, look for
+ * another open waiting room and claim it, then abandon our own.
+ *
+ * Only the room with the LARGER id does the claiming (`id < myRoom.id`), so of
+ * any two rooms exactly one side claims — they can never claim each other
+ * simultaneously and end up double-matched. The claim itself is the same
+ * atomic conditional update matchmaking uses, so a race still yields one
+ * winner. Returns the joined room, or null if there was nothing to pair with.
+ */
+export async function tryPairWaitingRooms(
+  myRoom: H2HMatchRow,
+  userId: string
+): Promise<H2HMatchRow | null> {
+  if (!supabase) return null;
+  const { data: others } = await supabase
+    .from("h2h_matches")
+    .select("*")
+    .eq("status", "waiting")
+    .is("guest_id", null)
+    .neq("host_id", userId)
+    .lt("id", myRoom.id)
+    .gt("updated_at", freshRoomCutoff())
+    .limit(5);
+
+  for (const room of ((others as H2HMatchRow[] | null) ?? [])) {
+    const { data: claimed } = await supabase
+      .from("h2h_matches")
+      .update({ guest_id: userId, status: "drafting", updated_at: new Date().toISOString() })
+      .eq("id", room.id)
+      .eq("status", "waiting")
+      .is("guest_id", null)
+      .select()
+      .single();
+    if (claimed) {
+      await abandonMatch(myRoom.id);
+      return claimed as H2HMatchRow;
+    }
+  }
+  return null;
 }

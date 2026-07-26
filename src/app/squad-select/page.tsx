@@ -11,17 +11,23 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { useGameStore } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
-import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
-import { getRealPlayerById } from "@/lib/data/realPlayers";
-import { getLegendPlayerById } from "@/lib/data/legendPlayers";
+import {
+  eraTeams,
+  nationalTeamPool,
+  getEraTeamById,
+  pickNextEraTeam,
+  getRealPoolPlayerById,
+} from "@/lib/data/gameData";
+import { useGameDataReady } from "@/lib/data/useGameData";
 import { SQUAD_SIZE, type EraTeam, type Player } from "@/lib/types";
 
 function resolvePlayer(id: string): Player | null {
-  return getRealPlayerById(id) ?? getLegendPlayerById(id) ?? null;
+  return getRealPoolPlayerById(id) ?? null;
 }
 
 export default function SquadSelectPage() {
   const router = useRouter();
+  const dataReady = useGameDataReady();
   const seed = useGameStore((s) => s.seed);
   const mode = useGameStore((s) => s.mode);
   const stage = useGameStore((s) => s.stage);
@@ -38,6 +44,10 @@ export default function SquadSelectPage() {
   const pickImpactPlayer = useGameStore((s) => s.pickImpactPlayer);
   const skipImpactPlayer = useGameStore((s) => s.skipImpactPlayer);
   const hardcoreMode = useGameStore((s) => s.hardcoreMode);
+  const competition = useGameStore((s) => s.competition);
+  // Must match the pool the store spins from (see teamPoolFor in gameStore),
+  // for both the landing team and the reel's decoys.
+  const spinPool = competition === "world-cup" ? nationalTeamPool() : eraTeams();
   const { t } = useTranslation();
 
   const [spinTarget, setSpinTarget] = useState<EraTeam | null>(null);
@@ -79,6 +89,16 @@ export default function SquadSelectPage() {
 
   if (!hasHydrated || !seed) return null;
 
+  // The real/national pools load lazily — hold the spin/draft UI until they're
+  // in, otherwise a spin would draw from an empty pool.
+  if (!dataReady) {
+    return (
+      <main className="flex-1 flex flex-col items-center justify-center px-4 py-16 text-center">
+        <p className="text-foreground-muted">{t("lb.loading")}</p>
+      </main>
+    );
+  }
+
   // A spin-drafted game always sets mode to "all-time-real" before this page
   // is reachable — anything else means the user landed here without ever
   // spinning (e.g. a stale category-draft session), not mid-flow.
@@ -100,7 +120,7 @@ export default function SquadSelectPage() {
     // Compute the landing team up front (pure, no store write) so the reel
     // has a real answer to animate toward; the store only commits it once
     // the animation finishes, via handleSpinComplete below.
-    setSpinTarget(pickNextEraTeam(seed, usedEraTeamIds));
+    setSpinTarget(pickNextEraTeam(seed, usedEraTeamIds, spinPool) ?? null);
   }
 
   function handleSpinComplete() {
@@ -145,7 +165,7 @@ export default function SquadSelectPage() {
           )}
 
           {spinTarget ? (
-            <SpinReel target={spinTarget} onComplete={handleSpinComplete} />
+            <SpinReel target={spinTarget} onComplete={handleSpinComplete} pool={spinPool} />
           ) : pendingPlayer ? (
             <div className="mb-6 flex flex-col items-center gap-1 rounded-2xl border border-accent/40 bg-accent/5 py-10 text-center">
               <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase">Placing</p>

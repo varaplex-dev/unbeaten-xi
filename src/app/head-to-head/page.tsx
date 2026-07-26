@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
-import { Swords, Loader2, Trophy, Send, ArrowLeftRight, Check } from "lucide-react";
+import { Swords, Loader2, Trophy, Send, ArrowLeftRight, Check, ChevronUp, ChevronDown, Star, Shield } from "lucide-react";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -10,6 +10,7 @@ import { PlayerCard } from "@/components/draft/PlayerCard";
 import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
 import { SpinReel } from "@/components/draft/SpinReel";
 import { useAuthStore } from "@/lib/store/authStore";
+import { useGuestStore } from "@/lib/store/guestStore";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import type { TranslationKey } from "@/lib/i18n";
@@ -27,9 +28,20 @@ import {
   type Side,
   type LadderEntry,
 } from "@/lib/h2h/matchClient";
-import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
-import type { EraTeam, Player } from "@/lib/types";
+import { getEraTeamById, pickNextEraTeam } from "@/lib/data/gameData";
+import { useGameDataReady } from "@/lib/data/useGameData";
+import { matchesFor } from "@/lib/engine/competitions";
+import type { H2HLineup } from "@/lib/engine/headToHead";
+import { isWicketkeeper, type EraTeam, type Player } from "@/lib/types";
 import { cn } from "@/lib/utils";
+
+/** Fills {placeholders} in a translated string. */
+function fill(template: string, values: Record<string, string | number>): string {
+  return Object.entries(values).reduce(
+    (out, [key, value]) => out.split(`{${key}}`).join(String(value)),
+    template
+  );
+}
 
 // The comparison metric keys (from headToHead.ts) mapped to their i18n keys,
 // so the roster breakdown renders in the active language.
@@ -71,10 +83,21 @@ function RosterColumn({ title, picks, active }: { title: string; picks: string[]
 function ResultView({ match, side }: { match: H2HMatchRow; side: Side }) {
   const { t } = useTranslation();
   const breakdown = useMemo(() => rosterBreakdown(match), [match]);
+  if (match.disputed) {
+    return (
+      <div className="mx-auto w-full max-w-md text-center">
+        <p className="text-2xl font-black italic tracking-tight text-danger">{t("h2h.disputedTitle")}</p>
+        <p className="mt-2 text-sm text-foreground-muted">{t("h2h.disputedBody")}</p>
+      </div>
+    );
+  }
   if (!match.result) return null;
   const won = match.result.winner === side;
-  const myScore = side === "host" ? match.result.hostScore : match.result.guestScore;
-  const oppScore = side === "host" ? match.result.guestScore : match.result.hostScore;
+  // result scores are each side's SEASON WINS; losses are the rest of the
+  // fixed-length season, so a record renders without re-simulating.
+  const seasonLength = matchesFor("league-major");
+  const myWins = side === "host" ? match.result.hostScore : match.result.guestScore;
+  const oppWins = side === "host" ? match.result.guestScore : match.result.hostScore;
 
   return (
     <div className="mx-auto w-full max-w-md">
@@ -82,11 +105,21 @@ function ResultView({ match, side }: { match: H2HMatchRow; side: Side }) {
         <p className={cn("text-3xl font-black italic tracking-tight", won ? "text-accent" : "text-danger")}>
           {won ? t("h2h.youWin") : t("h2h.youLose")}
         </p>
-        <p className="mt-1 font-mono text-lg tabular-nums text-foreground">
-          {myScore} <span className="text-foreground-muted">{t("h2h.vs")}</span> {oppScore}
-        </p>
-        <p className="text-xs text-foreground-muted">
-          {t("h2h.margin")} · {match.result.margin} {t("h2h.runs")}
+        <div className="mt-2 flex items-center justify-center gap-4 font-mono text-lg tabular-nums">
+          <span className="text-right">
+            <span className="block text-[10px] uppercase tracking-wide text-foreground-muted">{t("h2h.you")}</span>
+            {myWins}–{seasonLength - myWins}
+          </span>
+          <span className="text-foreground-muted">{t("h2h.vs")}</span>
+          <span className="text-left">
+            <span className="block text-[10px] uppercase tracking-wide text-foreground-muted">{t("h2h.opponent")}</span>
+            {oppWins}–{seasonLength - oppWins}
+          </span>
+        </div>
+        <p className="mt-1 text-xs text-foreground-muted">
+          {match.result.margin > 0
+            ? fill(t("h2h.seasonMargin"), { n: match.result.margin })
+            : t("h2h.decidedByNrr")}
         </p>
       </div>
 
@@ -189,7 +222,10 @@ function ChatBox({
             {messages.map((m, i) => {
               const mine = m.userId === myUserId;
               return (
-                <li key={i} className={cn("flex", mine ? "justify-end" : "justify-start")}>
+                <li key={i} className={cn("flex flex-col", mine ? "items-end" : "items-start")}>
+                  <span className="px-1 text-[10px] font-semibold uppercase tracking-wide text-foreground-muted">
+                    {mine ? t("h2h.you") : m.name || t("h2h.opponent")}
+                  </span>
                   <span
                     className={cn(
                       "max-w-[75%] rounded-2xl px-3 py-1.5 text-sm",
@@ -228,6 +264,136 @@ function ChatBox({
           <Send className="h-4 w-4" />
         </button>
       </form>
+    </div>
+  );
+}
+
+/** Team-setup for Head-to-Head: arrange the batting order and name a captain
+ * and keeper. Each change saves to this side's lineup, which the season sim
+ * reads at finalize — the batting order and captain genuinely shape the run.
+ * Re-seeds from the current roster so a post-trade swap slots straight in. */
+function LineupPanel({
+  match,
+  side,
+  onSaveLineup,
+}: {
+  match: H2HMatchRow;
+  side: Side;
+  onSaveLineup: (lineup: H2HLineup) => void;
+}) {
+  const { t } = useTranslation();
+  const myPicks = picksFor(match, side);
+  const stored = side === "host" ? match.host_lineup : match.guest_lineup;
+  const validId = (id: string | null | undefined) => (id && myPicks.includes(id) ? id : null);
+
+  // Seed from the stored lineup (or pick order) at mount. The parent keys this
+  // component on the roster, so a post-trade swap remounts and re-seeds without
+  // an effect clobbering the player's in-progress edits.
+  const [order, setOrder] = useState<string[]>(() => {
+    const base = (stored?.battingOrder ?? []).filter((id) => myPicks.includes(id));
+    return [...base, ...myPicks.filter((id) => !base.includes(id))];
+  });
+  const [captainId, setCaptainId] = useState<string | null>(() => validId(stored?.captainId));
+  const [keeperId, setKeeperId] = useState<string | null>(() => validId(stored?.keeperId));
+
+  const save = (o: string[], c: string | null, k: string | null) =>
+    onSaveLineup({ battingOrder: o, captainId: c, keeperId: k });
+
+  const move = (id: string, dir: "up" | "down") => {
+    const i = order.indexOf(id);
+    const j = dir === "up" ? i - 1 : i + 1;
+    if (i < 0 || j < 0 || j >= order.length) return;
+    const next = [...order];
+    [next[i], next[j]] = [next[j], next[i]];
+    setOrder(next);
+    save(next, captainId, keeperId);
+  };
+  const chooseCaptain = (id: string) => {
+    const next = captainId === id ? null : id;
+    setCaptainId(next);
+    save(order, next, keeperId);
+  };
+  const chooseKeeper = (id: string) => {
+    const next = keeperId === id ? null : id;
+    setKeeperId(next);
+    save(order, captainId, next);
+  };
+
+  return (
+    <div className="mx-auto mb-5 w-full max-w-2xl">
+      <div className="mb-2 text-center">
+        <h2 className="text-xl font-black italic tracking-tight">{t("h2h.setupTitle")}</h2>
+        <p className="text-sm text-foreground-muted">{t("h2h.setupIntro")}</p>
+      </div>
+      <ol className="grid gap-1.5">
+        {order.map((id, i) => {
+          const p = resolvePlayer(id);
+          if (!p) return null;
+          const isCaptain = id === captainId;
+          const isKeeper = id === keeperId;
+          return (
+            <li
+              key={id}
+              className="flex items-center gap-2 rounded-xl border border-border bg-background-elevated px-2.5 py-2"
+            >
+              <div className="flex shrink-0 flex-col">
+                <button
+                  type="button"
+                  aria-label="Move up"
+                  disabled={i === 0}
+                  onClick={() => move(id, "up")}
+                  className="text-foreground-muted hover:text-foreground disabled:opacity-20"
+                >
+                  <ChevronUp className="h-4 w-4" />
+                </button>
+                <button
+                  type="button"
+                  aria-label="Move down"
+                  disabled={i === order.length - 1}
+                  onClick={() => move(id, "down")}
+                  className="text-foreground-muted hover:text-foreground disabled:opacity-20"
+                >
+                  <ChevronDown className="h-4 w-4" />
+                </button>
+              </div>
+              <span className="w-4 shrink-0 text-center text-xs text-foreground-muted tabular-nums">{i + 1}</span>
+              <PlayerAvatar player={p} size={28} />
+              <div className="min-w-0 flex-1">
+                <p className="truncate text-sm font-semibold leading-tight">{p.name}</p>
+                <p className="text-[10px] text-foreground-muted">{p.primaryRole}</p>
+              </div>
+              <div className="flex shrink-0 items-center gap-1">
+                <button
+                  type="button"
+                  aria-label="Set captain"
+                  title={t("h2h.captain")}
+                  onClick={() => chooseCaptain(id)}
+                  className={cn(
+                    "rounded-full p-1.5 ring-1 transition-colors",
+                    isCaptain ? "bg-gold/20 text-gold ring-gold/50" : "text-foreground-muted ring-transparent hover:text-gold"
+                  )}
+                >
+                  <Star className="h-3.5 w-3.5" fill={isCaptain ? "currentColor" : "none"} />
+                </button>
+                {isWicketkeeper(p) && (
+                  <button
+                    type="button"
+                    aria-label="Set wicketkeeper"
+                    title={t("h2h.keeper")}
+                    onClick={() => chooseKeeper(id)}
+                    className={cn(
+                      "rounded-full p-1.5 ring-1 transition-colors",
+                      isKeeper ? "bg-accent/20 text-accent ring-accent/50" : "text-foreground-muted ring-transparent hover:text-accent"
+                    )}
+                  >
+                    <Shield className="h-3.5 w-3.5" fill={isKeeper ? "currentColor" : "none"} />
+                  </button>
+                )}
+              </div>
+            </li>
+          );
+        })}
+      </ol>
     </div>
   );
 }
@@ -355,10 +521,41 @@ function TradePhase({
 export default function HeadToHeadPage() {
   const hasLoaded = useAuthStore((s) => s.hasLoaded);
   const user = useAuthStore((s) => s.user);
-  const { match, phase, error, side, messages, find, pick, offerTrade, answerTrade, ready, sendChat, leave } =
-    useH2HMatch(user?.id ?? null);
+  const profile = useAuthStore((s) => s.profile);
+  const signInAsGuest = useAuthStore((s) => s.signInAsGuest);
+  const authError = useAuthStore((s) => s.authError);
+  const ensureGuestId = useGuestStore((s) => s.ensureGuestId);
+  const [guestPending, setGuestPending] = useState(false);
+  // Supabase anonymous users carry is_anonymous; a signed-in email/OAuth user
+  // does not. Only guests see the "create an account" nudge.
+  const isGuest = Boolean((user as { is_anonymous?: boolean } | null)?.is_anonymous);
+  // Name shown next to this player's chat messages — profile username (guests
+  // are renamed to their guest id at sign-in, so this covers both).
+  const displayName = profile?.username ?? "Player";
+  const {
+    match,
+    phase,
+    error,
+    side,
+    messages,
+    oppSpin,
+    find,
+    pick,
+    pickForActive,
+    offerTrade,
+    answerTrade,
+    ready,
+    saveLineup,
+    sendChat,
+    sendSpin,
+    leave,
+  } = useH2HMatch(user?.id ?? null, displayName);
   const { t } = useTranslation();
+  const dataReady = useGameDataReady();
   const [ladder, setLadder] = useState<LadderEntry[]>([]);
+  const [nowTick, setNowTick] = useState(() => Date.now());
+  const autoPickedRef = useRef(-1);
+  const takeoverRef = useRef(-1);
 
   // Local spin state for the active player's turn, tagged with the pick index
   // it belongs to. Deriving "is this reveal still current" from the live pick
@@ -383,12 +580,82 @@ export default function HeadToHeadPage() {
     // Deterministic team for this pick index — teams may repeat between the
     // two players (that's the point; already-taken players are what's
     // blocked), so no exclusion list is passed.
-    setSpin({ pick: picksPlayed, target: pickNextEraTeam(`${match.seed}::${picksPlayed}`, []), revealedId: null });
-  }, [match, picksPlayed]);
+    const target = pickNextEraTeam(`${match.seed}::${picksPlayed}`, []);
+    if (!target) return; // data not loaded yet (gated in the UI)
+    setSpin({ pick: picksPlayed, target, revealedId: null });
+    // Let the opponent watch this turn happen.
+    sendSpin({ pick: picksPlayed, targetId: target.id, revealedId: null });
+  }, [match, picksPlayed, sendSpin]);
 
   const spinTarget = activeSpin.target;
   const revealedTeam = activeSpin.revealedId ? getEraTeamById(activeSpin.revealedId) : null;
-  const taken = match ? takenPlayerIds(match) : new Set<string>();
+  const taken = useMemo(() => (match ? takenPlayerIds(match) : new Set<string>()), [match]);
+
+  // ---- Turn timer + CPU auto-pick -----------------------------------------
+  // Each turn gets PICK_SECONDS; the deadline is derived from the row's
+  // updated_at (set when the turn passed), so both clients count down in sync.
+  // When it expires the active player's client auto-picks the best available
+  // player, keeping the game moving if someone stalls.
+  const PICK_SECONDS = 30;
+  // Extra grace after the deadline before the WAITING player steps in — covers
+  // the active player's tab being closed (their own timer can't fire then).
+  const TAKEOVER_SECONDS = PICK_SECONDS + 10;
+  const isDrafting = match?.status === "drafting";
+  const turnStart = match ? new Date(match.updated_at).getTime() : 0;
+  const turnDeadline = isDrafting ? turnStart + PICK_SECONDS * 1000 : null;
+  const secondsLeft = turnDeadline ? Math.max(0, Math.ceil((turnDeadline - nowTick) / 1000)) : null;
+
+  // Tick every second throughout the draft (both turns) so the active player's
+  // countdown AND the waiting player's takeover clock both advance.
+  useEffect(() => {
+    if (!isDrafting) return;
+    const timer = setInterval(() => setNowTick(Date.now()), 1000);
+    return () => clearInterval(timer);
+  }, [isDrafting]);
+
+  // The best still-available player from this pick's deterministic team, plus
+  // the team itself. Both clients compute the same team from the seed, so a
+  // takeover picks exactly the player the active client would have.
+  const bestAvailableFor = useCallback(
+    (revealed: EraTeam | null): { team: EraTeam; player: Player } | null => {
+      if (!match) return null;
+      const team = revealed ?? pickNextEraTeam(`${match.seed}::${picksPlayed}`, []);
+      if (!team) return null;
+      const player = team.players
+        .filter((p) => !taken.has(p.id))
+        .sort((a, b) => b.overallRating - a.overallRating)[0];
+      return player ? { team, player } : null;
+    },
+    [match, taken, picksPlayed]
+  );
+
+  // Your turn: auto-pick when your own timer runs out.
+  useEffect(() => {
+    if (!myTurn || secondsLeft === null || secondsLeft > 0) return;
+    if (autoPickedRef.current === picksPlayed) return;
+    autoPickedRef.current = picksPlayed; // once per turn
+    const choice = bestAvailableFor(revealedTeam ?? null);
+    if (choice) {
+      sendSpin({ pick: picksPlayed, targetId: choice.team.id, revealedId: choice.team.id });
+      pick(choice.player.id);
+    }
+  }, [myTurn, secondsLeft, picksPlayed, revealedTeam, bestAvailableFor, sendSpin, pick]);
+
+  // Opponent's turn: if they blow past the deadline + grace (e.g. closed their
+  // tab), step in and pick for them so the draft can't freeze.
+  useEffect(() => {
+    if (myTurn || !isDrafting || !turnDeadline) return;
+    if (nowTick < turnStart + TAKEOVER_SECONDS * 1000) return;
+    if (takeoverRef.current === picksPlayed) return;
+    takeoverRef.current = picksPlayed; // once per turn
+    const choice = bestAvailableFor(null);
+    if (choice) pickForActive(choice.player.id);
+  }, [myTurn, isDrafting, turnDeadline, turnStart, nowTick, picksPlayed, TAKEOVER_SECONDS, bestAvailableFor, pickForActive]);
+
+  // What the opponent is doing this turn, from their spin broadcast.
+  const oppActive = oppSpin && oppSpin.pick === picksPlayed ? oppSpin : null;
+  const oppSpinTeam = oppActive?.targetId ? getEraTeamById(oppActive.targetId) : null;
+  const oppRevealedTeam = oppActive?.revealedId ? getEraTeamById(oppActive.revealedId) : null;
 
   // ---- Gates ---------------------------------------------------------------
   if (!isSupabaseConfigured) {
@@ -406,11 +673,38 @@ export default function HeadToHeadPage() {
           title={t("h2h.signInTitle")}
           body={t("h2h.signInBody")}
           action={
-            <Link href="/settings">
-              <Button size="lg">{t("nav.signIn")}</Button>
-            </Link>
+            <div className="flex flex-col items-center gap-3">
+              <Button
+                size="lg"
+                disabled={guestPending}
+                onClick={async () => {
+                  setGuestPending(true);
+                  await signInAsGuest(ensureGuestId());
+                  setGuestPending(false);
+                }}
+              >
+                {guestPending ? t("h2h.guestStarting") : t("h2h.playAsGuest")}
+              </Button>
+              <Link href="/settings" className="text-sm text-foreground-muted underline underline-offset-4">
+                {t("h2h.orSignIn")}
+              </Link>
+              {authError && <p className="text-sm text-danger">{authError}</p>}
+            </div>
           }
         />
+      </Shell>
+    );
+  }
+
+  // The draft/trade/result screens render real players — hold them until the
+  // lazily-loaded pool is in (the ladder/idle screens don't need it).
+  if (match && match.status !== "waiting" && !dataReady) {
+    return (
+      <Shell>
+        <div className="flex flex-col items-center gap-3 py-12 text-center">
+          <Loader2 className="h-8 w-8 animate-spin text-accent" />
+          <p className="text-sm text-foreground-muted">{t("lb.loading")}</p>
+        </div>
       </Shell>
     );
   }
@@ -458,17 +752,56 @@ export default function HeadToHeadPage() {
             <RosterColumn title={t("h2h.opponent")} picks={oppPicks} active={!myTurn} />
           </div>
 
+          {/* Opponent's turn — watch them spin and choose, live. */}
           {!myTurn && (
-            <div className="flex flex-col items-center gap-2 rounded-2xl border border-dashed border-border py-10 text-center">
-              <Loader2 className="h-6 w-6 animate-spin text-foreground-muted" />
-              <p className="text-sm text-foreground-muted">{t("h2h.waitingPick")}</p>
+            <div className="rounded-2xl border border-dashed border-border p-4">
+              <p className="mb-3 text-center text-sm font-semibold text-saffron">
+                {oppRevealedTeam ? t("h2h.oppChoosing") : t("h2h.oppSpinning")}
+              </p>
+              {oppRevealedTeam ? (
+                <div>
+                  <div className="mb-3 rounded-xl border border-saffron/30 bg-saffron/5 px-4 py-3">
+                    <p className="text-xs font-semibold uppercase tracking-[0.2em] text-saffron">
+                      {oppRevealedTeam.eraLabel}
+                    </p>
+                    <p className="text-lg font-bold leading-tight">{oppRevealedTeam.name}</p>
+                  </div>
+                  <div className="grid gap-3 sm:grid-cols-2">
+                    {oppRevealedTeam.players.map((p: Player) => (
+                      <PlayerCard key={p.id} player={p} disabled onSelect={() => {}} />
+                    ))}
+                  </div>
+                </div>
+              ) : oppSpinTeam ? (
+                <SpinReel target={oppSpinTeam} onComplete={() => {}} />
+              ) : (
+                <div className="flex flex-col items-center gap-2 py-6 text-center">
+                  <Loader2 className="h-6 w-6 animate-spin text-foreground-muted" />
+                  <p className="text-sm text-foreground-muted">{t("h2h.waitingPick")}</p>
+                </div>
+              )}
             </div>
+          )}
+
+          {/* Your turn — pick countdown before the CPU auto-picks. */}
+          {myTurn && secondsLeft !== null && (
+            <p
+              className={cn(
+                "mb-3 text-center text-sm font-bold tabular-nums",
+                secondsLeft <= 5 ? "text-danger" : "text-foreground-muted"
+              )}
+            >
+              {fill(t("h2h.pickTimer"), { n: secondsLeft })}
+            </p>
           )}
 
           {myTurn && spinTarget && (
             <SpinReel
               target={spinTarget}
-              onComplete={() => setSpin({ pick: picksPlayed, target: null, revealedId: spinTarget.id })}
+              onComplete={() => {
+                setSpin({ pick: picksPlayed, target: null, revealedId: spinTarget.id });
+                sendSpin({ pick: picksPlayed, targetId: spinTarget.id, revealedId: spinTarget.id });
+              }}
             />
           )}
 
@@ -511,6 +844,12 @@ export default function HeadToHeadPage() {
   if (match && match.status === "trading" && side) {
     return (
       <Shell>
+        <LineupPanel
+          key={picksFor(match, side).join(",")}
+          match={match}
+          side={side}
+          onSaveLineup={saveLineup}
+        />
         <TradePhase match={match} side={side} onOffer={offerTrade} onAnswer={answerTrade} onReady={ready} />
         <div className="mx-auto w-full max-w-2xl">
           <ChatBox messages={messages} myUserId={user.id} onSend={sendChat} />
@@ -530,6 +869,17 @@ export default function HeadToHeadPage() {
         <Button size="lg" className="w-full" onClick={find} disabled={phase === "searching"}>
           {phase === "searching" ? t("h2h.searching") : t("h2h.findOpponent")}
         </Button>
+        {isGuest && (
+          <div className="mt-2 w-full rounded-xl border border-gold/40 bg-gold/5 p-4 text-left">
+            <p className="text-sm font-bold text-gold">{t("h2h.guestUpsellTitle")}</p>
+            <p className="mt-1 text-xs text-foreground-muted">{t("h2h.guestUpsellBody")}</p>
+            <Link href="/settings" className="mt-3 inline-block">
+              <Button size="sm" variant="secondary">
+                {t("h2h.createAccount")}
+              </Button>
+            </Link>
+          </div>
+        )}
       </div>
       <Ladder rows={ladder} />
     </Shell>

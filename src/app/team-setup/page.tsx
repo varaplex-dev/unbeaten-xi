@@ -17,8 +17,8 @@ import { computeTeamRatings } from "@/lib/engine/teamRatings";
 import { checkComposition } from "@/lib/engine/draft";
 import { SQUAD_SIZE, canBowl, isWicketkeeper } from "@/lib/types";
 import { getPlayerById } from "@/lib/data/players";
-import { getRealPlayerById } from "@/lib/data/realPlayers";
-import { getLegendPlayerById } from "@/lib/data/legendPlayers";
+import { getRealPoolPlayerById } from "@/lib/data/gameData";
+import { useGameDataReady } from "@/lib/data/useGameData";
 import { cn } from "@/lib/utils";
 import { track } from "@/lib/analytics";
 
@@ -26,6 +26,7 @@ const BOWLING_PHASE_CYCLE: BowlingPhase[] = ["powerplay", "middle", "death"];
 
 export default function TeamSetupPage() {
   const router = useRouter();
+  const dataReady = useGameDataReady();
   const seed = useGameStore((s) => s.seed);
   const mode = useGameStore((s) => s.mode);
   const hasHydrated = useGameStore((s) => s.hasHydrated);
@@ -56,7 +57,7 @@ export default function TeamSetupPage() {
   const drafted = useDraftedPlayers();
   const impactPlayer = impactPlayerId
     ? (mode === "all-time-real"
-        ? (getRealPlayerById(impactPlayerId) ?? getLegendPlayerById(impactPlayerId))
+        ? getRealPoolPlayerById(impactPlayerId)
         : getPlayerById(impactPlayerId))
     : null;
 
@@ -111,6 +112,14 @@ export default function TeamSetupPage() {
   const outfieldPlayers = orderedXi.filter((p) => p.id !== wicketkeeperId);
 
   if (!hasHydrated) return null;
+
+  if (mode === "all-time-real" && !dataReady) {
+    return (
+      <main className="flex-1 flex flex-col items-center justify-center px-4 py-16 text-center">
+        <p className="text-foreground-muted">{t("lb.loading")}</p>
+      </main>
+    );
+  }
 
   if (!seed || !isSquadComplete) {
     return (

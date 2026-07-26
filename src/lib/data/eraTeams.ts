@@ -1,7 +1,7 @@
 import type { EraTeam, Player } from "@/lib/types";
 import { LEGEND_PLAYERS } from "@/lib/data/legendPlayers";
-import { REAL_PLAYERS } from "@/lib/data/realPlayers";
 import { FRANCHISE_SEASON_TEAMS } from "@/lib/data/franchiseSeasonTeams";
+import { NATIONAL_ERA_TEAMS } from "@/lib/data/nationalEraTeams";
 import { createRng, pickRandom } from "@/lib/engine/rng";
 
 /** Resolves a roster by exact player name so this file stays readable and
@@ -14,15 +14,6 @@ function byNames(pool: Player[], names: string[]): Player[] {
     if (!player) throw new Error(`Era team roster references unknown player: "${name}"`);
     return player;
   });
-}
-
-/** A country's strongest current players from the real-player pool, for the
- * "current era" teams — reuses the same data as All-Time XI's flat draft
- * pool rather than a separate curated list. */
-function currentSquadFor(country: string, count = 16): Player[] {
-  return REAL_PLAYERS.filter((p) => p.country === country)
-    .sort((a, b) => b.overallRating - a.overallRating)
-    .slice(0, count);
 }
 
 const HISTORIC_TEAMS: EraTeam[] = [
@@ -193,39 +184,29 @@ const HISTORIC_TEAMS: EraTeam[] = [
   },
 ];
 
-const CURRENT_ERA_COUNTRIES = [
-  "India",
-  "Australia",
-  "England",
-  "Pakistan",
-  "South Africa",
-  "West Indies",
-  "New Zealand",
-  "Sri Lanka",
-  "Bangladesh",
-  "Afghanistan",
-] as const;
+// National sides come from NATIONAL_ERA_TEAMS — 73 squads spanning four era
+// buckets (2005-09 through 2020-26), generated from the Cricsheet+SportMonks
+// database. They replaced a hand-listed set of ten "current squad" teams built
+// off the older CricAPI pool: that covered ten countries and one era, and its
+// players would now be duplicated by the 2020-2026 generated squads.
+export const ERA_TEAMS: EraTeam[] = [
+  ...HISTORIC_TEAMS,
+  ...NATIONAL_ERA_TEAMS,
+  ...FRANCHISE_SEASON_TEAMS,
+];
 
-const SQUAD_MIN_FOR_ERA_TEAM = 11;
-
-// The current international season these squads represent — labelled with the
-// running year rather than "Today", so a spin reads like "England · 2026
-// Season" the way 82-0 shows a team + a concrete era.
-const CURRENT_SEASON_YEAR = new Date().getFullYear();
-const CURRENT_SEASON_LABEL = `${CURRENT_SEASON_YEAR} Season`;
-
-const CURRENT_TEAMS: EraTeam[] = CURRENT_ERA_COUNTRIES.map((country) => ({
-  id: `current-${country.toLowerCase().replace(/\s+/g, "-")}`,
-  name: country,
-  eraLabel: CURRENT_SEASON_LABEL,
-  tagline: `${country}'s strongest current squad this season.`,
-  country,
-  isHistoric: false,
-  year: CURRENT_SEASON_YEAR,
-  players: currentSquadFor(country),
-})).filter((team) => team.players.length >= SQUAD_MIN_FOR_ERA_TEAM);
-
-export const ERA_TEAMS: EraTeam[] = [...HISTORIC_TEAMS, ...CURRENT_TEAMS, ...FRANCHISE_SEASON_TEAMS];
+/**
+ * National sides only — every curated historic side plus every generated
+ * national era squad, with the club franchises left out. This is the World Cup
+ * Run drafting pool: a tournament of nations shouldn't hand you Chennai Super
+ * Kings.
+ *
+ * The same country appearing in several eras is intentional and allowed. Two
+ * different India sides are two different squads, and the rule that matters is
+ * that no PLAYER is drafted twice — which is enforced by name across pools, not
+ * by blocking a country.
+ */
+export const NATIONAL_TEAM_POOL: EraTeam[] = [...HISTORIC_TEAMS, ...NATIONAL_ERA_TEAMS];
 
 export function getEraTeamById(id: string): EraTeam | undefined {
   return ERA_TEAMS.find((t) => t.id === id);
@@ -237,12 +218,18 @@ export function getEraTeamById(id: string): EraTeam | undefined {
  * side-effect-free so it can be called twice for the same spin: once to
  * compute the target the reel animation should land on, and once (identical
  * result) when the store commits the pick after the animation finishes. */
-export function pickNextEraTeam(seed: string, usedEraTeamIds: string[]): EraTeam {
-  const available = ERA_TEAMS.filter((t) => !usedEraTeamIds.includes(t.id));
+export function pickNextEraTeam(
+  seed: string,
+  usedEraTeamIds: string[],
+  /** Which teams this game drafts from. World Cup Run passes
+   * NATIONAL_TEAM_POOL so no club franchise can be spun into. */
+  teams: EraTeam[] = ERA_TEAMS
+): EraTeam {
+  const available = teams.filter((t) => !usedEraTeamIds.includes(t.id));
   // Only hit if usedEraTeamIds somehow grew past the pool size — not
-  // reachable in practice (89 teams, 12 picks max) but a safe fallback beats
-  // a spin that silently does nothing.
-  const pool = available.length > 0 ? available : ERA_TEAMS;
+  // reachable in practice (the smallest pool is 81 teams against 12 picks)
+  // but a safe fallback beats a spin that silently does nothing.
+  const pool = available.length > 0 ? available : teams;
   const rng = createRng(`${seed}::era-team-${usedEraTeamIds.length}`);
   return pickRandom(rng, pool);
 }

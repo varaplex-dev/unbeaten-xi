@@ -5,6 +5,13 @@
 -- file once in the SQL Editor of your project. If Supabase is unconfigured
 -- the app degrades gracefully and Head-to-Head simply isn't offered.
 --
+-- ⚠ THIS FILE IS FOR A FRESH INSTALL ONLY. It cannot upgrade an existing one:
+-- `create table if not exists` will not add columns to a table that already
+-- exists, and Postgres has no `create policy if not exists`, so re-running
+-- this against an older install adds nothing and then aborts on the first
+-- policy. If you have already run any version of this file, run
+-- `h2h_schema_migrate.sql` instead — it is idempotent and verifies itself.
+--
 -- Turn authority note: the per-turn draft writes below are guarded by RLS to
 -- the two participants, but strict "only the player whose turn it is may
 -- commit a pick" enforcement is intended to move into a SECURITY DEFINER RPC

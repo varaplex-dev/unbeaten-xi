@@ -3,3 +3,4 @@
 # committed test file) is NOT ignored.
 /players.json
 /unified-players.json
+/unified-players.fixture.json

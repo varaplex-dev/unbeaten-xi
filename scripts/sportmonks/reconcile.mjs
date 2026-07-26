@@ -21,7 +21,13 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const REPO = path.resolve(HERE, "..", "..");
 const CRICSHEET_FILE = path.join(REPO, "scripts", "cricsheet", "cricsheet-players.json");
 const SPORTMONKS_FILE = process.env.SPORTMONKS_PLAYERS ?? path.join(HERE, "players.json");
-const OUT_FILE = path.join(HERE, "unified-players.json");
+const OVERRIDES_FILE = path.join(HERE, "identity-overrides.json");
+// A fixture run is a test, not a build — it must not overwrite the real
+// unified output the app pipeline depends on.
+const OUT_FILE = path.join(
+  HERE,
+  process.env.SPORTMONKS_PLAYERS ? "unified-players.fixture.json" : "unified-players.json"
+);
 
 function normalize(s) {
   return String(s ?? "")
@@ -71,14 +77,45 @@ async function main() {
     process.exit(1);
   }
 
+  // Fixture runs exercise the automatic passes against a tiny directory, where
+  // the real overrides' SportMonks ids don't exist — so they only apply to a
+  // real run.
+  const overrides = process.env.SPORTMONKS_PLAYERS
+    ? []
+    : JSON.parse(await readFile(OVERRIDES_FILE, "utf8")).overrides;
+
+  // The Cricsheet side is aggregated men's-only (see cricsheet/aggregate.mjs),
+  // so women in the SportMonks directory can never be a correct match — they
+  // can only add false candidates and push real players into "ambiguous".
+  // Dropping them is a correctness fix, not a heuristic.
+  const directory =
+    process.env.INCLUDE_WOMENS === "1"
+      ? sportmonks
+      : sportmonks.filter((p) => p.gender !== "f");
+  const womenDropped = sportmonks.length - directory.length;
+
   // Index SportMonks by surname+initial and by full name.
   const bySurnameInitial = new Map();
   const byFullName = new Map();
-  for (const p of sportmonks) {
+  const countryNames = new Set();
+  for (const p of directory) {
+    if (p.country) countryNames.add(normalize(p.country));
     const key = sportmonksKey(p);
     if (!key) continue;
     pushKey(bySurnameInitial, `${key.surname}|${key.initial}`, p);
     pushKey(byFullName, key.full, p);
+  }
+
+  // Cricsheet records every team a player turned out for, national sides
+  // included ("India", "West Indies"). When a name is ambiguous, that national
+  // side is real evidence: AD Russell played for West Indies, so the Andre
+  // Russell in the directory is a different person from the Alex Russell who
+  // never did. Only used when it resolves to exactly ONE candidate.
+  function countryTieBreak(c, cands) {
+    const nations = (c.teams ?? []).map(normalize).filter((t) => countryNames.has(t));
+    if (nations.length === 0) return null;
+    const hits = cands.filter((p) => nations.includes(normalize(p.country)));
+    return hits.length === 1 ? hits[0] : null;
   }
 
   // The join must be strictly ONE-TO-ONE. Cricket is full of shared surnames
@@ -90,11 +127,36 @@ async function main() {
   const claimed = new Set(); // SportMonks ids already spoken for
   let exact = 0;
   let initialMatch = 0;
+  let countryMatch = 0;
   let ambiguous = 0;
+
+  // Pass 0 — hand-verified identity assertions. Cricket's biggest names are
+  // exactly the ones the automatic passes abstain on, because famous surnames
+  // (Sharma, Khan, Singh, Afridi) are the crowded ones. Each override in
+  // identity-overrides.json was checked individually against initials, country,
+  // franchise history, career span and statistical profile. They claim an
+  // identity first, and are still bound by the one-to-one rule.
+  const cricsheetById = new Map(cricsheet.map((c) => [c.id, c]));
+  const directoryById = new Map(directory.map((p) => [p.id, p]));
+  for (const o of overrides) {
+    const c = cricsheetById.get(o.cricsheetId);
+    const m = directoryById.get(o.sportmonksId);
+    // A stale override is a silent data bug — a marquee player quietly falls
+    // back to unidentified. Fail the run instead.
+    if (!c) throw new Error(`Override references unknown Cricsheet id "${o.cricsheetId}" (${o.cricsheetName})`);
+    if (!m) throw new Error(`Override references unknown SportMonks id ${o.sportmonksId} (${o.sportmonksName})`);
+    if (claimed.has(m.id)) {
+      throw new Error(`Two overrides claim SportMonks id ${m.id} (${o.sportmonksName}) — the join must stay one-to-one`);
+    }
+    assignment.set(c.id, m);
+    claimed.add(m.id);
+  }
+  const overrideMatch = overrides.length;
 
   // Pass 1 — exact full-name matches. These are trustworthy, so they get
   // first claim on an identity.
   for (const c of cricsheet) {
+    if (assignment.has(c.id)) continue; // already fixed by an override
     const key = nameKey(c.name);
     if (!key) continue;
     const cands = byFullName.get(key.full);
@@ -122,10 +184,22 @@ async function main() {
       assignment.set(group[0].id, cands[0]);
       claimed.add(cands[0].id);
       initialMatch++;
-    } else {
-      // Several people share this name shape — don't guess which is which.
-      ambiguous += group.length;
+      continue;
     }
+    // One Cricsheet player, several same-shaped identities: their national
+    // side can still single one out. Never applied when the Cricsheet side is
+    // ambiguous too — then we genuinely don't know who is who.
+    if (group.length === 1) {
+      const resolved = countryTieBreak(group[0], cands);
+      if (resolved) {
+        assignment.set(group[0].id, resolved);
+        claimed.add(resolved.id);
+        countryMatch++;
+        continue;
+      }
+    }
+    // Several people share this name shape — don't guess which is which.
+    ambiguous += group.length;
   }
 
   const unified = cricsheet.map((c) => {
@@ -152,11 +226,14 @@ async function main() {
 
   await writeFile(OUT_FILE, JSON.stringify(unified, null, 2));
 
-  const matched = exact + initialMatch;
+  const matched = overrideMatch + exact + initialMatch + countryMatch;
   const withCountry = unified.filter((p) => p.country).length;
   console.log(`Cricsheet players : ${cricsheet.length}`);
-  console.log(`SportMonks players: ${sportmonks.length}`);
-  console.log(`Matched           : ${matched} (${exact} exact, ${initialMatch} surname+initial)`);
+  console.log(`SportMonks players: ${sportmonks.length} (${womenDropped} women's entries excluded)`);
+  console.log(
+    `Matched           : ${matched} (${overrideMatch} verified overrides, ${exact} exact, ` +
+      `${initialMatch} surname+initial, ${countryMatch} via national side)`
+  );
   console.log(`Ambiguous (skipped): ${ambiguous}`);
   console.log(`Unmatched          : ${unmatched}`);
   console.log(`With country       : ${withCountry}  <- spinnable into national teams`);

@@ -71,20 +71,29 @@ body {
   pointer-events: none;
 }
 
+/* Full-viewport, fixed layers for the stadium GLOW/rays/texture, so the rich
+   field treatment appears on every screen — not just the ones that render
+   through PosterShell. Each decorative class sets its own background, so they
+   are stacked as separate elements (a single element would let one background
+   win). They sit just above .app-backdrop and below all content. */
+.app-field {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
 ::selection {
   background: var(--accent);
   color: #04120d;
 }
 
+/* The vertical stripe texture was distracting over the stadium background on
+ * the menu screens, so the field layer no longer draws the pinstripes. Kept as
+ * a no-op class (still referenced by the global background layers in layout)
+ * so the markup and the other two glow layers are untouched. */
 .field-texture {
-  background-image:
-    repeating-linear-gradient(
-      90deg,
-      rgba(34, 230, 168, 0.05) 0px,
-      rgba(34, 230, 168, 0.05) 2px,
-      transparent 2px,
-      transparent 48px
-    );
+  background-image: none;
 }
 
 .stadium-glow {

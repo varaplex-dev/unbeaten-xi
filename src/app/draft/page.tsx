@@ -10,12 +10,13 @@ import { generateDraftRound, generateImpactPlayerOptions, computeRosterNeeds } f
 import { SQUAD_SIZE } from "@/lib/types";
 import { useDraftedPlayers, useGameStore } from "@/lib/store/gameStore";
 import { PLAYERS } from "@/lib/data/players";
-import { REAL_PLAYERS } from "@/lib/data/realPlayers";
-import { getEraTeamById } from "@/lib/data/eraTeams";
+import { realPlayers, getEraTeamById } from "@/lib/data/gameData";
+import { useGameDataReady } from "@/lib/data/useGameData";
 import { track } from "@/lib/analytics";
 
 export default function DraftPage() {
   const router = useRouter();
+  const dataReady = useGameDataReady();
   const seed = useGameStore((s) => s.seed);
   const mode = useGameStore((s) => s.mode);
   const stage = useGameStore((s) => s.stage);
@@ -30,7 +31,7 @@ export default function DraftPage() {
   // A spun Era Team's impact-player options must come from that same
   // squad, not the full cross-country pool — otherwise "pick a bonus
   // player" could hand you someone who was never on the revealed team.
-  const pool = eraTeam ? eraTeam.players : mode === "all-time-real" ? REAL_PLAYERS : PLAYERS;
+  const pool = eraTeam ? eraTeam.players : mode === "all-time-real" ? realPlayers() : PLAYERS;
 
   useEffect(() => {
     if (hasHydrated && !seed) router.replace("/play");
@@ -63,6 +64,14 @@ export default function DraftPage() {
   }, [round]);
 
   if (!hasHydrated || !seed) return null;
+
+  if (mode === "all-time-real" && !dataReady) {
+    return (
+      <main className="flex-1 flex flex-col items-center justify-center px-4 py-16">
+        <p className="text-foreground-muted">Loading…</p>
+      </main>
+    );
+  }
 
   if (stage === "impact-player" && impactOptions) {
     return (

@@ -1,7 +1,7 @@
 import type { EraTeam, PitchType, Player } from "@/lib/types";
 import { isPaceBowler, isSpinner } from "@/lib/types";
 import { OPPONENT_FRANCHISES, VENUES } from "@/lib/data/franchises";
-import { ERA_TEAMS } from "@/lib/data/eraTeams";
+import { eraTeams } from "@/lib/data/gameData";
 import { projectInnings, teamStrength } from "@/lib/engine/matchEngine";
 import { computeTeamRatings } from "@/lib/engine/teamRatings";
 import {
@@ -12,8 +12,11 @@ import {
 } from "@/lib/engine/statsSimulation";
 import { fieldingWicketBonus, type FieldingAssignments } from "@/lib/engine/fielding";
 import { createRng, pickN, pickRandom, pickWeighted, type RandomFn } from "@/lib/engine/rng";
+import { matchesFor, type CompetitionId } from "@/lib/engine/competitions";
 
-const SEASON_LENGTH = 14;
+// Season length is no longer a constant here — it comes from the competition
+// being played (see competitions.ts). The old hardcoded 14 was an IPL league
+// campaign all along; it is now labelled as one, and a World Cup run is 9.
 const DECISION_COUNT = 3;
 
 interface PitchDef {
@@ -77,6 +80,12 @@ export interface MatchResult {
   opponentScore: number;
   result: "win" | "loss";
   margin: string;
+  // Structured margin + pitch so the UI can render them translated instead of
+  // the pre-rendered English `margin`/`pitch`. Optional: results saved before
+  // this was added fall back to the English strings above.
+  marginType?: "runs" | "wickets";
+  marginValue?: number;
+  pitchType?: PitchType;
   playerOfMatchId: string;
   summary: string;
   decision?: { type: DecisionType; choiceId: string; resultLabel: string };
@@ -138,13 +147,25 @@ function simulateInningsScore(rng: RandomFn, strength: number, pitch: PitchDef, 
   return Math.max(85, Math.round(base + variance));
 }
 
-function formatMargin(result: "win" | "loss", battingFirst: boolean, teamScore: number, opponentScore: number): string {
-  if (battingFirst) {
-    const runs = Math.abs(teamScore - opponentScore);
-    return `${runs} run${runs === 1 ? "" : "s"}`;
+/** The margin as structured data, so the UI can render "N runs"/"N wickets"
+ * in any language. Batting first → won/lost by runs; chasing → won by wickets
+ * in hand, lost by runs. */
+function marginParts(
+  result: "win" | "loss",
+  battingFirst: boolean,
+  teamScore: number,
+  opponentScore: number
+): { type: "runs" | "wickets"; value: number } {
+  if (battingFirst || result === "loss") {
+    return { type: "runs", value: Math.abs(teamScore - opponentScore) };
   }
   const wicketsInHand = Math.max(1, Math.min(9, Math.round((teamScore - opponentScore) / 12) + 3));
-  return result === "win" ? `${wicketsInHand} wickets` : `${Math.abs(teamScore - opponentScore)} runs`;
+  return { type: "wickets", value: wicketsInHand };
+}
+
+function formatMargin(result: "win" | "loss", battingFirst: boolean, teamScore: number, opponentScore: number): string {
+  const { type, value } = marginParts(result, battingFirst, teamScore, opponentScore);
+  return `${value} ${type === "wickets" ? "wicket" : "run"}${value === 1 ? "" : "s"}`;
 }
 
 function buildDecisionPrompt(
@@ -298,22 +319,26 @@ function opponentXiFor(team: EraTeam): Player[] {
 }
 
 /**
- * Builds the season's 14 real opponents: rank every era team by net strength,
+ * Builds the season's real opponents: rank every era team by net strength,
  * then walk that ranking in even steps so the schedule spans the full range
  * of difficulty. The seeded rng only picks the starting offset, so the spread
  * is guaranteed while the exact fixtures still vary by season.
+ *
+ * The step is derived from `seasonLength`, so a shorter competition still
+ * meets the same span of weak-to-elite opposition rather than just truncating
+ * the fixture list and facing only the weakest sides.
  */
-function buildOpponentSchedule(rng: RandomFn): { name: string; xi: Player[] }[] {
-  const ranked = ERA_TEAMS.filter((t) => t.players.length >= 11)
+function buildOpponentSchedule(rng: RandomFn, seasonLength: number): { name: string; xi: Player[] }[] {
+  const ranked = eraTeams().filter((t) => t.players.length >= 11)
     .map((t) => ({ team: t, xi: opponentXiFor(t) }))
     .map((e) => ({ ...e, strength: teamStrength(e.xi) }))
     .sort((a, b) => a.strength - b.strength);
   if (ranked.length === 0) return [];
 
   const schedule: { name: string; xi: Player[] }[] = [];
-  const step = ranked.length / SEASON_LENGTH;
+  const step = ranked.length / seasonLength;
   const offset = rng() * step;
-  for (let i = 0; i < SEASON_LENGTH; i++) {
+  for (let i = 0; i < seasonLength; i++) {
     const idx = Math.min(ranked.length - 1, Math.floor(offset + i * step));
     const entry = ranked[idx];
     schedule.push({ name: `${entry.team.name} (${entry.team.eraLabel})`, xi: entry.xi });
@@ -327,6 +352,18 @@ function eraOpponentScale(averageEra?: number): number {
   return 1 - Math.min(MAX_ERA_SCALE_DOWN, yearsBack * 0.0035);
 }
 
+/** Trailing options for a season. Grouped rather than added as further
+ * positional parameters — the list was already eight long, and a bare
+ * `simulateSeason(…, undefined, 2019, "world-cup")` is far too easy to
+ * misorder. */
+export interface SeasonOptions {
+  fieldingAssignments?: FieldingAssignments;
+  averageEra?: number;
+  /** Which real competition's length this season runs to. Defaults to the
+   * IPL-style league campaign, i.e. the original 14 matches. */
+  competition?: CompetitionId;
+}
+
 export function simulateSeason(
   seed: string,
   xi: Player[],
@@ -334,9 +371,10 @@ export function simulateSeason(
   captainId: string,
   impactPlayer: Player | null,
   decisions: Record<number, string>,
-  fieldingAssignments?: FieldingAssignments,
-  averageEra?: number
+  options: SeasonOptions = {}
 ): SeasonSimulationResult {
+  const { fieldingAssignments, averageEra, competition } = options;
+  const seasonLength = matchesFor(competition);
   const rng = createRng(`${seed}::season`);
   const battingOrder = battingOrderIds
     .map((id) => xi.find((p) => p.id === id))
@@ -367,7 +405,7 @@ export function simulateSeason(
   // byte-identical results for already-resolved matches.
   const decisionMatchNumbers = pickN(
     rng,
-    Array.from({ length: SEASON_LENGTH }, (_, i) => i + 1),
+    Array.from({ length: seasonLength }, (_, i) => i + 1),
     DECISION_COUNT
   ).sort((a, b) => a - b);
   const decisionTypes: DecisionType[] = ["pace-or-spin", "defend-bowler", "impact-player"];
@@ -383,7 +421,7 @@ export function simulateSeason(
   // then the schedule takes an even spread across that range — so a season
   // includes genuinely weak sides, mid-table ones and elite attacks, and 14-0
   // means beating all of them rather than clearing a random number 14 times.
-  const opponentSchedule = isStatsGame ? buildOpponentSchedule(rng) : [];
+  const opponentSchedule = isStatsGame ? buildOpponentSchedule(rng, seasonLength) : [];
 
   const runTotals = new Map<string, number>();
   const wicketTotals = new Map<string, number>();
@@ -400,7 +438,7 @@ export function simulateSeason(
   let lowestDefendedScore: number | null = null;
   let bestChase: number | null = null;
 
-  for (let matchNumber = 1; matchNumber <= SEASON_LENGTH; matchNumber++) {
+  for (let matchNumber = 1; matchNumber <= seasonLength; matchNumber++) {
     const decisionType = decisionMatchMap.get(matchNumber);
     let decisionOutcome: DecisionOutcome | null = null;
     let decisionRecord: MatchResult["decision"] | undefined;
@@ -529,6 +567,7 @@ export function simulateSeason(
 
     const target = opponentScore + 1;
     const margin = formatMargin(result, battingFirst, teamScore, opponentScore);
+    const marginBits = marginParts(result, battingFirst, teamScore, opponentScore);
     const templates = result === "win" ? SUMMARY_TEMPLATES_WIN : SUMMARY_TEMPLATES_LOSS;
     const summary = pickRandom(rng, templates)
       .replace("{team}", "Your XI")
@@ -550,6 +589,9 @@ export function simulateSeason(
       opponentScore,
       result,
       margin,
+      marginType: marginBits.type,
+      marginValue: marginBits.value,
+      pitchType: pitch.type,
       playerOfMatchId: playerOfMatch.id,
       summary,
       decision: decisionRecord,
@@ -597,12 +639,12 @@ export function simulateSeason(
   const weakestPickPlayerId = byQuality[byQuality.length - 1].id;
 
   const netRunRate =
-    Math.round(((totalRunsFor - totalRunsAgainst) / (SEASON_LENGTH * 20)) * 100) / 100;
-  const percentile = Math.max(1, Math.min(99, Math.round((wins / SEASON_LENGTH) * 90) + 5));
+    Math.round(((totalRunsFor - totalRunsAgainst) / (seasonLength * 20)) * 100) / 100;
+  const percentile = Math.max(1, Math.min(99, Math.round((wins / seasonLength) * 90) + 5));
 
   const stats: SeasonStats = {
     wins,
-    losses: SEASON_LENGTH - wins,
+    losses: seasonLength - wins,
     totalRunsFor,
     totalRunsAgainst,
     netRunRate,

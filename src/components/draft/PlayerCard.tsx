@@ -40,8 +40,11 @@ interface PlayerCardProps {
   hideStats?: boolean;
 }
 
-function formatStat(value: number | null, decimals = 1): string {
-  return value === null ? "—" : value.toFixed(decimals);
+function formatStat(value: number | null | undefined, decimals = 1): string {
+  // `== null` covers both: a stat that doesn't apply (null) and one the
+  // generated data omitted rather than shipping as null (undefined). Before,
+  // an absent stat would have rendered as a crash rather than a dash.
+  return value == null ? "—" : value.toFixed(decimals);
 }
 
 export function PlayerCard({ player, onSelect, selected, disabled, hideStats }: PlayerCardProps) {

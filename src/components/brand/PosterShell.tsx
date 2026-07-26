@@ -12,7 +12,10 @@ interface PosterShellProps {
   className?: string;
 }
 
-/** Shared stadium-glow poster background + top bar used across every screen. */
+/** Shared poster top bar (kicker + optional score digits). The stadium glow /
+ * rays / field texture that used to live here now render globally in
+ * layout.tsx (`.app-field` layers), so every screen — PosterShell or plain —
+ * shows the same field. This just handles the poster header + layout. */
 export function PosterShell({ kicker, digits, children, className }: PosterShellProps) {
   // Two sets of floating controls overlap this top bar: the HomeButton
   // (top-left, every page except "/") and the TopNav globe+menu (top-right,
@@ -24,7 +27,7 @@ export function PosterShell({ kicker, digits, children, className }: PosterShell
   return (
     <section
       className={cn(
-        "stadium-glow floodlight-rays field-texture relative flex flex-1 flex-col overflow-hidden px-6 pt-8 pb-12 sm:pt-12",
+        "relative flex flex-1 flex-col overflow-hidden px-6 pt-8 pb-12 sm:pt-12",
         className
       )}
     >

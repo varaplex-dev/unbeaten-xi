@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { useGameStore } from "@/lib/store/gameStore";
-import { SQUAD_SIZE } from "@/lib/types";
+import { matchesFor } from "@/lib/engine/competitions";
 
 export default function SeasonPage() {
   const router = useRouter();
@@ -18,6 +18,7 @@ export default function SeasonPage() {
   const pendingDecision = useGameStore((s) => s.pendingDecision);
   const runSeasonSimulation = useGameStore((s) => s.runSeasonSimulation);
   const resolveDecision = useGameStore((s) => s.resolveDecision);
+  const competition = useGameStore((s) => s.competition);
 
   useEffect(() => {
     if (!hasHydrated || !seed) return;
@@ -45,7 +46,12 @@ export default function SeasonPage() {
     );
   }
 
-  const progress = Math.min(matchResults.length, SQUAD_SIZE + 3) / SQUAD_SIZE;
+  // Was `Math.min(matchResults.length, SQUAD_SIZE + 3) / SQUAD_SIZE` — an
+  // 11-player squad size doubling as a 14-match season length, which also let
+  // the bar run past 100%. Progress is simply matches played over matches to
+  // play, and follows the competition.
+  const seasonMatches = matchesFor(competition);
+  const progress = Math.min(matchResults.length / seasonMatches, 1);
 
   return (
     <main className="flex-1 flex flex-col">
@@ -55,7 +61,7 @@ export default function SeasonPage() {
             Simulating
           </p>
           <h1 className="text-stack-shadow text-4xl font-black italic tracking-tight mb-6">
-            Match {Math.min(matchResults.length + 1, 14)} of 14
+            Match {Math.min(matchResults.length + 1, seasonMatches)} of {seasonMatches}
           </h1>
 
           <div className="mb-10 h-1.5 w-full max-w-sm rounded-full bg-white/5 overflow-hidden">

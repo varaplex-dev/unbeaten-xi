@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useMemo, useRef } from "react";
 import { motion } from "framer-motion";
-import { ERA_TEAMS } from "@/lib/data/eraTeams";
+import { eraTeams } from "@/lib/data/gameData";
 import { createRng, pickRandom } from "@/lib/engine/rng";
 import type { EraTeam } from "@/lib/types";
 
@@ -71,6 +71,11 @@ function ReelColumn({
 interface SpinReelProps {
   target: EraTeam;
   onComplete: () => void;
+  /** The teams this game can actually spin into. Defaults to the full pool;
+   * World Cup Run passes its nations-only pool. The decoys must come from the
+   * same pool as the target — a reel flashing "Chennai Super Kings" in a
+   * nations-only competition advertises a team the player can never land on. */
+  pool?: EraTeam[];
 }
 
 /** A two-column slot-reel: team names on the left, era labels on the right.
@@ -78,9 +83,9 @@ interface SpinReelProps {
  * a given landing is always preceded by the same "spin") and settle on the
  * real target — computed ahead of time by the caller via pickNextEraTeam so
  * this component only has to animate toward an already-decided answer. */
-export function SpinReel({ target, onComplete }: SpinReelProps) {
-  const teamNames = useMemo(() => Array.from(new Set(ERA_TEAMS.map((t) => t.name))), []);
-  const eraLabels = useMemo(() => Array.from(new Set(ERA_TEAMS.map((t) => t.eraLabel))), []);
+export function SpinReel({ target, onComplete, pool = eraTeams() }: SpinReelProps) {
+  const teamNames = useMemo(() => Array.from(new Set(pool.map((t) => t.name))), [pool]);
+  const eraLabels = useMemo(() => Array.from(new Set(pool.map((t) => t.eraLabel))), [pool]);
 
   const teamSequence = useMemo(
     () => buildReelSequence(`${target.id}::reel-team`, teamNames, target.name),

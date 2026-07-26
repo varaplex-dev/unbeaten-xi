@@ -12,50 +12,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 148.81,
     "runs": 8509,
     "innings": 294,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 309,
     "boundaryPct": 18.7,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1408,
         "balls": 1123,
         "strikeRate": 125.38,
         "economy": 7.52
       },
       "middle": {
-        "runs": 4481,
         "balls": 3345,
         "strikeRate": 133.96,
         "economy": 8.04
       },
       "death": {
-        "runs": 2620,
         "balls": 1250,
         "strikeRate": 209.6,
         "economy": 12.58
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -74,19 +48,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 29.44,
     "battingPhases": {
       "powerplay": {
-        "runs": 2532,
         "balls": 1414,
         "strikeRate": 179.07,
         "economy": 10.74
       },
       "middle": {
-        "runs": 1226,
         "balls": 679,
         "strikeRate": 180.56,
         "economy": 10.83
       },
       "death": {
-        "runs": 239,
         "balls": 146,
         "strikeRate": 163.7,
         "economy": 9.82
@@ -94,19 +65,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 147,
         "balls": 90,
         "strikeRate": 163.33,
         "economy": 9.8
       },
       "middle": {
-        "runs": 530,
         "balls": 384,
         "strikeRate": 138.02,
         "economy": 8.28
       },
       "death": {
-        "runs": 112,
         "balls": 56,
         "strikeRate": 200,
         "economy": 12
@@ -127,20 +95,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.18,
     "bowlingStrikeRate": 17.96,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 48,
         "balls": 71,
         "strikeRate": 67.61,
         "economy": 4.06
       },
       "death": {
-        "runs": 242,
         "balls": 277,
         "strikeRate": 87.36,
         "economy": 5.24
@@ -148,19 +108,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 831,
         "balls": 708,
         "strikeRate": 117.37,
         "economy": 7.04
       },
       "middle": {
-        "runs": 5731,
         "balls": 4715,
         "strikeRate": 121.55,
         "economy": 7.29
       },
       "death": {
-        "runs": 1670,
         "balls": 1134,
         "strikeRate": 147.27,
         "economy": 8.84
@@ -182,19 +139,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.38,
     "battingPhases": {
       "powerplay": {
-        "runs": 10,
         "balls": 16,
         "strikeRate": 62.5,
         "economy": 3.75
       },
       "middle": {
-        "runs": 90,
         "balls": 92,
         "strikeRate": 97.83,
         "economy": 5.87
       },
       "death": {
-        "runs": 315,
         "balls": 280,
         "strikeRate": 112.5,
         "economy": 6.75
@@ -202,19 +156,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 250,
         "balls": 192,
         "strikeRate": 130.21,
         "economy": 7.81
       },
       "middle": {
-        "runs": 4851,
         "balls": 3933,
         "strikeRate": 123.34,
         "economy": 7.4
       },
       "death": {
-        "runs": 681,
         "balls": 488,
         "strikeRate": 139.55,
         "economy": 8.37
@@ -236,19 +187,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 29.23,
     "battingPhases": {
       "powerplay": {
-        "runs": 1364,
         "balls": 1006,
         "strikeRate": 135.59,
         "economy": 8.14
       },
       "middle": {
-        "runs": 1821,
         "balls": 1347,
         "strikeRate": 135.19,
         "economy": 8.11
       },
       "death": {
-        "runs": 580,
         "balls": 321,
         "strikeRate": 180.69,
         "economy": 10.84
@@ -256,19 +204,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 304,
         "balls": 204,
         "strikeRate": 149.02,
         "economy": 8.94
       },
       "middle": {
-        "runs": 614,
         "balls": 396,
         "strikeRate": 155.05,
         "economy": 9.3
       },
       "death": {
-        "runs": 66,
         "balls": 43,
         "strikeRate": 153.49,
         "economy": 9.21
@@ -290,42 +235,26 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 6,
     "battingPhases": {
       "powerplay": {
-        "runs": 2973,
         "balls": 2422,
         "strikeRate": 122.75,
         "economy": 7.36
       },
       "middle": {
-        "runs": 2260,
         "balls": 1858,
         "strikeRate": 121.64,
         "economy": 7.3
       },
       "death": {
-        "runs": 509,
         "balls": 324,
         "strikeRate": 157.1,
         "economy": 9.43
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 6,
         "strikeRate": 83.33,
         "economy": 5
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -344,19 +273,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.32,
     "battingPhases": {
       "powerplay": {
-        "runs": 27,
         "balls": 38,
         "strikeRate": 71.05,
         "economy": 4.26
       },
       "middle": {
-        "runs": 288,
         "balls": 337,
         "strikeRate": 85.46,
         "economy": 5.13
       },
       "death": {
-        "runs": 597,
         "balls": 419,
         "strikeRate": 142.48,
         "economy": 8.55
@@ -364,19 +290,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2602,
         "balls": 2160,
         "strikeRate": 120.46,
         "economy": 7.23
       },
       "middle": {
-        "runs": 2371,
         "balls": 2052,
         "strikeRate": 115.55,
         "economy": 6.93
       },
       "death": {
-        "runs": 387,
         "balls": 266,
         "strikeRate": 145.49,
         "economy": 8.73
@@ -390,50 +313,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130.12,
     "runs": 2549,
     "innings": 101,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 117,
     "boundaryPct": 16.28,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 907,
         "balls": 723,
         "strikeRate": 125.45,
         "economy": 7.53
       },
       "middle": {
-        "runs": 1265,
         "balls": 981,
         "strikeRate": 128.95,
         "economy": 7.74
       },
       "death": {
-        "runs": 377,
         "balls": 255,
         "strikeRate": 147.84,
         "economy": 8.87
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -444,50 +341,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 147.04,
     "runs": 10866,
     "innings": 385,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 387,
     "boundaryPct": 22.21,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 6812,
         "balls": 4537,
         "strikeRate": 150.14,
         "economy": 9.01
       },
       "middle": {
-        "runs": 3413,
         "balls": 2510,
         "strikeRate": 135.98,
         "economy": 8.16
       },
       "death": {
-        "runs": 641,
         "balls": 343,
         "strikeRate": 186.88,
         "economy": 11.21
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -506,19 +377,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.71,
     "battingPhases": {
       "powerplay": {
-        "runs": 15,
         "balls": 10,
         "strikeRate": 150,
         "economy": 9
       },
       "middle": {
-        "runs": 99,
         "balls": 108,
         "strikeRate": 91.67,
         "economy": 5.5
       },
       "death": {
-        "runs": 380,
         "balls": 338,
         "strikeRate": 112.43,
         "economy": 6.75
@@ -526,19 +394,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1894,
         "balls": 1290,
         "strikeRate": 146.82,
         "economy": 8.81
       },
       "middle": {
-        "runs": 1356,
         "balls": 997,
         "strikeRate": 136.01,
         "economy": 8.16
       },
       "death": {
-        "runs": 1640,
         "balls": 1025,
         "strikeRate": 160,
         "economy": 9.6
@@ -560,19 +425,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.94,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 5,
         "strikeRate": 20,
         "economy": 1.2
       },
       "middle": {
-        "runs": 120,
         "balls": 164,
         "strikeRate": 73.17,
         "economy": 4.39
       },
       "death": {
-        "runs": 260,
         "balls": 250,
         "strikeRate": 104,
         "economy": 6.24
@@ -580,19 +442,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 176,
         "balls": 144,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "middle": {
-        "runs": 3330,
         "balls": 2886,
         "strikeRate": 115.38,
         "economy": 6.92
       },
       "death": {
-        "runs": 879,
         "balls": 569,
         "strikeRate": 154.48,
         "economy": 9.27
@@ -614,19 +473,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.95,
     "battingPhases": {
       "powerplay": {
-        "runs": 259,
         "balls": 143,
         "strikeRate": 181.12,
         "economy": 10.87
       },
       "middle": {
-        "runs": 3048,
         "balls": 2101,
         "strikeRate": 145.07,
         "economy": 8.7
       },
       "death": {
-        "runs": 4243,
         "balls": 2226,
         "strikeRate": 190.61,
         "economy": 11.44
@@ -634,19 +490,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2710,
         "balls": 1946,
         "strikeRate": 139.26,
         "economy": 8.36
       },
       "middle": {
-        "runs": 3875,
         "balls": 2737,
         "strikeRate": 141.58,
         "economy": 8.49
       },
       "death": {
-        "runs": 3601,
         "balls": 2096,
         "strikeRate": 171.8,
         "economy": 10.31
@@ -668,19 +521,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.58,
     "battingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 8,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 161,
         "balls": 115,
         "strikeRate": 140,
         "economy": 8.4
       },
       "death": {
-        "runs": 695,
         "balls": 519,
         "strikeRate": 133.91,
         "economy": 8.03
@@ -688,19 +538,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1460,
         "balls": 1122,
         "strikeRate": 130.12,
         "economy": 7.81
       },
       "middle": {
-        "runs": 2886,
         "balls": 2254,
         "strikeRate": 128.04,
         "economy": 7.68
       },
       "death": {
-        "runs": 3249,
         "balls": 2122,
         "strikeRate": 153.11,
         "economy": 9.19
@@ -721,20 +568,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.16,
     "bowlingStrikeRate": 17.98,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 18,
         "balls": 30,
         "strikeRate": 60,
         "economy": 3.6
       },
       "death": {
-        "runs": 95,
         "balls": 101,
         "strikeRate": 94.06,
         "economy": 5.64
@@ -742,19 +581,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1266,
         "balls": 930,
         "strikeRate": 136.13,
         "economy": 8.17
       },
       "middle": {
-        "runs": 957,
         "balls": 771,
         "strikeRate": 124.12,
         "economy": 7.45
       },
       "death": {
-        "runs": 1298,
         "balls": 834,
         "strikeRate": 155.64,
         "economy": 9.34
@@ -775,20 +611,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.74,
     "bowlingStrikeRate": 15.99,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 10,
         "balls": 12,
         "strikeRate": 83.33,
         "economy": 5
       },
       "death": {
-        "runs": 123,
         "balls": 137,
         "strikeRate": 89.78,
         "economy": 5.39
@@ -796,19 +624,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2792,
         "balls": 1991,
         "strikeRate": 140.23,
         "economy": 8.41
       },
       "middle": {
-        "runs": 821,
         "balls": 551,
         "strikeRate": 149,
         "economy": 8.94
       },
       "death": {
-        "runs": 2095,
         "balls": 1296,
         "strikeRate": 161.65,
         "economy": 9.7
@@ -830,19 +655,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.69,
     "battingPhases": {
       "powerplay": {
-        "runs": 74,
         "balls": 64,
         "strikeRate": 115.63,
         "economy": 6.94
       },
       "middle": {
-        "runs": 456,
         "balls": 458,
         "strikeRate": 99.56,
         "economy": 5.97
       },
       "death": {
-        "runs": 766,
         "balls": 569,
         "strikeRate": 134.62,
         "economy": 8.08
@@ -850,19 +672,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 580,
         "balls": 474,
         "strikeRate": 122.36,
         "economy": 7.34
       },
       "middle": {
-        "runs": 2943,
         "balls": 2432,
         "strikeRate": 121.01,
         "economy": 7.26
       },
       "death": {
-        "runs": 432,
         "balls": 363,
         "strikeRate": 119.01,
         "economy": 7.14
@@ -884,19 +703,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.67,
     "battingPhases": {
       "powerplay": {
-        "runs": 943,
         "balls": 722,
         "strikeRate": 130.61,
         "economy": 7.84
       },
       "middle": {
-        "runs": 1675,
         "balls": 1320,
         "strikeRate": 126.89,
         "economy": 7.61
       },
       "death": {
-        "runs": 1303,
         "balls": 737,
         "strikeRate": 176.8,
         "economy": 10.61
@@ -904,19 +720,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 3,
         "balls": 6,
         "strikeRate": 50,
         "economy": 3
       },
       "middle": {
-        "runs": 411,
         "balls": 384,
         "strikeRate": 107.03,
         "economy": 6.42
       },
       "death": {
-        "runs": 93,
         "balls": 82,
         "strikeRate": 113.41,
         "economy": 6.8
@@ -937,20 +750,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 23.81,
     "bowlingStrikeRate": 18.84,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 20,
         "balls": 12,
         "strikeRate": 166.67,
         "economy": 10
       },
       "death": {
-        "runs": 75,
         "balls": 51,
         "strikeRate": 147.06,
         "economy": 8.82
@@ -958,19 +763,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1207,
         "balls": 809,
         "strikeRate": 149.2,
         "economy": 8.95
       },
       "middle": {
-        "runs": 893,
         "balls": 630,
         "strikeRate": 141.75,
         "economy": 8.5
       },
       "death": {
-        "runs": 1331,
         "balls": 803,
         "strikeRate": 165.75,
         "economy": 9.95
@@ -984,50 +786,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 142.84,
     "runs": 2754,
     "innings": 134,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 146,
     "boundaryPct": 20.59,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 268,
         "balls": 224,
         "strikeRate": 119.64,
         "economy": 7.18
       },
       "middle": {
-        "runs": 1666,
         "balls": 1281,
         "strikeRate": 130.05,
         "economy": 7.8
       },
       "death": {
-        "runs": 820,
         "balls": 423,
         "strikeRate": 193.85,
         "economy": 11.63
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -1046,19 +822,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.46,
     "battingPhases": {
       "powerplay": {
-        "runs": 30,
         "balls": 18,
         "strikeRate": 166.67,
         "economy": 10
       },
       "middle": {
-        "runs": 223,
         "balls": 188,
         "strikeRate": 118.62,
         "economy": 7.12
       },
       "death": {
-        "runs": 411,
         "balls": 228,
         "strikeRate": 180.26,
         "economy": 10.82
@@ -1066,19 +839,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 841,
         "balls": 594,
         "strikeRate": 141.58,
         "economy": 8.49
       },
       "middle": {
-        "runs": 412,
         "balls": 288,
         "strikeRate": 143.06,
         "economy": 8.58
       },
       "death": {
-        "runs": 452,
         "balls": 244,
         "strikeRate": 185.25,
         "economy": 11.11
@@ -1092,50 +862,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 128.73,
     "runs": 10575,
     "innings": 295,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 306,
     "boundaryPct": 15.84,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 4202,
         "balls": 3500,
         "strikeRate": 120.06,
         "economy": 7.2
       },
       "middle": {
-        "runs": 5057,
         "balls": 3958,
         "strikeRate": 127.77,
         "economy": 7.67
       },
       "death": {
-        "runs": 1316,
         "balls": 757,
         "strikeRate": 173.84,
         "economy": 10.43
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -1154,19 +898,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.46,
     "battingPhases": {
       "powerplay": {
-        "runs": 543,
         "balls": 443,
         "strikeRate": 122.57,
         "economy": 7.35
       },
       "middle": {
-        "runs": 1147,
         "balls": 870,
         "strikeRate": 131.84,
         "economy": 7.91
       },
       "death": {
-        "runs": 486,
         "balls": 315,
         "strikeRate": 154.29,
         "economy": 9.26
@@ -1174,19 +915,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 603,
         "balls": 378,
         "strikeRate": 159.52,
         "economy": 9.57
       },
       "middle": {
-        "runs": 1045,
         "balls": 791,
         "strikeRate": 132.11,
         "economy": 7.93
       },
       "death": {
-        "runs": 547,
         "balls": 355,
         "strikeRate": 154.08,
         "economy": 9.25
@@ -1200,50 +938,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 133.65,
     "runs": 4158,
     "innings": 170,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 176,
     "boundaryPct": 20.15,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2378,
         "balls": 1883,
         "strikeRate": 126.29,
         "economy": 7.58
       },
       "middle": {
-        "runs": 1374,
         "balls": 1013,
         "strikeRate": 135.64,
         "economy": 8.14
       },
       "death": {
-        "runs": 406,
         "balls": 215,
         "strikeRate": 188.84,
         "economy": 11.33
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -1254,50 +966,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 135.62,
     "runs": 8022,
     "innings": 304,
-    "bowlingAverage": null,
     "economyRate": 13,
     "wickets": 0,
     "matches": 299,
     "boundaryPct": 19.22,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 4070,
         "balls": 3119,
         "strikeRate": 130.49,
         "economy": 7.83
       },
       "middle": {
-        "runs": 3111,
         "balls": 2350,
         "strikeRate": 132.38,
         "economy": 7.94
       },
       "death": {
-        "runs": 841,
         "balls": 446,
         "strikeRate": 188.57,
         "economy": 11.31
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 13,
         "balls": 6,
         "strikeRate": 216.67,
         "economy": 13
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -1315,20 +1009,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.12,
     "bowlingStrikeRate": 18.84,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 94,
         "balls": 104,
         "strikeRate": 90.38,
         "economy": 5.42
       },
       "death": {
-        "runs": 455,
         "balls": 335,
         "strikeRate": 135.82,
         "economy": 8.15
@@ -1336,19 +1022,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1386,
         "balls": 1068,
         "strikeRate": 129.78,
         "economy": 7.79
       },
       "middle": {
-        "runs": 453,
         "balls": 369,
         "strikeRate": 122.76,
         "economy": 7.37
       },
       "death": {
-        "runs": 930,
         "balls": 522,
         "strikeRate": 178.16,
         "economy": 10.69
@@ -1370,19 +1053,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 29.3,
     "battingPhases": {
       "powerplay": {
-        "runs": 157,
         "balls": 114,
         "strikeRate": 137.72,
         "economy": 8.26
       },
       "middle": {
-        "runs": 1211,
         "balls": 841,
         "strikeRate": 144,
         "economy": 8.64
       },
       "death": {
-        "runs": 676,
         "balls": 439,
         "strikeRate": 153.99,
         "economy": 9.24
@@ -1390,19 +1070,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 441,
         "balls": 240,
         "strikeRate": 183.75,
         "economy": 11.02
       },
       "middle": {
-        "runs": 1170,
         "balls": 814,
         "strikeRate": 143.73,
         "economy": 8.62
       },
       "death": {
-        "runs": 359,
         "balls": 206,
         "strikeRate": 174.27,
         "economy": 10.46
@@ -1424,19 +1101,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.41,
     "battingPhases": {
       "powerplay": {
-        "runs": 4005,
         "balls": 2888,
         "strikeRate": 138.68,
         "economy": 8.32
       },
       "middle": {
-        "runs": 4364,
         "balls": 3133,
         "strikeRate": 139.29,
         "economy": 8.36
       },
       "death": {
-        "runs": 823,
         "balls": 532,
         "strikeRate": 154.7,
         "economy": 9.28
@@ -1444,19 +1118,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 7,
         "balls": 6,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 473,
         "balls": 324,
         "strikeRate": 145.99,
         "economy": 8.76
       },
       "death": {
-        "runs": 137,
         "balls": 68,
         "strikeRate": 201.47,
         "economy": 12.09
@@ -1470,50 +1141,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 139.91,
     "runs": 7825,
     "innings": 346,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 381,
     "boundaryPct": 16.5,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 399,
         "balls": 375,
         "strikeRate": 106.4,
         "economy": 6.38
       },
       "middle": {
-        "runs": 3974,
         "balls": 3216,
         "strikeRate": 123.57,
         "economy": 7.41
       },
       "death": {
-        "runs": 3452,
         "balls": 2002,
         "strikeRate": 172.43,
         "economy": 10.35
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -1524,50 +1169,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 140.65,
     "runs": 12027,
     "innings": 362,
-    "bowlingAverage": null,
     "economyRate": 12,
     "wickets": 0,
     "matches": 357,
     "boundaryPct": 19.19,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 6145,
         "balls": 4432,
         "strikeRate": 138.65,
         "economy": 8.32
       },
       "middle": {
-        "runs": 4809,
         "balls": 3490,
         "strikeRate": 137.79,
         "economy": 8.27
       },
       "death": {
-        "runs": 1073,
         "balls": 629,
         "strikeRate": 170.59,
         "economy": 10.24
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 1,
         "strikeRate": 200,
         "economy": 12
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -1586,19 +1213,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.58,
     "battingPhases": {
       "powerplay": {
-        "runs": 1353,
         "balls": 1126,
         "strikeRate": 120.16,
         "economy": 7.21
       },
       "middle": {
-        "runs": 2192,
         "balls": 1456,
         "strikeRate": 150.55,
         "economy": 9.03
       },
       "death": {
-        "runs": 564,
         "balls": 366,
         "strikeRate": 154.1,
         "economy": 9.25
@@ -1606,19 +1230,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 3678,
         "balls": 2909,
         "strikeRate": 126.44,
         "economy": 7.59
       },
       "middle": {
-        "runs": 1052,
         "balls": 795,
         "strikeRate": 132.33,
         "economy": 7.94
       },
       "death": {
-        "runs": 1905,
         "balls": 1145,
         "strikeRate": 166.38,
         "economy": 9.98
@@ -1640,39 +1261,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 38.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 3208,
         "balls": 2692,
         "strikeRate": 119.17,
         "economy": 7.15
       },
       "middle": {
-        "runs": 3943,
         "balls": 2774,
         "strikeRate": 142.14,
         "economy": 8.53
       },
       "death": {
-        "runs": 750,
         "balls": 440,
         "strikeRate": 170.45,
         "economy": 10.23
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 247,
         "balls": 183,
         "strikeRate": 134.97,
         "economy": 8.1
       },
       "death": {
-        "runs": 76,
         "balls": 48,
         "strikeRate": 158.33,
         "economy": 9.5
@@ -1693,20 +1303,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 19.08,
     "bowlingStrikeRate": 20.35,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 79,
         "balls": 51,
         "strikeRate": 154.9,
         "economy": 9.29
       },
       "death": {
-        "runs": 116,
         "balls": 80,
         "strikeRate": 145,
         "economy": 8.7
@@ -1714,19 +1316,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2550,
         "balls": 1910,
         "strikeRate": 133.51,
         "economy": 8.01
       },
       "middle": {
-        "runs": 492,
         "balls": 342,
         "strikeRate": 143.86,
         "economy": 8.63
       },
       "death": {
-        "runs": 539,
         "balls": 332,
         "strikeRate": 162.35,
         "economy": 9.74
@@ -1748,19 +1347,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 31.2,
     "battingPhases": {
       "powerplay": {
-        "runs": 253,
         "balls": 222,
         "strikeRate": 113.96,
         "economy": 6.84
       },
       "middle": {
-        "runs": 1066,
         "balls": 827,
         "strikeRate": 128.9,
         "economy": 7.73
       },
       "death": {
-        "runs": 546,
         "balls": 374,
         "strikeRate": 145.99,
         "economy": 8.76
@@ -1768,19 +1364,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 101,
         "balls": 84,
         "strikeRate": 120.24,
         "economy": 7.21
       },
       "middle": {
-        "runs": 412,
         "balls": 324,
         "strikeRate": 127.16,
         "economy": 7.63
       },
       "death": {
-        "runs": 106,
         "balls": 60,
         "strikeRate": 176.67,
         "economy": 10.6
@@ -1794,50 +1387,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 132.42,
     "runs": 2308,
     "innings": 91,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 92,
     "boundaryPct": 18.59,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1083,
         "balls": 819,
         "strikeRate": 132.23,
         "economy": 7.93
       },
       "middle": {
-        "runs": 1083,
         "balls": 825,
         "strikeRate": 131.27,
         "economy": 7.88
       },
       "death": {
-        "runs": 142,
         "balls": 99,
         "strikeRate": 143.43,
         "economy": 8.61
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -1848,50 +1415,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 131.99,
     "runs": 3499,
     "innings": 108,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 115,
     "boundaryPct": 17.58,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1481,
         "balls": 1262,
         "strikeRate": 117.35,
         "economy": 7.04
       },
       "middle": {
-        "runs": 1650,
         "balls": 1168,
         "strikeRate": 141.27,
         "economy": 8.48
       },
       "death": {
-        "runs": 368,
         "balls": 221,
         "strikeRate": 166.52,
         "economy": 9.99
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -1902,50 +1443,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 147.69,
     "runs": 6129,
     "innings": 230,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 235,
     "boundaryPct": 22.43,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 3612,
         "balls": 2623,
         "strikeRate": 137.7,
         "economy": 8.26
       },
       "middle": {
-        "runs": 2337,
         "balls": 1416,
         "strikeRate": 165.04,
         "economy": 9.9
       },
       "death": {
-        "runs": 180,
         "balls": 111,
         "strikeRate": 162.16,
         "economy": 9.73
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -1956,47 +1471,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 136.96,
     "runs": 8764,
     "innings": 280,
-    "bowlingAverage": null,
     "economyRate": 8.14,
     "wickets": 0,
     "matches": 290,
     "boundaryPct": 17.36,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 3929,
         "balls": 2873,
         "strikeRate": 136.76,
         "economy": 8.21
       },
       "middle": {
-        "runs": 3776,
         "balls": 2936,
         "strikeRate": 128.61,
         "economy": 7.72
       },
       "death": {
-        "runs": 1059,
         "balls": 590,
         "strikeRate": 179.49,
         "economy": 10.77
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 8,
         "strikeRate": 37.5,
         "economy": 2.25
       },
       "death": {
-        "runs": 16,
         "balls": 6,
         "strikeRate": 266.67,
         "economy": 16
@@ -2018,19 +1520,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 34,
     "battingPhases": {
       "powerplay": {
-        "runs": 3124,
         "balls": 2388,
         "strikeRate": 130.82,
         "economy": 7.85
       },
       "middle": {
-        "runs": 2602,
         "balls": 1865,
         "strikeRate": 139.52,
         "economy": 8.37
       },
       "death": {
-        "runs": 450,
         "balls": 265,
         "strikeRate": 169.81,
         "economy": 10.19
@@ -2038,19 +1537,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 46,
         "balls": 36,
         "strikeRate": 127.78,
         "economy": 7.67
       },
       "middle": {
-        "runs": 48,
         "balls": 60,
         "strikeRate": 80,
         "economy": 4.8
       },
       "death": {
-        "runs": 2,
         "balls": 6,
         "strikeRate": 33.33,
         "economy": 2
@@ -2072,19 +1568,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.32,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
       },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 25,
         "balls": 32,
         "strikeRate": 78.13,
         "economy": 4.69
@@ -2092,19 +1585,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 614,
         "balls": 468,
         "strikeRate": 131.2,
         "economy": 7.87
       },
       "middle": {
-        "runs": 212,
         "balls": 177,
         "strikeRate": 119.77,
         "economy": 7.19
       },
       "death": {
-        "runs": 429,
         "balls": 249,
         "strikeRate": 172.29,
         "economy": 10.34
@@ -2125,20 +1615,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.11,
     "bowlingStrikeRate": 17.15,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 60,
         "balls": 59,
         "strikeRate": 101.69,
         "economy": 6.1
       },
       "death": {
-        "runs": 104,
         "balls": 80,
         "strikeRate": 130,
         "economy": 7.8
@@ -2146,19 +1628,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 389,
         "balls": 263,
         "strikeRate": 147.91,
         "economy": 8.87
       },
       "middle": {
-        "runs": 349,
         "balls": 192,
         "strikeRate": 181.77,
         "economy": 10.91
       },
       "death": {
-        "runs": 352,
         "balls": 214,
         "strikeRate": 164.49,
         "economy": 9.87
@@ -2180,19 +1659,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.69,
     "battingPhases": {
       "powerplay": {
-        "runs": 1509,
         "balls": 1063,
         "strikeRate": 141.96,
         "economy": 8.52
       },
       "middle": {
-        "runs": 6214,
         "balls": 4212,
         "strikeRate": 147.53,
         "economy": 8.85
       },
       "death": {
-        "runs": 2086,
         "balls": 1092,
         "strikeRate": 191.03,
         "economy": 11.46
@@ -2200,19 +1676,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1702,
         "balls": 1302,
         "strikeRate": 130.72,
         "economy": 7.84
       },
       "middle": {
-        "runs": 3224,
         "balls": 2460,
         "strikeRate": 131.06,
         "economy": 7.86
       },
       "death": {
-        "runs": 425,
         "balls": 266,
         "strikeRate": 159.77,
         "economy": 9.59
@@ -2234,19 +1707,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.05,
     "battingPhases": {
       "powerplay": {
-        "runs": 1077,
         "balls": 981,
         "strikeRate": 109.79,
         "economy": 6.59
       },
       "middle": {
-        "runs": 2866,
         "balls": 2028,
         "strikeRate": 141.32,
         "economy": 8.48
       },
       "death": {
-        "runs": 1084,
         "balls": 565,
         "strikeRate": 191.86,
         "economy": 11.51
@@ -2254,19 +1724,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 96,
         "balls": 75,
         "strikeRate": 128,
         "economy": 7.68
       },
       "middle": {
-        "runs": 419,
         "balls": 279,
         "strikeRate": 150.18,
         "economy": 9.01
       },
       "death": {
-        "runs": 86,
         "balls": 65,
         "strikeRate": 132.31,
         "economy": 7.94
@@ -2280,27 +1747,17 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 79.03,
     "runs": 49,
     "innings": 5,
-    "bowlingAverage": null,
     "economyRate": 7.91,
     "wickets": 0,
     "matches": 6,
     "boundaryPct": 4.84,
-    "bowlingStrikeRate": null,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 30,
         "balls": 42,
         "strikeRate": 71.43,
         "economy": 4.29
       },
       "death": {
-        "runs": 19,
         "balls": 20,
         "strikeRate": 95,
         "economy": 5.7
@@ -2308,19 +1765,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 28,
         "balls": 18,
         "strikeRate": 155.56,
         "economy": 9.33
       },
       "middle": {
-        "runs": 40,
         "balls": 36,
         "strikeRate": 111.11,
         "economy": 6.67
       },
       "death": {
-        "runs": 19,
         "balls": 12,
         "strikeRate": 158.33,
         "economy": 9.5
@@ -2342,19 +1796,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.23,
     "battingPhases": {
       "powerplay": {
-        "runs": 272,
         "balls": 243,
         "strikeRate": 111.93,
         "economy": 6.72
       },
       "middle": {
-        "runs": 2095,
         "balls": 1668,
         "strikeRate": 125.6,
         "economy": 7.54
       },
       "death": {
-        "runs": 2818,
         "balls": 1645,
         "strikeRate": 171.31,
         "economy": 10.28
@@ -2362,19 +1813,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1510,
         "balls": 1002,
         "strikeRate": 150.7,
         "economy": 9.04
       },
       "middle": {
-        "runs": 3139,
         "balls": 2266,
         "strikeRate": 138.53,
         "economy": 8.31
       },
       "death": {
-        "runs": 1159,
         "balls": 697,
         "strikeRate": 166.28,
         "economy": 9.98
@@ -2395,20 +1843,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.93,
     "bowlingStrikeRate": 15.89,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 37,
         "balls": 50,
         "strikeRate": 74,
         "economy": 4.44
       },
       "death": {
-        "runs": 225,
         "balls": 213,
         "strikeRate": 105.63,
         "economy": 6.34
@@ -2416,19 +1856,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1814,
         "balls": 1254,
         "strikeRate": 144.66,
         "economy": 8.68
       },
       "middle": {
-        "runs": 2129,
         "balls": 1637,
         "strikeRate": 130.05,
         "economy": 7.8
       },
       "death": {
-        "runs": 2656,
         "balls": 1718,
         "strikeRate": 154.6,
         "economy": 9.28
@@ -2450,42 +1887,26 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 12,
     "battingPhases": {
       "powerplay": {
-        "runs": 550,
         "balls": 406,
         "strikeRate": 135.47,
         "economy": 8.13
       },
       "middle": {
-        "runs": 1870,
         "balls": 1311,
         "strikeRate": 142.64,
         "economy": 8.56
       },
       "death": {
-        "runs": 1005,
         "balls": 526,
         "strikeRate": 191.06,
         "economy": 11.46
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 26,
         "balls": 12,
         "strikeRate": 216.67,
         "economy": 13
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -2504,39 +1925,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 42,
     "battingPhases": {
       "powerplay": {
-        "runs": 227,
         "balls": 218,
         "strikeRate": 104.13,
         "economy": 6.25
       },
       "middle": {
-        "runs": 2193,
         "balls": 1454,
         "strikeRate": 150.83,
         "economy": 9.05
       },
       "death": {
-        "runs": 1027,
         "balls": 568,
         "strikeRate": 180.81,
         "economy": 10.85
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 53,
         "balls": 30,
         "strikeRate": 176.67,
         "economy": 10.6
       },
       "death": {
-        "runs": 15,
         "balls": 12,
         "strikeRate": 125,
         "economy": 7.5
@@ -2550,50 +1960,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 115.7,
     "runs": 280,
     "innings": 14,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 14,
     "boundaryPct": 15.29,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 100,
         "balls": 96,
         "strikeRate": 104.17,
         "economy": 6.25
       },
       "middle": {
-        "runs": 164,
         "balls": 133,
         "strikeRate": 123.31,
         "economy": 7.4
       },
       "death": {
-        "runs": 16,
         "balls": 13,
         "strikeRate": 123.08,
         "economy": 7.38
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -2611,20 +1995,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 21.28,
     "bowlingStrikeRate": 17.78,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 99,
         "balls": 74,
         "strikeRate": 133.78,
         "economy": 8.03
       },
       "death": {
-        "runs": 603,
         "balls": 363,
         "strikeRate": 166.12,
         "economy": 9.97
@@ -2632,19 +2008,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1283,
         "balls": 876,
         "strikeRate": 146.46,
         "economy": 8.79
       },
       "middle": {
-        "runs": 1203,
         "balls": 793,
         "strikeRate": 151.7,
         "economy": 9.1
       },
       "death": {
-        "runs": 967,
         "balls": 571,
         "strikeRate": 169.35,
         "economy": 10.16
@@ -2665,20 +2038,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 78,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
@@ -2686,19 +2046,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 88,
         "balls": 48,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 38,
         "balls": 24,
         "strikeRate": 158.33,
         "economy": 9.5
       },
       "death": {
-        "runs": 8,
         "balls": 6,
         "strikeRate": 133.33,
         "economy": 8
@@ -2712,50 +2069,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 149.75,
     "runs": 2399,
     "innings": 103,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 102,
     "boundaryPct": 22.6,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1808,
         "balls": 1189,
         "strikeRate": 152.06,
         "economy": 9.12
       },
       "middle": {
-        "runs": 591,
         "balls": 412,
         "strikeRate": 143.45,
         "economy": 8.61
       },
       "death": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -2773,20 +2104,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 20,
     "bowlingStrikeRate": 18.33,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 36,
         "balls": 25,
         "strikeRate": 144,
         "economy": 8.64
       },
       "death": {
-        "runs": 22,
         "balls": 20,
         "strikeRate": 110,
         "economy": 6.6
@@ -2794,19 +2117,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 314,
         "balls": 240,
         "strikeRate": 130.83,
         "economy": 7.85
       },
       "middle": {
-        "runs": 394,
         "balls": 294,
         "strikeRate": 134.01,
         "economy": 8.04
       },
       "death": {
-        "runs": 114,
         "balls": 71,
         "strikeRate": 160.56,
         "economy": 9.63
@@ -2827,20 +2147,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 30,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 6,
         "balls": 10,
         "strikeRate": 60,
         "economy": 3.6
@@ -2848,19 +2160,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 64,
         "balls": 48,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 308,
         "balls": 216,
         "strikeRate": 142.59,
         "economy": 8.56
       },
       "death": {
-        "runs": 47,
         "balls": 36,
         "strikeRate": 130.56,
         "economy": 7.83
@@ -2874,57 +2183,30 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 118.6,
     "runs": 3003,
     "innings": 134,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 138,
     "boundaryPct": 15.13,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1369,
         "balls": 1241,
         "strikeRate": 110.31,
         "economy": 6.62
       },
       "middle": {
-        "runs": 1308,
         "balls": 1076,
         "strikeRate": 121.56,
         "economy": 7.29
       },
       "death": {
-        "runs": 326,
         "balls": 215,
         "strikeRate": 151.63,
         "economy": 9.1
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-02247315": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 71.43,
     "runs": 5,
     "innings": 1,
@@ -2935,20 +2217,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.29,
     "bowlingStrikeRate": 16.8,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 5,
         "balls": 7,
         "strikeRate": 71.43,
         "economy": 4.29
@@ -2956,19 +2225,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 110,
         "balls": 60,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 171,
         "balls": 114,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 116,
         "balls": 78,
         "strikeRate": 148.72,
         "economy": 8.92
@@ -2990,19 +2256,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.31,
     "battingPhases": {
       "powerplay": {
-        "runs": 282,
         "balls": 299,
         "strikeRate": 94.31,
         "economy": 5.66
       },
       "middle": {
-        "runs": 676,
         "balls": 584,
         "strikeRate": 115.75,
         "economy": 6.95
       },
       "death": {
-        "runs": 578,
         "balls": 402,
         "strikeRate": 143.78,
         "economy": 8.63
@@ -3010,19 +2273,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1781,
         "balls": 1596,
         "strikeRate": 111.59,
         "economy": 6.7
       },
       "middle": {
-        "runs": 1701,
         "balls": 1461,
         "strikeRate": 116.43,
         "economy": 6.99
       },
       "death": {
-        "runs": 444,
         "balls": 267,
         "strikeRate": 166.29,
         "economy": 9.98
@@ -3036,50 +2296,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.68,
     "runs": 1593,
     "innings": 71,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 74,
     "boundaryPct": 21.69,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 992,
         "balls": 797,
         "strikeRate": 124.47,
         "economy": 7.47
       },
       "middle": {
-        "runs": 500,
         "balls": 312,
         "strikeRate": 160.26,
         "economy": 9.62
       },
       "death": {
-        "runs": 101,
         "balls": 48,
         "strikeRate": 210.42,
         "economy": 12.63
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -3097,20 +2331,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 19.3,
     "bowlingStrikeRate": 16.73,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 9,
         "strikeRate": 22.22,
         "economy": 1.33
       },
       "death": {
-        "runs": 60,
         "balls": 48,
         "strikeRate": 125,
         "economy": 7.5
@@ -3118,19 +2344,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 775,
         "balls": 588,
         "strikeRate": 131.8,
         "economy": 7.91
       },
       "middle": {
-        "runs": 509,
         "balls": 366,
         "strikeRate": 139.07,
         "economy": 8.34
       },
       "death": {
-        "runs": 383,
         "balls": 284,
         "strikeRate": 134.86,
         "economy": 8.09
@@ -3151,20 +2374,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 17.91,
     "bowlingStrikeRate": 20.43,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 28,
         "balls": 25,
         "strikeRate": 112,
         "economy": 6.72
       },
       "death": {
-        "runs": 56,
         "balls": 42,
         "strikeRate": 133.33,
         "economy": 8
@@ -3172,19 +2387,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 135,
         "balls": 96,
         "strikeRate": 140.63,
         "economy": 8.44
       },
       "middle": {
-        "runs": 353,
         "balls": 258,
         "strikeRate": 136.82,
         "economy": 8.21
       },
       "death": {
-        "runs": 197,
         "balls": 116,
         "strikeRate": 169.83,
         "economy": 10.19
@@ -3206,39 +2418,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15,
     "battingPhases": {
       "powerplay": {
-        "runs": 15,
         "balls": 18,
         "strikeRate": 83.33,
         "economy": 5
       },
       "middle": {
-        "runs": 87,
         "balls": 63,
         "strikeRate": 138.1,
         "economy": 8.29
       },
       "death": {
-        "runs": 94,
         "balls": 56,
         "strikeRate": 167.86,
         "economy": 10.07
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 12,
         "strikeRate": 58.33,
         "economy": 3.5
       },
       "death": {
-        "runs": 14,
         "balls": 18,
         "strikeRate": 77.78,
         "economy": 4.67
@@ -3252,101 +2453,49 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 132.23,
     "runs": 320,
     "innings": 18,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 21,
     "boundaryPct": 14.88,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 32,
         "balls": 27,
         "strikeRate": 118.52,
         "economy": 7.11
       },
       "middle": {
-        "runs": 200,
         "balls": 158,
         "strikeRate": 126.58,
         "economy": 7.59
       },
       "death": {
-        "runs": 88,
         "balls": 57,
         "strikeRate": 154.39,
         "economy": 9.26
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-04955e84": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 20.13,
     "economyRate": 9.9,
     "wickets": 15,
     "matches": 10,
-    "boundaryPct": null,
     "bowlingStrikeRate": 12.2,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 60,
         "balls": 24,
         "strikeRate": 250,
         "economy": 15
       },
       "middle": {
-        "runs": 118,
         "balls": 84,
         "strikeRate": 140.48,
         "economy": 8.43
       },
       "death": {
-        "runs": 124,
         "balls": 75,
         "strikeRate": 165.33,
         "economy": 9.92
@@ -3360,50 +2509,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 122.21,
     "runs": 1249,
     "innings": 70,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 79,
     "boundaryPct": 16.44,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 446,
         "balls": 391,
         "strikeRate": 114.07,
         "economy": 6.84
       },
       "middle": {
-        "runs": 671,
         "balls": 530,
         "strikeRate": 126.6,
         "economy": 7.6
       },
       "death": {
-        "runs": 132,
         "balls": 101,
         "strikeRate": 130.69,
         "economy": 7.84
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -3414,50 +2537,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 133.33,
     "runs": 92,
     "innings": 5,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 9,
     "boundaryPct": 14.49,
-    "bowlingStrikeRate": null,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 27,
         "balls": 30,
         "strikeRate": 90,
         "economy": 5.4
       },
       "death": {
-        "runs": 65,
         "balls": 39,
         "strikeRate": 166.67,
         "economy": 10
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -3468,50 +2560,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 113.28,
     "runs": 273,
     "innings": 19,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 23,
     "boundaryPct": 10.37,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 51,
         "balls": 51,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 157,
         "balls": 150,
         "strikeRate": 104.67,
         "economy": 6.28
       },
       "death": {
-        "runs": 65,
         "balls": 40,
         "strikeRate": 162.5,
         "economy": 9.75
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -3522,50 +2588,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 120.03,
     "runs": 905,
     "innings": 44,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 46,
     "boundaryPct": 14.32,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 255,
         "balls": 215,
         "strikeRate": 118.6,
         "economy": 7.12
       },
       "middle": {
-        "runs": 521,
         "balls": 455,
         "strikeRate": 114.51,
         "economy": 6.87
       },
       "death": {
-        "runs": 129,
         "balls": 84,
         "strikeRate": 153.57,
         "economy": 9.21
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -3584,19 +2624,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.62,
     "battingPhases": {
       "powerplay": {
-        "runs": 1059,
         "balls": 880,
         "strikeRate": 120.34,
         "economy": 7.22
       },
       "middle": {
-        "runs": 1154,
         "balls": 950,
         "strikeRate": 121.47,
         "economy": 7.29
       },
       "death": {
-        "runs": 340,
         "balls": 221,
         "strikeRate": 153.85,
         "economy": 9.23
@@ -3604,19 +2641,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 42,
         "balls": 36,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 163,
         "balls": 132,
         "strikeRate": 123.48,
         "economy": 7.41
       },
       "death": {
-        "runs": 72,
         "balls": 48,
         "strikeRate": 150,
         "economy": 9
@@ -3638,19 +2672,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 14,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 137,
         "balls": 132,
         "strikeRate": 103.79,
         "economy": 6.23
       },
       "death": {
-        "runs": 146,
         "balls": 73,
         "strikeRate": 200,
         "economy": 12
@@ -3658,19 +2689,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 6,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 44,
         "balls": 38,
         "strikeRate": 115.79,
         "economy": 6.95
       },
       "death": {
-        "runs": 57,
         "balls": 26,
         "strikeRate": 219.23,
         "economy": 13.15
@@ -3691,20 +2719,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 19.51,
     "bowlingStrikeRate": 12.3,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 60,
         "balls": 41,
         "strikeRate": 146.34,
         "economy": 8.78
@@ -3712,19 +2727,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 121,
         "balls": 72,
         "strikeRate": 168.06,
         "economy": 10.08
       },
       "middle": {
-        "runs": 57,
         "balls": 30,
         "strikeRate": 190,
         "economy": 11.4
       },
       "death": {
-        "runs": 49,
         "balls": 21,
         "strikeRate": 233.33,
         "economy": 14
@@ -3746,19 +2758,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.98,
     "battingPhases": {
       "powerplay": {
-        "runs": 87,
         "balls": 70,
         "strikeRate": 124.29,
         "economy": 7.46
       },
       "middle": {
-        "runs": 399,
         "balls": 339,
         "strikeRate": 117.7,
         "economy": 7.06
       },
       "death": {
-        "runs": 634,
         "balls": 461,
         "strikeRate": 137.53,
         "economy": 8.25
@@ -3766,19 +2775,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 980,
         "balls": 633,
         "strikeRate": 154.82,
         "economy": 9.29
       },
       "middle": {
-        "runs": 779,
         "balls": 587,
         "strikeRate": 132.71,
         "economy": 7.96
       },
       "death": {
-        "runs": 523,
         "balls": 336,
         "strikeRate": 155.65,
         "economy": 9.34
@@ -3799,20 +2805,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.14,
     "bowlingStrikeRate": 19.76,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 13,
         "balls": 13,
         "strikeRate": 100,
         "economy": 6
@@ -3820,19 +2818,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 61,
         "balls": 42,
         "strikeRate": 145.24,
         "economy": 8.71
       },
       "middle": {
-        "runs": 314,
         "balls": 258,
         "strikeRate": 121.71,
         "economy": 7.3
       },
       "death": {
-        "runs": 61,
         "balls": 36,
         "strikeRate": 169.44,
         "economy": 10.17
@@ -3846,50 +2841,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 145.99,
     "runs": 200,
     "innings": 5,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 5,
     "boundaryPct": 21.17,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 82,
         "balls": 63,
         "strikeRate": 130.16,
         "economy": 7.81
       },
       "middle": {
-        "runs": 69,
         "balls": 54,
         "strikeRate": 127.78,
         "economy": 7.67
       },
       "death": {
-        "runs": 49,
         "balls": 20,
         "strikeRate": 245,
         "economy": 14.7
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -3908,19 +2877,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 26.34,
     "battingPhases": {
       "powerplay": {
-        "runs": 6,
         "balls": 9,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 391,
         "balls": 388,
         "strikeRate": 100.77,
         "economy": 6.05
       },
       "death": {
-        "runs": 905,
         "balls": 546,
         "strikeRate": 165.75,
         "economy": 9.95
@@ -3928,19 +2894,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 15,
         "balls": 12,
         "strikeRate": 125,
         "economy": 7.5
       },
       "middle": {
-        "runs": 1041,
         "balls": 786,
         "strikeRate": 132.44,
         "economy": 7.95
       },
       "death": {
-        "runs": 55,
         "balls": 45,
         "strikeRate": 122.22,
         "economy": 7.33
@@ -3962,19 +2925,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.03,
     "battingPhases": {
       "powerplay": {
-        "runs": 2775,
         "balls": 2191,
         "strikeRate": 126.65,
         "economy": 7.6
       },
       "middle": {
-        "runs": 2342,
         "balls": 1764,
         "strikeRate": 132.77,
         "economy": 7.97
       },
       "death": {
-        "runs": 465,
         "balls": 265,
         "strikeRate": 175.47,
         "economy": 10.53
@@ -3982,19 +2942,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 127,
         "balls": 84,
         "strikeRate": 151.19,
         "economy": 9.07
       },
       "middle": {
-        "runs": 1864,
         "balls": 1404,
         "strikeRate": 132.76,
         "economy": 7.97
       },
       "death": {
-        "runs": 351,
         "balls": 186,
         "strikeRate": 188.71,
         "economy": 11.32
@@ -4016,39 +2973,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 54,
     "battingPhases": {
       "powerplay": {
-        "runs": 111,
         "balls": 80,
         "strikeRate": 138.75,
         "economy": 8.32
       },
       "middle": {
-        "runs": 133,
         "balls": 119,
         "strikeRate": 111.76,
         "economy": 6.71
       },
       "death": {
-        "runs": 12,
         "balls": 9,
         "strikeRate": 133.33,
         "economy": 8
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 46,
         "balls": 48,
         "strikeRate": 95.83,
         "economy": 5.75
       },
       "death": {
-        "runs": 10,
         "balls": 6,
         "strikeRate": 166.67,
         "economy": 10
@@ -4069,20 +3015,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 18.18,
     "bowlingStrikeRate": 20.89,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 54,
         "balls": 36,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 93,
         "balls": 63,
         "strikeRate": 147.62,
         "economy": 8.86
@@ -4090,19 +3028,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 322,
         "balls": 186,
         "strikeRate": 173.12,
         "economy": 10.39
       },
       "middle": {
-        "runs": 166,
         "balls": 96,
         "strikeRate": 172.92,
         "economy": 10.38
       },
       "death": {
-        "runs": 205,
         "balls": 94,
         "strikeRate": 218.09,
         "economy": 13.09
@@ -4123,20 +3058,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 16.63,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 3,
         "balls": 11,
         "strikeRate": 27.27,
         "economy": 1.64
@@ -4144,19 +3066,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 318,
         "balls": 234,
         "strikeRate": 135.9,
         "economy": 8.15
       },
       "middle": {
-        "runs": 396,
         "balls": 291,
         "strikeRate": 136.08,
         "economy": 8.16
       },
       "death": {
-        "runs": 204,
         "balls": 140,
         "strikeRate": 145.71,
         "economy": 8.74
@@ -4177,20 +3096,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.71,
     "bowlingStrikeRate": 17.21,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 3,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 24,
         "balls": 25,
         "strikeRate": 96,
         "economy": 5.76
@@ -4198,19 +3109,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 419,
         "balls": 318,
         "strikeRate": 131.76,
         "economy": 7.91
       },
       "middle": {
-        "runs": 222,
         "balls": 168,
         "strikeRate": 132.14,
         "economy": 7.93
       },
       "death": {
-        "runs": 276,
         "balls": 168,
         "strikeRate": 164.29,
         "economy": 9.86
@@ -4231,20 +3139,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 17.9,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 4,
         "strikeRate": 25,
         "economy": 1.5
       },
       "death": {
-        "runs": 3,
         "balls": 12,
         "strikeRate": 25,
         "economy": 1.5
@@ -4252,19 +3152,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 100,
         "balls": 54,
         "strikeRate": 185.19,
         "economy": 11.11
       },
       "middle": {
-        "runs": 101,
         "balls": 90,
         "strikeRate": 112.22,
         "economy": 6.73
       },
       "death": {
-        "runs": 75,
         "balls": 35,
         "strikeRate": 214.29,
         "economy": 12.86
@@ -4286,19 +3183,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 43,
     "battingPhases": {
       "powerplay": {
-        "runs": 15,
         "balls": 13,
         "strikeRate": 115.38,
         "economy": 6.92
       },
       "middle": {
-        "runs": 29,
         "balls": 33,
         "strikeRate": 87.88,
         "economy": 5.27
       },
       "death": {
-        "runs": 22,
         "balls": 18,
         "strikeRate": 122.22,
         "economy": 7.33
@@ -4306,19 +3200,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 18,
         "strikeRate": 111.11,
         "economy": 6.67
       },
       "middle": {
-        "runs": 152,
         "balls": 102,
         "strikeRate": 149.02,
         "economy": 8.94
       },
       "death": {
-        "runs": 20,
         "balls": 9,
         "strikeRate": 222.22,
         "economy": 13.33
@@ -4339,20 +3230,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 13.19,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 11,
         "balls": 18,
         "strikeRate": 61.11,
         "economy": 3.67
@@ -4360,19 +3238,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 365,
         "balls": 264,
         "strikeRate": 138.26,
         "economy": 8.3
       },
       "middle": {
-        "runs": 235,
         "balls": 174,
         "strikeRate": 135.06,
         "economy": 8.1
       },
       "death": {
-        "runs": 195,
         "balls": 116,
         "strikeRate": 168.1,
         "economy": 10.09
@@ -4394,19 +3269,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16,
     "battingPhases": {
       "powerplay": {
-        "runs": 396,
         "balls": 398,
         "strikeRate": 99.5,
         "economy": 5.97
       },
       "middle": {
-        "runs": 941,
         "balls": 764,
         "strikeRate": 123.17,
         "economy": 7.39
       },
       "death": {
-        "runs": 283,
         "balls": 177,
         "strikeRate": 159.89,
         "economy": 9.59
@@ -4414,22 +3286,9 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 59,
         "balls": 48,
         "strikeRate": 122.92,
         "economy": 7.38
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -4447,20 +3306,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.79,
     "bowlingStrikeRate": 17.38,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 10,
         "strikeRate": 70,
         "economy": 4.2
       },
       "death": {
-        "runs": 67,
         "balls": 66,
         "strikeRate": 101.52,
         "economy": 6.09
@@ -4468,19 +3319,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 615,
         "balls": 450,
         "strikeRate": 136.67,
         "economy": 8.2
       },
       "middle": {
-        "runs": 1108,
         "balls": 1006,
         "strikeRate": 110.14,
         "economy": 6.61
       },
       "death": {
-        "runs": 351,
         "balls": 247,
         "strikeRate": 142.11,
         "economy": 8.53
@@ -4501,20 +3349,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12,
     "bowlingStrikeRate": 20.72,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 8,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 67,
         "balls": 67,
         "strikeRate": 100,
         "economy": 6
@@ -4522,19 +3362,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 630,
         "balls": 564,
         "strikeRate": 111.7,
         "economy": 6.7
       },
       "middle": {
-        "runs": 275,
         "balls": 221,
         "strikeRate": 124.43,
         "economy": 7.47
       },
       "death": {
-        "runs": 712,
         "balls": 458,
         "strikeRate": 155.46,
         "economy": 9.33
@@ -4548,27 +3385,22 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 121.39,
     "runs": 2996,
     "innings": 125,
-    "bowlingAverage": null,
     "economyRate": 8,
     "wickets": 0,
     "matches": 136,
     "boundaryPct": 12.03,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 284,
         "balls": 292,
         "strikeRate": 97.26,
         "economy": 5.84
       },
       "middle": {
-        "runs": 1589,
         "balls": 1442,
         "strikeRate": 110.19,
         "economy": 6.61
       },
       "death": {
-        "runs": 1123,
         "balls": 734,
         "strikeRate": 153,
         "economy": 9.18
@@ -4576,22 +3408,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 11,
         "balls": 6,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 5,
         "balls": 6,
         "strikeRate": 83.33,
         "economy": 5
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -4609,20 +3433,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.97,
     "bowlingStrikeRate": 25.93,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 12,
         "balls": 14,
         "strikeRate": 85.71,
         "economy": 5.14
       },
       "death": {
-        "runs": 53,
         "balls": 64,
         "strikeRate": 82.81,
         "economy": 4.97
@@ -4630,19 +3446,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2047,
         "balls": 1641,
         "strikeRate": 124.74,
         "economy": 7.48
       },
       "middle": {
-        "runs": 713,
         "balls": 500,
         "strikeRate": 142.6,
         "economy": 8.56
       },
       "death": {
-        "runs": 1017,
         "balls": 556,
         "strikeRate": 182.91,
         "economy": 10.97
@@ -4663,20 +3476,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.29,
     "bowlingStrikeRate": 16.48,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 38,
         "balls": 34,
         "strikeRate": 111.76,
         "economy": 6.71
@@ -4684,19 +3489,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 650,
         "balls": 493,
         "strikeRate": 131.85,
         "economy": 7.91
       },
       "middle": {
-        "runs": 387,
         "balls": 294,
         "strikeRate": 131.63,
         "economy": 7.9
       },
       "death": {
-        "runs": 548,
         "balls": 317,
         "strikeRate": 172.87,
         "economy": 10.37
@@ -4706,7 +3508,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-0c63ea74": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 0,
     "runs": 0,
     "innings": 1,
@@ -4717,20 +3518,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 30,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
@@ -4738,19 +3526,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 66,
         "balls": 36,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 68,
         "balls": 36,
         "strikeRate": 188.89,
         "economy": 11.33
       },
       "death": {
-        "runs": 44,
         "balls": 18,
         "strikeRate": 244.44,
         "economy": 14.67
@@ -4772,19 +3557,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.74,
     "battingPhases": {
       "powerplay": {
-        "runs": 230,
         "balls": 228,
         "strikeRate": 100.88,
         "economy": 6.05
       },
       "middle": {
-        "runs": 4500,
         "balls": 3604,
         "strikeRate": 124.86,
         "economy": 7.49
       },
       "death": {
-        "runs": 5491,
         "balls": 3081,
         "strikeRate": 178.22,
         "economy": 10.69
@@ -4792,19 +3574,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 196,
         "balls": 108,
         "strikeRate": 181.48,
         "economy": 10.89
       },
       "middle": {
-        "runs": 4022,
         "balls": 3037,
         "strikeRate": 132.43,
         "economy": 7.95
       },
       "death": {
-        "runs": 1589,
         "balls": 941,
         "strikeRate": 168.86,
         "economy": 10.13
@@ -4826,19 +3605,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.72,
     "battingPhases": {
       "powerplay": {
-        "runs": 23,
         "balls": 18,
         "strikeRate": 127.78,
         "economy": 7.67
       },
       "middle": {
-        "runs": 510,
         "balls": 470,
         "strikeRate": 108.51,
         "economy": 6.51
       },
       "death": {
-        "runs": 1399,
         "balls": 860,
         "strikeRate": 162.67,
         "economy": 9.76
@@ -4846,19 +3622,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1930,
         "balls": 1476,
         "strikeRate": 130.76,
         "economy": 7.85
       },
       "middle": {
-        "runs": 1945,
         "balls": 1474,
         "strikeRate": 131.95,
         "economy": 7.92
       },
       "death": {
-        "runs": 1683,
         "balls": 1055,
         "strikeRate": 159.53,
         "economy": 9.57
@@ -4872,27 +3645,22 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 123.19,
     "runs": 255,
     "innings": 17,
-    "bowlingAverage": null,
     "economyRate": 9,
     "wickets": 0,
     "matches": 21,
     "boundaryPct": 14.01,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 54,
         "balls": 62,
         "strikeRate": 87.1,
         "economy": 5.23
       },
       "middle": {
-        "runs": 165,
         "balls": 124,
         "strikeRate": 133.06,
         "economy": 7.98
       },
       "death": {
-        "runs": 36,
         "balls": 21,
         "strikeRate": 171.43,
         "economy": 10.29
@@ -4900,19 +3668,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 9,
         "balls": 6,
         "strikeRate": 150,
         "economy": 9
       },
       "middle": {
-        "runs": 17,
         "balls": 12,
         "strikeRate": 141.67,
         "economy": 8.5
       },
       "death": {
-        "runs": 10,
         "balls": 6,
         "strikeRate": 166.67,
         "economy": 10
@@ -4926,50 +3691,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 114.83,
     "runs": 821,
     "innings": 34,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 36,
     "boundaryPct": 14.13,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 290,
         "balls": 247,
         "strikeRate": 117.41,
         "economy": 7.04
       },
       "middle": {
-        "runs": 336,
         "balls": 350,
         "strikeRate": 96,
         "economy": 5.76
       },
       "death": {
-        "runs": 195,
         "balls": 118,
         "strikeRate": 165.25,
         "economy": 9.92
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -4980,50 +3719,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 116.47,
     "runs": 290,
     "innings": 19,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 20,
     "boundaryPct": 17.27,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 202,
         "balls": 176,
         "strikeRate": 114.77,
         "economy": 6.89
       },
       "middle": {
-        "runs": 88,
         "balls": 72,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "death": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -5042,19 +3755,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.47,
     "battingPhases": {
       "powerplay": {
-        "runs": 615,
         "balls": 474,
         "strikeRate": 129.75,
         "economy": 7.78
       },
       "middle": {
-        "runs": 539,
         "balls": 485,
         "strikeRate": 111.13,
         "economy": 6.67
       },
       "death": {
-        "runs": 59,
         "balls": 49,
         "strikeRate": 120.41,
         "economy": 7.22
@@ -5062,19 +3772,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 37,
         "balls": 36,
         "strikeRate": 102.78,
         "economy": 6.17
       },
       "middle": {
-        "runs": 554,
         "balls": 600,
         "strikeRate": 92.33,
         "economy": 5.54
       },
       "death": {
-        "runs": 108,
         "balls": 60,
         "strikeRate": 180,
         "economy": 10.8
@@ -5088,57 +3795,30 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 133.1,
     "runs": 579,
     "innings": 32,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 32,
     "boundaryPct": 17.24,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 207,
         "balls": 163,
         "strikeRate": 126.99,
         "economy": 7.62
       },
       "middle": {
-        "runs": 314,
         "balls": 235,
         "strikeRate": 133.62,
         "economy": 8.02
       },
       "death": {
-        "runs": 58,
         "balls": 37,
         "strikeRate": 156.76,
         "economy": 9.41
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-0df1942c": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 28.57,
     "runs": 2,
     "innings": 2,
@@ -5149,20 +3829,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 30.2,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 2,
         "balls": 7,
         "strikeRate": 28.57,
         "economy": 1.71
@@ -5170,19 +3837,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 40,
         "balls": 30,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 127,
         "balls": 103,
         "strikeRate": 123.3,
         "economy": 7.4
       },
       "death": {
-        "runs": 28,
         "balls": 18,
         "strikeRate": 155.56,
         "economy": 9.33
@@ -5192,51 +3856,20 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-0e2b638b": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 18.17,
     "economyRate": 9.08,
     "wickets": 6,
     "matches": 5,
-    "boundaryPct": null,
     "bowlingStrikeRate": 12,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 85,
         "balls": 60,
         "strikeRate": 141.67,
         "economy": 8.5
       },
       "death": {
-        "runs": 24,
         "balls": 12,
         "strikeRate": 200,
         "economy": 12
@@ -5257,20 +3890,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.53,
     "bowlingStrikeRate": 21.75,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 17,
         "balls": 16,
         "strikeRate": 106.25,
         "economy": 6.38
       },
       "death": {
-        "runs": 17,
         "balls": 22,
         "strikeRate": 77.27,
         "economy": 4.64
@@ -5278,19 +3903,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 140,
         "balls": 90,
         "strikeRate": 155.56,
         "economy": 9.33
       },
       "middle": {
-        "runs": 72,
         "balls": 48,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 73,
         "balls": 36,
         "strikeRate": 202.78,
         "economy": 12.17
@@ -5311,20 +3933,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 18,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
@@ -5332,22 +3941,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 35,
         "balls": 24,
         "strikeRate": 145.83,
         "economy": 8.75
       },
       "middle": {
-        "runs": 119,
         "balls": 84,
         "strikeRate": 141.67,
         "economy": 8.5
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -5366,39 +3967,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 96,
     "battingPhases": {
       "powerplay": {
-        "runs": 1054,
         "balls": 580,
         "strikeRate": 181.72,
         "economy": 10.9
       },
       "middle": {
-        "runs": 351,
         "balls": 233,
         "strikeRate": 150.64,
         "economy": 9.04
       },
       "death": {
-        "runs": 8,
         "balls": 9,
         "strikeRate": 88.89,
         "economy": 5.33
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 107,
         "balls": 66,
         "strikeRate": 162.12,
         "economy": 9.73
       },
       "death": {
-        "runs": 50,
         "balls": 30,
         "strikeRate": 166.67,
         "economy": 10
@@ -5419,20 +4009,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 18,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 4,
         "balls": 4,
         "strikeRate": 100,
         "economy": 6
@@ -5440,19 +4017,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 289,
         "balls": 168,
         "strikeRate": 172.02,
         "economy": 10.32
       },
       "middle": {
-        "runs": 70,
         "balls": 48,
         "strikeRate": 145.83,
         "economy": 8.75
       },
       "death": {
-        "runs": 76,
         "balls": 54,
         "strikeRate": 140.74,
         "economy": 8.44
@@ -5474,19 +4048,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 6,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 77,
         "balls": 59,
         "strikeRate": 130.51,
         "economy": 7.83
       },
       "death": {
-        "runs": 240,
         "balls": 137,
         "strikeRate": 175.18,
         "economy": 10.51
@@ -5494,19 +4065,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 22,
         "balls": 18,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "middle": {
-        "runs": 270,
         "balls": 191,
         "strikeRate": 141.36,
         "economy": 8.48
       },
       "death": {
-        "runs": 203,
         "balls": 133,
         "strikeRate": 152.63,
         "economy": 9.16
@@ -5527,20 +4095,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.15,
     "bowlingStrikeRate": 16.16,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 35,
         "balls": 27,
         "strikeRate": 129.63,
         "economy": 7.78
       },
       "death": {
-        "runs": 131,
         "balls": 138,
         "strikeRate": 94.93,
         "economy": 5.7
@@ -5548,19 +4108,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 931,
         "balls": 672,
         "strikeRate": 138.54,
         "economy": 8.31
       },
       "middle": {
-        "runs": 1192,
         "balls": 914,
         "strikeRate": 130.42,
         "economy": 7.82
       },
       "death": {
-        "runs": 1504,
         "balls": 887,
         "strikeRate": 169.56,
         "economy": 10.17
@@ -5581,20 +4138,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5,
     "bowlingStrikeRate": 13.2,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 5,
         "strikeRate": 80,
         "economy": 4.8
       },
       "death": {
-        "runs": 18,
         "balls": 15,
         "strikeRate": 120,
         "economy": 7.2
@@ -5602,19 +4151,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 22,
         "balls": 12,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 86,
         "balls": 90,
         "strikeRate": 95.56,
         "economy": 5.73
       },
       "death": {
-        "runs": 33,
         "balls": 30,
         "strikeRate": 110,
         "economy": 6.6
@@ -5628,50 +4174,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 125.53,
     "runs": 1726,
     "innings": 76,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 85,
     "boundaryPct": 14.91,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 387,
         "balls": 333,
         "strikeRate": 116.22,
         "economy": 6.97
       },
       "middle": {
-        "runs": 1043,
         "balls": 858,
         "strikeRate": 121.56,
         "economy": 7.29
       },
       "death": {
-        "runs": 296,
         "balls": 184,
         "strikeRate": 160.87,
         "economy": 9.65
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -5682,50 +4202,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 117.06,
     "runs": 2100,
     "innings": 116,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 133,
     "boundaryPct": 11.26,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 496,
         "balls": 469,
         "strikeRate": 105.76,
         "economy": 6.35
       },
       "middle": {
-        "runs": 1089,
         "balls": 974,
         "strikeRate": 111.81,
         "economy": 6.71
       },
       "death": {
-        "runs": 515,
         "balls": 351,
         "strikeRate": 146.72,
         "economy": 8.8
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -5744,19 +4238,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 28.8,
     "battingPhases": {
       "powerplay": {
-        "runs": 25,
         "balls": 32,
         "strikeRate": 78.13,
         "economy": 4.69
       },
       "middle": {
-        "runs": 186,
         "balls": 178,
         "strikeRate": 104.49,
         "economy": 6.27
       },
       "death": {
-        "runs": 94,
         "balls": 80,
         "strikeRate": 117.5,
         "economy": 7.05
@@ -5764,19 +4255,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 153,
         "balls": 96,
         "strikeRate": 159.38,
         "economy": 9.56
       },
       "middle": {
-        "runs": 226,
         "balls": 168,
         "strikeRate": 134.52,
         "economy": 8.07
       },
       "death": {
-        "runs": 46,
         "balls": 24,
         "strikeRate": 191.67,
         "economy": 11.5
@@ -5797,20 +4285,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.35,
     "bowlingStrikeRate": 18.13,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 15,
         "balls": 23,
         "strikeRate": 65.22,
         "economy": 3.91
@@ -5818,19 +4293,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 710,
         "balls": 456,
         "strikeRate": 155.7,
         "economy": 9.34
       },
       "middle": {
-        "runs": 395,
         "balls": 248,
         "strikeRate": 159.27,
         "economy": 9.56
       },
       "death": {
-        "runs": 739,
         "balls": 384,
         "strikeRate": 192.45,
         "economy": 11.55
@@ -5851,40 +4323,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.06,
     "bowlingStrikeRate": 39,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 13,
         "balls": 16,
         "strikeRate": 81.25,
         "economy": 4.88
       },
       "death": {
-        "runs": 10,
         "balls": 17,
         "strikeRate": 58.82,
         "economy": 3.53
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 100,
         "balls": 72,
         "strikeRate": 138.89,
         "economy": 8.33
       },
       "death": {
-        "runs": 11,
         "balls": 6,
         "strikeRate": 183.33,
         "economy": 11
@@ -5906,19 +4362,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 26.86,
     "battingPhases": {
       "powerplay": {
-        "runs": 762,
         "balls": 632,
         "strikeRate": 120.57,
         "economy": 7.23
       },
       "middle": {
-        "runs": 3101,
         "balls": 2173,
         "strikeRate": 142.71,
         "economy": 8.56
       },
       "death": {
-        "runs": 768,
         "balls": 481,
         "strikeRate": 159.67,
         "economy": 9.58
@@ -5926,19 +4379,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 456,
         "balls": 366,
         "strikeRate": 124.59,
         "economy": 7.48
       },
       "middle": {
-        "runs": 250,
         "balls": 174,
         "strikeRate": 143.68,
         "economy": 8.62
       },
       "death": {
-        "runs": 60,
         "balls": 24,
         "strikeRate": 250,
         "economy": 15
@@ -5952,50 +4402,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 132.85,
     "runs": 554,
     "innings": 34,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 46,
     "boundaryPct": 15.83,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 64,
         "balls": 71,
         "strikeRate": 90.14,
         "economy": 5.41
       },
       "middle": {
-        "runs": 245,
         "balls": 198,
         "strikeRate": 123.74,
         "economy": 7.42
       },
       "death": {
-        "runs": 245,
         "balls": 148,
         "strikeRate": 165.54,
         "economy": 9.93
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -6013,20 +4437,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.23,
     "bowlingStrikeRate": 16.15,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 11,
         "strikeRate": 36.36,
         "economy": 2.18
       },
       "death": {
-        "runs": 65,
         "balls": 72,
         "strikeRate": 90.28,
         "economy": 5.42
@@ -6034,19 +4450,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1959,
         "balls": 1413,
         "strikeRate": 138.64,
         "economy": 8.32
       },
       "middle": {
-        "runs": 1392,
         "balls": 1021,
         "strikeRate": 136.34,
         "economy": 8.18
       },
       "death": {
-        "runs": 1384,
         "balls": 877,
         "strikeRate": 157.81,
         "economy": 9.47
@@ -6060,50 +4473,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 119.16,
     "runs": 1051,
     "innings": 49,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 54,
     "boundaryPct": 14.51,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 542,
         "balls": 475,
         "strikeRate": 114.11,
         "economy": 6.85
       },
       "middle": {
-        "runs": 403,
         "balls": 342,
         "strikeRate": 117.84,
         "economy": 7.07
       },
       "death": {
-        "runs": 106,
         "balls": 65,
         "strikeRate": 163.08,
         "economy": 9.78
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -6121,20 +4508,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.59,
     "bowlingStrikeRate": 19.37,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 23,
         "strikeRate": 69.57,
         "economy": 4.17
       },
       "death": {
-        "runs": 162,
         "balls": 140,
         "strikeRate": 115.71,
         "economy": 6.94
@@ -6142,19 +4521,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1565,
         "balls": 1248,
         "strikeRate": 125.4,
         "economy": 7.52
       },
       "middle": {
-        "runs": 674,
         "balls": 489,
         "strikeRate": 137.83,
         "economy": 8.27
       },
       "death": {
-        "runs": 1178,
         "balls": 704,
         "strikeRate": 167.33,
         "economy": 10.04
@@ -6175,20 +4551,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.64,
     "bowlingStrikeRate": 18.85,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 3,
         "strikeRate": 200,
         "economy": 12
       },
       "death": {
-        "runs": 40,
         "balls": 44,
         "strikeRate": 90.91,
         "economy": 5.45
@@ -6196,19 +4564,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 217,
         "balls": 162,
         "strikeRate": 133.95,
         "economy": 8.04
       },
       "middle": {
-        "runs": 292,
         "balls": 186,
         "strikeRate": 156.99,
         "economy": 9.42
       },
       "death": {
-        "runs": 228,
         "balls": 161,
         "strikeRate": 141.61,
         "economy": 8.5
@@ -6222,57 +4587,30 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 142.84,
     "runs": 2754,
     "innings": 134,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 146,
     "boundaryPct": 20.59,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 268,
         "balls": 224,
         "strikeRate": 119.64,
         "economy": 7.18
       },
       "middle": {
-        "runs": 1666,
         "balls": 1281,
         "strikeRate": 130.05,
         "economy": 7.8
       },
       "death": {
-        "runs": 820,
         "balls": 423,
         "strikeRate": 193.85,
         "economy": 11.63
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-14a39be7": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 57.14,
     "runs": 8,
     "innings": 2,
@@ -6283,20 +4621,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 15.3,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 5,
         "strikeRate": 40,
         "economy": 2.4
       },
       "death": {
-        "runs": 6,
         "balls": 9,
         "strikeRate": 66.67,
         "economy": 4
@@ -6304,19 +4634,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 105,
         "balls": 78,
         "strikeRate": 134.62,
         "economy": 8.08
       },
       "middle": {
-        "runs": 230,
         "balls": 138,
         "strikeRate": 166.67,
         "economy": 10
       },
       "death": {
-        "runs": 255,
         "balls": 136,
         "strikeRate": 187.5,
         "economy": 11.25
@@ -6338,39 +4665,23 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 3,
     "battingPhases": {
       "powerplay": {
-        "runs": 237,
         "balls": 225,
         "strikeRate": 105.33,
         "economy": 6.32
       },
       "middle": {
-        "runs": 1116,
         "balls": 667,
         "strikeRate": 167.32,
         "economy": 10.04
       },
       "death": {
-        "runs": 218,
         "balls": 104,
         "strikeRate": 209.62,
         "economy": 12.58
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 8,
         "balls": 3,
         "strikeRate": 266.67,
         "economy": 16
@@ -6392,39 +4703,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 25.16,
     "battingPhases": {
       "powerplay": {
-        "runs": 532,
         "balls": 372,
         "strikeRate": 143.01,
         "economy": 8.58
       },
       "middle": {
-        "runs": 357,
         "balls": 250,
         "strikeRate": 142.8,
         "economy": 8.57
       },
       "death": {
-        "runs": 91,
         "balls": 65,
         "strikeRate": 140,
         "economy": 8.4
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1022,
         "balls": 805,
         "strikeRate": 126.96,
         "economy": 7.62
       },
       "death": {
-        "runs": 184,
         "balls": 126,
         "strikeRate": 146.03,
         "economy": 8.76
@@ -6438,50 +4738,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 99.19,
     "runs": 123,
     "innings": 8,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 10,
     "boundaryPct": 12.9,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 44,
         "balls": 54,
         "strikeRate": 81.48,
         "economy": 4.89
       },
       "middle": {
-        "runs": 58,
         "balls": 57,
         "strikeRate": 101.75,
         "economy": 6.11
       },
       "death": {
-        "runs": 21,
         "balls": 13,
         "strikeRate": 161.54,
         "economy": 9.69
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -6499,20 +4773,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.86,
     "bowlingStrikeRate": 15.07,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 13,
         "strikeRate": 15.38,
         "economy": 0.92
       },
       "death": {
-        "runs": 12,
         "balls": 22,
         "strikeRate": 54.55,
         "economy": 3.27
@@ -6520,19 +4786,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 206,
         "balls": 168,
         "strikeRate": 122.62,
         "economy": 7.36
       },
       "middle": {
-        "runs": 150,
         "balls": 120,
         "strikeRate": 125,
         "economy": 7.5
       },
       "death": {
-        "runs": 235,
         "balls": 149,
         "strikeRate": 157.72,
         "economy": 9.46
@@ -6554,19 +4817,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 10.25,
     "battingPhases": {
       "powerplay": {
-        "runs": 124,
         "balls": 99,
         "strikeRate": 125.25,
         "economy": 7.52
       },
       "middle": {
-        "runs": 516,
         "balls": 410,
         "strikeRate": 125.85,
         "economy": 7.55
       },
       "death": {
-        "runs": 538,
         "balls": 327,
         "strikeRate": 164.53,
         "economy": 9.87
@@ -6574,19 +4834,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 44,
         "balls": 24,
         "strikeRate": 183.33,
         "economy": 11
       },
       "death": {
-        "runs": 19,
         "balls": 16,
         "strikeRate": 118.75,
         "economy": 7.13
@@ -6600,50 +4857,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 142.19,
     "runs": 364,
     "innings": 15,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 19,
     "boundaryPct": 19.14,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 88,
         "balls": 60,
         "strikeRate": 146.67,
         "economy": 8.8
       },
       "middle": {
-        "runs": 211,
         "balls": 156,
         "strikeRate": 135.26,
         "economy": 8.12
       },
       "death": {
-        "runs": 65,
         "balls": 40,
         "strikeRate": 162.5,
         "economy": 9.75
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -6661,20 +4892,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.56,
     "bowlingStrikeRate": 16.95,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 21,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 53,
         "balls": 96,
         "strikeRate": 55.21,
         "economy": 3.31
@@ -6682,19 +4905,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 150,
         "balls": 115,
         "strikeRate": 130.43,
         "economy": 7.83
       },
       "middle": {
-        "runs": 3697,
         "balls": 3075,
         "strikeRate": 120.23,
         "economy": 7.21
       },
       "death": {
-        "runs": 753,
         "balls": 523,
         "strikeRate": 143.98,
         "economy": 8.64
@@ -6708,50 +4928,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 126.53,
     "runs": 1283,
     "innings": 76,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 84,
     "boundaryPct": 13.02,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 132,
         "balls": 124,
         "strikeRate": 106.45,
         "economy": 6.39
       },
       "middle": {
-        "runs": 721,
         "balls": 607,
         "strikeRate": 118.78,
         "economy": 7.13
       },
       "death": {
-        "runs": 430,
         "balls": 283,
         "strikeRate": 151.94,
         "economy": 9.12
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -6769,20 +4963,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 21.88,
     "bowlingStrikeRate": 21.86,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 3,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 47,
         "balls": 29,
         "strikeRate": 162.07,
         "economy": 9.72
@@ -6790,19 +4976,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 92,
         "balls": 50,
         "strikeRate": 184,
         "economy": 11.04
       },
       "middle": {
-        "runs": 219,
         "balls": 156,
         "strikeRate": 140.38,
         "economy": 8.42
       },
       "death": {
-        "runs": 210,
         "balls": 100,
         "strikeRate": 210,
         "economy": 12.6
@@ -6824,19 +5007,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.92,
     "battingPhases": {
       "powerplay": {
-        "runs": 227,
         "balls": 209,
         "strikeRate": 108.61,
         "economy": 6.52
       },
       "middle": {
-        "runs": 959,
         "balls": 797,
         "strikeRate": 120.33,
         "economy": 7.22
       },
       "death": {
-        "runs": 855,
         "balls": 570,
         "strikeRate": 150,
         "economy": 9
@@ -6844,19 +5024,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1010,
         "balls": 864,
         "strikeRate": 116.9,
         "economy": 7.01
       },
       "middle": {
-        "runs": 3546,
         "balls": 3024,
         "strikeRate": 117.26,
         "economy": 7.04
       },
       "death": {
-        "runs": 643,
         "balls": 474,
         "strikeRate": 135.65,
         "economy": 8.14
@@ -6878,19 +5055,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 25.06,
     "battingPhases": {
       "powerplay": {
-        "runs": 903,
         "balls": 971,
         "strikeRate": 93,
         "economy": 5.58
       },
       "middle": {
-        "runs": 5177,
         "balls": 4399,
         "strikeRate": 117.69,
         "economy": 7.06
       },
       "death": {
-        "runs": 2776,
         "balls": 1699,
         "strikeRate": 163.39,
         "economy": 9.8
@@ -6898,19 +5072,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 755,
         "balls": 653,
         "strikeRate": 115.62,
         "economy": 6.94
       },
       "middle": {
-        "runs": 2006,
         "balls": 1689,
         "strikeRate": 118.77,
         "economy": 7.13
       },
       "death": {
-        "runs": 320,
         "balls": 239,
         "strikeRate": 133.89,
         "economy": 8.03
@@ -6931,20 +5102,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.98,
     "bowlingStrikeRate": 19.69,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 39,
         "balls": 42,
         "strikeRate": 92.86,
         "economy": 5.57
       },
       "death": {
-        "runs": 102,
         "balls": 64,
         "strikeRate": 159.38,
         "economy": 9.56
@@ -6952,19 +5115,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 53,
         "balls": 36,
         "strikeRate": 147.22,
         "economy": 8.83
       },
       "middle": {
-        "runs": 518,
         "balls": 354,
         "strikeRate": 146.33,
         "economy": 8.78
       },
       "death": {
-        "runs": 259,
         "balls": 122,
         "strikeRate": 212.3,
         "economy": 12.74
@@ -6978,50 +5138,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 104.22,
     "runs": 494,
     "innings": 22,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 23,
     "boundaryPct": 13.5,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 253,
         "balls": 248,
         "strikeRate": 102.02,
         "economy": 6.12
       },
       "middle": {
-        "runs": 211,
         "balls": 200,
         "strikeRate": 105.5,
         "economy": 6.33
       },
       "death": {
-        "runs": 30,
         "balls": 26,
         "strikeRate": 115.38,
         "economy": 6.92
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -7032,50 +5166,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 143.73,
     "runs": 1387,
     "innings": 75,
-    "bowlingAverage": null,
     "economyRate": 10,
     "wickets": 0,
     "matches": 76,
     "boundaryPct": 20.1,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 737,
         "balls": 500,
         "strikeRate": 147.4,
         "economy": 8.84
       },
       "middle": {
-        "runs": 566,
         "balls": 397,
         "strikeRate": 142.57,
         "economy": 8.55
       },
       "death": {
-        "runs": 84,
         "balls": 68,
         "strikeRate": 123.53,
         "economy": 7.41
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 10,
         "balls": 6,
         "strikeRate": 166.67,
         "economy": 10
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -7086,50 +5202,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 140.17,
     "runs": 4372,
     "innings": 168,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 174,
     "boundaryPct": 19.43,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1576,
         "balls": 1086,
         "strikeRate": 145.12,
         "economy": 8.71
       },
       "middle": {
-        "runs": 2303,
         "balls": 1717,
         "strikeRate": 134.13,
         "economy": 8.05
       },
       "death": {
-        "runs": 493,
         "balls": 316,
         "strikeRate": 156.01,
         "economy": 9.36
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -7140,50 +5230,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 98.8,
     "runs": 82,
     "innings": 7,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 7,
     "boundaryPct": 7.23,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 28,
         "strikeRate": 71.43,
         "economy": 4.29
       },
       "middle": {
-        "runs": 52,
         "balls": 42,
         "strikeRate": 123.81,
         "economy": 7.43
       },
       "death": {
-        "runs": 10,
         "balls": 13,
         "strikeRate": 76.92,
         "economy": 4.62
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -7201,20 +5265,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.16,
     "bowlingStrikeRate": 14.52,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 29,
         "balls": 35,
         "strikeRate": 82.86,
         "economy": 4.97
       },
       "death": {
-        "runs": 109,
         "balls": 64,
         "strikeRate": 170.31,
         "economy": 10.22
@@ -7222,19 +5278,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 172,
         "balls": 132,
         "strikeRate": 130.3,
         "economy": 7.82
       },
       "middle": {
-        "runs": 151,
         "balls": 102,
         "strikeRate": 148.04,
         "economy": 8.88
       },
       "death": {
-        "runs": 179,
         "balls": 100,
         "strikeRate": 179,
         "economy": 10.74
@@ -7248,50 +5301,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 112.93,
     "runs": 297,
     "innings": 24,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 31,
     "boundaryPct": 13.31,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 37,
         "balls": 38,
         "strikeRate": 97.37,
         "economy": 5.84
       },
       "middle": {
-        "runs": 164,
         "balls": 148,
         "strikeRate": 110.81,
         "economy": 6.65
       },
       "death": {
-        "runs": 96,
         "balls": 77,
         "strikeRate": 124.68,
         "economy": 7.48
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -7310,19 +5337,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 3,
         "strikeRate": 266.67,
         "economy": 16
       },
       "middle": {
-        "runs": 72,
         "balls": 63,
         "strikeRate": 114.29,
         "economy": 6.86
       },
       "death": {
-        "runs": 122,
         "balls": 74,
         "strikeRate": 164.86,
         "economy": 9.89
@@ -7330,19 +5354,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 86,
         "balls": 66,
         "strikeRate": 130.3,
         "economy": 7.82
       },
       "middle": {
-        "runs": 208,
         "balls": 168,
         "strikeRate": 123.81,
         "economy": 7.43
       },
       "death": {
-        "runs": 43,
         "balls": 24,
         "strikeRate": 179.17,
         "economy": 10.75
@@ -7364,19 +5385,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.28,
     "battingPhases": {
       "powerplay": {
-        "runs": 991,
         "balls": 690,
         "strikeRate": 143.62,
         "economy": 8.62
       },
       "middle": {
-        "runs": 313,
         "balls": 184,
         "strikeRate": 170.11,
         "economy": 10.21
       },
       "death": {
-        "runs": 119,
         "balls": 85,
         "strikeRate": 140,
         "economy": 8.4
@@ -7384,19 +5402,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 307,
         "balls": 240,
         "strikeRate": 127.92,
         "economy": 7.67
       },
       "middle": {
-        "runs": 742,
         "balls": 597,
         "strikeRate": 124.29,
         "economy": 7.46
       },
       "death": {
-        "runs": 152,
         "balls": 78,
         "strikeRate": 194.87,
         "economy": 11.69
@@ -7418,19 +5433,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.87,
     "battingPhases": {
       "powerplay": {
-        "runs": 142,
         "balls": 116,
         "strikeRate": 122.41,
         "economy": 7.34
       },
       "middle": {
-        "runs": 713,
         "balls": 614,
         "strikeRate": 116.12,
         "economy": 6.97
       },
       "death": {
-        "runs": 307,
         "balls": 184,
         "strikeRate": 166.85,
         "economy": 10.01
@@ -7438,19 +5450,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 257,
         "balls": 174,
         "strikeRate": 147.7,
         "economy": 8.86
       },
       "middle": {
-        "runs": 840,
         "balls": 606,
         "strikeRate": 138.61,
         "economy": 8.32
       },
       "death": {
-        "runs": 222,
         "balls": 151,
         "strikeRate": 147.02,
         "economy": 8.82
@@ -7471,20 +5480,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.56,
     "bowlingStrikeRate": 20.03,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 11,
         "strikeRate": 36.36,
         "economy": 2.18
       },
       "death": {
-        "runs": 38,
         "balls": 50,
         "strikeRate": 76,
         "economy": 4.56
@@ -7492,19 +5493,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1280,
         "balls": 960,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 959,
         "balls": 714,
         "strikeRate": 134.31,
         "economy": 8.06
       },
       "death": {
-        "runs": 249,
         "balls": 169,
         "strikeRate": 147.34,
         "economy": 8.84
@@ -7518,50 +5516,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 160.71,
     "runs": 315,
     "innings": 20,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 24,
     "boundaryPct": 21.94,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 17,
         "balls": 16,
         "strikeRate": 106.25,
         "economy": 6.38
       },
       "middle": {
-        "runs": 155,
         "balls": 103,
         "strikeRate": 150.49,
         "economy": 9.03
       },
       "death": {
-        "runs": 143,
         "balls": 77,
         "strikeRate": 185.71,
         "economy": 11.14
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -7579,20 +5551,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.16,
     "bowlingStrikeRate": 20.74,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 11,
         "balls": 20,
         "strikeRate": 55,
         "economy": 3.3
       },
       "death": {
-        "runs": 219,
         "balls": 202,
         "strikeRate": 108.42,
         "economy": 6.5
@@ -7600,19 +5564,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2028,
         "balls": 1548,
         "strikeRate": 131.01,
         "economy": 7.86
       },
       "middle": {
-        "runs": 1225,
         "balls": 908,
         "strikeRate": 134.91,
         "economy": 8.09
       },
       "death": {
-        "runs": 1359,
         "balls": 780,
         "strikeRate": 174.23,
         "economy": 10.45
@@ -7634,19 +5595,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.73,
     "battingPhases": {
       "powerplay": {
-        "runs": 43,
         "balls": 27,
         "strikeRate": 159.26,
         "economy": 9.56
       },
       "middle": {
-        "runs": 161,
         "balls": 123,
         "strikeRate": 130.89,
         "economy": 7.85
       },
       "death": {
-        "runs": 132,
         "balls": 102,
         "strikeRate": 129.41,
         "economy": 7.76
@@ -7654,19 +5612,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 320,
         "balls": 222,
         "strikeRate": 144.14,
         "economy": 8.65
       },
       "middle": {
-        "runs": 88,
         "balls": 96,
         "strikeRate": 91.67,
         "economy": 5.5
       },
       "death": {
-        "runs": 306,
         "balls": 184,
         "strikeRate": 166.3,
         "economy": 9.98
@@ -7680,50 +5635,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 116.36,
     "runs": 2354,
     "innings": 118,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 121,
     "boundaryPct": 15.27,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 860,
         "balls": 823,
         "strikeRate": 104.5,
         "economy": 6.27
       },
       "middle": {
-        "runs": 1320,
         "balls": 1075,
         "strikeRate": 122.79,
         "economy": 7.37
       },
       "death": {
-        "runs": 174,
         "balls": 125,
         "strikeRate": 139.2,
         "economy": 8.35
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -7741,20 +5670,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.61,
     "bowlingStrikeRate": 17.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 3,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 54,
         "balls": 63,
         "strikeRate": 85.71,
         "economy": 5.14
@@ -7762,19 +5683,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 207,
         "balls": 180,
         "strikeRate": 115,
         "economy": 6.9
       },
       "middle": {
-        "runs": 299,
         "balls": 234,
         "strikeRate": 127.78,
         "economy": 7.67
       },
       "death": {
-        "runs": 71,
         "balls": 41,
         "strikeRate": 173.17,
         "economy": 10.39
@@ -7796,19 +5714,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.07,
     "battingPhases": {
       "powerplay": {
-        "runs": 887,
         "balls": 903,
         "strikeRate": 98.23,
         "economy": 5.89
       },
       "middle": {
-        "runs": 3861,
         "balls": 3427,
         "strikeRate": 112.66,
         "economy": 6.76
       },
       "death": {
-        "runs": 2507,
         "balls": 1487,
         "strikeRate": 168.59,
         "economy": 10.12
@@ -7816,19 +5731,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 87,
         "balls": 68,
         "strikeRate": 127.94,
         "economy": 7.68
       },
       "middle": {
-        "runs": 3967,
         "balls": 3187,
         "strikeRate": 124.47,
         "economy": 7.47
       },
       "death": {
-        "runs": 1256,
         "balls": 938,
         "strikeRate": 133.9,
         "economy": 8.03
@@ -7849,20 +5761,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.04,
     "bowlingStrikeRate": 21.87,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 30,
         "strikeRate": 53.33,
         "economy": 3.2
       },
       "death": {
-        "runs": 65,
         "balls": 69,
         "strikeRate": 94.2,
         "economy": 5.65
@@ -7870,19 +5774,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 24,
         "strikeRate": 83.33,
         "economy": 5
       },
       "middle": {
-        "runs": 776,
         "balls": 600,
         "strikeRate": 129.33,
         "economy": 7.76
       },
       "death": {
-        "runs": 81,
         "balls": 54,
         "strikeRate": 150,
         "economy": 9
@@ -7892,7 +5793,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-1ab33ebf": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 62.5,
     "runs": 10,
     "innings": 2,
@@ -7903,20 +5803,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.25,
     "bowlingStrikeRate": 42,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 9,
         "balls": 14,
         "strikeRate": 64.29,
         "economy": 3.86
@@ -7924,22 +5816,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 12,
         "balls": 18,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 77,
         "balls": 66,
         "strikeRate": 116.67,
         "economy": 7
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -7958,19 +5842,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.66,
     "battingPhases": {
       "powerplay": {
-        "runs": 42,
         "balls": 24,
         "strikeRate": 175,
         "economy": 10.5
       },
       "middle": {
-        "runs": 127,
         "balls": 118,
         "strikeRate": 107.63,
         "economy": 6.46
       },
       "death": {
-        "runs": 408,
         "balls": 302,
         "strikeRate": 135.1,
         "economy": 8.11
@@ -7978,19 +5859,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1396,
         "balls": 1182,
         "strikeRate": 118.1,
         "economy": 7.09
       },
       "middle": {
-        "runs": 1278,
         "balls": 1065,
         "strikeRate": 120,
         "economy": 7.2
       },
       "death": {
-        "runs": 1216,
         "balls": 791,
         "strikeRate": 153.73,
         "economy": 9.22
@@ -8011,20 +5889,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.72,
     "bowlingStrikeRate": 18.09,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 117,
         "balls": 136,
         "strikeRate": 86.03,
         "economy": 5.16
       },
       "death": {
-        "runs": 386,
         "balls": 312,
         "strikeRate": 123.72,
         "economy": 7.42
@@ -8032,19 +5902,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2246,
         "balls": 1890,
         "strikeRate": 118.84,
         "economy": 7.13
       },
       "middle": {
-        "runs": 499,
         "balls": 336,
         "strikeRate": 148.51,
         "economy": 8.91
       },
       "death": {
-        "runs": 1705,
         "balls": 1030,
         "strikeRate": 165.53,
         "economy": 9.93
@@ -8054,7 +5921,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-1d0a7a62": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 53.85,
     "runs": 7,
     "innings": 3,
@@ -8065,20 +5931,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.69,
     "bowlingStrikeRate": 36,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 7,
         "balls": 13,
         "strikeRate": 53.85,
         "economy": 3.23
@@ -8086,19 +5939,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 79,
         "balls": 54,
         "strikeRate": 146.3,
         "economy": 8.78
       },
       "middle": {
-        "runs": 119,
         "balls": 66,
         "strikeRate": 180.3,
         "economy": 10.82
       },
       "death": {
-        "runs": 38,
         "balls": 24,
         "strikeRate": 158.33,
         "economy": 9.5
@@ -8119,20 +5969,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 23.4,
     "bowlingStrikeRate": 21.67,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 31,
         "balls": 25,
         "strikeRate": 124,
         "economy": 7.44
       },
       "death": {
-        "runs": 120,
         "balls": 69,
         "strikeRate": 173.91,
         "economy": 10.43
@@ -8140,19 +5982,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 422,
         "balls": 306,
         "strikeRate": 137.91,
         "economy": 8.27
       },
       "middle": {
-        "runs": 485,
         "balls": 432,
         "strikeRate": 112.27,
         "economy": 6.74
       },
       "death": {
-        "runs": 552,
         "balls": 302,
         "strikeRate": 182.78,
         "economy": 10.97
@@ -8174,19 +6013,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.63,
     "battingPhases": {
       "powerplay": {
-        "runs": 1649,
         "balls": 1682,
         "strikeRate": 98.04,
         "economy": 5.88
       },
       "middle": {
-        "runs": 2681,
         "balls": 2262,
         "strikeRate": 118.52,
         "economy": 7.11
       },
       "death": {
-        "runs": 888,
         "balls": 523,
         "strikeRate": 169.79,
         "economy": 10.19
@@ -8194,19 +6030,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 920,
         "balls": 876,
         "strikeRate": 105.02,
         "economy": 6.3
       },
       "middle": {
-        "runs": 1883,
         "balls": 1727,
         "strikeRate": 109.03,
         "economy": 6.54
       },
       "death": {
-        "runs": 192,
         "balls": 114,
         "strikeRate": 168.42,
         "economy": 10.11
@@ -8228,39 +6061,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.67,
     "battingPhases": {
       "powerplay": {
-        "runs": 38,
         "balls": 33,
         "strikeRate": 115.15,
         "economy": 6.91
       },
       "middle": {
-        "runs": 74,
         "balls": 67,
         "strikeRate": 110.45,
         "economy": 6.63
       },
       "death": {
-        "runs": 46,
         "balls": 21,
         "strikeRate": 219.05,
         "economy": 13.14
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 52,
         "balls": 36,
         "strikeRate": 144.44,
         "economy": 8.67
       },
       "death": {
-        "runs": 5,
         "balls": 11,
         "strikeRate": 45.45,
         "economy": 2.73
@@ -8282,19 +6104,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.07,
     "battingPhases": {
       "powerplay": {
-        "runs": 106,
         "balls": 86,
         "strikeRate": 123.26,
         "economy": 7.4
       },
       "middle": {
-        "runs": 365,
         "balls": 365,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 848,
         "balls": 669,
         "strikeRate": 126.76,
         "economy": 7.61
@@ -8302,19 +6121,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2781,
         "balls": 2652,
         "strikeRate": 104.86,
         "economy": 6.29
       },
       "middle": {
-        "runs": 533,
         "balls": 450,
         "strikeRate": 118.44,
         "economy": 7.11
       },
       "death": {
-        "runs": 2233,
         "balls": 1475,
         "strikeRate": 151.39,
         "economy": 9.08
@@ -8328,50 +6144,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 134.31,
     "runs": 2012,
     "innings": 98,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 102,
     "boundaryPct": 16.56,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1067,
         "balls": 794,
         "strikeRate": 134.38,
         "economy": 8.06
       },
       "middle": {
-        "runs": 824,
         "balls": 621,
         "strikeRate": 132.69,
         "economy": 7.96
       },
       "death": {
-        "runs": 121,
         "balls": 83,
         "strikeRate": 145.78,
         "economy": 8.75
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -8382,50 +6172,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 133.08,
     "runs": 3870,
     "innings": 147,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 152,
     "boundaryPct": 17.68,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1884,
         "balls": 1482,
         "strikeRate": 127.13,
         "economy": 7.63
       },
       "middle": {
-        "runs": 1614,
         "balls": 1193,
         "strikeRate": 135.29,
         "economy": 8.12
       },
       "death": {
-        "runs": 372,
         "balls": 233,
         "strikeRate": 159.66,
         "economy": 9.58
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -8444,19 +6208,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.91,
     "battingPhases": {
       "powerplay": {
-        "runs": 538,
         "balls": 428,
         "strikeRate": 125.7,
         "economy": 7.54
       },
       "middle": {
-        "runs": 1067,
         "balls": 847,
         "strikeRate": 125.97,
         "economy": 7.56
       },
       "death": {
-        "runs": 235,
         "balls": 153,
         "strikeRate": 153.59,
         "economy": 9.22
@@ -8464,19 +6225,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 169,
         "balls": 126,
         "strikeRate": 134.13,
         "economy": 8.05
       },
       "middle": {
-        "runs": 297,
         "balls": 192,
         "strikeRate": 154.69,
         "economy": 9.28
       },
       "death": {
-        "runs": 59,
         "balls": 54,
         "strikeRate": 109.26,
         "economy": 6.56
@@ -8498,19 +6256,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 60,
     "battingPhases": {
       "powerplay": {
-        "runs": 216,
         "balls": 191,
         "strikeRate": 113.09,
         "economy": 6.79
       },
       "middle": {
-        "runs": 436,
         "balls": 341,
         "strikeRate": 127.86,
         "economy": 7.67
       },
       "death": {
-        "runs": 100,
         "balls": 62,
         "strikeRate": 161.29,
         "economy": 9.68
@@ -8518,22 +6273,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 3,
         "balls": 6,
         "strikeRate": 50,
         "economy": 3
       },
       "middle": {
-        "runs": 83,
         "balls": 54,
         "strikeRate": 153.7,
         "economy": 9.22
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -8544,50 +6291,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 170.96,
     "runs": 2231,
     "innings": 94,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 98,
     "boundaryPct": 26.9,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1555,
         "balls": 863,
         "strikeRate": 180.19,
         "economy": 10.81
       },
       "middle": {
-        "runs": 601,
         "balls": 390,
         "strikeRate": 154.1,
         "economy": 9.25
       },
       "death": {
-        "runs": 75,
         "balls": 52,
         "strikeRate": 144.23,
         "economy": 8.65
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -8598,50 +6319,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 127.57,
     "runs": 2934,
     "innings": 143,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 169,
     "boundaryPct": 16.65,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1389,
         "balls": 1047,
         "strikeRate": 132.66,
         "economy": 7.96
       },
       "middle": {
-        "runs": 988,
         "balls": 900,
         "strikeRate": 109.78,
         "economy": 6.59
       },
       "death": {
-        "runs": 557,
         "balls": 353,
         "strikeRate": 157.79,
         "economy": 9.47
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -8659,20 +6354,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 15,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 2,
         "balls": 6,
         "strikeRate": 33.33,
         "economy": 2
@@ -8680,19 +6362,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 120,
         "balls": 78,
         "strikeRate": 153.85,
         "economy": 9.23
       },
       "middle": {
-        "runs": 161,
         "balls": 126,
         "strikeRate": 127.78,
         "economy": 7.67
       },
       "death": {
-        "runs": 79,
         "balls": 66,
         "strikeRate": 119.7,
         "economy": 7.18
@@ -8713,20 +6392,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.26,
     "bowlingStrikeRate": 18,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 8,
         "strikeRate": 37.5,
         "economy": 2.25
       },
       "death": {
-        "runs": 30,
         "balls": 39,
         "strikeRate": 76.92,
         "economy": 4.62
@@ -8734,19 +6405,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 244,
         "balls": 222,
         "strikeRate": 109.91,
         "economy": 6.59
       },
       "middle": {
-        "runs": 1084,
         "balls": 824,
         "strikeRate": 131.55,
         "economy": 7.89
       },
       "death": {
-        "runs": 159,
         "balls": 124,
         "strikeRate": 128.23,
         "economy": 7.69
@@ -8767,20 +6435,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.35,
     "bowlingStrikeRate": 17.06,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 10,
         "balls": 12,
         "strikeRate": 83.33,
         "economy": 5
       },
       "death": {
-        "runs": 42,
         "balls": 56,
         "strikeRate": 75,
         "economy": 4.5
@@ -8788,19 +6448,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1492,
         "balls": 1214,
         "strikeRate": 122.9,
         "economy": 7.37
       },
       "middle": {
-        "runs": 442,
         "balls": 351,
         "strikeRate": 125.93,
         "economy": 7.56
       },
       "death": {
-        "runs": 888,
         "balls": 601,
         "strikeRate": 147.75,
         "economy": 8.87
@@ -8821,20 +6478,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.33,
     "bowlingStrikeRate": 36,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 17,
         "balls": 12,
         "strikeRate": 141.67,
         "economy": 8.5
@@ -8842,19 +6486,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 35,
         "balls": 30,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 74,
         "balls": 60,
         "strikeRate": 123.33,
         "economy": 7.4
       },
       "death": {
-        "runs": 29,
         "balls": 18,
         "strikeRate": 161.11,
         "economy": 9.67
@@ -8864,51 +6505,20 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-209404f5": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 130,
     "economyRate": 8.67,
     "wickets": 1,
     "matches": 6,
-    "boundaryPct": null,
     "bowlingStrikeRate": 90,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 116,
         "balls": 84,
         "strikeRate": 138.1,
         "economy": 8.29
       },
       "death": {
-        "runs": 14,
         "balls": 6,
         "strikeRate": 233.33,
         "economy": 14
@@ -8930,19 +6540,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.59,
     "battingPhases": {
       "powerplay": {
-        "runs": 1688,
         "balls": 1502,
         "strikeRate": 112.38,
         "economy": 6.74
       },
       "middle": {
-        "runs": 1266,
         "balls": 1049,
         "strikeRate": 120.69,
         "economy": 7.24
       },
       "death": {
-        "runs": 273,
         "balls": 168,
         "strikeRate": 162.5,
         "economy": 9.75
@@ -8950,19 +6557,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 3,
         "balls": 3,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 794,
         "balls": 576,
         "strikeRate": 137.85,
         "economy": 8.27
       },
       "death": {
-        "runs": 435,
         "balls": 220,
         "strikeRate": 197.73,
         "economy": 11.86
@@ -8983,20 +6587,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 14.67,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 0,
         "balls": 8,
         "strikeRate": 0,
         "economy": 0
@@ -9004,19 +6595,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 122,
         "balls": 114,
         "strikeRate": 107.02,
         "economy": 6.42
       },
       "middle": {
-        "runs": 203,
         "balls": 158,
         "strikeRate": 128.48,
         "economy": 7.71
       },
       "death": {
-        "runs": 207,
         "balls": 124,
         "strikeRate": 166.94,
         "economy": 10.02
@@ -9038,19 +6626,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.53,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 20,
         "balls": 37,
         "strikeRate": 54.05,
         "economy": 3.24
       },
       "death": {
-        "runs": 172,
         "balls": 163,
         "strikeRate": 105.52,
         "economy": 6.33
@@ -9058,19 +6643,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1599,
         "balls": 1275,
         "strikeRate": 125.41,
         "economy": 7.52
       },
       "middle": {
-        "runs": 698,
         "balls": 531,
         "strikeRate": 131.45,
         "economy": 7.89
       },
       "death": {
-        "runs": 1292,
         "balls": 772,
         "strikeRate": 167.36,
         "economy": 10.04
@@ -9092,19 +6674,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.17,
     "battingPhases": {
       "powerplay": {
-        "runs": 762,
         "balls": 580,
         "strikeRate": 131.38,
         "economy": 7.88
       },
       "middle": {
-        "runs": 846,
         "balls": 791,
         "strikeRate": 106.95,
         "economy": 6.42
       },
       "death": {
-        "runs": 413,
         "balls": 306,
         "strikeRate": 134.97,
         "economy": 8.1
@@ -9112,19 +6691,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1111,
         "balls": 852,
         "strikeRate": 130.4,
         "economy": 7.82
       },
       "middle": {
-        "runs": 1707,
         "balls": 1332,
         "strikeRate": 128.15,
         "economy": 7.69
       },
       "death": {
-        "runs": 241,
         "balls": 156,
         "strikeRate": 154.49,
         "economy": 9.27
@@ -9145,20 +6721,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.56,
     "bowlingStrikeRate": 16.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 12,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 6,
         "balls": 6,
         "strikeRate": 100,
         "economy": 6
@@ -9166,19 +6734,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 26,
         "balls": 24,
         "strikeRate": 108.33,
         "economy": 6.5
       },
       "middle": {
-        "runs": 26,
         "balls": 24,
         "strikeRate": 108.33,
         "economy": 6.5
       },
       "death": {
-        "runs": 16,
         "balls": 18,
         "strikeRate": 88.89,
         "economy": 5.33
@@ -9192,50 +6757,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 151.25,
     "runs": 1207,
     "innings": 54,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 61,
     "boundaryPct": 20.18,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 152,
         "balls": 94,
         "strikeRate": 161.7,
         "economy": 9.7
       },
       "middle": {
-        "runs": 568,
         "balls": 421,
         "strikeRate": 134.92,
         "economy": 8.1
       },
       "death": {
-        "runs": 487,
         "balls": 283,
         "strikeRate": 172.08,
         "economy": 10.33
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -9253,20 +6792,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.67,
     "bowlingStrikeRate": 15.47,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 12,
         "balls": 15,
         "strikeRate": 80,
         "economy": 4.8
@@ -9274,19 +6800,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 273,
         "balls": 222,
         "strikeRate": 122.97,
         "economy": 7.38
       },
       "middle": {
-        "runs": 282,
         "balls": 264,
         "strikeRate": 106.82,
         "economy": 6.41
       },
       "death": {
-        "runs": 378,
         "balls": 241,
         "strikeRate": 156.85,
         "economy": 9.41
@@ -9307,20 +6830,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.2,
     "bowlingStrikeRate": 18.37,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 13,
         "strikeRate": 123.08,
         "economy": 7.38
       },
       "death": {
-        "runs": 132,
         "balls": 112,
         "strikeRate": 117.86,
         "economy": 7.07
@@ -9328,19 +6843,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1406,
         "balls": 978,
         "strikeRate": 143.76,
         "economy": 8.63
       },
       "middle": {
-        "runs": 411,
         "balls": 252,
         "strikeRate": 163.1,
         "economy": 9.79
       },
       "death": {
-        "runs": 331,
         "balls": 166,
         "strikeRate": 199.4,
         "economy": 11.96
@@ -9354,27 +6866,22 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 129.95,
     "runs": 3120,
     "innings": 122,
-    "bowlingAverage": null,
     "economyRate": 6,
     "wickets": 0,
     "matches": 131,
     "boundaryPct": 15.49,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 809,
         "balls": 693,
         "strikeRate": 116.74,
         "economy": 7
       },
       "middle": {
-        "runs": 1710,
         "balls": 1331,
         "strikeRate": 128.47,
         "economy": 7.71
       },
       "death": {
-        "runs": 601,
         "balls": 377,
         "strikeRate": 159.42,
         "economy": 9.56
@@ -9382,19 +6889,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 6,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 7,
         "balls": 12,
         "strikeRate": 58.33,
         "economy": 3.5
       },
       "death": {
-        "runs": 5,
         "balls": 2,
         "strikeRate": 250,
         "economy": 15
@@ -9416,19 +6920,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.09,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 76,
         "balls": 73,
         "strikeRate": 104.11,
         "economy": 6.25
       },
       "death": {
-        "runs": 83,
         "balls": 73,
         "strikeRate": 113.7,
         "economy": 6.82
@@ -9436,19 +6937,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 672,
         "balls": 432,
         "strikeRate": 155.56,
         "economy": 9.33
       },
       "middle": {
-        "runs": 401,
         "balls": 252,
         "strikeRate": 159.13,
         "economy": 9.55
       },
       "death": {
-        "runs": 364,
         "balls": 217,
         "strikeRate": 167.74,
         "economy": 10.06
@@ -9470,19 +6968,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.65,
     "battingPhases": {
       "powerplay": {
-        "runs": 33,
         "balls": 18,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 643,
         "balls": 692,
         "strikeRate": 92.92,
         "economy": 5.58
       },
       "death": {
-        "runs": 1504,
         "balls": 879,
         "strikeRate": 171.1,
         "economy": 10.27
@@ -9490,19 +6985,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1524,
         "balls": 1062,
         "strikeRate": 143.5,
         "economy": 8.61
       },
       "middle": {
-        "runs": 2452,
         "balls": 1892,
         "strikeRate": 129.6,
         "economy": 7.78
       },
       "death": {
-        "runs": 1756,
         "balls": 1094,
         "strikeRate": 160.51,
         "economy": 9.63
@@ -9524,19 +7016,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.54,
     "battingPhases": {
       "powerplay": {
-        "runs": 47,
         "balls": 58,
         "strikeRate": 81.03,
         "economy": 4.86
       },
       "middle": {
-        "runs": 1886,
         "balls": 1365,
         "strikeRate": 138.17,
         "economy": 8.29
       },
       "death": {
-        "runs": 1183,
         "balls": 694,
         "strikeRate": 170.46,
         "economy": 10.23
@@ -9544,19 +7033,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 27,
         "balls": 24,
         "strikeRate": 112.5,
         "economy": 6.75
       },
       "middle": {
-        "runs": 873,
         "balls": 531,
         "strikeRate": 164.41,
         "economy": 9.86
       },
       "death": {
-        "runs": 247,
         "balls": 129,
         "strikeRate": 191.47,
         "economy": 11.49
@@ -9577,20 +7063,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.74,
     "bowlingStrikeRate": 24.73,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 17,
         "strikeRate": 41.18,
         "economy": 2.47
       },
       "death": {
-        "runs": 79,
         "balls": 86,
         "strikeRate": 91.86,
         "economy": 5.51
@@ -9598,19 +7076,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 461,
         "balls": 348,
         "strikeRate": 132.47,
         "economy": 7.95
       },
       "middle": {
-        "runs": 996,
         "balls": 828,
         "strikeRate": 120.29,
         "economy": 7.22
       },
       "death": {
-        "runs": 320,
         "balls": 209,
         "strikeRate": 153.11,
         "economy": 9.19
@@ -9632,39 +7107,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 31.2,
     "battingPhases": {
       "powerplay": {
-        "runs": 89,
         "balls": 75,
         "strikeRate": 118.67,
         "economy": 7.12
       },
       "middle": {
-        "runs": 39,
         "balls": 28,
         "strikeRate": 139.29,
         "economy": 8.36
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 113,
         "balls": 90,
         "strikeRate": 125.56,
         "economy": 7.53
       },
       "middle": {
-        "runs": 63,
         "balls": 54,
         "strikeRate": 116.67,
         "economy": 7
       },
       "death": {
-        "runs": 27,
         "balls": 12,
         "strikeRate": 225,
         "economy": 13.5
@@ -9685,20 +7149,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10,
     "bowlingStrikeRate": 15.94,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 14,
         "strikeRate": 114.29,
         "economy": 6.86
       },
       "death": {
-        "runs": 92,
         "balls": 86,
         "strikeRate": 106.98,
         "economy": 6.42
@@ -9706,19 +7162,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 842,
         "balls": 540,
         "strikeRate": 155.93,
         "economy": 9.36
       },
       "middle": {
-        "runs": 766,
         "balls": 570,
         "strikeRate": 134.39,
         "economy": 8.06
       },
       "death": {
-        "runs": 811,
         "balls": 484,
         "strikeRate": 167.56,
         "economy": 10.05
@@ -9740,19 +7193,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.25,
     "battingPhases": {
       "powerplay": {
-        "runs": 281,
         "balls": 253,
         "strikeRate": 111.07,
         "economy": 6.66
       },
       "middle": {
-        "runs": 1085,
         "balls": 961,
         "strikeRate": 112.9,
         "economy": 6.77
       },
       "death": {
-        "runs": 577,
         "balls": 372,
         "strikeRate": 155.11,
         "economy": 9.31
@@ -9760,19 +7210,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 69,
         "balls": 36,
         "strikeRate": 191.67,
         "economy": 11.5
       },
       "middle": {
-        "runs": 2580,
         "balls": 1967,
         "strikeRate": 131.16,
         "economy": 7.87
       },
       "death": {
-        "runs": 491,
         "balls": 333,
         "strikeRate": 147.45,
         "economy": 8.85
@@ -9786,50 +7233,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 141.19,
     "runs": 3695,
     "innings": 145,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 149,
     "boundaryPct": 18,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 822,
         "balls": 656,
         "strikeRate": 125.3,
         "economy": 7.52
       },
       "middle": {
-        "runs": 2190,
         "balls": 1607,
         "strikeRate": 136.28,
         "economy": 8.18
       },
       "death": {
-        "runs": 683,
         "balls": 354,
         "strikeRate": 192.94,
         "economy": 11.58
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -9847,20 +7268,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.29,
     "bowlingStrikeRate": 19.53,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 5,
         "strikeRate": 120,
         "economy": 7.2
       },
       "death": {
-        "runs": 32,
         "balls": 30,
         "strikeRate": 106.67,
         "economy": 6.4
@@ -9868,19 +7281,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 891,
         "balls": 684,
         "strikeRate": 130.26,
         "economy": 7.82
       },
       "middle": {
-        "runs": 324,
         "balls": 216,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 904,
         "balls": 545,
         "strikeRate": 165.87,
         "economy": 9.95
@@ -9894,50 +7304,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 120.35,
     "runs": 343,
     "innings": 21,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 28,
     "boundaryPct": 15.44,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 92,
         "balls": 69,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 173,
         "balls": 161,
         "strikeRate": 107.45,
         "economy": 6.45
       },
       "death": {
-        "runs": 78,
         "balls": 55,
         "strikeRate": 141.82,
         "economy": 8.51
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -9955,20 +7339,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.75,
     "bowlingStrikeRate": 20.22,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 36,
         "balls": 33,
         "strikeRate": 109.09,
         "economy": 6.55
       },
       "death": {
-        "runs": 118,
         "balls": 130,
         "strikeRate": 90.77,
         "economy": 5.45
@@ -9976,19 +7352,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1368,
         "balls": 932,
         "strikeRate": 146.78,
         "economy": 8.81
       },
       "middle": {
-        "runs": 476,
         "balls": 342,
         "strikeRate": 139.18,
         "economy": 8.35
       },
       "death": {
-        "runs": 716,
         "balls": 404,
         "strikeRate": 177.23,
         "economy": 10.63
@@ -10010,19 +7383,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.4,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 34,
         "balls": 58,
         "strikeRate": 58.62,
         "economy": 3.52
       },
       "death": {
-        "runs": 107,
         "balls": 67,
         "strikeRate": 159.7,
         "economy": 9.58
@@ -10030,19 +7400,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 6,
         "strikeRate": 333.33,
         "economy": 20
       },
       "middle": {
-        "runs": 181,
         "balls": 144,
         "strikeRate": 125.69,
         "economy": 7.54
       },
       "death": {
-        "runs": 30,
         "balls": 24,
         "strikeRate": 125,
         "economy": 7.5
@@ -10052,7 +7419,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-2863dc55": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 55,
     "runs": 11,
     "innings": 2,
@@ -10063,20 +7429,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5,
     "bowlingStrikeRate": 32,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 3,
         "strikeRate": 66.67,
         "economy": 4
       },
       "death": {
-        "runs": 9,
         "balls": 17,
         "strikeRate": 52.94,
         "economy": 3.18
@@ -10084,19 +7442,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 60,
         "balls": 42,
         "strikeRate": 142.86,
         "economy": 8.57
       },
       "middle": {
-        "runs": 53,
         "balls": 36,
         "strikeRate": 147.22,
         "economy": 8.83
       },
       "death": {
-        "runs": 50,
         "balls": 18,
         "strikeRate": 277.78,
         "economy": 16.67
@@ -10117,20 +7472,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.78,
     "bowlingStrikeRate": 20.44,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 20,
         "balls": 36,
         "strikeRate": 55.56,
         "economy": 3.33
@@ -10138,19 +7480,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 544,
         "balls": 378,
         "strikeRate": 143.92,
         "economy": 8.63
       },
       "middle": {
-        "runs": 627,
         "balls": 450,
         "strikeRate": 139.33,
         "economy": 8.36
       },
       "death": {
-        "runs": 652,
         "balls": 439,
         "strikeRate": 148.52,
         "economy": 8.91
@@ -10171,20 +7510,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.77,
     "bowlingStrikeRate": 20.11,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 101,
         "balls": 103,
         "strikeRate": 98.06,
         "economy": 5.88
       },
       "death": {
-        "runs": 309,
         "balls": 219,
         "strikeRate": 141.1,
         "economy": 8.47
@@ -10192,19 +7523,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 461,
         "balls": 318,
         "strikeRate": 144.97,
         "economy": 8.7
       },
       "middle": {
-        "runs": 636,
         "balls": 432,
         "strikeRate": 147.22,
         "economy": 8.83
       },
       "death": {
-        "runs": 740,
         "balls": 396,
         "strikeRate": 186.87,
         "economy": 11.21
@@ -10226,19 +7554,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.53,
     "battingPhases": {
       "powerplay": {
-        "runs": 4,
         "balls": 5,
         "strikeRate": 80,
         "economy": 4.8
       },
       "middle": {
-        "runs": 15,
         "balls": 20,
         "strikeRate": 75,
         "economy": 4.5
       },
       "death": {
-        "runs": 59,
         "balls": 39,
         "strikeRate": 151.28,
         "economy": 9.08
@@ -10246,19 +7571,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 183,
         "balls": 114,
         "strikeRate": 160.53,
         "economy": 9.63
       },
       "middle": {
-        "runs": 241,
         "balls": 174,
         "strikeRate": 138.51,
         "economy": 8.31
       },
       "death": {
-        "runs": 55,
         "balls": 35,
         "strikeRate": 157.14,
         "economy": 9.43
@@ -10279,20 +7601,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.38,
     "bowlingStrikeRate": 19,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 15,
         "balls": 23,
         "strikeRate": 65.22,
         "economy": 3.91
       },
       "death": {
-        "runs": 8,
         "balls": 9,
         "strikeRate": 88.89,
         "economy": 5.33
@@ -10300,19 +7614,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 31,
         "balls": 24,
         "strikeRate": 129.17,
         "economy": 7.75
       },
       "middle": {
-        "runs": 58,
         "balls": 53,
         "strikeRate": 109.43,
         "economy": 6.57
       },
       "death": {
-        "runs": 37,
         "balls": 18,
         "strikeRate": 205.56,
         "economy": 12.33
@@ -10334,19 +7645,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 28.59,
     "battingPhases": {
       "powerplay": {
-        "runs": 418,
         "balls": 387,
         "strikeRate": 108.01,
         "economy": 6.48
       },
       "middle": {
-        "runs": 1413,
         "balls": 1204,
         "strikeRate": 117.36,
         "economy": 7.04
       },
       "death": {
-        "runs": 663,
         "balls": 402,
         "strikeRate": 164.93,
         "economy": 9.9
@@ -10354,19 +7662,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 264,
         "balls": 180,
         "strikeRate": 146.67,
         "economy": 8.8
       },
       "middle": {
-        "runs": 757,
         "balls": 642,
         "strikeRate": 117.91,
         "economy": 7.07
       },
       "death": {
-        "runs": 224,
         "balls": 150,
         "strikeRate": 149.33,
         "economy": 8.96
@@ -10387,20 +7692,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.33,
     "bowlingStrikeRate": 14,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 12,
         "balls": 11,
         "strikeRate": 109.09,
         "economy": 6.55
       },
       "death": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
@@ -10408,19 +7705,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 22,
         "balls": 12,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 96,
         "balls": 54,
         "strikeRate": 177.78,
         "economy": 10.67
       },
       "death": {
-        "runs": 30,
         "balls": 18,
         "strikeRate": 166.67,
         "economy": 10
@@ -10434,50 +7728,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 144.73,
     "runs": 8248,
     "innings": 290,
-    "bowlingAverage": null,
     "economyRate": 16,
     "wickets": 0,
     "matches": 293,
     "boundaryPct": 21.51,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 5392,
         "balls": 3737,
         "strikeRate": 144.29,
         "economy": 8.66
       },
       "middle": {
-        "runs": 2536,
         "balls": 1767,
         "strikeRate": 143.52,
         "economy": 8.61
       },
       "death": {
-        "runs": 320,
         "balls": 195,
         "strikeRate": 164.1,
         "economy": 9.85
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 6,
         "strikeRate": 266.67,
         "economy": 16
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -10495,20 +7771,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 21.88,
     "bowlingStrikeRate": 15.54,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 47,
         "balls": 32,
         "strikeRate": 146.88,
         "economy": 8.81
@@ -10516,19 +7779,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 358,
         "balls": 222,
         "strikeRate": 161.26,
         "economy": 9.68
       },
       "middle": {
-        "runs": 452,
         "balls": 324,
         "strikeRate": 139.51,
         "economy": 8.37
       },
       "death": {
-        "runs": 357,
         "balls": 231,
         "strikeRate": 154.55,
         "economy": 9.27
@@ -10542,101 +7802,49 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 120.5,
     "runs": 823,
     "innings": 45,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 48,
     "boundaryPct": 13.62,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 158,
         "balls": 143,
         "strikeRate": 110.49,
         "economy": 6.63
       },
       "middle": {
-        "runs": 505,
         "balls": 422,
         "strikeRate": 119.67,
         "economy": 7.18
       },
       "death": {
-        "runs": 160,
         "balls": 118,
         "strikeRate": 135.59,
         "economy": 8.14
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-2bf2258f": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 44.07,
     "economyRate": 8.89,
     "wickets": 27,
     "matches": 39,
-    "boundaryPct": null,
     "bowlingStrikeRate": 29.74,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 22,
         "balls": 18,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "middle": {
-        "runs": 1022,
         "balls": 690,
         "strikeRate": 148.12,
         "economy": 8.89
       },
       "death": {
-        "runs": 146,
         "balls": 95,
         "strikeRate": 153.68,
         "economy": 9.22
@@ -10650,50 +7858,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 124.79,
     "runs": 1354,
     "innings": 68,
-    "bowlingAverage": null,
     "economyRate": 10,
     "wickets": 0,
     "matches": 74,
     "boundaryPct": 16.31,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 336,
         "balls": 279,
         "strikeRate": 120.43,
         "economy": 7.23
       },
       "middle": {
-        "runs": 786,
         "balls": 670,
         "strikeRate": 117.31,
         "economy": 7.04
       },
       "death": {
-        "runs": 232,
         "balls": 136,
         "strikeRate": 170.59,
         "economy": 10.24
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 20,
         "balls": 12,
         "strikeRate": 166.67,
         "economy": 10
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -10711,20 +7901,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.56,
     "bowlingStrikeRate": 13.96,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 9,
         "balls": 15,
         "strikeRate": 60,
         "economy": 3.6
       },
       "death": {
-        "runs": 47,
         "balls": 46,
         "strikeRate": 102.17,
         "economy": 6.13
@@ -10732,19 +7914,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 403,
         "balls": 299,
         "strikeRate": 134.78,
         "economy": 8.09
       },
       "middle": {
-        "runs": 336,
         "balls": 258,
         "strikeRate": 130.23,
         "economy": 7.81
       },
       "death": {
-        "runs": 291,
         "balls": 155,
         "strikeRate": 187.74,
         "economy": 11.26
@@ -10758,50 +7937,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 95.45,
     "runs": 84,
     "innings": 7,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 9,
     "boundaryPct": 9.09,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 13,
         "balls": 10,
         "strikeRate": 130,
         "economy": 7.8
       },
       "middle": {
-        "runs": 58,
         "balls": 53,
         "strikeRate": 109.43,
         "economy": 6.57
       },
       "death": {
-        "runs": 13,
         "balls": 25,
         "strikeRate": 52,
         "economy": 3.12
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -10820,19 +7973,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.94,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 6,
         "strikeRate": 16.67,
         "economy": 1
       },
       "middle": {
-        "runs": 162,
         "balls": 118,
         "strikeRate": 137.29,
         "economy": 8.24
       },
       "death": {
-        "runs": 279,
         "balls": 217,
         "strikeRate": 128.57,
         "economy": 7.71
@@ -10840,19 +7990,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 174,
         "balls": 144,
         "strikeRate": 120.83,
         "economy": 7.25
       },
       "middle": {
-        "runs": 562,
         "balls": 401,
         "strikeRate": 140.15,
         "economy": 8.41
       },
       "death": {
-        "runs": 272,
         "balls": 146,
         "strikeRate": 186.3,
         "economy": 11.18
@@ -10862,7 +8009,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-2e258ef1": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 100,
     "runs": 1,
     "innings": 1,
@@ -10873,20 +8019,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 24,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
@@ -10894,19 +8027,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 26,
         "balls": 24,
         "strikeRate": 108.33,
         "economy": 6.5
       },
       "middle": {
-        "runs": 86,
         "balls": 90,
         "strikeRate": 95.56,
         "economy": 5.73
       },
       "death": {
-        "runs": 7,
         "balls": 6,
         "strikeRate": 116.67,
         "economy": 7
@@ -10927,20 +8057,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 19.23,
     "bowlingStrikeRate": 14.4,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 37,
         "balls": 24,
         "strikeRate": 154.17,
         "economy": 9.25
@@ -10948,19 +8070,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 14,
         "balls": 12,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 61,
         "balls": 42,
         "strikeRate": 145.24,
         "economy": 8.71
       },
       "death": {
-        "runs": 27,
         "balls": 18,
         "strikeRate": 150,
         "economy": 9
@@ -10982,19 +8101,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.84,
     "battingPhases": {
       "powerplay": {
-        "runs": 52,
         "balls": 35,
         "strikeRate": 148.57,
         "economy": 8.91
       },
       "middle": {
-        "runs": 408,
         "balls": 285,
         "strikeRate": 143.16,
         "economy": 8.59
       },
       "death": {
-        "runs": 692,
         "balls": 415,
         "strikeRate": 166.75,
         "economy": 10
@@ -11002,19 +8118,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 524,
         "balls": 270,
         "strikeRate": 194.07,
         "economy": 11.64
       },
       "middle": {
-        "runs": 1426,
         "balls": 1002,
         "strikeRate": 142.32,
         "economy": 8.54
       },
       "death": {
-        "runs": 1072,
         "balls": 629,
         "strikeRate": 170.43,
         "economy": 10.23
@@ -11035,20 +8148,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.3,
     "bowlingStrikeRate": 29.48,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 9,
         "balls": 21,
         "strikeRate": 42.86,
         "economy": 2.57
       },
       "death": {
-        "runs": 30,
         "balls": 66,
         "strikeRate": 45.45,
         "economy": 2.73
@@ -11056,19 +8161,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 411,
         "balls": 300,
         "strikeRate": 137,
         "economy": 8.22
       },
       "middle": {
-        "runs": 1192,
         "balls": 1001,
         "strikeRate": 119.08,
         "economy": 7.14
       },
       "death": {
-        "runs": 181,
         "balls": 114,
         "strikeRate": 158.77,
         "economy": 9.53
@@ -11089,20 +8191,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 18.11,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 8,
         "balls": 15,
         "strikeRate": 53.33,
         "economy": 3.2
@@ -11110,19 +8199,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 103,
         "balls": 61,
         "strikeRate": 168.85,
         "economy": 10.13
       },
       "middle": {
-        "runs": 91,
         "balls": 78,
         "strikeRate": 116.67,
         "economy": 7
       },
       "death": {
-        "runs": 45,
         "balls": 24,
         "strikeRate": 187.5,
         "economy": 11.25
@@ -11136,50 +8222,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130.61,
     "runs": 128,
     "innings": 9,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 11,
     "boundaryPct": 21.43,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 103,
         "balls": 76,
         "strikeRate": 135.53,
         "economy": 8.13
       },
       "middle": {
-        "runs": 25,
         "balls": 22,
         "strikeRate": 113.64,
         "economy": 6.82
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -11190,50 +8245,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 126.48,
     "runs": 2856,
     "innings": 131,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 146,
     "boundaryPct": 13.99,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 205,
         "balls": 238,
         "strikeRate": 86.13,
         "economy": 5.17
       },
       "middle": {
-        "runs": 1694,
         "balls": 1439,
         "strikeRate": 117.72,
         "economy": 7.06
       },
       "death": {
-        "runs": 957,
         "balls": 581,
         "strikeRate": 164.72,
         "economy": 9.88
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -11244,50 +8273,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 126.13,
     "runs": 251,
     "innings": 13,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 14,
     "boundaryPct": 15.58,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 116,
         "balls": 93,
         "strikeRate": 124.73,
         "economy": 7.48
       },
       "middle": {
-        "runs": 113,
         "balls": 91,
         "strikeRate": 124.18,
         "economy": 7.45
       },
       "death": {
-        "runs": 22,
         "balls": 15,
         "strikeRate": 146.67,
         "economy": 8.8
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -11298,50 +8301,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 122.57,
     "runs": 4730,
     "innings": 197,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 219,
     "boundaryPct": 13.84,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1190,
         "balls": 1046,
         "strikeRate": 113.77,
         "economy": 6.83
       },
       "middle": {
-        "runs": 2520,
         "balls": 2143,
         "strikeRate": 117.59,
         "economy": 7.06
       },
       "death": {
-        "runs": 1020,
         "balls": 670,
         "strikeRate": 152.24,
         "economy": 9.13
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -11360,19 +8337,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 24,
     "battingPhases": {
       "powerplay": {
-        "runs": 63,
         "balls": 54,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 464,
         "balls": 400,
         "strikeRate": 116,
         "economy": 6.96
       },
       "death": {
-        "runs": 640,
         "balls": 422,
         "strikeRate": 151.66,
         "economy": 9.1
@@ -11380,19 +8354,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 989,
         "balls": 777,
         "strikeRate": 127.28,
         "economy": 7.64
       },
       "middle": {
-        "runs": 1429,
         "balls": 1200,
         "strikeRate": 119.08,
         "economy": 7.15
       },
       "death": {
-        "runs": 265,
         "balls": 183,
         "strikeRate": 144.81,
         "economy": 8.69
@@ -11413,20 +8384,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.65,
     "bowlingStrikeRate": 20.27,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 43,
         "balls": 42,
         "strikeRate": 102.38,
         "economy": 6.14
       },
       "death": {
-        "runs": 59,
         "balls": 62,
         "strikeRate": 95.16,
         "economy": 5.71
@@ -11434,19 +8397,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 632,
         "balls": 454,
         "strikeRate": 139.21,
         "economy": 8.35
       },
       "middle": {
-        "runs": 413,
         "balls": 300,
         "strikeRate": 137.67,
         "economy": 8.26
       },
       "death": {
-        "runs": 380,
         "balls": 239,
         "strikeRate": 159,
         "economy": 9.54
@@ -11468,39 +8428,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 9.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 2,
         "balls": 3,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 125,
         "balls": 112,
         "strikeRate": 111.61,
         "economy": 6.7
       },
       "death": {
-        "runs": 187,
         "balls": 96,
         "strikeRate": 194.79,
         "economy": 11.69
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 68,
         "balls": 36,
         "strikeRate": 188.89,
         "economy": 11.33
       },
       "death": {
-        "runs": 68,
         "balls": 40,
         "strikeRate": 170,
         "economy": 10.2
@@ -11521,20 +8470,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.76,
     "bowlingStrikeRate": 30,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 9,
         "balls": 8,
         "strikeRate": 112.5,
         "economy": 6.75
       },
       "death": {
-        "runs": 34,
         "balls": 26,
         "strikeRate": 130.77,
         "economy": 7.85
@@ -11542,19 +8483,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 24,
         "balls": 18,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 68,
         "balls": 66,
         "strikeRate": 103.03,
         "economy": 6.18
       },
       "death": {
-        "runs": 22,
         "balls": 6,
         "strikeRate": 366.67,
         "economy": 22
@@ -11576,19 +8514,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 44.25,
     "battingPhases": {
       "powerplay": {
-        "runs": 101,
         "balls": 95,
         "strikeRate": 106.32,
         "economy": 6.38
       },
       "middle": {
-        "runs": 701,
         "balls": 612,
         "strikeRate": 114.54,
         "economy": 6.87
       },
       "death": {
-        "runs": 773,
         "balls": 459,
         "strikeRate": 168.41,
         "economy": 10.1
@@ -11596,19 +8531,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 3,
         "balls": 3,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 196,
         "balls": 153,
         "strikeRate": 128.1,
         "economy": 7.69
       },
       "death": {
-        "runs": 44,
         "balls": 21,
         "strikeRate": 209.52,
         "economy": 12.57
@@ -11622,50 +8554,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 144.12,
     "runs": 196,
     "innings": 11,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 15,
     "boundaryPct": 18.38,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 6,
         "balls": 6,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 88,
         "balls": 72,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "death": {
-        "runs": 102,
         "balls": 58,
         "strikeRate": 175.86,
         "economy": 10.55
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -11676,50 +8582,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 107.69,
     "runs": 154,
     "innings": 9,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 9,
     "boundaryPct": 11.89,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 98,
         "balls": 94,
         "strikeRate": 104.26,
         "economy": 6.26
       },
       "middle": {
-        "runs": 56,
         "balls": 49,
         "strikeRate": 114.29,
         "economy": 6.86
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -11730,50 +8605,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 99.74,
     "runs": 390,
     "innings": 22,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 30,
     "boundaryPct": 13.81,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 215,
         "balls": 229,
         "strikeRate": 93.89,
         "economy": 5.63
       },
       "middle": {
-        "runs": 128,
         "balls": 121,
         "strikeRate": 105.79,
         "economy": 6.35
       },
       "death": {
-        "runs": 47,
         "balls": 41,
         "strikeRate": 114.63,
         "economy": 6.88
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -11792,39 +8641,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 14,
     "battingPhases": {
       "powerplay": {
-        "runs": 2162,
         "balls": 1458,
         "strikeRate": 148.29,
         "economy": 8.9
       },
       "middle": {
-        "runs": 3888,
         "balls": 2698,
         "strikeRate": 144.11,
         "economy": 8.65
       },
       "death": {
-        "runs": 1101,
         "balls": 594,
         "strikeRate": 185.35,
         "economy": 11.12
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 15,
         "strikeRate": 106.67,
         "economy": 6.4
       },
       "death": {
-        "runs": 13,
         "balls": 13,
         "strikeRate": 100,
         "economy": 6
@@ -11845,20 +8683,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 12.75,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 11,
         "balls": 17,
         "strikeRate": 64.71,
         "economy": 3.88
       },
       "death": {
-        "runs": 13,
         "balls": 23,
         "strikeRate": 56.52,
         "economy": 3.39
@@ -11866,19 +8696,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 12,
         "strikeRate": 166.67,
         "economy": 10
       },
       "middle": {
-        "runs": 222,
         "balls": 204,
         "strikeRate": 108.82,
         "economy": 6.53
       },
       "death": {
-        "runs": 64,
         "balls": 39,
         "strikeRate": 164.1,
         "economy": 9.85
@@ -11892,50 +8719,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 205.21,
     "runs": 197,
     "innings": 10,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 10,
     "boundaryPct": 32.29,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 144,
         "balls": 68,
         "strikeRate": 211.76,
         "economy": 12.71
       },
       "middle": {
-        "runs": 53,
         "balls": 28,
         "strikeRate": 189.29,
         "economy": 11.36
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -11953,20 +8749,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.41,
     "bowlingStrikeRate": 18.25,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 5,
         "strikeRate": 120,
         "economy": 7.2
       },
       "death": {
-        "runs": 73,
         "balls": 80,
         "strikeRate": 91.25,
         "economy": 5.48
@@ -11974,19 +8762,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 576,
         "balls": 492,
         "strikeRate": 117.07,
         "economy": 7.02
       },
       "middle": {
-        "runs": 923,
         "balls": 798,
         "strikeRate": 115.66,
         "economy": 6.94
       },
       "death": {
-        "runs": 178,
         "balls": 97,
         "strikeRate": 183.51,
         "economy": 11.01
@@ -12007,20 +8792,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.25,
     "bowlingStrikeRate": 19.29,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 5,
         "strikeRate": 40,
         "economy": 2.4
       },
       "death": {
-        "runs": 42,
         "balls": 43,
         "strikeRate": 97.67,
         "economy": 5.86
@@ -12028,19 +8805,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 66,
         "balls": 36,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 376,
         "balls": 228,
         "strikeRate": 164.91,
         "economy": 9.89
       },
       "death": {
-        "runs": 126,
         "balls": 64,
         "strikeRate": 196.88,
         "economy": 11.81
@@ -12061,20 +8835,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.45,
     "bowlingStrikeRate": 19.88,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 8,
         "strikeRate": 37.5,
         "economy": 2.25
       },
       "death": {
-        "runs": 41,
         "balls": 47,
         "strikeRate": 87.23,
         "economy": 5.23
@@ -12082,19 +8848,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 640,
         "balls": 444,
         "strikeRate": 144.14,
         "economy": 8.65
       },
       "middle": {
-        "runs": 283,
         "balls": 174,
         "strikeRate": 162.64,
         "economy": 9.76
       },
       "death": {
-        "runs": 281,
         "balls": 217,
         "strikeRate": 129.49,
         "economy": 7.77
@@ -12116,39 +8879,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 9.63,
     "battingPhases": {
       "powerplay": {
-        "runs": 108,
         "balls": 49,
         "strikeRate": 220.41,
         "economy": 13.22
       },
       "middle": {
-        "runs": 259,
         "balls": 163,
         "strikeRate": 158.9,
         "economy": 9.53
       },
       "death": {
-        "runs": 147,
         "balls": 74,
         "strikeRate": 198.65,
         "economy": 11.92
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 86,
         "balls": 71,
         "strikeRate": 121.13,
         "economy": 7.27
       },
       "death": {
-        "runs": 9,
         "balls": 6,
         "strikeRate": 150,
         "economy": 9
@@ -12169,20 +8921,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.8,
     "bowlingStrikeRate": 19.16,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 8,
         "balls": 8,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 37,
         "balls": 43,
         "strikeRate": 86.05,
         "economy": 5.16
@@ -12190,19 +8934,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 473,
         "balls": 324,
         "strikeRate": 145.99,
         "economy": 8.76
       },
       "middle": {
-        "runs": 190,
         "balls": 126,
         "strikeRate": 150.79,
         "economy": 9.05
       },
       "death": {
-        "runs": 286,
         "balls": 163,
         "strikeRate": 175.46,
         "economy": 10.53
@@ -12224,19 +8965,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.38,
     "battingPhases": {
       "powerplay": {
-        "runs": 390,
         "balls": 324,
         "strikeRate": 120.37,
         "economy": 7.22
       },
       "middle": {
-        "runs": 894,
         "balls": 733,
         "strikeRate": 121.96,
         "economy": 7.32
       },
       "death": {
-        "runs": 557,
         "balls": 318,
         "strikeRate": 175.16,
         "economy": 10.51
@@ -12244,19 +8982,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 405,
         "balls": 294,
         "strikeRate": 137.76,
         "economy": 8.27
       },
       "middle": {
-        "runs": 813,
         "balls": 625,
         "strikeRate": 130.08,
         "economy": 7.8
       },
       "death": {
-        "runs": 373,
         "balls": 211,
         "strikeRate": 176.78,
         "economy": 10.61
@@ -12270,50 +9005,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 131.29,
     "runs": 1712,
     "innings": 78,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 86,
     "boundaryPct": 18.17,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 619,
         "balls": 484,
         "strikeRate": 127.89,
         "economy": 7.67
       },
       "middle": {
-        "runs": 818,
         "balls": 665,
         "strikeRate": 123.01,
         "economy": 7.38
       },
       "death": {
-        "runs": 275,
         "balls": 155,
         "strikeRate": 177.42,
         "economy": 10.65
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -12324,50 +9033,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 157.25,
     "runs": 2417,
     "innings": 87,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 88,
     "boundaryPct": 23.49,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1073,
         "balls": 695,
         "strikeRate": 154.39,
         "economy": 9.26
       },
       "middle": {
-        "runs": 1178,
         "balls": 739,
         "strikeRate": 159.4,
         "economy": 9.56
       },
       "death": {
-        "runs": 166,
         "balls": 103,
         "strikeRate": 161.17,
         "economy": 9.67
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -12385,20 +9068,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.07,
     "bowlingStrikeRate": 16.66,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 47,
         "balls": 34,
         "strikeRate": 138.24,
         "economy": 8.29
       },
       "death": {
-        "runs": 185,
         "balls": 134,
         "strikeRate": 138.06,
         "economy": 8.28
@@ -12406,19 +9081,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1536,
         "balls": 1158,
         "strikeRate": 132.64,
         "economy": 7.96
       },
       "middle": {
-        "runs": 492,
         "balls": 318,
         "strikeRate": 154.72,
         "economy": 9.28
       },
       "death": {
-        "runs": 946,
         "balls": 523,
         "strikeRate": 180.88,
         "economy": 10.85
@@ -12432,50 +9104,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130.64,
     "runs": 1083,
     "innings": 51,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 56,
     "boundaryPct": 17.73,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 691,
         "balls": 540,
         "strikeRate": 127.96,
         "economy": 7.68
       },
       "middle": {
-        "runs": 330,
         "balls": 261,
         "strikeRate": 126.44,
         "economy": 7.59
       },
       "death": {
-        "runs": 62,
         "balls": 28,
         "strikeRate": 221.43,
         "economy": 13.29
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -12493,20 +9139,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.09,
     "bowlingStrikeRate": 18.15,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 36,
         "balls": 47,
         "strikeRate": 76.6,
         "economy": 4.6
       },
       "death": {
-        "runs": 92,
         "balls": 96,
         "strikeRate": 95.83,
         "economy": 5.75
@@ -12514,19 +9152,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1256,
         "balls": 936,
         "strikeRate": 134.19,
         "economy": 8.05
       },
       "middle": {
-        "runs": 1000,
         "balls": 762,
         "strikeRate": 131.23,
         "economy": 7.87
       },
       "death": {
-        "runs": 1442,
         "balls": 843,
         "strikeRate": 171.06,
         "economy": 10.26
@@ -12547,20 +9182,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.26,
     "bowlingStrikeRate": 23.13,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 12,
         "strikeRate": 58.33,
         "economy": 3.5
       },
       "death": {
-        "runs": 16,
         "balls": 35,
         "strikeRate": 45.71,
         "economy": 2.74
@@ -12568,19 +9195,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 564,
         "balls": 384,
         "strikeRate": 146.88,
         "economy": 8.81
       },
       "middle": {
-        "runs": 284,
         "balls": 192,
         "strikeRate": 147.92,
         "economy": 8.88
       },
       "death": {
-        "runs": 283,
         "balls": 164,
         "strikeRate": 172.56,
         "economy": 10.35
@@ -12601,20 +9225,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.16,
     "bowlingStrikeRate": 26.98,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 44,
         "balls": 47,
         "strikeRate": 93.62,
         "economy": 5.62
       },
       "death": {
-        "runs": 87,
         "balls": 100,
         "strikeRate": 87,
         "economy": 5.22
@@ -12622,19 +9238,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 424,
         "balls": 300,
         "strikeRate": 141.33,
         "economy": 8.48
       },
       "middle": {
-        "runs": 910,
         "balls": 733,
         "strikeRate": 124.15,
         "economy": 7.45
       },
       "death": {
-        "runs": 103,
         "balls": 73,
         "strikeRate": 141.1,
         "economy": 8.47
@@ -12655,20 +9268,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 18.92,
     "bowlingStrikeRate": 17.8,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 114,
         "balls": 129,
         "strikeRate": 88.37,
         "economy": 5.3
       },
       "death": {
-        "runs": 290,
         "balls": 167,
         "strikeRate": 173.65,
         "economy": 10.42
@@ -12676,19 +9281,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 86,
         "balls": 72,
         "strikeRate": 119.44,
         "economy": 7.17
       },
       "middle": {
-        "runs": 2699,
         "balls": 2015,
         "strikeRate": 133.95,
         "economy": 8.04
       },
       "death": {
-        "runs": 393,
         "balls": 280,
         "strikeRate": 140.36,
         "economy": 8.42
@@ -12709,20 +9311,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.24,
     "bowlingStrikeRate": 24.76,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 10,
         "balls": 11,
         "strikeRate": 90.91,
         "economy": 5.45
       },
       "death": {
-        "runs": 70,
         "balls": 57,
         "strikeRate": 122.81,
         "economy": 7.37
@@ -12730,19 +9324,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 525,
         "balls": 420,
         "strikeRate": 125,
         "economy": 7.5
       },
       "middle": {
-        "runs": 605,
         "balls": 450,
         "strikeRate": 134.44,
         "economy": 8.07
       },
       "death": {
-        "runs": 247,
         "balls": 145,
         "strikeRate": 170.34,
         "economy": 10.22
@@ -12763,20 +9354,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.57,
     "bowlingStrikeRate": 16.8,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 313,
         "balls": 298,
         "strikeRate": 105.03,
         "economy": 6.3
       },
       "death": {
-        "runs": 819,
         "balls": 524,
         "strikeRate": 156.3,
         "economy": 9.38
@@ -12784,19 +9367,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1992,
         "balls": 1574,
         "strikeRate": 126.56,
         "economy": 7.59
       },
       "middle": {
-        "runs": 1657,
         "balls": 1177,
         "strikeRate": 140.78,
         "economy": 8.45
       },
       "death": {
-        "runs": 1805,
         "balls": 1163,
         "strikeRate": 155.2,
         "economy": 9.31
@@ -12818,19 +9398,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.53,
     "battingPhases": {
       "powerplay": {
-        "runs": 48,
         "balls": 64,
         "strikeRate": 75,
         "economy": 4.5
       },
       "middle": {
-        "runs": 137,
         "balls": 135,
         "strikeRate": 101.48,
         "economy": 6.09
       },
       "death": {
-        "runs": 5,
         "balls": 15,
         "strikeRate": 33.33,
         "economy": 2
@@ -12838,19 +9415,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 31,
         "balls": 24,
         "strikeRate": 129.17,
         "economy": 7.75
       },
       "middle": {
-        "runs": 266,
         "balls": 252,
         "strikeRate": 105.56,
         "economy": 6.33
       },
       "death": {
-        "runs": 30,
         "balls": 17,
         "strikeRate": 176.47,
         "economy": 10.59
@@ -12871,20 +9445,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.22,
     "bowlingStrikeRate": 18.09,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 24,
         "balls": 24,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 316,
         "balls": 252,
         "strikeRate": 125.4,
         "economy": 7.52
@@ -12892,19 +9458,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 924,
         "balls": 702,
         "strikeRate": 131.62,
         "economy": 7.9
       },
       "middle": {
-        "runs": 3542,
         "balls": 2861,
         "strikeRate": 123.8,
         "economy": 7.43
       },
       "death": {
-        "runs": 616,
         "balls": 434,
         "strikeRate": 141.94,
         "economy": 8.52
@@ -12926,19 +9489,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.2,
     "battingPhases": {
       "powerplay": {
-        "runs": 604,
         "balls": 409,
         "strikeRate": 147.68,
         "economy": 8.86
       },
       "middle": {
-        "runs": 1381,
         "balls": 988,
         "strikeRate": 139.78,
         "economy": 8.39
       },
       "death": {
-        "runs": 506,
         "balls": 326,
         "strikeRate": 155.21,
         "economy": 9.31
@@ -12946,19 +9506,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 585,
         "balls": 354,
         "strikeRate": 165.25,
         "economy": 9.92
       },
       "middle": {
-        "runs": 1147,
         "balls": 798,
         "strikeRate": 143.73,
         "economy": 8.62
       },
       "death": {
-        "runs": 852,
         "balls": 504,
         "strikeRate": 169.05,
         "economy": 10.14
@@ -12979,20 +9536,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.22,
     "bowlingStrikeRate": 17.11,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 12,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 12,
         "balls": 33,
         "strikeRate": 36.36,
         "economy": 2.18
@@ -13000,19 +9549,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 205,
         "balls": 126,
         "strikeRate": 162.7,
         "economy": 9.76
       },
       "middle": {
-        "runs": 1304,
         "balls": 936,
         "strikeRate": 139.32,
         "economy": 8.36
       },
       "death": {
-        "runs": 302,
         "balls": 204,
         "strikeRate": 148.04,
         "economy": 8.88
@@ -13034,19 +9580,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.85,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 63,
         "balls": 52,
         "strikeRate": 121.15,
         "economy": 7.27
       },
       "death": {
-        "runs": 104,
         "balls": 69,
         "strikeRate": 150.72,
         "economy": 9.04
@@ -13054,19 +9597,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 492,
         "balls": 373,
         "strikeRate": 131.9,
         "economy": 7.91
       },
       "middle": {
-        "runs": 207,
         "balls": 144,
         "strikeRate": 143.75,
         "economy": 8.63
       },
       "death": {
-        "runs": 200,
         "balls": 103,
         "strikeRate": 194.17,
         "economy": 11.65
@@ -13080,50 +9620,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 126,
     "runs": 63,
     "innings": 5,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 8,
     "boundaryPct": 18,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 29,
         "balls": 23,
         "strikeRate": 126.09,
         "economy": 7.57
       },
       "middle": {
-        "runs": 34,
         "balls": 27,
         "strikeRate": 125.93,
         "economy": 7.56
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -13142,19 +9651,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.93,
     "battingPhases": {
       "powerplay": {
-        "runs": 466,
         "balls": 432,
         "strikeRate": 107.87,
         "economy": 6.47
       },
       "middle": {
-        "runs": 2635,
         "balls": 2098,
         "strikeRate": 125.6,
         "economy": 7.54
       },
       "death": {
-        "runs": 1621,
         "balls": 872,
         "strikeRate": 185.89,
         "economy": 11.15
@@ -13162,19 +9668,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 575,
         "balls": 414,
         "strikeRate": 138.89,
         "economy": 8.33
       },
       "middle": {
-        "runs": 3177,
         "balls": 2612,
         "strikeRate": 121.63,
         "economy": 7.3
       },
       "death": {
-        "runs": 551,
         "balls": 448,
         "strikeRate": 122.99,
         "economy": 7.38
@@ -13196,19 +9699,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.31,
     "battingPhases": {
       "powerplay": {
-        "runs": 18,
         "balls": 25,
         "strikeRate": 72,
         "economy": 4.32
       },
       "middle": {
-        "runs": 124,
         "balls": 126,
         "strikeRate": 98.41,
         "economy": 5.9
       },
       "death": {
-        "runs": 154,
         "balls": 118,
         "strikeRate": 130.51,
         "economy": 7.83
@@ -13216,19 +9716,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 365,
         "balls": 282,
         "strikeRate": 129.43,
         "economy": 7.77
       },
       "middle": {
-        "runs": 1756,
         "balls": 1431,
         "strikeRate": 122.71,
         "economy": 7.36
       },
       "death": {
-        "runs": 301,
         "balls": 208,
         "strikeRate": 144.71,
         "economy": 8.68
@@ -13250,19 +9747,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.13,
     "battingPhases": {
       "powerplay": {
-        "runs": 656,
         "balls": 538,
         "strikeRate": 121.93,
         "economy": 7.32
       },
       "middle": {
-        "runs": 861,
         "balls": 640,
         "strikeRate": 134.53,
         "economy": 8.07
       },
       "death": {
-        "runs": 127,
         "balls": 80,
         "strikeRate": 158.75,
         "economy": 9.52
@@ -13270,19 +9764,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 12,
         "strikeRate": 166.67,
         "economy": 10
       },
       "middle": {
-        "runs": 173,
         "balls": 182,
         "strikeRate": 95.05,
         "economy": 5.7
       },
       "death": {
-        "runs": 91,
         "balls": 48,
         "strikeRate": 189.58,
         "economy": 11.38
@@ -13303,20 +9794,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.09,
     "bowlingStrikeRate": 16,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 42,
         "balls": 33,
         "strikeRate": 127.27,
         "economy": 7.64
       },
       "death": {
-        "runs": 64,
         "balls": 55,
         "strikeRate": 116.36,
         "economy": 6.98
@@ -13324,19 +9807,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 13,
         "balls": 6,
         "strikeRate": 216.67,
         "economy": 13
       },
       "middle": {
-        "runs": 66,
         "balls": 54,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "death": {
-        "runs": 41,
         "balls": 20,
         "strikeRate": 205,
         "economy": 12.3
@@ -13357,40 +9837,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 30.3,
     "bowlingStrikeRate": 24.86,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 48,
         "balls": 32,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 69,
         "balls": 34,
         "strikeRate": 202.94,
         "economy": 12.18
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 222,
         "balls": 150,
         "strikeRate": 148,
         "economy": 8.88
       },
       "death": {
-        "runs": 31,
         "balls": 24,
         "strikeRate": 129.17,
         "economy": 7.75
@@ -13404,47 +9868,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 129.61,
     "runs": 836,
     "innings": 44,
-    "bowlingAverage": null,
     "economyRate": 7.68,
     "wickets": 0,
     "matches": 49,
     "boundaryPct": 14.11,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 122,
         "balls": 115,
         "strikeRate": 106.09,
         "economy": 6.37
       },
       "middle": {
-        "runs": 581,
         "balls": 449,
         "strikeRate": 129.4,
         "economy": 7.76
       },
       "death": {
-        "runs": 133,
         "balls": 81,
         "strikeRate": 164.2,
         "economy": 9.85
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 22,
         "balls": 19,
         "strikeRate": 115.79,
         "economy": 6.95
       },
       "death": {
-        "runs": 10,
         "balls": 6,
         "strikeRate": 166.67,
         "economy": 10
@@ -13465,20 +9916,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.07,
     "bowlingStrikeRate": 17.83,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 40,
         "balls": 41,
         "strikeRate": 97.56,
         "economy": 5.85
       },
       "death": {
-        "runs": 160,
         "balls": 127,
         "strikeRate": 125.98,
         "economy": 7.56
@@ -13486,19 +9929,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1814,
         "balls": 1506,
         "strikeRate": 120.45,
         "economy": 7.23
       },
       "middle": {
-        "runs": 569,
         "balls": 423,
         "strikeRate": 134.52,
         "economy": 8.07
       },
       "death": {
-        "runs": 1007,
         "balls": 620,
         "strikeRate": 162.42,
         "economy": 9.75
@@ -13512,57 +9952,30 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 79.71,
     "runs": 55,
     "innings": 11,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 18,
     "boundaryPct": 7.25,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 15,
         "balls": 22,
         "strikeRate": 68.18,
         "economy": 4.09
       },
       "death": {
-        "runs": 40,
         "balls": 45,
         "strikeRate": 88.89,
         "economy": 5.33
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-3c22d6c7": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 85.71,
     "runs": 30,
     "innings": 4,
@@ -13573,20 +9986,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.71,
     "bowlingStrikeRate": 19.71,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 8,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 26,
         "balls": 27,
         "strikeRate": 96.3,
         "economy": 5.78
@@ -13594,19 +9999,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 137,
         "balls": 138,
         "strikeRate": 99.28,
         "economy": 5.96
       },
       "middle": {
-        "runs": 286,
         "balls": 228,
         "strikeRate": 125.44,
         "economy": 7.53
       },
       "death": {
-        "runs": 42,
         "balls": 48,
         "strikeRate": 87.5,
         "economy": 5.25
@@ -13628,19 +10030,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 235,
         "balls": 230,
         "strikeRate": 102.17,
         "economy": 6.13
       },
       "middle": {
-        "runs": 269,
         "balls": 255,
         "strikeRate": 105.49,
         "economy": 6.33
       },
       "death": {
-        "runs": 51,
         "balls": 50,
         "strikeRate": 102,
         "economy": 6.12
@@ -13648,19 +10047,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 172,
         "balls": 132,
         "strikeRate": 130.3,
         "economy": 7.82
       },
       "middle": {
-        "runs": 128,
         "balls": 90,
         "strikeRate": 142.22,
         "economy": 8.53
       },
       "death": {
-        "runs": 149,
         "balls": 90,
         "strikeRate": 165.56,
         "economy": 9.93
@@ -13682,39 +10078,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 323,
         "balls": 314,
         "strikeRate": 102.87,
         "economy": 6.17
       },
       "middle": {
-        "runs": 1376,
         "balls": 1102,
         "strikeRate": 124.86,
         "economy": 7.49
       },
       "death": {
-        "runs": 957,
         "balls": 579,
         "strikeRate": 165.28,
         "economy": 9.92
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 149,
         "balls": 74,
         "strikeRate": 201.35,
         "economy": 12.08
       },
       "death": {
-        "runs": 27,
         "balls": 12,
         "strikeRate": 225,
         "economy": 13.5
@@ -13728,50 +10113,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 74.65,
     "runs": 53,
     "innings": 6,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 7,
     "boundaryPct": 9.86,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 27,
         "balls": 39,
         "strikeRate": 69.23,
         "economy": 4.15
       },
       "middle": {
-        "runs": 25,
         "balls": 30,
         "strikeRate": 83.33,
         "economy": 5
       },
       "death": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -13789,20 +10148,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.11,
     "bowlingStrikeRate": 24.07,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 20,
         "balls": 31,
         "strikeRate": 64.52,
         "economy": 3.87
       },
       "death": {
-        "runs": 39,
         "balls": 43,
         "strikeRate": 90.7,
         "economy": 5.44
@@ -13810,19 +10161,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 101,
         "balls": 84,
         "strikeRate": 120.24,
         "economy": 7.21
       },
       "middle": {
-        "runs": 747,
         "balls": 584,
         "strikeRate": 127.91,
         "economy": 7.67
       },
       "death": {
-        "runs": 72,
         "balls": 54,
         "strikeRate": 133.33,
         "economy": 8
@@ -13836,50 +10184,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130.11,
     "runs": 1534,
     "innings": 68,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 68,
     "boundaryPct": 17.9,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 780,
         "balls": 654,
         "strikeRate": 119.27,
         "economy": 7.16
       },
       "middle": {
-        "runs": 653,
         "balls": 473,
         "strikeRate": 138.05,
         "economy": 8.28
       },
       "death": {
-        "runs": 101,
         "balls": 52,
         "strikeRate": 194.23,
         "economy": 11.65
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -13890,50 +10212,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 145.56,
     "runs": 885,
     "innings": 30,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 35,
     "boundaryPct": 19.9,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 283,
         "balls": 194,
         "strikeRate": 145.88,
         "economy": 8.75
       },
       "middle": {
-        "runs": 465,
         "balls": 330,
         "strikeRate": 140.91,
         "economy": 8.45
       },
       "death": {
-        "runs": 137,
         "balls": 84,
         "strikeRate": 163.1,
         "economy": 9.79
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -13952,19 +10248,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.48,
     "battingPhases": {
       "powerplay": {
-        "runs": 2,
         "balls": 4,
         "strikeRate": 50,
         "economy": 3
       },
       "middle": {
-        "runs": 38,
         "balls": 42,
         "strikeRate": 90.48,
         "economy": 5.43
       },
       "death": {
-        "runs": 73,
         "balls": 84,
         "strikeRate": 86.9,
         "economy": 5.21
@@ -13972,19 +10265,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 297,
         "balls": 216,
         "strikeRate": 137.5,
         "economy": 8.25
       },
       "middle": {
-        "runs": 2025,
         "balls": 1658,
         "strikeRate": 122.14,
         "economy": 7.33
       },
       "death": {
-        "runs": 473,
         "balls": 347,
         "strikeRate": 136.31,
         "economy": 8.18
@@ -13994,7 +10284,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-3ddbcc02": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 20,
     "runs": 1,
     "innings": 2,
@@ -14005,20 +10294,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 24,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 1,
         "balls": 5,
         "strikeRate": 20,
         "economy": 1.2
@@ -14026,19 +10302,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 69,
         "balls": 48,
         "strikeRate": 143.75,
         "economy": 8.63
       },
       "middle": {
-        "runs": 38,
         "balls": 30,
         "strikeRate": 126.67,
         "economy": 7.6
       },
       "death": {
-        "runs": 42,
         "balls": 18,
         "strikeRate": 233.33,
         "economy": 14
@@ -14048,51 +10321,25 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-3df5944d": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 46.17,
     "economyRate": 11.01,
     "wickets": 6,
     "matches": 9,
-    "boundaryPct": null,
     "bowlingStrikeRate": 25.17,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 62,
         "balls": 30,
         "strikeRate": 206.67,
         "economy": 12.4
       },
       "middle": {
-        "runs": 148,
         "balls": 90,
         "strikeRate": 164.44,
         "economy": 9.87
       },
       "death": {
-        "runs": 67,
         "balls": 31,
         "strikeRate": 216.13,
         "economy": 12.97
@@ -14113,20 +10360,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 20.09,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 9,
         "balls": 20,
         "strikeRate": 45,
         "economy": 2.7
@@ -14134,19 +10373,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 248,
         "balls": 186,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 247,
         "balls": 216,
         "strikeRate": 114.35,
         "economy": 6.86
       },
       "death": {
-        "runs": 59,
         "balls": 40,
         "strikeRate": 147.5,
         "economy": 8.85
@@ -14160,50 +10396,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 136.85,
     "runs": 3424,
     "innings": 121,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 126,
     "boundaryPct": 17.95,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1912,
         "balls": 1361,
         "strikeRate": 140.48,
         "economy": 8.43
       },
       "middle": {
-        "runs": 1284,
         "balls": 982,
         "strikeRate": 130.75,
         "economy": 7.85
       },
       "death": {
-        "runs": 228,
         "balls": 159,
         "strikeRate": 143.4,
         "economy": 8.6
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -14221,20 +10431,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 20,
     "bowlingStrikeRate": 18,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 5,
         "balls": 5,
         "strikeRate": 100,
         "economy": 6
@@ -14242,19 +10439,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 141,
         "balls": 96,
         "strikeRate": 146.88,
         "economy": 8.81
       },
       "middle": {
-        "runs": 84,
         "balls": 66,
         "strikeRate": 127.27,
         "economy": 7.64
       },
       "death": {
-        "runs": 70,
         "balls": 36,
         "strikeRate": 194.44,
         "economy": 11.67
@@ -14268,50 +10462,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 144.71,
     "runs": 424,
     "innings": 18,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 25,
     "boundaryPct": 19.11,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 18,
         "balls": 32,
         "strikeRate": 56.25,
         "economy": 3.38
       },
       "middle": {
-        "runs": 275,
         "balls": 196,
         "strikeRate": 140.31,
         "economy": 8.42
       },
       "death": {
-        "runs": 131,
         "balls": 65,
         "strikeRate": 201.54,
         "economy": 12.09
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -14322,50 +10490,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 121.78,
     "runs": 1191,
     "innings": 58,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 63,
     "boundaryPct": 14.21,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 263,
         "balls": 271,
         "strikeRate": 97.05,
         "economy": 5.82
       },
       "middle": {
-        "runs": 734,
         "balls": 596,
         "strikeRate": 123.15,
         "economy": 7.39
       },
       "death": {
-        "runs": 194,
         "balls": 111,
         "strikeRate": 174.77,
         "economy": 10.49
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -14376,50 +10518,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 127.03,
     "runs": 141,
     "innings": 9,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 11,
     "boundaryPct": 18.92,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 36,
         "balls": 31,
         "strikeRate": 116.13,
         "economy": 6.97
       },
       "middle": {
-        "runs": 87,
         "balls": 62,
         "strikeRate": 140.32,
         "economy": 8.42
       },
       "death": {
-        "runs": 18,
         "balls": 18,
         "strikeRate": 100,
         "economy": 6
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -14437,20 +10553,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.26,
     "bowlingStrikeRate": 21.09,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 12,
         "balls": 15,
         "strikeRate": 80,
         "economy": 4.8
       },
       "death": {
-        "runs": 49,
         "balls": 61,
         "strikeRate": 80.33,
         "economy": 4.82
@@ -14458,19 +10566,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2114,
         "balls": 1768,
         "strikeRate": 119.57,
         "economy": 7.17
       },
       "middle": {
-        "runs": 865,
         "balls": 642,
         "strikeRate": 134.74,
         "economy": 8.08
       },
       "death": {
-        "runs": 1401,
         "balls": 795,
         "strikeRate": 176.23,
         "economy": 10.57
@@ -14492,19 +10597,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 41.33,
     "battingPhases": {
       "powerplay": {
-        "runs": 42,
         "balls": 35,
         "strikeRate": 120,
         "economy": 7.2
       },
       "middle": {
-        "runs": 466,
         "balls": 320,
         "strikeRate": 145.63,
         "economy": 8.74
       },
       "death": {
-        "runs": 334,
         "balls": 164,
         "strikeRate": 203.66,
         "economy": 12.22
@@ -14512,19 +10614,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 17,
         "balls": 15,
         "strikeRate": 113.33,
         "economy": 6.8
       },
       "middle": {
-        "runs": 139,
         "balls": 91,
         "strikeRate": 152.75,
         "economy": 9.16
       },
       "death": {
-        "runs": 38,
         "balls": 18,
         "strikeRate": 211.11,
         "economy": 12.67
@@ -14545,20 +10644,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.06,
     "bowlingStrikeRate": 16.22,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 8,
         "strikeRate": 62.5,
         "economy": 3.75
       },
       "death": {
-        "runs": 16,
         "balls": 25,
         "strikeRate": 64,
         "economy": 3.84
@@ -14566,19 +10657,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 75,
         "balls": 60,
         "strikeRate": 125,
         "economy": 7.5
       },
       "middle": {
-        "runs": 854,
         "balls": 643,
         "strikeRate": 132.81,
         "economy": 7.97
       },
       "death": {
-        "runs": 214,
         "balls": 108,
         "strikeRate": 198.15,
         "economy": 11.89
@@ -14600,19 +10688,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.29,
     "battingPhases": {
       "powerplay": {
-        "runs": 126,
         "balls": 128,
         "strikeRate": 98.44,
         "economy": 5.91
       },
       "middle": {
-        "runs": 1109,
         "balls": 953,
         "strikeRate": 116.37,
         "economy": 6.98
       },
       "death": {
-        "runs": 948,
         "balls": 468,
         "strikeRate": 202.56,
         "economy": 12.15
@@ -14620,19 +10705,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 274,
         "balls": 312,
         "strikeRate": 87.82,
         "economy": 5.27
       },
       "middle": {
-        "runs": 618,
         "balls": 658,
         "strikeRate": 93.92,
         "economy": 5.64
       },
       "death": {
-        "runs": 373,
         "balls": 286,
         "strikeRate": 130.42,
         "economy": 7.83
@@ -14654,19 +10736,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.16,
     "battingPhases": {
       "powerplay": {
-        "runs": 43,
         "balls": 41,
         "strikeRate": 104.88,
         "economy": 6.29
       },
       "middle": {
-        "runs": 125,
         "balls": 124,
         "strikeRate": 100.81,
         "economy": 6.05
       },
       "death": {
-        "runs": 181,
         "balls": 154,
         "strikeRate": 117.53,
         "economy": 7.05
@@ -14674,19 +10753,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 707,
         "balls": 654,
         "strikeRate": 108.1,
         "economy": 6.49
       },
       "middle": {
-        "runs": 1354,
         "balls": 1254,
         "strikeRate": 107.97,
         "economy": 6.48
       },
       "death": {
-        "runs": 289,
         "balls": 209,
         "strikeRate": 138.28,
         "economy": 8.3
@@ -14707,20 +10783,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 20.9,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 4,
         "balls": 13,
         "strikeRate": 30.77,
         "economy": 1.85
@@ -14728,19 +10791,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 151,
         "balls": 96,
         "strikeRate": 157.29,
         "economy": 9.44
       },
       "middle": {
-        "runs": 88,
         "balls": 60,
         "strikeRate": 146.67,
         "economy": 8.8
       },
       "death": {
-        "runs": 91,
         "balls": 53,
         "strikeRate": 171.7,
         "economy": 10.3
@@ -14754,50 +10814,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 144.75,
     "runs": 2274,
     "innings": 93,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 104,
     "boundaryPct": 18.08,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 536,
         "balls": 372,
         "strikeRate": 144.09,
         "economy": 8.65
       },
       "middle": {
-        "runs": 1144,
         "balls": 842,
         "strikeRate": 135.87,
         "economy": 8.15
       },
       "death": {
-        "runs": 594,
         "balls": 357,
         "strikeRate": 166.39,
         "economy": 9.98
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -14816,19 +10850,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.67,
     "battingPhases": {
       "powerplay": {
-        "runs": 3887,
         "balls": 3034,
         "strikeRate": 128.11,
         "economy": 7.69
       },
       "middle": {
-        "runs": 2087,
         "balls": 1880,
         "strikeRate": 111.01,
         "economy": 6.66
       },
       "death": {
-        "runs": 455,
         "balls": 266,
         "strikeRate": 171.05,
         "economy": 10.26
@@ -14836,19 +10867,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 13,
         "balls": 5,
         "strikeRate": 260,
         "economy": 15.6
       },
       "middle": {
-        "runs": 44,
         "balls": 36,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "death": {
-        "runs": 22,
         "balls": 18,
         "strikeRate": 122.22,
         "economy": 7.33
@@ -14862,27 +10890,17 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 90.8,
     "runs": 79,
     "innings": 14,
-    "bowlingAverage": null,
     "economyRate": 8.4,
     "wickets": 0,
     "matches": 18,
     "boundaryPct": 6.9,
-    "bowlingStrikeRate": null,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 33,
         "balls": 43,
         "strikeRate": 76.74,
         "economy": 4.6
       },
       "death": {
-        "runs": 46,
         "balls": 44,
         "strikeRate": 104.55,
         "economy": 6.27
@@ -14890,22 +10908,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 4,
         "balls": 6,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 38,
         "balls": 24,
         "strikeRate": 158.33,
         "economy": 9.5
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -14923,20 +10933,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.16,
     "bowlingStrikeRate": 20.74,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 11,
         "balls": 20,
         "strikeRate": 55,
         "economy": 3.3
       },
       "death": {
-        "runs": 219,
         "balls": 202,
         "strikeRate": 108.42,
         "economy": 6.5
@@ -14944,19 +10946,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2028,
         "balls": 1548,
         "strikeRate": 131.01,
         "economy": 7.86
       },
       "middle": {
-        "runs": 1225,
         "balls": 908,
         "strikeRate": 134.91,
         "economy": 8.09
       },
       "death": {
-        "runs": 1359,
         "balls": 780,
         "strikeRate": 174.23,
         "economy": 10.45
@@ -14977,20 +10976,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.33,
     "bowlingStrikeRate": 23.14,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 25,
         "balls": 26,
         "strikeRate": 96.15,
         "economy": 5.77
       },
       "death": {
-        "runs": 26,
         "balls": 19,
         "strikeRate": 136.84,
         "economy": 8.21
@@ -14998,22 +10989,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 62,
         "balls": 42,
         "strikeRate": 147.62,
         "economy": 8.86
       },
       "middle": {
-        "runs": 179,
         "balls": 120,
         "strikeRate": 149.17,
         "economy": 8.95
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -15024,50 +11007,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 143.1,
     "runs": 5482,
     "innings": 250,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 273,
     "boundaryPct": 18.12,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 896,
         "balls": 727,
         "strikeRate": 123.25,
         "economy": 7.39
       },
       "middle": {
-        "runs": 2997,
         "balls": 2205,
         "strikeRate": 135.92,
         "economy": 8.16
       },
       "death": {
-        "runs": 1589,
         "balls": 899,
         "strikeRate": 176.75,
         "economy": 10.61
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -15078,50 +11035,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 120.87,
     "runs": 139,
     "innings": 9,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 9,
     "boundaryPct": 19.13,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 116,
         "balls": 91,
         "strikeRate": 127.47,
         "economy": 7.65
       },
       "middle": {
-        "runs": 23,
         "balls": 24,
         "strikeRate": 95.83,
         "economy": 5.75
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -15140,19 +11066,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 74,
     "battingPhases": {
       "powerplay": {
-        "runs": 64,
         "balls": 71,
         "strikeRate": 90.14,
         "economy": 5.41
       },
       "middle": {
-        "runs": 250,
         "balls": 212,
         "strikeRate": 117.92,
         "economy": 7.08
       },
       "death": {
-        "runs": 117,
         "balls": 93,
         "strikeRate": 125.81,
         "economy": 7.55
@@ -15160,19 +11083,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 17,
         "balls": 6,
         "strikeRate": 283.33,
         "economy": 17
       },
       "middle": {
-        "runs": 128,
         "balls": 64,
         "strikeRate": 200,
         "economy": 12
       },
       "death": {
-        "runs": 8,
         "balls": 4,
         "strikeRate": 200,
         "economy": 12
@@ -15194,19 +11114,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.08,
     "battingPhases": {
       "powerplay": {
-        "runs": 48,
         "balls": 35,
         "strikeRate": 137.14,
         "economy": 8.23
       },
       "middle": {
-        "runs": 265,
         "balls": 268,
         "strikeRate": 98.88,
         "economy": 5.93
       },
       "death": {
-        "runs": 103,
         "balls": 82,
         "strikeRate": 125.61,
         "economy": 7.54
@@ -15214,19 +11131,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 114,
         "balls": 108,
         "strikeRate": 105.56,
         "economy": 6.33
       },
       "middle": {
-        "runs": 122,
         "balls": 79,
         "strikeRate": 154.43,
         "economy": 9.27
       },
       "death": {
-        "runs": 0,
         "balls": 6,
         "strikeRate": 0,
         "economy": 0
@@ -15247,20 +11161,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.34,
     "bowlingStrikeRate": 22.43,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 71,
         "balls": 60,
         "strikeRate": 118.33,
         "economy": 7.1
       },
       "death": {
-        "runs": 100,
         "balls": 94,
         "strikeRate": 106.38,
         "economy": 6.38
@@ -15268,19 +11174,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 445,
         "balls": 360,
         "strikeRate": 123.61,
         "economy": 7.42
       },
       "middle": {
-        "runs": 671,
         "balls": 516,
         "strikeRate": 130.04,
         "economy": 7.8
       },
       "death": {
-        "runs": 89,
         "balls": 66,
         "strikeRate": 134.85,
         "economy": 8.09
@@ -15302,19 +11205,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.87,
     "battingPhases": {
       "powerplay": {
-        "runs": 268,
         "balls": 199,
         "strikeRate": 134.67,
         "economy": 8.08
       },
       "middle": {
-        "runs": 1116,
         "balls": 878,
         "strikeRate": 127.11,
         "economy": 7.63
       },
       "death": {
-        "runs": 1311,
         "balls": 753,
         "strikeRate": 174.1,
         "economy": 10.45
@@ -15322,19 +11222,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1097,
         "balls": 720,
         "strikeRate": 152.36,
         "economy": 9.14
       },
       "middle": {
-        "runs": 2338,
         "balls": 1638,
         "strikeRate": 142.74,
         "economy": 8.56
       },
       "death": {
-        "runs": 1169,
         "balls": 715,
         "strikeRate": 163.5,
         "economy": 9.81
@@ -15355,20 +11252,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.34,
     "bowlingStrikeRate": 18.67,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 8,
         "strikeRate": 62.5,
         "economy": 3.75
       },
       "death": {
-        "runs": 34,
         "balls": 50,
         "strikeRate": 68,
         "economy": 4.08
@@ -15376,19 +11265,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 243,
         "balls": 152,
         "strikeRate": 159.87,
         "economy": 9.59
       },
       "middle": {
-        "runs": 480,
         "balls": 374,
         "strikeRate": 128.34,
         "economy": 7.7
       },
       "death": {
-        "runs": 337,
         "balls": 202,
         "strikeRate": 166.83,
         "economy": 10.01
@@ -15410,19 +11296,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.82,
     "battingPhases": {
       "powerplay": {
-        "runs": 66,
         "balls": 52,
         "strikeRate": 126.92,
         "economy": 7.62
       },
       "middle": {
-        "runs": 312,
         "balls": 256,
         "strikeRate": 121.88,
         "economy": 7.31
       },
       "death": {
-        "runs": 116,
         "balls": 70,
         "strikeRate": 165.71,
         "economy": 9.94
@@ -15430,19 +11313,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 179,
         "balls": 120,
         "strikeRate": 149.17,
         "economy": 8.95
       },
       "middle": {
-        "runs": 140,
         "balls": 72,
         "strikeRate": 194.44,
         "economy": 11.67
       },
       "death": {
-        "runs": 71,
         "balls": 37,
         "strikeRate": 191.89,
         "economy": 11.51
@@ -15456,50 +11336,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 135.86,
     "runs": 1345,
     "innings": 57,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 64,
     "boundaryPct": 18.79,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 622,
         "balls": 478,
         "strikeRate": 130.13,
         "economy": 7.81
       },
       "middle": {
-        "runs": 507,
         "balls": 383,
         "strikeRate": 132.38,
         "economy": 7.94
       },
       "death": {
-        "runs": 216,
         "balls": 129,
         "strikeRate": 167.44,
         "economy": 10.05
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -15517,20 +11371,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.23,
     "bowlingStrikeRate": 16.59,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 46,
         "balls": 40,
         "strikeRate": 115,
         "economy": 6.9
       },
       "death": {
-        "runs": 43,
         "balls": 48,
         "strikeRate": 89.58,
         "economy": 5.38
@@ -15538,19 +11384,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 201,
         "balls": 156,
         "strikeRate": 128.85,
         "economy": 7.73
       },
       "middle": {
-        "runs": 267,
         "balls": 204,
         "strikeRate": 130.88,
         "economy": 7.85
       },
       "death": {
-        "runs": 355,
         "balls": 204,
         "strikeRate": 174.02,
         "economy": 10.44
@@ -15571,20 +11414,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.64,
     "bowlingStrikeRate": 22.22,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 105,
         "balls": 72,
         "strikeRate": 145.83,
         "economy": 8.75
       },
       "death": {
-        "runs": 146,
         "balls": 126,
         "strikeRate": 115.87,
         "economy": 6.95
@@ -15592,19 +11427,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 546,
         "balls": 359,
         "strikeRate": 152.09,
         "economy": 9.13
       },
       "middle": {
-        "runs": 1024,
         "balls": 834,
         "strikeRate": 122.78,
         "economy": 7.37
       },
       "death": {
-        "runs": 275,
         "balls": 207,
         "strikeRate": 132.85,
         "economy": 7.97
@@ -15625,20 +11457,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.44,
     "bowlingStrikeRate": 22.94,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 30,
         "balls": 45,
         "strikeRate": 66.67,
         "economy": 4
@@ -15646,19 +11465,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 49,
         "balls": 24,
         "strikeRate": 204.17,
         "economy": 12.25
       },
       "middle": {
-        "runs": 491,
         "balls": 353,
         "strikeRate": 139.09,
         "economy": 8.35
       },
       "death": {
-        "runs": 49,
         "balls": 36,
         "strikeRate": 136.11,
         "economy": 8.17
@@ -15672,50 +11488,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 113.13,
     "runs": 112,
     "innings": 9,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 10,
     "boundaryPct": 11.11,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2,
         "balls": 4,
         "strikeRate": 50,
         "economy": 3
       },
       "middle": {
-        "runs": 78,
         "balls": 72,
         "strikeRate": 108.33,
         "economy": 6.5
       },
       "death": {
-        "runs": 32,
         "balls": 23,
         "strikeRate": 139.13,
         "economy": 8.35
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -15734,19 +11524,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.17,
     "battingPhases": {
       "powerplay": {
-        "runs": 389,
         "balls": 340,
         "strikeRate": 114.41,
         "economy": 6.86
       },
       "middle": {
-        "runs": 555,
         "balls": 476,
         "strikeRate": 116.6,
         "economy": 7
       },
       "death": {
-        "runs": 138,
         "balls": 69,
         "strikeRate": 200,
         "economy": 12
@@ -15754,19 +11541,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 29,
         "balls": 24,
         "strikeRate": 120.83,
         "economy": 7.25
       },
       "middle": {
-        "runs": 82,
         "balls": 60,
         "strikeRate": 136.67,
         "economy": 8.2
       },
       "death": {
-        "runs": 15,
         "balls": 13,
         "strikeRate": 115.38,
         "economy": 6.92
@@ -15787,20 +11571,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12,
     "bowlingStrikeRate": 17.69,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 8,
         "strikeRate": 87.5,
         "economy": 5.25
       },
       "death": {
-        "runs": 18,
         "balls": 17,
         "strikeRate": 105.88,
         "economy": 6.35
@@ -15808,19 +11584,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 599,
         "balls": 426,
         "strikeRate": 140.61,
         "economy": 8.44
       },
       "middle": {
-        "runs": 359,
         "balls": 216,
         "strikeRate": 166.2,
         "economy": 9.97
       },
       "death": {
-        "runs": 369,
         "balls": 225,
         "strikeRate": 164,
         "economy": 9.84
@@ -15841,20 +11614,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.48,
     "bowlingStrikeRate": 16.91,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 9,
         "balls": 12,
         "strikeRate": 75,
         "economy": 4.5
       },
       "death": {
-        "runs": 96,
         "balls": 79,
         "strikeRate": 121.52,
         "economy": 7.29
@@ -15862,19 +11627,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1211,
         "balls": 1128,
         "strikeRate": 107.36,
         "economy": 6.44
       },
       "middle": {
-        "runs": 277,
         "balls": 204,
         "strikeRate": 135.78,
         "economy": 8.15
       },
       "death": {
-        "runs": 922,
         "balls": 630,
         "strikeRate": 146.35,
         "economy": 8.78
@@ -15884,51 +11646,20 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-487a5d0a": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 27.75,
     "economyRate": 9.25,
     "wickets": 4,
     "matches": 4,
-    "boundaryPct": null,
     "bowlingStrikeRate": 18,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 93,
         "balls": 60,
         "strikeRate": 155,
         "economy": 9.3
       },
       "death": {
-        "runs": 18,
         "balls": 12,
         "strikeRate": 150,
         "economy": 9
@@ -15949,20 +11680,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.34,
     "bowlingStrikeRate": 22.79,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 27,
         "balls": 29,
         "strikeRate": 93.1,
         "economy": 5.59
@@ -15970,19 +11688,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 605,
         "balls": 480,
         "strikeRate": 126.04,
         "economy": 7.56
       },
       "middle": {
-        "runs": 85,
         "balls": 78,
         "strikeRate": 108.97,
         "economy": 6.54
       },
       "death": {
-        "runs": 457,
         "balls": 308,
         "strikeRate": 148.38,
         "economy": 8.9
@@ -15996,50 +11711,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 120.87,
     "runs": 249,
     "innings": 13,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 13,
     "boundaryPct": 13.59,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 58,
         "balls": 51,
         "strikeRate": 113.73,
         "economy": 6.82
       },
       "middle": {
-        "runs": 121,
         "balls": 126,
         "strikeRate": 96.03,
         "economy": 5.76
       },
       "death": {
-        "runs": 70,
         "balls": 29,
         "strikeRate": 241.38,
         "economy": 14.48
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -16057,20 +11746,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.8,
     "bowlingStrikeRate": 16.83,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 11,
         "strikeRate": 45.45,
         "economy": 2.73
       },
       "death": {
-        "runs": 108,
         "balls": 114,
         "strikeRate": 94.74,
         "economy": 5.68
@@ -16078,19 +11759,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1212,
         "balls": 1038,
         "strikeRate": 116.76,
         "economy": 7.01
       },
       "middle": {
-        "runs": 1159,
         "balls": 926,
         "strikeRate": 125.16,
         "economy": 7.51
       },
       "death": {
-        "runs": 1377,
         "balls": 897,
         "strikeRate": 153.51,
         "economy": 9.21
@@ -16111,20 +11789,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 32,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 7,
         "balls": 10,
         "strikeRate": 70,
         "economy": 4.2
@@ -16132,19 +11797,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 98,
         "balls": 42,
         "strikeRate": 233.33,
         "economy": 14
       },
       "middle": {
-        "runs": 76,
         "balls": 36,
         "strikeRate": 211.11,
         "economy": 12.67
       },
       "death": {
-        "runs": 36,
         "balls": 18,
         "strikeRate": 200,
         "economy": 12
@@ -16165,20 +11827,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.29,
     "bowlingStrikeRate": 17.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 27,
         "balls": 41,
         "strikeRate": 65.85,
         "economy": 3.95
       },
       "death": {
-        "runs": 174,
         "balls": 247,
         "strikeRate": 70.45,
         "economy": 4.23
@@ -16186,19 +11840,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2317,
         "balls": 2025,
         "strikeRate": 114.42,
         "economy": 6.87
       },
       "middle": {
-        "runs": 2074,
         "balls": 1767,
         "strikeRate": 117.37,
         "economy": 7.04
       },
       "death": {
-        "runs": 3354,
         "balls": 2421,
         "strikeRate": 138.54,
         "economy": 8.31
@@ -16219,20 +11870,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.27,
     "bowlingStrikeRate": 18.83,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 17,
         "balls": 24,
         "strikeRate": 70.83,
         "economy": 4.25
       },
       "death": {
-        "runs": 86,
         "balls": 86,
         "strikeRate": 100,
         "economy": 6
@@ -16240,19 +11883,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 159,
         "balls": 96,
         "strikeRate": 165.63,
         "economy": 9.94
       },
       "middle": {
-        "runs": 1377,
         "balls": 1002,
         "strikeRate": 137.43,
         "economy": 8.25
       },
       "death": {
-        "runs": 161,
         "balls": 126,
         "strikeRate": 127.78,
         "economy": 7.67
@@ -16274,19 +11914,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.75,
     "battingPhases": {
       "powerplay": {
-        "runs": 1900,
         "balls": 1451,
         "strikeRate": 130.94,
         "economy": 7.86
       },
       "middle": {
-        "runs": 1112,
         "balls": 752,
         "strikeRate": 147.87,
         "economy": 8.87
       },
       "death": {
-        "runs": 72,
         "balls": 46,
         "strikeRate": 156.52,
         "economy": 9.39
@@ -16294,19 +11931,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 478,
         "balls": 323,
         "strikeRate": 147.99,
         "economy": 8.88
       },
       "middle": {
-        "runs": 829,
         "balls": 702,
         "strikeRate": 118.09,
         "economy": 7.09
       },
       "death": {
-        "runs": 80,
         "balls": 54,
         "strikeRate": 148.15,
         "economy": 8.89
@@ -16328,19 +11962,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 52.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 16,
         "balls": 25,
         "strikeRate": 64,
         "economy": 3.84
       },
       "middle": {
-        "runs": 471,
         "balls": 508,
         "strikeRate": 92.72,
         "economy": 5.56
       },
       "death": {
-        "runs": 714,
         "balls": 476,
         "strikeRate": 150,
         "economy": 9
@@ -16348,19 +11979,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 50,
         "balls": 30,
         "strikeRate": 166.67,
         "economy": 10
       },
       "middle": {
-        "runs": 243,
         "balls": 138,
         "strikeRate": 176.09,
         "economy": 10.57
       },
       "death": {
-        "runs": 116,
         "balls": 42,
         "strikeRate": 276.19,
         "economy": 16.57
@@ -16381,20 +12009,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.08,
     "bowlingStrikeRate": 17.65,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 40,
         "balls": 63,
         "strikeRate": 63.49,
         "economy": 3.81
       },
       "death": {
-        "runs": 253,
         "balls": 266,
         "strikeRate": 95.11,
         "economy": 5.71
@@ -16402,19 +12022,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1202,
         "balls": 942,
         "strikeRate": 127.6,
         "economy": 7.66
       },
       "middle": {
-        "runs": 1933,
         "balls": 1616,
         "strikeRate": 119.62,
         "economy": 7.18
       },
       "death": {
-        "runs": 327,
         "balls": 195,
         "strikeRate": 167.69,
         "economy": 10.06
@@ -16435,20 +12052,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.22,
     "bowlingStrikeRate": 21.94,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 17,
         "strikeRate": 41.18,
         "economy": 2.47
       },
       "death": {
-        "runs": 50,
         "balls": 56,
         "strikeRate": 89.29,
         "economy": 5.36
@@ -16456,19 +12065,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 378,
         "balls": 312,
         "strikeRate": 121.15,
         "economy": 7.27
       },
       "middle": {
-        "runs": 1198,
         "balls": 995,
         "strikeRate": 120.4,
         "economy": 7.22
       },
       "death": {
-        "runs": 213,
         "balls": 163,
         "strikeRate": 130.67,
         "economy": 7.84
@@ -16478,7 +12084,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-4b661541": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 25,
     "runs": 1,
     "innings": 2,
@@ -16489,20 +12094,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 21,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 3,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
@@ -16510,19 +12107,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 60,
         "balls": 24,
         "strikeRate": 250,
         "economy": 15
       },
       "middle": {
-        "runs": 75,
         "balls": 54,
         "strikeRate": 138.89,
         "economy": 8.33
       },
       "death": {
-        "runs": 93,
         "balls": 48,
         "strikeRate": 193.75,
         "economy": 11.63
@@ -16543,20 +12137,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.67,
     "bowlingStrikeRate": 22.23,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 6,
         "balls": 6,
         "strikeRate": 100,
         "economy": 6
@@ -16564,19 +12145,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 111,
         "balls": 72,
         "strikeRate": 154.17,
         "economy": 9.25
       },
       "middle": {
-        "runs": 267,
         "balls": 162,
         "strikeRate": 164.81,
         "economy": 9.89
       },
       "death": {
-        "runs": 72,
         "balls": 55,
         "strikeRate": 130.91,
         "economy": 7.85
@@ -16597,20 +12175,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 21.54,
     "bowlingStrikeRate": 25.38,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 9,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 95,
         "balls": 56,
         "strikeRate": 169.64,
         "economy": 10.18
@@ -16618,19 +12188,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 102,
         "balls": 72,
         "strikeRate": 141.67,
         "economy": 8.5
       },
       "middle": {
-        "runs": 310,
         "balls": 246,
         "strikeRate": 126.02,
         "economy": 7.56
       },
       "death": {
-        "runs": 18,
         "balls": 12,
         "strikeRate": 150,
         "economy": 9
@@ -16652,19 +12219,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.14,
     "battingPhases": {
       "powerplay": {
-        "runs": 91,
         "balls": 57,
         "strikeRate": 159.65,
         "economy": 9.58
       },
       "middle": {
-        "runs": 1179,
         "balls": 1036,
         "strikeRate": 113.8,
         "economy": 6.83
       },
       "death": {
-        "runs": 2047,
         "balls": 1253,
         "strikeRate": 163.37,
         "economy": 9.8
@@ -16672,19 +12236,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1746,
         "balls": 1374,
         "strikeRate": 127.07,
         "economy": 7.62
       },
       "middle": {
-        "runs": 2666,
         "balls": 1956,
         "strikeRate": 136.3,
         "economy": 8.18
       },
       "death": {
-        "runs": 1947,
         "balls": 1226,
         "strikeRate": 158.81,
         "economy": 9.53
@@ -16706,19 +12267,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.88,
     "battingPhases": {
       "powerplay": {
-        "runs": 165,
         "balls": 118,
         "strikeRate": 139.83,
         "economy": 8.39
       },
       "middle": {
-        "runs": 821,
         "balls": 732,
         "strikeRate": 112.16,
         "economy": 6.73
       },
       "death": {
-        "runs": 1612,
         "balls": 934,
         "strikeRate": 172.59,
         "economy": 10.36
@@ -16726,19 +12284,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 376,
         "balls": 258,
         "strikeRate": 145.74,
         "economy": 8.74
       },
       "middle": {
-        "runs": 2182,
         "balls": 1536,
         "strikeRate": 142.06,
         "economy": 8.52
       },
       "death": {
-        "runs": 1127,
         "balls": 635,
         "strikeRate": 177.48,
         "economy": 10.65
@@ -16752,50 +12307,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 110.2,
     "runs": 162,
     "innings": 10,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 13,
     "boundaryPct": 15.65,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 64,
         "balls": 61,
         "strikeRate": 104.92,
         "economy": 6.3
       },
       "middle": {
-        "runs": 87,
         "balls": 73,
         "strikeRate": 119.18,
         "economy": 7.15
       },
       "death": {
-        "runs": 11,
         "balls": 13,
         "strikeRate": 84.62,
         "economy": 5.08
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -16813,20 +12342,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.71,
     "bowlingStrikeRate": 17.21,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 3,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 24,
         "balls": 25,
         "strikeRate": 96,
         "economy": 5.76
@@ -16834,19 +12355,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 419,
         "balls": 318,
         "strikeRate": 131.76,
         "economy": 7.91
       },
       "middle": {
-        "runs": 222,
         "balls": 168,
         "strikeRate": 132.14,
         "economy": 7.93
       },
       "death": {
-        "runs": 276,
         "balls": 168,
         "strikeRate": 164.29,
         "economy": 9.86
@@ -16860,50 +12378,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 151.57,
     "runs": 241,
     "innings": 9,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 9,
     "boundaryPct": 21.38,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 55,
         "balls": 51,
         "strikeRate": 107.84,
         "economy": 6.47
       },
       "middle": {
-        "runs": 92,
         "balls": 48,
         "strikeRate": 191.67,
         "economy": 11.5
       },
       "death": {
-        "runs": 94,
         "balls": 60,
         "strikeRate": 156.67,
         "economy": 9.4
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -16922,39 +12414,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 27.75,
     "battingPhases": {
       "powerplay": {
-        "runs": 286,
         "balls": 265,
         "strikeRate": 107.92,
         "economy": 6.48
       },
       "middle": {
-        "runs": 247,
         "balls": 261,
         "strikeRate": 94.64,
         "economy": 5.68
       },
       "death": {
-        "runs": 53,
         "balls": 41,
         "strikeRate": 129.27,
         "economy": 7.76
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 240,
         "balls": 186,
         "strikeRate": 129.03,
         "economy": 7.74
       },
       "death": {
-        "runs": 52,
         "balls": 36,
         "strikeRate": 144.44,
         "economy": 8.67
@@ -16968,50 +12449,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 112.7,
     "runs": 71,
     "innings": 5,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 5,
     "boundaryPct": 17.46,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 69,
         "balls": 60,
         "strikeRate": 115,
         "economy": 6.9
       },
       "middle": {
-        "runs": 2,
         "balls": 3,
         "strikeRate": 66.67,
         "economy": 4
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -17022,50 +12472,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 109.48,
     "runs": 127,
     "innings": 10,
-    "bowlingAverage": null,
     "economyRate": 10.5,
     "wickets": 0,
     "matches": 11,
     "boundaryPct": 11.21,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 16,
         "balls": 18,
         "strikeRate": 88.89,
         "economy": 5.33
       },
       "middle": {
-        "runs": 62,
         "balls": 71,
         "strikeRate": 87.32,
         "economy": 5.24
       },
       "death": {
-        "runs": 49,
         "balls": 27,
         "strikeRate": 181.48,
         "economy": 10.89
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 21,
         "balls": 12,
         "strikeRate": 175,
         "economy": 10.5
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -17076,50 +12508,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 192.99,
     "runs": 909,
     "innings": 31,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 31,
     "boundaryPct": 31.85,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 678,
         "balls": 355,
         "strikeRate": 190.99,
         "economy": 11.46
       },
       "middle": {
-        "runs": 231,
         "balls": 116,
         "strikeRate": 199.14,
         "economy": 11.95
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -17130,50 +12531,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 117.97,
     "runs": 466,
     "innings": 33,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 52,
     "boundaryPct": 12.15,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 42,
         "balls": 41,
         "strikeRate": 102.44,
         "economy": 6.15
       },
       "middle": {
-        "runs": 206,
         "balls": 200,
         "strikeRate": 103,
         "economy": 6.18
       },
       "death": {
-        "runs": 218,
         "balls": 154,
         "strikeRate": 141.56,
         "economy": 8.49
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -17192,19 +12567,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.27,
     "battingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 33,
         "strikeRate": 60.61,
         "economy": 3.64
       },
       "middle": {
-        "runs": 126,
         "balls": 129,
         "strikeRate": 97.67,
         "economy": 5.86
       },
       "death": {
-        "runs": 73,
         "balls": 49,
         "strikeRate": 148.98,
         "economy": 8.94
@@ -17212,19 +12584,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 6,
         "strikeRate": 333.33,
         "economy": 20
       },
       "middle": {
-        "runs": 154,
         "balls": 138,
         "strikeRate": 111.59,
         "economy": 6.7
       },
       "death": {
-        "runs": 48,
         "balls": 24,
         "strikeRate": 200,
         "economy": 12
@@ -17246,39 +12615,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 30,
     "battingPhases": {
       "powerplay": {
-        "runs": 364,
         "balls": 336,
         "strikeRate": 108.33,
         "economy": 6.5
       },
       "middle": {
-        "runs": 1963,
         "balls": 1440,
         "strikeRate": 136.32,
         "economy": 8.18
       },
       "death": {
-        "runs": 473,
         "balls": 286,
         "strikeRate": 165.38,
         "economy": 9.92
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 79,
         "balls": 50,
         "strikeRate": 158,
         "economy": 9.48
       },
       "death": {
-        "runs": 21,
         "balls": 10,
         "strikeRate": 210,
         "economy": 12.6
@@ -17292,50 +12650,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.02,
     "runs": 3472,
     "innings": 103,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 107,
     "boundaryPct": 18,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1645,
         "balls": 1311,
         "strikeRate": 125.48,
         "economy": 7.53
       },
       "middle": {
-        "runs": 1403,
         "balls": 1001,
         "strikeRate": 140.16,
         "economy": 8.41
       },
       "death": {
-        "runs": 424,
         "balls": 222,
         "strikeRate": 190.99,
         "economy": 11.46
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -17353,20 +12685,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.33,
     "bowlingStrikeRate": 17.91,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 10,
         "strikeRate": 10,
         "economy": 0.6
       },
       "death": {
-        "runs": 57,
         "balls": 86,
         "strikeRate": 66.28,
         "economy": 3.98
@@ -17374,19 +12698,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1224,
         "balls": 1125,
         "strikeRate": 108.8,
         "economy": 6.53
       },
       "middle": {
-        "runs": 355,
         "balls": 332,
         "strikeRate": 106.93,
         "economy": 6.42
       },
       "death": {
-        "runs": 954,
         "balls": 639,
         "strikeRate": 149.3,
         "economy": 8.96
@@ -17408,19 +12729,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.04,
     "battingPhases": {
       "powerplay": {
-        "runs": 27,
         "balls": 28,
         "strikeRate": 96.43,
         "economy": 5.79
       },
       "middle": {
-        "runs": 121,
         "balls": 102,
         "strikeRate": 118.63,
         "economy": 7.12
       },
       "death": {
-        "runs": 118,
         "balls": 99,
         "strikeRate": 119.19,
         "economy": 7.15
@@ -17428,19 +12746,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 190,
         "balls": 180,
         "strikeRate": 105.56,
         "economy": 6.33
       },
       "middle": {
-        "runs": 243,
         "balls": 210,
         "strikeRate": 115.71,
         "economy": 6.94
       },
       "death": {
-        "runs": 109,
         "balls": 91,
         "strikeRate": 119.78,
         "economy": 7.19
@@ -17462,19 +12777,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.43,
     "battingPhases": {
       "powerplay": {
-        "runs": 1296,
         "balls": 1260,
         "strikeRate": 102.86,
         "economy": 6.17
       },
       "middle": {
-        "runs": 1497,
         "balls": 1209,
         "strikeRate": 123.82,
         "economy": 7.43
       },
       "death": {
-        "runs": 271,
         "balls": 198,
         "strikeRate": 136.87,
         "economy": 8.21
@@ -17482,19 +12794,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 46,
         "balls": 30,
         "strikeRate": 153.33,
         "economy": 9.2
       },
       "middle": {
-        "runs": 104,
         "balls": 90,
         "strikeRate": 115.56,
         "economy": 6.93
       },
       "death": {
-        "runs": 24,
         "balls": 23,
         "strikeRate": 104.35,
         "economy": 6.26
@@ -17504,7 +12813,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-528441dc": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 11.11,
     "runs": 1,
     "innings": 3,
@@ -17515,20 +12823,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 13.68,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 5,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 1,
         "balls": 4,
         "strikeRate": 25,
         "economy": 1.5
@@ -17536,19 +12836,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 169,
         "balls": 90,
         "strikeRate": 187.78,
         "economy": 11.27
       },
       "middle": {
-        "runs": 179,
         "balls": 126,
         "strikeRate": 142.06,
         "economy": 8.52
       },
       "death": {
-        "runs": 123,
         "balls": 85,
         "strikeRate": 144.71,
         "economy": 8.68
@@ -17562,50 +12859,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.61,
     "runs": 2737,
     "innings": 94,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 95,
     "boundaryPct": 19.56,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1626,
         "balls": 1228,
         "strikeRate": 132.41,
         "economy": 7.94
       },
       "middle": {
-        "runs": 949,
         "balls": 670,
         "strikeRate": 141.64,
         "economy": 8.5
       },
       "death": {
-        "runs": 162,
         "balls": 91,
         "strikeRate": 178.02,
         "economy": 10.68
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -17624,19 +12895,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.76,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 202,
         "balls": 138,
         "strikeRate": 146.38,
         "economy": 8.78
       },
       "death": {
-        "runs": 315,
         "balls": 245,
         "strikeRate": 128.57,
         "economy": 7.71
@@ -17644,19 +12912,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2782,
         "balls": 2176,
         "strikeRate": 127.85,
         "economy": 7.67
       },
       "middle": {
-        "runs": 940,
         "balls": 741,
         "strikeRate": 126.86,
         "economy": 7.61
       },
       "death": {
-        "runs": 2094,
         "balls": 1322,
         "strikeRate": 158.4,
         "economy": 9.5
@@ -17677,20 +12942,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 1.04,
     "bowlingStrikeRate": 15.69,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 6,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 67,
         "balls": 90,
         "strikeRate": 74.44,
         "economy": 4.47
@@ -17698,19 +12955,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1205,
         "balls": 768,
         "strikeRate": 156.9,
         "economy": 9.41
       },
       "middle": {
-        "runs": 744,
         "balls": 513,
         "strikeRate": 145.03,
         "economy": 8.7
       },
       "death": {
-        "runs": 1325,
         "balls": 790,
         "strikeRate": 167.72,
         "economy": 10.06
@@ -17732,19 +12986,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 102,
     "battingPhases": {
       "powerplay": {
-        "runs": 2,
         "balls": 6,
         "strikeRate": 33.33,
         "economy": 2
       },
       "middle": {
-        "runs": 32,
         "balls": 32,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 17,
         "balls": 15,
         "strikeRate": 113.33,
         "economy": 6.8
@@ -17752,19 +13003,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 35,
         "balls": 24,
         "strikeRate": 145.83,
         "economy": 8.75
       },
       "middle": {
-        "runs": 81,
         "balls": 72,
         "strikeRate": 112.5,
         "economy": 6.75
       },
       "death": {
-        "runs": 13,
         "balls": 6,
         "strikeRate": 216.67,
         "economy": 13
@@ -17778,50 +13026,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 140.97,
     "runs": 1999,
     "innings": 77,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 78,
     "boundaryPct": 19.04,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1168,
         "balls": 831,
         "strikeRate": 140.55,
         "economy": 8.43
       },
       "middle": {
-        "runs": 667,
         "balls": 516,
         "strikeRate": 129.26,
         "economy": 7.76
       },
       "death": {
-        "runs": 164,
         "balls": 71,
         "strikeRate": 230.99,
         "economy": 13.86
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -17832,50 +13054,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 134.83,
     "runs": 3209,
     "innings": 114,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 117,
     "boundaryPct": 16.18,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 919,
         "balls": 794,
         "strikeRate": 115.74,
         "economy": 6.94
       },
       "middle": {
-        "runs": 1760,
         "balls": 1277,
         "strikeRate": 137.82,
         "economy": 8.27
       },
       "death": {
-        "runs": 530,
         "balls": 309,
         "strikeRate": 171.52,
         "economy": 10.29
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -17886,104 +13082,47 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 124.93,
     "runs": 1909,
     "innings": 94,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 98,
     "boundaryPct": 17.47,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1141,
         "balls": 964,
         "strikeRate": 118.36,
         "economy": 7.1
       },
       "middle": {
-        "runs": 729,
         "balls": 528,
         "strikeRate": 138.07,
         "economy": 8.28
       },
       "death": {
-        "runs": 39,
         "balls": 36,
         "strikeRate": 108.33,
         "economy": 6.5
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-53ed819c": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 34.5,
     "economyRate": 8.9,
     "wickets": 8,
     "matches": 11,
-    "boundaryPct": null,
     "bowlingStrikeRate": 23.25,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 210,
         "balls": 144,
         "strikeRate": 145.83,
         "economy": 8.75
       },
       "middle": {
-        "runs": 66,
         "balls": 42,
         "strikeRate": 157.14,
         "economy": 9.43
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -18001,40 +13140,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.52,
     "bowlingStrikeRate": 23,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 25,
         "balls": 29,
         "strikeRate": 86.21,
         "economy": 5.17
       },
       "death": {
-        "runs": 9,
         "balls": 13,
         "strikeRate": 69.23,
         "economy": 4.15
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 152,
         "balls": 120,
         "strikeRate": 126.67,
         "economy": 7.6
       },
       "death": {
-        "runs": 48,
         "balls": 18,
         "strikeRate": 266.67,
         "economy": 16
@@ -18056,19 +13179,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.33,
     "battingPhases": {
       "powerplay": {
-        "runs": 445,
         "balls": 381,
         "strikeRate": 116.8,
         "economy": 7.01
       },
       "middle": {
-        "runs": 670,
         "balls": 607,
         "strikeRate": 110.38,
         "economy": 6.62
       },
       "death": {
-        "runs": 233,
         "balls": 148,
         "strikeRate": 157.43,
         "economy": 9.45
@@ -18076,19 +13196,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 367,
         "balls": 324,
         "strikeRate": 113.27,
         "economy": 6.8
       },
       "middle": {
-        "runs": 455,
         "balls": 388,
         "strikeRate": 117.27,
         "economy": 7.04
       },
       "death": {
-        "runs": 72,
         "balls": 56,
         "strikeRate": 128.57,
         "economy": 7.71
@@ -18109,20 +13226,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 3.23,
     "bowlingStrikeRate": 14.42,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 12,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 25,
         "balls": 50,
         "strikeRate": 50,
         "economy": 3
@@ -18130,19 +13239,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 477,
         "balls": 312,
         "strikeRate": 152.88,
         "economy": 9.17
       },
       "middle": {
-        "runs": 452,
         "balls": 296,
         "strikeRate": 152.7,
         "economy": 9.16
       },
       "death": {
-        "runs": 587,
         "balls": 358,
         "strikeRate": 163.97,
         "economy": 9.84
@@ -18156,50 +13262,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 139.43,
     "runs": 831,
     "innings": 49,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 58,
     "boundaryPct": 17.62,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 93,
         "balls": 77,
         "strikeRate": 120.78,
         "economy": 7.25
       },
       "middle": {
-        "runs": 541,
         "balls": 403,
         "strikeRate": 134.24,
         "economy": 8.05
       },
       "death": {
-        "runs": 197,
         "balls": 116,
         "strikeRate": 169.83,
         "economy": 10.19
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -18218,42 +13298,26 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20,
     "battingPhases": {
       "powerplay": {
-        "runs": 259,
         "balls": 231,
         "strikeRate": 112.12,
         "economy": 6.73
       },
       "middle": {
-        "runs": 350,
         "balls": 333,
         "strikeRate": 105.11,
         "economy": 6.31
       },
       "death": {
-        "runs": 94,
         "balls": 62,
         "strikeRate": 151.61,
         "economy": 9.1
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 46,
         "balls": 20,
         "strikeRate": 230,
         "economy": 13.8
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -18272,19 +13336,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 24.76,
     "battingPhases": {
       "powerplay": {
-        "runs": 183,
         "balls": 196,
         "strikeRate": 93.37,
         "economy": 5.6
       },
       "middle": {
-        "runs": 1480,
         "balls": 1353,
         "strikeRate": 109.39,
         "economy": 6.56
       },
       "death": {
-        "runs": 1337,
         "balls": 779,
         "strikeRate": 171.63,
         "economy": 10.3
@@ -18292,19 +13353,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 263,
         "balls": 204,
         "strikeRate": 128.92,
         "economy": 7.74
       },
       "middle": {
-        "runs": 1002,
         "balls": 810,
         "strikeRate": 123.7,
         "economy": 7.42
       },
       "death": {
-        "runs": 211,
         "balls": 125,
         "strikeRate": 168.8,
         "economy": 10.13
@@ -18326,19 +13384,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.33,
     "battingPhases": {
       "powerplay": {
-        "runs": 914,
         "balls": 621,
         "strikeRate": 147.18,
         "economy": 8.83
       },
       "middle": {
-        "runs": 687,
         "balls": 495,
         "strikeRate": 138.79,
         "economy": 8.33
       },
       "death": {
-        "runs": 185,
         "balls": 110,
         "strikeRate": 168.18,
         "economy": 10.09
@@ -18346,19 +13401,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 49,
         "balls": 36,
         "strikeRate": 136.11,
         "economy": 8.17
       },
       "middle": {
-        "runs": 129,
         "balls": 96,
         "strikeRate": 134.38,
         "economy": 8.06
       },
       "death": {
-        "runs": 14,
         "balls": 8,
         "strikeRate": 175,
         "economy": 10.5
@@ -18380,19 +13432,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 39,
     "battingPhases": {
       "powerplay": {
-        "runs": 97,
         "balls": 78,
         "strikeRate": 124.36,
         "economy": 7.46
       },
       "middle": {
-        "runs": 69,
         "balls": 63,
         "strikeRate": 109.52,
         "economy": 6.57
       },
       "death": {
-        "runs": 25,
         "balls": 12,
         "strikeRate": 208.33,
         "economy": 12.5
@@ -18400,22 +13449,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 6,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 120,
         "balls": 72,
         "strikeRate": 166.67,
         "economy": 10
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -18433,20 +13474,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.76,
     "bowlingStrikeRate": 22.37,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 39,
         "balls": 54,
         "strikeRate": 72.22,
         "economy": 4.33
       },
       "death": {
-        "runs": 183,
         "balls": 135,
         "strikeRate": 135.56,
         "economy": 8.13
@@ -18454,19 +13487,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 867,
         "balls": 563,
         "strikeRate": 154,
         "economy": 9.24
       },
       "middle": {
-        "runs": 424,
         "balls": 276,
         "strikeRate": 153.62,
         "economy": 9.22
       },
       "death": {
-        "runs": 483,
         "balls": 257,
         "strikeRate": 187.94,
         "economy": 11.28
@@ -18480,50 +13510,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 132.87,
     "runs": 3472,
     "innings": 132,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 138,
     "boundaryPct": 16.88,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1355,
         "balls": 1109,
         "strikeRate": 122.18,
         "economy": 7.33
       },
       "middle": {
-        "runs": 1682,
         "balls": 1256,
         "strikeRate": 133.92,
         "economy": 8.04
       },
       "death": {
-        "runs": 435,
         "balls": 248,
         "strikeRate": 175.4,
         "economy": 10.52
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -18541,20 +13545,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 3.03,
     "bowlingStrikeRate": 36,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 13,
         "strikeRate": 46.15,
         "economy": 2.77
       },
       "death": {
-        "runs": 16,
         "balls": 20,
         "strikeRate": 80,
         "economy": 4.8
@@ -18562,19 +13558,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 45,
         "balls": 30,
         "strikeRate": 150,
         "economy": 9
       },
       "middle": {
-        "runs": 182,
         "balls": 120,
         "strikeRate": 151.67,
         "economy": 9.1
       },
       "death": {
-        "runs": 58,
         "balls": 30,
         "strikeRate": 193.33,
         "economy": 11.6
@@ -18584,7 +13577,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-5896b5d0": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 100,
     "runs": 3,
     "innings": 1,
@@ -18595,20 +13587,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 19.75,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 3,
         "balls": 3,
         "strikeRate": 100,
         "economy": 6
@@ -18616,19 +13595,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 100,
         "balls": 48,
         "strikeRate": 208.33,
         "economy": 12.5
       },
       "middle": {
-        "runs": 24,
         "balls": 19,
         "strikeRate": 126.32,
         "economy": 7.58
       },
       "death": {
-        "runs": 16,
         "balls": 12,
         "strikeRate": 133.33,
         "economy": 8
@@ -18642,50 +13618,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 141.96,
     "runs": 5254,
     "innings": 203,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 206,
     "boundaryPct": 19.35,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2239,
         "balls": 1649,
         "strikeRate": 135.78,
         "economy": 8.15
       },
       "middle": {
-        "runs": 2485,
         "balls": 1723,
         "strikeRate": 144.23,
         "economy": 8.65
       },
       "death": {
-        "runs": 530,
         "balls": 329,
         "strikeRate": 161.09,
         "economy": 9.67
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -18696,27 +13646,22 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130,
     "runs": 312,
     "innings": 16,
-    "bowlingAverage": null,
     "economyRate": 20,
     "wickets": 0,
     "matches": 16,
     "boundaryPct": 15.83,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 170,
         "balls": 126,
         "strikeRate": 134.92,
         "economy": 8.1
       },
       "middle": {
-        "runs": 105,
         "balls": 83,
         "strikeRate": 126.51,
         "economy": 7.59
       },
       "death": {
-        "runs": 37,
         "balls": 31,
         "strikeRate": 119.35,
         "economy": 7.16
@@ -18724,22 +13669,9 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 6,
         "strikeRate": 333.33,
         "economy": 20
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -18750,50 +13682,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 140,
     "runs": 210,
     "innings": 10,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 11,
     "boundaryPct": 20,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 46,
         "balls": 28,
         "strikeRate": 164.29,
         "economy": 9.86
       },
       "middle": {
-        "runs": 83,
         "balls": 76,
         "strikeRate": 109.21,
         "economy": 6.55
       },
       "death": {
-        "runs": 81,
         "balls": 46,
         "strikeRate": 176.09,
         "economy": 10.57
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -18811,20 +13717,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.75,
     "bowlingStrikeRate": 22.11,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 14,
         "balls": 30,
         "strikeRate": 46.67,
         "economy": 2.8
       },
       "death": {
-        "runs": 56,
         "balls": 31,
         "strikeRate": 180.65,
         "economy": 10.84
@@ -18832,19 +13730,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 104,
         "balls": 72,
         "strikeRate": 144.44,
         "economy": 8.67
       },
       "middle": {
-        "runs": 471,
         "balls": 336,
         "strikeRate": 140.18,
         "economy": 8.41
       },
       "death": {
-        "runs": 27,
         "balls": 12,
         "strikeRate": 225,
         "economy": 13.5
@@ -18858,50 +13753,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130,
     "runs": 767,
     "innings": 40,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 50,
     "boundaryPct": 13.56,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 37,
         "balls": 61,
         "strikeRate": 60.66,
         "economy": 3.64
       },
       "middle": {
-        "runs": 292,
         "balls": 278,
         "strikeRate": 105.04,
         "economy": 6.3
       },
       "death": {
-        "runs": 438,
         "balls": 251,
         "strikeRate": 174.5,
         "economy": 10.47
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -18920,19 +13789,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20,
     "battingPhases": {
       "powerplay": {
-        "runs": 27,
         "balls": 25,
         "strikeRate": 108,
         "economy": 6.48
       },
       "middle": {
-        "runs": 310,
         "balls": 271,
         "strikeRate": 114.39,
         "economy": 6.86
       },
       "death": {
-        "runs": 284,
         "balls": 182,
         "strikeRate": 156.04,
         "economy": 9.36
@@ -18940,19 +13806,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 388,
         "balls": 210,
         "strikeRate": 184.76,
         "economy": 11.09
       },
       "middle": {
-        "runs": 466,
         "balls": 288,
         "strikeRate": 161.81,
         "economy": 9.71
       },
       "death": {
-        "runs": 230,
         "balls": 162,
         "strikeRate": 141.98,
         "economy": 8.52
@@ -18974,19 +13837,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.95,
     "battingPhases": {
       "powerplay": {
-        "runs": 2,
         "balls": 6,
         "strikeRate": 33.33,
         "economy": 2
       },
       "middle": {
-        "runs": 29,
         "balls": 41,
         "strikeRate": 70.73,
         "economy": 4.24
       },
       "death": {
-        "runs": 67,
         "balls": 74,
         "strikeRate": 90.54,
         "economy": 5.43
@@ -18994,19 +13854,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 72,
         "balls": 66,
         "strikeRate": 109.09,
         "economy": 6.55
       },
       "middle": {
-        "runs": 366,
         "balls": 258,
         "strikeRate": 141.86,
         "economy": 8.51
       },
       "death": {
-        "runs": 45,
         "balls": 36,
         "strikeRate": 125,
         "economy": 7.5
@@ -19028,19 +13885,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.69,
     "battingPhases": {
       "powerplay": {
-        "runs": 83,
         "balls": 90,
         "strikeRate": 92.22,
         "economy": 5.53
       },
       "middle": {
-        "runs": 558,
         "balls": 380,
         "strikeRate": 146.84,
         "economy": 8.81
       },
       "death": {
-        "runs": 236,
         "balls": 121,
         "strikeRate": 195.04,
         "economy": 11.7
@@ -19048,19 +13902,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 175,
         "balls": 102,
         "strikeRate": 171.57,
         "economy": 10.29
       },
       "middle": {
-        "runs": 359,
         "balls": 210,
         "strikeRate": 170.95,
         "economy": 10.26
       },
       "death": {
-        "runs": 114,
         "balls": 67,
         "strikeRate": 170.15,
         "economy": 10.21
@@ -19082,19 +13933,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 26.02,
     "battingPhases": {
       "powerplay": {
-        "runs": 4366,
         "balls": 3053,
         "strikeRate": 143.01,
         "economy": 8.58
       },
       "middle": {
-        "runs": 1686,
         "balls": 1242,
         "strikeRate": 135.75,
         "economy": 8.14
       },
       "death": {
-        "runs": 126,
         "balls": 70,
         "strikeRate": 180,
         "economy": 10.8
@@ -19102,19 +13950,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 290,
         "balls": 234,
         "strikeRate": 123.93,
         "economy": 7.44
       },
       "middle": {
-        "runs": 885,
         "balls": 677,
         "strikeRate": 130.72,
         "economy": 7.84
       },
       "death": {
-        "runs": 275,
         "balls": 182,
         "strikeRate": 151.1,
         "economy": 9.07
@@ -19124,7 +13969,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-5d1e8463": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 100,
     "runs": 1,
     "innings": 1,
@@ -19135,20 +13979,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 39,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
@@ -19156,19 +13987,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 4,
         "balls": 6,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 69,
         "balls": 66,
         "strikeRate": 104.55,
         "economy": 6.27
       },
       "death": {
-        "runs": 21,
         "balls": 6,
         "strikeRate": 350,
         "economy": 21
@@ -19190,19 +14018,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.62,
     "battingPhases": {
       "powerplay": {
-        "runs": 2,
         "balls": 7,
         "strikeRate": 28.57,
         "economy": 1.71
       },
       "middle": {
-        "runs": 132,
         "balls": 161,
         "strikeRate": 81.99,
         "economy": 4.92
       },
       "death": {
-        "runs": 160,
         "balls": 107,
         "strikeRate": 149.53,
         "economy": 8.97
@@ -19210,19 +14035,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 169,
         "balls": 90,
         "strikeRate": 187.78,
         "economy": 11.27
       },
       "middle": {
-        "runs": 359,
         "balls": 282,
         "strikeRate": 127.3,
         "economy": 7.64
       },
       "death": {
-        "runs": 362,
         "balls": 193,
         "strikeRate": 187.56,
         "economy": 11.25
@@ -19243,20 +14065,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 33,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 4,
         "balls": 5,
         "strikeRate": 80,
         "economy": 4.8
@@ -19264,19 +14073,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 47,
         "balls": 30,
         "strikeRate": 156.67,
         "economy": 9.4
       },
       "middle": {
-        "runs": 222,
         "balls": 150,
         "strikeRate": 148,
         "economy": 8.88
       },
       "death": {
-        "runs": 27,
         "balls": 18,
         "strikeRate": 150,
         "economy": 9
@@ -19298,19 +14104,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 13.2,
     "battingPhases": {
       "powerplay": {
-        "runs": 180,
         "balls": 169,
         "strikeRate": 106.51,
         "economy": 6.39
       },
       "middle": {
-        "runs": 758,
         "balls": 546,
         "strikeRate": 138.83,
         "economy": 8.33
       },
       "death": {
-        "runs": 389,
         "balls": 213,
         "strikeRate": 182.63,
         "economy": 10.96
@@ -19318,19 +14121,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 9,
         "balls": 6,
         "strikeRate": 150,
         "economy": 9
       },
       "middle": {
-        "runs": 79,
         "balls": 54,
         "strikeRate": 146.3,
         "economy": 8.78
       },
       "death": {
-        "runs": 13,
         "balls": 6,
         "strikeRate": 216.67,
         "economy": 13
@@ -19352,19 +14152,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.74,
     "battingPhases": {
       "powerplay": {
-        "runs": 318,
         "balls": 283,
         "strikeRate": 112.37,
         "economy": 6.74
       },
       "middle": {
-        "runs": 241,
         "balls": 204,
         "strikeRate": 118.14,
         "economy": 7.09
       },
       "death": {
-        "runs": 142,
         "balls": 98,
         "strikeRate": 144.9,
         "economy": 8.69
@@ -19372,19 +14169,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 301,
         "balls": 246,
         "strikeRate": 122.36,
         "economy": 7.34
       },
       "middle": {
-        "runs": 336,
         "balls": 264,
         "strikeRate": 127.27,
         "economy": 7.64
       },
       "death": {
-        "runs": 263,
         "balls": 164,
         "strikeRate": 160.37,
         "economy": 9.62
@@ -19405,20 +14199,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.97,
     "bowlingStrikeRate": 23.24,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 44,
         "balls": 49,
         "strikeRate": 89.8,
         "economy": 5.39
       },
       "death": {
-        "runs": 109,
         "balls": 106,
         "strikeRate": 102.83,
         "economy": 6.17
@@ -19426,19 +14212,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 749,
         "balls": 534,
         "strikeRate": 140.26,
         "economy": 8.42
       },
       "middle": {
-        "runs": 308,
         "balls": 210,
         "strikeRate": 146.67,
         "economy": 8.8
       },
       "death": {
-        "runs": 481,
         "balls": 302,
         "strikeRate": 159.27,
         "economy": 9.56
@@ -19459,20 +14242,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.52,
     "bowlingStrikeRate": 27,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 12,
         "balls": 8,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 12,
         "balls": 13,
         "strikeRate": 92.31,
         "economy": 5.54
@@ -19480,19 +14255,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 65,
         "balls": 36,
         "strikeRate": 180.56,
         "economy": 10.83
       },
       "middle": {
-        "runs": 260,
         "balls": 162,
         "strikeRate": 160.49,
         "economy": 9.63
       },
       "death": {
-        "runs": 23,
         "balls": 18,
         "strikeRate": 127.78,
         "economy": 7.67
@@ -19513,20 +14285,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12,
     "bowlingStrikeRate": 14.9,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 21,
         "balls": 25,
         "strikeRate": 84,
         "economy": 5.04
@@ -19534,19 +14293,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 214,
         "balls": 168,
         "strikeRate": 127.38,
         "economy": 7.64
       },
       "middle": {
-        "runs": 148,
         "balls": 108,
         "strikeRate": 137.04,
         "economy": 8.22
       },
       "death": {
-        "runs": 264,
         "balls": 156,
         "strikeRate": 169.23,
         "economy": 10.15
@@ -19568,19 +14324,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 26.25,
     "battingPhases": {
       "powerplay": {
-        "runs": 119,
         "balls": 83,
         "strikeRate": 143.37,
         "economy": 8.6
       },
       "middle": {
-        "runs": 496,
         "balls": 320,
         "strikeRate": 155,
         "economy": 9.3
       },
       "death": {
-        "runs": 214,
         "balls": 119,
         "strikeRate": 179.83,
         "economy": 10.79
@@ -19588,19 +14341,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 70,
         "balls": 54,
         "strikeRate": 129.63,
         "economy": 7.78
       },
       "middle": {
-        "runs": 188,
         "balls": 126,
         "strikeRate": 149.21,
         "economy": 8.95
       },
       "death": {
-        "runs": 57,
         "balls": 30,
         "strikeRate": 190,
         "economy": 11.4
@@ -19622,19 +14372,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.6,
     "battingPhases": {
       "powerplay": {
-        "runs": 90,
         "balls": 66,
         "strikeRate": 136.36,
         "economy": 8.18
       },
       "middle": {
-        "runs": 83,
         "balls": 72,
         "strikeRate": 115.28,
         "economy": 6.92
       },
       "death": {
-        "runs": 93,
         "balls": 59,
         "strikeRate": 157.63,
         "economy": 9.46
@@ -19642,19 +14389,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 46,
         "balls": 60,
         "strikeRate": 76.67,
         "economy": 4.6
       },
       "middle": {
-        "runs": 98,
         "balls": 84,
         "strikeRate": 116.67,
         "economy": 7
       },
       "death": {
-        "runs": 6,
         "balls": 12,
         "strikeRate": 50,
         "economy": 3
@@ -19675,20 +14419,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.62,
     "bowlingStrikeRate": 17.01,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 13,
         "strikeRate": 30.77,
         "economy": 1.85
       },
       "death": {
-        "runs": 120,
         "balls": 100,
         "strikeRate": 120,
         "economy": 7.2
@@ -19696,19 +14432,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1271,
         "balls": 989,
         "strikeRate": 128.51,
         "economy": 7.71
       },
       "middle": {
-        "runs": 1254,
         "balls": 1023,
         "strikeRate": 122.58,
         "economy": 7.35
       },
       "death": {
-        "runs": 1195,
         "balls": 795,
         "strikeRate": 150.31,
         "economy": 9.02
@@ -19722,47 +14455,29 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.43,
     "runs": 1197,
     "innings": 50,
-    "bowlingAverage": null,
     "economyRate": 3,
     "wickets": 0,
     "matches": 50,
     "boundaryPct": 17.45,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 197,
         "balls": 149,
         "strikeRate": 132.21,
         "economy": 7.93
       },
       "middle": {
-        "runs": 725,
         "balls": 575,
         "strikeRate": 126.09,
         "economy": 7.57
       },
       "death": {
-        "runs": 275,
         "balls": 147,
         "strikeRate": 187.07,
         "economy": 11.22
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 3,
         "balls": 6,
         "strikeRate": 50,
         "economy": 3
@@ -19783,20 +14498,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 21.82,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 3,
         "strikeRate": 66.67,
         "economy": 4
       },
       "death": {
-        "runs": 8,
         "balls": 12,
         "strikeRate": 66.67,
         "economy": 4
@@ -19804,19 +14511,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 205,
         "balls": 126,
         "strikeRate": 162.7,
         "economy": 9.76
       },
       "middle": {
-        "runs": 131,
         "balls": 78,
         "strikeRate": 167.95,
         "economy": 10.08
       },
       "death": {
-        "runs": 64,
         "balls": 36,
         "strikeRate": 177.78,
         "economy": 10.67
@@ -19826,7 +14530,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-60895ba3": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 122.22,
     "runs": 11,
     "innings": 3,
@@ -19837,40 +14540,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.11,
     "bowlingStrikeRate": 12.86,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 11,
         "balls": 9,
         "strikeRate": 122.22,
         "economy": 7.33
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 204,
         "balls": 156,
         "strikeRate": 130.77,
         "economy": 7.85
       },
       "death": {
-        "runs": 29,
         "balls": 24,
         "strikeRate": 120.83,
         "economy": 7.25
@@ -19891,20 +14573,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.64,
     "bowlingStrikeRate": 22.3,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 49,
         "balls": 74,
         "strikeRate": 66.22,
         "economy": 3.97
       },
       "death": {
-        "runs": 140,
         "balls": 167,
         "strikeRate": 83.83,
         "economy": 5.03
@@ -19912,19 +14586,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 478,
         "balls": 408,
         "strikeRate": 117.16,
         "economy": 7.03
       },
       "middle": {
-        "runs": 1090,
         "balls": 908,
         "strikeRate": 120.04,
         "economy": 7.2
       },
       "death": {
-        "runs": 169,
         "balls": 111,
         "strikeRate": 152.25,
         "economy": 9.14
@@ -19945,20 +14616,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 25,
     "bowlingStrikeRate": 25,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 17,
         "balls": 10,
         "strikeRate": 170,
         "economy": 10.2
@@ -19966,19 +14629,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 106,
         "balls": 60,
         "strikeRate": 176.67,
         "economy": 10.6
       },
       "middle": {
-        "runs": 156,
         "balls": 78,
         "strikeRate": 200,
         "economy": 12
       },
       "death": {
-        "runs": 10,
         "balls": 12,
         "strikeRate": 83.33,
         "economy": 5
@@ -20000,19 +14660,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.4,
     "battingPhases": {
       "powerplay": {
-        "runs": 362,
         "balls": 310,
         "strikeRate": 116.77,
         "economy": 7.01
       },
       "middle": {
-        "runs": 666,
         "balls": 467,
         "strikeRate": 142.61,
         "economy": 8.56
       },
       "death": {
-        "runs": 340,
         "balls": 170,
         "strikeRate": 200,
         "economy": 12
@@ -20020,19 +14677,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 210,
         "balls": 162,
         "strikeRate": 129.63,
         "economy": 7.78
       },
       "middle": {
-        "runs": 419,
         "balls": 353,
         "strikeRate": 118.7,
         "economy": 7.12
       },
       "death": {
-        "runs": 95,
         "balls": 67,
         "strikeRate": 141.79,
         "economy": 8.51
@@ -20053,20 +14707,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.34,
     "bowlingStrikeRate": 18.62,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 15,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 83,
         "balls": 94,
         "strikeRate": 88.3,
         "economy": 5.3
@@ -20074,19 +14720,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 768,
         "balls": 600,
         "strikeRate": 128,
         "economy": 7.68
       },
       "middle": {
-        "runs": 813,
         "balls": 660,
         "strikeRate": 123.18,
         "economy": 7.39
       },
       "death": {
-        "runs": 922,
         "balls": 639,
         "strikeRate": 144.29,
         "economy": 8.66
@@ -20108,19 +14751,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 28.7,
     "battingPhases": {
       "powerplay": {
-        "runs": 51,
         "balls": 41,
         "strikeRate": 124.39,
         "economy": 7.46
       },
       "middle": {
-        "runs": 227,
         "balls": 182,
         "strikeRate": 124.73,
         "economy": 7.48
       },
       "death": {
-        "runs": 73,
         "balls": 64,
         "strikeRate": 114.06,
         "economy": 6.84
@@ -20128,19 +14768,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 293,
         "balls": 228,
         "strikeRate": 128.51,
         "economy": 7.71
       },
       "middle": {
-        "runs": 659,
         "balls": 573,
         "strikeRate": 115.01,
         "economy": 6.9
       },
       "death": {
-        "runs": 109,
         "balls": 60,
         "strikeRate": 181.67,
         "economy": 10.9
@@ -20154,50 +14791,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 128.78,
     "runs": 5946,
     "innings": 178,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 180,
     "boundaryPct": 16.48,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2055,
         "balls": 1958,
         "strikeRate": 104.95,
         "economy": 6.3
       },
       "middle": {
-        "runs": 3255,
         "balls": 2277,
         "strikeRate": 142.95,
         "economy": 8.58
       },
       "death": {
-        "runs": 636,
         "balls": 382,
         "strikeRate": 166.49,
         "economy": 9.99
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -20208,50 +14819,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 119.05,
     "runs": 25,
     "innings": 5,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 6,
     "boundaryPct": 14.29,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 7,
         "balls": 5,
         "strikeRate": 140,
         "economy": 8.4
       },
       "middle": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 18,
         "balls": 14,
         "strikeRate": 128.57,
         "economy": 7.71
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -20269,20 +14854,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.41,
     "bowlingStrikeRate": 24.71,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 70,
         "balls": 69,
         "strikeRate": 101.45,
         "economy": 6.09
       },
       "death": {
-        "runs": 107,
         "balls": 80,
         "strikeRate": 133.75,
         "economy": 8.02
@@ -20290,19 +14867,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 330,
         "balls": 234,
         "strikeRate": 141.03,
         "economy": 8.46
       },
       "middle": {
-        "runs": 135,
         "balls": 96,
         "strikeRate": 140.63,
         "economy": 8.44
       },
       "death": {
-        "runs": 202,
         "balls": 90,
         "strikeRate": 224.44,
         "economy": 13.47
@@ -20323,20 +14897,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.25,
     "bowlingStrikeRate": 17.75,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 21,
         "strikeRate": 76.19,
         "economy": 4.57
       },
       "death": {
-        "runs": 10,
         "balls": 27,
         "strikeRate": 37.04,
         "economy": 2.22
@@ -20344,19 +14910,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 265,
         "balls": 174,
         "strikeRate": 152.3,
         "economy": 9.14
       },
       "middle": {
-        "runs": 189,
         "balls": 120,
         "strikeRate": 157.5,
         "economy": 9.45
       },
       "death": {
-        "runs": 125,
         "balls": 61,
         "strikeRate": 204.92,
         "economy": 12.3
@@ -20366,51 +14929,25 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-63075eff": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 31.44,
     "economyRate": 9.13,
     "wickets": 9,
     "matches": 9,
-    "boundaryPct": null,
     "bowlingStrikeRate": 20.67,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 95,
         "balls": 72,
         "strikeRate": 131.94,
         "economy": 7.92
       },
       "middle": {
-        "runs": 145,
         "balls": 90,
         "strikeRate": 161.11,
         "economy": 9.67
       },
       "death": {
-        "runs": 43,
         "balls": 24,
         "strikeRate": 179.17,
         "economy": 10.75
@@ -20424,50 +14961,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 108.71,
     "runs": 362,
     "innings": 18,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 19,
     "boundaryPct": 13.51,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 191,
         "balls": 164,
         "strikeRate": 116.46,
         "economy": 6.99
       },
       "middle": {
-        "runs": 136,
         "balls": 145,
         "strikeRate": 93.79,
         "economy": 5.63
       },
       "death": {
-        "runs": 35,
         "balls": 24,
         "strikeRate": 145.83,
         "economy": 8.75
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -20478,50 +14989,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130.86,
     "runs": 318,
     "innings": 19,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 19,
     "boundaryPct": 19.75,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 258,
         "balls": 191,
         "strikeRate": 135.08,
         "economy": 8.1
       },
       "middle": {
-        "runs": 55,
         "balls": 48,
         "strikeRate": 114.58,
         "economy": 6.88
       },
       "death": {
-        "runs": 5,
         "balls": 4,
         "strikeRate": 125,
         "economy": 7.5
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -20532,50 +15017,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 147.3,
     "runs": 3812,
     "innings": 153,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 161,
     "boundaryPct": 21.99,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2350,
         "balls": 1676,
         "strikeRate": 140.21,
         "economy": 8.41
       },
       "middle": {
-        "runs": 1313,
         "balls": 831,
         "strikeRate": 158,
         "economy": 9.48
       },
       "death": {
-        "runs": 149,
         "balls": 81,
         "strikeRate": 183.95,
         "economy": 11.04
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -20586,50 +15045,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 115.57,
     "runs": 735,
     "innings": 35,
-    "bowlingAverage": null,
     "economyRate": 16,
     "wickets": 0,
     "matches": 38,
     "boundaryPct": 14.78,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 342,
         "balls": 288,
         "strikeRate": 118.75,
         "economy": 7.13
       },
       "middle": {
-        "runs": 349,
         "balls": 311,
         "strikeRate": 112.22,
         "economy": 6.73
       },
       "death": {
-        "runs": 44,
         "balls": 37,
         "strikeRate": 118.92,
         "economy": 7.14
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 6,
         "strikeRate": 266.67,
         "economy": 16
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -20648,19 +15089,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 29.2,
     "battingPhases": {
       "powerplay": {
-        "runs": 407,
         "balls": 381,
         "strikeRate": 106.82,
         "economy": 6.41
       },
       "middle": {
-        "runs": 278,
         "balls": 207,
         "strikeRate": 134.3,
         "economy": 8.06
       },
       "death": {
-        "runs": 88,
         "balls": 62,
         "strikeRate": 141.94,
         "economy": 8.52
@@ -20668,19 +15106,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 120,
         "balls": 90,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 539,
         "balls": 463,
         "strikeRate": 116.41,
         "economy": 6.98
       },
       "death": {
-        "runs": 49,
         "balls": 31,
         "strikeRate": 158.06,
         "economy": 9.48
@@ -20701,20 +15136,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.5,
     "bowlingStrikeRate": 14.18,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 17,
         "balls": 15,
         "strikeRate": 113.33,
         "economy": 6.8
@@ -20722,19 +15149,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 95,
         "balls": 84,
         "strikeRate": 113.1,
         "economy": 6.79
       },
       "middle": {
-        "runs": 71,
         "balls": 60,
         "strikeRate": 118.33,
         "economy": 7.1
       },
       "death": {
-        "runs": 15,
         "balls": 12,
         "strikeRate": 125,
         "economy": 7.5
@@ -20756,19 +15180,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.52,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 5,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 110,
         "balls": 113,
         "strikeRate": 97.35,
         "economy": 5.84
       },
       "death": {
-        "runs": 381,
         "balls": 313,
         "strikeRate": 121.73,
         "economy": 7.3
@@ -20776,19 +15197,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1208,
         "balls": 1002,
         "strikeRate": 120.56,
         "economy": 7.23
       },
       "middle": {
-        "runs": 1419,
         "balls": 1114,
         "strikeRate": 127.38,
         "economy": 7.64
       },
       "death": {
-        "runs": 2105,
         "balls": 1435,
         "strikeRate": 146.69,
         "economy": 8.8
@@ -20810,19 +15228,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.75,
     "battingPhases": {
       "powerplay": {
-        "runs": 71,
         "balls": 80,
         "strikeRate": 88.75,
         "economy": 5.32
       },
       "middle": {
-        "runs": 658,
         "balls": 544,
         "strikeRate": 120.96,
         "economy": 7.26
       },
       "death": {
-        "runs": 968,
         "balls": 639,
         "strikeRate": 151.49,
         "economy": 9.09
@@ -20830,19 +15245,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 579,
         "balls": 444,
         "strikeRate": 130.41,
         "economy": 7.82
       },
       "middle": {
-        "runs": 3514,
         "balls": 2966,
         "strikeRate": 118.48,
         "economy": 7.11
       },
       "death": {
-        "runs": 929,
         "balls": 678,
         "strikeRate": 137.02,
         "economy": 8.22
@@ -20856,50 +15268,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 183.75,
     "runs": 441,
     "innings": 13,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 13,
     "boundaryPct": 30.83,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 275,
         "balls": 145,
         "strikeRate": 189.66,
         "economy": 11.38
       },
       "middle": {
-        "runs": 157,
         "balls": 85,
         "strikeRate": 184.71,
         "economy": 11.08
       },
       "death": {
-        "runs": 9,
         "balls": 10,
         "strikeRate": 90,
         "economy": 5.4
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -20917,20 +15303,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.11,
     "bowlingStrikeRate": 17.55,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 138,
         "balls": 114,
         "strikeRate": 121.05,
         "economy": 7.26
       },
       "death": {
-        "runs": 247,
         "balls": 228,
         "strikeRate": 108.33,
         "economy": 6.5
@@ -20938,19 +15316,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1891,
         "balls": 1590,
         "strikeRate": 118.93,
         "economy": 7.14
       },
       "middle": {
-        "runs": 1081,
         "balls": 780,
         "strikeRate": 138.59,
         "economy": 8.32
       },
       "death": {
-        "runs": 2040,
         "balls": 1316,
         "strikeRate": 155.02,
         "economy": 9.3
@@ -20964,47 +15339,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 139.08,
     "runs": 6103,
     "innings": 244,
-    "bowlingAverage": null,
     "economyRate": 10,
     "wickets": 0,
     "matches": 266,
     "boundaryPct": 17.78,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1447,
         "balls": 1192,
         "strikeRate": 121.39,
         "economy": 7.28
       },
       "middle": {
-        "runs": 3326,
         "balls": 2427,
         "strikeRate": 137.04,
         "economy": 8.22
       },
       "death": {
-        "runs": 1330,
         "balls": 769,
         "strikeRate": 172.95,
         "economy": 10.38
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 10,
         "balls": 6,
         "strikeRate": 166.67,
         "economy": 10
       },
       "death": {
-        "runs": 10,
         "balls": 6,
         "strikeRate": 166.67,
         "economy": 10
@@ -21025,20 +15387,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 17.65,
     "bowlingStrikeRate": 15.3,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 19,
         "balls": 10,
         "strikeRate": 190,
         "economy": 11.4
       },
       "death": {
-        "runs": 36,
         "balls": 41,
         "strikeRate": 87.8,
         "economy": 5.27
@@ -21046,19 +15400,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 745,
         "balls": 600,
         "strikeRate": 124.17,
         "economy": 7.45
       },
       "middle": {
-        "runs": 327,
         "balls": 276,
         "strikeRate": 118.48,
         "economy": 7.11
       },
       "death": {
-        "runs": 690,
         "balls": 348,
         "strikeRate": 198.28,
         "economy": 11.9
@@ -21072,50 +15423,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 125.56,
     "runs": 226,
     "innings": 14,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 16,
     "boundaryPct": 18.33,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 139,
         "balls": 119,
         "strikeRate": 116.81,
         "economy": 7.01
       },
       "middle": {
-        "runs": 64,
         "balls": 48,
         "strikeRate": 133.33,
         "economy": 8
       },
       "death": {
-        "runs": 23,
         "balls": 13,
         "strikeRate": 176.92,
         "economy": 10.62
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -21134,42 +15459,26 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19,
     "battingPhases": {
       "powerplay": {
-        "runs": 14,
         "balls": 30,
         "strikeRate": 46.67,
         "economy": 2.8
       },
       "middle": {
-        "runs": 262,
         "balls": 251,
         "strikeRate": 104.38,
         "economy": 6.26
       },
       "death": {
-        "runs": 188,
         "balls": 122,
         "strikeRate": 154.1,
         "economy": 9.25
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 20,
         "balls": 19,
         "strikeRate": 105.26,
         "economy": 6.32
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -21188,39 +15497,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21,
     "battingPhases": {
       "powerplay": {
-        "runs": 4776,
         "balls": 3580,
         "strikeRate": 133.41,
         "economy": 8
       },
       "middle": {
-        "runs": 4110,
         "balls": 2951,
         "strikeRate": 139.27,
         "economy": 8.36
       },
       "death": {
-        "runs": 816,
         "balls": 468,
         "strikeRate": 174.36,
         "economy": 10.46
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 48,
         "balls": 36,
         "strikeRate": 133.33,
         "economy": 8
       },
       "death": {
-        "runs": 9,
         "balls": 6,
         "strikeRate": 150,
         "economy": 9
@@ -21242,19 +15540,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 42.86,
     "battingPhases": {
       "powerplay": {
-        "runs": 360,
         "balls": 245,
         "strikeRate": 146.94,
         "economy": 8.82
       },
       "middle": {
-        "runs": 2840,
         "balls": 1905,
         "strikeRate": 149.08,
         "economy": 8.94
       },
       "death": {
-        "runs": 2779,
         "balls": 1484,
         "strikeRate": 187.26,
         "economy": 11.24
@@ -21262,19 +15557,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 267,
         "balls": 189,
         "strikeRate": 141.27,
         "economy": 8.48
       },
       "middle": {
-        "runs": 510,
         "balls": 342,
         "strikeRate": 149.12,
         "economy": 8.95
       },
       "death": {
-        "runs": 117,
         "balls": 69,
         "strikeRate": 169.57,
         "economy": 10.17
@@ -21296,19 +15588,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.44,
     "battingPhases": {
       "powerplay": {
-        "runs": 145,
         "balls": 130,
         "strikeRate": 111.54,
         "economy": 6.69
       },
       "middle": {
-        "runs": 1235,
         "balls": 1033,
         "strikeRate": 119.55,
         "economy": 7.17
       },
       "death": {
-        "runs": 901,
         "balls": 536,
         "strikeRate": 168.1,
         "economy": 10.09
@@ -21316,19 +15605,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 491,
         "balls": 327,
         "strikeRate": 150.15,
         "economy": 9.01
       },
       "middle": {
-        "runs": 1144,
         "balls": 769,
         "strikeRate": 148.76,
         "economy": 8.93
       },
       "death": {
-        "runs": 1045,
         "balls": 631,
         "strikeRate": 165.61,
         "economy": 9.94
@@ -21342,50 +15628,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 131.51,
     "runs": 3543,
     "innings": 151,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 160,
     "boundaryPct": 19.34,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1823,
         "balls": 1504,
         "strikeRate": 121.21,
         "economy": 7.27
       },
       "middle": {
-        "runs": 1477,
         "balls": 1024,
         "strikeRate": 144.24,
         "economy": 8.65
       },
       "death": {
-        "runs": 243,
         "balls": 166,
         "strikeRate": 146.39,
         "economy": 8.78
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -21404,19 +15664,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 33.8,
     "battingPhases": {
       "powerplay": {
-        "runs": 555,
         "balls": 511,
         "strikeRate": 108.61,
         "economy": 6.52
       },
       "middle": {
-        "runs": 491,
         "balls": 391,
         "strikeRate": 125.58,
         "economy": 7.53
       },
       "death": {
-        "runs": 51,
         "balls": 41,
         "strikeRate": 124.39,
         "economy": 7.46
@@ -21424,19 +15681,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 31,
         "balls": 30,
         "strikeRate": 103.33,
         "economy": 6.2
       },
       "middle": {
-        "runs": 150,
         "balls": 126,
         "strikeRate": 119.05,
         "economy": 7.14
       },
       "death": {
-        "runs": 11,
         "balls": 13,
         "strikeRate": 84.62,
         "economy": 5.08
@@ -21457,20 +15711,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.66,
     "bowlingStrikeRate": 16.87,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 6,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 33,
         "balls": 47,
         "strikeRate": 70.21,
         "economy": 4.21
@@ -21478,19 +15724,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 466,
         "balls": 360,
         "strikeRate": 129.44,
         "economy": 7.77
       },
       "middle": {
-        "runs": 790,
         "balls": 552,
         "strikeRate": 143.12,
         "economy": 8.59
       },
       "death": {
-        "runs": 987,
         "balls": 623,
         "strikeRate": 158.43,
         "economy": 9.51
@@ -21512,19 +15755,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.4,
     "battingPhases": {
       "powerplay": {
-        "runs": 82,
         "balls": 86,
         "strikeRate": 95.35,
         "economy": 5.72
       },
       "middle": {
-        "runs": 33,
         "balls": 29,
         "strikeRate": 113.79,
         "economy": 6.83
       },
       "death": {
-        "runs": 12,
         "balls": 9,
         "strikeRate": 133.33,
         "economy": 8
@@ -21532,19 +15772,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 29,
         "balls": 18,
         "strikeRate": 161.11,
         "economy": 9.67
       },
       "middle": {
-        "runs": 107,
         "balls": 54,
         "strikeRate": 198.15,
         "economy": 11.89
       },
       "death": {
-        "runs": 44,
         "balls": 30,
         "strikeRate": 146.67,
         "economy": 8.8
@@ -21566,19 +15803,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.25,
     "battingPhases": {
       "powerplay": {
-        "runs": 69,
         "balls": 53,
         "strikeRate": 130.19,
         "economy": 7.81
       },
       "middle": {
-        "runs": 497,
         "balls": 488,
         "strikeRate": 101.84,
         "economy": 6.11
       },
       "death": {
-        "runs": 1279,
         "balls": 907,
         "strikeRate": 141.01,
         "economy": 8.46
@@ -21586,19 +15820,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1948,
         "balls": 1593,
         "strikeRate": 122.28,
         "economy": 7.34
       },
       "middle": {
-        "runs": 1482,
         "balls": 1172,
         "strikeRate": 126.45,
         "economy": 7.59
       },
       "death": {
-        "runs": 2011,
         "balls": 1330,
         "strikeRate": 151.2,
         "economy": 9.07
@@ -21612,50 +15843,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 144.15,
     "runs": 1773,
     "innings": 71,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 80,
     "boundaryPct": 17.24,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 79,
         "balls": 78,
         "strikeRate": 101.28,
         "economy": 6.08
       },
       "middle": {
-        "runs": 1147,
         "balls": 820,
         "strikeRate": 139.88,
         "economy": 8.39
       },
       "death": {
-        "runs": 547,
         "balls": 332,
         "strikeRate": 164.76,
         "economy": 9.89
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -21673,20 +15878,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.14,
     "bowlingStrikeRate": 24.25,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 18,
         "balls": 14,
         "strikeRate": 128.57,
         "economy": 7.71
@@ -21694,19 +15886,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 55,
         "balls": 54,
         "strikeRate": 101.85,
         "economy": 6.11
       },
       "middle": {
-        "runs": 55,
         "balls": 26,
         "strikeRate": 211.54,
         "economy": 12.69
       },
       "death": {
-        "runs": 40,
         "balls": 17,
         "strikeRate": 235.29,
         "economy": 14.12
@@ -21728,19 +15917,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.15,
     "battingPhases": {
       "powerplay": {
-        "runs": 20,
         "balls": 8,
         "strikeRate": 250,
         "economy": 15
       },
       "middle": {
-        "runs": 53,
         "balls": 33,
         "strikeRate": 160.61,
         "economy": 9.64
       },
       "death": {
-        "runs": 84,
         "balls": 48,
         "strikeRate": 175,
         "economy": 10.5
@@ -21748,19 +15934,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 83,
         "balls": 54,
         "strikeRate": 153.7,
         "economy": 9.22
       },
       "middle": {
-        "runs": 349,
         "balls": 198,
         "strikeRate": 176.26,
         "economy": 10.58
       },
       "death": {
-        "runs": 37,
         "balls": 36,
         "strikeRate": 102.78,
         "economy": 6.17
@@ -21782,19 +15965,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.84,
     "battingPhases": {
       "powerplay": {
-        "runs": 296,
         "balls": 208,
         "strikeRate": 142.31,
         "economy": 8.54
       },
       "middle": {
-        "runs": 75,
         "balls": 63,
         "strikeRate": 119.05,
         "economy": 7.14
       },
       "death": {
-        "runs": 3,
         "balls": 10,
         "strikeRate": 30,
         "economy": 1.8
@@ -21802,19 +15982,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 15,
         "balls": 6,
         "strikeRate": 250,
         "economy": 15
       },
       "middle": {
-        "runs": 479,
         "balls": 407,
         "strikeRate": 117.69,
         "economy": 7.06
       },
       "death": {
-        "runs": 136,
         "balls": 78,
         "strikeRate": 174.36,
         "economy": 10.46
@@ -21828,50 +16005,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 134.68,
     "runs": 800,
     "innings": 37,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 40,
     "boundaryPct": 17.51,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 542,
         "balls": 403,
         "strikeRate": 134.49,
         "economy": 8.07
       },
       "middle": {
-        "runs": 193,
         "balls": 153,
         "strikeRate": 126.14,
         "economy": 7.57
       },
       "death": {
-        "runs": 65,
         "balls": 38,
         "strikeRate": 171.05,
         "economy": 10.26
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -21890,19 +16041,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.74,
     "battingPhases": {
       "powerplay": {
-        "runs": 318,
         "balls": 283,
         "strikeRate": 112.37,
         "economy": 6.74
       },
       "middle": {
-        "runs": 241,
         "balls": 204,
         "strikeRate": 118.14,
         "economy": 7.09
       },
       "death": {
-        "runs": 142,
         "balls": 98,
         "strikeRate": 144.9,
         "economy": 8.69
@@ -21910,19 +16058,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 301,
         "balls": 246,
         "strikeRate": 122.36,
         "economy": 7.34
       },
       "middle": {
-        "runs": 336,
         "balls": 264,
         "strikeRate": 127.27,
         "economy": 7.64
       },
       "death": {
-        "runs": 263,
         "balls": 164,
         "strikeRate": 160.37,
         "economy": 9.62
@@ -21936,50 +16081,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 156.17,
     "runs": 6759,
     "innings": 254,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 262,
     "boundaryPct": 23.11,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 4241,
         "balls": 2721,
         "strikeRate": 155.86,
         "economy": 9.35
       },
       "middle": {
-        "runs": 2177,
         "balls": 1431,
         "strikeRate": 152.13,
         "economy": 9.13
       },
       "death": {
-        "runs": 341,
         "balls": 176,
         "strikeRate": 193.75,
         "economy": 11.63
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -21997,20 +16116,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.71,
     "bowlingStrikeRate": 15.33,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 64,
         "balls": 55,
         "strikeRate": 116.36,
         "economy": 6.98
@@ -22018,19 +16129,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 979,
         "balls": 708,
         "strikeRate": 138.28,
         "economy": 8.3
       },
       "middle": {
-        "runs": 255,
         "balls": 192,
         "strikeRate": 132.81,
         "economy": 7.97
       },
       "death": {
-        "runs": 487,
         "balls": 326,
         "strikeRate": 149.39,
         "economy": 8.96
@@ -22052,19 +16160,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.82,
     "battingPhases": {
       "powerplay": {
-        "runs": 2222,
         "balls": 1569,
         "strikeRate": 141.62,
         "economy": 8.5
       },
       "middle": {
-        "runs": 2836,
         "balls": 2154,
         "strikeRate": 131.66,
         "economy": 7.9
       },
       "death": {
-        "runs": 1240,
         "balls": 729,
         "strikeRate": 170.1,
         "economy": 10.21
@@ -22072,19 +16177,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 278,
         "balls": 199,
         "strikeRate": 139.7,
         "economy": 8.38
       },
       "middle": {
-        "runs": 1380,
         "balls": 1011,
         "strikeRate": 136.5,
         "economy": 8.19
       },
       "death": {
-        "runs": 454,
         "balls": 277,
         "strikeRate": 163.9,
         "economy": 9.83
@@ -22098,50 +16200,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 88.78,
     "runs": 182,
     "innings": 19,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 21,
     "boundaryPct": 12.2,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 112,
         "balls": 134,
         "strikeRate": 83.58,
         "economy": 5.01
       },
       "middle": {
-        "runs": 68,
         "balls": 62,
         "strikeRate": 109.68,
         "economy": 6.58
       },
       "death": {
-        "runs": 2,
         "balls": 9,
         "strikeRate": 22.22,
         "economy": 1.33
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -22159,20 +16235,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.29,
     "bowlingStrikeRate": 18.22,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 58,
         "balls": 58,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 226,
         "balls": 163,
         "strikeRate": 138.65,
         "economy": 8.32
@@ -22180,19 +16248,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1035,
         "balls": 699,
         "strikeRate": 148.07,
         "economy": 8.88
       },
       "middle": {
-        "runs": 1261,
         "balls": 951,
         "strikeRate": 132.6,
         "economy": 7.96
       },
       "death": {
-        "runs": 1142,
         "balls": 701,
         "strikeRate": 162.91,
         "economy": 9.77
@@ -22206,50 +16271,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 118.87,
     "runs": 126,
     "innings": 10,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 11,
     "boundaryPct": 14.15,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 12,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 94,
         "balls": 74,
         "strikeRate": 127.03,
         "economy": 7.62
       },
       "death": {
-        "runs": 24,
         "balls": 20,
         "strikeRate": 120,
         "economy": 7.2
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -22260,50 +16299,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 142.63,
     "runs": 4851,
     "innings": 173,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 180,
     "boundaryPct": 19.64,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1874,
         "balls": 1412,
         "strikeRate": 132.72,
         "economy": 7.96
       },
       "middle": {
-        "runs": 2499,
         "balls": 1691,
         "strikeRate": 147.78,
         "economy": 8.87
       },
       "death": {
-        "runs": 478,
         "balls": 298,
         "strikeRate": 160.4,
         "economy": 9.62
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -22314,27 +16327,22 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 163.97,
     "runs": 710,
     "innings": 33,
-    "bowlingAverage": null,
     "economyRate": 8.77,
     "wickets": 0,
     "matches": 37,
     "boundaryPct": 24.02,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 165,
         "balls": 116,
         "strikeRate": 142.24,
         "economy": 8.53
       },
       "middle": {
-        "runs": 249,
         "balls": 164,
         "strikeRate": 151.83,
         "economy": 9.11
       },
       "death": {
-        "runs": 296,
         "balls": 153,
         "strikeRate": 193.46,
         "economy": 11.61
@@ -22342,19 +16350,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 6,
         "balls": 6,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 62,
         "balls": 34,
         "strikeRate": 182.35,
         "economy": 10.94
       },
       "death": {
-        "runs": 8,
         "balls": 12,
         "strikeRate": 66.67,
         "economy": 4
@@ -22376,19 +16381,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.97,
     "battingPhases": {
       "powerplay": {
-        "runs": 920,
         "balls": 746,
         "strikeRate": 123.32,
         "economy": 7.4
       },
       "middle": {
-        "runs": 1674,
         "balls": 1399,
         "strikeRate": 119.66,
         "economy": 7.18
       },
       "death": {
-        "runs": 527,
         "balls": 399,
         "strikeRate": 132.08,
         "economy": 7.92
@@ -22396,19 +16398,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 233,
         "balls": 156,
         "strikeRate": 149.36,
         "economy": 8.96
       },
       "middle": {
-        "runs": 571,
         "balls": 403,
         "strikeRate": 141.69,
         "economy": 8.5
       },
       "death": {
-        "runs": 76,
         "balls": 48,
         "strikeRate": 158.33,
         "economy": 9.5
@@ -22430,19 +16429,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 34,
     "battingPhases": {
       "powerplay": {
-        "runs": 242,
         "balls": 137,
         "strikeRate": 176.64,
         "economy": 10.6
       },
       "middle": {
-        "runs": 171,
         "balls": 125,
         "strikeRate": 136.8,
         "economy": 8.21
       },
       "death": {
-        "runs": 19,
         "balls": 10,
         "strikeRate": 190,
         "economy": 11.4
@@ -22450,22 +16446,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 29,
         "balls": 12,
         "strikeRate": 241.67,
         "economy": 14.5
       },
       "middle": {
-        "runs": 93,
         "balls": 90,
         "strikeRate": 103.33,
         "economy": 6.2
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -22476,47 +16464,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 145.06,
     "runs": 3628,
     "innings": 146,
-    "bowlingAverage": null,
     "economyRate": 15.23,
     "wickets": 0,
     "matches": 149,
     "boundaryPct": 20.55,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2171,
         "balls": 1522,
         "strikeRate": 142.64,
         "economy": 8.56
       },
       "middle": {
-        "runs": 1290,
         "balls": 865,
         "strikeRate": 149.13,
         "economy": 8.95
       },
       "death": {
-        "runs": 167,
         "balls": 114,
         "strikeRate": 146.49,
         "economy": 8.79
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 37,
         "balls": 12,
         "strikeRate": 308.33,
         "economy": 18.5
       },
       "death": {
-        "runs": 29,
         "balls": 14,
         "strikeRate": 207.14,
         "economy": 12.43
@@ -22537,20 +16512,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.9,
     "bowlingStrikeRate": 14.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 61,
         "balls": 50,
         "strikeRate": 122,
         "economy": 7.32
       },
       "death": {
-        "runs": 48,
         "balls": 43,
         "strikeRate": 111.63,
         "economy": 6.7
@@ -22558,19 +16525,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 5,
         "balls": 6,
         "strikeRate": 83.33,
         "economy": 5
       },
       "middle": {
-        "runs": 124,
         "balls": 80,
         "strikeRate": 155,
         "economy": 9.3
       },
       "death": {
-        "runs": 50,
         "balls": 30,
         "strikeRate": 166.67,
         "economy": 10
@@ -22592,19 +16556,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.64,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 47,
         "balls": 70,
         "strikeRate": 67.14,
         "economy": 4.03
       },
       "death": {
-        "runs": 327,
         "balls": 250,
         "strikeRate": 130.8,
         "economy": 7.85
@@ -22612,19 +16573,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 166,
         "balls": 126,
         "strikeRate": 131.75,
         "economy": 7.9
       },
       "middle": {
-        "runs": 2303,
         "balls": 1893,
         "strikeRate": 121.66,
         "economy": 7.3
       },
       "death": {
-        "runs": 446,
         "balls": 318,
         "strikeRate": 140.25,
         "economy": 8.42
@@ -22646,19 +16604,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.93,
     "battingPhases": {
       "powerplay": {
-        "runs": 25,
         "balls": 20,
         "strikeRate": 125,
         "economy": 7.5
       },
       "middle": {
-        "runs": 528,
         "balls": 481,
         "strikeRate": 109.77,
         "economy": 6.59
       },
       "death": {
-        "runs": 1350,
         "balls": 991,
         "strikeRate": 136.23,
         "economy": 8.17
@@ -22666,19 +16621,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2724,
         "balls": 1898,
         "strikeRate": 143.52,
         "economy": 8.61
       },
       "middle": {
-        "runs": 2966,
         "balls": 2335,
         "strikeRate": 127.02,
         "economy": 7.62
       },
       "death": {
-        "runs": 4576,
         "balls": 2902,
         "strikeRate": 157.68,
         "economy": 9.46
@@ -22699,20 +16651,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.69,
     "bowlingStrikeRate": 14.17,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 5,
         "strikeRate": 60,
         "economy": 3.6
       },
       "death": {
-        "runs": 7,
         "balls": 8,
         "strikeRate": 87.5,
         "economy": 5.25
@@ -22720,19 +16664,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 264,
         "balls": 156,
         "strikeRate": 169.23,
         "economy": 10.15
       },
       "middle": {
-        "runs": 104,
         "balls": 67,
         "strikeRate": 155.22,
         "economy": 9.31
       },
       "death": {
-        "runs": 49,
         "balls": 32,
         "strikeRate": 153.13,
         "economy": 9.19
@@ -22753,20 +16694,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.27,
     "bowlingStrikeRate": 13.63,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 6,
         "strikeRate": 66.67,
         "economy": 4
       },
       "death": {
-        "runs": 21,
         "balls": 38,
         "strikeRate": 55.26,
         "economy": 3.32
@@ -22774,19 +16707,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 694,
         "balls": 474,
         "strikeRate": 146.41,
         "economy": 8.78
       },
       "middle": {
-        "runs": 188,
         "balls": 154,
         "strikeRate": 122.08,
         "economy": 7.32
       },
       "death": {
-        "runs": 420,
         "balls": 285,
         "strikeRate": 147.37,
         "economy": 8.84
@@ -22807,20 +16737,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.12,
     "bowlingStrikeRate": 16.79,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 15,
         "balls": 37,
         "strikeRate": 40.54,
         "economy": 2.43
       },
       "death": {
-        "runs": 212,
         "balls": 184,
         "strikeRate": 115.22,
         "economy": 6.91
@@ -22828,19 +16750,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1409,
         "balls": 1043,
         "strikeRate": 135.09,
         "economy": 8.11
       },
       "middle": {
-        "runs": 736,
         "balls": 552,
         "strikeRate": 133.33,
         "economy": 8
       },
       "death": {
-        "runs": 1539,
         "balls": 991,
         "strikeRate": 155.3,
         "economy": 9.32
@@ -22861,20 +16780,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.5,
     "bowlingStrikeRate": 18.56,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 24,
         "balls": 37,
         "strikeRate": 64.86,
         "economy": 3.89
       },
       "death": {
-        "runs": 219,
         "balls": 243,
         "strikeRate": 90.12,
         "economy": 5.41
@@ -22882,19 +16793,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 835,
         "balls": 707,
         "strikeRate": 118.1,
         "economy": 7.09
       },
       "middle": {
-        "runs": 1179,
         "balls": 1027,
         "strikeRate": 114.8,
         "economy": 6.89
       },
       "death": {
-        "runs": 201,
         "balls": 159,
         "strikeRate": 126.42,
         "economy": 7.58
@@ -22915,20 +16823,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.16,
     "bowlingStrikeRate": 17.09,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 107,
         "balls": 128,
         "strikeRate": 83.59,
         "economy": 5.02
       },
       "death": {
-        "runs": 205,
         "balls": 168,
         "strikeRate": 122.02,
         "economy": 7.32
@@ -22936,19 +16836,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 820,
         "balls": 618,
         "strikeRate": 132.69,
         "economy": 7.96
       },
       "middle": {
-        "runs": 672,
         "balls": 507,
         "strikeRate": 132.54,
         "economy": 7.95
       },
       "death": {
-        "runs": 711,
         "balls": 413,
         "strikeRate": 172.15,
         "economy": 10.33
@@ -22958,7 +16855,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-78d4f412": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 58.82,
     "runs": 10,
     "innings": 3,
@@ -22969,20 +16865,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.88,
     "bowlingStrikeRate": 18.92,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 10,
         "balls": 17,
         "strikeRate": 58.82,
         "economy": 3.53
@@ -22990,19 +16873,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 373,
         "balls": 276,
         "strikeRate": 135.14,
         "economy": 8.11
       },
       "middle": {
-        "runs": 233,
         "balls": 156,
         "strikeRate": 149.36,
         "economy": 8.96
       },
       "death": {
-        "runs": 105,
         "balls": 60,
         "strikeRate": 175,
         "economy": 10.5
@@ -23016,47 +16896,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 125.78,
     "runs": 522,
     "innings": 27,
-    "bowlingAverage": null,
     "economyRate": 15,
     "wickets": 0,
     "matches": 29,
     "boundaryPct": 15.9,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 212,
         "balls": 162,
         "strikeRate": 130.86,
         "economy": 7.85
       },
       "middle": {
-        "runs": 246,
         "balls": 214,
         "strikeRate": 114.95,
         "economy": 6.9
       },
       "death": {
-        "runs": 64,
         "balls": 39,
         "strikeRate": 164.1,
         "economy": 9.85
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 25,
         "balls": 12,
         "strikeRate": 208.33,
         "economy": 12.5
       },
       "death": {
-        "runs": 10,
         "balls": 2,
         "strikeRate": 500,
         "economy": 30
@@ -23077,20 +16944,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.27,
     "bowlingStrikeRate": 22.53,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 9,
         "strikeRate": 44.44,
         "economy": 2.67
       },
       "death": {
-        "runs": 22,
         "balls": 35,
         "strikeRate": 62.86,
         "economy": 3.77
@@ -23098,19 +16957,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 509,
         "balls": 354,
         "strikeRate": 143.79,
         "economy": 8.63
       },
       "middle": {
-        "runs": 512,
         "balls": 366,
         "strikeRate": 139.89,
         "economy": 8.39
       },
       "death": {
-        "runs": 219,
         "balls": 136,
         "strikeRate": 161.03,
         "economy": 9.66
@@ -23131,20 +16987,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.27,
     "bowlingStrikeRate": 16.67,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 10,
         "strikeRate": 70,
         "economy": 4.2
       },
       "death": {
-        "runs": 20,
         "balls": 34,
         "strikeRate": 58.82,
         "economy": 3.53
@@ -23152,19 +17000,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 357,
         "balls": 210,
         "strikeRate": 170,
         "economy": 10.2
       },
       "middle": {
-        "runs": 378,
         "balls": 283,
         "strikeRate": 133.57,
         "economy": 8.01
       },
       "death": {
-        "runs": 348,
         "balls": 207,
         "strikeRate": 168.12,
         "economy": 10.09
@@ -23178,50 +17023,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.19,
     "runs": 6670,
     "innings": 313,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 328,
     "boundaryPct": 16.47,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 770,
         "balls": 748,
         "strikeRate": 102.94,
         "economy": 6.18
       },
       "middle": {
-        "runs": 4054,
         "balls": 3072,
         "strikeRate": 131.97,
         "economy": 7.92
       },
       "death": {
-        "runs": 1846,
         "balls": 1042,
         "strikeRate": 177.16,
         "economy": 10.63
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -23232,50 +17051,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 152.38,
     "runs": 128,
     "innings": 7,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 11,
     "boundaryPct": 20.24,
-    "bowlingStrikeRate": null,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 75,
         "balls": 53,
         "strikeRate": 141.51,
         "economy": 8.49
       },
       "death": {
-        "runs": 53,
         "balls": 31,
         "strikeRate": 170.97,
         "economy": 10.26
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -23294,19 +17082,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 5,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 56,
         "balls": 39,
         "strikeRate": 143.59,
         "economy": 8.62
       },
       "death": {
-        "runs": 119,
         "balls": 58,
         "strikeRate": 205.17,
         "economy": 12.31
@@ -23314,19 +17099,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 33,
         "balls": 18,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 68,
         "balls": 48,
         "strikeRate": 141.67,
         "economy": 8.5
       },
       "death": {
-        "runs": 29,
         "balls": 12,
         "strikeRate": 241.67,
         "economy": 14.5
@@ -23340,50 +17122,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 113.68,
     "runs": 324,
     "innings": 16,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 16,
     "boundaryPct": 15.44,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 213,
         "balls": 197,
         "strikeRate": 108.12,
         "economy": 6.49
       },
       "middle": {
-        "runs": 82,
         "balls": 75,
         "strikeRate": 109.33,
         "economy": 6.56
       },
       "death": {
-        "runs": 29,
         "balls": 13,
         "strikeRate": 223.08,
         "economy": 13.38
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -23401,20 +17157,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.18,
     "bowlingStrikeRate": 15.54,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 13,
         "balls": 13,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 181,
         "balls": 154,
         "strikeRate": 117.53,
         "economy": 7.05
@@ -23422,19 +17170,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2174,
         "balls": 1830,
         "strikeRate": 118.8,
         "economy": 7.13
       },
       "middle": {
-        "runs": 648,
         "balls": 476,
         "strikeRate": 136.13,
         "economy": 8.17
       },
       "death": {
-        "runs": 1559,
         "balls": 1051,
         "strikeRate": 148.33,
         "economy": 8.9
@@ -23456,19 +17201,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 27.23,
     "battingPhases": {
       "powerplay": {
-        "runs": 3,
         "balls": 7,
         "strikeRate": 42.86,
         "economy": 2.57
       },
       "middle": {
-        "runs": 103,
         "balls": 140,
         "strikeRate": 73.57,
         "economy": 4.41
       },
       "death": {
-        "runs": 616,
         "balls": 413,
         "strikeRate": 149.15,
         "economy": 8.95
@@ -23476,19 +17218,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 405,
         "balls": 299,
         "strikeRate": 135.45,
         "economy": 8.13
       },
       "middle": {
-        "runs": 820,
         "balls": 600,
         "strikeRate": 136.67,
         "economy": 8.2
       },
       "death": {
-        "runs": 364,
         "balls": 190,
         "strikeRate": 191.58,
         "economy": 11.49
@@ -23502,50 +17241,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.02,
     "runs": 2946,
     "innings": 144,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 158,
     "boundaryPct": 17.58,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 363,
         "balls": 337,
         "strikeRate": 107.72,
         "economy": 6.46
       },
       "middle": {
-        "runs": 1776,
         "balls": 1328,
         "strikeRate": 133.73,
         "economy": 8.02
       },
       "death": {
-        "runs": 807,
         "balls": 485,
         "strikeRate": 166.39,
         "economy": 9.98
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -23556,50 +17269,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 132.85,
     "runs": 550,
     "innings": 30,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 35,
     "boundaryPct": 17.63,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 241,
         "balls": 175,
         "strikeRate": 137.71,
         "economy": 8.26
       },
       "middle": {
-        "runs": 279,
         "balls": 219,
         "strikeRate": 127.4,
         "economy": 7.64
       },
       "death": {
-        "runs": 30,
         "balls": 20,
         "strikeRate": 150,
         "economy": 9
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -23617,20 +17304,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.5,
     "bowlingStrikeRate": 13.86,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 18,
         "balls": 16,
         "strikeRate": 112.5,
         "economy": 6.75
@@ -23638,19 +17312,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 41,
         "balls": 30,
         "strikeRate": 136.67,
         "economy": 8.2
       },
       "middle": {
-        "runs": 549,
         "balls": 396,
         "strikeRate": 138.64,
         "economy": 8.32
       },
       "death": {
-        "runs": 144,
         "balls": 87,
         "strikeRate": 165.52,
         "economy": 9.93
@@ -23671,20 +17342,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.17,
     "bowlingStrikeRate": 21.55,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 32,
         "balls": 70,
         "strikeRate": 45.71,
         "economy": 2.74
       },
       "death": {
-        "runs": 178,
         "balls": 259,
         "strikeRate": 68.73,
         "economy": 4.12
@@ -23692,19 +17355,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2115,
         "balls": 1752,
         "strikeRate": 120.72,
         "economy": 7.24
       },
       "middle": {
-        "runs": 1654,
         "balls": 1471,
         "strikeRate": 112.44,
         "economy": 6.75
       },
       "death": {
-        "runs": 1023,
         "balls": 743,
         "strikeRate": 137.69,
         "economy": 8.26
@@ -23725,20 +17385,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.96,
     "bowlingStrikeRate": 17.58,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 10,
         "balls": 12,
         "strikeRate": 83.33,
         "economy": 5
       },
       "death": {
-        "runs": 88,
         "balls": 103,
         "strikeRate": 85.44,
         "economy": 5.13
@@ -23746,19 +17398,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1937,
         "balls": 1498,
         "strikeRate": 129.31,
         "economy": 7.76
       },
       "middle": {
-        "runs": 865,
         "balls": 588,
         "strikeRate": 147.11,
         "economy": 8.83
       },
       "death": {
-        "runs": 1320,
         "balls": 814,
         "strikeRate": 162.16,
         "economy": 9.73
@@ -23780,19 +17429,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.76,
     "battingPhases": {
       "powerplay": {
-        "runs": 270,
         "balls": 209,
         "strikeRate": 129.19,
         "economy": 7.75
       },
       "middle": {
-        "runs": 2444,
         "balls": 1782,
         "strikeRate": 137.15,
         "economy": 8.23
       },
       "death": {
-        "runs": 1400,
         "balls": 830,
         "strikeRate": 168.67,
         "economy": 10.12
@@ -23800,19 +17446,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 309,
         "balls": 249,
         "strikeRate": 124.1,
         "economy": 7.45
       },
       "middle": {
-        "runs": 640,
         "balls": 498,
         "strikeRate": 128.51,
         "economy": 7.71
       },
       "death": {
-        "runs": 112,
         "balls": 104,
         "strikeRate": 107.69,
         "economy": 6.46
@@ -23833,20 +17476,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.37,
     "bowlingStrikeRate": 18.51,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 73,
         "balls": 68,
         "strikeRate": 107.35,
         "economy": 6.44
       },
       "death": {
-        "runs": 310,
         "balls": 312,
         "strikeRate": 99.36,
         "economy": 5.96
@@ -23854,19 +17489,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 3785,
         "balls": 3607,
         "strikeRate": 104.93,
         "economy": 6.3
       },
       "middle": {
-        "runs": 943,
         "balls": 745,
         "strikeRate": 126.58,
         "economy": 7.59
       },
       "death": {
-        "runs": 3325,
         "balls": 2238,
         "strikeRate": 148.57,
         "economy": 8.91
@@ -23888,39 +17520,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 12.33,
     "battingPhases": {
       "powerplay": {
-        "runs": 52,
         "balls": 39,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 319,
         "balls": 257,
         "strikeRate": 124.12,
         "economy": 7.45
       },
       "death": {
-        "runs": 361,
         "balls": 221,
         "strikeRate": 163.35,
         "economy": 9.8
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 48,
         "balls": 48,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 26,
         "balls": 26,
         "strikeRate": 100,
         "economy": 6
@@ -23942,19 +17563,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.61,
     "battingPhases": {
       "powerplay": {
-        "runs": 2,
         "balls": 2,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 573,
         "balls": 477,
         "strikeRate": 120.13,
         "economy": 7.21
       },
       "death": {
-        "runs": 1472,
         "balls": 833,
         "strikeRate": 176.71,
         "economy": 10.6
@@ -23962,19 +17580,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1199,
         "balls": 827,
         "strikeRate": 144.98,
         "economy": 8.7
       },
       "middle": {
-        "runs": 2001,
         "balls": 1312,
         "strikeRate": 152.52,
         "economy": 9.15
       },
       "death": {
-        "runs": 1606,
         "balls": 900,
         "strikeRate": 178.44,
         "economy": 10.71
@@ -23996,19 +17611,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.6,
     "battingPhases": {
       "powerplay": {
-        "runs": 9,
         "balls": 11,
         "strikeRate": 81.82,
         "economy": 4.91
       },
       "middle": {
-        "runs": 34,
         "balls": 37,
         "strikeRate": 91.89,
         "economy": 5.51
       },
       "death": {
-        "runs": 254,
         "balls": 158,
         "strikeRate": 160.76,
         "economy": 9.65
@@ -24016,19 +17628,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 139,
         "balls": 90,
         "strikeRate": 154.44,
         "economy": 9.27
       },
       "middle": {
-        "runs": 336,
         "balls": 278,
         "strikeRate": 120.86,
         "economy": 7.25
       },
       "death": {
-        "runs": 67,
         "balls": 44,
         "strikeRate": 152.27,
         "economy": 9.14
@@ -24050,19 +17659,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 30.63,
     "battingPhases": {
       "powerplay": {
-        "runs": 241,
         "balls": 201,
         "strikeRate": 119.9,
         "economy": 7.19
       },
       "middle": {
-        "runs": 463,
         "balls": 296,
         "strikeRate": 156.42,
         "economy": 9.39
       },
       "death": {
-        "runs": 83,
         "balls": 50,
         "strikeRate": 166,
         "economy": 9.96
@@ -24070,19 +17676,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 268,
         "balls": 168,
         "strikeRate": 159.52,
         "economy": 9.57
       },
       "middle": {
-        "runs": 72,
         "balls": 60,
         "strikeRate": 120,
         "economy": 7.2
       },
       "death": {
-        "runs": 30,
         "balls": 17,
         "strikeRate": 176.47,
         "economy": 10.59
@@ -24104,19 +17707,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.76,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 5,
         "balls": 9,
         "strikeRate": 55.56,
         "economy": 3.33
       },
       "death": {
-        "runs": 40,
         "balls": 38,
         "strikeRate": 105.26,
         "economy": 6.32
@@ -24124,19 +17724,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 508,
         "balls": 360,
         "strikeRate": 141.11,
         "economy": 8.47
       },
       "middle": {
-        "runs": 377,
         "balls": 282,
         "strikeRate": 133.69,
         "economy": 8.02
       },
       "death": {
-        "runs": 367,
         "balls": 237,
         "strikeRate": 154.85,
         "economy": 9.29
@@ -24158,19 +17755,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.12,
     "battingPhases": {
       "powerplay": {
-        "runs": 23,
         "balls": 25,
         "strikeRate": 92,
         "economy": 5.52
       },
       "middle": {
-        "runs": 103,
         "balls": 101,
         "strikeRate": 101.98,
         "economy": 6.12
       },
       "death": {
-        "runs": 152,
         "balls": 124,
         "strikeRate": 122.58,
         "economy": 7.35
@@ -24178,19 +17772,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 354,
         "balls": 234,
         "strikeRate": 151.28,
         "economy": 9.08
       },
       "middle": {
-        "runs": 602,
         "balls": 465,
         "strikeRate": 129.46,
         "economy": 7.77
       },
       "death": {
-        "runs": 469,
         "balls": 252,
         "strikeRate": 186.11,
         "economy": 11.17
@@ -24204,50 +17795,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 159.18,
     "runs": 156,
     "innings": 11,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 14,
     "boundaryPct": 22.45,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2,
         "balls": 1,
         "strikeRate": 200,
         "economy": 12
       },
       "middle": {
-        "runs": 66,
         "balls": 49,
         "strikeRate": 134.69,
         "economy": 8.08
       },
       "death": {
-        "runs": 88,
         "balls": 48,
         "strikeRate": 183.33,
         "economy": 11
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -24265,20 +17830,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.22,
     "bowlingStrikeRate": 26,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 12,
         "balls": 17,
         "strikeRate": 70.59,
         "economy": 4.24
       },
       "death": {
-        "runs": 41,
         "balls": 29,
         "strikeRate": 141.38,
         "economy": 8.48
@@ -24286,19 +17843,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 23,
         "balls": 6,
         "strikeRate": 383.33,
         "economy": 23
       },
       "middle": {
-        "runs": 327,
         "balls": 216,
         "strikeRate": 151.39,
         "economy": 9.08
       },
       "death": {
-        "runs": 25,
         "balls": 12,
         "strikeRate": 208.33,
         "economy": 12.5
@@ -24320,19 +17874,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 14.73,
     "battingPhases": {
       "powerplay": {
-        "runs": 591,
         "balls": 503,
         "strikeRate": 117.5,
         "economy": 7.05
       },
       "middle": {
-        "runs": 861,
         "balls": 676,
         "strikeRate": 127.37,
         "economy": 7.64
       },
       "death": {
-        "runs": 273,
         "balls": 174,
         "strikeRate": 156.9,
         "economy": 9.41
@@ -24340,19 +17891,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 40,
         "balls": 18,
         "strikeRate": 222.22,
         "economy": 13.33
       },
       "middle": {
-        "runs": 701,
         "balls": 483,
         "strikeRate": 145.13,
         "economy": 8.71
       },
       "death": {
-        "runs": 162,
         "balls": 103,
         "strikeRate": 157.28,
         "economy": 9.44
@@ -24366,50 +17914,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 139.38,
     "runs": 5139,
     "innings": 199,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 206,
     "boundaryPct": 19.34,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2450,
         "balls": 1725,
         "strikeRate": 142.03,
         "economy": 8.52
       },
       "middle": {
-        "runs": 2022,
         "balls": 1571,
         "strikeRate": 128.71,
         "economy": 7.72
       },
       "death": {
-        "runs": 667,
         "balls": 391,
         "strikeRate": 170.59,
         "economy": 10.24
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -24420,50 +17942,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 145.37,
     "runs": 769,
     "innings": 33,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 36,
     "boundaryPct": 20.42,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 382,
         "balls": 259,
         "strikeRate": 147.49,
         "economy": 8.85
       },
       "middle": {
-        "runs": 325,
         "balls": 234,
         "strikeRate": 138.89,
         "economy": 8.33
       },
       "death": {
-        "runs": 62,
         "balls": 36,
         "strikeRate": 172.22,
         "economy": 10.33
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -24474,50 +17970,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 134.77,
     "runs": 1721,
     "innings": 70,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 76,
     "boundaryPct": 15.43,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 284,
         "balls": 230,
         "strikeRate": 123.48,
         "economy": 7.41
       },
       "middle": {
-        "runs": 986,
         "balls": 783,
         "strikeRate": 125.93,
         "economy": 7.56
       },
       "death": {
-        "runs": 451,
         "balls": 264,
         "strikeRate": 170.83,
         "economy": 10.25
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -24536,19 +18006,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 25.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 86,
         "balls": 80,
         "strikeRate": 107.5,
         "economy": 6.45
       },
       "middle": {
-        "runs": 1131,
         "balls": 934,
         "strikeRate": 121.09,
         "economy": 7.27
       },
       "death": {
-        "runs": 889,
         "balls": 562,
         "strikeRate": 158.19,
         "economy": 9.49
@@ -24556,19 +18023,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 795,
         "balls": 594,
         "strikeRate": 133.84,
         "economy": 8.03
       },
       "middle": {
-        "runs": 2782,
         "balls": 2256,
         "strikeRate": 123.32,
         "economy": 7.4
       },
       "death": {
-        "runs": 387,
         "balls": 261,
         "strikeRate": 148.28,
         "economy": 8.9
@@ -24582,50 +18046,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 104.4,
     "runs": 380,
     "innings": 17,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 24,
     "boundaryPct": 10.99,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 129,
         "balls": 131,
         "strikeRate": 98.47,
         "economy": 5.91
       },
       "middle": {
-        "runs": 204,
         "balls": 196,
         "strikeRate": 104.08,
         "economy": 6.24
       },
       "death": {
-        "runs": 47,
         "balls": 37,
         "strikeRate": 127.03,
         "economy": 7.62
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -24644,19 +18082,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.09,
     "battingPhases": {
       "powerplay": {
-        "runs": 964,
         "balls": 709,
         "strikeRate": 135.97,
         "economy": 8.16
       },
       "middle": {
-        "runs": 428,
         "balls": 300,
         "strikeRate": 142.67,
         "economy": 8.56
       },
       "death": {
-        "runs": 10,
         "balls": 11,
         "strikeRate": 90.91,
         "economy": 5.45
@@ -24664,19 +18099,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 66,
         "balls": 36,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 649,
         "balls": 534,
         "strikeRate": 121.54,
         "economy": 7.29
       },
       "death": {
-        "runs": 155,
         "balls": 113,
         "strikeRate": 137.17,
         "economy": 8.23
@@ -24697,20 +18129,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 18.43,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 7,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 10,
         "balls": 20,
         "strikeRate": 50,
         "economy": 3
@@ -24718,19 +18142,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 815,
         "balls": 540,
         "strikeRate": 150.93,
         "economy": 9.06
       },
       "middle": {
-        "runs": 198,
         "balls": 102,
         "strikeRate": 194.12,
         "economy": 11.65
       },
       "death": {
-        "runs": 393,
         "balls": 224,
         "strikeRate": 175.45,
         "economy": 10.53
@@ -24740,7 +18161,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-841b1222": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 220,
     "runs": 11,
     "innings": 3,
@@ -24751,20 +18171,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 40,
     "bowlingStrikeRate": 22.84,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 11,
         "balls": 5,
         "strikeRate": 220,
         "economy": 13.2
@@ -24772,19 +18179,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 256,
         "balls": 162,
         "strikeRate": 158.02,
         "economy": 9.48
       },
       "middle": {
-        "runs": 184,
         "balls": 126,
         "strikeRate": 146.03,
         "economy": 8.76
       },
       "death": {
-        "runs": 285,
         "balls": 146,
         "strikeRate": 195.21,
         "economy": 11.71
@@ -24805,20 +18209,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 3.85,
     "bowlingStrikeRate": 17.2,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 12,
         "balls": 26,
         "strikeRate": 46.15,
         "economy": 2.77
@@ -24826,19 +18217,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 292,
         "balls": 252,
         "strikeRate": 115.87,
         "economy": 6.95
       },
       "middle": {
-        "runs": 477,
         "balls": 450,
         "strikeRate": 106,
         "economy": 6.36
       },
       "death": {
-        "runs": 689,
         "balls": 519,
         "strikeRate": 132.76,
         "economy": 7.97
@@ -24852,50 +18240,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 136.51,
     "runs": 4685,
     "innings": 148,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 152,
     "boundaryPct": 15.44,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1176,
         "balls": 1007,
         "strikeRate": 116.78,
         "economy": 7.01
       },
       "middle": {
-        "runs": 2355,
         "balls": 1825,
         "strikeRate": 129.04,
         "economy": 7.74
       },
       "death": {
-        "runs": 1154,
         "balls": 600,
         "strikeRate": 192.33,
         "economy": 11.54
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -24914,19 +18276,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.25,
     "battingPhases": {
       "powerplay": {
-        "runs": 46,
         "balls": 44,
         "strikeRate": 104.55,
         "economy": 6.27
       },
       "middle": {
-        "runs": 283,
         "balls": 295,
         "strikeRate": 95.93,
         "economy": 5.76
       },
       "death": {
-        "runs": 654,
         "balls": 451,
         "strikeRate": 145.01,
         "economy": 8.7
@@ -24934,19 +18293,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 520,
         "balls": 317,
         "strikeRate": 164.04,
         "economy": 9.84
       },
       "middle": {
-        "runs": 1118,
         "balls": 768,
         "strikeRate": 145.57,
         "economy": 8.73
       },
       "death": {
-        "runs": 780,
         "balls": 455,
         "strikeRate": 171.43,
         "economy": 10.29
@@ -24968,19 +18324,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.7,
     "battingPhases": {
       "powerplay": {
-        "runs": 94,
         "balls": 91,
         "strikeRate": 103.3,
         "economy": 6.2
       },
       "middle": {
-        "runs": 1064,
         "balls": 997,
         "strikeRate": 106.72,
         "economy": 6.4
       },
       "death": {
-        "runs": 1434,
         "balls": 967,
         "strikeRate": 148.29,
         "economy": 8.9
@@ -24988,19 +18341,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1420,
         "balls": 1104,
         "strikeRate": 128.62,
         "economy": 7.72
       },
       "middle": {
-        "runs": 3744,
         "balls": 3033,
         "strikeRate": 123.44,
         "economy": 7.41
       },
       "death": {
-        "runs": 407,
         "balls": 273,
         "strikeRate": 149.08,
         "economy": 8.95
@@ -25014,101 +18364,49 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 119.1,
     "runs": 318,
     "innings": 21,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 24,
     "boundaryPct": 14.98,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 83,
         "balls": 88,
         "strikeRate": 94.32,
         "economy": 5.66
       },
       "middle": {
-        "runs": 93,
         "balls": 98,
         "strikeRate": 94.9,
         "economy": 5.69
       },
       "death": {
-        "runs": 142,
         "balls": 81,
         "strikeRate": 175.31,
         "economy": 10.52
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-865326f2": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 31.23,
     "economyRate": 9.86,
     "wickets": 13,
     "matches": 12,
-    "boundaryPct": null,
     "bowlingStrikeRate": 19,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 262,
         "balls": 169,
         "strikeRate": 155.03,
         "economy": 9.3
       },
       "middle": {
-        "runs": 117,
         "balls": 66,
         "strikeRate": 177.27,
         "economy": 10.64
       },
       "death": {
-        "runs": 27,
         "balls": 12,
         "strikeRate": 225,
         "economy": 13.5
@@ -25130,19 +18428,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 24.7,
     "battingPhases": {
       "powerplay": {
-        "runs": 3,
         "balls": 4,
         "strikeRate": 75,
         "economy": 4.5
       },
       "middle": {
-        "runs": 192,
         "balls": 196,
         "strikeRate": 97.96,
         "economy": 5.88
       },
       "death": {
-        "runs": 172,
         "balls": 139,
         "strikeRate": 123.74,
         "economy": 7.42
@@ -25150,19 +18445,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 557,
         "balls": 528,
         "strikeRate": 105.49,
         "economy": 6.33
       },
       "middle": {
-        "runs": 475,
         "balls": 405,
         "strikeRate": 117.28,
         "economy": 7.04
       },
       "death": {
-        "runs": 67,
         "balls": 55,
         "strikeRate": 121.82,
         "economy": 7.31
@@ -25176,50 +18468,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 107.02,
     "runs": 61,
     "innings": 8,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 9,
     "boundaryPct": 10.53,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 10,
         "balls": 9,
         "strikeRate": 111.11,
         "economy": 6.67
       },
       "middle": {
-        "runs": 17,
         "balls": 18,
         "strikeRate": 94.44,
         "economy": 5.67
       },
       "death": {
-        "runs": 34,
         "balls": 30,
         "strikeRate": 113.33,
         "economy": 6.8
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -25230,50 +18496,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 131.77,
     "runs": 2837,
     "innings": 149,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 163,
     "boundaryPct": 14.17,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 442,
         "balls": 351,
         "strikeRate": 125.93,
         "economy": 7.56
       },
       "middle": {
-        "runs": 1683,
         "balls": 1286,
         "strikeRate": 130.87,
         "economy": 7.85
       },
       "death": {
-        "runs": 712,
         "balls": 516,
         "strikeRate": 137.98,
         "economy": 8.28
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -25291,20 +18531,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.31,
     "bowlingStrikeRate": 16.56,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 10,
         "strikeRate": 60,
         "economy": 3.6
       },
       "death": {
-        "runs": 50,
         "balls": 55,
         "strikeRate": 90.91,
         "economy": 5.45
@@ -25312,19 +18544,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 386,
         "balls": 270,
         "strikeRate": 142.96,
         "economy": 8.58
       },
       "middle": {
-        "runs": 421,
         "balls": 318,
         "strikeRate": 132.39,
         "economy": 7.94
       },
       "death": {
-        "runs": 373,
         "balls": 240,
         "strikeRate": 155.42,
         "economy": 9.32
@@ -25338,50 +18567,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 164.49,
     "runs": 1612,
     "innings": 52,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 57,
     "boundaryPct": 22.04,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 243,
         "balls": 215,
         "strikeRate": 113.02,
         "economy": 6.78
       },
       "middle": {
-        "runs": 1102,
         "balls": 641,
         "strikeRate": 171.92,
         "economy": 10.32
       },
       "death": {
-        "runs": 267,
         "balls": 124,
         "strikeRate": 215.32,
         "economy": 12.92
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -25399,20 +18602,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.88,
     "bowlingStrikeRate": 23.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 4,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 10,
         "balls": 13,
         "strikeRate": 76.92,
         "economy": 4.62
@@ -25420,19 +18615,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 16,
         "balls": 6,
         "strikeRate": 266.67,
         "economy": 16
       },
       "middle": {
-        "runs": 342,
         "balls": 252,
         "strikeRate": 135.71,
         "economy": 8.14
       },
       "death": {
-        "runs": 49,
         "balls": 24,
         "strikeRate": 204.17,
         "economy": 12.25
@@ -25454,19 +18646,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.35,
     "battingPhases": {
       "powerplay": {
-        "runs": 43,
         "balls": 37,
         "strikeRate": 116.22,
         "economy": 6.97
       },
       "middle": {
-        "runs": 179,
         "balls": 207,
         "strikeRate": 86.47,
         "economy": 5.19
       },
       "death": {
-        "runs": 279,
         "balls": 199,
         "strikeRate": 140.2,
         "economy": 8.41
@@ -25474,19 +18663,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 271,
         "balls": 258,
         "strikeRate": 105.04,
         "economy": 6.3
       },
       "middle": {
-        "runs": 773,
         "balls": 630,
         "strikeRate": 122.7,
         "economy": 7.36
       },
       "death": {
-        "runs": 76,
         "balls": 66,
         "strikeRate": 115.15,
         "economy": 6.91
@@ -25508,19 +18694,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.94,
     "battingPhases": {
       "powerplay": {
-        "runs": 577,
         "balls": 492,
         "strikeRate": 117.28,
         "economy": 7.04
       },
       "middle": {
-        "runs": 1392,
         "balls": 1009,
         "strikeRate": 137.96,
         "economy": 8.28
       },
       "death": {
-        "runs": 388,
         "balls": 250,
         "strikeRate": 155.2,
         "economy": 9.31
@@ -25528,19 +18711,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 176,
         "balls": 138,
         "strikeRate": 127.54,
         "economy": 7.65
       },
       "middle": {
-        "runs": 231,
         "balls": 193,
         "strikeRate": 119.69,
         "economy": 7.18
       },
       "death": {
-        "runs": 61,
         "balls": 42,
         "strikeRate": 145.24,
         "economy": 8.71
@@ -25562,19 +18742,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.94,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 5,
         "strikeRate": 20,
         "economy": 1.2
       },
       "middle": {
-        "runs": 120,
         "balls": 164,
         "strikeRate": 73.17,
         "economy": 4.39
       },
       "death": {
-        "runs": 260,
         "balls": 250,
         "strikeRate": 104,
         "economy": 6.24
@@ -25582,19 +18759,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 176,
         "balls": 144,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "middle": {
-        "runs": 3330,
         "balls": 2886,
         "strikeRate": 115.38,
         "economy": 6.92
       },
       "death": {
-        "runs": 879,
         "balls": 569,
         "strikeRate": 154.48,
         "economy": 9.27
@@ -25615,20 +18789,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.26,
     "bowlingStrikeRate": 24.05,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 16,
         "balls": 19,
         "strikeRate": 84.21,
         "economy": 5.05
@@ -25636,19 +18797,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 213,
         "balls": 168,
         "strikeRate": 126.79,
         "economy": 7.61
       },
       "middle": {
-        "runs": 294,
         "balls": 198,
         "strikeRate": 148.48,
         "economy": 8.91
       },
       "death": {
-        "runs": 175,
         "balls": 115,
         "strikeRate": 152.17,
         "economy": 9.13
@@ -25662,50 +18820,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 141.57,
     "runs": 1788,
     "innings": 86,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 86,
     "boundaryPct": 20.03,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 763,
         "balls": 594,
         "strikeRate": 128.45,
         "economy": 7.71
       },
       "middle": {
-        "runs": 596,
         "balls": 444,
         "strikeRate": 134.23,
         "economy": 8.05
       },
       "death": {
-        "runs": 429,
         "balls": 225,
         "strikeRate": 190.67,
         "economy": 11.44
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -25724,19 +18856,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.69,
     "battingPhases": {
       "powerplay": {
-        "runs": 27,
         "balls": 37,
         "strikeRate": 72.97,
         "economy": 4.38
       },
       "middle": {
-        "runs": 789,
         "balls": 827,
         "strikeRate": 95.41,
         "economy": 5.72
       },
       "death": {
-        "runs": 803,
         "balls": 594,
         "strikeRate": 135.19,
         "economy": 8.11
@@ -25744,19 +18873,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 372,
         "balls": 282,
         "strikeRate": 131.91,
         "economy": 7.91
       },
       "middle": {
-        "runs": 915,
         "balls": 738,
         "strikeRate": 123.98,
         "economy": 7.44
       },
       "death": {
-        "runs": 190,
         "balls": 117,
         "strikeRate": 162.39,
         "economy": 9.74
@@ -25770,50 +18896,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 148.49,
     "runs": 5148,
     "innings": 195,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 200,
     "boundaryPct": 21.69,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 3400,
         "balls": 2304,
         "strikeRate": 147.57,
         "economy": 8.85
       },
       "middle": {
-        "runs": 1474,
         "balls": 1012,
         "strikeRate": 145.65,
         "economy": 8.74
       },
       "death": {
-        "runs": 274,
         "balls": 151,
         "strikeRate": 181.46,
         "economy": 10.89
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -25832,19 +18932,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.67,
     "battingPhases": {
       "powerplay": {
-        "runs": 260,
         "balls": 170,
         "strikeRate": 152.94,
         "economy": 9.18
       },
       "middle": {
-        "runs": 244,
         "balls": 195,
         "strikeRate": 125.13,
         "economy": 7.51
       },
       "death": {
-        "runs": 51,
         "balls": 31,
         "strikeRate": 164.52,
         "economy": 9.87
@@ -25852,19 +18949,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 160,
         "balls": 120,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 308,
         "balls": 228,
         "strikeRate": 135.09,
         "economy": 8.11
       },
       "death": {
-        "runs": 37,
         "balls": 28,
         "strikeRate": 132.14,
         "economy": 7.93
@@ -25886,39 +18980,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.57,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 55,
         "balls": 74,
         "strikeRate": 74.32,
         "economy": 4.46
       },
       "death": {
-        "runs": 81,
         "balls": 62,
         "strikeRate": 130.65,
         "economy": 7.84
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 267,
         "balls": 199,
         "strikeRate": 134.17,
         "economy": 8.05
       },
       "death": {
-        "runs": 186,
         "balls": 103,
         "strikeRate": 180.58,
         "economy": 10.83
@@ -25939,20 +19022,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 68.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
@@ -25960,19 +19030,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 29,
         "balls": 12,
         "strikeRate": 241.67,
         "economy": 14.5
       },
       "middle": {
-        "runs": 152,
         "balls": 108,
         "strikeRate": 140.74,
         "economy": 8.44
       },
       "death": {
-        "runs": 22,
         "balls": 17,
         "strikeRate": 129.41,
         "economy": 7.76
@@ -25994,19 +19061,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.68,
     "battingPhases": {
       "powerplay": {
-        "runs": 118,
         "balls": 101,
         "strikeRate": 116.83,
         "economy": 7.01
       },
       "middle": {
-        "runs": 683,
         "balls": 563,
         "strikeRate": 121.31,
         "economy": 7.28
       },
       "death": {
-        "runs": 1247,
         "balls": 773,
         "strikeRate": 161.32,
         "economy": 9.68
@@ -26014,19 +19078,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2147,
         "balls": 1479,
         "strikeRate": 145.17,
         "economy": 8.71
       },
       "middle": {
-        "runs": 1610,
         "balls": 1240,
         "strikeRate": 129.84,
         "economy": 7.79
       },
       "death": {
-        "runs": 2241,
         "balls": 1365,
         "strikeRate": 164.18,
         "economy": 9.85
@@ -26040,50 +19101,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 119.44,
     "runs": 602,
     "innings": 28,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 34,
     "boundaryPct": 13.1,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 71,
         "balls": 103,
         "strikeRate": 68.93,
         "economy": 4.14
       },
       "middle": {
-        "runs": 345,
         "balls": 299,
         "strikeRate": 115.38,
         "economy": 6.92
       },
       "death": {
-        "runs": 186,
         "balls": 102,
         "strikeRate": 182.35,
         "economy": 10.94
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -26094,50 +19129,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 91.94,
     "runs": 57,
     "innings": 7,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 10,
     "boundaryPct": 6.45,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 15,
         "balls": 18,
         "strikeRate": 83.33,
         "economy": 5
       },
       "middle": {
-        "runs": 31,
         "balls": 37,
         "strikeRate": 83.78,
         "economy": 5.03
       },
       "death": {
-        "runs": 11,
         "balls": 7,
         "strikeRate": 157.14,
         "economy": 9.43
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -26155,20 +19164,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.85,
     "bowlingStrikeRate": 18.23,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 58,
         "balls": 55,
         "strikeRate": 105.45,
         "economy": 6.33
       },
       "death": {
-        "runs": 321,
         "balls": 210,
         "strikeRate": 152.86,
         "economy": 9.17
@@ -26176,19 +19177,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 720,
         "balls": 516,
         "strikeRate": 139.53,
         "economy": 8.37
       },
       "middle": {
-        "runs": 1118,
         "balls": 844,
         "strikeRate": 132.46,
         "economy": 7.95
       },
       "death": {
-        "runs": 536,
         "balls": 354,
         "strikeRate": 151.41,
         "economy": 9.08
@@ -26202,50 +19200,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 133.1,
     "runs": 3092,
     "innings": 107,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 106,
     "boundaryPct": 18.55,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1834,
         "balls": 1357,
         "strikeRate": 135.15,
         "economy": 8.11
       },
       "middle": {
-        "runs": 1062,
         "balls": 852,
         "strikeRate": 124.65,
         "economy": 7.48
       },
       "death": {
-        "runs": 196,
         "balls": 114,
         "strikeRate": 171.93,
         "economy": 10.32
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -26264,19 +19236,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.82,
     "battingPhases": {
       "powerplay": {
-        "runs": 21,
         "balls": 26,
         "strikeRate": 80.77,
         "economy": 4.85
       },
       "middle": {
-        "runs": 267,
         "balls": 249,
         "strikeRate": 107.23,
         "economy": 6.43
       },
       "death": {
-        "runs": 315,
         "balls": 214,
         "strikeRate": 147.2,
         "economy": 8.83
@@ -26284,19 +19253,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 241,
         "balls": 150,
         "strikeRate": 160.67,
         "economy": 9.64
       },
       "middle": {
-        "runs": 741,
         "balls": 459,
         "strikeRate": 161.44,
         "economy": 9.69
       },
       "death": {
-        "runs": 100,
         "balls": 58,
         "strikeRate": 172.41,
         "economy": 10.34
@@ -26317,20 +19283,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 11.14,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 8,
         "strikeRate": 37.5,
         "economy": 2.25
       },
       "death": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
@@ -26338,19 +19296,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 126,
         "balls": 66,
         "strikeRate": 190.91,
         "economy": 11.45
       },
       "middle": {
-        "runs": 84,
         "balls": 36,
         "strikeRate": 233.33,
         "economy": 14
       },
       "death": {
-        "runs": 95,
         "balls": 54,
         "strikeRate": 175.93,
         "economy": 10.56
@@ -26371,20 +19326,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.73,
     "bowlingStrikeRate": 16.88,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 58,
         "balls": 54,
         "strikeRate": 107.41,
         "economy": 6.44
       },
       "death": {
-        "runs": 143,
         "balls": 154,
         "strikeRate": 92.86,
         "economy": 5.57
@@ -26392,19 +19339,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 33,
         "balls": 18,
         "strikeRate": 183.33,
         "economy": 11
       },
       "middle": {
-        "runs": 2592,
         "balls": 1935,
         "strikeRate": 133.95,
         "economy": 8.04
       },
       "death": {
-        "runs": 194,
         "balls": 174,
         "strikeRate": 111.49,
         "economy": 6.69
@@ -26426,19 +19370,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 11.91,
     "battingPhases": {
       "powerplay": {
-        "runs": 78,
         "balls": 73,
         "strikeRate": 106.85,
         "economy": 6.41
       },
       "middle": {
-        "runs": 318,
         "balls": 291,
         "strikeRate": 109.28,
         "economy": 6.56
       },
       "death": {
-        "runs": 74,
         "balls": 60,
         "strikeRate": 123.33,
         "economy": 7.4
@@ -26446,19 +19387,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 171,
         "balls": 168,
         "strikeRate": 101.79,
         "economy": 6.11
       },
       "middle": {
-        "runs": 111,
         "balls": 90,
         "strikeRate": 123.33,
         "economy": 7.4
       },
       "death": {
-        "runs": 174,
         "balls": 147,
         "strikeRate": 118.37,
         "economy": 7.1
@@ -26479,20 +19417,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.51,
     "bowlingStrikeRate": 15.9,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 5,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 29,
         "balls": 32,
         "strikeRate": 90.63,
         "economy": 5.44
@@ -26500,19 +19430,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 220,
         "balls": 174,
         "strikeRate": 126.44,
         "economy": 7.59
       },
       "middle": {
-        "runs": 234,
         "balls": 162,
         "strikeRate": 144.44,
         "economy": 8.67
       },
       "death": {
-        "runs": 266,
         "balls": 141,
         "strikeRate": 188.65,
         "economy": 11.32
@@ -26534,19 +19461,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.85,
     "battingPhases": {
       "powerplay": {
-        "runs": 201,
         "balls": 236,
         "strikeRate": 85.17,
         "economy": 5.11
       },
       "middle": {
-        "runs": 2226,
         "balls": 1849,
         "strikeRate": 120.39,
         "economy": 7.22
       },
       "death": {
-        "runs": 2623,
         "balls": 1534,
         "strikeRate": 170.99,
         "economy": 10.26
@@ -26554,19 +19478,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1347,
         "balls": 934,
         "strikeRate": 144.22,
         "economy": 8.65
       },
       "middle": {
-        "runs": 3263,
         "balls": 2514,
         "strikeRate": 129.79,
         "economy": 7.79
       },
       "death": {
-        "runs": 1989,
         "balls": 1180,
         "strikeRate": 168.56,
         "economy": 10.11
@@ -26588,39 +19509,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 33,
     "battingPhases": {
       "powerplay": {
-        "runs": 11,
         "balls": 9,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "middle": {
-        "runs": 55,
         "balls": 42,
         "strikeRate": 130.95,
         "economy": 7.86
       },
       "death": {
-        "runs": 19,
         "balls": 12,
         "strikeRate": 158.33,
         "economy": 9.5
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 173,
         "balls": 120,
         "strikeRate": 144.17,
         "economy": 8.65
       },
       "death": {
-        "runs": 27,
         "balls": 12,
         "strikeRate": 225,
         "economy": 13.5
@@ -26641,20 +19551,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 18.25,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 4,
         "strikeRate": 25,
         "economy": 1.5
       },
       "death": {
-        "runs": 19,
         "balls": 36,
         "strikeRate": 52.78,
         "economy": 3.17
@@ -26662,19 +19564,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 371,
         "balls": 240,
         "strikeRate": 154.58,
         "economy": 9.28
       },
       "middle": {
-        "runs": 168,
         "balls": 114,
         "strikeRate": 147.37,
         "economy": 8.84
       },
       "death": {
-        "runs": 276,
         "balls": 157,
         "strikeRate": 175.8,
         "economy": 10.55
@@ -26695,20 +19594,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 17.54,
     "bowlingStrikeRate": 17.75,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 9,
         "balls": 11,
         "strikeRate": 81.82,
         "economy": 4.91
       },
       "death": {
-        "runs": 63,
         "balls": 46,
         "strikeRate": 136.96,
         "economy": 8.22
@@ -26716,19 +19607,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 252,
         "balls": 162,
         "strikeRate": 155.56,
         "economy": 9.33
       },
       "middle": {
-        "runs": 205,
         "balls": 180,
         "strikeRate": 113.89,
         "economy": 6.83
       },
       "death": {
-        "runs": 311,
         "balls": 155,
         "strikeRate": 200.65,
         "economy": 12.04
@@ -26742,50 +19630,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 84.81,
     "runs": 67,
     "innings": 7,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 7,
     "boundaryPct": 10.13,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 45,
         "balls": 48,
         "strikeRate": 93.75,
         "economy": 5.63
       },
       "middle": {
-        "runs": 15,
         "balls": 23,
         "strikeRate": 65.22,
         "economy": 3.91
       },
       "death": {
-        "runs": 7,
         "balls": 8,
         "strikeRate": 87.5,
         "economy": 5.25
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -26804,19 +19666,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.94,
     "battingPhases": {
       "powerplay": {
-        "runs": 55,
         "balls": 64,
         "strikeRate": 85.94,
         "economy": 5.16
       },
       "middle": {
-        "runs": 878,
         "balls": 840,
         "strikeRate": 104.52,
         "economy": 6.27
       },
       "death": {
-        "runs": 1379,
         "balls": 751,
         "strikeRate": 183.62,
         "economy": 11.02
@@ -26824,19 +19683,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 263,
         "balls": 180,
         "strikeRate": 146.11,
         "economy": 8.77
       },
       "middle": {
-        "runs": 1263,
         "balls": 1070,
         "strikeRate": 118.04,
         "economy": 7.08
       },
       "death": {
-        "runs": 188,
         "balls": 149,
         "strikeRate": 126.17,
         "economy": 7.57
@@ -26850,50 +19706,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 120.38,
     "runs": 1069,
     "innings": 50,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 58,
     "boundaryPct": 13.96,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 181,
         "balls": 222,
         "strikeRate": 81.53,
         "economy": 4.89
       },
       "middle": {
-        "runs": 607,
         "balls": 477,
         "strikeRate": 127.25,
         "economy": 7.64
       },
       "death": {
-        "runs": 281,
         "balls": 189,
         "strikeRate": 148.68,
         "economy": 8.92
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -26911,20 +19741,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.66,
     "bowlingStrikeRate": 14.46,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 86,
         "balls": 65,
         "strikeRate": 132.31,
         "economy": 7.94
       },
       "death": {
-        "runs": 109,
         "balls": 93,
         "strikeRate": 117.2,
         "economy": 7.03
@@ -26932,19 +19754,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 903,
         "balls": 666,
         "strikeRate": 135.59,
         "economy": 8.14
       },
       "middle": {
-        "runs": 146,
         "balls": 127,
         "strikeRate": 114.96,
         "economy": 6.9
       },
       "death": {
-        "runs": 759,
         "balls": 494,
         "strikeRate": 153.64,
         "economy": 9.22
@@ -26965,20 +19784,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.46,
     "bowlingStrikeRate": 15.06,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 58,
         "balls": 71,
         "strikeRate": 81.69,
         "economy": 4.9
       },
       "death": {
-        "runs": 203,
         "balls": 123,
         "strikeRate": 165.04,
         "economy": 9.9
@@ -26986,19 +19797,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 38,
         "balls": 18,
         "strikeRate": 211.11,
         "economy": 12.67
       },
       "middle": {
-        "runs": 448,
         "balls": 396,
         "strikeRate": 113.13,
         "economy": 6.79
       },
       "death": {
-        "runs": 116,
         "balls": 68,
         "strikeRate": 170.59,
         "economy": 10.24
@@ -27012,50 +19820,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 112,
     "runs": 84,
     "innings": 6,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 7,
     "boundaryPct": 12,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 44,
         "balls": 33,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 37,
         "balls": 39,
         "strikeRate": 94.87,
         "economy": 5.69
       },
       "death": {
-        "runs": 3,
         "balls": 3,
         "strikeRate": 100,
         "economy": 6
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -27073,20 +19855,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 28.74,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 3,
         "balls": 8,
         "strikeRate": 37.5,
         "economy": 2.25
@@ -27094,19 +19863,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 213,
         "balls": 138,
         "strikeRate": 154.35,
         "economy": 9.26
       },
       "middle": {
-        "runs": 466,
         "balls": 324,
         "strikeRate": 143.83,
         "economy": 8.63
       },
       "death": {
-        "runs": 147,
         "balls": 84,
         "strikeRate": 175,
         "economy": 10.5
@@ -27120,50 +19886,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130.9,
     "runs": 3969,
     "innings": 128,
-    "bowlingAverage": null,
     "economyRate": 12,
     "wickets": 0,
     "matches": 128,
     "boundaryPct": 17.35,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1800,
         "balls": 1509,
         "strikeRate": 119.28,
         "economy": 7.16
       },
       "middle": {
-        "runs": 1747,
         "balls": 1291,
         "strikeRate": 135.32,
         "economy": 8.12
       },
       "death": {
-        "runs": 422,
         "balls": 232,
         "strikeRate": 181.9,
         "economy": 10.91
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 58,
         "balls": 29,
         "strikeRate": 200,
         "economy": 12
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -27174,27 +19922,22 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 104.95,
     "runs": 106,
     "innings": 6,
-    "bowlingAverage": null,
     "economyRate": 8.5,
     "wickets": 0,
     "matches": 8,
     "boundaryPct": 7.92,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 19,
         "balls": 18,
         "strikeRate": 105.56,
         "economy": 6.33
       },
       "middle": {
-        "runs": 67,
         "balls": 67,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 20,
         "balls": 16,
         "strikeRate": 125,
         "economy": 7.5
@@ -27202,22 +19945,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 5,
         "balls": 6,
         "strikeRate": 83.33,
         "economy": 5
       },
       "middle": {
-        "runs": 12,
         "balls": 6,
         "strikeRate": 200,
         "economy": 12
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -27236,19 +19971,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16,
     "battingPhases": {
       "powerplay": {
-        "runs": 26,
         "balls": 42,
         "strikeRate": 61.9,
         "economy": 3.71
       },
       "middle": {
-        "runs": 42,
         "balls": 62,
         "strikeRate": 67.74,
         "economy": 4.06
       },
       "death": {
-        "runs": 19,
         "balls": 28,
         "strikeRate": 67.86,
         "economy": 4.07
@@ -27256,19 +19988,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 74,
         "balls": 54,
         "strikeRate": 137.04,
         "economy": 8.22
       },
       "middle": {
-        "runs": 15,
         "balls": 12,
         "strikeRate": 125,
         "economy": 7.5
       },
       "death": {
-        "runs": 25,
         "balls": 14,
         "strikeRate": 178.57,
         "economy": 10.71
@@ -27289,20 +20018,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.67,
     "bowlingStrikeRate": 22.23,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 6,
         "balls": 6,
         "strikeRate": 100,
         "economy": 6
@@ -27310,19 +20026,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 111,
         "balls": 72,
         "strikeRate": 154.17,
         "economy": 9.25
       },
       "middle": {
-        "runs": 267,
         "balls": 162,
         "strikeRate": 164.81,
         "economy": 9.89
       },
       "death": {
-        "runs": 72,
         "balls": 55,
         "strikeRate": 130.91,
         "economy": 7.85
@@ -27336,50 +20049,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 126.81,
     "runs": 4437,
     "innings": 193,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 214,
     "boundaryPct": 15.52,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 804,
         "balls": 764,
         "strikeRate": 105.24,
         "economy": 6.31
       },
       "middle": {
-        "runs": 2440,
         "balls": 2024,
         "strikeRate": 120.55,
         "economy": 7.23
       },
       "death": {
-        "runs": 1193,
         "balls": 711,
         "strikeRate": 167.79,
         "economy": 10.07
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -27397,20 +20084,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 17.95,
     "bowlingStrikeRate": 14.16,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 14,
         "balls": 9,
         "strikeRate": 155.56,
         "economy": 9.33
       },
       "death": {
-        "runs": 43,
         "balls": 30,
         "strikeRate": 143.33,
         "economy": 8.6
@@ -27418,19 +20097,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 585,
         "balls": 546,
         "strikeRate": 107.14,
         "economy": 6.43
       },
       "middle": {
-        "runs": 61,
         "balls": 60,
         "strikeRate": 101.67,
         "economy": 6.1
       },
       "death": {
-        "runs": 354,
         "balls": 272,
         "strikeRate": 130.15,
         "economy": 7.81
@@ -27451,20 +20127,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 30,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 3,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 8,
         "balls": 9,
         "strikeRate": 88.89,
         "economy": 5.33
@@ -27472,22 +20140,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 35,
         "balls": 30,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 40,
         "balls": 30,
         "strikeRate": 133.33,
         "economy": 8
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -27506,19 +20166,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.14,
     "battingPhases": {
       "powerplay": {
-        "runs": 131,
         "balls": 145,
         "strikeRate": 90.34,
         "economy": 5.42
       },
       "middle": {
-        "runs": 614,
         "balls": 558,
         "strikeRate": 110.04,
         "economy": 6.6
       },
       "death": {
-        "runs": 250,
         "balls": 148,
         "strikeRate": 168.92,
         "economy": 10.14
@@ -27526,19 +20183,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 19,
         "balls": 6,
         "strikeRate": 316.67,
         "economy": 19
       },
       "middle": {
-        "runs": 94,
         "balls": 72,
         "strikeRate": 130.56,
         "economy": 7.83
       },
       "death": {
-        "runs": 75,
         "balls": 56,
         "strikeRate": 133.93,
         "economy": 8.04
@@ -27559,20 +20213,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 28.57,
     "bowlingStrikeRate": 27.8,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 2,
         "strikeRate": 250,
         "economy": 15
       },
       "death": {
-        "runs": 20,
         "balls": 12,
         "strikeRate": 166.67,
         "economy": 10
@@ -27580,19 +20226,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 219,
         "balls": 120,
         "strikeRate": 182.5,
         "economy": 10.95
       },
       "middle": {
-        "runs": 212,
         "balls": 114,
         "strikeRate": 185.96,
         "economy": 11.16
       },
       "death": {
-        "runs": 117,
         "balls": 44,
         "strikeRate": 265.91,
         "economy": 15.95
@@ -27613,20 +20256,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.63,
     "bowlingStrikeRate": 14.92,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 38,
         "balls": 29,
         "strikeRate": 131.03,
         "economy": 7.86
       },
       "death": {
-        "runs": 66,
         "balls": 57,
         "strikeRate": 115.79,
         "economy": 6.95
@@ -27634,19 +20269,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 464,
         "balls": 360,
         "strikeRate": 128.89,
         "economy": 7.73
       },
       "middle": {
-        "runs": 369,
         "balls": 275,
         "strikeRate": 134.18,
         "economy": 8.05
       },
       "death": {
-        "runs": 418,
         "balls": 260,
         "strikeRate": 160.77,
         "economy": 9.65
@@ -27660,47 +20292,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 140,
     "runs": 784,
     "innings": 37,
-    "bowlingAverage": null,
     "economyRate": 7.76,
     "wickets": 0,
     "matches": 45,
     "boundaryPct": 19.11,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 53,
         "balls": 50,
         "strikeRate": 106,
         "economy": 6.36
       },
       "middle": {
-        "runs": 577,
         "balls": 420,
         "strikeRate": 137.38,
         "economy": 8.24
       },
       "death": {
-        "runs": 154,
         "balls": 90,
         "strikeRate": 171.11,
         "economy": 10.27
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 13,
         "balls": 12,
         "strikeRate": 108.33,
         "economy": 6.5
       },
       "death": {
-        "runs": 9,
         "balls": 5,
         "strikeRate": 180,
         "economy": 10.8
@@ -27722,39 +20341,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 5,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 3,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 49,
         "balls": 55,
         "strikeRate": 89.09,
         "economy": 5.35
       },
       "death": {
-        "runs": 95,
         "balls": 60,
         "strikeRate": 158.33,
         "economy": 9.5
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 6,
         "strikeRate": 66.67,
         "economy": 4
       },
       "death": {
-        "runs": 4,
         "balls": 4,
         "strikeRate": 100,
         "economy": 6
@@ -27775,20 +20383,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.78,
     "bowlingStrikeRate": 22.01,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 69,
         "balls": 73,
         "strikeRate": 94.52,
         "economy": 5.67
       },
       "death": {
-        "runs": 151,
         "balls": 152,
         "strikeRate": 99.34,
         "economy": 5.96
@@ -27796,19 +20396,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1168,
         "balls": 1050,
         "strikeRate": 111.24,
         "economy": 6.67
       },
       "middle": {
-        "runs": 1442,
         "balls": 1146,
         "strikeRate": 125.83,
         "economy": 7.55
       },
       "death": {
-        "runs": 143,
         "balls": 137,
         "strikeRate": 104.38,
         "economy": 6.26
@@ -27830,19 +20427,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.58,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 59,
         "balls": 97,
         "strikeRate": 60.82,
         "economy": 3.65
       },
       "death": {
-        "runs": 170,
         "balls": 166,
         "strikeRate": 102.41,
         "economy": 6.14
@@ -27850,19 +20444,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 421,
         "balls": 294,
         "strikeRate": 143.2,
         "economy": 8.59
       },
       "middle": {
-        "runs": 1796,
         "balls": 1470,
         "strikeRate": 122.18,
         "economy": 7.33
       },
       "death": {
-        "runs": 101,
         "balls": 65,
         "strikeRate": 155.38,
         "economy": 9.32
@@ -27883,20 +20474,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 17.65,
     "bowlingStrikeRate": 20.32,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 6,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 59,
         "balls": 45,
         "strikeRate": 131.11,
         "economy": 7.87
@@ -27904,19 +20487,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 338,
         "balls": 216,
         "strikeRate": 156.48,
         "economy": 9.39
       },
       "middle": {
-        "runs": 212,
         "balls": 147,
         "strikeRate": 144.22,
         "economy": 8.65
       },
       "death": {
-        "runs": 154,
         "balls": 84,
         "strikeRate": 183.33,
         "economy": 11
@@ -27937,20 +20517,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.9,
     "bowlingStrikeRate": 15.7,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 37,
         "balls": 41,
         "strikeRate": 90.24,
         "economy": 5.41
       },
       "death": {
-        "runs": 239,
         "balls": 228,
         "strikeRate": 104.82,
         "economy": 6.29
@@ -27958,19 +20530,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 993,
         "balls": 864,
         "strikeRate": 114.93,
         "economy": 6.9
       },
       "middle": {
-        "runs": 5329,
         "balls": 4768,
         "strikeRate": 111.77,
         "economy": 6.71
       },
       "death": {
-        "runs": 1446,
         "balls": 1070,
         "strikeRate": 135.14,
         "economy": 8.11
@@ -27991,20 +20560,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.61,
     "bowlingStrikeRate": 16.39,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 148,
         "balls": 127,
         "strikeRate": 116.54,
         "economy": 6.99
       },
       "death": {
-        "runs": 196,
         "balls": 144,
         "strikeRate": 136.11,
         "economy": 8.17
@@ -28012,19 +20573,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 89,
         "balls": 72,
         "strikeRate": 123.61,
         "economy": 7.42
       },
       "middle": {
-        "runs": 2028,
         "balls": 1456,
         "strikeRate": 139.29,
         "economy": 8.36
       },
       "death": {
-        "runs": 383,
         "balls": 242,
         "strikeRate": 158.26,
         "economy": 9.5
@@ -28038,50 +20596,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.59,
     "runs": 194,
     "innings": 8,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 8,
     "boundaryPct": 19.86,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 97,
         "balls": 74,
         "strikeRate": 131.08,
         "economy": 7.86
       },
       "middle": {
-        "runs": 97,
         "balls": 67,
         "strikeRate": 144.78,
         "economy": 8.69
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -28099,20 +20626,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.14,
     "bowlingStrikeRate": 20.13,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 22,
         "balls": 28,
         "strikeRate": 78.57,
         "economy": 4.71
       },
       "death": {
-        "runs": 69,
         "balls": 70,
         "strikeRate": 98.57,
         "economy": 5.91
@@ -28120,19 +20639,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 377,
         "balls": 282,
         "strikeRate": 133.69,
         "economy": 8.02
       },
       "middle": {
-        "runs": 171,
         "balls": 108,
         "strikeRate": 158.33,
         "economy": 9.5
       },
       "death": {
-        "runs": 341,
         "balls": 234,
         "strikeRate": 145.73,
         "economy": 8.74
@@ -28153,20 +20669,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.09,
     "bowlingStrikeRate": 20.78,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 23,
         "balls": 25,
         "strikeRate": 92,
         "economy": 5.52
       },
       "death": {
-        "runs": 101,
         "balls": 118,
         "strikeRate": 85.59,
         "economy": 5.14
@@ -28174,19 +20682,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 965,
         "balls": 786,
         "strikeRate": 122.77,
         "economy": 7.37
       },
       "middle": {
-        "runs": 776,
         "balls": 584,
         "strikeRate": 132.88,
         "economy": 7.97
       },
       "death": {
-        "runs": 659,
         "balls": 438,
         "strikeRate": 150.46,
         "economy": 9.03
@@ -28207,20 +20712,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.13,
     "bowlingStrikeRate": 14.26,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 6,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 24,
         "balls": 41,
         "strikeRate": 58.54,
         "economy": 3.51
@@ -28228,19 +20725,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 503,
         "balls": 294,
         "strikeRate": 171.09,
         "economy": 10.27
       },
       "middle": {
-        "runs": 1252,
         "balls": 854,
         "strikeRate": 146.6,
         "economy": 8.8
       },
       "death": {
-        "runs": 443,
         "balls": 321,
         "strikeRate": 138.01,
         "economy": 8.28
@@ -28262,19 +20756,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.42,
     "battingPhases": {
       "powerplay": {
-        "runs": 102,
         "balls": 99,
         "strikeRate": 103.03,
         "economy": 6.18
       },
       "middle": {
-        "runs": 1083,
         "balls": 941,
         "strikeRate": 115.09,
         "economy": 6.91
       },
       "death": {
-        "runs": 1466,
         "balls": 860,
         "strikeRate": 170.47,
         "economy": 10.23
@@ -28282,19 +20773,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 253,
         "balls": 210,
         "strikeRate": 120.48,
         "economy": 7.23
       },
       "middle": {
-        "runs": 3690,
         "balls": 3101,
         "strikeRate": 118.99,
         "economy": 7.14
       },
       "death": {
-        "runs": 906,
         "balls": 612,
         "strikeRate": 148.04,
         "economy": 8.88
@@ -28315,20 +20803,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.57,
     "bowlingStrikeRate": 18.99,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 18,
         "balls": 26,
         "strikeRate": 69.23,
         "economy": 4.15
       },
       "death": {
-        "runs": 92,
         "balls": 95,
         "strikeRate": 96.84,
         "economy": 5.81
@@ -28336,19 +20816,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 403,
         "balls": 306,
         "strikeRate": 131.7,
         "economy": 7.9
       },
       "middle": {
-        "runs": 2643,
         "balls": 2016,
         "strikeRate": 131.1,
         "economy": 7.87
       },
       "death": {
-        "runs": 633,
         "balls": 413,
         "strikeRate": 153.27,
         "economy": 9.2
@@ -28369,20 +20846,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.61,
     "bowlingStrikeRate": 18.16,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 8,
         "strikeRate": 62.5,
         "economy": 3.75
       },
       "death": {
-        "runs": 56,
         "balls": 99,
         "strikeRate": 56.57,
         "economy": 3.39
@@ -28390,19 +20859,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1242,
         "balls": 954,
         "strikeRate": 130.19,
         "economy": 7.81
       },
       "middle": {
-        "runs": 794,
         "balls": 617,
         "strikeRate": 128.69,
         "economy": 7.72
       },
       "death": {
-        "runs": 1162,
         "balls": 663,
         "strikeRate": 175.26,
         "economy": 10.52
@@ -28423,20 +20889,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.43,
     "bowlingStrikeRate": 19.14,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 4,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 25,
         "balls": 31,
         "strikeRate": 80.65,
         "economy": 4.84
@@ -28444,19 +20902,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 534,
         "balls": 384,
         "strikeRate": 139.06,
         "economy": 8.34
       },
       "middle": {
-        "runs": 149,
         "balls": 120,
         "strikeRate": 124.17,
         "economy": 7.45
       },
       "death": {
-        "runs": 315,
         "balls": 185,
         "strikeRate": 170.27,
         "economy": 10.22
@@ -28478,19 +20933,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.57,
     "battingPhases": {
       "powerplay": {
-        "runs": 516,
         "balls": 257,
         "strikeRate": 200.78,
         "economy": 12.05
       },
       "middle": {
-        "runs": 342,
         "balls": 217,
         "strikeRate": 157.6,
         "economy": 9.46
       },
       "death": {
-        "runs": 120,
         "balls": 75,
         "strikeRate": 160,
         "economy": 9.6
@@ -28498,19 +20950,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 77,
         "balls": 48,
         "strikeRate": 160.42,
         "economy": 9.63
       },
       "middle": {
-        "runs": 287,
         "balls": 180,
         "strikeRate": 159.44,
         "economy": 9.57
       },
       "death": {
-        "runs": 113,
         "balls": 60,
         "strikeRate": 188.33,
         "economy": 11.3
@@ -28524,50 +20973,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 107.32,
     "runs": 88,
     "innings": 8,
-    "bowlingAverage": null,
     "economyRate": 10.5,
     "wickets": 0,
     "matches": 10,
     "boundaryPct": 10.98,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 12,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 33,
         "balls": 36,
         "strikeRate": 91.67,
         "economy": 5.5
       },
       "death": {
-        "runs": 47,
         "balls": 34,
         "strikeRate": 138.24,
         "economy": 8.29
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 42,
         "balls": 24,
         "strikeRate": 175,
         "economy": 10.5
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -28578,50 +21009,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 117.67,
     "runs": 273,
     "innings": 14,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 14,
     "boundaryPct": 15.95,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 187,
         "balls": 137,
         "strikeRate": 136.5,
         "economy": 8.19
       },
       "middle": {
-        "runs": 81,
         "balls": 91,
         "strikeRate": 89.01,
         "economy": 5.34
       },
       "death": {
-        "runs": 5,
         "balls": 4,
         "strikeRate": 125,
         "economy": 7.5
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -28640,39 +21045,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18,
     "battingPhases": {
       "powerplay": {
-        "runs": 34,
         "balls": 25,
         "strikeRate": 136,
         "economy": 8.16
       },
       "middle": {
-        "runs": 359,
         "balls": 273,
         "strikeRate": 131.5,
         "economy": 7.89
       },
       "death": {
-        "runs": 512,
         "balls": 262,
         "strikeRate": 195.42,
         "economy": 11.73
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 97,
         "balls": 72,
         "strikeRate": 134.72,
         "economy": 8.08
       },
       "death": {
-        "runs": 43,
         "balls": 18,
         "strikeRate": 238.89,
         "economy": 14.33
@@ -28693,20 +21087,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 19.51,
     "bowlingStrikeRate": 17.07,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 451,
         "balls": 343,
         "strikeRate": 131.49,
         "economy": 7.89
       },
       "death": {
-        "runs": 995,
         "balls": 595,
         "strikeRate": 167.23,
         "economy": 10.03
@@ -28714,19 +21100,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1069,
         "balls": 668,
         "strikeRate": 160.03,
         "economy": 9.6
       },
       "middle": {
-        "runs": 1560,
         "balls": 1061,
         "strikeRate": 147.03,
         "economy": 8.82
       },
       "death": {
-        "runs": 902,
         "balls": 593,
         "strikeRate": 152.11,
         "economy": 9.13
@@ -28740,50 +21123,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 147.35,
     "runs": 1892,
     "innings": 80,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 80,
     "boundaryPct": 23.29,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1347,
         "balls": 920,
         "strikeRate": 146.41,
         "economy": 8.78
       },
       "middle": {
-        "runs": 515,
         "balls": 343,
         "strikeRate": 150.15,
         "economy": 9.01
       },
       "death": {
-        "runs": 30,
         "balls": 21,
         "strikeRate": 142.86,
         "economy": 8.57
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -28794,50 +21151,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 123.17,
     "runs": 808,
     "innings": 40,
-    "bowlingAverage": null,
     "economyRate": 0,
     "wickets": 0,
     "matches": 44,
     "boundaryPct": 16.92,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 306,
         "balls": 257,
         "strikeRate": 119.07,
         "economy": 7.14
       },
       "middle": {
-        "runs": 321,
         "balls": 274,
         "strikeRate": 117.15,
         "economy": 7.03
       },
       "death": {
-        "runs": 181,
         "balls": 125,
         "strikeRate": 144.8,
         "economy": 8.69
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -28848,50 +21187,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 133.45,
     "runs": 766,
     "innings": 46,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 54,
     "boundaryPct": 16.55,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 37,
         "balls": 35,
         "strikeRate": 105.71,
         "economy": 6.34
       },
       "middle": {
-        "runs": 388,
         "balls": 321,
         "strikeRate": 120.87,
         "economy": 7.25
       },
       "death": {
-        "runs": 341,
         "balls": 218,
         "strikeRate": 156.42,
         "economy": 9.39
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -28909,20 +21222,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.25,
     "bowlingStrikeRate": 20.06,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 43,
         "balls": 48,
         "strikeRate": 89.58,
         "economy": 5.38
@@ -28930,19 +21230,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 638,
         "balls": 547,
         "strikeRate": 116.64,
         "economy": 7
       },
       "middle": {
-        "runs": 206,
         "balls": 149,
         "strikeRate": 138.26,
         "economy": 8.3
       },
       "death": {
-        "runs": 331,
         "balls": 267,
         "strikeRate": 123.97,
         "economy": 7.44
@@ -28964,19 +21261,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.21,
     "battingPhases": {
       "powerplay": {
-        "runs": 61,
         "balls": 66,
         "strikeRate": 92.42,
         "economy": 5.55
       },
       "middle": {
-        "runs": 193,
         "balls": 162,
         "strikeRate": 119.14,
         "economy": 7.15
       },
       "death": {
-        "runs": 452,
         "balls": 310,
         "strikeRate": 145.81,
         "economy": 8.75
@@ -28984,19 +21278,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 393,
         "balls": 222,
         "strikeRate": 177.03,
         "economy": 10.62
       },
       "middle": {
-        "runs": 1375,
         "balls": 852,
         "strikeRate": 161.38,
         "economy": 9.68
       },
       "death": {
-        "runs": 787,
         "balls": 423,
         "strikeRate": 186.05,
         "economy": 11.16
@@ -29006,7 +21297,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-9f1c7553": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 50,
     "runs": 2,
     "innings": 2,
@@ -29017,20 +21307,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 20,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 2,
         "balls": 4,
         "strikeRate": 50,
         "economy": 3
@@ -29038,19 +21315,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 17,
         "balls": 12,
         "strikeRate": 141.67,
         "economy": 8.5
       },
       "middle": {
-        "runs": 45,
         "balls": 42,
         "strikeRate": 107.14,
         "economy": 6.43
       },
       "death": {
-        "runs": 13,
         "balls": 6,
         "strikeRate": 216.67,
         "economy": 13
@@ -29071,20 +21345,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.11,
     "bowlingStrikeRate": 12.92,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 6,
         "strikeRate": 33.33,
         "economy": 2
       },
       "death": {
-        "runs": 6,
         "balls": 3,
         "strikeRate": 200,
         "economy": 12
@@ -29092,19 +21358,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 87,
         "balls": 54,
         "strikeRate": 161.11,
         "economy": 9.67
       },
       "middle": {
-        "runs": 78,
         "balls": 60,
         "strikeRate": 130,
         "economy": 7.8
       },
       "death": {
-        "runs": 116,
         "balls": 54,
         "strikeRate": 214.81,
         "economy": 12.89
@@ -29125,20 +21388,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.33,
     "bowlingStrikeRate": 48.75,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 9,
         "balls": 9,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 31,
         "balls": 27,
         "strikeRate": 114.81,
         "economy": 6.89
@@ -29146,19 +21401,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 205,
         "balls": 162,
         "strikeRate": 126.54,
         "economy": 7.59
       },
       "middle": {
-        "runs": 218,
         "balls": 210,
         "strikeRate": 103.81,
         "economy": 6.23
       },
       "death": {
-        "runs": 22,
         "balls": 18,
         "strikeRate": 122.22,
         "economy": 7.33
@@ -29179,20 +21431,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.45,
     "bowlingStrikeRate": 14.68,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 10,
         "balls": 15,
         "strikeRate": 66.67,
         "economy": 4
       },
       "death": {
-        "runs": 9,
         "balls": 16,
         "strikeRate": 56.25,
         "economy": 3.38
@@ -29200,19 +21444,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 151,
         "balls": 108,
         "strikeRate": 139.81,
         "economy": 8.39
       },
       "middle": {
-        "runs": 170,
         "balls": 126,
         "strikeRate": 134.92,
         "economy": 8.1
       },
       "death": {
-        "runs": 230,
         "balls": 133,
         "strikeRate": 172.93,
         "economy": 10.38
@@ -29234,19 +21475,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.54,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 120,
         "balls": 111,
         "strikeRate": 108.11,
         "economy": 6.49
       },
       "death": {
-        "runs": 275,
         "balls": 170,
         "strikeRate": 161.76,
         "economy": 9.71
@@ -29254,19 +21492,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 211,
         "balls": 126,
         "strikeRate": 167.46,
         "economy": 10.05
       },
       "middle": {
-        "runs": 772,
         "balls": 504,
         "strikeRate": 153.17,
         "economy": 9.19
       },
       "death": {
-        "runs": 483,
         "balls": 260,
         "strikeRate": 185.77,
         "economy": 11.15
@@ -29288,19 +21523,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 32,
         "balls": 47,
         "strikeRate": 68.09,
         "economy": 4.09
       },
       "middle": {
-        "runs": 1520,
         "balls": 1277,
         "strikeRate": 119.03,
         "economy": 7.14
       },
       "death": {
-        "runs": 1633,
         "balls": 955,
         "strikeRate": 170.99,
         "economy": 10.26
@@ -29308,19 +21540,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 17,
         "balls": 18,
         "strikeRate": 94.44,
         "economy": 5.67
       },
       "middle": {
-        "runs": 239,
         "balls": 126,
         "strikeRate": 189.68,
         "economy": 11.38
       },
       "death": {
-        "runs": 56,
         "balls": 36,
         "strikeRate": 155.56,
         "economy": 9.33
@@ -29342,19 +21571,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.88,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 5,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 69,
         "balls": 78,
         "strikeRate": 88.46,
         "economy": 5.31
       },
       "death": {
-        "runs": 73,
         "balls": 74,
         "strikeRate": 98.65,
         "economy": 5.92
@@ -29362,19 +21588,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 243,
         "balls": 204,
         "strikeRate": 119.12,
         "economy": 7.15
       },
       "middle": {
-        "runs": 319,
         "balls": 372,
         "strikeRate": 85.75,
         "economy": 5.15
       },
       "death": {
-        "runs": 21,
         "balls": 32,
         "strikeRate": 65.63,
         "economy": 3.94
@@ -29395,20 +21618,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.41,
     "bowlingStrikeRate": 14.6,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 12,
         "balls": 18,
         "strikeRate": 66.67,
         "economy": 4
       },
       "death": {
-        "runs": 51,
         "balls": 63,
         "strikeRate": 80.95,
         "economy": 4.86
@@ -29416,19 +21631,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1295,
         "balls": 939,
         "strikeRate": 137.91,
         "economy": 8.27
       },
       "middle": {
-        "runs": 638,
         "balls": 467,
         "strikeRate": 136.62,
         "economy": 8.2
       },
       "death": {
-        "runs": 940,
         "balls": 609,
         "strikeRate": 154.35,
         "economy": 9.26
@@ -29450,19 +21662,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.75,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 197,
         "balls": 199,
         "strikeRate": 98.99,
         "economy": 5.94
       },
       "death": {
-        "runs": 641,
         "balls": 432,
         "strikeRate": 148.38,
         "economy": 8.9
@@ -29470,19 +21679,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1230,
         "balls": 870,
         "strikeRate": 141.38,
         "economy": 8.48
       },
       "middle": {
-        "runs": 855,
         "balls": 630,
         "strikeRate": 135.71,
         "economy": 8.14
       },
       "death": {
-        "runs": 1226,
         "balls": 782,
         "strikeRate": 156.78,
         "economy": 9.41
@@ -29504,19 +21710,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.45,
     "battingPhases": {
       "powerplay": {
-        "runs": 10,
         "balls": 4,
         "strikeRate": 250,
         "economy": 15
       },
       "middle": {
-        "runs": 252,
         "balls": 243,
         "strikeRate": 103.7,
         "economy": 6.22
       },
       "death": {
-        "runs": 563,
         "balls": 395,
         "strikeRate": 142.53,
         "economy": 8.55
@@ -29524,19 +21727,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1123,
         "balls": 1032,
         "strikeRate": 108.82,
         "economy": 6.53
       },
       "middle": {
-        "runs": 337,
         "balls": 256,
         "strikeRate": 131.64,
         "economy": 7.9
       },
       "death": {
-        "runs": 1188,
         "balls": 767,
         "strikeRate": 154.89,
         "economy": 9.29
@@ -29558,39 +21758,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 9.4,
     "battingPhases": {
       "powerplay": {
-        "runs": 3,
         "balls": 4,
         "strikeRate": 75,
         "economy": 4.5
       },
       "middle": {
-        "runs": 81,
         "balls": 77,
         "strikeRate": 105.19,
         "economy": 6.31
       },
       "death": {
-        "runs": 23,
         "balls": 20,
         "strikeRate": 115,
         "economy": 6.9
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 48,
         "balls": 36,
         "strikeRate": 133.33,
         "economy": 8
       },
       "death": {
-        "runs": 5,
         "balls": 11,
         "strikeRate": 45.45,
         "economy": 2.73
@@ -29612,19 +21801,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 27,
     "battingPhases": {
       "powerplay": {
-        "runs": 697,
         "balls": 574,
         "strikeRate": 121.43,
         "economy": 7.29
       },
       "middle": {
-        "runs": 336,
         "balls": 268,
         "strikeRate": 125.37,
         "economy": 7.52
       },
       "death": {
-        "runs": 50,
         "balls": 26,
         "strikeRate": 192.31,
         "economy": 11.54
@@ -29632,22 +21818,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 60,
         "balls": 90,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 285,
         "balls": 234,
         "strikeRate": 121.79,
         "economy": 7.31
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -29665,40 +21843,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 19,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 71,
         "balls": 42,
         "strikeRate": 169.05,
         "economy": 10.14
       },
       "middle": {
-        "runs": 96,
         "balls": 66,
         "strikeRate": 145.45,
         "economy": 8.73
       },
       "death": {
-        "runs": 64,
         "balls": 25,
         "strikeRate": 256,
         "economy": 15.36
@@ -29719,20 +21881,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.5,
     "bowlingStrikeRate": 22.19,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 4,
         "strikeRate": 25,
         "economy": 1.5
       },
       "death": {
-        "runs": 24,
         "balls": 36,
         "strikeRate": 66.67,
         "economy": 4
@@ -29740,19 +21894,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 242,
         "balls": 210,
         "strikeRate": 115.24,
         "economy": 6.91
       },
       "middle": {
-        "runs": 179,
         "balls": 120,
         "strikeRate": 149.17,
         "economy": 8.95
       },
       "death": {
-        "runs": 251,
         "balls": 136,
         "strikeRate": 184.56,
         "economy": 11.07
@@ -29766,47 +21917,29 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 154.7,
     "runs": 3244,
     "innings": 102,
-    "bowlingAverage": null,
     "economyRate": 14.57,
     "wickets": 0,
     "matches": 102,
     "boundaryPct": 25.27,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2138,
         "balls": 1334,
         "strikeRate": 160.27,
         "economy": 9.62
       },
       "middle": {
-        "runs": 1004,
         "balls": 713,
         "strikeRate": 140.81,
         "economy": 8.45
       },
       "death": {
-        "runs": 102,
         "balls": 50,
         "strikeRate": 204,
         "economy": 12.24
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 17,
         "balls": 7,
         "strikeRate": 242.86,
         "economy": 14.57
@@ -29827,20 +21960,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 19.1,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 5,
         "balls": 13,
         "strikeRate": 38.46,
         "economy": 2.31
@@ -29848,19 +21968,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 226,
         "balls": 168,
         "strikeRate": 134.52,
         "economy": 8.07
       },
       "middle": {
-        "runs": 396,
         "balls": 281,
         "strikeRate": 140.93,
         "economy": 8.46
       },
       "death": {
-        "runs": 200,
         "balls": 105,
         "strikeRate": 190.48,
         "economy": 11.43
@@ -29874,50 +21991,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 153.09,
     "runs": 2281,
     "innings": 107,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 109,
     "boundaryPct": 23.29,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1298,
         "balls": 864,
         "strikeRate": 150.23,
         "economy": 9.01
       },
       "middle": {
-        "runs": 823,
         "balls": 537,
         "strikeRate": 153.26,
         "economy": 9.2
       },
       "death": {
-        "runs": 160,
         "balls": 89,
         "strikeRate": 179.78,
         "economy": 10.79
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -29936,19 +22027,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 40.8,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 5,
         "strikeRate": 20,
         "economy": 1.2
       },
       "middle": {
-        "runs": 42,
         "balls": 43,
         "strikeRate": 97.67,
         "economy": 5.86
       },
       "death": {
-        "runs": 23,
         "balls": 17,
         "strikeRate": 135.29,
         "economy": 8.12
@@ -29956,19 +22044,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 67,
         "balls": 54,
         "strikeRate": 124.07,
         "economy": 7.44
       },
       "middle": {
-        "runs": 223,
         "balls": 144,
         "strikeRate": 154.86,
         "economy": 9.29
       },
       "death": {
-        "runs": 24,
         "balls": 6,
         "strikeRate": 400,
         "economy": 24
@@ -29989,20 +22074,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.46,
     "bowlingStrikeRate": 18.68,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 8,
         "balls": 7,
         "strikeRate": 114.29,
         "economy": 6.86
       },
       "death": {
-        "runs": 40,
         "balls": 45,
         "strikeRate": 88.89,
         "economy": 5.33
@@ -30010,19 +22087,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 289,
         "balls": 246,
         "strikeRate": 117.48,
         "economy": 7.05
       },
       "middle": {
-        "runs": 201,
         "balls": 156,
         "strikeRate": 128.85,
         "economy": 7.73
       },
       "death": {
-        "runs": 21,
         "balls": 9,
         "strikeRate": 233.33,
         "economy": 14
@@ -30043,40 +22117,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 25,
     "bowlingStrikeRate": 16.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 20,
         "balls": 10,
         "strikeRate": 200,
         "economy": 12
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 79,
         "balls": 54,
         "strikeRate": 146.3,
         "economy": 8.78
       },
       "death": {
-        "runs": 22,
         "balls": 12,
         "strikeRate": 183.33,
         "economy": 11
@@ -30097,20 +22155,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.42,
     "bowlingStrikeRate": 16.63,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 49,
         "balls": 42,
         "strikeRate": 116.67,
         "economy": 7
       },
       "death": {
-        "runs": 177,
         "balls": 172,
         "strikeRate": 102.91,
         "economy": 6.17
@@ -30118,19 +22168,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2355,
         "balls": 1595,
         "strikeRate": 147.65,
         "economy": 8.86
       },
       "middle": {
-        "runs": 1648,
         "balls": 1233,
         "strikeRate": 133.66,
         "economy": 8.02
       },
       "death": {
-        "runs": 2213,
         "balls": 1578,
         "strikeRate": 140.24,
         "economy": 8.41
@@ -30152,39 +22199,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 12.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 3597,
         "balls": 2796,
         "strikeRate": 128.65,
         "economy": 7.72
       },
       "middle": {
-        "runs": 2484,
         "balls": 1790,
         "strikeRate": 138.77,
         "economy": 8.33
       },
       "death": {
-        "runs": 261,
         "balls": 146,
         "strikeRate": 178.77,
         "economy": 10.73
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 20,
         "balls": 12,
         "strikeRate": 166.67,
         "economy": 10
       },
       "death": {
-        "runs": 26,
         "balls": 13,
         "strikeRate": 200,
         "economy": 12
@@ -30205,20 +22241,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.32,
     "bowlingStrikeRate": 22.04,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 5,
         "strikeRate": 20,
         "economy": 1.2
       },
       "death": {
-        "runs": 25,
         "balls": 36,
         "strikeRate": 69.44,
         "economy": 4.17
@@ -30226,19 +22254,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 400,
         "balls": 270,
         "strikeRate": 148.15,
         "economy": 8.89
       },
       "middle": {
-        "runs": 214,
         "balls": 157,
         "strikeRate": 136.31,
         "economy": 8.18
       },
       "death": {
-        "runs": 200,
         "balls": 102,
         "strikeRate": 196.08,
         "economy": 11.76
@@ -30260,42 +22285,26 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 6,
     "battingPhases": {
       "powerplay": {
-        "runs": 369,
         "balls": 286,
         "strikeRate": 129.02,
         "economy": 7.74
       },
       "middle": {
-        "runs": 231,
         "balls": 182,
         "strikeRate": 126.92,
         "economy": 7.62
       },
       "death": {
-        "runs": 1,
         "balls": 5,
         "strikeRate": 20,
         "economy": 1.2
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 9,
         "balls": 6,
         "strikeRate": 150,
         "economy": 9
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -30306,57 +22315,30 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 148.97,
     "runs": 1816,
     "innings": 68,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 68,
     "boundaryPct": 21,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1065,
         "balls": 753,
         "strikeRate": 141.43,
         "economy": 8.49
       },
       "middle": {
-        "runs": 655,
         "balls": 408,
         "strikeRate": 160.54,
         "economy": 9.63
       },
       "death": {
-        "runs": 96,
         "balls": 58,
         "strikeRate": 165.52,
         "economy": 9.93
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-a67a5fef": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 92.86,
     "runs": 13,
     "innings": 5,
@@ -30367,20 +22349,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.14,
     "bowlingStrikeRate": 22.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 2,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 11,
         "balls": 12,
         "strikeRate": 91.67,
         "economy": 5.5
@@ -30388,19 +22362,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 253,
         "balls": 169,
         "strikeRate": 149.7,
         "economy": 8.98
       },
       "middle": {
-        "runs": 307,
         "balls": 216,
         "strikeRate": 142.13,
         "economy": 8.53
       },
       "death": {
-        "runs": 268,
         "balls": 155,
         "strikeRate": 172.9,
         "economy": 10.37
@@ -30422,19 +22393,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 28,
     "battingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 5,
         "strikeRate": 160,
         "economy": 9.6
       },
       "middle": {
-        "runs": 75,
         "balls": 55,
         "strikeRate": 136.36,
         "economy": 8.18
       },
       "death": {
-        "runs": 164,
         "balls": 88,
         "strikeRate": 186.36,
         "economy": 11.18
@@ -30442,19 +22410,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 386,
         "balls": 270,
         "strikeRate": 142.96,
         "economy": 8.58
       },
       "middle": {
-        "runs": 372,
         "balls": 294,
         "strikeRate": 126.53,
         "economy": 7.59
       },
       "death": {
-        "runs": 50,
         "balls": 24,
         "strikeRate": 208.33,
         "economy": 12.5
@@ -30475,20 +22440,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.33,
     "bowlingStrikeRate": 15.27,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 6,
         "strikeRate": 16.67,
         "economy": 1
       },
       "death": {
-        "runs": 20,
         "balls": 30,
         "strikeRate": 66.67,
         "economy": 4
@@ -30496,19 +22453,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 35,
         "balls": 24,
         "strikeRate": 145.83,
         "economy": 8.75
       },
       "middle": {
-        "runs": 938,
         "balls": 847,
         "strikeRate": 110.74,
         "economy": 6.64
       },
       "death": {
-        "runs": 354,
         "balls": 244,
         "strikeRate": 145.08,
         "economy": 8.7
@@ -30530,19 +22484,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.45,
     "battingPhases": {
       "powerplay": {
-        "runs": 4,
         "balls": 2,
         "strikeRate": 200,
         "economy": 12
       },
       "middle": {
-        "runs": 20,
         "balls": 29,
         "strikeRate": 68.97,
         "economy": 4.14
       },
       "death": {
-        "runs": 76,
         "balls": 75,
         "strikeRate": 101.33,
         "economy": 6.08
@@ -30550,19 +22501,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 562,
         "balls": 414,
         "strikeRate": 135.75,
         "economy": 8.14
       },
       "middle": {
-        "runs": 545,
         "balls": 372,
         "strikeRate": 146.51,
         "economy": 8.79
       },
       "death": {
-        "runs": 239,
         "balls": 158,
         "strikeRate": 151.27,
         "economy": 9.08
@@ -30584,19 +22532,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 27.13,
     "battingPhases": {
       "powerplay": {
-        "runs": 18,
         "balls": 25,
         "strikeRate": 72,
         "economy": 4.32
       },
       "middle": {
-        "runs": 489,
         "balls": 417,
         "strikeRate": 117.27,
         "economy": 7.04
       },
       "death": {
-        "runs": 408,
         "balls": 270,
         "strikeRate": 151.11,
         "economy": 9.07
@@ -30604,19 +22549,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 203,
         "balls": 162,
         "strikeRate": 125.31,
         "economy": 7.52
       },
       "middle": {
-        "runs": 508,
         "balls": 396,
         "strikeRate": 128.28,
         "economy": 7.7
       },
       "death": {
-        "runs": 101,
         "balls": 66,
         "strikeRate": 153.03,
         "economy": 9.18
@@ -30626,7 +22568,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-a870c646": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 38.46,
     "runs": 5,
     "innings": 3,
@@ -30637,20 +22578,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 18,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 5,
         "balls": 13,
         "strikeRate": 38.46,
         "economy": 2.31
@@ -30658,19 +22586,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 111,
         "balls": 72,
         "strikeRate": 154.17,
         "economy": 9.25
       },
       "middle": {
-        "runs": 62,
         "balls": 42,
         "strikeRate": 147.62,
         "economy": 8.86
       },
       "death": {
-        "runs": 95,
         "balls": 48,
         "strikeRate": 197.92,
         "economy": 11.88
@@ -30680,7 +22605,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-a8eb3336": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 220,
     "runs": 11,
     "innings": 3,
@@ -30691,20 +22615,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 40,
     "bowlingStrikeRate": 22.84,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 11,
         "balls": 5,
         "strikeRate": 220,
         "economy": 13.2
@@ -30712,19 +22623,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 256,
         "balls": 162,
         "strikeRate": 158.02,
         "economy": 9.48
       },
       "middle": {
-        "runs": 184,
         "balls": 126,
         "strikeRate": 146.03,
         "economy": 8.76
       },
       "death": {
-        "runs": 285,
         "balls": 146,
         "strikeRate": 195.21,
         "economy": 11.71
@@ -30745,20 +22653,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.76,
     "bowlingStrikeRate": 16.61,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 3,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 19,
         "balls": 39,
         "strikeRate": 48.72,
         "economy": 2.92
@@ -30766,19 +22666,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1045,
         "balls": 690,
         "strikeRate": 151.45,
         "economy": 9.09
       },
       "middle": {
-        "runs": 664,
         "balls": 462,
         "strikeRate": 143.72,
         "economy": 8.62
       },
       "death": {
-        "runs": 556,
         "balls": 326,
         "strikeRate": 170.55,
         "economy": 10.23
@@ -30799,20 +22696,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15,
     "bowlingStrikeRate": 21.08,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 22,
         "balls": 29,
         "strikeRate": 75.86,
         "economy": 4.55
       },
       "death": {
-        "runs": 202,
         "balls": 171,
         "strikeRate": 118.13,
         "economy": 7.09
@@ -30820,19 +22709,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1652,
         "balls": 1308,
         "strikeRate": 126.3,
         "economy": 7.58
       },
       "middle": {
-        "runs": 585,
         "balls": 465,
         "strikeRate": 125.81,
         "economy": 7.55
       },
       "death": {
-        "runs": 1319,
         "balls": 862,
         "strikeRate": 153.02,
         "economy": 9.18
@@ -30846,50 +22732,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 136.57,
     "runs": 295,
     "innings": 11,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 11,
     "boundaryPct": 18.52,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 31,
         "balls": 23,
         "strikeRate": 134.78,
         "economy": 8.09
       },
       "middle": {
-        "runs": 187,
         "balls": 149,
         "strikeRate": 125.5,
         "economy": 7.53
       },
       "death": {
-        "runs": 77,
         "balls": 44,
         "strikeRate": 175,
         "economy": 10.5
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -30900,50 +22760,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 142.5,
     "runs": 2763,
     "innings": 128,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 132,
     "boundaryPct": 21.71,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1748,
         "balls": 1227,
         "strikeRate": 142.46,
         "economy": 8.55
       },
       "middle": {
-        "runs": 805,
         "balls": 600,
         "strikeRate": 134.17,
         "economy": 8.05
       },
       "death": {
-        "runs": 210,
         "balls": 112,
         "strikeRate": 187.5,
         "economy": 11.25
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -30962,19 +22796,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 25.33,
     "battingPhases": {
       "powerplay": {
-        "runs": 1464,
         "balls": 1190,
         "strikeRate": 123.03,
         "economy": 7.38
       },
       "middle": {
-        "runs": 1349,
         "balls": 1012,
         "strikeRate": 133.3,
         "economy": 8
       },
       "death": {
-        "runs": 397,
         "balls": 255,
         "strikeRate": 155.69,
         "economy": 9.34
@@ -30982,22 +22813,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 55,
         "balls": 36,
         "strikeRate": 152.78,
         "economy": 9.17
       },
       "middle": {
-        "runs": 63,
         "balls": 40,
         "strikeRate": 157.5,
         "economy": 9.45
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -31008,50 +22831,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 139.68,
     "runs": 1408,
     "innings": 75,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 78,
     "boundaryPct": 21.43,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 986,
         "balls": 673,
         "strikeRate": 146.51,
         "economy": 8.79
       },
       "middle": {
-        "runs": 403,
         "balls": 319,
         "strikeRate": 126.33,
         "economy": 7.58
       },
       "death": {
-        "runs": 19,
         "balls": 16,
         "strikeRate": 118.75,
         "economy": 7.13
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -31062,50 +22859,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 140.78,
     "runs": 1519,
     "innings": 56,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 56,
     "boundaryPct": 18.26,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 549,
         "balls": 462,
         "strikeRate": 118.83,
         "economy": 7.13
       },
       "middle": {
-        "runs": 843,
         "balls": 533,
         "strikeRate": 158.16,
         "economy": 9.49
       },
       "death": {
-        "runs": 127,
         "balls": 84,
         "strikeRate": 151.19,
         "economy": 9.07
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -31116,50 +22887,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 105.99,
     "runs": 177,
     "innings": 12,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 13,
     "boundaryPct": 8.98,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 24,
         "balls": 27,
         "strikeRate": 88.89,
         "economy": 5.33
       },
       "middle": {
-        "runs": 112,
         "balls": 115,
         "strikeRate": 97.39,
         "economy": 5.84
       },
       "death": {
-        "runs": 41,
         "balls": 25,
         "strikeRate": 164,
         "economy": 9.84
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -31178,39 +22923,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16,
     "battingPhases": {
       "powerplay": {
-        "runs": 3870,
         "balls": 2754,
         "strikeRate": 140.52,
         "economy": 8.43
       },
       "middle": {
-        "runs": 3690,
         "balls": 2472,
         "strikeRate": 149.27,
         "economy": 8.96
       },
       "death": {
-        "runs": 846,
         "balls": 463,
         "strikeRate": 182.72,
         "economy": 10.96
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 28,
         "balls": 30,
         "strikeRate": 93.33,
         "economy": 5.6
       },
       "death": {
-        "runs": 24,
         "balls": 18,
         "strikeRate": 133.33,
         "economy": 8
@@ -31231,20 +22965,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.03,
     "bowlingStrikeRate": 26.82,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 41,
         "balls": 30,
         "strikeRate": 136.67,
         "economy": 8.2
       },
       "death": {
-        "runs": 107,
         "balls": 103,
         "strikeRate": 103.88,
         "economy": 6.23
@@ -31252,19 +22978,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1190,
         "balls": 990,
         "strikeRate": 120.2,
         "economy": 7.21
       },
       "middle": {
-        "runs": 291,
         "balls": 222,
         "strikeRate": 131.08,
         "economy": 7.86
       },
       "death": {
-        "runs": 550,
         "balls": 290,
         "strikeRate": 189.66,
         "economy": 11.38
@@ -31286,19 +23009,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 24.4,
     "battingPhases": {
       "powerplay": {
-        "runs": 2,
         "balls": 6,
         "strikeRate": 33.33,
         "economy": 2
       },
       "middle": {
-        "runs": 429,
         "balls": 337,
         "strikeRate": 127.3,
         "economy": 7.64
       },
       "death": {
-        "runs": 527,
         "balls": 367,
         "strikeRate": 143.6,
         "economy": 8.62
@@ -31306,19 +23026,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 632,
         "balls": 420,
         "strikeRate": 150.48,
         "economy": 9.03
       },
       "middle": {
-        "runs": 907,
         "balls": 615,
         "strikeRate": 147.48,
         "economy": 8.85
       },
       "death": {
-        "runs": 424,
         "balls": 258,
         "strikeRate": 164.34,
         "economy": 9.86
@@ -31339,20 +23056,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.64,
     "bowlingStrikeRate": 14.63,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 22,
         "balls": 23,
         "strikeRate": 95.65,
         "economy": 5.74
       },
       "death": {
-        "runs": 24,
         "balls": 21,
         "strikeRate": 114.29,
         "economy": 6.86
@@ -31360,19 +23069,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 72,
         "balls": 48,
         "strikeRate": 150,
         "economy": 9
       },
       "middle": {
-        "runs": 95,
         "balls": 54,
         "strikeRate": 175.93,
         "economy": 10.56
       },
       "death": {
-        "runs": 28,
         "balls": 15,
         "strikeRate": 186.67,
         "economy": 11.2
@@ -31386,47 +23092,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 146.89,
     "runs": 260,
     "innings": 10,
-    "bowlingAverage": null,
     "economyRate": 24,
     "wickets": 0,
     "matches": 10,
     "boundaryPct": 21.47,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 157,
         "balls": 103,
         "strikeRate": 152.43,
         "economy": 9.15
       },
       "middle": {
-        "runs": 103,
         "balls": 74,
         "strikeRate": 139.19,
         "economy": 8.35
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 4,
         "balls": 1,
         "strikeRate": 400,
         "economy": 24
@@ -31448,39 +23131,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.6,
     "battingPhases": {
       "powerplay": {
-        "runs": 3,
         "balls": 5,
         "strikeRate": 60,
         "economy": 3.6
       },
       "middle": {
-        "runs": 4,
         "balls": 4,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 17,
         "balls": 14,
         "strikeRate": 121.43,
         "economy": 7.29
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 115,
         "balls": 102,
         "strikeRate": 112.75,
         "economy": 6.76
       },
       "death": {
-        "runs": 13,
         "balls": 6,
         "strikeRate": 216.67,
         "economy": 13
@@ -31502,39 +23174,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.13,
     "battingPhases": {
       "powerplay": {
-        "runs": 763,
         "balls": 707,
         "strikeRate": 107.92,
         "economy": 6.48
       },
       "middle": {
-        "runs": 1597,
         "balls": 1351,
         "strikeRate": 118.21,
         "economy": 7.09
       },
       "death": {
-        "runs": 597,
         "balls": 374,
         "strikeRate": 159.63,
         "economy": 9.58
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 135,
         "balls": 102,
         "strikeRate": 132.35,
         "economy": 7.94
       },
       "death": {
-        "runs": 11,
         "balls": 19,
         "strikeRate": 57.89,
         "economy": 3.47
@@ -31548,50 +23209,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 122.77,
     "runs": 1914,
     "innings": 111,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 124,
     "boundaryPct": 13.47,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 473,
         "balls": 396,
         "strikeRate": 119.44,
         "economy": 7.17
       },
       "middle": {
-        "runs": 808,
         "balls": 767,
         "strikeRate": 105.35,
         "economy": 6.32
       },
       "death": {
-        "runs": 633,
         "balls": 396,
         "strikeRate": 159.85,
         "economy": 9.59
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -31610,19 +23245,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.75,
     "battingPhases": {
       "powerplay": {
-        "runs": 578,
         "balls": 424,
         "strikeRate": 136.32,
         "economy": 8.18
       },
       "middle": {
-        "runs": 1889,
         "balls": 1443,
         "strikeRate": 130.91,
         "economy": 7.85
       },
       "death": {
-        "runs": 933,
         "balls": 485,
         "strikeRate": 192.37,
         "economy": 11.54
@@ -31630,19 +23262,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 7,
         "balls": 6,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 55,
         "balls": 60,
         "strikeRate": 91.67,
         "economy": 5.5
       },
       "death": {
-        "runs": 21,
         "balls": 13,
         "strikeRate": 161.54,
         "economy": 9.69
@@ -31663,20 +23292,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.58,
     "bowlingStrikeRate": 12.75,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 17,
         "balls": 26,
         "strikeRate": 65.38,
         "economy": 3.92
       },
       "death": {
-        "runs": 90,
         "balls": 69,
         "strikeRate": 130.43,
         "economy": 7.83
@@ -31684,19 +23305,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 116,
         "balls": 90,
         "strikeRate": 128.89,
         "economy": 7.73
       },
       "middle": {
-        "runs": 199,
         "balls": 148,
         "strikeRate": 134.46,
         "economy": 8.07
       },
       "death": {
-        "runs": 198,
         "balls": 119,
         "strikeRate": 166.39,
         "economy": 9.98
@@ -31706,7 +23324,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-af485f9b": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 16.67,
     "runs": 1,
     "innings": 1,
@@ -31717,20 +23334,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 10.76,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 1,
         "balls": 6,
         "strikeRate": 16.67,
         "economy": 1
@@ -31738,19 +23342,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 67,
         "balls": 36,
         "strikeRate": 186.11,
         "economy": 11.17
       },
       "middle": {
-        "runs": 157,
         "balls": 102,
         "strikeRate": 153.92,
         "economy": 9.24
       },
       "death": {
-        "runs": 110,
         "balls": 45,
         "strikeRate": 244.44,
         "economy": 14.67
@@ -31771,40 +23372,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 20,
     "bowlingStrikeRate": 24,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 8,
         "balls": 3,
         "strikeRate": 266.67,
         "economy": 16
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 165,
         "balls": 114,
         "strikeRate": 144.74,
         "economy": 8.68
       },
       "death": {
-        "runs": 3,
         "balls": 6,
         "strikeRate": 50,
         "economy": 3
@@ -31818,50 +23403,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 132.49,
     "runs": 2459,
     "innings": 114,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 117,
     "boundaryPct": 20.42,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1836,
         "balls": 1391,
         "strikeRate": 131.99,
         "economy": 7.92
       },
       "middle": {
-        "runs": 592,
         "balls": 444,
         "strikeRate": 133.33,
         "economy": 8
       },
       "death": {
-        "runs": 31,
         "balls": 21,
         "strikeRate": 147.62,
         "economy": 8.86
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -31880,19 +23439,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 12.95,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 4,
         "strikeRate": 25,
         "economy": 1.5
       },
       "middle": {
-        "runs": 43,
         "balls": 48,
         "strikeRate": 89.58,
         "economy": 5.38
       },
       "death": {
-        "runs": 99,
         "balls": 72,
         "strikeRate": 137.5,
         "economy": 8.25
@@ -31900,19 +23456,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 113,
         "balls": 84,
         "strikeRate": 134.52,
         "economy": 8.07
       },
       "middle": {
-        "runs": 113,
         "balls": 78,
         "strikeRate": 144.87,
         "economy": 8.69
       },
       "death": {
-        "runs": 144,
         "balls": 84,
         "strikeRate": 171.43,
         "economy": 10.29
@@ -31934,19 +23487,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.3,
     "battingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 8,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 236,
         "balls": 241,
         "strikeRate": 97.93,
         "economy": 5.88
       },
       "death": {
-        "runs": 500,
         "balls": 337,
         "strikeRate": 148.37,
         "economy": 8.9
@@ -31954,19 +23504,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 850,
         "balls": 720,
         "strikeRate": 118.06,
         "economy": 7.08
       },
       "middle": {
-        "runs": 1010,
         "balls": 786,
         "strikeRate": 128.5,
         "economy": 7.71
       },
       "death": {
-        "runs": 1413,
         "balls": 881,
         "strikeRate": 160.39,
         "economy": 9.62
@@ -31980,50 +23527,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 139.34,
     "runs": 1006,
     "innings": 46,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 50,
     "boundaryPct": 16.48,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 491,
         "balls": 311,
         "strikeRate": 157.88,
         "economy": 9.47
       },
       "middle": {
-        "runs": 442,
         "balls": 366,
         "strikeRate": 120.77,
         "economy": 7.25
       },
       "death": {
-        "runs": 73,
         "balls": 45,
         "strikeRate": 162.22,
         "economy": 9.73
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -32041,20 +23562,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.53,
     "bowlingStrikeRate": 20.25,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 38,
         "balls": 45,
         "strikeRate": 84.44,
         "economy": 5.07
       },
       "death": {
-        "runs": 18,
         "balls": 12,
         "strikeRate": 150,
         "economy": 9
@@ -32062,19 +23575,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 74,
         "balls": 36,
         "strikeRate": 205.56,
         "economy": 12.33
       },
       "middle": {
-        "runs": 121,
         "balls": 90,
         "strikeRate": 134.44,
         "economy": 8.07
       },
       "death": {
-        "runs": 76,
         "balls": 36,
         "strikeRate": 211.11,
         "economy": 12.67
@@ -32088,50 +23598,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 138.32,
     "runs": 1137,
     "innings": 43,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 44,
     "boundaryPct": 18.86,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 465,
         "balls": 345,
         "strikeRate": 134.78,
         "economy": 8.09
       },
       "middle": {
-        "runs": 521,
         "balls": 377,
         "strikeRate": 138.2,
         "economy": 8.29
       },
       "death": {
-        "runs": 151,
         "balls": 100,
         "strikeRate": 151,
         "economy": 9.06
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -32142,50 +23626,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 133.79,
     "runs": 2764,
     "innings": 126,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 130,
     "boundaryPct": 18.15,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1418,
         "balls": 1158,
         "strikeRate": 122.45,
         "economy": 7.35
       },
       "middle": {
-        "runs": 1094,
         "balls": 786,
         "strikeRate": 139.19,
         "economy": 8.35
       },
       "death": {
-        "runs": 252,
         "balls": 122,
         "strikeRate": 206.56,
         "economy": 12.39
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -32203,20 +23661,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 22.22,
     "bowlingStrikeRate": 15.8,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 28,
         "balls": 18,
         "strikeRate": 155.56,
         "economy": 9.33
@@ -32224,19 +23669,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 132,
         "balls": 54,
         "strikeRate": 244.44,
         "economy": 14.67
       },
       "middle": {
-        "runs": 683,
         "balls": 469,
         "strikeRate": 145.63,
         "economy": 8.74
       },
       "death": {
-        "runs": 200,
         "balls": 109,
         "strikeRate": 183.49,
         "economy": 11.01
@@ -32257,20 +23699,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.69,
     "bowlingStrikeRate": 16.98,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 14,
         "strikeRate": 21.43,
         "economy": 1.29
       },
       "death": {
-        "runs": 83,
         "balls": 90,
         "strikeRate": 92.22,
         "economy": 5.53
@@ -32278,19 +23712,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1006,
         "balls": 816,
         "strikeRate": 123.28,
         "economy": 7.4
       },
       "middle": {
-        "runs": 957,
         "balls": 737,
         "strikeRate": 129.85,
         "economy": 7.79
       },
       "death": {
-        "runs": 1167,
         "balls": 689,
         "strikeRate": 169.38,
         "economy": 10.16
@@ -32304,57 +23735,30 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 126.04,
     "runs": 213,
     "innings": 12,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 14,
     "boundaryPct": 20.71,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 92,
         "balls": 79,
         "strikeRate": 116.46,
         "economy": 6.99
       },
       "middle": {
-        "runs": 112,
         "balls": 85,
         "strikeRate": 131.76,
         "economy": 7.91
       },
       "death": {
-        "runs": 9,
         "balls": 5,
         "strikeRate": 180,
         "economy": 10.8
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-b43c2877": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 0,
     "runs": 0,
     "innings": 1,
@@ -32365,20 +23769,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 17.21,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 0,
         "balls": 3,
         "strikeRate": 0,
         "economy": 0
@@ -32386,19 +23777,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 61,
         "balls": 42,
         "strikeRate": 145.24,
         "economy": 8.71
       },
       "middle": {
-        "runs": 190,
         "balls": 138,
         "strikeRate": 137.68,
         "economy": 8.26
       },
       "death": {
-        "runs": 136,
         "balls": 61,
         "strikeRate": 222.95,
         "economy": 13.38
@@ -32408,7 +23796,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-b452a807": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 230.77,
     "runs": 30,
     "innings": 4,
@@ -32419,20 +23806,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 38.46,
     "bowlingStrikeRate": 16.15,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 30,
         "balls": 11,
         "strikeRate": 272.73,
         "economy": 16.36
@@ -32440,19 +23819,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 171,
         "balls": 132,
         "strikeRate": 129.55,
         "economy": 7.77
       },
       "middle": {
-        "runs": 245,
         "balls": 183,
         "strikeRate": 133.88,
         "economy": 8.03
       },
       "death": {
-        "runs": 161,
         "balls": 105,
         "strikeRate": 153.33,
         "economy": 9.2
@@ -32462,7 +23838,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-b45b100e": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 50,
     "runs": 1,
     "innings": 1,
@@ -32473,20 +23848,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 19.83,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
@@ -32494,19 +23856,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 31,
         "balls": 24,
         "strikeRate": 129.17,
         "economy": 7.75
       },
       "middle": {
-        "runs": 83,
         "balls": 72,
         "strikeRate": 115.28,
         "economy": 6.92
       },
       "death": {
-        "runs": 32,
         "balls": 23,
         "strikeRate": 139.13,
         "economy": 8.35
@@ -32520,50 +23879,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.31,
     "runs": 4652,
     "innings": 206,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 238,
     "boundaryPct": 16.56,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1826,
         "balls": 1353,
         "strikeRate": 134.96,
         "economy": 8.1
       },
       "middle": {
-        "runs": 1854,
         "balls": 1418,
         "strikeRate": 130.75,
         "economy": 7.84
       },
       "death": {
-        "runs": 972,
         "balls": 617,
         "strikeRate": 157.54,
         "economy": 9.45
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -32581,20 +23914,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.44,
     "bowlingStrikeRate": 16.36,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 8,
         "strikeRate": 87.5,
         "economy": 5.25
       },
       "death": {
-        "runs": 32,
         "balls": 37,
         "strikeRate": 86.49,
         "economy": 5.19
@@ -32602,19 +23927,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 299,
         "balls": 228,
         "strikeRate": 131.14,
         "economy": 7.87
       },
       "middle": {
-        "runs": 148,
         "balls": 90,
         "strikeRate": 164.44,
         "economy": 9.87
       },
       "death": {
-        "runs": 264,
         "balls": 140,
         "strikeRate": 188.57,
         "economy": 11.31
@@ -32635,20 +23957,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 34,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
@@ -32656,19 +23965,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 56,
         "balls": 30,
         "strikeRate": 186.67,
         "economy": 11.2
       },
       "middle": {
-        "runs": 64,
         "balls": 24,
         "strikeRate": 266.67,
         "economy": 16
       },
       "death": {
-        "runs": 25,
         "balls": 14,
         "strikeRate": 178.57,
         "economy": 10.71
@@ -32690,19 +23996,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.63,
     "battingPhases": {
       "powerplay": {
-        "runs": 6,
         "balls": 9,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 53,
         "balls": 54,
         "strikeRate": 98.15,
         "economy": 5.89
       },
       "death": {
-        "runs": 178,
         "balls": 153,
         "strikeRate": 116.34,
         "economy": 6.98
@@ -32710,19 +24013,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 112,
         "balls": 78,
         "strikeRate": 143.59,
         "economy": 8.62
       },
       "middle": {
-        "runs": 2930,
         "balls": 2338,
         "strikeRate": 125.32,
         "economy": 7.52
       },
       "death": {
-        "runs": 444,
         "balls": 304,
         "strikeRate": 146.05,
         "economy": 8.76
@@ -32744,19 +24044,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 30.23,
     "battingPhases": {
       "powerplay": {
-        "runs": 194,
         "balls": 143,
         "strikeRate": 135.66,
         "economy": 8.14
       },
       "middle": {
-        "runs": 1172,
         "balls": 850,
         "strikeRate": 137.88,
         "economy": 8.27
       },
       "death": {
-        "runs": 619,
         "balls": 379,
         "strikeRate": 163.32,
         "economy": 9.8
@@ -32764,19 +24061,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 16,
         "balls": 12,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 546,
         "balls": 360,
         "strikeRate": 151.67,
         "economy": 9.1
       },
       "death": {
-        "runs": 36,
         "balls": 21,
         "strikeRate": 171.43,
         "economy": 10.29
@@ -32798,19 +24092,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21,
     "battingPhases": {
       "powerplay": {
-        "runs": 305,
         "balls": 301,
         "strikeRate": 101.33,
         "economy": 6.08
       },
       "middle": {
-        "runs": 1557,
         "balls": 1100,
         "strikeRate": 141.55,
         "economy": 8.49
       },
       "death": {
-        "runs": 610,
         "balls": 362,
         "strikeRate": 168.51,
         "economy": 10.11
@@ -32818,19 +24109,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 49,
         "balls": 30,
         "strikeRate": 163.33,
         "economy": 9.8
       },
       "middle": {
-        "runs": 37,
         "balls": 36,
         "strikeRate": 102.78,
         "economy": 6.17
       },
       "death": {
-        "runs": 22,
         "balls": 18,
         "strikeRate": 122.22,
         "economy": 7.33
@@ -32852,19 +24140,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 24.15,
     "battingPhases": {
       "powerplay": {
-        "runs": 1645,
         "balls": 1151,
         "strikeRate": 142.92,
         "economy": 8.58
       },
       "middle": {
-        "runs": 1117,
         "balls": 814,
         "strikeRate": 137.22,
         "economy": 8.23
       },
       "death": {
-        "runs": 297,
         "balls": 193,
         "strikeRate": 153.89,
         "economy": 9.23
@@ -32872,19 +24157,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 629,
         "balls": 474,
         "strikeRate": 132.7,
         "economy": 7.96
       },
       "middle": {
-        "runs": 666,
         "balls": 530,
         "strikeRate": 125.66,
         "economy": 7.54
       },
       "death": {
-        "runs": 228,
         "balls": 131,
         "strikeRate": 174.05,
         "economy": 10.44
@@ -32906,19 +24188,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 24,
     "battingPhases": {
       "powerplay": {
-        "runs": 15,
         "balls": 14,
         "strikeRate": 107.14,
         "economy": 6.43
       },
       "middle": {
-        "runs": 30,
         "balls": 15,
         "strikeRate": 200,
         "economy": 12
       },
       "death": {
-        "runs": 13,
         "balls": 24,
         "strikeRate": 54.17,
         "economy": 3.25
@@ -32926,19 +24205,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 28,
         "balls": 36,
         "strikeRate": 77.78,
         "economy": 4.67
       },
       "middle": {
-        "runs": 58,
         "balls": 66,
         "strikeRate": 87.88,
         "economy": 5.27
       },
       "death": {
-        "runs": 30,
         "balls": 18,
         "strikeRate": 166.67,
         "economy": 10
@@ -32960,19 +24236,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.06,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 4,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 45,
         "balls": 61,
         "strikeRate": 73.77,
         "economy": 4.43
       },
       "death": {
-        "runs": 135,
         "balls": 104,
         "strikeRate": 129.81,
         "economy": 7.79
@@ -32980,19 +24253,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 150,
         "balls": 114,
         "strikeRate": 131.58,
         "economy": 7.89
       },
       "middle": {
-        "runs": 1137,
         "balls": 822,
         "strikeRate": 138.32,
         "economy": 8.3
       },
       "death": {
-        "runs": 62,
         "balls": 55,
         "strikeRate": 112.73,
         "economy": 6.76
@@ -33013,20 +24283,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.35,
     "bowlingStrikeRate": 21.14,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 3,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 57,
         "balls": 60,
         "strikeRate": 95,
         "economy": 5.7
@@ -33034,19 +24296,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1094,
         "balls": 774,
         "strikeRate": 141.34,
         "economy": 8.48
       },
       "middle": {
-        "runs": 233,
         "balls": 174,
         "strikeRate": 133.91,
         "economy": 8.03
       },
       "death": {
-        "runs": 618,
         "balls": 405,
         "strikeRate": 152.59,
         "economy": 9.16
@@ -33068,19 +24327,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.46,
     "battingPhases": {
       "powerplay": {
-        "runs": 25,
         "balls": 15,
         "strikeRate": 166.67,
         "economy": 10
       },
       "middle": {
-        "runs": 434,
         "balls": 364,
         "strikeRate": 119.23,
         "economy": 7.15
       },
       "death": {
-        "runs": 729,
         "balls": 455,
         "strikeRate": 160.22,
         "economy": 9.61
@@ -33088,19 +24344,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 479,
         "balls": 378,
         "strikeRate": 126.72,
         "economy": 7.6
       },
       "middle": {
-        "runs": 1740,
         "balls": 1317,
         "strikeRate": 132.12,
         "economy": 7.93
       },
       "death": {
-        "runs": 216,
         "balls": 146,
         "strikeRate": 147.95,
         "economy": 8.88
@@ -33114,47 +24367,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 149.46,
     "runs": 1251,
     "innings": 48,
-    "bowlingAverage": null,
     "economyRate": 18,
     "wickets": 0,
     "matches": 48,
     "boundaryPct": 23.3,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 877,
         "balls": 637,
         "strikeRate": 137.68,
         "economy": 8.26
       },
       "middle": {
-        "runs": 338,
         "balls": 183,
         "strikeRate": 184.7,
         "economy": 11.08
       },
       "death": {
-        "runs": 36,
         "balls": 17,
         "strikeRate": 211.76,
         "economy": 12.71
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 23,
         "balls": 7,
         "strikeRate": 328.57,
         "economy": 19.71
       },
       "death": {
-        "runs": 25,
         "balls": 9,
         "strikeRate": 277.78,
         "economy": 16.67
@@ -33168,50 +24408,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 140.71,
     "runs": 1189,
     "innings": 46,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 47,
     "boundaryPct": 19.17,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 669,
         "balls": 474,
         "strikeRate": 141.14,
         "economy": 8.47
       },
       "middle": {
-        "runs": 448,
         "balls": 328,
         "strikeRate": 136.59,
         "economy": 8.2
       },
       "death": {
-        "runs": 72,
         "balls": 43,
         "strikeRate": 167.44,
         "economy": 10.05
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -33229,20 +24443,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.09,
     "bowlingStrikeRate": 15.36,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 6,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 26,
         "balls": 27,
         "strikeRate": 96.3,
         "economy": 5.78
@@ -33250,19 +24456,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 170,
         "balls": 108,
         "strikeRate": 157.41,
         "economy": 9.44
       },
       "middle": {
-        "runs": 159,
         "balls": 114,
         "strikeRate": 139.47,
         "economy": 8.37
       },
       "death": {
-        "runs": 172,
         "balls": 116,
         "strikeRate": 148.28,
         "economy": 8.9
@@ -33284,19 +24487,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.48,
     "battingPhases": {
       "powerplay": {
-        "runs": 364,
         "balls": 246,
         "strikeRate": 147.97,
         "economy": 8.88
       },
       "middle": {
-        "runs": 780,
         "balls": 610,
         "strikeRate": 127.87,
         "economy": 7.67
       },
       "death": {
-        "runs": 422,
         "balls": 228,
         "strikeRate": 185.09,
         "economy": 11.11
@@ -33304,19 +24504,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 506,
         "balls": 384,
         "strikeRate": 131.77,
         "economy": 7.91
       },
       "middle": {
-        "runs": 557,
         "balls": 463,
         "strikeRate": 120.3,
         "economy": 7.22
       },
       "death": {
-        "runs": 380,
         "balls": 262,
         "strikeRate": 145.04,
         "economy": 8.7
@@ -33337,20 +24534,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.14,
     "bowlingStrikeRate": 17.25,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 15,
         "balls": 14,
         "strikeRate": 107.14,
         "economy": 6.43
@@ -33358,19 +24542,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 70,
         "balls": 54,
         "strikeRate": 129.63,
         "economy": 7.78
       },
       "middle": {
-        "runs": 113,
         "balls": 72,
         "strikeRate": 156.94,
         "economy": 9.42
       },
       "death": {
-        "runs": 7,
         "balls": 12,
         "strikeRate": 58.33,
         "economy": 3.5
@@ -33391,20 +24572,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 19.01,
     "bowlingStrikeRate": 15.14,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 110,
         "balls": 94,
         "strikeRate": 117.02,
         "economy": 7.02
       },
       "death": {
-        "runs": 647,
         "balls": 411,
         "strikeRate": 157.42,
         "economy": 9.45
@@ -33412,19 +24585,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2527,
         "balls": 1962,
         "strikeRate": 128.8,
         "economy": 7.73
       },
       "middle": {
-        "runs": 1470,
         "balls": 1152,
         "strikeRate": 127.6,
         "economy": 7.66
       },
       "death": {
-        "runs": 2657,
         "balls": 1730,
         "strikeRate": 153.58,
         "economy": 9.22
@@ -33438,50 +24608,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 144.92,
     "runs": 171,
     "innings": 6,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 9,
     "boundaryPct": 16.1,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 6,
         "balls": 10,
         "strikeRate": 60,
         "economy": 3.6
       },
       "middle": {
-        "runs": 94,
         "balls": 71,
         "strikeRate": 132.39,
         "economy": 7.94
       },
       "death": {
-        "runs": 71,
         "balls": 37,
         "strikeRate": 191.89,
         "economy": 11.51
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -33500,39 +24644,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 3,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 53,
         "balls": 70,
         "strikeRate": 75.71,
         "economy": 4.54
       },
       "death": {
-        "runs": 95,
         "balls": 53,
         "strikeRate": 179.25,
         "economy": 10.75
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 53,
         "balls": 36,
         "strikeRate": 147.22,
         "economy": 8.83
       },
       "death": {
-        "runs": 29,
         "balls": 11,
         "strikeRate": 263.64,
         "economy": 15.82
@@ -33554,19 +24687,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.7,
     "battingPhases": {
       "powerplay": {
-        "runs": 207,
         "balls": 184,
         "strikeRate": 112.5,
         "economy": 6.75
       },
       "middle": {
-        "runs": 420,
         "balls": 342,
         "strikeRate": 122.81,
         "economy": 7.37
       },
       "death": {
-        "runs": 258,
         "balls": 176,
         "strikeRate": 146.59,
         "economy": 8.8
@@ -33574,19 +24704,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 6,
         "balls": 6,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 1711,
         "balls": 1254,
         "strikeRate": 136.44,
         "economy": 8.19
       },
       "death": {
-        "runs": 325,
         "balls": 210,
         "strikeRate": 154.76,
         "economy": 9.29
@@ -33608,19 +24735,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.94,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
       },
       "middle": {
-        "runs": 87,
         "balls": 75,
         "strikeRate": 116,
         "economy": 6.96
       },
       "death": {
-        "runs": 61,
         "balls": 47,
         "strikeRate": 129.79,
         "economy": 7.79
@@ -33628,19 +24752,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 62,
         "balls": 35,
         "strikeRate": 177.14,
         "economy": 10.63
       },
       "middle": {
-        "runs": 251,
         "balls": 210,
         "strikeRate": 119.52,
         "economy": 7.17
       },
       "death": {
-        "runs": 181,
         "balls": 111,
         "strikeRate": 163.06,
         "economy": 9.78
@@ -33654,50 +24775,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 104.55,
     "runs": 207,
     "innings": 11,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 12,
     "boundaryPct": 11.62,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 97,
         "balls": 94,
         "strikeRate": 103.19,
         "economy": 6.19
       },
       "middle": {
-        "runs": 103,
         "balls": 101,
         "strikeRate": 101.98,
         "economy": 6.12
       },
       "death": {
-        "runs": 7,
         "balls": 3,
         "strikeRate": 233.33,
         "economy": 14
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -33716,19 +24811,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 26.45,
     "battingPhases": {
       "powerplay": {
-        "runs": 211,
         "balls": 229,
         "strikeRate": 92.14,
         "economy": 5.53
       },
       "middle": {
-        "runs": 1384,
         "balls": 1360,
         "strikeRate": 101.76,
         "economy": 6.11
       },
       "death": {
-        "runs": 1420,
         "balls": 850,
         "strikeRate": 167.06,
         "economy": 10.02
@@ -33736,19 +24828,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1121,
         "balls": 997,
         "strikeRate": 112.44,
         "economy": 6.75
       },
       "middle": {
-        "runs": 1260,
         "balls": 951,
         "strikeRate": 132.49,
         "economy": 7.95
       },
       "death": {
-        "runs": 378,
         "balls": 247,
         "strikeRate": 153.04,
         "economy": 9.18
@@ -33770,19 +24859,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.48,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 254,
         "balls": 247,
         "strikeRate": 102.83,
         "economy": 6.17
       },
       "death": {
-        "runs": 699,
         "balls": 455,
         "strikeRate": 153.63,
         "economy": 9.22
@@ -33790,19 +24876,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 370,
         "balls": 257,
         "strikeRate": 143.97,
         "economy": 8.64
       },
       "middle": {
-        "runs": 2602,
         "balls": 1998,
         "strikeRate": 130.23,
         "economy": 7.81
       },
       "death": {
-        "runs": 697,
         "balls": 472,
         "strikeRate": 147.67,
         "economy": 8.86
@@ -33823,20 +24906,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.04,
     "bowlingStrikeRate": 21.54,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 41,
         "balls": 36,
         "strikeRate": 113.89,
         "economy": 6.83
       },
       "death": {
-        "runs": 85,
         "balls": 77,
         "strikeRate": 110.39,
         "economy": 6.62
@@ -33844,19 +24919,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 839,
         "balls": 732,
         "strikeRate": 114.62,
         "economy": 6.88
       },
       "middle": {
-        "runs": 922,
         "balls": 763,
         "strikeRate": 120.84,
         "economy": 7.25
       },
       "death": {
-        "runs": 179,
         "balls": 99,
         "strikeRate": 180.81,
         "economy": 10.85
@@ -33877,20 +24949,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.54,
     "bowlingStrikeRate": 19.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 8,
         "balls": 8,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 70,
         "balls": 70,
         "strikeRate": 100,
         "economy": 6
@@ -33898,19 +24962,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 818,
         "balls": 648,
         "strikeRate": 126.23,
         "economy": 7.57
       },
       "middle": {
-        "runs": 511,
         "balls": 375,
         "strikeRate": 136.27,
         "economy": 8.18
       },
       "death": {
-        "runs": 595,
         "balls": 381,
         "strikeRate": 156.17,
         "economy": 9.37
@@ -33924,50 +24985,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 129.66,
     "runs": 3646,
     "innings": 130,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 129,
     "boundaryPct": 17.18,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2111,
         "balls": 1667,
         "strikeRate": 126.63,
         "economy": 7.6
       },
       "middle": {
-        "runs": 1276,
         "balls": 1002,
         "strikeRate": 127.35,
         "economy": 7.64
       },
       "death": {
-        "runs": 259,
         "balls": 143,
         "strikeRate": 181.12,
         "economy": 10.87
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -33986,39 +25021,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 14.4,
     "battingPhases": {
       "powerplay": {
-        "runs": 551,
         "balls": 396,
         "strikeRate": 139.14,
         "economy": 8.35
       },
       "middle": {
-        "runs": 246,
         "balls": 212,
         "strikeRate": 116.04,
         "economy": 6.96
       },
       "death": {
-        "runs": 43,
         "balls": 34,
         "strikeRate": 126.47,
         "economy": 7.59
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 182,
         "balls": 138,
         "strikeRate": 131.88,
         "economy": 7.91
       },
       "death": {
-        "runs": 9,
         "balls": 6,
         "strikeRate": 150,
         "economy": 9
@@ -34032,50 +25056,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.31,
     "runs": 184,
     "innings": 7,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 7,
     "boundaryPct": 17.16,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 8,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 100,
         "balls": 85,
         "strikeRate": 117.65,
         "economy": 7.06
       },
       "death": {
-        "runs": 76,
         "balls": 41,
         "strikeRate": 185.37,
         "economy": 11.12
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -34093,20 +25091,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.32,
     "bowlingStrikeRate": 18.29,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 66,
         "balls": 91,
         "strikeRate": 72.53,
         "economy": 4.35
       },
       "death": {
-        "runs": 269,
         "balls": 193,
         "strikeRate": 139.38,
         "economy": 8.36
@@ -34114,19 +25104,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 125,
         "balls": 96,
         "strikeRate": 130.21,
         "economy": 7.81
       },
       "middle": {
-        "runs": 579,
         "balls": 648,
         "strikeRate": 89.35,
         "economy": 5.36
       },
       "death": {
-        "runs": 92,
         "balls": 79,
         "strikeRate": 116.46,
         "economy": 6.99
@@ -34140,50 +25127,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 124.63,
     "runs": 2429,
     "innings": 112,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 139,
     "boundaryPct": 11.44,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 114,
         "balls": 126,
         "strikeRate": 90.48,
         "economy": 5.43
       },
       "middle": {
-        "runs": 1198,
         "balls": 1121,
         "strikeRate": 106.87,
         "economy": 6.41
       },
       "death": {
-        "runs": 1117,
         "balls": 702,
         "strikeRate": 159.12,
         "economy": 9.55
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -34194,50 +25155,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 116.05,
     "runs": 2589,
     "innings": 128,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 145,
     "boundaryPct": 12.55,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 494,
         "balls": 553,
         "strikeRate": 89.33,
         "economy": 5.36
       },
       "middle": {
-        "runs": 1643,
         "balls": 1362,
         "strikeRate": 120.63,
         "economy": 7.24
       },
       "death": {
-        "runs": 452,
         "balls": 316,
         "strikeRate": 143.04,
         "economy": 8.58
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -34255,20 +25190,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.3,
     "bowlingStrikeRate": 19.25,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 13,
         "balls": 31,
         "strikeRate": 41.94,
         "economy": 2.52
       },
       "death": {
-        "runs": 133,
         "balls": 141,
         "strikeRate": 94.33,
         "economy": 5.66
@@ -34276,19 +25203,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 876,
         "balls": 642,
         "strikeRate": 136.45,
         "economy": 8.19
       },
       "middle": {
-        "runs": 697,
         "balls": 553,
         "strikeRate": 126.04,
         "economy": 7.56
       },
       "death": {
-        "runs": 974,
         "balls": 595,
         "strikeRate": 163.7,
         "economy": 9.82
@@ -34309,20 +25233,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.25,
     "bowlingStrikeRate": 30.71,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 8,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 17,
         "balls": 24,
         "strikeRate": 70.83,
         "economy": 4.25
@@ -34330,19 +25246,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 112,
         "balls": 66,
         "strikeRate": 169.7,
         "economy": 10.18
       },
       "middle": {
-        "runs": 92,
         "balls": 125,
         "strikeRate": 73.6,
         "economy": 4.42
       },
       "death": {
-        "runs": 46,
         "balls": 24,
         "strikeRate": 191.67,
         "economy": 11.5
@@ -34363,20 +25276,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12,
     "bowlingStrikeRate": 23.33,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 28,
         "balls": 23,
         "strikeRate": 121.74,
         "economy": 7.3
@@ -34384,19 +25289,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 15,
         "balls": 6,
         "strikeRate": 250,
         "economy": 15
       },
       "middle": {
-        "runs": 277,
         "balls": 180,
         "strikeRate": 153.89,
         "economy": 9.23
       },
       "death": {
-        "runs": 32,
         "balls": 24,
         "strikeRate": 133.33,
         "economy": 8
@@ -34410,57 +25312,30 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 98.67,
     "runs": 372,
     "innings": 26,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 28,
     "boundaryPct": 12.73,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 137,
         "balls": 160,
         "strikeRate": 85.63,
         "economy": 5.14
       },
       "middle": {
-        "runs": 199,
         "balls": 191,
         "strikeRate": 104.19,
         "economy": 6.25
       },
       "death": {
-        "runs": 36,
         "balls": 26,
         "strikeRate": 138.46,
         "economy": 8.31
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-beda15f7": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 25,
     "runs": 3,
     "innings": 2,
@@ -34471,20 +25346,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 13.14,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 3,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 3,
         "balls": 9,
         "strikeRate": 33.33,
         "economy": 2
@@ -34492,19 +25359,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 83,
         "balls": 72,
         "strikeRate": 115.28,
         "economy": 6.92
       },
       "middle": {
-        "runs": 73,
         "balls": 54,
         "strikeRate": 135.19,
         "economy": 8.11
       },
       "death": {
-        "runs": 62,
         "balls": 58,
         "strikeRate": 106.9,
         "economy": 6.41
@@ -34518,50 +25382,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 142.59,
     "runs": 154,
     "innings": 9,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 11,
     "boundaryPct": 20.37,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 82,
         "balls": 53,
         "strikeRate": 154.72,
         "economy": 9.28
       },
       "middle": {
-        "runs": 66,
         "balls": 48,
         "strikeRate": 137.5,
         "economy": 8.25
       },
       "death": {
-        "runs": 6,
         "balls": 7,
         "strikeRate": 85.71,
         "economy": 5.14
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -34579,20 +25417,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.29,
     "bowlingStrikeRate": 108,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 47,
         "balls": 35,
         "strikeRate": 134.29,
         "economy": 8.06
@@ -34600,19 +25425,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 37,
         "balls": 18,
         "strikeRate": 205.56,
         "economy": 12.33
       },
       "middle": {
-        "runs": 121,
         "balls": 78,
         "strikeRate": 155.13,
         "economy": 9.31
       },
       "death": {
-        "runs": 27,
         "balls": 12,
         "strikeRate": 225,
         "economy": 13.5
@@ -34633,20 +25455,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.69,
     "bowlingStrikeRate": 18.38,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 8,
         "balls": 10,
         "strikeRate": 80,
         "economy": 4.8
       },
       "death": {
-        "runs": 21,
         "balls": 29,
         "strikeRate": 72.41,
         "economy": 4.34
@@ -34654,19 +25468,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 181,
         "balls": 114,
         "strikeRate": 158.77,
         "economy": 9.53
       },
       "middle": {
-        "runs": 306,
         "balls": 210,
         "strikeRate": 145.71,
         "economy": 8.74
       },
       "death": {
-        "runs": 176,
         "balls": 117,
         "strikeRate": 150.43,
         "economy": 9.03
@@ -34680,50 +25491,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 152.13,
     "runs": 3995,
     "innings": 152,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 163,
     "boundaryPct": 21.29,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1576,
         "balls": 1064,
         "strikeRate": 148.12,
         "economy": 8.89
       },
       "middle": {
-        "runs": 1941,
         "balls": 1295,
         "strikeRate": 149.88,
         "economy": 8.99
       },
       "death": {
-        "runs": 478,
         "balls": 267,
         "strikeRate": 179.03,
         "economy": 10.74
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -34741,40 +25526,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.29,
     "bowlingStrikeRate": 20.92,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 48,
         "balls": 41,
         "strikeRate": 117.07,
         "economy": 7.02
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 994,
         "balls": 672,
         "strikeRate": 147.92,
         "economy": 8.88
       },
       "death": {
-        "runs": 182,
         "balls": 102,
         "strikeRate": 178.43,
         "economy": 10.71
@@ -34796,19 +25565,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 45.6,
     "battingPhases": {
       "powerplay": {
-        "runs": 595,
         "balls": 514,
         "strikeRate": 115.76,
         "economy": 6.95
       },
       "middle": {
-        "runs": 640,
         "balls": 510,
         "strikeRate": 125.49,
         "economy": 7.53
       },
       "death": {
-        "runs": 123,
         "balls": 81,
         "strikeRate": 151.85,
         "economy": 9.11
@@ -34816,19 +25582,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 25,
         "balls": 24,
         "strikeRate": 104.17,
         "economy": 6.25
       },
       "middle": {
-        "runs": 300,
         "balls": 198,
         "strikeRate": 151.52,
         "economy": 9.09
       },
       "death": {
-        "runs": 13,
         "balls": 6,
         "strikeRate": 216.67,
         "economy": 13
@@ -34850,19 +25613,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.09,
     "battingPhases": {
       "powerplay": {
-        "runs": 18,
         "balls": 8,
         "strikeRate": 225,
         "economy": 13.5
       },
       "middle": {
-        "runs": 207,
         "balls": 198,
         "strikeRate": 104.55,
         "economy": 6.27
       },
       "death": {
-        "runs": 532,
         "balls": 368,
         "strikeRate": 144.57,
         "economy": 8.67
@@ -34870,19 +25630,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1579,
         "balls": 1176,
         "strikeRate": 134.27,
         "economy": 8.06
       },
       "middle": {
-        "runs": 968,
         "balls": 681,
         "strikeRate": 142.14,
         "economy": 8.53
       },
       "death": {
-        "runs": 750,
         "balls": 467,
         "strikeRate": 160.6,
         "economy": 9.64
@@ -34903,20 +25660,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.18,
     "bowlingStrikeRate": 20.32,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 83,
         "balls": 89,
         "strikeRate": 93.26,
         "economy": 5.6
       },
       "death": {
-        "runs": 113,
         "balls": 120,
         "strikeRate": 94.17,
         "economy": 5.65
@@ -34924,19 +25673,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 348,
         "balls": 228,
         "strikeRate": 152.63,
         "economy": 9.16
       },
       "middle": {
-        "runs": 820,
         "balls": 653,
         "strikeRate": 125.57,
         "economy": 7.53
       },
       "death": {
-        "runs": 129,
         "balls": 74,
         "strikeRate": 174.32,
         "economy": 10.46
@@ -34958,19 +25704,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 30.55,
     "battingPhases": {
       "powerplay": {
-        "runs": 124,
         "balls": 95,
         "strikeRate": 130.53,
         "economy": 7.83
       },
       "middle": {
-        "runs": 469,
         "balls": 329,
         "strikeRate": 142.55,
         "economy": 8.55
       },
       "death": {
-        "runs": 126,
         "balls": 83,
         "strikeRate": 151.81,
         "economy": 9.11
@@ -34978,19 +25721,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 80,
         "balls": 84,
         "strikeRate": 95.24,
         "economy": 5.71
       },
       "middle": {
-        "runs": 275,
         "balls": 216,
         "strikeRate": 127.31,
         "economy": 7.64
       },
       "death": {
-        "runs": 42,
         "balls": 36,
         "strikeRate": 116.67,
         "economy": 7
@@ -35004,47 +25744,29 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 104.78,
     "runs": 285,
     "innings": 25,
-    "bowlingAverage": null,
     "economyRate": 10,
     "wickets": 0,
     "matches": 29,
     "boundaryPct": 10.29,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 80,
         "balls": 86,
         "strikeRate": 93.02,
         "economy": 5.58
       },
       "middle": {
-        "runs": 106,
         "balls": 109,
         "strikeRate": 97.25,
         "economy": 5.83
       },
       "death": {
-        "runs": 99,
         "balls": 77,
         "strikeRate": 128.57,
         "economy": 7.71
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 10,
         "balls": 6,
         "strikeRate": 166.67,
         "economy": 10
@@ -35065,20 +25787,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 18.75,
     "bowlingStrikeRate": 18.83,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 4,
         "strikeRate": 75,
         "economy": 4.5
       },
       "death": {
-        "runs": 44,
         "balls": 28,
         "strikeRate": 157.14,
         "economy": 9.43
@@ -35086,19 +25800,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 91,
         "balls": 78,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 9,
         "balls": 6,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 63,
         "balls": 29,
         "strikeRate": 217.24,
         "economy": 13.03
@@ -35120,19 +25831,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17,
     "battingPhases": {
       "powerplay": {
-        "runs": 691,
         "balls": 499,
         "strikeRate": 138.48,
         "economy": 8.31
       },
       "middle": {
-        "runs": 810,
         "balls": 578,
         "strikeRate": 140.14,
         "economy": 8.41
       },
       "death": {
-        "runs": 309,
         "balls": 186,
         "strikeRate": 166.13,
         "economy": 9.97
@@ -35140,19 +25848,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 6,
         "balls": 1,
         "strikeRate": 600,
         "economy": 36
       },
       "middle": {
-        "runs": 126,
         "balls": 84,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 86,
         "balls": 51,
         "strikeRate": 168.63,
         "economy": 10.12
@@ -35166,50 +25871,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 136.05,
     "runs": 200,
     "innings": 9,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 10,
     "boundaryPct": 18.37,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 144,
         "balls": 112,
         "strikeRate": 128.57,
         "economy": 7.71
       },
       "middle": {
-        "runs": 56,
         "balls": 35,
         "strikeRate": 160,
         "economy": 9.6
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -35228,39 +25902,23 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 6,
     "battingPhases": {
       "powerplay": {
-        "runs": 40,
         "balls": 42,
         "strikeRate": 95.24,
         "economy": 5.71
       },
       "middle": {
-        "runs": 159,
         "balls": 116,
         "strikeRate": 137.07,
         "economy": 8.22
       },
       "death": {
-        "runs": 84,
         "balls": 44,
         "strikeRate": 190.91,
         "economy": 11.45
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 11,
         "balls": 12,
         "strikeRate": 91.67,
         "economy": 5.5
@@ -35282,19 +25940,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.1,
     "battingPhases": {
       "powerplay": {
-        "runs": 142,
         "balls": 107,
         "strikeRate": 132.71,
         "economy": 7.96
       },
       "middle": {
-        "runs": 144,
         "balls": 125,
         "strikeRate": 115.2,
         "economy": 6.91
       },
       "death": {
-        "runs": 244,
         "balls": 169,
         "strikeRate": 144.38,
         "economy": 8.66
@@ -35302,19 +25957,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 604,
         "balls": 474,
         "strikeRate": 127.43,
         "economy": 7.65
       },
       "middle": {
-        "runs": 793,
         "balls": 534,
         "strikeRate": 148.5,
         "economy": 8.91
       },
       "death": {
-        "runs": 328,
         "balls": 193,
         "strikeRate": 169.95,
         "economy": 10.2
@@ -35328,50 +25980,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 122.72,
     "runs": 1793,
     "innings": 100,
-    "bowlingAverage": null,
     "economyRate": 13,
     "wickets": 0,
     "matches": 114,
     "boundaryPct": 15.47,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 675,
         "balls": 593,
         "strikeRate": 113.83,
         "economy": 6.83
       },
       "middle": {
-        "runs": 708,
         "balls": 594,
         "strikeRate": 119.19,
         "economy": 7.15
       },
       "death": {
-        "runs": 410,
         "balls": 274,
         "strikeRate": 149.64,
         "economy": 8.98
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 26,
         "balls": 12,
         "strikeRate": 216.67,
         "economy": 13
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -35382,47 +26016,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 154.46,
     "runs": 173,
     "innings": 12,
-    "bowlingAverage": null,
     "economyRate": 13,
     "wickets": 0,
     "matches": 14,
     "boundaryPct": 19.64,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 16,
         "balls": 9,
         "strikeRate": 177.78,
         "economy": 10.67
       },
       "middle": {
-        "runs": 106,
         "balls": 63,
         "strikeRate": 168.25,
         "economy": 10.1
       },
       "death": {
-        "runs": 51,
         "balls": 40,
         "strikeRate": 127.5,
         "economy": 7.65
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 78,
         "balls": 42,
         "strikeRate": 185.71,
         "economy": 11.14
       },
       "death": {
-        "runs": 26,
         "balls": 6,
         "strikeRate": 433.33,
         "economy": 26
@@ -35444,19 +26065,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.9,
     "battingPhases": {
       "powerplay": {
-        "runs": 2640,
         "balls": 1671,
         "strikeRate": 157.99,
         "economy": 9.48
       },
       "middle": {
-        "runs": 1670,
         "balls": 1194,
         "strikeRate": 139.87,
         "economy": 8.39
       },
       "death": {
-        "runs": 506,
         "balls": 255,
         "strikeRate": 198.43,
         "economy": 11.91
@@ -35464,19 +26082,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 815,
         "balls": 618,
         "strikeRate": 131.88,
         "economy": 7.91
       },
       "middle": {
-        "runs": 883,
         "balls": 666,
         "strikeRate": 132.58,
         "economy": 7.95
       },
       "death": {
-        "runs": 108,
         "balls": 77,
         "strikeRate": 140.26,
         "economy": 8.42
@@ -35486,51 +26101,25 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-c553c840": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 58.25,
     "economyRate": 9.26,
     "wickets": 4,
     "matches": 8,
-    "boundaryPct": null,
     "bowlingStrikeRate": 37.75,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 14,
         "balls": 12,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 147,
         "balls": 96,
         "strikeRate": 153.13,
         "economy": 9.19
       },
       "death": {
-        "runs": 72,
         "balls": 43,
         "strikeRate": 167.44,
         "economy": 10.05
@@ -35552,19 +26141,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 14.67,
     "battingPhases": {
       "powerplay": {
-        "runs": 205,
         "balls": 148,
         "strikeRate": 138.51,
         "economy": 8.31
       },
       "middle": {
-        "runs": 138,
         "balls": 115,
         "strikeRate": 120,
         "economy": 7.2
       },
       "death": {
-        "runs": 9,
         "balls": 5,
         "strikeRate": 180,
         "economy": 10.8
@@ -35572,19 +26158,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 10,
         "balls": 6,
         "strikeRate": 166.67,
         "economy": 10
       },
       "middle": {
-        "runs": 22,
         "balls": 12,
         "strikeRate": 183.33,
         "economy": 11
       },
       "death": {
-        "runs": 54,
         "balls": 26,
         "strikeRate": 207.69,
         "economy": 12.46
@@ -35606,19 +26189,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.62,
     "battingPhases": {
       "powerplay": {
-        "runs": 74,
         "balls": 81,
         "strikeRate": 91.36,
         "economy": 5.48
       },
       "middle": {
-        "runs": 1241,
         "balls": 1193,
         "strikeRate": 104.02,
         "economy": 6.24
       },
       "death": {
-        "runs": 1940,
         "balls": 1273,
         "strikeRate": 152.4,
         "economy": 9.14
@@ -35626,19 +26206,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 3031,
         "balls": 2765,
         "strikeRate": 109.62,
         "economy": 6.58
       },
       "middle": {
-        "runs": 3760,
         "balls": 3587,
         "strikeRate": 104.82,
         "economy": 6.29
       },
       "death": {
-        "runs": 800,
         "balls": 480,
         "strikeRate": 166.67,
         "economy": 10
@@ -35660,19 +26237,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 25.16,
     "battingPhases": {
       "powerplay": {
-        "runs": 349,
         "balls": 345,
         "strikeRate": 101.16,
         "economy": 6.07
       },
       "middle": {
-        "runs": 2910,
         "balls": 2318,
         "strikeRate": 125.54,
         "economy": 7.53
       },
       "death": {
-        "runs": 2114,
         "balls": 1135,
         "strikeRate": 186.26,
         "economy": 11.18
@@ -35680,19 +26254,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 7,
         "balls": 6,
         "strikeRate": 116.67,
         "economy": 7
       },
       "middle": {
-        "runs": 809,
         "balls": 445,
         "strikeRate": 181.8,
         "economy": 10.91
       },
       "death": {
-        "runs": 348,
         "balls": 178,
         "strikeRate": 195.51,
         "economy": 11.73
@@ -35706,50 +26277,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 123.62,
     "runs": 1073,
     "innings": 59,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 66,
     "boundaryPct": 14.98,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 38,
         "balls": 44,
         "strikeRate": 86.36,
         "economy": 5.18
       },
       "middle": {
-        "runs": 693,
         "balls": 616,
         "strikeRate": 112.5,
         "economy": 6.75
       },
       "death": {
-        "runs": 342,
         "balls": 208,
         "strikeRate": 164.42,
         "economy": 9.87
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -35760,50 +26305,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 149.19,
     "runs": 737,
     "innings": 21,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 21,
     "boundaryPct": 20.85,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 422,
         "balls": 274,
         "strikeRate": 154.01,
         "economy": 9.24
       },
       "middle": {
-        "runs": 273,
         "balls": 188,
         "strikeRate": 145.21,
         "economy": 8.71
       },
       "death": {
-        "runs": 42,
         "balls": 32,
         "strikeRate": 131.25,
         "economy": 7.88
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -35822,19 +26341,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 25.04,
     "battingPhases": {
       "powerplay": {
-        "runs": 1612,
         "balls": 1198,
         "strikeRate": 134.56,
         "economy": 8.07
       },
       "middle": {
-        "runs": 3483,
         "balls": 2488,
         "strikeRate": 139.99,
         "economy": 8.4
       },
       "death": {
-        "runs": 1070,
         "balls": 569,
         "strikeRate": 188.05,
         "economy": 11.28
@@ -35842,19 +26358,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 80,
         "balls": 60,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 658,
         "balls": 542,
         "strikeRate": 121.4,
         "economy": 7.28
       },
       "death": {
-        "runs": 179,
         "balls": 99,
         "strikeRate": 180.81,
         "economy": 10.85
@@ -35875,20 +26388,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.71,
     "bowlingStrikeRate": 23.68,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 5,
         "strikeRate": 60,
         "economy": 3.6
       },
       "death": {
-        "runs": 29,
         "balls": 30,
         "strikeRate": 96.67,
         "economy": 5.8
@@ -35896,19 +26401,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 253,
         "balls": 162,
         "strikeRate": 156.17,
         "economy": 9.37
       },
       "middle": {
-        "runs": 264,
         "balls": 186,
         "strikeRate": 141.94,
         "economy": 8.52
       },
       "death": {
-        "runs": 329,
         "balls": 173,
         "strikeRate": 190.17,
         "economy": 11.41
@@ -35930,19 +26432,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 4,
         "balls": 4,
         "strikeRate": 100,
         "economy": 6
       },
       "middle": {
-        "runs": 77,
         "balls": 79,
         "strikeRate": 97.47,
         "economy": 5.85
       },
       "death": {
-        "runs": 122,
         "balls": 75,
         "strikeRate": 162.67,
         "economy": 9.76
@@ -35950,19 +26449,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 87,
         "balls": 66,
         "strikeRate": 131.82,
         "economy": 7.91
       },
       "middle": {
-        "runs": 109,
         "balls": 60,
         "strikeRate": 181.67,
         "economy": 10.9
       },
       "death": {
-        "runs": 47,
         "balls": 22,
         "strikeRate": 213.64,
         "economy": 12.82
@@ -35976,50 +26472,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 122.89,
     "runs": 3248,
     "innings": 129,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 139,
     "boundaryPct": 12.86,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1255,
         "balls": 1095,
         "strikeRate": 114.61,
         "economy": 6.88
       },
       "middle": {
-        "runs": 1516,
         "balls": 1232,
         "strikeRate": 123.05,
         "economy": 7.38
       },
       "death": {
-        "runs": 477,
         "balls": 316,
         "strikeRate": 150.95,
         "economy": 9.06
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -36030,50 +26500,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 124.26,
     "runs": 292,
     "innings": 20,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 27,
     "boundaryPct": 15.74,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 12,
         "balls": 18,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 132,
         "balls": 123,
         "strikeRate": 107.32,
         "economy": 6.44
       },
       "death": {
-        "runs": 148,
         "balls": 94,
         "strikeRate": 157.45,
         "economy": 9.45
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -36084,47 +26528,29 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 131.72,
     "runs": 1711,
     "innings": 62,
-    "bowlingAverage": null,
     "economyRate": 18,
     "wickets": 0,
     "matches": 64,
     "boundaryPct": 18.17,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 712,
         "balls": 521,
         "strikeRate": 136.66,
         "economy": 8.2
       },
       "middle": {
-        "runs": 813,
         "balls": 645,
         "strikeRate": 126.05,
         "economy": 7.56
       },
       "death": {
-        "runs": 186,
         "balls": 133,
         "strikeRate": 139.85,
         "economy": 8.39
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 3,
         "balls": 1,
         "strikeRate": 300,
         "economy": 18
@@ -36146,19 +26572,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 13.04,
     "battingPhases": {
       "powerplay": {
-        "runs": 19,
         "balls": 9,
         "strikeRate": 211.11,
         "economy": 12.67
       },
       "middle": {
-        "runs": 65,
         "balls": 76,
         "strikeRate": 85.53,
         "economy": 5.13
       },
       "death": {
-        "runs": 308,
         "balls": 196,
         "strikeRate": 157.14,
         "economy": 9.43
@@ -36166,19 +26589,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 433,
         "balls": 288,
         "strikeRate": 150.35,
         "economy": 9.02
       },
       "middle": {
-        "runs": 992,
         "balls": 701,
         "strikeRate": 141.51,
         "economy": 8.49
       },
       "death": {
-        "runs": 831,
         "balls": 458,
         "strikeRate": 181.44,
         "economy": 10.89
@@ -36199,20 +26619,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.38,
     "bowlingStrikeRate": 19.68,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 13,
         "balls": 13,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 109,
         "balls": 78,
         "strikeRate": 139.74,
         "economy": 8.38
@@ -36220,19 +26632,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 575,
         "balls": 432,
         "strikeRate": 133.1,
         "economy": 7.99
       },
       "middle": {
-        "runs": 253,
         "balls": 156,
         "strikeRate": 162.18,
         "economy": 9.73
       },
       "death": {
-        "runs": 251,
         "balls": 160,
         "strikeRate": 156.88,
         "economy": 9.41
@@ -36254,19 +26663,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.81,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 3,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 41,
         "balls": 29,
         "strikeRate": 141.38,
         "economy": 8.48
       },
       "death": {
-        "runs": 160,
         "balls": 171,
         "strikeRate": 93.57,
         "economy": 5.61
@@ -36274,19 +26680,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1738,
         "balls": 1595,
         "strikeRate": 108.97,
         "economy": 6.54
       },
       "middle": {
-        "runs": 1821,
         "balls": 1678,
         "strikeRate": 108.52,
         "economy": 6.51
       },
       "death": {
-        "runs": 638,
         "balls": 468,
         "strikeRate": 136.32,
         "economy": 8.18
@@ -36307,20 +26710,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.9,
     "bowlingStrikeRate": 23.16,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 8,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 134,
         "balls": 116,
         "strikeRate": 115.52,
         "economy": 6.93
@@ -36328,19 +26723,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 304,
         "balls": 234,
         "strikeRate": 129.91,
         "economy": 7.79
       },
       "middle": {
-        "runs": 2003,
         "balls": 1610,
         "strikeRate": 124.41,
         "economy": 7.46
       },
       "death": {
-        "runs": 385,
         "balls": 264,
         "strikeRate": 145.83,
         "economy": 8.75
@@ -36362,19 +26754,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.12,
     "battingPhases": {
       "powerplay": {
-        "runs": 212,
         "balls": 169,
         "strikeRate": 125.44,
         "economy": 7.53
       },
       "middle": {
-        "runs": 1252,
         "balls": 1178,
         "strikeRate": 106.28,
         "economy": 6.38
       },
       "death": {
-        "runs": 831,
         "balls": 555,
         "strikeRate": 149.73,
         "economy": 8.98
@@ -36382,19 +26771,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 793,
         "balls": 633,
         "strikeRate": 125.28,
         "economy": 7.52
       },
       "middle": {
-        "runs": 3840,
         "balls": 3173,
         "strikeRate": 121.02,
         "economy": 7.26
       },
       "death": {
-        "runs": 499,
         "balls": 376,
         "strikeRate": 132.71,
         "economy": 7.96
@@ -36416,19 +26802,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.54,
     "battingPhases": {
       "powerplay": {
-        "runs": 214,
         "balls": 185,
         "strikeRate": 115.68,
         "economy": 6.94
       },
       "middle": {
-        "runs": 1708,
         "balls": 1399,
         "strikeRate": 122.09,
         "economy": 7.33
       },
       "death": {
-        "runs": 1549,
         "balls": 891,
         "strikeRate": 173.85,
         "economy": 10.43
@@ -36436,19 +26819,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 22,
         "balls": 18,
         "strikeRate": 122.22,
         "economy": 7.33
       },
       "middle": {
-        "runs": 304,
         "balls": 192,
         "strikeRate": 158.33,
         "economy": 9.5
       },
       "death": {
-        "runs": 147,
         "balls": 83,
         "strikeRate": 177.11,
         "economy": 10.63
@@ -36469,20 +26849,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 20,
     "bowlingStrikeRate": 18.71,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 39,
         "balls": 38,
         "strikeRate": 102.63,
         "economy": 6.16
       },
       "death": {
-        "runs": 144,
         "balls": 82,
         "strikeRate": 175.61,
         "economy": 10.54
@@ -36490,19 +26862,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 418,
         "balls": 240,
         "strikeRate": 174.17,
         "economy": 10.45
       },
       "middle": {
-        "runs": 255,
         "balls": 163,
         "strikeRate": 156.44,
         "economy": 9.39
       },
       "death": {
-        "runs": 189,
         "balls": 121,
         "strikeRate": 156.2,
         "economy": 9.37
@@ -36524,19 +26893,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.64,
     "battingPhases": {
       "powerplay": {
-        "runs": 1718,
         "balls": 1294,
         "strikeRate": 132.77,
         "economy": 7.97
       },
       "middle": {
-        "runs": 1266,
         "balls": 964,
         "strikeRate": 131.33,
         "economy": 7.88
       },
       "death": {
-        "runs": 358,
         "balls": 234,
         "strikeRate": 152.99,
         "economy": 9.18
@@ -36544,19 +26910,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1101,
         "balls": 926,
         "strikeRate": 118.9,
         "economy": 7.13
       },
       "middle": {
-        "runs": 314,
         "balls": 220,
         "strikeRate": 142.73,
         "economy": 8.56
       },
       "death": {
-        "runs": 313,
         "balls": 154,
         "strikeRate": 203.25,
         "economy": 12.19
@@ -36577,20 +26940,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.92,
     "bowlingStrikeRate": 19.03,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 11,
         "balls": 24,
         "strikeRate": 45.83,
         "economy": 2.75
       },
       "death": {
-        "runs": 80,
         "balls": 95,
         "strikeRate": 84.21,
         "economy": 5.05
@@ -36598,19 +26953,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1085,
         "balls": 816,
         "strikeRate": 132.97,
         "economy": 7.98
       },
       "middle": {
-        "runs": 991,
         "balls": 698,
         "strikeRate": 141.98,
         "economy": 8.52
       },
       "death": {
-        "runs": 901,
         "balls": 522,
         "strikeRate": 172.61,
         "economy": 10.36
@@ -36631,20 +26983,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.82,
     "bowlingStrikeRate": 17.62,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 121,
         "balls": 127,
         "strikeRate": 95.28,
         "economy": 5.72
       },
       "death": {
-        "runs": 315,
         "balls": 242,
         "strikeRate": 130.17,
         "economy": 7.81
@@ -36652,19 +26996,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1473,
         "balls": 1071,
         "strikeRate": 137.54,
         "economy": 8.25
       },
       "middle": {
-        "runs": 687,
         "balls": 443,
         "strikeRate": 155.08,
         "economy": 9.3
       },
       "death": {
-        "runs": 842,
         "balls": 512,
         "strikeRate": 164.45,
         "economy": 9.87
@@ -36685,20 +27026,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 17.31,
     "bowlingStrikeRate": 15.84,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 19,
         "balls": 8,
         "strikeRate": 237.5,
         "economy": 14.25
       },
       "death": {
-        "runs": 55,
         "balls": 44,
         "strikeRate": 125,
         "economy": 7.5
@@ -36706,19 +27039,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 448,
         "balls": 282,
         "strikeRate": 158.87,
         "economy": 9.53
       },
       "middle": {
-        "runs": 130,
         "balls": 78,
         "strikeRate": 166.67,
         "economy": 10
       },
       "death": {
-        "runs": 238,
         "balls": 131,
         "strikeRate": 181.68,
         "economy": 10.9
@@ -36739,20 +27069,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 22.22,
     "bowlingStrikeRate": 14.77,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 13,
         "balls": 9,
         "strikeRate": 144.44,
         "economy": 8.67
@@ -36760,19 +27077,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 95,
         "balls": 54,
         "strikeRate": 175.93,
         "economy": 10.56
       },
       "middle": {
-        "runs": 189,
         "balls": 108,
         "strikeRate": 175,
         "economy": 10.5
       },
       "death": {
-        "runs": 42,
         "balls": 30,
         "strikeRate": 140,
         "economy": 8.4
@@ -36793,20 +27107,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6,
     "bowlingStrikeRate": 24.86,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 13,
         "strikeRate": 38.46,
         "economy": 2.31
       },
       "death": {
-        "runs": 30,
         "balls": 37,
         "strikeRate": 81.08,
         "economy": 4.86
@@ -36814,19 +27120,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 139,
         "balls": 90,
         "strikeRate": 154.44,
         "economy": 9.27
       },
       "middle": {
-        "runs": 834,
         "balls": 654,
         "strikeRate": 127.52,
         "economy": 7.65
       },
       "death": {
-        "runs": 189,
         "balls": 126,
         "strikeRate": 150,
         "economy": 9
@@ -36848,19 +27151,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.2,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 3,
         "strikeRate": 33.33,
         "economy": 2
       },
       "middle": {
-        "runs": 92,
         "balls": 98,
         "strikeRate": 93.88,
         "economy": 5.63
       },
       "death": {
-        "runs": 328,
         "balls": 233,
         "strikeRate": 140.77,
         "economy": 8.45
@@ -36868,19 +27168,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 329,
         "balls": 204,
         "strikeRate": 161.27,
         "economy": 9.68
       },
       "middle": {
-        "runs": 2027,
         "balls": 1698,
         "strikeRate": 119.38,
         "economy": 7.16
       },
       "death": {
-        "runs": 339,
         "balls": 229,
         "strikeRate": 148.03,
         "economy": 8.88
@@ -36894,101 +27191,44 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 168.86,
     "runs": 564,
     "innings": 26,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 32,
     "boundaryPct": 23.65,
-    "bowlingStrikeRate": null,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 147,
         "balls": 117,
         "strikeRate": 125.64,
         "economy": 7.54
       },
       "death": {
-        "runs": 417,
         "balls": 217,
         "strikeRate": 192.17,
         "economy": 11.53
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
   },
   "real-cdacd831": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 31,
     "economyRate": 9.3,
     "wickets": 9,
     "matches": 8,
-    "boundaryPct": null,
     "bowlingStrikeRate": 20,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 12,
         "balls": 6,
         "strikeRate": 200,
         "economy": 12
       },
       "middle": {
-        "runs": 248,
         "balls": 156,
         "strikeRate": 158.97,
         "economy": 9.54
       },
       "death": {
-        "runs": 19,
         "balls": 18,
         "strikeRate": 105.56,
         "economy": 6.33
@@ -37002,50 +27242,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 109.79,
     "runs": 370,
     "innings": 27,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 32,
     "boundaryPct": 13.35,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 65,
         "balls": 61,
         "strikeRate": 106.56,
         "economy": 6.39
       },
       "middle": {
-        "runs": 208,
         "balls": 199,
         "strikeRate": 104.52,
         "economy": 6.27
       },
       "death": {
-        "runs": 97,
         "balls": 77,
         "strikeRate": 125.97,
         "economy": 7.56
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -37056,50 +27270,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130.86,
     "runs": 2324,
     "innings": 97,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 98,
     "boundaryPct": 18.24,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1194,
         "balls": 1006,
         "strikeRate": 118.69,
         "economy": 7.12
       },
       "middle": {
-        "runs": 968,
         "balls": 684,
         "strikeRate": 141.52,
         "economy": 8.49
       },
       "death": {
-        "runs": 162,
         "balls": 86,
         "strikeRate": 188.37,
         "economy": 11.3
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -37117,20 +27305,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 25.45,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 3,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 6,
         "balls": 9,
         "strikeRate": 66.67,
         "economy": 4
@@ -37138,19 +27318,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 410,
         "balls": 342,
         "strikeRate": 119.88,
         "economy": 7.19
       },
       "middle": {
-        "runs": 463,
         "balls": 456,
         "strikeRate": 101.54,
         "economy": 6.09
       },
       "death": {
-        "runs": 75,
         "balls": 42,
         "strikeRate": 178.57,
         "economy": 10.71
@@ -37164,50 +27341,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 117.4,
     "runs": 877,
     "innings": 48,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 52,
     "boundaryPct": 17.14,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 440,
         "balls": 382,
         "strikeRate": 115.18,
         "economy": 6.91
       },
       "middle": {
-        "runs": 333,
         "balls": 299,
         "strikeRate": 111.37,
         "economy": 6.68
       },
       "death": {
-        "runs": 104,
         "balls": 66,
         "strikeRate": 157.58,
         "economy": 9.45
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -37225,20 +27376,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.04,
     "bowlingStrikeRate": 14.95,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 3,
         "strikeRate": 66.67,
         "economy": 4
       },
       "death": {
-        "runs": 21,
         "balls": 20,
         "strikeRate": 105,
         "economy": 6.3
@@ -37246,19 +27389,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 132,
         "balls": 90,
         "strikeRate": 146.67,
         "economy": 8.8
       },
       "middle": {
-        "runs": 135,
         "balls": 119,
         "strikeRate": 113.45,
         "economy": 6.81
       },
       "death": {
-        "runs": 141,
         "balls": 75,
         "strikeRate": 188,
         "economy": 11.28
@@ -37279,20 +27419,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7,
     "bowlingStrikeRate": 15.62,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 13,
         "balls": 22,
         "strikeRate": 59.09,
         "economy": 3.55
       },
       "death": {
-        "runs": 66,
         "balls": 78,
         "strikeRate": 84.62,
         "economy": 5.08
@@ -37300,19 +27432,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 274,
         "balls": 179,
         "strikeRate": 153.07,
         "economy": 9.18
       },
       "middle": {
-        "runs": 569,
         "balls": 456,
         "strikeRate": 124.78,
         "economy": 7.49
       },
       "death": {
-        "runs": 354,
         "balls": 224,
         "strikeRate": 158.04,
         "economy": 9.48
@@ -37333,20 +27462,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.57,
     "bowlingStrikeRate": 16.43,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 20,
         "balls": 34,
         "strikeRate": 58.82,
         "economy": 3.53
@@ -37354,19 +27475,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 929,
         "balls": 660,
         "strikeRate": 140.76,
         "economy": 8.45
       },
       "middle": {
-        "runs": 501,
         "balls": 390,
         "strikeRate": 128.46,
         "economy": 7.71
       },
       "death": {
-        "runs": 660,
         "balls": 412,
         "strikeRate": 160.19,
         "economy": 9.61
@@ -37387,20 +27505,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.35,
     "bowlingStrikeRate": 26.07,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 27,
         "balls": 42,
         "strikeRate": 64.29,
         "economy": 3.86
       },
       "death": {
-        "runs": 70,
         "balls": 84,
         "strikeRate": 83.33,
         "economy": 5
@@ -37408,19 +27518,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 541,
         "balls": 372,
         "strikeRate": 145.43,
         "economy": 8.73
       },
       "middle": {
-        "runs": 877,
         "balls": 650,
         "strikeRate": 134.92,
         "economy": 8.1
       },
       "death": {
-        "runs": 157,
         "balls": 99,
         "strikeRate": 158.59,
         "economy": 9.52
@@ -37442,19 +27549,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 6,
     "battingPhases": {
       "powerplay": {
-        "runs": 1704,
         "balls": 1224,
         "strikeRate": 139.22,
         "economy": 8.35
       },
       "middle": {
-        "runs": 4647,
         "balls": 3098,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 1450,
         "balls": 742,
         "strikeRate": 195.42,
         "economy": 11.73
@@ -37462,19 +27566,11 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 6,
         "strikeRate": 133.33,
         "economy": 8
       },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 5,
         "balls": 6,
         "strikeRate": 83.33,
         "economy": 5
@@ -37495,20 +27591,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 24,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
@@ -37516,19 +27599,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 40,
         "balls": 42,
         "strikeRate": 95.24,
         "economy": 5.71
       },
       "middle": {
-        "runs": 90,
         "balls": 72,
         "strikeRate": 125,
         "economy": 7.5
       },
       "death": {
-        "runs": 6,
         "balls": 6,
         "strikeRate": 100,
         "economy": 6
@@ -37550,19 +27630,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.31,
     "battingPhases": {
       "powerplay": {
-        "runs": 2188,
         "balls": 1556,
         "strikeRate": 140.62,
         "economy": 8.44
       },
       "middle": {
-        "runs": 3154,
         "balls": 2297,
         "strikeRate": 137.31,
         "economy": 8.24
       },
       "death": {
-        "runs": 1161,
         "balls": 604,
         "strikeRate": 192.22,
         "economy": 11.53
@@ -37570,19 +27647,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 303,
         "balls": 204,
         "strikeRate": 148.53,
         "economy": 8.91
       },
       "middle": {
-        "runs": 2461,
         "balls": 1816,
         "strikeRate": 135.52,
         "economy": 8.13
       },
       "death": {
-        "runs": 510,
         "balls": 342,
         "strikeRate": 149.12,
         "economy": 8.95
@@ -37603,20 +27677,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 17.17,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 5,
         "balls": 9,
         "strikeRate": 55.56,
         "economy": 3.33
@@ -37624,19 +27685,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 189,
         "balls": 114,
         "strikeRate": 165.79,
         "economy": 9.95
       },
       "middle": {
-        "runs": 200,
         "balls": 138,
         "strikeRate": 144.93,
         "economy": 8.7
       },
       "death": {
-        "runs": 111,
         "balls": 57,
         "strikeRate": 194.74,
         "economy": 11.68
@@ -37650,50 +27708,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 114.21,
     "runs": 2620,
     "innings": 109,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 111,
     "boundaryPct": 14.95,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1471,
         "balls": 1298,
         "strikeRate": 113.33,
         "economy": 6.8
       },
       "middle": {
-        "runs": 950,
         "balls": 837,
         "strikeRate": 113.5,
         "economy": 6.81
       },
       "death": {
-        "runs": 199,
         "balls": 159,
         "strikeRate": 125.16,
         "economy": 7.51
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -37711,20 +27743,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.47,
     "bowlingStrikeRate": 24.72,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 41,
         "balls": 64,
         "strikeRate": 64.06,
         "economy": 3.84
       },
       "death": {
-        "runs": 55,
         "balls": 75,
         "strikeRate": 73.33,
         "economy": 4.4
@@ -37732,19 +27756,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 369,
         "balls": 288,
         "strikeRate": 128.13,
         "economy": 7.69
       },
       "middle": {
-        "runs": 300,
         "balls": 276,
         "strikeRate": 108.7,
         "economy": 6.52
       },
       "death": {
-        "runs": 92,
         "balls": 54,
         "strikeRate": 170.37,
         "economy": 10.22
@@ -37765,20 +27786,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.39,
     "bowlingStrikeRate": 17.8,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 19,
         "balls": 17,
         "strikeRate": 111.76,
         "economy": 6.71
       },
       "death": {
-        "runs": 144,
         "balls": 138,
         "strikeRate": 104.35,
         "economy": 6.26
@@ -37786,19 +27799,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2632,
         "balls": 2298,
         "strikeRate": 114.53,
         "economy": 6.87
       },
       "middle": {
-        "runs": 859,
         "balls": 672,
         "strikeRate": 127.83,
         "economy": 7.67
       },
       "death": {
-        "runs": 959,
         "balls": 554,
         "strikeRate": 173.1,
         "economy": 10.39
@@ -37812,50 +27822,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 149.32,
     "runs": 545,
     "innings": 16,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 16,
     "boundaryPct": 20.27,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 72,
         "balls": 64,
         "strikeRate": 112.5,
         "economy": 6.75
       },
       "middle": {
-        "runs": 388,
         "balls": 251,
         "strikeRate": 154.58,
         "economy": 9.27
       },
       "death": {
-        "runs": 85,
         "balls": 50,
         "strikeRate": 170,
         "economy": 10.2
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -37873,20 +27857,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.59,
     "bowlingStrikeRate": 13.31,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 11,
         "strikeRate": 36.36,
         "economy": 2.18
       },
       "death": {
-        "runs": 85,
         "balls": 74,
         "strikeRate": 114.86,
         "economy": 6.89
@@ -37894,19 +27870,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 546,
         "balls": 372,
         "strikeRate": 146.77,
         "economy": 8.81
       },
       "middle": {
-        "runs": 611,
         "balls": 474,
         "strikeRate": 128.9,
         "economy": 7.73
       },
       "death": {
-        "runs": 604,
         "balls": 432,
         "strikeRate": 139.81,
         "economy": 8.39
@@ -37916,7 +27889,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-d2d529b0": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 100,
     "runs": 2,
     "innings": 1,
@@ -37927,20 +27899,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 36,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 2,
         "balls": 2,
         "strikeRate": 100,
         "economy": 6
@@ -37948,19 +27907,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 39,
         "balls": 18,
         "strikeRate": 216.67,
         "economy": 13
       },
       "middle": {
-        "runs": 59,
         "balls": 42,
         "strikeRate": 140.48,
         "economy": 8.43
       },
       "death": {
-        "runs": 10,
         "balls": 12,
         "strikeRate": 83.33,
         "economy": 5
@@ -37981,20 +27937,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.19,
     "bowlingStrikeRate": 22.59,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 158,
         "balls": 145,
         "strikeRate": 108.97,
         "economy": 6.54
       },
       "death": {
-        "runs": 286,
         "balls": 204,
         "strikeRate": 140.2,
         "economy": 8.41
@@ -38002,19 +27950,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1339,
         "balls": 894,
         "strikeRate": 149.78,
         "economy": 8.99
       },
       "middle": {
-        "runs": 733,
         "balls": 467,
         "strikeRate": 156.96,
         "economy": 9.42
       },
       "death": {
-        "runs": 589,
         "balls": 333,
         "strikeRate": 176.88,
         "economy": 10.61
@@ -38024,7 +27969,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-d3f0a4d2": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 0,
     "runs": 0,
     "innings": 1,
@@ -38035,40 +27979,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 15,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 95,
         "balls": 96,
         "strikeRate": 98.96,
         "economy": 5.94
       },
       "death": {
-        "runs": 20,
         "balls": 24,
         "strikeRate": 83.33,
         "economy": 5
@@ -38089,20 +28012,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.13,
     "bowlingStrikeRate": 16.63,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 15,
         "strikeRate": 40,
         "economy": 2.4
       },
       "death": {
-        "runs": 145,
         "balls": 143,
         "strikeRate": 101.4,
         "economy": 6.08
@@ -38110,19 +28025,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1619,
         "balls": 1229,
         "strikeRate": 131.73,
         "economy": 7.9
       },
       "middle": {
-        "runs": 518,
         "balls": 342,
         "strikeRate": 151.46,
         "economy": 9.09
       },
       "death": {
-        "runs": 1089,
         "balls": 658,
         "strikeRate": 165.5,
         "economy": 9.93
@@ -38144,19 +28056,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 13.04,
     "battingPhases": {
       "powerplay": {
-        "runs": 183,
         "balls": 212,
         "strikeRate": 86.32,
         "economy": 5.18
       },
       "middle": {
-        "runs": 422,
         "balls": 390,
         "strikeRate": 108.21,
         "economy": 6.49
       },
       "death": {
-        "runs": 33,
         "balls": 34,
         "strikeRate": 97.06,
         "economy": 5.82
@@ -38164,19 +28073,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 133,
         "balls": 162,
         "strikeRate": 82.1,
         "economy": 4.93
       },
       "middle": {
-        "runs": 265,
         "balls": 276,
         "strikeRate": 96.01,
         "economy": 5.76
       },
       "death": {
-        "runs": 202,
         "balls": 201,
         "strikeRate": 100.5,
         "economy": 6.03
@@ -38197,20 +28103,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.67,
     "bowlingStrikeRate": 23.24,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 11,
         "balls": 15,
         "strikeRate": 73.33,
         "economy": 4.4
@@ -38218,19 +28111,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 222,
         "balls": 162,
         "strikeRate": 137.04,
         "economy": 8.22
       },
       "middle": {
-        "runs": 231,
         "balls": 210,
         "strikeRate": 110,
         "economy": 6.6
       },
       "death": {
-        "runs": 28,
         "balls": 23,
         "strikeRate": 121.74,
         "economy": 7.3
@@ -38240,7 +28130,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-d4fdb9d3": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 0,
     "runs": 0,
     "innings": 1,
@@ -38251,20 +28140,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 30,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
@@ -38272,19 +28148,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 13,
         "balls": 12,
         "strikeRate": 108.33,
         "economy": 6.5
       },
       "middle": {
-        "runs": 55,
         "balls": 36,
         "strikeRate": 152.78,
         "economy": 9.17
       },
       "death": {
-        "runs": 28,
         "balls": 12,
         "strikeRate": 233.33,
         "economy": 14
@@ -38305,20 +28178,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.29,
     "bowlingStrikeRate": 24.47,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 10,
         "balls": 12,
         "strikeRate": 83.33,
         "economy": 5
       },
       "death": {
-        "runs": 32,
         "balls": 30,
         "strikeRate": 106.67,
         "economy": 6.4
@@ -38326,19 +28191,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 481,
         "balls": 366,
         "strikeRate": 131.42,
         "economy": 7.89
       },
       "middle": {
-        "runs": 276,
         "balls": 204,
         "strikeRate": 135.29,
         "economy": 8.12
       },
       "death": {
-        "runs": 538,
         "balls": 311,
         "strikeRate": 172.99,
         "economy": 10.38
@@ -38360,19 +28222,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.33,
     "battingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 7,
         "strikeRate": 114.29,
         "economy": 6.86
       },
       "middle": {
-        "runs": 265,
         "balls": 197,
         "strikeRate": 134.52,
         "economy": 8.07
       },
       "death": {
-        "runs": 383,
         "balls": 254,
         "strikeRate": 150.79,
         "economy": 9.05
@@ -38380,19 +28239,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 807,
         "balls": 553,
         "strikeRate": 145.93,
         "economy": 8.76
       },
       "middle": {
-        "runs": 589,
         "balls": 401,
         "strikeRate": 146.88,
         "economy": 8.81
       },
       "death": {
-        "runs": 288,
         "balls": 185,
         "strikeRate": 155.68,
         "economy": 9.34
@@ -38406,50 +28262,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 123.89,
     "runs": 840,
     "innings": 50,
-    "bowlingAverage": null,
     "economyRate": 15,
     "wickets": 0,
     "matches": 50,
     "boundaryPct": 14.9,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 388,
         "balls": 325,
         "strikeRate": 119.38,
         "economy": 7.16
       },
       "middle": {
-        "runs": 361,
         "balls": 308,
         "strikeRate": 117.21,
         "economy": 7.03
       },
       "death": {
-        "runs": 91,
         "balls": 45,
         "strikeRate": 202.22,
         "economy": 12.13
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 15,
         "balls": 6,
         "strikeRate": 250,
         "economy": 15
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -38467,20 +28305,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.69,
     "bowlingStrikeRate": 14.28,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 19,
         "balls": 37,
         "strikeRate": 51.35,
         "economy": 3.08
@@ -38488,19 +28318,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 159,
         "balls": 126,
         "strikeRate": 126.19,
         "economy": 7.57
       },
       "middle": {
-        "runs": 974,
         "balls": 696,
         "strikeRate": 139.94,
         "economy": 8.4
       },
       "death": {
-        "runs": 1025,
         "balls": 692,
         "strikeRate": 148.12,
         "economy": 8.89
@@ -38514,50 +28341,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 136.14,
     "runs": 3616,
     "innings": 152,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 157,
     "boundaryPct": 17.17,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1816,
         "balls": 1474,
         "strikeRate": 123.2,
         "economy": 7.39
       },
       "middle": {
-        "runs": 1517,
         "balls": 1028,
         "strikeRate": 147.57,
         "economy": 8.85
       },
       "death": {
-        "runs": 283,
         "balls": 154,
         "strikeRate": 183.77,
         "economy": 11.03
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -38575,20 +28376,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 1.96,
     "bowlingStrikeRate": 16.13,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 2,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 28,
         "balls": 49,
         "strikeRate": 57.14,
         "economy": 3.43
@@ -38596,19 +28389,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1016,
         "balls": 972,
         "strikeRate": 104.53,
         "economy": 6.27
       },
       "middle": {
-        "runs": 156,
         "balls": 127,
         "strikeRate": 122.83,
         "economy": 7.37
       },
       "death": {
-        "runs": 911,
         "balls": 675,
         "strikeRate": 134.96,
         "economy": 8.1
@@ -38629,20 +28419,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 19.74,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 6,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 6,
         "balls": 25,
         "strikeRate": 24,
         "economy": 1.44
@@ -38650,19 +28432,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 224,
         "balls": 150,
         "strikeRate": 149.33,
         "economy": 8.96
       },
       "middle": {
-        "runs": 479,
         "balls": 378,
         "strikeRate": 126.72,
         "economy": 7.6
       },
       "death": {
-        "runs": 204,
         "balls": 163,
         "strikeRate": 125.15,
         "economy": 7.51
@@ -38683,20 +28462,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.73,
     "bowlingStrikeRate": 22.27,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 17,
         "strikeRate": 23.53,
         "economy": 1.41
       },
       "death": {
-        "runs": 130,
         "balls": 112,
         "strikeRate": 116.07,
         "economy": 6.96
@@ -38704,19 +28475,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 101,
         "balls": 84,
         "strikeRate": 120.24,
         "economy": 7.21
       },
       "middle": {
-        "runs": 2019,
         "balls": 1566,
         "strikeRate": 128.93,
         "economy": 7.74
       },
       "death": {
-        "runs": 243,
         "balls": 176,
         "strikeRate": 138.07,
         "economy": 8.28
@@ -38726,7 +28494,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-d8826d0d": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 57.14,
     "runs": 4,
     "innings": 3,
@@ -38737,20 +28504,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 20.61,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 4,
         "balls": 7,
         "strikeRate": 57.14,
         "economy": 3.43
@@ -38758,19 +28512,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 567,
         "balls": 414,
         "strikeRate": 136.96,
         "economy": 8.22
       },
       "middle": {
-        "runs": 810,
         "balls": 568,
         "strikeRate": 142.61,
         "economy": 8.56
       },
       "death": {
-        "runs": 1123,
         "balls": 667,
         "strikeRate": 168.37,
         "economy": 10.1
@@ -38791,20 +28542,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.13,
     "bowlingStrikeRate": 22.61,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 115,
         "balls": 116,
         "strikeRate": 99.14,
         "economy": 5.95
       },
       "death": {
-        "runs": 400,
         "balls": 256,
         "strikeRate": 156.25,
         "economy": 9.38
@@ -38812,19 +28555,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 861,
         "balls": 684,
         "strikeRate": 125.88,
         "economy": 7.55
       },
       "middle": {
-        "runs": 523,
         "balls": 330,
         "strikeRate": 158.48,
         "economy": 9.51
       },
       "death": {
-        "runs": 712,
         "balls": 365,
         "strikeRate": 195.07,
         "economy": 11.7
@@ -38846,19 +28586,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.53,
     "battingPhases": {
       "powerplay": {
-        "runs": 536,
         "balls": 417,
         "strikeRate": 128.54,
         "economy": 7.71
       },
       "middle": {
-        "runs": 776,
         "balls": 588,
         "strikeRate": 131.97,
         "economy": 7.92
       },
       "death": {
-        "runs": 418,
         "balls": 203,
         "strikeRate": 205.91,
         "economy": 12.35
@@ -38866,19 +28603,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 35,
         "balls": 18,
         "strikeRate": 194.44,
         "economy": 11.67
       },
       "middle": {
-        "runs": 352,
         "balls": 246,
         "strikeRate": 143.09,
         "economy": 8.59
       },
       "death": {
-        "runs": 38,
         "balls": 50,
         "strikeRate": 76,
         "economy": 4.56
@@ -38899,20 +28633,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 3.33,
     "bowlingStrikeRate": 25.57,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 13,
         "balls": 27,
         "strikeRate": 48.15,
         "economy": 2.89
       },
       "death": {
-        "runs": 32,
         "balls": 63,
         "strikeRate": 50.79,
         "economy": 3.05
@@ -38920,19 +28646,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 67,
         "balls": 71,
         "strikeRate": 94.37,
         "economy": 5.66
       },
       "middle": {
-        "runs": 579,
         "balls": 473,
         "strikeRate": 122.41,
         "economy": 7.34
       },
       "death": {
-        "runs": 72,
         "balls": 44,
         "strikeRate": 163.64,
         "economy": 9.82
@@ -38946,50 +28669,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 118.21,
     "runs": 409,
     "innings": 27,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 34,
     "boundaryPct": 10.69,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 26,
         "balls": 31,
         "strikeRate": 83.87,
         "economy": 5.03
       },
       "middle": {
-        "runs": 217,
         "balls": 189,
         "strikeRate": 114.81,
         "economy": 6.89
       },
       "death": {
-        "runs": 166,
         "balls": 126,
         "strikeRate": 131.75,
         "economy": 7.9
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -39000,50 +28697,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 146.26,
     "runs": 215,
     "innings": 9,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 9,
     "boundaryPct": 19.73,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 152,
         "balls": 99,
         "strikeRate": 153.54,
         "economy": 9.21
       },
       "middle": {
-        "runs": 63,
         "balls": 48,
         "strikeRate": 131.25,
         "economy": 7.88
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -39054,50 +28720,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 123.61,
     "runs": 1131,
     "innings": 59,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 64,
     "boundaryPct": 15.85,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 619,
         "balls": 516,
         "strikeRate": 119.96,
         "economy": 7.2
       },
       "middle": {
-        "runs": 383,
         "balls": 304,
         "strikeRate": 125.99,
         "economy": 7.56
       },
       "death": {
-        "runs": 129,
         "balls": 95,
         "strikeRate": 135.79,
         "economy": 8.15
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -39115,20 +28755,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.56,
     "bowlingStrikeRate": 22.59,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 50,
         "balls": 71,
         "strikeRate": 70.42,
         "economy": 4.23
@@ -39136,19 +28768,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 555,
         "balls": 384,
         "strikeRate": 144.53,
         "economy": 8.67
       },
       "middle": {
-        "runs": 535,
         "balls": 402,
         "strikeRate": 133.08,
         "economy": 7.99
       },
       "death": {
-        "runs": 391,
         "balls": 208,
         "strikeRate": 187.98,
         "economy": 11.28
@@ -39162,50 +28791,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 142.32,
     "runs": 1325,
     "innings": 55,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 56,
     "boundaryPct": 19.23,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 891,
         "balls": 601,
         "strikeRate": 148.25,
         "economy": 8.9
       },
       "middle": {
-        "runs": 406,
         "balls": 312,
         "strikeRate": 130.13,
         "economy": 7.81
       },
       "death": {
-        "runs": 28,
         "balls": 18,
         "strikeRate": 155.56,
         "economy": 9.33
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -39216,50 +28819,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 104.94,
     "runs": 85,
     "innings": 6,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 7,
     "boundaryPct": 12.35,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 30,
         "balls": 34,
         "strikeRate": 88.24,
         "economy": 5.29
       },
       "middle": {
-        "runs": 51,
         "balls": 39,
         "strikeRate": 130.77,
         "economy": 7.85
       },
       "death": {
-        "runs": 4,
         "balls": 8,
         "strikeRate": 50,
         "economy": 3
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -39277,20 +28854,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.5,
     "bowlingStrikeRate": 19.32,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 6,
         "balls": 6,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 2,
         "balls": 2,
         "strikeRate": 100,
         "economy": 6
@@ -39298,19 +28867,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 496,
         "balls": 330,
         "strikeRate": 150.3,
         "economy": 9.02
       },
       "middle": {
-        "runs": 106,
         "balls": 72,
         "strikeRate": 147.22,
         "economy": 8.83
       },
       "death": {
-        "runs": 169,
         "balls": 81,
         "strikeRate": 208.64,
         "economy": 12.52
@@ -39324,50 +28890,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 124.9,
     "runs": 647,
     "innings": 34,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 36,
     "boundaryPct": 14.09,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 209,
         "balls": 169,
         "strikeRate": 123.67,
         "economy": 7.42
       },
       "middle": {
-        "runs": 345,
         "balls": 283,
         "strikeRate": 121.91,
         "economy": 7.31
       },
       "death": {
-        "runs": 93,
         "balls": 66,
         "strikeRate": 140.91,
         "economy": 8.45
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -39385,20 +28925,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.68,
     "bowlingStrikeRate": 21,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 35,
         "balls": 43,
         "strikeRate": 81.4,
         "economy": 4.88
       },
       "death": {
-        "runs": 40,
         "balls": 45,
         "strikeRate": 88.89,
         "economy": 5.33
@@ -39406,19 +28938,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 42,
         "balls": 30,
         "strikeRate": 140,
         "economy": 8.4
       },
       "middle": {
-        "runs": 20,
         "balls": 24,
         "strikeRate": 83.33,
         "economy": 5
       },
       "death": {
-        "runs": 62,
         "balls": 30,
         "strikeRate": 206.67,
         "economy": 12.4
@@ -39439,20 +28968,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 72,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 2,
         "balls": 4,
         "strikeRate": 50,
         "economy": 3
@@ -39460,19 +28976,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 33,
         "balls": 24,
         "strikeRate": 137.5,
         "economy": 8.25
       },
       "middle": {
-        "runs": 59,
         "balls": 36,
         "strikeRate": 163.89,
         "economy": 9.83
       },
       "death": {
-        "runs": 25,
         "balls": 12,
         "strikeRate": 208.33,
         "economy": 12.5
@@ -39494,39 +29007,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.5,
     "battingPhases": {
       "powerplay": {
-        "runs": 139,
         "balls": 143,
         "strikeRate": 97.2,
         "economy": 5.83
       },
       "middle": {
-        "runs": 1128,
         "balls": 910,
         "strikeRate": 123.96,
         "economy": 7.44
       },
       "death": {
-        "runs": 1004,
         "balls": 552,
         "strikeRate": 181.88,
         "economy": 10.91
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 128,
         "balls": 66,
         "strikeRate": 193.94,
         "economy": 11.64
       },
       "death": {
-        "runs": 25,
         "balls": 12,
         "strikeRate": 208.33,
         "economy": 12.5
@@ -39548,19 +29050,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 26,
     "battingPhases": {
       "powerplay": {
-        "runs": 170,
         "balls": 159,
         "strikeRate": 106.92,
         "economy": 6.42
       },
       "middle": {
-        "runs": 638,
         "balls": 540,
         "strikeRate": 118.15,
         "economy": 7.09
       },
       "death": {
-        "runs": 526,
         "balls": 324,
         "strikeRate": 162.35,
         "economy": 9.74
@@ -39568,19 +29067,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 28,
         "balls": 20,
         "strikeRate": 140,
         "economy": 8.4
       },
       "middle": {
-        "runs": 416,
         "balls": 287,
         "strikeRate": 144.95,
         "economy": 8.7
       },
       "death": {
-        "runs": 91,
         "balls": 57,
         "strikeRate": 159.65,
         "economy": 9.58
@@ -39594,47 +29090,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 148.59,
     "runs": 370,
     "innings": 21,
-    "bowlingAverage": null,
     "economyRate": 12,
     "wickets": 0,
     "matches": 22,
     "boundaryPct": 22.89,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 105,
         "balls": 85,
         "strikeRate": 123.53,
         "economy": 7.41
       },
       "middle": {
-        "runs": 222,
         "balls": 139,
         "strikeRate": 159.71,
         "economy": 9.58
       },
       "death": {
-        "runs": 43,
         "balls": 25,
         "strikeRate": 172,
         "economy": 10.32
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 36,
         "balls": 18,
         "strikeRate": 200,
         "economy": 12
       },
       "death": {
-        "runs": 12,
         "balls": 6,
         "strikeRate": 200,
         "economy": 12
@@ -39656,19 +29139,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.44,
     "battingPhases": {
       "powerplay": {
-        "runs": 1065,
         "balls": 709,
         "strikeRate": 150.21,
         "economy": 9.01
       },
       "middle": {
-        "runs": 1361,
         "balls": 1034,
         "strikeRate": 131.62,
         "economy": 7.9
       },
       "death": {
-        "runs": 415,
         "balls": 217,
         "strikeRate": 191.24,
         "economy": 11.47
@@ -39676,19 +29156,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 261,
         "balls": 174,
         "strikeRate": 150,
         "economy": 9
       },
       "middle": {
-        "runs": 653,
         "balls": 564,
         "strikeRate": 115.78,
         "economy": 6.95
       },
       "death": {
-        "runs": 136,
         "balls": 96,
         "strikeRate": 141.67,
         "economy": 8.5
@@ -39702,50 +29179,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 126.96,
     "runs": 3391,
     "innings": 163,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 174,
     "boundaryPct": 14.71,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 288,
         "balls": 311,
         "strikeRate": 92.6,
         "economy": 5.56
       },
       "middle": {
-        "runs": 1980,
         "balls": 1680,
         "strikeRate": 117.86,
         "economy": 7.07
       },
       "death": {
-        "runs": 1123,
         "balls": 680,
         "strikeRate": 165.15,
         "economy": 9.91
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -39764,19 +29215,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.77,
     "battingPhases": {
       "powerplay": {
-        "runs": 4,
         "balls": 6,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 124,
         "balls": 135,
         "strikeRate": 91.85,
         "economy": 5.51
       },
       "death": {
-        "runs": 463,
         "balls": 304,
         "strikeRate": 152.3,
         "economy": 9.14
@@ -39784,19 +29232,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2202,
         "balls": 1662,
         "strikeRate": 132.49,
         "economy": 7.95
       },
       "middle": {
-        "runs": 745,
         "balls": 500,
         "strikeRate": 149,
         "economy": 8.94
       },
       "death": {
-        "runs": 360,
         "balls": 185,
         "strikeRate": 194.59,
         "economy": 11.68
@@ -39810,50 +29255,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 122.55,
     "runs": 500,
     "innings": 21,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 22,
     "boundaryPct": 13.73,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 118,
         "balls": 109,
         "strikeRate": 108.26,
         "economy": 6.5
       },
       "middle": {
-        "runs": 283,
         "balls": 220,
         "strikeRate": 128.64,
         "economy": 7.72
       },
       "death": {
-        "runs": 99,
         "balls": 79,
         "strikeRate": 125.32,
         "economy": 7.52
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -39872,19 +29291,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.18,
     "battingPhases": {
       "powerplay": {
-        "runs": 1204,
         "balls": 880,
         "strikeRate": 136.82,
         "economy": 8.21
       },
       "middle": {
-        "runs": 993,
         "balls": 832,
         "strikeRate": 119.35,
         "economy": 7.16
       },
       "death": {
-        "runs": 341,
         "balls": 219,
         "strikeRate": 155.71,
         "economy": 9.34
@@ -39892,19 +29308,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 41,
         "balls": 30,
         "strikeRate": 136.67,
         "economy": 8.2
       },
       "middle": {
-        "runs": 452,
         "balls": 390,
         "strikeRate": 115.9,
         "economy": 6.95
       },
       "death": {
-        "runs": 135,
         "balls": 90,
         "strikeRate": 150,
         "economy": 9
@@ -39918,50 +29331,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 136.04,
     "runs": 5201,
     "innings": 204,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 214,
     "boundaryPct": 16.98,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1906,
         "balls": 1591,
         "strikeRate": 119.8,
         "economy": 7.19
       },
       "middle": {
-        "runs": 2436,
         "balls": 1778,
         "strikeRate": 137.01,
         "economy": 8.22
       },
       "death": {
-        "runs": 859,
         "balls": 454,
         "strikeRate": 189.21,
         "economy": 11.35
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -39972,50 +29359,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 109.23,
     "runs": 71,
     "innings": 7,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 7,
     "boundaryPct": 12.31,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 10,
         "balls": 21,
         "strikeRate": 47.62,
         "economy": 2.86
       },
       "middle": {
-        "runs": 34,
         "balls": 25,
         "strikeRate": 136,
         "economy": 8.16
       },
       "death": {
-        "runs": 27,
         "balls": 19,
         "strikeRate": 142.11,
         "economy": 8.53
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -40026,50 +29387,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 119.39,
     "runs": 1946,
     "innings": 150,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 173,
     "boundaryPct": 13.37,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 230,
         "balls": 194,
         "strikeRate": 118.56,
         "economy": 7.11
       },
       "middle": {
-        "runs": 826,
         "balls": 837,
         "strikeRate": 98.69,
         "economy": 5.92
       },
       "death": {
-        "runs": 890,
         "balls": 599,
         "strikeRate": 148.58,
         "economy": 8.91
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -40080,50 +29415,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 120.38,
     "runs": 1264,
     "innings": 61,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 65,
     "boundaryPct": 13.43,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 776,
         "balls": 630,
         "strikeRate": 123.17,
         "economy": 7.39
       },
       "middle": {
-        "runs": 447,
         "balls": 386,
         "strikeRate": 115.8,
         "economy": 6.95
       },
       "death": {
-        "runs": 41,
         "balls": 34,
         "strikeRate": 120.59,
         "economy": 7.24
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -40142,19 +29451,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.57,
     "battingPhases": {
       "powerplay": {
-        "runs": 42,
         "balls": 35,
         "strikeRate": 120,
         "economy": 7.2
       },
       "middle": {
-        "runs": 597,
         "balls": 501,
         "strikeRate": 119.16,
         "economy": 7.15
       },
       "death": {
-        "runs": 1030,
         "balls": 620,
         "strikeRate": 166.13,
         "economy": 9.97
@@ -40162,19 +29468,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1253,
         "balls": 832,
         "strikeRate": 150.6,
         "economy": 9.04
       },
       "middle": {
-        "runs": 1411,
         "balls": 1026,
         "strikeRate": 137.52,
         "economy": 8.25
       },
       "death": {
-        "runs": 930,
         "balls": 537,
         "strikeRate": 173.18,
         "economy": 10.39
@@ -40196,19 +29499,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18,
     "battingPhases": {
       "powerplay": {
-        "runs": 26,
         "balls": 19,
         "strikeRate": 136.84,
         "economy": 8.21
       },
       "middle": {
-        "runs": 129,
         "balls": 108,
         "strikeRate": 119.44,
         "economy": 7.17
       },
       "death": {
-        "runs": 152,
         "balls": 93,
         "strikeRate": 163.44,
         "economy": 9.81
@@ -40216,19 +29516,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 814,
         "balls": 684,
         "strikeRate": 119.01,
         "economy": 7.14
       },
       "middle": {
-        "runs": 179,
         "balls": 132,
         "strikeRate": 135.61,
         "economy": 8.14
       },
       "death": {
-        "runs": 354,
         "balls": 210,
         "strikeRate": 168.57,
         "economy": 10.11
@@ -40249,20 +29546,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.56,
     "bowlingStrikeRate": 23.22,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 40,
         "balls": 54,
         "strikeRate": 74.07,
         "economy": 4.44
       },
       "death": {
-        "runs": 209,
         "balls": 152,
         "strikeRate": 137.5,
         "economy": 8.25
@@ -40270,19 +29559,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 254,
         "balls": 156,
         "strikeRate": 162.82,
         "economy": 9.77
       },
       "middle": {
-        "runs": 793,
         "balls": 648,
         "strikeRate": 122.38,
         "economy": 7.34
       },
       "death": {
-        "runs": 98,
         "balls": 55,
         "strikeRate": 178.18,
         "economy": 10.69
@@ -40296,50 +29582,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 151.92,
     "runs": 3008,
     "innings": 102,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 103,
     "boundaryPct": 22.98,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1758,
         "balls": 1163,
         "strikeRate": 151.16,
         "economy": 9.07
       },
       "middle": {
-        "runs": 1063,
         "balls": 714,
         "strikeRate": 148.88,
         "economy": 8.93
       },
       "death": {
-        "runs": 187,
         "balls": 103,
         "strikeRate": 181.55,
         "economy": 10.89
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -40358,19 +29618,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 14.44,
     "battingPhases": {
       "powerplay": {
-        "runs": 83,
         "balls": 91,
         "strikeRate": 91.21,
         "economy": 5.47
       },
       "middle": {
-        "runs": 605,
         "balls": 550,
         "strikeRate": 110,
         "economy": 6.6
       },
       "death": {
-        "runs": 264,
         "balls": 152,
         "strikeRate": 173.68,
         "economy": 10.42
@@ -40378,19 +29635,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 135,
         "balls": 150,
         "strikeRate": 90,
         "economy": 5.4
       },
       "middle": {
-        "runs": 421,
         "balls": 542,
         "strikeRate": 77.68,
         "economy": 4.66
       },
       "death": {
-        "runs": 164,
         "balls": 189,
         "strikeRate": 86.77,
         "economy": 5.21
@@ -40411,20 +29665,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.89,
     "bowlingStrikeRate": 20.84,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 17,
         "balls": 25,
         "strikeRate": 68,
         "economy": 4.08
       },
       "death": {
-        "runs": 69,
         "balls": 89,
         "strikeRate": 77.53,
         "economy": 4.65
@@ -40432,19 +29678,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 432,
         "balls": 372,
         "strikeRate": 116.13,
         "economy": 6.97
       },
       "middle": {
-        "runs": 3293,
         "balls": 2881,
         "strikeRate": 114.3,
         "economy": 6.86
       },
       "death": {
-        "runs": 457,
         "balls": 331,
         "strikeRate": 138.07,
         "economy": 8.28
@@ -40466,19 +29709,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.34,
     "battingPhases": {
       "powerplay": {
-        "runs": 6,
         "balls": 11,
         "strikeRate": 54.55,
         "economy": 3.27
       },
       "middle": {
-        "runs": 237,
         "balls": 283,
         "strikeRate": 83.75,
         "economy": 5.02
       },
       "death": {
-        "runs": 668,
         "balls": 460,
         "strikeRate": 145.22,
         "economy": 8.71
@@ -40486,19 +29726,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1762,
         "balls": 1308,
         "strikeRate": 134.71,
         "economy": 8.08
       },
       "middle": {
-        "runs": 2024,
         "balls": 1497,
         "strikeRate": 135.2,
         "economy": 8.11
       },
       "death": {
-        "runs": 1754,
         "balls": 1045,
         "strikeRate": 167.85,
         "economy": 10.07
@@ -40519,20 +29756,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.64,
     "bowlingStrikeRate": 22.29,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 9,
         "balls": 17,
         "strikeRate": 52.94,
         "economy": 3.18
       },
       "death": {
-        "runs": 76,
         "balls": 64,
         "strikeRate": 118.75,
         "economy": 7.13
@@ -40540,19 +29769,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 302,
         "balls": 246,
         "strikeRate": 122.76,
         "economy": 7.37
       },
       "middle": {
-        "runs": 1199,
         "balls": 943,
         "strikeRate": 127.15,
         "economy": 7.63
       },
       "death": {
-        "runs": 331,
         "balls": 193,
         "strikeRate": 171.5,
         "economy": 10.29
@@ -40566,50 +29792,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 129.18,
     "runs": 1669,
     "innings": 79,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 81,
     "boundaryPct": 17.26,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1015,
         "balls": 784,
         "strikeRate": 129.46,
         "economy": 7.77
       },
       "middle": {
-        "runs": 531,
         "balls": 450,
         "strikeRate": 118,
         "economy": 7.08
       },
       "death": {
-        "runs": 123,
         "balls": 58,
         "strikeRate": 212.07,
         "economy": 12.72
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -40627,20 +29827,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.08,
     "bowlingStrikeRate": 19.37,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 15,
         "balls": 19,
         "strikeRate": 78.95,
         "economy": 4.74
       },
       "death": {
-        "runs": 106,
         "balls": 100,
         "strikeRate": 106,
         "economy": 6.36
@@ -40648,19 +29840,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 40,
         "balls": 30,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 1207,
         "balls": 885,
         "strikeRate": 136.38,
         "economy": 8.18
       },
       "death": {
-        "runs": 141,
         "balls": 92,
         "strikeRate": 153.26,
         "economy": 9.2
@@ -40674,50 +29863,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 131.34,
     "runs": 4723,
     "innings": 182,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 186,
     "boundaryPct": 16.18,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1971,
         "balls": 1512,
         "strikeRate": 130.36,
         "economy": 7.82
       },
       "middle": {
-        "runs": 2291,
         "balls": 1804,
         "strikeRate": 127,
         "economy": 7.62
       },
       "death": {
-        "runs": 461,
         "balls": 280,
         "strikeRate": 164.64,
         "economy": 9.88
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -40728,50 +29891,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 144.19,
     "runs": 1987,
     "innings": 81,
-    "bowlingAverage": null,
     "economyRate": 12,
     "wickets": 0,
     "matches": 82,
     "boundaryPct": 20.39,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 903,
         "balls": 675,
         "strikeRate": 133.78,
         "economy": 8.03
       },
       "middle": {
-        "runs": 803,
         "balls": 555,
         "strikeRate": 144.68,
         "economy": 8.68
       },
       "death": {
-        "runs": 281,
         "balls": 148,
         "strikeRate": 189.86,
         "economy": 11.39
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 12,
         "balls": 6,
         "strikeRate": 200,
         "economy": 12
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -40790,19 +29935,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.84,
     "battingPhases": {
       "powerplay": {
-        "runs": 516,
         "balls": 407,
         "strikeRate": 126.78,
         "economy": 7.61
       },
       "middle": {
-        "runs": 523,
         "balls": 354,
         "strikeRate": 147.74,
         "economy": 8.86
       },
       "death": {
-        "runs": 133,
         "balls": 86,
         "strikeRate": 154.65,
         "economy": 9.28
@@ -40810,19 +29952,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 24,
         "balls": 12,
         "strikeRate": 200,
         "economy": 12
       },
       "middle": {
-        "runs": 385,
         "balls": 348,
         "strikeRate": 110.63,
         "economy": 6.64
       },
       "death": {
-        "runs": 38,
         "balls": 36,
         "strikeRate": 105.56,
         "economy": 6.33
@@ -40843,20 +29982,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.1,
     "bowlingStrikeRate": 16.52,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 42,
         "balls": 68,
         "strikeRate": 61.76,
         "economy": 3.71
       },
       "death": {
-        "runs": 216,
         "balls": 256,
         "strikeRate": 84.38,
         "economy": 5.06
@@ -40864,19 +29995,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 138,
         "balls": 90,
         "strikeRate": 153.33,
         "economy": 9.2
       },
       "middle": {
-        "runs": 3570,
         "balls": 2803,
         "strikeRate": 127.36,
         "economy": 7.64
       },
       "death": {
-        "runs": 694,
         "balls": 478,
         "strikeRate": 145.19,
         "economy": 8.71
@@ -40898,19 +30026,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.68,
     "battingPhases": {
       "powerplay": {
-        "runs": 780,
         "balls": 730,
         "strikeRate": 106.85,
         "economy": 6.41
       },
       "middle": {
-        "runs": 3301,
         "balls": 2629,
         "strikeRate": 125.56,
         "economy": 7.53
       },
       "death": {
-        "runs": 1068,
         "balls": 663,
         "strikeRate": 161.09,
         "economy": 9.67
@@ -40918,19 +30043,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 406,
         "balls": 287,
         "strikeRate": 141.46,
         "economy": 8.49
       },
       "middle": {
-        "runs": 1605,
         "balls": 1258,
         "strikeRate": 127.58,
         "economy": 7.66
       },
       "death": {
-        "runs": 432,
         "balls": 247,
         "strikeRate": 174.9,
         "economy": 10.49
@@ -40952,19 +30074,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 27,
     "battingPhases": {
       "powerplay": {
-        "runs": 165,
         "balls": 175,
         "strikeRate": 94.29,
         "economy": 5.66
       },
       "middle": {
-        "runs": 1195,
         "balls": 958,
         "strikeRate": 124.74,
         "economy": 7.48
       },
       "death": {
-        "runs": 735,
         "balls": 440,
         "strikeRate": 167.05,
         "economy": 10.02
@@ -40972,19 +30091,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 306,
         "balls": 230,
         "strikeRate": 133.04,
         "economy": 7.98
       },
       "middle": {
-        "runs": 496,
         "balls": 364,
         "strikeRate": 136.26,
         "economy": 8.18
       },
       "death": {
-        "runs": 401,
         "balls": 216,
         "strikeRate": 185.65,
         "economy": 11.14
@@ -41006,19 +30122,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 90,
     "battingPhases": {
       "powerplay": {
-        "runs": 31,
         "balls": 38,
         "strikeRate": 81.58,
         "economy": 4.89
       },
       "middle": {
-        "runs": 266,
         "balls": 193,
         "strikeRate": 137.82,
         "economy": 8.27
       },
       "death": {
-        "runs": 230,
         "balls": 142,
         "strikeRate": 161.97,
         "economy": 9.72
@@ -41026,22 +30139,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 11,
         "balls": 12,
         "strikeRate": 91.67,
         "economy": 5.5
       },
       "middle": {
-        "runs": 116,
         "balls": 78,
         "strikeRate": 148.72,
         "economy": 8.92
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -41052,50 +30157,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 116.08,
     "runs": 765,
     "innings": 47,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 50,
     "boundaryPct": 13.35,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 293,
         "balls": 255,
         "strikeRate": 114.9,
         "economy": 6.89
       },
       "middle": {
-        "runs": 321,
         "balls": 312,
         "strikeRate": 102.88,
         "economy": 6.17
       },
       "death": {
-        "runs": 151,
         "balls": 92,
         "strikeRate": 164.13,
         "economy": 9.85
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -41113,20 +30192,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 5.88,
     "bowlingStrikeRate": 20.5,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 1,
         "balls": 14,
         "strikeRate": 7.14,
         "economy": 0.43
       },
       "death": {
-        "runs": 19,
         "balls": 20,
         "strikeRate": 95,
         "economy": 5.7
@@ -41134,19 +30205,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 117,
         "balls": 90,
         "strikeRate": 130,
         "economy": 7.8
       },
       "middle": {
-        "runs": 203,
         "balls": 144,
         "strikeRate": 140.97,
         "economy": 8.46
       },
       "death": {
-        "runs": 171,
         "balls": 94,
         "strikeRate": 181.91,
         "economy": 10.91
@@ -41167,20 +30235,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.18,
     "bowlingStrikeRate": 27,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 62,
         "balls": 75,
         "strikeRate": 82.67,
         "economy": 4.96
       },
       "death": {
-        "runs": 132,
         "balls": 95,
         "strikeRate": 138.95,
         "economy": 8.34
@@ -41188,19 +30248,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 123,
         "balls": 102,
         "strikeRate": 120.59,
         "economy": 7.24
       },
       "middle": {
-        "runs": 298,
         "balls": 205,
         "strikeRate": 145.37,
         "economy": 8.72
       },
       "death": {
-        "runs": 37,
         "balls": 17,
         "strikeRate": 217.65,
         "economy": 13.06
@@ -41221,20 +30278,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.17,
     "bowlingStrikeRate": 17.1,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 23,
         "balls": 48,
         "strikeRate": 47.92,
         "economy": 2.88
@@ -41242,19 +30286,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1041,
         "balls": 833,
         "strikeRate": 124.97,
         "economy": 7.5
       },
       "middle": {
-        "runs": 288,
         "balls": 210,
         "strikeRate": 137.14,
         "economy": 8.23
       },
       "death": {
-        "runs": 766,
         "balls": 445,
         "strikeRate": 172.13,
         "economy": 10.33
@@ -41276,19 +30317,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.74,
     "battingPhases": {
       "powerplay": {
-        "runs": 82,
         "balls": 62,
         "strikeRate": 132.26,
         "economy": 7.94
       },
       "middle": {
-        "runs": 470,
         "balls": 418,
         "strikeRate": 112.44,
         "economy": 6.75
       },
       "death": {
-        "runs": 734,
         "balls": 435,
         "strikeRate": 168.74,
         "economy": 10.12
@@ -41296,19 +30334,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 960,
         "balls": 786,
         "strikeRate": 122.14,
         "economy": 7.33
       },
       "middle": {
-        "runs": 986,
         "balls": 792,
         "strikeRate": 124.49,
         "economy": 7.47
       },
       "death": {
-        "runs": 1114,
         "balls": 649,
         "strikeRate": 171.65,
         "economy": 10.3
@@ -41330,39 +30365,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.1,
     "battingPhases": {
       "powerplay": {
-        "runs": 220,
         "balls": 236,
         "strikeRate": 93.22,
         "economy": 5.59
       },
       "middle": {
-        "runs": 1107,
         "balls": 911,
         "strikeRate": 121.51,
         "economy": 7.29
       },
       "death": {
-        "runs": 360,
         "balls": 260,
         "strikeRate": 138.46,
         "economy": 8.31
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 548,
         "balls": 382,
         "strikeRate": 143.46,
         "economy": 8.61
       },
       "death": {
-        "runs": 259,
         "balls": 148,
         "strikeRate": 175,
         "economy": 10.5
@@ -41383,20 +30407,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.97,
     "bowlingStrikeRate": 15.12,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 61,
         "balls": 52,
         "strikeRate": 117.31,
         "economy": 7.04
       },
       "death": {
-        "runs": 133,
         "balls": 95,
         "strikeRate": 140,
         "economy": 8.4
@@ -41404,19 +30420,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 383,
         "balls": 324,
         "strikeRate": 118.21,
         "economy": 7.09
       },
       "middle": {
-        "runs": 187,
         "balls": 160,
         "strikeRate": 116.88,
         "economy": 7.01
       },
       "death": {
-        "runs": 387,
         "balls": 257,
         "strikeRate": 150.58,
         "economy": 9.04
@@ -41426,7 +30439,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-ec51b682": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 85.71,
     "runs": 6,
     "innings": 4,
@@ -41437,20 +30449,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 19.34,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 6,
         "balls": 7,
         "strikeRate": 85.71,
         "economy": 5.14
@@ -41458,19 +30457,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 300,
         "balls": 264,
         "strikeRate": 113.64,
         "economy": 6.82
       },
       "middle": {
-        "runs": 421,
         "balls": 312,
         "strikeRate": 134.94,
         "economy": 8.1
       },
       "death": {
-        "runs": 360,
         "balls": 217,
         "strikeRate": 165.9,
         "economy": 9.95
@@ -41491,20 +30487,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 17.78,
     "bowlingStrikeRate": 16.73,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 8,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 117,
         "balls": 82,
         "strikeRate": 142.68,
         "economy": 8.56
@@ -41512,19 +30500,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 534,
         "balls": 426,
         "strikeRate": 125.35,
         "economy": 7.52
       },
       "middle": {
-        "runs": 787,
         "balls": 576,
         "strikeRate": 136.63,
         "economy": 8.2
       },
       "death": {
-        "runs": 572,
         "balls": 320,
         "strikeRate": 178.75,
         "economy": 10.73
@@ -41538,50 +30523,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 134.59,
     "runs": 463,
     "innings": 22,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 23,
     "boundaryPct": 17.15,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 185,
         "balls": 134,
         "strikeRate": 138.06,
         "economy": 8.28
       },
       "middle": {
-        "runs": 170,
         "balls": 155,
         "strikeRate": 109.68,
         "economy": 6.58
       },
       "death": {
-        "runs": 108,
         "balls": 55,
         "strikeRate": 196.36,
         "economy": 11.78
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -41600,19 +30559,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.8,
     "battingPhases": {
       "powerplay": {
-        "runs": 256,
         "balls": 220,
         "strikeRate": 116.36,
         "economy": 6.98
       },
       "middle": {
-        "runs": 500,
         "balls": 446,
         "strikeRate": 112.11,
         "economy": 6.73
       },
       "death": {
-        "runs": 126,
         "balls": 77,
         "strikeRate": 163.64,
         "economy": 9.82
@@ -41620,22 +30576,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 12,
         "balls": 6,
         "strikeRate": 200,
         "economy": 12
       },
       "middle": {
-        "runs": 117,
         "balls": 83,
         "strikeRate": 140.96,
         "economy": 8.46
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -41653,20 +30601,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 14.79,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 17,
         "balls": 22,
         "strikeRate": 77.27,
         "economy": 4.64
@@ -41674,19 +30609,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 212,
         "balls": 174,
         "strikeRate": 121.84,
         "economy": 7.31
       },
       "middle": {
-        "runs": 52,
         "balls": 42,
         "strikeRate": 123.81,
         "economy": 7.43
       },
       "death": {
-        "runs": 138,
         "balls": 65,
         "strikeRate": 212.31,
         "economy": 12.74
@@ -41700,27 +30632,17 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 102.61,
     "runs": 157,
     "innings": 18,
-    "bowlingAverage": null,
     "economyRate": 10.47,
     "wickets": 0,
     "matches": 20,
     "boundaryPct": 9.8,
-    "bowlingStrikeRate": null,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 76,
         "balls": 89,
         "strikeRate": 85.39,
         "economy": 5.12
       },
       "death": {
-        "runs": 81,
         "balls": 64,
         "strikeRate": 126.56,
         "economy": 7.59
@@ -41728,19 +30650,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 25,
         "balls": 12,
         "strikeRate": 208.33,
         "economy": 12.5
       },
       "middle": {
-        "runs": 49,
         "balls": 30,
         "strikeRate": 163.33,
         "economy": 9.8
       },
       "death": {
-        "runs": 22,
         "balls": 13,
         "strikeRate": 169.23,
         "economy": 10.15
@@ -41761,20 +30680,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.72,
     "bowlingStrikeRate": 20.69,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 10,
         "strikeRate": 70,
         "economy": 4.2
       },
       "death": {
-        "runs": 84,
         "balls": 96,
         "strikeRate": 87.5,
         "economy": 5.25
@@ -41782,19 +30693,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1483,
         "balls": 1176,
         "strikeRate": 126.11,
         "economy": 7.57
       },
       "middle": {
-        "runs": 600,
         "balls": 504,
         "strikeRate": 119.05,
         "economy": 7.14
       },
       "death": {
-        "runs": 208,
         "balls": 141,
         "strikeRate": 147.52,
         "economy": 8.85
@@ -41815,40 +30723,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 14.71,
     "bowlingStrikeRate": 22.67,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 7,
         "balls": 9,
         "strikeRate": 77.78,
         "economy": 4.67
       },
       "death": {
-        "runs": 36,
         "balls": 25,
         "strikeRate": 144,
         "economy": 8.64
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 73,
         "balls": 62,
         "strikeRate": 117.74,
         "economy": 7.06
       },
       "death": {
-        "runs": 10,
         "balls": 6,
         "strikeRate": 166.67,
         "economy": 10
@@ -41862,50 +30754,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 126.14,
     "runs": 1573,
     "innings": 92,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 110,
     "boundaryPct": 13.95,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 72,
         "balls": 88,
         "strikeRate": 81.82,
         "economy": 4.91
       },
       "middle": {
-        "runs": 665,
         "balls": 665,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 836,
         "balls": 494,
         "strikeRate": 169.23,
         "economy": 10.15
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -41916,50 +30782,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 132.88,
     "runs": 97,
     "innings": 5,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 6,
     "boundaryPct": 20.55,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 45,
         "balls": 38,
         "strikeRate": 118.42,
         "economy": 7.11
       },
       "middle": {
-        "runs": 34,
         "balls": 24,
         "strikeRate": 141.67,
         "economy": 8.5
       },
       "death": {
-        "runs": 18,
         "balls": 11,
         "strikeRate": 163.64,
         "economy": 9.82
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -41977,20 +30817,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.79,
     "bowlingStrikeRate": 18.87,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 46,
         "balls": 57,
         "strikeRate": 80.7,
         "economy": 4.84
       },
       "death": {
-        "runs": 193,
         "balls": 182,
         "strikeRate": 106.04,
         "economy": 6.36
@@ -41998,19 +30830,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1603,
         "balls": 1161,
         "strikeRate": 138.07,
         "economy": 8.28
       },
       "middle": {
-        "runs": 488,
         "balls": 330,
         "strikeRate": 147.88,
         "economy": 8.87
       },
       "death": {
-        "runs": 1239,
         "balls": 736,
         "strikeRate": 168.34,
         "economy": 10.1
@@ -42031,20 +30860,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 6.25,
     "bowlingStrikeRate": 19.96,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 16,
         "balls": 16,
         "strikeRate": 100,
         "economy": 6
@@ -42052,19 +30868,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 147,
         "balls": 78,
         "strikeRate": 188.46,
         "economy": 11.31
       },
       "middle": {
-        "runs": 505,
         "balls": 318,
         "strikeRate": 158.81,
         "economy": 9.53
       },
       "death": {
-        "runs": 254,
         "balls": 123,
         "strikeRate": 206.5,
         "economy": 12.39
@@ -42085,20 +30898,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.51,
     "bowlingStrikeRate": 19.81,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 5,
         "strikeRate": 60,
         "economy": 3.6
       },
       "death": {
-        "runs": 76,
         "balls": 69,
         "strikeRate": 110.14,
         "economy": 6.61
@@ -42106,19 +30911,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 445,
         "balls": 324,
         "strikeRate": 137.35,
         "economy": 8.24
       },
       "middle": {
-        "runs": 220,
         "balls": 192,
         "strikeRate": 114.58,
         "economy": 6.88
       },
       "death": {
-        "runs": 400,
         "balls": 217,
         "strikeRate": 184.33,
         "economy": 11.06
@@ -42139,20 +30941,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10,
     "bowlingStrikeRate": 16.15,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 17,
         "balls": 20,
         "strikeRate": 85,
         "economy": 5.1
@@ -42160,19 +30949,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 514,
         "balls": 420,
         "strikeRate": 122.38,
         "economy": 7.34
       },
       "middle": {
-        "runs": 86,
         "balls": 60,
         "strikeRate": 143.33,
         "economy": 8.6
       },
       "death": {
-        "runs": 289,
         "balls": 166,
         "strikeRate": 174.1,
         "economy": 10.45
@@ -42194,19 +30980,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.29,
     "battingPhases": {
       "powerplay": {
-        "runs": 94,
         "balls": 88,
         "strikeRate": 106.82,
         "economy": 6.41
       },
       "middle": {
-        "runs": 355,
         "balls": 283,
         "strikeRate": 125.44,
         "economy": 7.53
       },
       "death": {
-        "runs": 407,
         "balls": 237,
         "strikeRate": 171.73,
         "economy": 10.3
@@ -42214,19 +30997,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 442,
         "balls": 318,
         "strikeRate": 138.99,
         "economy": 8.34
       },
       "middle": {
-        "runs": 953,
         "balls": 707,
         "strikeRate": 134.79,
         "economy": 8.09
       },
       "death": {
-        "runs": 102,
         "balls": 54,
         "strikeRate": 188.89,
         "economy": 11.33
@@ -42247,20 +31027,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 21.24,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 4,
         "balls": 8,
         "strikeRate": 50,
         "economy": 3
@@ -42268,19 +31040,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 688,
         "balls": 438,
         "strikeRate": 157.08,
         "economy": 9.42
       },
       "middle": {
-        "runs": 287,
         "balls": 205,
         "strikeRate": 140,
         "economy": 8.4
       },
       "death": {
-        "runs": 415,
         "balls": 228,
         "strikeRate": 182.02,
         "economy": 10.92
@@ -42302,19 +31071,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.39,
     "battingPhases": {
       "powerplay": {
-        "runs": 117,
         "balls": 76,
         "strikeRate": 153.95,
         "economy": 9.24
       },
       "middle": {
-        "runs": 233,
         "balls": 208,
         "strikeRate": 112.02,
         "economy": 6.72
       },
       "death": {
-        "runs": 285,
         "balls": 214,
         "strikeRate": 133.18,
         "economy": 7.99
@@ -42322,19 +31088,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 592,
         "balls": 414,
         "strikeRate": 143,
         "economy": 8.58
       },
       "middle": {
-        "runs": 770,
         "balls": 594,
         "strikeRate": 129.63,
         "economy": 7.78
       },
       "death": {
-        "runs": 630,
         "balls": 418,
         "strikeRate": 150.72,
         "economy": 9.04
@@ -42356,19 +31119,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.86,
     "battingPhases": {
       "powerplay": {
-        "runs": 161,
         "balls": 121,
         "strikeRate": 133.06,
         "economy": 7.98
       },
       "middle": {
-        "runs": 665,
         "balls": 463,
         "strikeRate": 143.63,
         "economy": 8.62
       },
       "death": {
-        "runs": 204,
         "balls": 131,
         "strikeRate": 155.73,
         "economy": 9.34
@@ -42376,19 +31136,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 217,
         "balls": 144,
         "strikeRate": 150.69,
         "economy": 9.04
       },
       "middle": {
-        "runs": 744,
         "balls": 540,
         "strikeRate": 137.78,
         "economy": 8.27
       },
       "death": {
-        "runs": 181,
         "balls": 103,
         "strikeRate": 175.73,
         "economy": 10.54
@@ -42410,19 +31167,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.77,
     "battingPhases": {
       "powerplay": {
-        "runs": 100,
         "balls": 72,
         "strikeRate": 138.89,
         "economy": 8.33
       },
       "middle": {
-        "runs": 154,
         "balls": 163,
         "strikeRate": 94.48,
         "economy": 5.67
       },
       "death": {
-        "runs": 737,
         "balls": 537,
         "strikeRate": 137.24,
         "economy": 8.23
@@ -42430,19 +31184,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1702,
         "balls": 1356,
         "strikeRate": 125.52,
         "economy": 7.53
       },
       "middle": {
-        "runs": 1864,
         "balls": 1594,
         "strikeRate": 116.94,
         "economy": 7.02
       },
       "death": {
-        "runs": 2517,
         "balls": 1707,
         "strikeRate": 147.45,
         "economy": 8.85
@@ -42456,27 +31207,22 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 132.76,
     "runs": 154,
     "innings": 12,
-    "bowlingAverage": null,
     "economyRate": 5.6,
     "wickets": 0,
     "matches": 13,
     "boundaryPct": 18.1,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 46,
         "balls": 31,
         "strikeRate": 148.39,
         "economy": 8.9
       },
       "middle": {
-        "runs": 39,
         "balls": 42,
         "strikeRate": 92.86,
         "economy": 5.57
       },
       "death": {
-        "runs": 69,
         "balls": 43,
         "strikeRate": 160.47,
         "economy": 9.63
@@ -42484,22 +31230,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 11,
         "balls": 12,
         "strikeRate": 91.67,
         "economy": 5.5
       },
       "middle": {
-        "runs": 17,
         "balls": 18,
         "strikeRate": 94.44,
         "economy": 5.67
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -42517,20 +31255,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10,
     "bowlingStrikeRate": 18.22,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 9,
         "balls": 10,
         "strikeRate": 90,
         "economy": 5.4
@@ -42538,19 +31263,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 19,
         "balls": 6,
         "strikeRate": 316.67,
         "economy": 19
       },
       "middle": {
-        "runs": 206,
         "balls": 138,
         "strikeRate": 149.28,
         "economy": 8.96
       },
       "death": {
-        "runs": 20,
         "balls": 20,
         "strikeRate": 100,
         "economy": 6
@@ -42560,51 +31282,20 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-f183c67e": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 55.5,
     "economyRate": 9.84,
     "wickets": 6,
     "matches": 10,
-    "boundaryPct": null,
     "bowlingStrikeRate": 33.83,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 283,
         "balls": 180,
         "strikeRate": 157.22,
         "economy": 9.43
       },
       "death": {
-        "runs": 50,
         "balls": 23,
         "strikeRate": 217.39,
         "economy": 13.04
@@ -42626,19 +31317,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 15.69,
     "battingPhases": {
       "powerplay": {
-        "runs": 78,
         "balls": 65,
         "strikeRate": 120,
         "economy": 7.2
       },
       "middle": {
-        "runs": 204,
         "balls": 218,
         "strikeRate": 93.58,
         "economy": 5.61
       },
       "death": {
-        "runs": 262,
         "balls": 180,
         "strikeRate": 145.56,
         "economy": 8.73
@@ -42646,19 +31334,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 374,
         "balls": 264,
         "strikeRate": 141.67,
         "economy": 8.5
       },
       "middle": {
-        "runs": 548,
         "balls": 384,
         "strikeRate": 142.71,
         "economy": 8.56
       },
       "death": {
-        "runs": 503,
         "balls": 325,
         "strikeRate": 154.77,
         "economy": 9.29
@@ -42680,19 +31365,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.14,
     "battingPhases": {
       "powerplay": {
-        "runs": 2553,
         "balls": 1686,
         "strikeRate": 151.42,
         "economy": 9.09
       },
       "middle": {
-        "runs": 1187,
         "balls": 840,
         "strikeRate": 141.31,
         "economy": 8.48
       },
       "death": {
-        "runs": 241,
         "balls": 117,
         "strikeRate": 205.98,
         "economy": 12.36
@@ -42700,19 +31382,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 222,
         "balls": 168,
         "strikeRate": 132.14,
         "economy": 7.93
       },
       "middle": {
-        "runs": 271,
         "balls": 216,
         "strikeRate": 125.46,
         "economy": 7.53
       },
       "death": {
-        "runs": 112,
         "balls": 81,
         "strikeRate": 138.27,
         "economy": 8.3
@@ -42722,51 +31401,25 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-f291cb07": {
     "format": "T20",
-    "battingAverage": null,
-    "strikeRate": null,
     "runs": 0,
     "innings": 0,
     "bowlingAverage": 30.56,
     "economyRate": 10.6,
     "wickets": 27,
     "matches": 22,
-    "boundaryPct": null,
     "bowlingStrikeRate": 17.3,
-    "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 205,
         "balls": 120,
         "strikeRate": 170.83,
         "economy": 10.25
       },
       "middle": {
-        "runs": 255,
         "balls": 160,
         "strikeRate": 159.38,
         "economy": 9.56
       },
       "death": {
-        "runs": 365,
         "balls": 187,
         "strikeRate": 195.19,
         "economy": 11.71
@@ -42780,50 +31433,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 115.57,
     "runs": 683,
     "innings": 45,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 52,
     "boundaryPct": 13.71,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 367,
         "balls": 309,
         "strikeRate": 118.77,
         "economy": 7.13
       },
       "middle": {
-        "runs": 246,
         "balls": 231,
         "strikeRate": 106.49,
         "economy": 6.39
       },
       "death": {
-        "runs": 70,
         "balls": 51,
         "strikeRate": 137.25,
         "economy": 8.24
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -42841,20 +31468,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 16.67,
     "bowlingStrikeRate": 19.98,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 54,
         "balls": 35,
         "strikeRate": 154.29,
         "economy": 9.26
@@ -42862,19 +31481,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 797,
         "balls": 546,
         "strikeRate": 145.97,
         "economy": 8.76
       },
       "middle": {
-        "runs": 393,
         "balls": 222,
         "strikeRate": 177.03,
         "economy": 10.62
       },
       "death": {
-        "runs": 723,
         "balls": 371,
         "strikeRate": 194.88,
         "economy": 11.69
@@ -42895,20 +31511,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.11,
     "bowlingStrikeRate": 19.49,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 24,
         "balls": 37,
         "strikeRate": 64.86,
         "economy": 3.89
       },
       "death": {
-        "runs": 224,
         "balls": 179,
         "strikeRate": 125.14,
         "economy": 7.51
@@ -42916,19 +31524,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1591,
         "balls": 1196,
         "strikeRate": 133.03,
         "economy": 7.98
       },
       "middle": {
-        "runs": 763,
         "balls": 552,
         "strikeRate": 138.22,
         "economy": 8.29
       },
       "death": {
-        "runs": 965,
         "balls": 669,
         "strikeRate": 144.25,
         "economy": 8.65
@@ -42950,42 +31555,26 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 12,
     "battingPhases": {
       "powerplay": {
-        "runs": 227,
         "balls": 170,
         "strikeRate": 133.53,
         "economy": 8.01
       },
       "middle": {
-        "runs": 102,
         "balls": 105,
         "strikeRate": 97.14,
         "economy": 5.83
       },
       "death": {
-        "runs": 45,
         "balls": 50,
         "strikeRate": 90,
         "economy": 5.4
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 15,
         "balls": 12,
         "strikeRate": 125,
         "economy": 7.5
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -42996,50 +31585,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 141.49,
     "runs": 133,
     "innings": 5,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 5,
     "boundaryPct": 18.09,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 106,
         "balls": 69,
         "strikeRate": 153.62,
         "economy": 9.22
       },
       "middle": {
-        "runs": 27,
         "balls": 25,
         "strikeRate": 108,
         "economy": 6.48
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -43057,20 +31615,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 13.61,
     "bowlingStrikeRate": 19.99,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 23,
         "balls": 28,
         "strikeRate": 82.14,
         "economy": 4.93
       },
       "death": {
-        "runs": 178,
         "balls": 141,
         "strikeRate": 126.24,
         "economy": 7.57
@@ -43078,19 +31628,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1291,
         "balls": 978,
         "strikeRate": 132,
         "economy": 7.92
       },
       "middle": {
-        "runs": 1201,
         "balls": 858,
         "strikeRate": 139.98,
         "economy": 8.4
       },
       "death": {
-        "runs": 1313,
         "balls": 723,
         "strikeRate": 181.6,
         "economy": 10.9
@@ -43100,7 +31647,6 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
   },
   "real-f639602d": {
     "format": "T20",
-    "battingAverage": null,
     "strikeRate": 100,
     "runs": 3,
     "innings": 1,
@@ -43111,20 +31657,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 16.43,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 2,
         "strikeRate": 100,
         "economy": 6
       },
       "death": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
@@ -43132,19 +31670,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 257,
         "balls": 174,
         "strikeRate": 147.7,
         "economy": 8.86
       },
       "middle": {
-        "runs": 90,
         "balls": 66,
         "strikeRate": 136.36,
         "economy": 8.18
       },
       "death": {
-        "runs": 189,
         "balls": 105,
         "strikeRate": 180,
         "economy": 10.8
@@ -43166,19 +31701,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.7,
     "battingPhases": {
       "powerplay": {
-        "runs": 1068,
         "balls": 938,
         "strikeRate": 113.86,
         "economy": 6.83
       },
       "middle": {
-        "runs": 3704,
         "balls": 3040,
         "strikeRate": 121.84,
         "economy": 7.31
       },
       "death": {
-        "runs": 1483,
         "balls": 968,
         "strikeRate": 153.2,
         "economy": 9.19
@@ -43186,19 +31718,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2827,
         "balls": 2466,
         "strikeRate": 114.64,
         "economy": 6.88
       },
       "middle": {
-        "runs": 4063,
         "balls": 3856,
         "strikeRate": 105.37,
         "economy": 6.32
       },
       "death": {
-        "runs": 1707,
         "balls": 1194,
         "strikeRate": 142.96,
         "economy": 8.58
@@ -43219,20 +31748,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.2,
     "bowlingStrikeRate": 15.46,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 63,
         "balls": 80,
         "strikeRate": 78.75,
         "economy": 4.72
       },
       "death": {
-        "runs": 136,
         "balls": 116,
         "strikeRate": 117.24,
         "economy": 7.03
@@ -43240,19 +31761,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1007,
         "balls": 768,
         "strikeRate": 131.12,
         "economy": 7.87
       },
       "middle": {
-        "runs": 594,
         "balls": 400,
         "strikeRate": 148.5,
         "economy": 8.91
       },
       "death": {
-        "runs": 796,
         "balls": 440,
         "strikeRate": 180.91,
         "economy": 10.85
@@ -43274,19 +31792,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.73,
     "battingPhases": {
       "powerplay": {
-        "runs": 4,
         "balls": 2,
         "strikeRate": 200,
         "economy": 12
       },
       "middle": {
-        "runs": 273,
         "balls": 241,
         "strikeRate": 113.28,
         "economy": 6.8
       },
       "death": {
-        "runs": 433,
         "balls": 265,
         "strikeRate": 163.4,
         "economy": 9.8
@@ -43294,19 +31809,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1053,
         "balls": 732,
         "strikeRate": 143.85,
         "economy": 8.63
       },
       "middle": {
-        "runs": 530,
         "balls": 384,
         "strikeRate": 138.02,
         "economy": 8.28
       },
       "death": {
-        "runs": 488,
         "balls": 267,
         "strikeRate": 182.77,
         "economy": 10.97
@@ -43327,20 +31839,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 21.64,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 0,
         "balls": 2,
         "strikeRate": 0,
         "economy": 0
       },
       "death": {
-        "runs": 1,
         "balls": 1,
         "strikeRate": 100,
         "economy": 6
@@ -43348,19 +31852,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 113,
         "balls": 72,
         "strikeRate": 156.94,
         "economy": 9.42
       },
       "middle": {
-        "runs": 170,
         "balls": 100,
         "strikeRate": 170,
         "economy": 10.2
       },
       "death": {
-        "runs": 134,
         "balls": 66,
         "strikeRate": 203.03,
         "economy": 12.18
@@ -43374,50 +31875,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 136.99,
     "runs": 1048,
     "innings": 48,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 48,
     "boundaryPct": 16.99,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 376,
         "balls": 245,
         "strikeRate": 153.47,
         "economy": 9.21
       },
       "middle": {
-        "runs": 488,
         "balls": 411,
         "strikeRate": 118.73,
         "economy": 7.12
       },
       "death": {
-        "runs": 184,
         "balls": 109,
         "strikeRate": 168.81,
         "economy": 10.13
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -43428,50 +31903,19 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 142.11,
     "runs": 702,
     "innings": 28,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 29,
     "boundaryPct": 21.46,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 484,
         "balls": 333,
         "strikeRate": 145.35,
         "economy": 8.72
       },
       "middle": {
-        "runs": 218,
         "balls": 161,
         "strikeRate": 135.4,
         "economy": 8.12
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -43490,19 +31934,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.81,
     "battingPhases": {
       "powerplay": {
-        "runs": 190,
         "balls": 173,
         "strikeRate": 109.83,
         "economy": 6.59
       },
       "middle": {
-        "runs": 1138,
         "balls": 967,
         "strikeRate": 117.68,
         "economy": 7.06
       },
       "death": {
-        "runs": 1484,
         "balls": 909,
         "strikeRate": 163.26,
         "economy": 9.8
@@ -43510,19 +31951,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 3248,
         "balls": 2436,
         "strikeRate": 133.33,
         "economy": 8
       },
       "middle": {
-        "runs": 2356,
         "balls": 1893,
         "strikeRate": 124.46,
         "economy": 7.47
       },
       "death": {
-        "runs": 2454,
         "balls": 1464,
         "strikeRate": 167.62,
         "economy": 10.06
@@ -43544,19 +31982,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.28,
     "battingPhases": {
       "powerplay": {
-        "runs": 134,
         "balls": 120,
         "strikeRate": 111.67,
         "economy": 6.7
       },
       "middle": {
-        "runs": 1493,
         "balls": 1182,
         "strikeRate": 126.31,
         "economy": 7.58
       },
       "death": {
-        "runs": 1604,
         "balls": 992,
         "strikeRate": 161.69,
         "economy": 9.7
@@ -43564,19 +31999,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1391,
         "balls": 816,
         "strikeRate": 170.47,
         "economy": 10.23
       },
       "middle": {
-        "runs": 2134,
         "balls": 1594,
         "strikeRate": 133.88,
         "economy": 8.03
       },
       "death": {
-        "runs": 1691,
         "balls": 935,
         "strikeRate": 180.86,
         "economy": 10.85
@@ -43597,20 +32029,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 2.86,
     "bowlingStrikeRate": 16.32,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 3,
         "balls": 4,
         "strikeRate": 75,
         "economy": 4.5
       },
       "death": {
-        "runs": 24,
         "balls": 31,
         "strikeRate": 77.42,
         "economy": 4.65
@@ -43618,19 +32042,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 615,
         "balls": 420,
         "strikeRate": 146.43,
         "economy": 8.79
       },
       "middle": {
-        "runs": 188,
         "balls": 138,
         "strikeRate": 136.23,
         "economy": 8.17
       },
       "death": {
-        "runs": 424,
         "balls": 258,
         "strikeRate": 164.34,
         "economy": 9.86
@@ -43652,19 +32073,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 26,
     "battingPhases": {
       "powerplay": {
-        "runs": 83,
         "balls": 94,
         "strikeRate": 88.3,
         "economy": 5.3
       },
       "middle": {
-        "runs": 220,
         "balls": 170,
         "strikeRate": 129.41,
         "economy": 7.76
       },
       "death": {
-        "runs": 97,
         "balls": 72,
         "strikeRate": 134.72,
         "economy": 8.08
@@ -43672,19 +32090,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 28,
         "balls": 18,
         "strikeRate": 155.56,
         "economy": 9.33
       },
       "middle": {
-        "runs": 41,
         "balls": 54,
         "strikeRate": 75.93,
         "economy": 4.56
       },
       "death": {
-        "runs": 15,
         "balls": 6,
         "strikeRate": 250,
         "economy": 15
@@ -43706,42 +32121,26 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 12,
     "battingPhases": {
       "powerplay": {
-        "runs": 72,
         "balls": 55,
         "strikeRate": 130.91,
         "economy": 7.85
       },
       "middle": {
-        "runs": 43,
         "balls": 34,
         "strikeRate": 126.47,
         "economy": 7.59
       },
       "death": {
-        "runs": 2,
         "balls": 3,
         "strikeRate": 66.67,
         "economy": 4
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 41,
         "balls": 24,
         "strikeRate": 170.83,
         "economy": 10.25
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -43759,20 +32158,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.87,
     "bowlingStrikeRate": 16.14,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 56,
         "balls": 75,
         "strikeRate": 74.67,
         "economy": 4.48
       },
       "death": {
-        "runs": 100,
         "balls": 77,
         "strikeRate": 129.87,
         "economy": 7.79
@@ -43780,19 +32171,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 153,
         "balls": 77,
         "strikeRate": 198.7,
         "economy": 11.92
       },
       "middle": {
-        "runs": 246,
         "balls": 180,
         "strikeRate": 136.67,
         "economy": 8.2
       },
       "death": {
-        "runs": 179,
         "balls": 98,
         "strikeRate": 182.65,
         "economy": 10.96
@@ -43813,20 +32201,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 15.38,
     "bowlingStrikeRate": 20.9,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 27,
         "balls": 26,
         "strikeRate": 103.85,
         "economy": 6.23
@@ -43834,19 +32209,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 267,
         "balls": 162,
         "strikeRate": 164.81,
         "economy": 9.89
       },
       "middle": {
-        "runs": 253,
         "balls": 162,
         "strikeRate": 156.17,
         "economy": 9.37
       },
       "death": {
-        "runs": 169,
         "balls": 94,
         "strikeRate": 179.79,
         "economy": 10.79
@@ -43860,50 +32232,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 131.39,
     "runs": 2181,
     "innings": 97,
-    "bowlingAverage": null,
     "economyRate": 9,
     "wickets": 0,
     "matches": 105,
     "boundaryPct": 15.42,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 547,
         "balls": 427,
         "strikeRate": 128.1,
         "economy": 7.69
       },
       "middle": {
-        "runs": 1090,
         "balls": 928,
         "strikeRate": 117.46,
         "economy": 7.05
       },
       "death": {
-        "runs": 544,
         "balls": 305,
         "strikeRate": 178.36,
         "economy": 10.7
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 9,
         "balls": 6,
         "strikeRate": 150,
         "economy": 9
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -43914,50 +32268,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 138.11,
     "runs": 2388,
     "innings": 103,
-    "bowlingAverage": null,
     "economyRate": 12,
     "wickets": 0,
     "matches": 105,
     "boundaryPct": 19.09,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1077,
         "balls": 773,
         "strikeRate": 139.33,
         "economy": 8.36
       },
       "middle": {
-        "runs": 1092,
         "balls": 805,
         "strikeRate": 135.65,
         "economy": 8.14
       },
       "death": {
-        "runs": 219,
         "balls": 151,
         "strikeRate": 145.03,
         "economy": 8.7
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 12,
         "balls": 6,
         "strikeRate": 200,
         "economy": 12
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -43968,27 +32304,17 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 134.33,
     "runs": 90,
     "innings": 5,
-    "bowlingAverage": null,
     "economyRate": 12.5,
     "wickets": 0,
     "matches": 6,
     "boundaryPct": 19.4,
-    "bowlingStrikeRate": null,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 43,
         "balls": 28,
         "strikeRate": 153.57,
         "economy": 9.21
       },
       "death": {
-        "runs": 47,
         "balls": 39,
         "strikeRate": 120.51,
         "economy": 7.23
@@ -43996,22 +32322,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 18,
         "balls": 6,
         "strikeRate": 300,
         "economy": 18
       },
       "middle": {
-        "runs": 7,
         "balls": 6,
         "strikeRate": 116.67,
         "economy": 7
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -44030,19 +32348,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.1,
     "battingPhases": {
       "powerplay": {
-        "runs": 64,
         "balls": 59,
         "strikeRate": 108.47,
         "economy": 6.51
       },
       "middle": {
-        "runs": 787,
         "balls": 604,
         "strikeRate": 130.3,
         "economy": 7.82
       },
       "death": {
-        "runs": 756,
         "balls": 423,
         "strikeRate": 178.72,
         "economy": 10.72
@@ -44050,19 +32365,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 119,
         "balls": 78,
         "strikeRate": 152.56,
         "economy": 9.15
       },
       "middle": {
-        "runs": 460,
         "balls": 338,
         "strikeRate": 136.09,
         "economy": 8.17
       },
       "death": {
-        "runs": 52,
         "balls": 48,
         "strikeRate": 108.33,
         "economy": 6.5
@@ -44084,19 +32396,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.8,
     "battingPhases": {
       "powerplay": {
-        "runs": 30,
         "balls": 36,
         "strikeRate": 83.33,
         "economy": 5
       },
       "middle": {
-        "runs": 807,
         "balls": 614,
         "strikeRate": 131.43,
         "economy": 7.89
       },
       "death": {
-        "runs": 1337,
         "balls": 756,
         "strikeRate": 176.85,
         "economy": 10.61
@@ -44104,19 +32413,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2126,
         "balls": 1566,
         "strikeRate": 135.76,
         "economy": 8.15
       },
       "middle": {
-        "runs": 1944,
         "balls": 1361,
         "strikeRate": 142.84,
         "economy": 8.57
       },
       "death": {
-        "runs": 2150,
         "balls": 1274,
         "strikeRate": 168.76,
         "economy": 10.13
@@ -44138,19 +32444,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 16.89,
     "battingPhases": {
       "powerplay": {
-        "runs": 47,
         "balls": 38,
         "strikeRate": 123.68,
         "economy": 7.42
       },
       "middle": {
-        "runs": 347,
         "balls": 322,
         "strikeRate": 107.76,
         "economy": 6.47
       },
       "death": {
-        "runs": 545,
         "balls": 315,
         "strikeRate": 173.02,
         "economy": 10.38
@@ -44158,19 +32461,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 628,
         "balls": 366,
         "strikeRate": 171.58,
         "economy": 10.3
       },
       "middle": {
-        "runs": 966,
         "balls": 706,
         "strikeRate": 136.83,
         "economy": 8.21
       },
       "death": {
-        "runs": 720,
         "balls": 431,
         "strikeRate": 167.05,
         "economy": 10.02
@@ -44191,20 +32491,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.57,
     "bowlingStrikeRate": 18.08,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 71,
         "balls": 83,
         "strikeRate": 85.54,
         "economy": 5.13
       },
       "death": {
-        "runs": 325,
         "balls": 267,
         "strikeRate": 121.72,
         "economy": 7.3
@@ -44212,19 +32504,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2673,
         "balls": 2046,
         "strikeRate": 130.65,
         "economy": 7.84
       },
       "middle": {
-        "runs": 757,
         "balls": 505,
         "strikeRate": 149.9,
         "economy": 8.99
       },
       "death": {
-        "runs": 1386,
         "balls": 867,
         "strikeRate": 159.86,
         "economy": 9.59
@@ -44246,19 +32535,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.45,
     "battingPhases": {
       "powerplay": {
-        "runs": 4,
         "balls": 7,
         "strikeRate": 57.14,
         "economy": 3.43
       },
       "middle": {
-        "runs": 69,
         "balls": 84,
         "strikeRate": 82.14,
         "economy": 4.93
       },
       "death": {
-        "runs": 27,
         "balls": 29,
         "strikeRate": 93.1,
         "economy": 5.59
@@ -44266,19 +32552,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 73,
         "balls": 66,
         "strikeRate": 110.61,
         "economy": 6.64
       },
       "middle": {
-        "runs": 154,
         "balls": 118,
         "strikeRate": 130.51,
         "economy": 7.83
       },
       "death": {
-        "runs": 32,
         "balls": 30,
         "strikeRate": 106.67,
         "economy": 6.4
@@ -44299,20 +32582,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 11.54,
     "bowlingStrikeRate": 22.06,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 2,
         "strikeRate": 200,
         "economy": 12
       },
       "death": {
-        "runs": 20,
         "balls": 24,
         "strikeRate": 83.33,
         "economy": 5
@@ -44320,19 +32595,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 399,
         "balls": 216,
         "strikeRate": 184.72,
         "economy": 11.08
       },
       "middle": {
-        "runs": 382,
         "balls": 270,
         "strikeRate": 141.48,
         "economy": 8.49
       },
       "death": {
-        "runs": 430,
         "balls": 242,
         "strikeRate": 177.69,
         "economy": 10.66
@@ -44354,19 +32626,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.29,
     "battingPhases": {
       "powerplay": {
-        "runs": 155,
         "balls": 99,
         "strikeRate": 156.57,
         "economy": 9.39
       },
       "middle": {
-        "runs": 392,
         "balls": 330,
         "strikeRate": 118.79,
         "economy": 7.13
       },
       "death": {
-        "runs": 315,
         "balls": 181,
         "strikeRate": 174.03,
         "economy": 10.44
@@ -44374,19 +32643,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 182,
         "balls": 126,
         "strikeRate": 144.44,
         "economy": 8.67
       },
       "middle": {
-        "runs": 222,
         "balls": 144,
         "strikeRate": 154.17,
         "economy": 9.25
       },
       "death": {
-        "runs": 77,
         "balls": 42,
         "strikeRate": 183.33,
         "economy": 11
@@ -44400,50 +32666,32 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 178.7,
     "runs": 193,
     "innings": 9,
-    "bowlingAverage": null,
     "economyRate": 7,
     "wickets": 0,
     "matches": 11,
     "boundaryPct": 29.63,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 110,
         "balls": 62,
         "strikeRate": 177.42,
         "economy": 10.65
       },
       "middle": {
-        "runs": 83,
         "balls": 46,
         "strikeRate": 180.43,
         "economy": 10.83
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 4,
         "balls": 6,
         "strikeRate": 66.67,
         "economy": 4
       },
       "middle": {
-        "runs": 17,
         "balls": 12,
         "strikeRate": 141.67,
         "economy": 8.5
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -44462,19 +32710,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 24.76,
     "battingPhases": {
       "powerplay": {
-        "runs": 183,
         "balls": 196,
         "strikeRate": 93.37,
         "economy": 5.6
       },
       "middle": {
-        "runs": 1480,
         "balls": 1353,
         "strikeRate": 109.39,
         "economy": 6.56
       },
       "death": {
-        "runs": 1337,
         "balls": 779,
         "strikeRate": 171.63,
         "economy": 10.3
@@ -44482,19 +32727,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 263,
         "balls": 204,
         "strikeRate": 128.92,
         "economy": 7.74
       },
       "middle": {
-        "runs": 1002,
         "balls": 810,
         "strikeRate": 123.7,
         "economy": 7.42
       },
       "death": {
-        "runs": 211,
         "balls": 125,
         "strikeRate": 168.8,
         "economy": 10.13
@@ -44515,20 +32757,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.64,
     "bowlingStrikeRate": 17.39,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 34,
         "balls": 52,
         "strikeRate": 65.38,
         "economy": 3.92
       },
       "death": {
-        "runs": 310,
         "balls": 277,
         "strikeRate": 111.91,
         "economy": 6.71
@@ -44536,19 +32770,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 250,
         "balls": 156,
         "strikeRate": 160.26,
         "economy": 9.62
       },
       "middle": {
-        "runs": 4562,
         "balls": 3475,
         "strikeRate": 131.28,
         "economy": 7.88
       },
       "death": {
-        "runs": 880,
         "balls": 560,
         "strikeRate": 157.14,
         "economy": 9.43
@@ -44562,47 +32793,29 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 144.12,
     "runs": 5063,
     "innings": 179,
-    "bowlingAverage": null,
     "economyRate": 24,
     "wickets": 0,
     "matches": 186,
     "boundaryPct": 20.95,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2282,
         "balls": 1689,
         "strikeRate": 135.11,
         "economy": 8.11
       },
       "middle": {
-        "runs": 2299,
         "balls": 1563,
         "strikeRate": 147.09,
         "economy": 8.83
       },
       "death": {
-        "runs": 482,
         "balls": 261,
         "strikeRate": 184.67,
         "economy": 11.08
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 4,
         "balls": 1,
         "strikeRate": 400,
         "economy": 24
@@ -44623,20 +32836,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.65,
     "bowlingStrikeRate": 18.28,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 10,
         "balls": 7,
         "strikeRate": 142.86,
         "economy": 8.57
       },
       "death": {
-        "runs": 77,
         "balls": 97,
         "strikeRate": 79.38,
         "economy": 4.76
@@ -44644,19 +32849,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2494,
         "balls": 2224,
         "strikeRate": 112.14,
         "economy": 6.73
       },
       "middle": {
-        "runs": 1356,
         "balls": 1266,
         "strikeRate": 107.11,
         "economy": 6.43
       },
       "death": {
-        "runs": 2804,
         "balls": 2141,
         "strikeRate": 130.97,
         "economy": 7.86
@@ -44678,19 +32880,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.6,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 4,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 146,
         "balls": 117,
         "strikeRate": 124.79,
         "economy": 7.49
       },
       "death": {
-        "runs": 646,
         "balls": 429,
         "strikeRate": 150.58,
         "economy": 9.03
@@ -44698,19 +32897,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2847,
         "balls": 2160,
         "strikeRate": 131.81,
         "economy": 7.91
       },
       "middle": {
-        "runs": 868,
         "balls": 738,
         "strikeRate": 117.62,
         "economy": 7.06
       },
       "death": {
-        "runs": 2067,
         "balls": 1378,
         "strikeRate": 150,
         "economy": 9
@@ -44724,50 +32920,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 148.37,
     "runs": 11459,
     "innings": 370,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 385,
     "boundaryPct": 20.24,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 4345,
         "balls": 3003,
         "strikeRate": 144.69,
         "economy": 8.68
       },
       "middle": {
-        "runs": 5154,
         "balls": 3640,
         "strikeRate": 141.59,
         "economy": 8.5
       },
       "death": {
-        "runs": 1960,
         "balls": 1080,
         "strikeRate": 181.48,
         "economy": 10.89
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -44785,20 +32955,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.61,
     "bowlingStrikeRate": 16.57,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 2,
         "balls": 11,
         "strikeRate": 18.18,
         "economy": 1.09
       },
       "death": {
-        "runs": 58,
         "balls": 55,
         "strikeRate": 105.45,
         "economy": 6.33
@@ -44806,19 +32968,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1873,
         "balls": 1584,
         "strikeRate": 118.24,
         "economy": 7.09
       },
       "middle": {
-        "runs": 708,
         "balls": 559,
         "strikeRate": 126.65,
         "economy": 7.6
       },
       "death": {
-        "runs": 1213,
         "balls": 741,
         "strikeRate": 163.7,
         "economy": 9.82
@@ -44840,19 +32999,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 17.37,
     "battingPhases": {
       "powerplay": {
-        "runs": 1,
         "balls": 3,
         "strikeRate": 33.33,
         "economy": 2
       },
       "middle": {
-        "runs": 147,
         "balls": 139,
         "strikeRate": 105.76,
         "economy": 6.35
       },
       "death": {
-        "runs": 350,
         "balls": 301,
         "strikeRate": 116.28,
         "economy": 6.98
@@ -44860,19 +33016,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2994,
         "balls": 2229,
         "strikeRate": 134.32,
         "economy": 8.06
       },
       "middle": {
-        "runs": 1264,
         "balls": 976,
         "strikeRate": 129.51,
         "economy": 7.77
       },
       "death": {
-        "runs": 2017,
         "balls": 1241,
         "strikeRate": 162.53,
         "economy": 9.75
@@ -44894,19 +33047,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.11,
     "battingPhases": {
       "powerplay": {
-        "runs": 1714,
         "balls": 1596,
         "strikeRate": 107.39,
         "economy": 6.44
       },
       "middle": {
-        "runs": 3169,
         "balls": 2526,
         "strikeRate": 125.46,
         "economy": 7.53
       },
       "death": {
-        "runs": 1005,
         "balls": 590,
         "strikeRate": 170.34,
         "economy": 10.22
@@ -44914,19 +33064,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 36,
         "balls": 30,
         "strikeRate": 120,
         "economy": 7.2
       },
       "middle": {
-        "runs": 182,
         "balls": 130,
         "strikeRate": 140,
         "economy": 8.4
       },
       "death": {
-        "runs": 14,
         "balls": 12,
         "strikeRate": 116.67,
         "economy": 7
@@ -44940,50 +33087,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 139.17,
     "runs": 7977,
     "innings": 220,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 229,
     "boundaryPct": 17.88,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 3549,
         "balls": 2748,
         "strikeRate": 129.15,
         "economy": 7.75
       },
       "middle": {
-        "runs": 3387,
         "balls": 2402,
         "strikeRate": 141.01,
         "economy": 8.46
       },
       "death": {
-        "runs": 1041,
         "balls": 582,
         "strikeRate": 178.87,
         "economy": 10.73
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -45001,20 +33122,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.1,
     "bowlingStrikeRate": 16.52,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 42,
         "balls": 68,
         "strikeRate": 61.76,
         "economy": 3.71
       },
       "death": {
-        "runs": 216,
         "balls": 256,
         "strikeRate": 84.38,
         "economy": 5.06
@@ -45022,19 +33135,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 138,
         "balls": 90,
         "strikeRate": 153.33,
         "economy": 9.2
       },
       "middle": {
-        "runs": 3570,
         "balls": 2803,
         "strikeRate": 127.36,
         "economy": 7.64
       },
       "death": {
-        "runs": 694,
         "balls": 478,
         "strikeRate": 145.19,
         "economy": 8.71
@@ -45048,50 +33158,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 128.61,
     "runs": 5165,
     "innings": 226,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 232,
     "boundaryPct": 17.33,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 3138,
         "balls": 2407,
         "strikeRate": 130.37,
         "economy": 7.82
       },
       "middle": {
-        "runs": 1815,
         "balls": 1468,
         "strikeRate": 123.64,
         "economy": 7.42
       },
       "death": {
-        "runs": 212,
         "balls": 141,
         "strikeRate": 150.35,
         "economy": 9.02
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -45110,19 +33194,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.01,
     "battingPhases": {
       "powerplay": {
-        "runs": 413,
         "balls": 408,
         "strikeRate": 101.23,
         "economy": 6.07
       },
       "middle": {
-        "runs": 2957,
         "balls": 2627,
         "strikeRate": 112.56,
         "economy": 6.75
       },
       "death": {
-        "runs": 1697,
         "balls": 1128,
         "strikeRate": 150.44,
         "economy": 9.03
@@ -45130,19 +33211,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 342,
         "balls": 288,
         "strikeRate": 118.75,
         "economy": 7.13
       },
       "middle": {
-        "runs": 1758,
         "balls": 1476,
         "strikeRate": 119.11,
         "economy": 7.15
       },
       "death": {
-        "runs": 347,
         "balls": 239,
         "strikeRate": 145.19,
         "economy": 8.71
@@ -45164,19 +33242,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.07,
     "battingPhases": {
       "powerplay": {
-        "runs": 1489,
         "balls": 1272,
         "strikeRate": 117.06,
         "economy": 7.02
       },
       "middle": {
-        "runs": 3259,
         "balls": 2419,
         "strikeRate": 134.73,
         "economy": 8.08
       },
       "death": {
-        "runs": 2180,
         "balls": 1230,
         "strikeRate": 177.24,
         "economy": 10.63
@@ -45184,19 +33259,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 824,
         "balls": 579,
         "strikeRate": 142.31,
         "economy": 8.54
       },
       "middle": {
-        "runs": 2329,
         "balls": 1633,
         "strikeRate": 142.62,
         "economy": 8.56
       },
       "death": {
-        "runs": 1206,
         "balls": 679,
         "strikeRate": 177.61,
         "economy": 10.66
@@ -45217,20 +33289,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 8.82,
     "bowlingStrikeRate": 14.2,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 12,
         "balls": 20,
         "strikeRate": 60,
         "economy": 3.6
       },
       "death": {
-        "runs": 92,
         "balls": 82,
         "strikeRate": 112.2,
         "economy": 6.73
@@ -45238,19 +33302,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 573,
         "balls": 444,
         "strikeRate": 129.05,
         "economy": 7.74
       },
       "middle": {
-        "runs": 499,
         "balls": 413,
         "strikeRate": 120.82,
         "economy": 7.25
       },
       "death": {
-        "runs": 461,
         "balls": 279,
         "strikeRate": 165.23,
         "economy": 9.91
@@ -45264,47 +33325,34 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 130.71,
     "runs": 6563,
     "innings": 240,
-    "bowlingAverage": null,
     "economyRate": 9,
     "wickets": 0,
     "matches": 240,
     "boundaryPct": 17.29,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 3785,
         "balls": 3034,
         "strikeRate": 124.75,
         "economy": 7.49
       },
       "middle": {
-        "runs": 2278,
         "balls": 1730,
         "strikeRate": 131.68,
         "economy": 7.9
       },
       "death": {
-        "runs": 500,
         "balls": 257,
         "strikeRate": 194.55,
         "economy": 11.67
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 12,
         "strikeRate": 133.33,
         "economy": 8
       },
       "death": {
-        "runs": 11,
         "balls": 6,
         "strikeRate": 183.33,
         "economy": 11
@@ -45325,20 +33373,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 7.56,
     "bowlingStrikeRate": 16.21,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 47,
         "balls": 52,
         "strikeRate": 90.38,
         "economy": 5.42
       },
       "death": {
-        "runs": 177,
         "balls": 186,
         "strikeRate": 95.16,
         "economy": 5.71
@@ -45346,19 +33386,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2031,
         "balls": 1580,
         "strikeRate": 128.54,
         "economy": 7.71
       },
       "middle": {
-        "runs": 713,
         "balls": 534,
         "strikeRate": 133.52,
         "economy": 8.01
       },
       "death": {
-        "runs": 1355,
         "balls": 885,
         "strikeRate": 153.11,
         "economy": 9.19
@@ -45380,19 +33417,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 22.04,
     "battingPhases": {
       "powerplay": {
-        "runs": 139,
         "balls": 101,
         "strikeRate": 137.62,
         "economy": 8.26
       },
       "middle": {
-        "runs": 1472,
         "balls": 1320,
         "strikeRate": 111.52,
         "economy": 6.69
       },
       "death": {
-        "runs": 1393,
         "balls": 838,
         "strikeRate": 166.23,
         "economy": 9.97
@@ -45400,19 +33434,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1527,
         "balls": 1386,
         "strikeRate": 110.17,
         "economy": 6.61
       },
       "middle": {
-        "runs": 2783,
         "balls": 2480,
         "strikeRate": 112.22,
         "economy": 6.73
       },
       "death": {
-        "runs": 739,
         "balls": 564,
         "strikeRate": 131.03,
         "economy": 7.86
@@ -45426,50 +33457,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 125.81,
     "runs": 7527,
     "innings": 223,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 246,
     "boundaryPct": 14.54,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 3222,
         "balls": 2658,
         "strikeRate": 121.22,
         "economy": 7.27
       },
       "middle": {
-        "runs": 3106,
         "balls": 2591,
         "strikeRate": 119.88,
         "economy": 7.19
       },
       "death": {
-        "runs": 1199,
         "balls": 734,
         "strikeRate": 163.35,
         "economy": 9.8
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -45487,20 +33492,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.4,
     "bowlingStrikeRate": 20.15,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 16,
         "balls": 15,
         "strikeRate": 106.67,
         "economy": 6.4
       },
       "death": {
-        "runs": 106,
         "balls": 106,
         "strikeRate": 100,
         "economy": 6
@@ -45508,19 +33505,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2458,
         "balls": 1886,
         "strikeRate": 130.33,
         "economy": 7.82
       },
       "middle": {
-        "runs": 917,
         "balls": 645,
         "strikeRate": 142.17,
         "economy": 8.53
       },
       "death": {
-        "runs": 1570,
         "balls": 875,
         "strikeRate": 179.43,
         "economy": 10.77
@@ -45541,20 +33535,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.32,
     "bowlingStrikeRate": 20.99,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 5,
         "balls": 10,
         "strikeRate": 50,
         "economy": 3
       },
       "death": {
-        "runs": 126,
         "balls": 145,
         "strikeRate": 86.9,
         "economy": 5.21
@@ -45562,19 +33548,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2204,
         "balls": 1650,
         "strikeRate": 133.58,
         "economy": 8.01
       },
       "middle": {
-        "runs": 750,
         "balls": 558,
         "strikeRate": 134.41,
         "economy": 8.06
       },
       "death": {
-        "runs": 1438,
         "balls": 836,
         "strikeRate": 172.01,
         "economy": 10.32
@@ -45595,20 +33578,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 9.09,
     "bowlingStrikeRate": 18.15,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 36,
         "balls": 47,
         "strikeRate": 76.6,
         "economy": 4.6
       },
       "death": {
-        "runs": 92,
         "balls": 96,
         "strikeRate": 95.83,
         "economy": 5.75
@@ -45616,19 +33591,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1256,
         "balls": 936,
         "strikeRate": 134.19,
         "economy": 8.05
       },
       "middle": {
-        "runs": 1000,
         "balls": 762,
         "strikeRate": 131.23,
         "economy": 7.87
       },
       "death": {
-        "runs": 1442,
         "balls": 843,
         "strikeRate": 171.06,
         "economy": 10.26
@@ -45649,20 +33621,7 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 4.35,
     "bowlingStrikeRate": 18.13,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 15,
         "balls": 23,
         "strikeRate": 65.22,
         "economy": 3.91
@@ -45670,19 +33629,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 710,
         "balls": 456,
         "strikeRate": 155.7,
         "economy": 9.34
       },
       "middle": {
-        "runs": 395,
         "balls": 248,
         "strikeRate": 159.27,
         "economy": 9.56
       },
       "death": {
-        "runs": 739,
         "balls": 384,
         "strikeRate": 192.45,
         "economy": 11.55
@@ -45696,50 +33652,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 125.26,
     "runs": 4780,
     "innings": 218,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 238,
     "boundaryPct": 14.15,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 512,
         "balls": 527,
         "strikeRate": 97.15,
         "economy": 5.83
       },
       "middle": {
-        "runs": 2971,
         "balls": 2470,
         "strikeRate": 120.28,
         "economy": 7.22
       },
       "death": {
-        "runs": 1297,
         "balls": 819,
         "strikeRate": 158.36,
         "economy": 9.5
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -45757,20 +33687,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 3.85,
     "bowlingStrikeRate": 18.09,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 8,
         "balls": 11,
         "strikeRate": 72.73,
         "economy": 4.36
       },
       "death": {
-        "runs": 36,
         "balls": 41,
         "strikeRate": 87.8,
         "economy": 5.27
@@ -45778,19 +33700,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 282,
         "balls": 228,
         "strikeRate": 123.68,
         "economy": 7.42
       },
       "middle": {
-        "runs": 574,
         "balls": 486,
         "strikeRate": 118.11,
         "economy": 7.09
       },
       "death": {
-        "runs": 110,
         "balls": 82,
         "strikeRate": 134.15,
         "economy": 8.05
@@ -45804,50 +33723,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 148.35,
     "runs": 8487,
     "innings": 355,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 374,
     "boundaryPct": 20.21,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1492,
         "balls": 1065,
         "strikeRate": 140.09,
         "economy": 8.41
       },
       "middle": {
-        "runs": 4547,
         "balls": 3338,
         "strikeRate": 136.22,
         "economy": 8.17
       },
       "death": {
-        "runs": 2448,
         "balls": 1318,
         "strikeRate": 185.74,
         "economy": 11.14
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -45866,19 +33759,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.17,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 257,
         "balls": 211,
         "strikeRate": 121.8,
         "economy": 7.31
       },
       "death": {
-        "runs": 701,
         "balls": 451,
         "strikeRate": 155.43,
         "economy": 9.33
@@ -45886,19 +33776,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1997,
         "balls": 1434,
         "strikeRate": 139.26,
         "economy": 8.36
       },
       "middle": {
-        "runs": 1178,
         "balls": 929,
         "strikeRate": 126.8,
         "economy": 7.61
       },
       "death": {
-        "runs": 1508,
         "balls": 986,
         "strikeRate": 152.94,
         "economy": 9.18
@@ -45920,19 +33807,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.35,
     "battingPhases": {
       "powerplay": {
-        "runs": 15,
         "balls": 13,
         "strikeRate": 115.38,
         "economy": 6.92
       },
       "middle": {
-        "runs": 156,
         "balls": 177,
         "strikeRate": 88.14,
         "economy": 5.29
       },
       "death": {
-        "runs": 453,
         "balls": 374,
         "strikeRate": 121.12,
         "economy": 7.27
@@ -45940,19 +33824,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 571,
         "balls": 437,
         "strikeRate": 130.66,
         "economy": 7.84
       },
       "middle": {
-        "runs": 4010,
         "balls": 3077,
         "strikeRate": 130.32,
         "economy": 7.82
       },
       "death": {
-        "runs": 678,
         "balls": 474,
         "strikeRate": 143.04,
         "economy": 8.58
@@ -45966,50 +33847,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 140.25,
     "runs": 8063,
     "innings": 274,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 277,
     "boundaryPct": 19.86,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 4824,
         "balls": 3482,
         "strikeRate": 138.54,
         "economy": 8.31
       },
       "middle": {
-        "runs": 2774,
         "balls": 2028,
         "strikeRate": 136.79,
         "economy": 8.21
       },
       "death": {
-        "runs": 465,
         "balls": 239,
         "strikeRate": 194.56,
         "economy": 11.67
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -46028,19 +33883,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.26,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 238,
         "balls": 232,
         "strikeRate": 102.59,
         "economy": 6.16
       },
       "death": {
-        "runs": 1295,
         "balls": 805,
         "strikeRate": 160.87,
         "economy": 9.65
@@ -46048,19 +33900,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1146,
         "balls": 1023,
         "strikeRate": 112.02,
         "economy": 6.72
       },
       "middle": {
-        "runs": 5502,
         "balls": 5090,
         "strikeRate": 108.09,
         "economy": 6.49
       },
       "death": {
-        "runs": 1842,
         "balls": 1392,
         "strikeRate": 132.33,
         "economy": 7.94
@@ -46082,19 +33931,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 23.98,
     "battingPhases": {
       "powerplay": {
-        "runs": 78,
         "balls": 73,
         "strikeRate": 106.85,
         "economy": 6.41
       },
       "middle": {
-        "runs": 321,
         "balls": 322,
         "strikeRate": 99.69,
         "economy": 5.98
       },
       "death": {
-        "runs": 618,
         "balls": 470,
         "strikeRate": 131.49,
         "economy": 7.89
@@ -46102,19 +33948,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1979,
         "balls": 1648,
         "strikeRate": 120.08,
         "economy": 7.21
       },
       "middle": {
-        "runs": 4213,
         "balls": 3648,
         "strikeRate": 115.49,
         "economy": 6.93
       },
       "death": {
-        "runs": 1071,
         "balls": 794,
         "strikeRate": 134.89,
         "economy": 8.09
@@ -46136,19 +33979,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 24.03,
     "battingPhases": {
       "powerplay": {
-        "runs": 161,
         "balls": 117,
         "strikeRate": 137.61,
         "economy": 8.26
       },
       "middle": {
-        "runs": 1607,
         "balls": 1475,
         "strikeRate": 108.95,
         "economy": 6.54
       },
       "death": {
-        "runs": 2266,
         "balls": 1507,
         "strikeRate": 150.36,
         "economy": 9.02
@@ -46156,19 +33996,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 289,
         "balls": 222,
         "strikeRate": 130.18,
         "economy": 7.81
       },
       "middle": {
-        "runs": 5683,
         "balls": 4601,
         "strikeRate": 123.52,
         "economy": 7.41
       },
       "death": {
-        "runs": 1051,
         "balls": 727,
         "strikeRate": 144.57,
         "economy": 8.67
@@ -46182,50 +34019,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 141.28,
     "runs": 5021,
     "innings": 203,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 211,
     "boundaryPct": 19.02,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 673,
         "balls": 581,
         "strikeRate": 115.83,
         "economy": 6.95
       },
       "middle": {
-        "runs": 2972,
         "balls": 2251,
         "strikeRate": 132.03,
         "economy": 7.92
       },
       "death": {
-        "runs": 1376,
         "balls": 722,
         "strikeRate": 190.58,
         "economy": 11.43
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -46236,50 +34047,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 129.69,
     "runs": 5203,
     "innings": 210,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 217,
     "boundaryPct": 17.32,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2140,
         "balls": 1734,
         "strikeRate": 123.41,
         "economy": 7.4
       },
       "middle": {
-        "runs": 2476,
         "balls": 1936,
         "strikeRate": 127.89,
         "economy": 7.67
       },
       "death": {
-        "runs": 587,
         "balls": 342,
         "strikeRate": 171.64,
         "economy": 10.3
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -46298,19 +34083,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 29.27,
     "battingPhases": {
       "powerplay": {
-        "runs": 0,
         "balls": 1,
         "strikeRate": 0,
         "economy": 0
       },
       "middle": {
-        "runs": 27,
         "balls": 26,
         "strikeRate": 103.85,
         "economy": 6.23
       },
       "death": {
-        "runs": 111,
         "balls": 77,
         "strikeRate": 144.16,
         "economy": 8.65
@@ -46318,19 +34100,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 195,
         "balls": 132,
         "strikeRate": 147.73,
         "economy": 8.86
       },
       "middle": {
-        "runs": 313,
         "balls": 216,
         "strikeRate": 144.91,
         "economy": 8.69
       },
       "death": {
-        "runs": 189,
         "balls": 91,
         "strikeRate": 207.69,
         "economy": 12.46
@@ -46352,19 +34131,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 19.13,
     "battingPhases": {
       "powerplay": {
-        "runs": 497,
         "balls": 416,
         "strikeRate": 119.47,
         "economy": 7.17
       },
       "middle": {
-        "runs": 2030,
         "balls": 1616,
         "strikeRate": 125.62,
         "economy": 7.54
       },
       "death": {
-        "runs": 1341,
         "balls": 818,
         "strikeRate": 163.94,
         "economy": 9.84
@@ -46372,19 +34148,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2524,
         "balls": 1797,
         "strikeRate": 140.46,
         "economy": 8.43
       },
       "middle": {
-        "runs": 1914,
         "balls": 1278,
         "strikeRate": 149.77,
         "economy": 8.99
       },
       "death": {
-        "runs": 1999,
         "balls": 1248,
         "strikeRate": 160.18,
         "economy": 9.61
@@ -46398,50 +34171,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 144.14,
     "runs": 6613,
     "innings": 242,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 255,
     "boundaryPct": 19.18,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2160,
         "balls": 1642,
         "strikeRate": 131.55,
         "economy": 7.89
       },
       "middle": {
-        "runs": 3477,
         "balls": 2414,
         "strikeRate": 144.03,
         "economy": 8.64
       },
       "death": {
-        "runs": 976,
         "balls": 532,
         "strikeRate": 183.46,
         "economy": 11.01
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -46460,19 +34207,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.1,
     "battingPhases": {
       "powerplay": {
-        "runs": 264,
         "balls": 247,
         "strikeRate": 106.88,
         "economy": 6.41
       },
       "middle": {
-        "runs": 1866,
         "balls": 1442,
         "strikeRate": 129.4,
         "economy": 7.76
       },
       "death": {
-        "runs": 1241,
         "balls": 722,
         "strikeRate": 171.88,
         "economy": 10.31
@@ -46480,19 +34224,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 422,
         "balls": 312,
         "strikeRate": 135.26,
         "economy": 8.12
       },
       "middle": {
-        "runs": 6588,
         "balls": 5287,
         "strikeRate": 124.61,
         "economy": 7.48
       },
       "death": {
-        "runs": 728,
         "balls": 519,
         "strikeRate": 140.27,
         "economy": 8.42
@@ -46514,19 +34255,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 12,
     "battingPhases": {
       "powerplay": {
-        "runs": 4419,
         "balls": 3599,
         "strikeRate": 122.78,
         "economy": 7.37
       },
       "middle": {
-        "runs": 3377,
         "balls": 2659,
         "strikeRate": 127,
         "economy": 7.62
       },
       "death": {
-        "runs": 732,
         "balls": 460,
         "strikeRate": 159.13,
         "economy": 9.55
@@ -46534,22 +34272,14 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 26,
         "balls": 18,
         "strikeRate": 144.44,
         "economy": 8.67
       },
       "middle": {
-        "runs": 40,
         "balls": 30,
         "strikeRate": 133.33,
         "economy": 8
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -46560,47 +34290,29 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 137.21,
     "runs": 5568,
     "innings": 198,
-    "bowlingAverage": null,
     "economyRate": 6.75,
     "wickets": 0,
     "matches": 204,
     "boundaryPct": 17.18,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 1263,
         "balls": 1112,
         "strikeRate": 113.58,
         "economy": 6.81
       },
       "middle": {
-        "runs": 3145,
         "balls": 2304,
         "strikeRate": 136.5,
         "economy": 8.19
       },
       "death": {
-        "runs": 1160,
         "balls": 642,
         "strikeRate": 180.69,
         "economy": 10.84
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 9,
         "balls": 8,
         "strikeRate": 112.5,
         "economy": 6.75
@@ -46614,50 +34326,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 141.37,
     "runs": 5444,
     "innings": 165,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 169,
     "boundaryPct": 18.62,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 2535,
         "balls": 1890,
         "strikeRate": 134.13,
         "economy": 8.05
       },
       "middle": {
-        "runs": 2355,
         "balls": 1623,
         "strikeRate": 145.1,
         "economy": 8.71
       },
       "death": {
-        "runs": 554,
         "balls": 338,
         "strikeRate": 163.91,
         "economy": 9.83
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -46676,19 +34362,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 21.99,
     "battingPhases": {
       "powerplay": {
-        "runs": 2346,
         "balls": 1485,
         "strikeRate": 157.98,
         "economy": 9.48
       },
       "middle": {
-        "runs": 1260,
         "balls": 830,
         "strikeRate": 151.81,
         "economy": 9.11
       },
       "death": {
-        "runs": 753,
         "balls": 547,
         "strikeRate": 137.66,
         "economy": 8.26
@@ -46696,19 +34379,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2707,
         "balls": 2588,
         "strikeRate": 104.6,
         "economy": 6.28
       },
       "middle": {
-        "runs": 5859,
         "balls": 5910,
         "strikeRate": 99.14,
         "economy": 5.95
       },
       "death": {
-        "runs": 2971,
         "balls": 2561,
         "strikeRate": 116.01,
         "economy": 6.96
@@ -46730,19 +34410,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 33.08,
     "battingPhases": {
       "powerplay": {
-        "runs": 1912,
         "balls": 1451,
         "strikeRate": 131.77,
         "economy": 7.91
       },
       "middle": {
-        "runs": 3805,
         "balls": 2937,
         "strikeRate": 129.55,
         "economy": 7.77
       },
       "death": {
-        "runs": 1368,
         "balls": 802,
         "strikeRate": 170.57,
         "economy": 10.23
@@ -46750,19 +34427,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 82,
         "balls": 66,
         "strikeRate": 124.24,
         "economy": 7.45
       },
       "middle": {
-        "runs": 1182,
         "balls": 989,
         "strikeRate": 119.51,
         "economy": 7.17
       },
       "death": {
-        "runs": 296,
         "balls": 202,
         "strikeRate": 146.53,
         "economy": 8.79
@@ -46784,19 +34458,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 6,
     "battingPhases": {
       "powerplay": {
-        "runs": 1704,
         "balls": 1224,
         "strikeRate": 139.22,
         "economy": 8.35
       },
       "middle": {
-        "runs": 4647,
         "balls": 3098,
         "strikeRate": 150,
         "economy": 9
       },
       "death": {
-        "runs": 1450,
         "balls": 742,
         "strikeRate": 195.42,
         "economy": 11.73
@@ -46804,19 +34475,11 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 8,
         "balls": 6,
         "strikeRate": 133.33,
         "economy": 8
       },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "death": {
-        "runs": 5,
         "balls": 6,
         "strikeRate": 83.33,
         "economy": 5
@@ -46830,50 +34493,24 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "strikeRate": 120.95,
     "runs": 6040,
     "innings": 209,
-    "bowlingAverage": null,
-    "economyRate": null,
     "wickets": 0,
     "matches": 209,
     "boundaryPct": 16.46,
-    "bowlingStrikeRate": null,
     "battingPhases": {
       "powerplay": {
-        "runs": 3210,
         "balls": 2919,
         "strikeRate": 109.97,
         "economy": 6.6
       },
       "middle": {
-        "runs": 2337,
         "balls": 1800,
         "strikeRate": 129.83,
         "economy": 7.79
       },
       "death": {
-        "runs": 493,
         "balls": 275,
         "strikeRate": 179.27,
         "economy": 10.76
-      }
-    },
-    "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "middle": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
-      "death": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
       }
     },
     "source": "cricsheet"
@@ -46891,20 +34528,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 12.18,
     "bowlingStrikeRate": 16.22,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 100,
         "balls": 115,
         "strikeRate": 86.96,
         "economy": 5.22
       },
       "death": {
-        "runs": 348,
         "balls": 320,
         "strikeRate": 108.75,
         "economy": 6.53
@@ -46912,19 +34541,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 1964,
         "balls": 1663,
         "strikeRate": 118.1,
         "economy": 7.09
       },
       "middle": {
-        "runs": 1408,
         "balls": 1058,
         "strikeRate": 133.08,
         "economy": 7.98
       },
       "death": {
-        "runs": 1564,
         "balls": 1010,
         "strikeRate": 154.85,
         "economy": 9.29
@@ -46946,19 +34572,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 20.04,
     "battingPhases": {
       "powerplay": {
-        "runs": 2305,
         "balls": 1476,
         "strikeRate": 156.17,
         "economy": 9.37
       },
       "middle": {
-        "runs": 1785,
         "balls": 1312,
         "strikeRate": 136.05,
         "economy": 8.16
       },
       "death": {
-        "runs": 536,
         "balls": 308,
         "strikeRate": 174.03,
         "economy": 10.44
@@ -46966,19 +34589,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 223,
         "balls": 150,
         "strikeRate": 148.67,
         "economy": 8.92
       },
       "middle": {
-        "runs": 370,
         "balls": 262,
         "strikeRate": 141.22,
         "economy": 8.47
       },
       "death": {
-        "runs": 73,
         "balls": 49,
         "strikeRate": 148.98,
         "economy": 8.94
@@ -46999,20 +34619,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 10.4,
     "bowlingStrikeRate": 18.66,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 20,
         "balls": 28,
         "strikeRate": 71.43,
         "economy": 4.29
       },
       "death": {
-        "runs": 163,
         "balls": 145,
         "strikeRate": 112.41,
         "economy": 6.74
@@ -47020,19 +34632,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 3057,
         "balls": 2470,
         "strikeRate": 123.77,
         "economy": 7.43
       },
       "middle": {
-        "runs": 907,
         "balls": 642,
         "strikeRate": 141.28,
         "economy": 8.48
       },
       "death": {
-        "runs": 1975,
         "balls": 1199,
         "strikeRate": 164.72,
         "economy": 9.88
@@ -47054,39 +34663,28 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 50.38,
     "battingPhases": {
       "powerplay": {
-        "runs": 4536,
         "balls": 3561,
         "strikeRate": 127.38,
         "economy": 7.64
       },
       "middle": {
-        "runs": 6239,
         "balls": 4938,
         "strikeRate": 126.35,
         "economy": 7.58
       },
       "death": {
-        "runs": 2540,
         "balls": 1348,
         "strikeRate": 188.43,
         "economy": 11.31
       }
     },
     "bowlingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 477,
         "balls": 351,
         "strikeRate": 135.9,
         "economy": 8.15
       },
       "death": {
-        "runs": 95,
         "balls": 52,
         "strikeRate": 182.69,
         "economy": 10.96
@@ -47108,19 +34706,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "bowlingStrikeRate": 18.94,
     "battingPhases": {
       "powerplay": {
-        "runs": 99,
         "balls": 103,
         "strikeRate": 96.12,
         "economy": 5.77
       },
       "middle": {
-        "runs": 323,
         "balls": 311,
         "strikeRate": 103.86,
         "economy": 6.23
       },
       "death": {
-        "runs": 476,
         "balls": 383,
         "strikeRate": 124.28,
         "economy": 7.46
@@ -47128,19 +34723,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 2155,
         "balls": 1638,
         "strikeRate": 131.56,
         "economy": 7.89
       },
       "middle": {
-        "runs": 857,
         "balls": 628,
         "strikeRate": 136.46,
         "economy": 8.19
       },
       "death": {
-        "runs": 1545,
         "balls": 1067,
         "strikeRate": 144.8,
         "economy": 8.69
@@ -47161,20 +34753,12 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     "boundaryPct": 0,
     "bowlingStrikeRate": 17.63,
     "battingPhases": {
-      "powerplay": {
-        "runs": 0,
-        "balls": 0,
-        "strikeRate": null,
-        "economy": null
-      },
       "middle": {
-        "runs": 4,
         "balls": 23,
         "strikeRate": 17.39,
         "economy": 1.04
       },
       "death": {
-        "runs": 39,
         "balls": 76,
         "strikeRate": 51.32,
         "economy": 3.08
@@ -47182,19 +34766,16 @@ export const CRICSHEET_STATS: Record<string, CareerStats> = {
     },
     "bowlingPhases": {
       "powerplay": {
-        "runs": 915,
         "balls": 680,
         "strikeRate": 134.56,
         "economy": 8.07
       },
       "middle": {
-        "runs": 5532,
         "balls": 4262,
         "strikeRate": 129.8,
         "economy": 7.79
       },
       "death": {
-        "runs": 1379,
         "balls": 859,
         "strikeRate": 160.54,
         "economy": 9.63

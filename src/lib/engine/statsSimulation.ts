@@ -81,7 +81,9 @@ function referenceFor(table: Record<string, number>, format: string | undefined,
  * numbers land on genuinely comparable ground. */
 export function battingProfile(player: Player): { strikeRate: number; reliability: number } {
   const stats = player.careerStats;
-  if (!stats || stats.strikeRate === null || stats.battingAverage === null) {
+  // `== null` deliberately, not `===`: these fields are optional as well as
+  // nullable, since the generated data omits nulls rather than shipping them.
+  if (!stats || stats.strikeRate == null || stats.battingAverage == null) {
     return { strikeRate: FALLBACK_STRIKE_RATE, reliability: 0.6 };
   }
   const srReference = referenceFor(FORMAT_REFERENCE_STRIKE_RATE, stats.format, TARGET_T20_STRIKE_RATE);
@@ -121,7 +123,7 @@ export function expectedRunsFromBatting(battingOrder: Player[]): number {
  * aren't literally comparable numbers). Exported for decision-resolution
  * comparisons in simulate.ts, not just the team-strength math below. */
 export function economyOnT20Scale(stats: CareerStats): number | null {
-  if (stats.economyRate === null) return null;
+  if (stats.economyRate == null) return null;
   const reference = referenceFor(FORMAT_REFERENCE_ECONOMY, stats.format, TARGET_T20_ECONOMY);
   const relativeEconomy = stats.economyRate / reference;
   return relativeEconomy * TARGET_T20_ECONOMY;
@@ -162,7 +164,7 @@ export function bowlingSuppression(xi: Player[]): number {
  * scale — same cross-format conversion as the strike rate/economy ones
  * above. null if they have no meaningful bowling record. */
 export function bowlingAverageOnT20Scale(stats: CareerStats): number | null {
-  if (stats.bowlingAverage === null || stats.wickets === 0) return null;
+  if (stats.bowlingAverage == null || stats.wickets === 0) return null;
   const reference = referenceFor(FORMAT_REFERENCE_BOWLING_AVERAGE, stats.format, 26);
   const relative = stats.bowlingAverage / reference;
   return relative * 26;

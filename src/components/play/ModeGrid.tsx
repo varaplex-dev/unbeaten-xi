@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ModeBadge } from "@/components/play/ModeBadge";
 import { useGameStore, type GameMode } from "@/lib/store/gameStore";
+import type { CompetitionId } from "@/lib/engine/competitions";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import { cn } from "@/lib/utils";
 
@@ -31,6 +32,10 @@ interface ModeDef {
   /** A mode that navigates to its own route (e.g. online Head-to-Head)
    * rather than starting the local spin-draft flow. */
   href?: string;
+  /** Which real competition this mode plays as — sets the season length and,
+   * for World Cup Run, restricts the spin pool to national sides. Defaults to
+   * the league campaign. */
+  competition?: CompetitionId;
 }
 
 const MODES: ModeDef[] = [
@@ -41,7 +46,7 @@ const MODES: ModeDef[] = [
     tone: "accent",
     name: "All-Time XI",
     description:
-      "Spin to land on a real historic squad, current national team, or an actual past-season IPL/BBL/PSL franchise roster — then pick one player from it. Real players, real stats. See if you can go 14-0.",
+      "Spin to land on a real historic squad, current national team, or an actual past-season IPL/BBL/PSL franchise roster — then pick one player from it. Fourteen matches, the same league campaign an IPL side plays. See if you can go 14-0.",
     available: true,
     gameMode: "all-time-real",
   },
@@ -62,8 +67,10 @@ const MODES: ModeDef[] = [
     image: "/logos/badge-world-cup.png",
     tone: "gold",
     name: "World Cup Run",
-    description: "A knockout tournament format.",
-    available: false,
+    description: "",
+    available: true,
+    gameMode: "all-time-real",
+    competition: "world-cup",
   },
   {
     id: "india-xi",
@@ -130,7 +137,7 @@ export function ModeGrid() {
       return;
     }
     if (!mode.gameMode) return;
-    spinEraTeam();
+    spinEraTeam(mode.competition);
     router.push("/squad-select");
   }
 
@@ -141,14 +148,24 @@ export function ModeGrid() {
           <CardHeader className="flex flex-row items-start justify-between gap-4">
             <div className="flex items-center gap-3">
               <ModeBadge emoji={mode.emoji} image={mode.image} tone={mode.tone} />
-              <CardTitle>{mode.id === "all-time-xi" ? t("play.allTimeXi") : mode.name}</CardTitle>
+              <CardTitle>
+                {mode.id === "all-time-xi"
+                  ? t("play.allTimeXi")
+                  : mode.id === "world-cup-run"
+                    ? t("play.worldCupRun")
+                    : mode.name}
+              </CardTitle>
             </div>
             {!mode.available && <Badge variant="gold">{t("play.comingSoon")}</Badge>}
           </CardHeader>
           <CardContent>
             <div className="flex items-end justify-between gap-4">
               <p className="text-sm text-foreground-muted">
-                {mode.id === "all-time-xi" ? t("play.allTimeXiDesc") : mode.description}
+                {mode.id === "all-time-xi"
+                  ? t("play.allTimeXiDesc")
+                  : mode.id === "world-cup-run"
+                    ? t("play.worldCupRunDesc")
+                    : mode.description}
               </p>
               {mode.available && (
                 <div className="flex shrink-0 gap-2">

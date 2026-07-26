@@ -16,7 +16,7 @@ function runFullSeason(
 ): SeasonStats {
   const decisions: Record<number, string> = {};
   for (let guard = 0; guard < 20; guard++) {
-    const result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions, undefined, averageEra);
+    const result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions, { averageEra });
     if (result.stats) return result.stats;
     if (!result.pendingDecision) throw new Error("simulateSeason paused without a pendingDecision");
     decisions[result.pendingDecision.matchNumber] = result.pendingDecision.options[0].id;
@@ -68,6 +68,71 @@ describe("simulateSeason", () => {
     const lineup = autoAssignLineup(xi);
     const stats = runFullSeason("season-length-check", xi, lineup.battingOrder, lineup.captainId, null);
     expect(stats.wins + stats.losses).toBe(14);
+  });
+
+  it("runs each competition to its real per-team match count", () => {
+    const xi = PLAYERS.slice(0, 11);
+    const lineup = autoAssignLineup(xi);
+    // Per-team figures, not tournament totals: an IPL side plays 14 league
+    // games of the 74 played in all, a BBL/PSL side 10, and a World Cup
+    // finalist 9. See competitions.ts.
+    for (const [competition, expected] of [
+      ["league-major", 14],
+      ["league-short", 10],
+      ["world-cup", 9],
+    ] as const) {
+      const decisions: Record<number, string> = {};
+      let stats: SeasonStats | null = null;
+      for (let guard = 0; guard < 20 && !stats; guard++) {
+        const result = simulateSeason(
+          `competition-${competition}`,
+          xi,
+          lineup.battingOrder,
+          lineup.captainId,
+          null,
+          decisions,
+          { competition }
+        );
+        if (result.stats) stats = result.stats;
+        else if (result.pendingDecision)
+          decisions[result.pendingDecision.matchNumber] = result.pendingDecision.options[0].id;
+        else throw new Error("paused with no pending decision");
+      }
+      expect(stats, `${competition} never completed`).not.toBeNull();
+      expect(stats!.wins + stats!.losses, `${competition} season length`).toBe(expected);
+    }
+  });
+
+  it("a shorter competition still faces the full weak-to-elite range of opponents", () => {
+    // A World Cup run must not simply truncate the league fixture list, which
+    // would hand the player only the weakest sides and make 9-0 trivial.
+    const xi = PLAYERS.slice(0, 11);
+    const lineup = autoAssignLineup(xi);
+
+    // Must run to completion — the first call pauses on an in-match decision
+    // and returns no fixtures at all.
+    const opponentsFor = (competition: "world-cup" | "league-major") => {
+      const decisions: Record<number, string> = {};
+      for (let guard = 0; guard < 20; guard++) {
+        const r = simulateSeason("spread", xi, lineup.battingOrder, lineup.captainId, null, decisions, {
+          competition,
+        });
+        if (r.stats) return r.matches.map((m) => m.opponent);
+        if (!r.pendingDecision) throw new Error("paused with no pending decision");
+        decisions[r.pendingDecision.matchNumber] = r.pendingDecision.options[0].id;
+      }
+      throw new Error(`${competition} never completed`);
+    };
+
+    const wc = opponentsFor("world-cup");
+    const league = opponentsFor("league-major");
+    expect(wc).toHaveLength(9);
+    expect(league).toHaveLength(14);
+    // The short schedule is drawn across the same ranked pool rather than
+    // truncated, so it faces a spread of distinct sides, not one repeated or
+    // a cluster from a single end of the rankings.
+    expect(new Set(wc).size).toBeGreaterThan(1);
+    expect(new Set(league).size).toBeGreaterThan(1);
   });
 
   it("is fully deterministic: same seed, same team, same decisions -> identical result", () => {

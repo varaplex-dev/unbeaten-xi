@@ -1,0 +1,123 @@
+{
+  "_readme": [
+    "Hand-verified Cricsheet -> SportMonks identity assertions.",
+    "",
+    "The automatic join is deliberately conservative: when several real people",
+    "share a surname and first initial it refuses to guess, which is correct but",
+    "left out many of the biggest names in T20 cricket (Rohit Sharma, Bumrah,",
+    "Rashid Khan, Dwayne Bravo, Steve Smith). Each entry below was checked",
+    "individually against at least three independent signals -- the expansion of",
+    "the Cricsheet initials, country, franchise history, career span, and the",
+    "statistical profile (wickets/economy/strike rate) -- and the `why` field",
+    "records that evidence so any entry can be re-audited later.",
+    "",
+    "This is a human identity assertion, NOT invented data: it only says WHICH",
+    "existing SportMonks record belongs to WHICH existing Cricsheet player. No",
+    "stat, style, or nationality is authored here.",
+    "",
+    "Overrides are applied before every automatic pass and are still held to the",
+    "one-to-one rule -- reconcile.mjs fails loudly if two of them claim the same",
+    "SportMonks id, or if an id does not exist in the directory."
+  ],
+
+  "overrides": [
+    { "cricsheetId": "740742ef", "cricsheetName": "RG Sharma", "sportmonksId": 278, "sportmonksName": "Rohit Sharma",
+      "why": "RG = Rohit Gurunath. India + Deccan Chargers (2008-10) then Mumbai Indians matches his real club history; 434 matches 2007-2026; 16 wickets of occasional offbreak matches SportMonks' right-arm-offbreak." },
+
+    { "cricsheetId": "462411b3", "cricsheetName": "JJ Bumrah", "sportmonksId": 284, "sportmonksName": "Jasprit Bumrah",
+      "why": "JJ = Jasprit Jasbirsingh. Mumbai Indians + India only, IPL debut 2013 matches firstYear 2013; 308 wickets at 7.09 is a frontline quick, matching right-arm-fast. Decoy was Jagdeep Bumrah (id 58320), also India, which is why the auto-join abstained." },
+
+    { "cricsheetId": "5f547c8b", "cricsheetName": "Rashid Khan", "sportmonksId": 306, "sportmonksName": "Rashid Khan",
+      "why": "Afghanistan, dob 1998, legbreak-googly. 411 wickets at 6.79 economy from 2016 is the leading T20 legspinner; Adelaide Strikers / Sunrisers Hyderabad / Gujarat Titans is his exact franchise record. Four other Khans contested this key." },
+
+    { "cricsheetId": "87e562a9", "cricsheetName": "DJ Bravo", "sportmonksId": 439, "sportmonksName": "Dwayne Bravo",
+      "why": "DJ = Dwayne John. 539 wickets, the most in T20 history, at fast-medium; 2006-2024 and CSK/Melbourne Renegades. Distinct from his cousin Darren (DM) Bravo, id 124." },
+
+    { "cricsheetId": "271f83cd", "cricsheetName": "SA Yadav", "sportmonksId": 2879, "sportmonksName": "Suryakumar Yadav",
+      "why": "SA = Suryakumar Ashok. KKR (2014-17) then Mumbai Indians then India is his exact path; average 34.7 at strike rate 154 is his signature profile. Contested by Kuldeep and Umesh Yadav on the same surname." },
+
+    { "cricsheetId": "30a45b23", "cricsheetName": "SPD Smith", "sportmonksId": 768, "sportmonksName": "Steven Smith",
+      "why": "SPD = Steven Peter Devereux. Australia; Rising Pune Supergiant + Rajasthan Royals + Sydney Sixers; 27 wickets of legbreak-googly matches SportMonks' listed style." },
+
+    { "cricsheetId": "b8d490fd", "cricsheetName": "AJ Finch", "sportmonksId": 25, "sportmonksName": "Aaron Finch",
+      "why": "AJ = Aaron James. Australia; Melbourne Renegades plus the unusually long IPL list (Gujarat Lions, Kings XI, RCB, KKR) is his real record; 7 wickets of part-time slow left-arm." },
+
+    { "cricsheetId": "c03f1114", "cricsheetName": "KD Karthik", "sportmonksId": 275, "sportmonksName": "Dinesh Karthik",
+      "why": "KD = Krishnakumar Dinesh; universally known by his middle name. India wicketkeeper, zero wickets across 315 matches; Gujarat Lions/KKR/RCB/Delhi matches his club history." },
+
+    { "cricsheetId": "bb351c23", "cricsheetName": "MM Ali", "sportmonksId": 131, "sportmonksName": "Moeen Ali",
+      "why": "MM = Moeen Munir. England allrounder, left-hand-bat, 220 wickets of offbreak at 7.64 economy; RCB and CSK spells match." },
+
+    { "cricsheetId": "2e81a32d", "cricsheetName": "B Kumar", "sportmonksId": 280, "sportmonksName": "Bhuvneshwar Kumar",
+      "why": "India; Pune Warriors then Sunrisers Hyderabad then RCB is an exact and distinctive franchise sequence; 311 wickets fast-medium from 2011." },
+
+    { "cricsheetId": "2e171977", "cricsheetName": "AR Patel", "sportmonksId": 815, "sportmonksName": "Axar Patel",
+      "why": "AR = Akshar Rajeshbhai. Kings XI Punjab then Delhi Capitals then India; 235 wickets of slow left-arm orthodox and left-hand-bat both match. Decoy was Ajaz Patel (NZ), who never played those teams." },
+
+    { "cricsheetId": "a12e1d51", "cricsheetName": "SL Malinga", "sportmonksId": 175, "sportmonksName": "Lasith Malinga",
+      "why": "SL = Separamadu Lasith. Sri Lanka, right-arm-fast; Mumbai Indians; 304 wickets; career ends 2020, the year he retired." },
+
+    { "cricsheetId": "64c34cd0", "cricsheetName": "Shoaib Malik", "sportmonksId": 264, "sportmonksName": "Shoaib Malik",
+      "why": "Pakistan allrounder, right-arm-offbreak; 103 wickets across 2006-2025, one of the longest careers in the data, matching dob 1982." },
+
+    { "cricsheetId": "0dc00542", "cricsheetName": "Shahid Afridi", "sportmonksId": 347, "sportmonksName": "Shahid Afridi",
+      "why": "dob 1980 Pakistan allrounder, legbreak: 255 wickets at 6.83 with a 153.6 strike rate is unmistakably Boom Boom, 2006-2022. NOTE the directory holds a SECOND, younger Shahid Afridi (id 15093, dob 1997) -- that name collision is exactly why the auto-join abstained." },
+
+    { "cricsheetId": "45a7e761", "cricsheetName": "Shaheen Shah Afridi", "sportmonksId": 271, "sportmonksName": "Shaheen Afridi",
+      "why": "Pakistan left-arm-fast-medium, dob 2000; career starts 2018 and 305 wickets; Lahore Qalandars is his home franchise. Distinct from Shahid Afridi above." },
+
+    { "cricsheetId": "a97c8ec2", "cricsheetName": "PWH de Silva", "sportmonksId": 4916, "sportmonksName": "Wanindu Hasaranga",
+      "why": "PWH de Silva is Wanindu Hasaranga de Silva -- SportMonks files him under Hasaranga, so no surname key could ever have matched. Sri Lanka legbreak, 279 wickets from 2017, RCB and Rajasthan Royals." },
+
+    { "cricsheetId": "1c914163", "cricsheetName": "Yuvraj Singh", "sportmonksId": 1727, "sportmonksName": "Yuvraj Singh",
+      "why": "India, left-hand-bat, slow left-arm orthodox with 61 wickets; 2007-2019 and the Kings XI/Pune/RCB/SRH/MI sequence match his real career." },
+
+    { "cricsheetId": "bb345e0b", "cricsheetName": "G Gambhir", "sportmonksId": 2267, "sportmonksName": "Gautam Gambhir",
+      "why": "India left-hand-bat opener; KKR and Delhi Daredevils only; zero wickets in 188 matches; 2007-2018 matches his retirement." },
+
+    { "cricsheetId": "8d2c70ad", "cricsheetName": "Kuldeep Yadav", "sportmonksId": 56, "sportmonksName": "Kuldeep Yadav",
+      "why": "India left-arm wrist spin (chinaman); KKR then Delhi Capitals then India; career from 2016." },
+
+    { "cricsheetId": "b61a3e1a", "cricsheetName": "LRPL Taylor", "sportmonksId": 209, "sportmonksName": "Ross Taylor",
+      "why": "LRPL = Luteru Ross Poutoa Lote. New Zealand middle-order; 2006-2025; Caribbean franchise spells (Jamaica Tallawahs, Guyana) match." },
+
+    { "cricsheetId": "d18f9182", "cricsheetName": "DPMD Jayawardene", "sportmonksId": 1433, "sportmonksName": "Mahela Jayawardene",
+      "why": "DPMD = Denagamage Praboth Mahela de Silva. Sri Lanka; 2006-2017 matches his retirement year; distinct from Sineth Jayawardene (born 2004)." },
+
+    { "cricsheetId": "0f12f9df", "cricsheetName": "NLTC Perera", "sportmonksId": 177, "sportmonksName": "Thisara Perera",
+      "why": "NLTC = Narangoda Liyanaarachchilage Thisara Chirantha. Sri Lanka bowling allrounder, left-hand-bat, fast-medium; 2010-2025." },
+
+    { "cricsheetId": "244048f6", "cricsheetName": "Arshdeep Singh", "sportmonksId": 4880, "sportmonksName": "Arshdeep Singh",
+      "why": "India left-arm-fast-medium, dob 1999; Kings XI Punjab -> Punjab Kings -> India, career from 2019. Distinct from Arshdeep Singh Brar (id 8157, offbreak, dob 1993)." },
+
+    { "cricsheetId": "2254ab79", "cricsheetName": "Sarfraz Ahmed", "sportmonksId": 4, "sportmonksName": "Sarfraz Ahmed",
+      "why": "Pakistan wicketkeeper, dob 1987; Quetta Gladiators is the franchise he captained." },
+
+    { "cricsheetId": "3ff033bb", "cricsheetName": "MD Shanaka", "sportmonksId": 178, "sportmonksName": "Dasun Shanaka",
+      "why": "MD = Mudiyanselage Dasun. Sri Lanka fast-medium allrounder; Bangladesh Premier League spells match." },
+
+    { "cricsheetId": "5d1e7582", "cricsheetName": "BKG Mendis", "sportmonksId": 166, "sportmonksName": "Kusal Mendis",
+      "why": "BKG = Balapuwaduge Kusal Gimhan. Sri Lanka; Gujarat Titans and Sri Lankan franchise sides match." },
+
+    { "cricsheetId": "35205dfc", "cricsheetName": "DR Smith", "sportmonksId": 764, "sportmonksName": "Dwayne Smith",
+      "why": "DR = Dwayne Romel. West Indies, dob 1983, right-arm-fast-medium; Bangladesh franchise sides match. Distinct from Steven (SPD) and Devon (DS) Smith." },
+
+    { "cricsheetId": "09a9d073", "cricsheetName": "J Charles", "sportmonksId": 368, "sportmonksName": "Johnson Charles",
+      "why": "West Indies wicketkeeper-batter, dob 1989; Bangladesh Premier League sides (Rangpur, Rajshahi, Sylhet) match." },
+
+    { "cricsheetId": "6b19d823", "cricsheetName": "A Mishra", "sportmonksId": 2672, "sportmonksName": "Amit Mishra",
+      "why": "India legbreak; Delhi Daredevils -> Delhi Capitals -> Lucknow Super Giants is his exact club sequence." },
+
+    { "cricsheetId": "cc1e8c68", "cricsheetName": "UT Yadav", "sportmonksId": 58, "sportmonksName": "Umesh Yadav",
+      "why": "UT = Umeshkumar Tilak. India right-arm-fast; KKR, RCB and Gujarat Titans match his club history." },
+
+    { "cricsheetId": "c3d35165", "cricsheetName": "JA Morkel", "sportmonksId": 647, "sportmonksName": "Albie Morkel",
+      "why": "JA = Johannes Albertus; known as Albie. South Africa fast-medium allrounder; Chennai Super Kings and St Lucia match. Distinct from his brother Morne." },
+
+    { "cricsheetId": "fb66ce1f", "cricsheetName": "CH Morris", "sportmonksId": 667, "sportmonksName": "Chris Morris",
+      "why": "CH = Christopher Henry. South Africa fast-medium; Delhi Daredevils/Capitals and Sydney Thunder match." },
+
+    { "cricsheetId": "18fac429", "cricsheetName": "SR Patel", "sportmonksId": 796, "sportmonksName": "Samit Patel",
+      "why": "SR = Samit Rohit. England slow left-arm orthodox allrounder; Melbourne Renegades and Bangladesh franchise spells match." }
+  ]
+}

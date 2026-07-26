@@ -3,16 +3,28 @@ import { persist } from "zustand/middleware";
 import type { DraftCategoryId, Player } from "@/lib/types";
 import { SQUAD_SIZE } from "@/lib/types";
 import { getPlayerById } from "@/lib/data/players";
-import { getRealPlayerById } from "@/lib/data/realPlayers";
-import { getLegendPlayerById } from "@/lib/data/legendPlayers";
-import { getEraTeamById, pickNextEraTeam } from "@/lib/data/eraTeams";
+import {
+  eraTeams,
+  nationalTeamPool,
+  realPlayers,
+  getEraTeamById,
+  pickNextEraTeam,
+  getRealPoolPlayerById,
+} from "@/lib/data/gameData";
+import { DEFAULT_COMPETITION_ID, type CompetitionId } from "@/lib/engine/competitions";
+
+/** Which teams a competition drafts from. A World Cup is contested by nations,
+ * so its pool excludes the club franchises; every other competition uses the
+ * full pool. */
+function teamPoolFor(competition: CompetitionId) {
+  return competition === "world-cup" ? nationalTeamPool() : eraTeams();
+}
 import { randomSeedString, todaySeedString } from "@/lib/engine/rng";
 import { autoAssignLineup, type BowlingPhase } from "@/lib/engine/lineup";
 import { simulateSeason, type MatchDecision, type MatchResult, type SeasonStats } from "@/lib/engine/simulate";
 import type { FieldingAssignments } from "@/lib/engine/fielding";
 import { generateRandomXI, spinImpactPlayer } from "@/lib/engine/draft";
 import { PLAYERS } from "@/lib/data/players";
-import { REAL_PLAYERS } from "@/lib/data/realPlayers";
 import { track } from "@/lib/analytics";
 
 export interface DraftPickRecord {
@@ -29,7 +41,7 @@ export type GameStage = "draft" | "squad-select" | "impact-player" | "team-setup
 export type GameMode = "fictional" | "all-time-real";
 
 function playerLookup(mode: GameMode, id: string): Player | undefined {
-  if (mode === "all-time-real") return getRealPlayerById(id) ?? getLegendPlayerById(id);
+  if (mode === "all-time-real") return getRealPoolPlayerById(id);
   return getPlayerById(id);
 }
 
@@ -39,6 +51,10 @@ export interface GameState {
   mode: GameMode;
   isDaily: boolean;
   createdAt: string | null;
+  /** Which real competition this game is being played as — sets the season
+   * length (14 league matches, 9 for a World Cup run) and, for World Cup Run,
+   * restricts the spin pool to national sides. See engine/competitions.ts. */
+  competition: CompetitionId;
   stage: GameStage;
   draftPicks: DraftPickRecord[];
   /** The Era Team currently revealed for the round in progress — drives
@@ -110,7 +126,7 @@ export interface GameState {
 interface GameActions {
   startNewGame: (options?: { seed?: string; isDaily?: boolean; mode?: GameMode }) => void;
   spinTheWheel: (mode: GameMode) => void;
-  spinEraTeam: () => void;
+  spinEraTeam: (competition?: CompetitionId) => void;
   spinNextTeam: () => void;
   selectSquadPlayer: (player: Player) => void;
   placeSquadPlayer: (slotIndex: number) => void;
@@ -144,6 +160,7 @@ const initialState: Omit<GameState, "hasHydrated" | "hardcoreMode" | "bestSeason
   gameId: null,
   seed: null,
   mode: "fictional",
+  competition: DEFAULT_COMPETITION_ID,
   isDaily: false,
   createdAt: null,
   stage: "draft",
@@ -228,7 +245,7 @@ export const useGameStore = create<GameState & GameActions>()(
 
       spinTheWheel: (mode) => {
         const seed = randomSeedString();
-        const pool = mode === "all-time-real" ? REAL_PLAYERS : PLAYERS;
+        const pool = mode === "all-time-real" ? realPlayers() : PLAYERS;
 
         const picks = generateRandomXI(seed, pool);
         const xi = picks.map((p) => p.player);
@@ -262,29 +279,35 @@ export const useGameStore = create<GameState & GameActions>()(
 
       /** Starts a fresh spin-draft game but doesn't pick a team yet — the
        * squad-select page runs a reel animation for the first spin too, and
-       * commits the actual pick via spinNextTeam() once it finishes. */
-      spinEraTeam: () => {
+       * commits the actual pick via spinNextTeam() once it finishes.
+       *
+       * `competition` decides both the season length and which teams can be
+       * spun into: the default league campaign draws on everything, while
+       * World Cup Run is restricted to national sides. */
+      spinEraTeam: (competition = DEFAULT_COMPETITION_ID) => {
         const seed = randomSeedString();
         set({
           ...initialState,
           gameId: `game-${Date.now()}`,
           seed,
           mode: "all-time-real",
+          competition,
           isDaily: false,
           createdAt: new Date().toISOString(),
           eraTeamId: null,
           usedEraTeamIds: [],
           stage: "squad-select",
         });
-        track("game_started", { mode: "all-time-real", method: "spin-era-team" });
+        track("game_started", { mode: "all-time-real", method: "spin-era-team", competition });
       },
 
       /** Reveals the next team for the round in progress — every pick comes
        * from a fresh spin, so this excludes teams already drafted from. */
       spinNextTeam: () => {
-        const { seed, usedEraTeamIds } = get();
+        const { seed, usedEraTeamIds, competition } = get();
         if (!seed) return;
-        const eraTeam = pickNextEraTeam(seed, usedEraTeamIds);
+        const eraTeam = pickNextEraTeam(seed, usedEraTeamIds, teamPoolFor(competition));
+        if (!eraTeam) return; // data not loaded yet — spin is gated on it in the UI
         set({ eraTeamId: eraTeam.id });
       },
 
@@ -429,6 +452,7 @@ export const useGameStore = create<GameState & GameActions>()(
           draftPicks,
           seed,
           mode,
+          competition,
           isDaily,
           battingOrder,
           captainId,
@@ -463,8 +487,11 @@ export const useGameStore = create<GameState & GameActions>()(
           captainId,
           impactPlayer,
           decisions,
-          hardcoreMode ? fieldingAssignments : undefined,
-          averageEra
+          {
+            fieldingAssignments: hardcoreMode ? fieldingAssignments : undefined,
+            averageEra,
+            competition,
+          }
         );
 
         // Classic mode never surfaces in-match decisions — that interactive
@@ -474,12 +501,22 @@ export const useGameStore = create<GameState & GameActions>()(
         // single straight-through simulation with no further input needed.
         while (result.pendingDecision && !hardcoreMode) {
           decisions = { ...decisions, [result.pendingDecision.matchNumber]: result.pendingDecision.options[0].id };
-          result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions, undefined, averageEra);
+          result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions, {
+            averageEra,
+            competition,
+          });
         }
 
         const { matches, stats, pendingDecision } = result;
+        // The landing hero frames this record around the flagship 14-match
+        // league ("14 MATCHES / N LOSSES"), so only league seasons feed it.
+        // Otherwise a 9-0 World Cup would show as "0 losses" against a 14-match
+        // goal (implying a 14-0 never achieved), and — comparing by raw wins —
+        // a mediocre 10-4 league could overwrite a genuine undefeated run.
+        // Within one competition length, most wins == fewest losses, so the
+        // wins comparison is correct once the length is fixed.
         const nextBestSeason =
-          stats && (!bestSeason || stats.wins > bestSeason.wins)
+          stats && competition === "league-major" && (!bestSeason || stats.wins > bestSeason.wins)
             ? { wins: stats.wins, losses: stats.losses }
             : bestSeason;
 

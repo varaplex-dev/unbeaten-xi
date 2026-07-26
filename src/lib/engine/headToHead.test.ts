@@ -2,6 +2,7 @@ import { describe, it, expect } from "vitest";
 import {
   compareRosters,
   simulateH2HMatch,
+  simulateH2HSeason,
   h2hPoints,
   rankLadder,
   seedPlayoffBracket,
@@ -55,6 +56,27 @@ describe("simulateH2HMatch", () => {
   });
 });
 
+describe("simulateH2HSeason", () => {
+  it("is deterministic for a given match id (peer-agreement relies on this)", () => {
+    const r1 = simulateH2HSeason("m-season-1", rosterA, null, rosterB, null);
+    const r2 = simulateH2HSeason("m-season-1", rosterA, null, rosterB, null);
+    expect(r2).toEqual(r1);
+  });
+
+  it("plays a full season per side and decides by record", () => {
+    const res = simulateH2HSeason("m-season-2", rosterA, null, rosterB, null);
+    expect(["host", "guest"]).toContain(res.winner);
+    // A league season is 14 matches, so wins + losses per side add up to 14.
+    expect(res.host.wins + res.host.losses).toBe(14);
+    expect(res.guest.wins + res.guest.losses).toBe(14);
+    expect(res.marginWins).toBe(Math.abs(res.host.wins - res.guest.wins));
+    // The side with more wins is the winner (ties break on net run rate).
+    if (res.host.wins !== res.guest.wins) {
+      expect(res.winner).toBe(res.host.wins > res.guest.wins ? "host" : "guest");
+    }
+  });
+});
+
 describe("h2hPoints", () => {
   const base = (winner: "a" | "b", margin: number): H2HMatchResult => ({
     a: { score: 0, baseline: 0 },
@@ -63,16 +85,17 @@ describe("h2hPoints", () => {
     margin,
   });
 
+  // `margin` is the gap in SEASON WINS: bonus at ≥5, narrow loss within 1.
   it("awards 3 for a win, 0 for a clear loss", () => {
-    expect(h2hPoints(base("a", 20))).toEqual({ a: 3, b: 0 });
+    expect(h2hPoints(base("a", 3))).toEqual({ a: 3, b: 0 });
   });
 
   it("adds a bonus point for a dominant win", () => {
-    expect(h2hPoints(base("a", 35))).toEqual({ a: 4, b: 0 });
+    expect(h2hPoints(base("a", 6))).toEqual({ a: 4, b: 0 });
   });
 
   it("gives the loser a consolation point for a narrow defeat", () => {
-    expect(h2hPoints(base("b", 6))).toEqual({ a: 1, b: 3 });
+    expect(h2hPoints(base("b", 1))).toEqual({ a: 1, b: 3 });
   });
 });
 
