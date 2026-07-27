@@ -178,6 +178,12 @@ export interface CompositionCheckOptions {
    * mixed-country All-Time XI pool, so the IPL-style foreign-quota rule
    * doesn't apply there and must be skipped. */
   skipOverseasLimit?: boolean;
+  /** In a spin-draft game the player can't guarantee landing a keeper, a
+   * pacer, a spinner, etc. — the teams they spin into decide that. So the
+   * role-balance rules become advisory WARNINGS rather than blocking ERRORS:
+   * still surfaced ("no specialist spinner"), but they don't make the squad
+   * "illegal" and never leave a game unwinnable. */
+  softRoleRequirements?: boolean;
 }
 
 export function checkComposition(
@@ -185,6 +191,9 @@ export function checkComposition(
   options: CompositionCheckOptions = {}
 ): CompositionCheckResult {
   const issues: CompositionCheckResult["issues"] = [];
+  // Role-balance shortfalls are hard errors in a category draft (the user picks
+  // to a plan) but advisory in a spin draft (the spin decides what's available).
+  const roleSeverity = options.softRoleRequirements ? "warning" : "error";
 
   if (drafted.length !== SQUAD_SIZE) {
     issues.push({
@@ -198,8 +207,8 @@ export function checkComposition(
   if (keepers < MIN_WICKETKEEPERS) {
     issues.push({
       code: "wicketkeeper",
-      message: "At least one wicketkeeper is required.",
-      severity: "error",
+      message: "No specialist wicketkeeper in the XI.",
+      severity: roleSeverity,
     });
   }
 
@@ -207,8 +216,8 @@ export function checkComposition(
   if (bowlers < MIN_BOWLING_OPTIONS) {
     issues.push({
       code: "bowling-options",
-      message: `At least ${MIN_BOWLING_OPTIONS} bowling options are required.`,
-      severity: "error",
+      message: `Only ${bowlers} bowling option${bowlers === 1 ? "" : "s"} (${MIN_BOWLING_OPTIONS} recommended).`,
+      severity: roleSeverity,
     });
   }
 
@@ -216,8 +225,8 @@ export function checkComposition(
   if (pacers < MIN_PACE_BOWLERS) {
     issues.push({
       code: "pace-bowler",
-      message: "At least one specialist pace bowler is required.",
-      severity: "error",
+      message: "No specialist pace bowler in the XI.",
+      severity: roleSeverity,
     });
   }
 
@@ -225,8 +234,8 @@ export function checkComposition(
   if (spinners < MIN_SPINNERS) {
     issues.push({
       code: "spinner",
-      message: "At least one specialist spinner is required.",
-      severity: "error",
+      message: "No specialist spinner in the XI.",
+      severity: roleSeverity,
     });
   }
 

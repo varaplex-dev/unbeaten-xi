@@ -11,6 +11,7 @@ import { HomeButton } from "@/components/nav/HomeButton";
 import { TopNav } from "@/components/nav/TopNav";
 import { LocaleDirection } from "@/components/nav/LocaleDirection";
 import { GameDataPreload } from "@/lib/data/useGameData";
+import { GameSplash } from "@/components/brand/GameSplash";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -41,6 +42,7 @@ export default function RootLayout({
         <div className="app-field field-texture" aria-hidden />
         <LocaleDirection />
         <GameDataPreload />
+        <GameSplash />
         <HomeButton />
         <TopNav />
         {children}

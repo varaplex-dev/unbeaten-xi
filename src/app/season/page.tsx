@@ -7,6 +7,7 @@ import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { useGameStore } from "@/lib/store/gameStore";
+import { useGameDataReady } from "@/lib/data/useGameData";
 import { matchesFor } from "@/lib/engine/competitions";
 
 export default function SeasonPage() {
@@ -19,15 +20,21 @@ export default function SeasonPage() {
   const runSeasonSimulation = useGameStore((s) => s.runSeasonSimulation);
   const resolveDecision = useGameStore((s) => s.resolveDecision);
   const competition = useGameStore((s) => s.competition);
+  // The sim resolves the drafted XI (and its opponents) through the lazily
+  // loaded player dataset. Kicking it off before that's ready makes getXi()
+  // return empty and the whole run silently no-op — so wait for dataReady,
+  // which also re-fires this effect once the data lands (e.g. on a refresh
+  // straight to /season).
+  const dataReady = useGameDataReady();
 
   useEffect(() => {
-    if (!hasHydrated || !seed) return;
+    if (!hasHydrated || !seed || !dataReady) return;
     if (matchResults.length === 0 && !pendingDecision) {
       runSeasonSimulation();
     }
     // Only kick off on first mount / when there's genuinely nothing simulated yet.
     // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [hasHydrated, seed]);
+  }, [hasHydrated, seed, dataReady]);
 
   useEffect(() => {
     if (hasHydrated && stage === "results") router.replace("/results");

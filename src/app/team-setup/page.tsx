@@ -93,7 +93,9 @@ export default function TeamSetupPage() {
 
   const composition = useMemo(
     () =>
-      orderedXi.length === SQUAD_SIZE ? checkComposition(orderedXi, { skipOverseasLimit: isSpinDraft }) : null,
+      orderedXi.length === SQUAD_SIZE
+        ? checkComposition(orderedXi, { skipOverseasLimit: isSpinDraft, softRoleRequirements: isSpinDraft })
+        : null,
     [orderedXi, isSpinDraft]
   );
 
@@ -159,11 +161,28 @@ export default function TeamSetupPage() {
             : "We've set a lineup automatically — reorder the batting order, change your captain, keeper, or bowling roles below, then simulate when you're ready."}
         </p>
 
-        {composition && !composition.legal && (
+        {composition && composition.issues.some((i) => i.severity === "error") && (
           <div className="mb-4 rounded-xl border border-danger/40 bg-danger/10 px-4 py-3 text-sm text-danger">
-            {composition.issues.map((issue) => (
-              <p key={issue.code}>{issue.message}</p>
-            ))}
+            {composition.issues
+              .filter((i) => i.severity === "error")
+              .map((issue) => (
+                <p key={issue.code}>{issue.message}</p>
+              ))}
+          </div>
+        )}
+
+        {/* Spin-draft role shortfalls are advisory — you can't control what you
+            spin into, so these are a "heads up", not a blocker. */}
+        {composition && composition.issues.some((i) => i.severity === "warning") && (
+          <div className="mb-4 rounded-xl border border-gold/40 bg-gold/5 px-4 py-3 text-sm">
+            <p className="mb-1 font-semibold text-gold">Heads up — your XI looks unbalanced</p>
+            {composition.issues
+              .filter((i) => i.severity === "warning")
+              .map((issue) => (
+                <p key={issue.code} className="text-foreground-muted">
+                  {issue.message}
+                </p>
+              ))}
           </div>
         )}
 

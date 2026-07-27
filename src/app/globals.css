@@ -83,6 +83,30 @@ body {
   pointer-events: none;
 }
 
+/* First-load splash: full-screen swing animation over the whole app (see
+   GameSplash.tsx), fading out once the dataset is ready. */
+.game-splash {
+  position: fixed;
+  inset: 0;
+  z-index: 100;
+  background: #070b10;
+  overflow: hidden;
+  opacity: 1;
+  transition: opacity 600ms ease;
+}
+.game-splash--hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+/* The loader clip, filling the viewport. */
+.game-splash__video {
+  position: absolute;
+  inset: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
 ::selection {
   background: var(--accent);
   color: #04120d;
