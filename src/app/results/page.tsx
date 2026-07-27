@@ -15,7 +15,7 @@ import { getPlayerById } from "@/lib/data/players";
 import { getRealPoolPlayerById } from "@/lib/data/gameData";
 import { useGameDataReady } from "@/lib/data/useGameData";
 import { seasonPoints } from "@/lib/engine/seasonPoints";
-import type { MatchResult } from "@/lib/engine/simulate";
+import type { MatchResult, DecisionOutcomeKind } from "@/lib/engine/simulate";
 import type { PitchType } from "@/lib/types";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import type { TranslationKey } from "@/lib/i18n";
@@ -31,6 +31,17 @@ const PITCH_KEY: Record<PitchType, TranslationKey> = {
   "high-scoring-small-ground": "sim.pitch.smallGround",
   "large-boundaries": "sim.pitch.largeBoundaries",
   "heavy-dew-night": "sim.pitch.heavyDew",
+};
+
+// The Hardcore in-match decision outcome (engine-emitted) → its result line.
+const DECISION_RESULT_KEY: Record<DecisionOutcomeKind, TranslationKey> = {
+  "pace-spin-good": "sim.dec.paceSpinGood",
+  "pace-spin-bad": "sim.dec.paceSpinBad",
+  "defend-good": "sim.dec.defendGood",
+  "defend-bad": "sim.dec.defendBad",
+  "impact-good": "sim.dec.impactGood",
+  "impact-bad": "sim.dec.impactBad",
+  "impact-hold": "sim.dec.impactHold",
 };
 
 /** Fills {placeholders} in a translated string, so word order around the
@@ -94,6 +105,10 @@ export default function ResultsPage() {
         })
       : m.summary;
   const pitchText = (m: MatchResult) => (m.pitchType ? t(PITCH_KEY[m.pitchType]) : m.pitch);
+  const decisionText = (d: NonNullable<MatchResult["decision"]>) =>
+    d.outcome
+      ? fill(t(DECISION_RESULT_KEY[d.outcome]), { name: d.subjectName ?? "" })
+      : d.resultLabel;
   const [saveStatus, setSaveStatus] = useState<"idle" | "saved" | "error">("idle");
   const isSaving = Boolean(isSupabaseConfigured && user && stats && !resultSaved && saveStatus === "idle");
 
@@ -299,7 +314,7 @@ export default function ResultsPage() {
               </div>
               <p className="mt-1 text-sm">{summaryText(m)}</p>
               {m.decision && (
-                <p className="mt-1 text-xs text-gold">{m.decision.resultLabel}</p>
+                <p className="mt-1 text-xs text-gold">{decisionText(m.decision)}</p>
               )}
               <p className="mt-1 text-xs text-foreground-muted">
                 {pitchText(m)} &middot; {m.city}

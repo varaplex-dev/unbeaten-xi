@@ -55,9 +55,25 @@ const SUMMARY_TEMPLATES_LOSS = [
 
 export type DecisionType = "pace-or-spin" | "defend-bowler" | "impact-player";
 
+// Fixed option kinds map to translated labels in the UI. `undefined` means the
+// label is a proper noun (a bowler's name) and is shown verbatim.
+export type DecisionOptionKind = "pace" | "spin" | "activate" | "hold";
+
+// Semantic outcome of a resolved decision. The engine stays i18n-agnostic and
+// emits one of these; the UI maps it to a translated result line.
+export type DecisionOutcomeKind =
+  | "pace-spin-good"
+  | "pace-spin-bad"
+  | "defend-good"
+  | "defend-bad"
+  | "impact-good"
+  | "impact-bad"
+  | "impact-hold";
+
 export interface DecisionOption {
   id: string;
   label: string;
+  kind?: DecisionOptionKind;
 }
 
 export interface MatchDecision {
@@ -66,6 +82,9 @@ export interface MatchDecision {
   prompt: string;
   context: string;
   options: DecisionOption[];
+  // The impact player's short name, for the impact-player prompt/options; the
+  // UI fills it into the translated string.
+  subjectName?: string;
 }
 
 export interface MatchResult {
@@ -88,7 +107,15 @@ export interface MatchResult {
   pitchType?: PitchType;
   playerOfMatchId: string;
   summary: string;
-  decision?: { type: DecisionType; choiceId: string; resultLabel: string };
+  decision?: {
+    type: DecisionType;
+    choiceId: string;
+    resultLabel: string;
+    // Structured outcome so the UI renders the result line translated; older
+    // saved results without it fall back to `resultLabel` (English).
+    outcome?: DecisionOutcomeKind;
+    subjectName?: string;
+  };
 }
 
 export interface PlayerSeasonTotals {
@@ -190,9 +217,10 @@ function buildDecisionPrompt(
       type,
       prompt: `Your Impact Player, ${impactPlayer.shortName}, is available. Bring them in?`,
       context: `Match ${matchNumber} is finely poised.`,
+      subjectName: impactPlayer.shortName,
       options: [
-        { id: "activate", label: `Activate ${impactPlayer.shortName}` },
-        { id: "hold", label: "Hold them in reserve" },
+        { id: "activate", label: `Activate ${impactPlayer.shortName}`, kind: "activate" },
+        { id: "hold", label: "Hold them in reserve", kind: "hold" },
       ],
     };
   }
@@ -202,8 +230,8 @@ function buildDecisionPrompt(
     prompt: "The opponent is settling in. How do you attack?",
     context: `Match ${matchNumber} — six overs gone, no wicket.`,
     options: [
-      { id: "pace", label: "Attack with pace" },
-      { id: "spin", label: "Turn to spin" },
+      { id: "pace", label: "Attack with pace", kind: "pace" },
+      { id: "spin", label: "Turn to spin", kind: "spin" },
     ],
   };
 }
@@ -212,6 +240,8 @@ interface DecisionOutcome {
   teamBonus: number;
   opponentPenalty: number;
   resultLabel: string;
+  outcomeKind: DecisionOutcomeKind;
+  subjectName?: string;
 }
 
 /** Lower economy = a better bet for both the pace-or-spin call and picking
@@ -258,6 +288,7 @@ function resolveDecisionOutcome(
       teamBonus: 0,
       opponentPenalty: good ? 6 : -3,
       resultLabel: good ? "The tactic paid off — the bowlers choked the scoring." : "The gamble didn't come off.",
+      outcomeKind: good ? "pace-spin-good" : "pace-spin-bad",
     };
   }
   if (decision.type === "defend-bowler") {
@@ -276,6 +307,8 @@ function resolveDecisionOutcome(
       resultLabel: good
         ? `${bowler?.shortName ?? "The bowler"} held their nerve at the death.`
         : `${bowler?.shortName ?? "The bowler"} was taken apart at the death.`,
+      outcomeKind: good ? "defend-good" : "defend-bad",
+      subjectName: bowler?.shortName,
     };
   }
   // impact-player
@@ -300,9 +333,16 @@ function resolveDecisionOutcome(
       resultLabel: good
         ? `${impactPlayer.shortName} made an instant impact.`
         : `${impactPlayer.shortName} got some overs in but didn't change the game.`,
+      outcomeKind: good ? "impact-good" : "impact-bad",
+      subjectName: impactPlayer.shortName,
     };
   }
-  return { teamBonus: 0, opponentPenalty: 0, resultLabel: "Held the Impact Player in reserve." };
+  return {
+    teamBonus: 0,
+    opponentPenalty: 0,
+    resultLabel: "Held the Impact Player in reserve.",
+    outcomeKind: "impact-hold",
+  };
 }
 
 // League run-scoring is anchored to this "modern" year; a drafted XI whose
@@ -451,7 +491,13 @@ export function simulateSeason(
       }
       const decision = buildDecisionPrompt(decisionType, matchNumber, bowlers, impactPlayer);
       decisionOutcome = resolveDecisionOutcome(decision, choiceId, bowlers, impactPlayer, xi);
-      decisionRecord = { type: decisionType, choiceId, resultLabel: decisionOutcome.resultLabel };
+      decisionRecord = {
+        type: decisionType,
+        choiceId,
+        resultLabel: decisionOutcome.resultLabel,
+        outcome: decisionOutcome.outcomeKind,
+        subjectName: decisionOutcome.subjectName,
+      };
     }
 
     // A real opposing side for a stats game; the fictional fallback keeps the

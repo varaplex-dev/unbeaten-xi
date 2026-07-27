@@ -9,8 +9,38 @@ import { PosterShell } from "@/components/brand/PosterShell";
 import { useGameStore } from "@/lib/store/gameStore";
 import { useGameDataReady } from "@/lib/data/useGameData";
 import { matchesFor } from "@/lib/engine/competitions";
+import { useTranslation } from "@/lib/i18n/useTranslation";
+import type { TranslationKey } from "@/lib/i18n";
+import type { DecisionType, DecisionOptionKind } from "@/lib/engine/simulate";
+
+/** Fills {placeholders} in a translated string. */
+function fill(template: string, values: Record<string, string | number>): string {
+  return Object.entries(values).reduce(
+    (out, [key, value]) => out.split(`{${key}}`).join(String(value)),
+    template
+  );
+}
+
+// Engine decision `type`/option `kind` → the translated prompt/context/option.
+const DEC_PROMPT_KEY: Record<DecisionType, TranslationKey> = {
+  "defend-bowler": "sim.dec.defendPrompt",
+  "impact-player": "sim.dec.impactPrompt",
+  "pace-or-spin": "sim.dec.paceSpinPrompt",
+};
+const DEC_CONTEXT_KEY: Record<DecisionType, TranslationKey> = {
+  "defend-bowler": "sim.dec.defendContext",
+  "impact-player": "sim.dec.impactContext",
+  "pace-or-spin": "sim.dec.paceSpinContext",
+};
+const DEC_OPTION_KEY: Record<DecisionOptionKind, TranslationKey> = {
+  pace: "sim.dec.optPace",
+  spin: "sim.dec.optSpin",
+  activate: "sim.dec.optActivate",
+  hold: "sim.dec.optHold",
+};
 
 export default function SeasonPage() {
+  const { t } = useTranslation();
   const router = useRouter();
   const hasHydrated = useGameStore((s) => s.hasHydrated);
   const seed = useGameStore((s) => s.seed);
@@ -45,9 +75,9 @@ export default function SeasonPage() {
   if (!seed) {
     return (
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-16 text-center">
-        <p className="text-foreground-muted mb-4">No active season.</p>
+        <p className="text-foreground-muted mb-4">{t("sim.noSeason")}</p>
         <Link href="/play">
-          <Button>Start a Draft</Button>
+          <Button>{t("res.startDraft")}</Button>
         </Link>
       </main>
     );
@@ -62,13 +92,16 @@ export default function SeasonPage() {
 
   return (
     <main className="flex-1 flex flex-col">
-      <PosterShell kicker="Season In Progress">
+      <PosterShell kicker={t("sim.seasonInProgress")}>
         <div className="mx-auto flex w-full max-w-2xl flex-1 flex-col items-center justify-center py-12">
           <p className="text-sm font-bold tracking-[0.35em] text-saffron uppercase mb-2">
-            Simulating
+            {t("sim.simulating")}
           </p>
           <h1 className="text-stack-shadow text-4xl font-black italic tracking-tight mb-6">
-            Match {Math.min(matchResults.length + 1, seasonMatches)} of {seasonMatches}
+            {fill(t("sim.matchOf"), {
+              n: Math.min(matchResults.length + 1, seasonMatches),
+              total: seasonMatches,
+            })}
           </h1>
 
           <div className="mb-10 h-1.5 w-full max-w-sm rounded-full bg-white/5 overflow-hidden">
@@ -89,9 +122,11 @@ export default function SeasonPage() {
               className="w-full max-w-sm rounded-2xl border border-gold/30 bg-background-elevated p-5"
             >
               <p className="text-xs font-semibold uppercase tracking-wide text-gold mb-1">
-                {pendingDecision.context}
+                {fill(t(DEC_CONTEXT_KEY[pendingDecision.type]), { n: pendingDecision.matchNumber })}
               </p>
-              <p className="mb-4 text-lg font-bold leading-snug">{pendingDecision.prompt}</p>
+              <p className="mb-4 text-lg font-bold leading-snug">
+                {fill(t(DEC_PROMPT_KEY[pendingDecision.type]), { name: pendingDecision.subjectName ?? "" })}
+              </p>
               <div className="grid gap-2">
                 {pendingDecision.options.map((option) => (
                   <Button
@@ -100,13 +135,15 @@ export default function SeasonPage() {
                     className="w-full justify-center"
                     onClick={() => resolveDecision(option.id)}
                   >
-                    {option.label}
+                    {option.kind
+                      ? fill(t(DEC_OPTION_KEY[option.kind]), { name: pendingDecision.subjectName ?? "" })
+                      : option.label}
                   </Button>
                 ))}
               </div>
             </motion.div>
           ) : (
-            <p className="text-foreground-muted">Crunching the numbers...</p>
+            <p className="text-foreground-muted">{t("sim.crunching")}</p>
           )}
         </div>
       </PosterShell>
