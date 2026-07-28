@@ -10,22 +10,20 @@
 // simulation engine.
 import type { Player } from "@/lib/types";
 import { canBowl } from "@/lib/types";
-import { FIELDING_POSITIONS } from "@/lib/data/fieldingPositions";
-
-const CATCHING_POSITION_IDS = new Set(
-  FIELDING_POSITIONS.filter((p) => p.zone === "catching").map((p) => p.id)
-);
+import { CATCHING_POSITION_IDS } from "@/lib/data/fieldingPositions";
 
 const BONUS_PER_ATHLETIC_CATCHER = 0.025;
 const PENALTY_PER_MISMATCHED_CATCHER = 0.02;
 
-/** playerId -> fielding position id. Only positions actually filled count —
- * Hardcore Mode doesn't require completing the whole field. */
+/** position id -> playerId. Only filled positions count — Hardcore Mode
+ * doesn't require completing the whole field. */
 export type FieldingAssignments = Record<string, string>;
 
 export function fieldingWicketBonus(xi: Player[], assignments: FieldingAssignments): number {
   let bonus = 0;
-  for (const [playerId, positionId] of Object.entries(assignments)) {
+  // assignments is keyed by POSITION id, valued by player id (matching how the
+  // store writes it). Only the close-catching spots matter here.
+  for (const [positionId, playerId] of Object.entries(assignments)) {
     if (!CATCHING_POSITION_IDS.has(positionId)) continue;
     const player = xi.find((p) => p.id === playerId);
     if (!player) continue;

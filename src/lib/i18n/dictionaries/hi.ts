@@ -85,6 +85,9 @@ export const hi: Dictionary = {
   "hardcore.placingHint": "मैदान पर एक पोज़िशन पर टैप करें।",
   "hardcore.suggested": "सुझावित",
 
+  "splash.unmute": "ध्वनि के लिए टैप करें",
+  "splash.mute": "ध्वनि बंद करें",
+
   "h2h.notSetup": "ऑनलाइन खेल अभी सेट अप नहीं है",
   "h2h.notSetupBody": "हेड-टू-हेड के लिए ऑनलाइन बैकएंड कॉन्फ़िगर होना ज़रूरी है। जल्द ही देखें।",
   "h2h.signInTitle": "ऑनलाइन खेलें",

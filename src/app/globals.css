@@ -84,7 +84,8 @@ body {
 }
 
 /* First-load splash: full-screen swing animation over the whole app (see
-   GameSplash.tsx), fading out once the dataset is ready. */
+   GameSplash.tsx), which cross-dissolves into the menu once the dataset is
+   ready. */
 .game-splash {
   position: fixed;
   inset: 0;
@@ -92,19 +93,59 @@ body {
   background: #070b10;
   overflow: hidden;
   opacity: 1;
-  transition: opacity 600ms ease;
+  /* ease-out so the hand-off decelerates into the menu rather than cutting. */
+  transition: opacity 850ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 .game-splash--hidden {
   opacity: 0;
   pointer-events: none;
 }
-/* The loader clip, filling the viewport. */
+/* The loader clip, filling the viewport. On exit it eases in a touch and
+   softens — a gentle push toward the menu underneath rather than a flat fade. */
 .game-splash__video {
   position: absolute;
   inset: 0;
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transform: scale(1);
+  transition: transform 850ms cubic-bezier(0.22, 1, 0.36, 1),
+    filter 850ms ease-out;
+}
+.game-splash--hidden .game-splash__video {
+  transform: scale(1.08);
+  filter: brightness(1.12) blur(3px);
+}
+/* The sound toggle should slip away first, not linger over the dissolve. */
+.game-splash--hidden .game-splash__sound {
+  opacity: 0;
+  transition: opacity 250ms ease-out;
+}
+/* Sound toggle — only rendered in a browser tab (an installed app plays with
+   sound automatically). Sits clear of notches/safe areas. */
+.game-splash__sound {
+  position: absolute;
+  top: calc(env(safe-area-inset-top, 0px) + 1rem);
+  right: calc(env(safe-area-inset-right, 0px) + 1rem);
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  background: rgba(7, 11, 16, 0.55);
+  backdrop-filter: blur(6px);
+  color: #fff;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+  cursor: pointer;
+  transition: background 150ms ease, border-color 150ms ease;
+}
+.game-splash__sound:hover {
+  background: rgba(7, 11, 16, 0.8);
+  border-color: rgba(34, 230, 168, 0.6);
 }
 
 ::selection {

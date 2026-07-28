@@ -85,6 +85,9 @@ export const te: Dictionary = {
   "hardcore.placingHint": "మైదానంలో ఒక స్థానాన్ని ట్యాప్ చేయండి.",
   "hardcore.suggested": "సూచించబడింది",
 
+  "splash.unmute": "శబ్దం కోసం నొక్కండి",
+  "splash.mute": "శబ్దం ఆఫ్ చేయి",
+
   "h2h.notSetup": "ఆన్‌లైన్ ఆట ఇంకా సెటప్ కాలేదు",
   "h2h.notSetupBody": "హెడ్-టు-హెడ్‌కు ఆన్‌లైన్ బ్యాకెండ్ కాన్ఫిగర్ కావాలి. త్వరలో మళ్లీ చూడండి.",
   "h2h.signInTitle": "ఆన్‌లైన్‌లో ఆడండి",

@@ -1,8 +1,12 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import type { DraftCategoryId, Player } from "@/lib/types";
-import { SQUAD_SIZE } from "@/lib/types";
+import { SQUAD_SIZE, canBowl, isPaceBowler, isSpinner } from "@/lib/types";
 import { getPlayerById } from "@/lib/data/players";
+import {
+  formationPositions,
+  type FormationId,
+} from "@/lib/data/fieldingPositions";
 import {
   eraTeams,
   nationalTeamPool,
@@ -108,6 +112,9 @@ export interface GameState {
    * tap — same select-then-place pattern as selectSquadPlayer/
    * placeSquadPlayer. Only used in Hardcore Mode. */
   pendingFieldingPlayerId: string | null;
+  /** The preset field formation currently applied (Hardcore Mode). null until
+   * one is chosen; the board applies the default on entry. */
+  fieldingFormation: FormationId | null;
   /** A standing preference, not per-game progress — deliberately excluded
    * from initialState's reset-on-new-game spread (see hardcoreMode's
    * handling right below hasHydrated) so toggling it in Settings doesn't
@@ -148,7 +155,12 @@ interface GameActions {
   setHardcoreMode: (enabled: boolean) => void;
   selectPlayerForFielding: (playerId: string) => void;
   assignFieldingPosition: (positionId: string) => void;
+  applyFieldingFormation: (id: FormationId) => void;
 }
+
+/** The bowler's pseudo-position id in fieldingAssignments — the one non-keeper
+ * who bowls rather than fields, shown at the far end of the pitch. */
+export const BOWLER_SLOT = "bowler";
 
 // hasHydrated, hardcoreMode, and bestSeason are intentionally excluded here:
 // hasHydrated reflects localStorage load status, hardcoreMode is a standing
@@ -183,6 +195,7 @@ const initialState: Omit<GameState, "hasHydrated" | "hardcoreMode" | "bestSeason
   resultSaved: false,
   fieldingAssignments: {},
   pendingFieldingPlayerId: null,
+  fieldingFormation: null,
 };
 
 function getXi(draftPicks: DraftPickRecord[], mode: GameMode): Player[] {
@@ -201,27 +214,57 @@ export const useGameStore = create<GameState & GameActions>()(
 
       setHardcoreMode: (enabled) => set({ hardcoreMode: enabled }),
 
-      /** Marks an XI player as ready to be placed on the field — same
-       * select-then-place pattern as squad-select's placement mechanic.
-       * Hardcore Mode only; a normal game never calls this. */
+      /** Picks up an XI player to move — a fielder, the bowler, or an as-yet
+       * unplaced player. Tap a spot next to drop/swap. Hardcore Mode only. */
       selectPlayerForFielding: (playerId) => {
-        const { fieldingAssignments } = get();
-        if (Object.values(fieldingAssignments).includes(playerId)) return;
-        set({ pendingFieldingPlayerId: playerId });
+        set((s) => ({ pendingFieldingPlayerId: s.pendingFieldingPlayerId === playerId ? null : playerId }));
       },
 
-      /** Confirms the pending player's real fielding position. Only the two
-       * close-catching spots (slip, gully) feed into the simulation (see
-       * fieldingWicketBonus) — the rest of the board is genuine strategic
-       * depth without a fabricated stat behind it. */
+      /** Drops the picked-up player onto a spot (a fielding position or the
+       * BOWLER_SLOT). Empty → move; occupied → swap. Only the close-catching
+       * spots feed the sim (see fieldingWicketBonus); the rest is strategy. */
       assignFieldingPosition: (positionId) => {
         const { pendingFieldingPlayerId, fieldingAssignments } = get();
         if (!pendingFieldingPlayerId) return;
-        if (fieldingAssignments[positionId]) return;
-        set({
-          fieldingAssignments: { ...fieldingAssignments, [positionId]: pendingFieldingPlayerId },
-          pendingFieldingPlayerId: null,
+        const next = { ...fieldingAssignments };
+        const fromPos = Object.keys(next).find((pid) => next[pid] === pendingFieldingPlayerId);
+        if (fromPos === positionId) {
+          set({ pendingFieldingPlayerId: null });
+          return;
+        }
+        const occupant = next[positionId];
+        next[positionId] = pendingFieldingPlayerId;
+        if (fromPos) {
+          // Swap the displaced player back into the vacated spot, or empty it.
+          if (occupant) next[fromPos] = occupant;
+          else delete next[fromPos];
+        }
+        // If the picked-up player had no prior spot and the target was
+        // occupied, that occupant is simply displaced (becomes unplaced).
+        set({ fieldingAssignments: next, pendingFieldingPlayerId: null });
+      },
+
+      /** Applies a preset formation: auto-places the nine fielders into that
+       * formation's spots (better catchers — bowlers/all-rounders — into the
+       * close catching positions) and leaves one specialist as the bowler at
+       * the far end. The user can then tap to swap anyone around. */
+      applyFieldingFormation: (id) => {
+        const { draftPicks, mode, wicketkeeperId } = get();
+        const xi = getXi(draftPicks, mode);
+        if (xi.length !== SQUAD_SIZE) return;
+        const outfield = xi.filter((p) => p.id !== wicketkeeperId);
+        const bowler =
+          outfield.find((p) => isPaceBowler(p) || isSpinner(p)) ?? outfield[outfield.length - 1];
+        const fielders = outfield.filter((p) => p.id !== bowler?.id);
+        // Catchers first, so they land in the catching-zone-first formation.
+        const ordered = [...fielders].sort((a, b) => Number(canBowl(b)) - Number(canBowl(a)));
+        const positions = formationPositions(id);
+        const assignments: FieldingAssignments = {};
+        positions.forEach((pos, i) => {
+          if (ordered[i]) assignments[pos.id] = ordered[i].id;
         });
+        if (bowler) assignments[BOWLER_SLOT] = bowler.id;
+        set({ fieldingFormation: id, fieldingAssignments: assignments, pendingFieldingPlayerId: null });
       },
 
       startNewGame: (options) => {

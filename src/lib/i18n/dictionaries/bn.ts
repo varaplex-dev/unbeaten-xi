@@ -85,6 +85,9 @@ export const bn: Dictionary = {
   "hardcore.placingHint": "মাঠে একটি পজিশনে ট্যাপ করুন।",
   "hardcore.suggested": "প্রস্তাবিত",
 
+  "splash.unmute": "শব্দের জন্য ট্যাপ করুন",
+  "splash.mute": "শব্দ বন্ধ করুন",
+
   "h2h.notSetup": "অনলাইন খেলা এখনও সেট আপ করা হয়নি",
   "h2h.notSetupBody": "হেড-টু-হেডের জন্য অনলাইন ব্যাকএন্ড কনফিগার করা প্রয়োজন। শীঘ্রই আবার দেখুন।",
   "h2h.signInTitle": "অনলাইনে খেলুন",

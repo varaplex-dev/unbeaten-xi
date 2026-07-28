@@ -48,6 +48,8 @@ export default function TeamSetupPage() {
   const pendingFieldingPlayerId = useGameStore((s) => s.pendingFieldingPlayerId);
   const selectPlayerForFielding = useGameStore((s) => s.selectPlayerForFielding);
   const assignFieldingPosition = useGameStore((s) => s.assignFieldingPosition);
+  const fieldingFormation = useGameStore((s) => s.fieldingFormation);
+  const applyFieldingFormation = useGameStore((s) => s.applyFieldingFormation);
   const { t } = useTranslation();
   // eraTeamId itself is cleared after every spin-draft pick (it only holds
   // the team revealed for the round in progress), so "was this game built
@@ -71,6 +73,12 @@ export default function TeamSetupPage() {
   // operate on; captain/keeper/bowling roles stay unset until chosen.
   useEffect(() => {
     if (!hasHydrated || !isSquadComplete || battingOrder.length !== 0) return;
+    // Wait until the full XI has actually resolved. On a cold reload straight
+    // onto this page the lazy dataset is still streaming in, so `drafted` is
+    // briefly empty even though draftPicks is complete — seeding the order
+    // from an empty list would set [], leave battingOrder.length at 0, and
+    // (because `drafted` gets a new identity every render) re-fire forever.
+    if (drafted.length !== SQUAD_SIZE) return;
     if (isSpinDraft) {
       setBattingOrder(drafted.map((p) => p.id));
     } else {
@@ -314,9 +322,11 @@ export default function TeamSetupPage() {
             <FieldingBoard
               outfieldPlayers={outfieldPlayers}
               assignments={fieldingAssignments}
+              formation={fieldingFormation}
               pendingPlayerId={pendingFieldingPlayerId}
               onSelectPlayer={selectPlayerForFielding}
               onSelectPosition={assignFieldingPosition}
+              onApplyFormation={applyFieldingFormation}
             />
           </div>
         )}

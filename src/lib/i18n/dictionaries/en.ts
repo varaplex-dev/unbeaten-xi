@@ -86,6 +86,9 @@ export const en = {
   "hardcore.placingHint": "tap a position on the field.",
   "hardcore.suggested": "Suggested",
 
+  "splash.unmute": "Tap for sound",
+  "splash.mute": "Mute sound",
+
   "h2h.notSetup": "Online play isn't set up yet",
   "h2h.notSetupBody": "Head-to-Head needs the online backend configured. Check back soon.",
   "h2h.signInTitle": "Play online",

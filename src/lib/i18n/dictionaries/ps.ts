@@ -85,6 +85,9 @@ export const ps: Dictionary = {
   "hardcore.placingHint": "په میدان کې په یو موقعیت ټک وکړئ.",
   "hardcore.suggested": "وړاندیز شوی",
 
+  "splash.unmute": "د غږ لپاره ټک ووهئ",
+  "splash.mute": "غږ بند کړئ",
+
   "h2h.notSetup": "آنلاین لوبه لا نه ده تنظیم شوې",
   "h2h.notSetupBody": "هیډ-ټو-هیډ ته د آنلاین بیک اینډ تنظیمول اړین دي. ژر بیا وګورئ.",
   "h2h.signInTitle": "آنلاین ولوبئ",

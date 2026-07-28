@@ -85,6 +85,9 @@ export const kn: Dictionary = {
   "hardcore.placingHint": "ಮೈದಾನದಲ್ಲಿ ಒಂದು ಸ್ಥಾನವನ್ನು ಟ್ಯಾಪ್ ಮಾಡಿ.",
   "hardcore.suggested": "ಸೂಚಿಸಲಾಗಿದೆ",
 
+  "splash.unmute": "ಧ್ವನಿಗಾಗಿ ಟ್ಯಾಪ್ ಮಾಡಿ",
+  "splash.mute": "ಧ್ವನಿ ಮ್ಯೂಟ್ ಮಾಡಿ",
+
   "h2h.notSetup": "ಆನ್‌ಲೈನ್ ಆಟ ಇನ್ನೂ ಸಿದ್ಧವಾಗಿಲ್ಲ",
   "h2h.notSetupBody": "ಹೆಡ್-ಟು-ಹೆಡ್‌ಗೆ ಆನ್‌ಲೈನ್ ಬ್ಯಾಕೆಂಡ್ ಕಾನ್ಫಿಗರ್ ಆಗಬೇಕು. ಶೀಘ್ರದಲ್ಲೇ ಮತ್ತೆ ನೋಡಿ.",
   "h2h.signInTitle": "ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ ಆಡಿ",

@@ -2,135 +2,186 @@
 
 import { motion } from "framer-motion";
 import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
-import { FIELDING_POSITIONS } from "@/lib/data/fieldingPositions";
-import { useTranslation } from "@/lib/i18n/useTranslation";
+import {
+  FIELD_FORMATIONS,
+  formationPositions,
+  type FormationId,
+} from "@/lib/data/fieldingPositions";
+import { BOWLER_SLOT } from "@/lib/store/gameStore";
 import type { Player } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 interface FieldingBoardProps {
-  /** The 10 non-keeper XI players — the keeper always stands behind the
-   * stumps and isn't part of this board. */
+  /** The non-keeper XI players (up to 10): nine field, one bowls. */
   outfieldPlayers: Player[];
-  /** position id -> player id. */
+  /** position id (or BOWLER_SLOT) -> player id. */
   assignments: Record<string, string>;
+  formation: FormationId | null;
   pendingPlayerId: string | null;
   onSelectPlayer: (playerId: string) => void;
   onSelectPosition: (positionId: string) => void;
+  onApplyFormation: (id: FormationId) => void;
 }
 
-/** Real cricket fielding positions (per networldsports.co.uk's guide) —
- * Hardcore Mode's extra layer of depth on top of the batting-order
- * placement every game already has. Same select-a-player-then-tap-a-spot
- * interaction as the batting field, just with real position names instead
- * of order numbers. Only the two close-catching spots (slip, gully) feed
- * back into the simulation (see fielding.ts) — the rest is pure strategic
- * flavor, since there's no real "fielding rating" in the underlying data
- * to justify claiming more than that. */
+/** Hardcore Mode's field-setting screen. The wicketkeeper stands behind the
+ * striker's stumps and the bowler at the far end (both fixed); the other nine
+ * are placed by a chosen preset FORMATION (attacking / balanced / defensive /
+ * powerplay / death), which the captain can then fine-tune by tapping a player
+ * to pick them up and tapping a spot to drop or swap. Only the close-catching
+ * spots feed the sim (fieldingWicketBonus); the rest is strategic flavor. */
 export function FieldingBoard({
   outfieldPlayers,
   assignments,
+  formation,
   pendingPlayerId,
   onSelectPlayer,
   onSelectPosition,
+  onApplyFormation,
 }: FieldingBoardProps) {
-  const { t } = useTranslation();
-  const assignedPlayerIds = new Set(Object.values(assignments));
-  const unassigned = outfieldPlayers.filter((p) => !assignedPlayerIds.has(p.id));
-  const pendingPlayer = pendingPlayerId ? outfieldPlayers.find((p) => p.id === pendingPlayerId) : null;
+  const byId = (id: string | undefined) => (id ? outfieldPlayers.find((p) => p.id === id) ?? null : null);
+  const positions = formation ? formationPositions(formation) : [];
+  const bowler = byId(assignments[BOWLER_SLOT]);
+  const activeBlurb = FIELD_FORMATIONS.find((f) => f.id === formation)?.blurb;
+  // A picked-up player who isn't currently on the field or bowling.
+  const pending = pendingPlayerId ? byId(pendingPlayerId) : null;
+
+  const handleSpot = (positionId: string, occupantId: string | undefined) => {
+    if (pendingPlayerId) onSelectPosition(positionId);
+    else if (occupantId) onSelectPlayer(occupantId);
+  };
 
   return (
-    <div>
-      <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-border bg-[radial-gradient(ellipse_at_50%_45%,#0f2a22_0%,#0b0f14_72%)]">
+    <div className="mx-auto w-full max-w-sm">
+      {/* Formation presets */}
+      <div className="mb-3 flex flex-wrap justify-center gap-1.5">
+        {FIELD_FORMATIONS.map((f) => (
+          <button
+            key={f.id}
+            type="button"
+            onClick={() => onApplyFormation(f.id)}
+            className={cn(
+              "rounded-full border px-3 py-1.5 text-xs font-bold transition-colors",
+              formation === f.id
+                ? "border-accent bg-accent/15 text-accent"
+                : "border-border bg-background-elevated text-foreground-muted hover:text-foreground"
+            )}
+          >
+            {f.label}
+          </button>
+        ))}
+      </div>
+
+      <div className="relative mx-auto aspect-[4/5] w-full overflow-hidden rounded-2xl border border-border bg-[radial-gradient(ellipse_at_50%_45%,#0f2a22_0%,#0b0f14_72%)]">
         <svg viewBox="0 0 100 100" className="absolute inset-0 h-full w-full" aria-hidden>
           <ellipse cx="50" cy="50" rx="47" ry="47" fill="none" stroke="rgba(34,230,168,0.35)" strokeWidth="0.6" strokeDasharray="2 2" />
-          <ellipse cx="50" cy="50" rx="32" ry="32" fill="none" stroke="rgba(34,230,168,0.18)" strokeWidth="0.4" />
-          <rect x="44" y="30" width="12" height="40" rx="1.5" fill="rgba(232,179,76,0.16)" stroke="rgba(232,179,76,0.4)" strokeWidth="0.4" />
+          <ellipse cx="50" cy="50" rx="30" ry="30" fill="none" stroke="rgba(34,230,168,0.18)" strokeWidth="0.4" />
+          <rect x="44" y="30" width="12" height="42" rx="1.5" fill="rgba(232,179,76,0.16)" stroke="rgba(232,179,76,0.4)" strokeWidth="0.4" />
           <line x1="45.5" y1="34" x2="54.5" y2="34" stroke="rgba(232,179,76,0.55)" strokeWidth="0.5" />
-          <line x1="45.5" y1="66" x2="54.5" y2="66" stroke="rgba(232,179,76,0.55)" strokeWidth="0.5" />
+          <line x1="45.5" y1="68" x2="54.5" y2="68" stroke="rgba(232,179,76,0.55)" strokeWidth="0.5" />
         </svg>
 
-        {/* Keeper — fixed, decorative, not assignable */}
-        <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: "50%", top: "78%" }}>
-          <div className="flex flex-col items-center">
-            <div className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-dashed border-gold/40 text-[9px] font-bold text-gold/70">
-              WK
-            </div>
-          </div>
+        {/* Wicketkeeper — fixed behind the striker's stumps, not movable. */}
+        <FixedMarker x={50} y={78} label="WK" tone="keeper" />
+
+        {/* Bowler — fixed at the far end; the one non-keeper who bowls. */}
+        <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: "50%", top: "24%" }}>
+          <button
+            type="button"
+            onClick={() => handleSpot(BOWLER_SLOT, assignments[BOWLER_SLOT])}
+            className="flex flex-col items-center"
+          >
+            {bowler ? (
+              <>
+                <PlayerAvatar
+                  player={bowler}
+                  size={34}
+                  className={cn("ring-2 shadow-lg shadow-black/40", pendingPlayerId === bowler.id ? "ring-gold" : "ring-saffron/80")}
+                />
+                <span className="mt-0.5 max-w-[64px] truncate text-center text-[9px] font-bold text-foreground">
+                  {bowler.shortName}
+                </span>
+                <span className="text-[8px] font-semibold uppercase tracking-wide text-saffron/80">Bowler</span>
+              </>
+            ) : (
+              <div className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-dashed border-saffron/40 text-[9px] font-bold text-saffron/70">
+                Bowl
+              </div>
+            )}
+          </button>
         </div>
 
-        {FIELDING_POSITIONS.map((pos) => {
-          const playerId = assignments[pos.id];
-          const player = playerId ? outfieldPlayers.find((p) => p.id === playerId) : null;
-          const clickable = Boolean(pendingPlayerId) && !player;
+        {/* The nine fielding positions of the active formation. */}
+        {positions.map((pos) => {
+          const player = byId(assignments[pos.id]);
           const isCatching = pos.zone === "catching";
+          const dropTarget = Boolean(pendingPlayerId);
           return (
-            <div
-              key={pos.id}
-              className="absolute -translate-x-1/2 -translate-y-1/2"
-              style={{ left: `${pos.x}%`, top: `${pos.y}%` }}
-            >
-              {player ? (
-                <div className="flex flex-col items-center">
-                  <PlayerAvatar
-                    player={player}
-                    size={36}
-                    className={cn("ring-2 shadow-lg shadow-black/40", isCatching ? "ring-gold" : "ring-accent")}
-                  />
-                  <span className="mt-1 max-w-[60px] truncate text-center text-[9px] font-bold text-foreground">
-                    {player.shortName}
-                  </span>
-                </div>
-              ) : (
-                <button
-                  type="button"
-                  disabled={!clickable}
-                  onClick={() => onSelectPosition(pos.id)}
-                  className={cn("flex flex-col items-center", clickable ? "cursor-pointer" : "cursor-default")}
-                >
+            <div key={pos.id} className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: `${pos.x}%`, top: `${pos.y}%` }}>
+              <button type="button" onClick={() => handleSpot(pos.id, assignments[pos.id])} className="flex flex-col items-center">
+                {player ? (
+                  <>
+                    <PlayerAvatar
+                      player={player}
+                      size={32}
+                      className={cn(
+                        "ring-2 shadow-lg shadow-black/40",
+                        pendingPlayerId === player.id ? "ring-gold" : isCatching ? "ring-gold/80" : "ring-accent"
+                      )}
+                    />
+                    <span className="mt-0.5 max-w-[58px] truncate text-center text-[9px] font-bold text-foreground">
+                      {player.shortName}
+                    </span>
+                    <span className="text-[8px] text-foreground-muted">{pos.short}</span>
+                  </>
+                ) : (
                   <motion.div
                     className={cn(
                       "flex h-8 w-8 items-center justify-center rounded-full border-2 text-[8px] font-bold",
                       isCatching ? "text-gold/70" : "text-foreground-muted",
-                      clickable ? "border-solid border-accent text-accent" : "border-dashed border-white/20"
+                      dropTarget ? "border-solid border-accent text-accent" : "border-dashed border-white/20"
                     )}
-                    animate={clickable ? { opacity: [0.55, 1, 0.55] } : { opacity: 1 }}
-                    transition={clickable ? { duration: 1.3, repeat: Infinity, ease: "easeInOut" } : undefined}
+                    animate={dropTarget ? { opacity: [0.55, 1, 0.55] } : { opacity: 1 }}
+                    transition={dropTarget ? { duration: 1.3, repeat: Infinity, ease: "easeInOut" } : undefined}
                   >
-                    {pos.short.length > 6 ? pos.short.slice(0, 5) : pos.short}
+                    {pos.short.slice(0, 6)}
                   </motion.div>
-                </button>
-              )}
+                )}
+              </button>
             </div>
           );
         })}
       </div>
 
-      {pendingPlayer && (
-        <p className="mx-auto mt-3 max-w-sm text-center text-xs text-accent">
-          {t("hardcore.placing")} <span className="font-semibold">{pendingPlayer.shortName}</span> —{" "}
-          {t("hardcore.placingHint")}
+      {formation ? (
+        <p className="mx-auto mt-2 max-w-sm text-center text-xs text-foreground-muted">
+          {pending ? (
+            <>
+              Moving <span className="font-semibold text-gold">{pending.shortName}</span> — tap a spot to drop or swap.
+            </>
+          ) : (
+            activeBlurb
+          )}
+        </p>
+      ) : (
+        <p className="mx-auto mt-2 max-w-sm text-center text-xs text-foreground-muted">
+          Pick a formation to set your field, then tap players to fine-tune.
         </p>
       )}
+    </div>
+  );
+}
 
-      {unassigned.length > 0 && (
-        <div className="mx-auto mt-3 flex max-w-sm flex-wrap justify-center gap-1.5">
-          {unassigned.map((player) => (
-            <button
-              key={player.id}
-              type="button"
-              onClick={() => onSelectPlayer(player.id)}
-              className={cn(
-                "rounded-full border px-3 py-1.5 text-xs font-semibold transition-colors",
-                pendingPlayerId === player.id
-                  ? "border-accent bg-accent/15 text-accent"
-                  : "border-border bg-background-elevated text-foreground-muted hover:text-foreground"
-              )}
-            >
-              {player.shortName}
-            </button>
-          ))}
-        </div>
-      )}
+function FixedMarker({ x, y, label, tone }: { x: number; y: number; label: string; tone: "keeper" }) {
+  return (
+    <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: `${x}%`, top: `${y}%` }}>
+      <div
+        className={cn(
+          "flex h-8 w-8 items-center justify-center rounded-full border-2 border-dashed text-[9px] font-bold",
+          tone === "keeper" && "border-gold/40 text-gold/70"
+        )}
+      >
+        {label}
+      </div>
     </div>
   );
 }

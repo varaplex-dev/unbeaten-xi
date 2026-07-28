@@ -5,25 +5,6 @@ import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
 import { SQUAD_SIZE, type Player } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
-// Hand-placed (x%, y%) positions for the 11 XI slots, spread around the
-// boundary of the field graphic below, clear of the pitch strip down the
-// middle. Purely visual placement on the ground — the number is the
-// player's actual batting-order position (see slotRoleLabel below), which
-// the user chooses freely; nothing here is a real fielding assignment.
-const SLOT_POSITIONS: { x: number; y: number }[] = [
-  { x: 50, y: 91 },
-  { x: 21, y: 81 },
-  { x: 79, y: 81 },
-  { x: 10, y: 58 },
-  { x: 90, y: 58 },
-  { x: 17, y: 36 },
-  { x: 83, y: 36 },
-  { x: 50, y: 76 },
-  { x: 28, y: 17 },
-  { x: 72, y: 17 },
-  { x: 50, y: 8 },
-];
-
 /** Soft, non-restrictive role hints for each batting-order slot, modeled on
  * a realistic XI balance (2 openers, 3 middle-order batters, 1 wicketkeeper-
  * batter, 2 all-rounders, 3 specialist bowlers — 11 in total). This is a
@@ -71,84 +52,75 @@ function suggestedSlotIndex(pendingPlayer: Player | null, slots: (Player | null)
   return open ?? null;
 }
 
-interface SlotProps {
+interface RowProps {
   index: number;
-  x: number;
-  y: number;
   player: Player | null;
   clickable: boolean;
-  impact?: boolean;
-  suggested?: boolean;
+  suggested: boolean;
   onClick?: () => void;
 }
 
-function Slot({ index, x, y, player, clickable, impact, suggested, onClick }: SlotProps) {
-  const size = impact ? 40 : 44;
+/** One batting-order position (1–11). Filled shows the player; empty is a
+ * tappable "bat here" target while placing. */
+function LineupRow({ index, player, clickable, suggested, onClick }: RowProps) {
+  const rank = index + 1;
   return (
-    <div className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: `${x}%`, top: `${y}%` }}>
-      {/* mode="wait" would gate the new (filled) child on the old (empty)
-          child's exit animation finishing — if that animation ever stalls
-          (e.g. a backgrounded tab throttling requestAnimationFrame), the
-          slot would be stuck showing "Place here" forever even though the
-          pick landed correctly in the store. Default (sync) mode mounts
-          the new child immediately regardless. */}
-      <AnimatePresence initial={false}>
+    <div
+      className={cn(
+        "flex items-center gap-3 rounded-xl border px-3 py-2 transition-colors",
+        player
+          ? "border-border bg-background-elevated"
+          : clickable
+            ? cn(
+                "cursor-pointer",
+                suggested ? "border-gold bg-gold/10" : "border-accent/60 bg-accent/5"
+              )
+            : "border-dashed border-white/10 bg-transparent"
+      )}
+    >
+      <span
+        className={cn(
+          "flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-sm font-black tabular-nums",
+          player ? "bg-accent/15 text-accent" : "bg-white/5 text-foreground-muted"
+        )}
+      >
+        {rank}
+      </span>
+
+      <AnimatePresence initial={false} mode="wait">
         {player ? (
           <motion.div
             key={player.id}
-            initial={{ scale: 0.3, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            transition={{ type: "spring", stiffness: 340, damping: 22 }}
-            className="relative flex flex-col items-center"
+            initial={{ opacity: 0, x: -8 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", stiffness: 340, damping: 24 }}
+            className="flex min-w-0 flex-1 items-center gap-2.5"
           >
-            <motion.div
-              className="absolute inset-0 rounded-full"
-              initial={{ boxShadow: "0 0 0 14px rgba(34,230,168,0.55)" }}
-              animate={{ boxShadow: "0 0 0 0px rgba(34,230,168,0)" }}
-              transition={{ duration: 1.1, ease: "easeOut" }}
-            />
-            <PlayerAvatar
-              player={player}
-              size={size}
-              className={cn("relative ring-2", impact ? "ring-gold" : "ring-accent", "shadow-lg shadow-black/40")}
-            />
-            <span className="relative mt-1 max-w-[64px] truncate text-center text-[10px] font-bold text-foreground">
-              {player.shortName}
-            </span>
+            <PlayerAvatar player={player} size={34} className="ring-1 ring-accent/40" />
+            <div className="min-w-0 flex-1">
+              <p className="truncate text-sm font-bold leading-tight">{player.name}</p>
+              <p className="text-[10px] uppercase tracking-wide text-foreground-muted">{slotRoleLabel(index)}</p>
+            </div>
           </motion.div>
-        ) : (
+        ) : clickable ? (
           <motion.button
+            key={`place-${index}`}
             type="button"
-            key={`empty-${index}`}
-            disabled={!clickable}
             onClick={onClick}
-            initial={{ scale: 0.6, opacity: 0 }}
-            animate={{ scale: 1, opacity: 1 }}
-            exit={{ scale: 0.6, opacity: 0 }}
-            className={cn("flex flex-col items-center", clickable ? "cursor-pointer" : "cursor-default")}
+            className="flex min-w-0 flex-1 items-center justify-between text-left"
+            animate={{ opacity: [0.7, 1, 0.7] }}
+            transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
           >
-            <motion.div
-              className={cn(
-                "flex items-center justify-center rounded-full border-2 text-xs font-bold",
-                impact ? "border-gold/50 text-gold/70" : "border-white/20 text-foreground-muted",
-                clickable && (impact ? "border-solid border-gold" : "border-solid border-accent text-accent"),
-                clickable && suggested && "border-gold text-gold ring-2 ring-gold/60"
-              )}
-              style={{ width: size, height: size, borderStyle: clickable ? "solid" : "dashed" }}
-              animate={clickable ? { opacity: [0.55, 1, 0.55], scale: [1, 1.08, 1] } : { opacity: 1 }}
-              transition={clickable ? { duration: 1.3, repeat: Infinity, ease: "easeInOut" } : undefined}
-            >
-              {impact ? "IMP" : index + 1}
-            </motion.div>
-            <span
-              className={cn(
-                "mt-1 h-[14px] max-w-[64px] truncate text-center text-[10px]",
-                clickable && suggested ? "font-bold text-gold" : clickable ? "font-semibold text-accent" : "text-foreground-muted"
-              )}
-            >
-              {clickable && suggested ? "★ Suggested" : clickable ? "Place here" : impact ? "" : slotRoleLabel(index)}
+            <span className={cn("text-sm font-bold", suggested ? "text-gold" : "text-accent")}>
+              {suggested ? "★ Bat here (suggested)" : "Tap to bat here"}
             </span>
+            <span className="text-[10px] uppercase tracking-wide text-foreground-muted">{slotRoleLabel(index)}</span>
           </motion.button>
+        ) : (
+          <div key={`empty-${index}`} className="flex min-w-0 flex-1 items-center justify-between">
+            <span className="text-sm text-foreground-muted/70">—</span>
+            <span className="text-[10px] uppercase tracking-wide text-foreground-muted/60">{slotRoleLabel(index)}</span>
+          </div>
         )}
       </AnimatePresence>
     </div>
@@ -159,7 +131,7 @@ interface SquadFieldProps {
   /** Length SQUAD_SIZE, index = batting-order slot (0 = position 1). */
   slots: (Player | null)[];
   /** True while a picked player is waiting to be placed — empty slots
-   * become clickable and pulse to invite the placement tap. */
+   * become tappable and pulse to invite the placement. */
   placing: boolean;
   /** The player currently waiting to be placed — used to suggest a slot. */
   pendingPlayer?: Player | null;
@@ -171,13 +143,13 @@ interface SquadFieldProps {
   impactActive?: boolean;
 }
 
-/** A stylized cricket ground that fills in as the squad is drafted. Picking
- * a player doesn't lock in their spot — the user then taps an open slot on
- * the field to place them, and that choice is real: expectedRunsFromBatting
- * weights the top of the order more heavily, so stacking your best hitters
- * up top versus burying one at #11 genuinely changes the season sim, not
- * just the display order. The 12th slot (Impact Player, in the bench strip
- * below) skips placement — it's a single bench spot, picked directly. */
+/** The drafted XI as a BATTING ORDER (1–11) — deliberately a lineup, not a
+ * field. Picking a player doesn't lock in their spot: you then tap an open
+ * batting position to place them, and that choice is real —
+ * expectedRunsFromBatting weights the top of the order more heavily, so
+ * stacking your best hitters up top versus burying one at #11 genuinely
+ * changes the season sim, not just the display order. The 12th slot (Impact
+ * Player) is a single bench spot, picked directly, no placement. */
 export function SquadField({
   slots,
   placing,
@@ -189,25 +161,22 @@ export function SquadField({
 }: SquadFieldProps) {
   const showImpact = impactPlayer !== undefined || impactActive !== undefined;
   const suggestedIndex = placing && suggest ? suggestedSlotIndex(pendingPlayer ?? null, slots) : null;
-  return (
-    <div>
-      <div className="relative mx-auto aspect-[4/5] w-full max-w-sm overflow-hidden rounded-2xl border border-border bg-[radial-gradient(ellipse_at_50%_45%,#0f2a22_0%,#0b0f14_72%)]">
-        <svg viewBox="0 0 100 100" className="absolute inset-0 h-full w-full" aria-hidden>
-          <ellipse cx="50" cy="50" rx="47" ry="47" fill="none" stroke="rgba(34,230,168,0.35)" strokeWidth="0.6" strokeDasharray="2 2" />
-          <ellipse cx="50" cy="50" rx="32" ry="32" fill="none" stroke="rgba(34,230,168,0.18)" strokeWidth="0.4" />
-          <rect x="44" y="30" width="12" height="40" rx="1.5" fill="rgba(232,179,76,0.16)" stroke="rgba(232,179,76,0.4)" strokeWidth="0.4" />
-          <line x1="45.5" y1="34" x2="54.5" y2="34" stroke="rgba(232,179,76,0.55)" strokeWidth="0.5" />
-          <line x1="45.5" y1="66" x2="54.5" y2="66" stroke="rgba(232,179,76,0.55)" strokeWidth="0.5" />
-        </svg>
+  const filled = slots.filter(Boolean).length;
 
-        {SLOT_POSITIONS.map((pos, i) => (
-          <Slot
+  return (
+    <div className="mx-auto w-full max-w-sm">
+      <div className="mb-2 flex items-center justify-between px-1">
+        <span className="text-xs font-bold uppercase tracking-[0.2em] text-saffron">Batting Order</span>
+        <span className="text-xs font-semibold tabular-nums text-foreground-muted">{filled}/{SQUAD_SIZE}</span>
+      </div>
+
+      <div className="grid gap-1.5">
+        {slots.map((player, i) => (
+          <LineupRow
             key={i}
             index={i}
-            x={pos.x}
-            y={pos.y}
-            player={slots[i] ?? null}
-            clickable={placing && !slots[i]}
+            player={player ?? null}
+            clickable={placing && !player}
             suggested={i === suggestedIndex}
             onClick={() => onSlotClick?.(i)}
           />
@@ -215,11 +184,21 @@ export function SquadField({
       </div>
 
       {showImpact && (
-        <div className="mx-auto mt-3 flex w-full max-w-sm items-center justify-center gap-3 rounded-xl border border-dashed border-gold/30 bg-gold/5 py-3">
-          <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold/80">Impact Player</span>
-          <div className="relative h-11 w-11">
-            <Slot index={SQUAD_SIZE} x={50} y={50} player={impactPlayer ?? null} clickable={false} impact />
-          </div>
+        <div className="mt-3 flex items-center gap-3 rounded-xl border border-dashed border-gold/30 bg-gold/5 px-3 py-2.5">
+          <span className="flex h-7 w-7 shrink-0 items-center justify-center rounded-full bg-gold/15 text-[10px] font-black text-gold">
+            IMP
+          </span>
+          {impactPlayer ? (
+            <div className="flex min-w-0 flex-1 items-center gap-2.5">
+              <PlayerAvatar player={impactPlayer} size={34} className="ring-1 ring-gold/50" />
+              <div className="min-w-0 flex-1">
+                <p className="truncate text-sm font-bold leading-tight">{impactPlayer.name}</p>
+                <p className="text-[10px] uppercase tracking-wide text-gold/80">Impact Player</p>
+              </div>
+            </div>
+          ) : (
+            <span className="text-[10px] uppercase tracking-wide text-gold/80">Impact Player (bench)</span>
+          )}
         </div>
       )}
     </div>
