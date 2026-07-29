@@ -36,6 +36,9 @@ export const en = {
   "play.intro":
     "More modes are on the way. Every squad is spun together from real players — current stars, all-time legends, and actual franchise-season rosters — using their real career stats.",
   "play.allTimeXi": "All-Time XI",
+  "play.indiaXi": "India XI",
+  "play.indiaXiDesc":
+    "IPL league players only — spin into real past-season IPL franchise squads and pick one player from each. Fourteen matches, a full league campaign. See if you can go 14-0.",
   "play.worldCupRun": "World Cup Run",
   "play.worldCupRunDesc":
     "Nations only — spin into national sides from any era and pick one player from each. Nine matches, the road a World Cup finalist actually walks. Lose none of them.",

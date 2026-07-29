@@ -208,6 +208,17 @@ export const ERA_TEAMS: EraTeam[] = [
  */
 export const NATIONAL_TEAM_POOL: EraTeam[] = [...HISTORIC_TEAMS, ...NATIONAL_ERA_TEAMS];
 
+/**
+ * IPL franchise-season squads only — the drafting pool for the India XI mode.
+ * FRANCHISE_SEASON_TEAMS ids are league-prefixed ("ipl-…", "bbl-…", "psl-…"),
+ * so this keeps just the IPL sides and drops BBL/PSL. Everyone in these squads
+ * actually played that IPL season, so a squad spun together here is entirely
+ * IPL players (Indian and overseas alike).
+ */
+export const IPL_FRANCHISE_POOL: EraTeam[] = FRANCHISE_SEASON_TEAMS.filter((t) =>
+  t.id.startsWith("ipl-")
+);
+
 export function getEraTeamById(id: string): EraTeam | undefined {
   return ERA_TEAMS.find((t) => t.id === id);
 }

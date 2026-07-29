@@ -9,11 +9,9 @@ import { SquadField } from "@/components/draft/SquadField";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { useGameStore } from "@/lib/store/gameStore";
+import { useGameStore, poolForScope, resolveScope } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import {
-  eraTeams,
-  nationalTeamPool,
   getEraTeamById,
   pickNextEraTeam,
   getRealPoolPlayerById,
@@ -45,9 +43,10 @@ export default function SquadSelectPage() {
   const skipImpactPlayer = useGameStore((s) => s.skipImpactPlayer);
   const hardcoreMode = useGameStore((s) => s.hardcoreMode);
   const competition = useGameStore((s) => s.competition);
-  // Must match the pool the store spins from (see teamPoolFor in gameStore),
-  // for both the landing team and the reel's decoys.
-  const spinPool = competition === "world-cup" ? nationalTeamPool() : eraTeams();
+  const teamScope = useGameStore((s) => s.teamScope);
+  // Must match the pool the store spins from (poolForScope in gameStore), for
+  // both the landing team and the reel's decoys.
+  const spinPool = poolForScope(resolveScope(teamScope, competition));
   const { t } = useTranslation();
 
   const [spinTarget, setSpinTarget] = useState<EraTeam | null>(null);

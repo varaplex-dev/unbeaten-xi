@@ -10,6 +10,7 @@ import {
 import {
   eraTeams,
   nationalTeamPool,
+  iplFranchisePool,
   realPlayers,
   getEraTeamById,
   pickNextEraTeam,
@@ -17,11 +18,29 @@ import {
 } from "@/lib/data/gameData";
 import { DEFAULT_COMPETITION_ID, type CompetitionId } from "@/lib/engine/competitions";
 
-/** Which teams a competition drafts from. A World Cup is contested by nations,
- * so its pool excludes the club franchises; every other competition uses the
- * full pool. */
-function teamPoolFor(competition: CompetitionId) {
-  return competition === "world-cup" ? nationalTeamPool() : eraTeams();
+/** Which set of teams a mode drafts from — deliberately separate from the
+ * competition (which sets the match count). "full" is every real squad,
+ * "nations" is the World Cup Run pool (no club franchises), and "ipl" is the
+ * India XI pool of real IPL franchise-season squads. */
+export type TeamScope = "full" | "nations" | "ipl";
+
+export function poolForScope(scope: TeamScope) {
+  switch (scope) {
+    case "nations":
+      return nationalTeamPool();
+    case "ipl":
+      return iplFranchisePool();
+    default:
+      return eraTeams();
+  }
+}
+
+/** Games saved before teamScope existed default to "full" on hydration; if such
+ * a game was a World Cup run, honour its nations-only pool for the remaining
+ * spins rather than suddenly letting a club franchise appear. */
+export function resolveScope(scope: TeamScope, competition: CompetitionId): TeamScope {
+  if (scope === "full" && competition === "world-cup") return "nations";
+  return scope;
 }
 import { randomSeedString, todaySeedString } from "@/lib/engine/rng";
 import { autoAssignLineup, type BowlingPhase } from "@/lib/engine/lineup";
@@ -59,6 +78,10 @@ export interface GameState {
    * length (14 league matches, 9 for a World Cup run) and, for World Cup Run,
    * restricts the spin pool to national sides. See engine/competitions.ts. */
   competition: CompetitionId;
+  /** Which team pool this game spins from — see TeamScope. Separate from
+   * competition: India XI plays a normal league season (match count) but
+   * drafts from IPL squads only (scope). */
+  teamScope: TeamScope;
   stage: GameStage;
   draftPicks: DraftPickRecord[];
   /** The Era Team currently revealed for the round in progress — drives
@@ -133,7 +156,7 @@ export interface GameState {
 interface GameActions {
   startNewGame: (options?: { seed?: string; isDaily?: boolean; mode?: GameMode }) => void;
   spinTheWheel: (mode: GameMode) => void;
-  spinEraTeam: (competition?: CompetitionId) => void;
+  spinEraTeam: (competition?: CompetitionId, teamScope?: TeamScope) => void;
   spinNextTeam: () => void;
   selectSquadPlayer: (player: Player) => void;
   placeSquadPlayer: (slotIndex: number) => void;
@@ -173,6 +196,7 @@ const initialState: Omit<GameState, "hasHydrated" | "hardcoreMode" | "bestSeason
   seed: null,
   mode: "fictional",
   competition: DEFAULT_COMPETITION_ID,
+  teamScope: "full",
   isDaily: false,
   createdAt: null,
   stage: "draft",
@@ -327,7 +351,7 @@ export const useGameStore = create<GameState & GameActions>()(
        * `competition` decides both the season length and which teams can be
        * spun into: the default league campaign draws on everything, while
        * World Cup Run is restricted to national sides. */
-      spinEraTeam: (competition = DEFAULT_COMPETITION_ID) => {
+      spinEraTeam: (competition = DEFAULT_COMPETITION_ID, teamScope = "full") => {
         const seed = randomSeedString();
         set({
           ...initialState,
@@ -335,21 +359,23 @@ export const useGameStore = create<GameState & GameActions>()(
           seed,
           mode: "all-time-real",
           competition,
+          teamScope,
           isDaily: false,
           createdAt: new Date().toISOString(),
           eraTeamId: null,
           usedEraTeamIds: [],
           stage: "squad-select",
         });
-        track("game_started", { mode: "all-time-real", method: "spin-era-team", competition });
+        track("game_started", { mode: "all-time-real", method: "spin-era-team", competition, teamScope });
       },
 
       /** Reveals the next team for the round in progress — every pick comes
        * from a fresh spin, so this excludes teams already drafted from. */
       spinNextTeam: () => {
-        const { seed, usedEraTeamIds, competition } = get();
+        const { seed, usedEraTeamIds, competition, teamScope } = get();
         if (!seed) return;
-        const eraTeam = pickNextEraTeam(seed, usedEraTeamIds, teamPoolFor(competition));
+        const pool = poolForScope(resolveScope(teamScope, competition));
+        const eraTeam = pickNextEraTeam(seed, usedEraTeamIds, pool);
         if (!eraTeam) return; // data not loaded yet — spin is gated on it in the UI
         set({ eraTeamId: eraTeam.id });
       },

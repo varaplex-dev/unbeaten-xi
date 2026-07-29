@@ -5,7 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ModeBadge } from "@/components/play/ModeBadge";
-import { useGameStore, type GameMode } from "@/lib/store/gameStore";
+import { useGameStore, type GameMode, type TeamScope } from "@/lib/store/gameStore";
 import type { CompetitionId } from "@/lib/engine/competitions";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import { cn } from "@/lib/utils";
@@ -32,10 +32,12 @@ interface ModeDef {
   /** A mode that navigates to its own route (e.g. online Head-to-Head)
    * rather than starting the local spin-draft flow. */
   href?: string;
-  /** Which real competition this mode plays as — sets the season length and,
-   * for World Cup Run, restricts the spin pool to national sides. Defaults to
-   * the league campaign. */
+  /** Which real competition this mode plays as — sets the season length.
+   * Defaults to the league campaign. */
   competition?: CompetitionId;
+  /** Which team pool this mode spins from. Defaults to the full pool; World Cup
+   * Run uses nations only, India XI the IPL franchise squads. */
+  teamScope?: TeamScope;
 }
 
 const MODES: ModeDef[] = [
@@ -71,6 +73,7 @@ const MODES: ModeDef[] = [
     available: true,
     gameMode: "all-time-real",
     competition: "world-cup",
+    teamScope: "nations",
   },
   {
     id: "india-xi",
@@ -78,8 +81,10 @@ const MODES: ModeDef[] = [
     image: "/logos/badge-india-xi.png",
     tone: "gold",
     name: "India XI",
-    description: "Indian players only.",
-    available: false,
+    description: "",
+    available: true,
+    gameMode: "all-time-real",
+    teamScope: "ipl",
   },
   {
     id: "auction-mode",
@@ -137,7 +142,7 @@ export function ModeGrid() {
       return;
     }
     if (!mode.gameMode) return;
-    spinEraTeam(mode.competition);
+    spinEraTeam(mode.competition, mode.teamScope);
     router.push("/squad-select");
   }
 
@@ -153,7 +158,9 @@ export function ModeGrid() {
                   ? t("play.allTimeXi")
                   : mode.id === "world-cup-run"
                     ? t("play.worldCupRun")
-                    : mode.name}
+                    : mode.id === "india-xi"
+                      ? t("play.indiaXi")
+                      : mode.name}
               </CardTitle>
             </div>
             {!mode.available && <Badge variant="gold">{t("play.comingSoon")}</Badge>}
@@ -165,7 +172,9 @@ export function ModeGrid() {
                   ? t("play.allTimeXiDesc")
                   : mode.id === "world-cup-run"
                     ? t("play.worldCupRunDesc")
-                    : mode.description}
+                    : mode.id === "india-xi"
+                      ? t("play.indiaXiDesc")
+                      : mode.description}
               </p>
               {mode.available && (
                 <div className="flex shrink-0 gap-2">

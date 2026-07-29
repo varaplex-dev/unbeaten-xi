@@ -20,6 +20,7 @@ import type { EraTeam, Player } from "@/lib/types";
 interface GameData {
   eraTeams: EraTeam[];
   nationalTeamPool: EraTeam[];
+  iplFranchisePool: EraTeam[];
   realPlayers: Player[];
   getEraTeamById: (id: string) => EraTeam | undefined;
   pickNextEraTeam: (seed: string, usedEraTeamIds: string[], teams?: EraTeam[]) => EraTeam;
@@ -46,6 +47,7 @@ export function loadGameData(): Promise<GameData> {
     cache = {
       eraTeams: eraMod.ERA_TEAMS,
       nationalTeamPool: eraMod.NATIONAL_TEAM_POOL,
+      iplFranchisePool: eraMod.IPL_FRANCHISE_POOL,
       realPlayers: realMod.REAL_PLAYERS,
       getEraTeamById: eraMod.getEraTeamById,
       pickNextEraTeam: eraMod.pickNextEraTeam,
@@ -71,6 +73,10 @@ export function eraTeams(): EraTeam[] {
 
 export function nationalTeamPool(): EraTeam[] {
   return cache?.nationalTeamPool ?? [];
+}
+
+export function iplFranchisePool(): EraTeam[] {
+  return cache?.iplFranchisePool ?? [];
 }
 
 export function realPlayers(): Player[] {
