@@ -52,42 +52,32 @@ const POS: Record<string, FieldingPosition> = {
 
 interface FormationDef {
   id: FormationId;
-  label: string;
-  blurb: string;
   positionIds: string[]; // exactly 9
 }
 
 // Each preset lists its nine positions catching-zone-first, so the auto-assign
-// walks bowlers/all-rounders (the better catchers) into the close spots.
+// walks bowlers/all-rounders (the better catchers) into the close spots. The
+// display name and blurb for each id live in i18n (field.formation* /
+// field.blurb*), rendered by FieldingBoard.
 export const FIELD_FORMATIONS: FormationDef[] = [
   {
     id: "balanced",
-    label: "Balanced",
-    blurb: "An even spread — a bit of catching, a full infield, protected boundaries.",
     positionIds: ["slip", "point", "cover", "mid-off", "mid-on", "mid-wicket", "square-leg", "fine-leg", "third-man"],
   },
   {
     id: "attacking",
-    label: "Attacking",
-    blurb: "Catchers around the bat and a tight infield — hunting wickets.",
     positionIds: ["slip", "second-slip", "gully", "point", "cover", "mid-off", "mid-on", "mid-wicket", "square-leg"],
   },
   {
     id: "defensive",
-    label: "Defensive",
-    blurb: "Sweepers on the rope — concede the single, cut off the boundary.",
     positionIds: ["point", "cover", "mid-off", "mid-on", "deep-cover", "deep-mid-wicket", "long-on", "long-off", "third-man"],
   },
   {
     id: "powerplay",
-    label: "Powerplay",
-    blurb: "Catchers up with the field mostly inside the ring for the new ball.",
     positionIds: ["slip", "gully", "point", "cover", "mid-off", "mid-on", "mid-wicket", "square-leg", "fine-leg"],
   },
   {
     id: "death",
-    label: "Death Overs",
-    blurb: "Boundary riders everywhere — defend the last overs.",
     positionIds: ["cover", "mid-on", "deep-point", "deep-cover", "long-off", "long-on", "deep-mid-wicket", "deep-square-leg", "third-man"],
   },
 ];

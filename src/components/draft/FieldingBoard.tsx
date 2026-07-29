@@ -8,8 +8,27 @@ import {
   type FormationId,
 } from "@/lib/data/fieldingPositions";
 import { BOWLER_SLOT } from "@/lib/store/gameStore";
+import { useTranslation } from "@/lib/i18n/useTranslation";
+import type { TranslationKey } from "@/lib/i18n";
 import type { Player } from "@/lib/types";
 import { cn } from "@/lib/utils";
+
+// Display name + blurb for each formation live in i18n; the data file keeps
+// only the id + positions. Typed maps so the keys stay checkable.
+const FORMATION_LABEL_KEY: Record<FormationId, TranslationKey> = {
+  balanced: "field.formationBalanced",
+  attacking: "field.formationAttacking",
+  defensive: "field.formationDefensive",
+  powerplay: "field.formationPowerplay",
+  death: "field.formationDeath",
+};
+const FORMATION_BLURB_KEY: Record<FormationId, TranslationKey> = {
+  balanced: "field.blurbBalanced",
+  attacking: "field.blurbAttacking",
+  defensive: "field.blurbDefensive",
+  powerplay: "field.blurbPowerplay",
+  death: "field.blurbDeath",
+};
 
 interface FieldingBoardProps {
   /** The non-keeper XI players (up to 10): nine field, one bowls. */
@@ -38,10 +57,11 @@ export function FieldingBoard({
   onSelectPosition,
   onApplyFormation,
 }: FieldingBoardProps) {
+  const { t } = useTranslation();
   const byId = (id: string | undefined) => (id ? outfieldPlayers.find((p) => p.id === id) ?? null : null);
   const positions = formation ? formationPositions(formation) : [];
   const bowler = byId(assignments[BOWLER_SLOT]);
-  const activeBlurb = FIELD_FORMATIONS.find((f) => f.id === formation)?.blurb;
+  const activeBlurb = formation ? t(FORMATION_BLURB_KEY[formation]) : undefined;
   // A picked-up player who isn't currently on the field or bowling.
   const pending = pendingPlayerId ? byId(pendingPlayerId) : null;
 
@@ -66,7 +86,7 @@ export function FieldingBoard({
                 : "border-border bg-background-elevated text-foreground-muted hover:text-foreground"
             )}
           >
-            {f.label}
+            {t(FORMATION_LABEL_KEY[f.id])}
           </button>
         ))}
       </div>
@@ -100,11 +120,11 @@ export function FieldingBoard({
                 <span className="mt-0.5 max-w-[64px] truncate text-center text-[9px] font-bold text-foreground">
                   {bowler.shortName}
                 </span>
-                <span className="text-[8px] font-semibold uppercase tracking-wide text-saffron/80">Bowler</span>
+                <span className="text-[8px] font-semibold uppercase tracking-wide text-saffron/80">{t("field.bowler")}</span>
               </>
             ) : (
               <div className="flex h-8 w-8 items-center justify-center rounded-full border-2 border-dashed border-saffron/40 text-[9px] font-bold text-saffron/70">
-                Bowl
+                {t("field.bowl")}
               </div>
             )}
           </button>
@@ -154,17 +174,24 @@ export function FieldingBoard({
 
       {formation ? (
         <p className="mx-auto mt-2 max-w-sm text-center text-xs text-foreground-muted">
-          {pending ? (
-            <>
-              Moving <span className="font-semibold text-gold">{pending.shortName}</span> — tap a spot to drop or swap.
-            </>
-          ) : (
-            activeBlurb
-          )}
+          {pending
+            ? (() => {
+                // Split around {name} so the player's name stays bold and the
+                // sentence order is whatever the locale needs (works for RTL).
+                const [before, after] = t("field.moving").split("{name}");
+                return (
+                  <>
+                    {before}
+                    <span className="font-semibold text-gold">{pending.shortName}</span>
+                    {after}
+                  </>
+                );
+              })()
+            : activeBlurb}
         </p>
       ) : (
         <p className="mx-auto mt-2 max-w-sm text-center text-xs text-foreground-muted">
-          Pick a formation to set your field, then tap players to fine-tune.
+          {t("field.pickFormation")}
         </p>
       )}
     </div>

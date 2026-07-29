@@ -2,6 +2,8 @@
 
 import { AnimatePresence, motion } from "framer-motion";
 import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
+import { useTranslation } from "@/lib/i18n/useTranslation";
+import type { TranslationKey } from "@/lib/i18n";
 import { SQUAD_SIZE, type Player } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
@@ -14,12 +16,12 @@ import { cn } from "@/lib/utils";
  * Where you place a strong batter still changes the simulation for real
  * (see expectedRunsFromBatting's position weighting), so the label is
  * there to help you think about it, not to lock you into it. */
-function slotRoleLabel(index: number): string {
-  if (index < 2) return "Opener";
-  if (index < 5) return "Middle Order";
-  if (index < 6) return "WK-Batter";
-  if (index < 8) return "All-Rounder";
-  return "Bowler";
+function slotRoleLabel(index: number): TranslationKey {
+  if (index < 2) return "field.slotOpener";
+  if (index < 5) return "field.slotMiddleOrder";
+  if (index < 6) return "field.slotWkBatter";
+  if (index < 8) return "field.slotAllRounder";
+  return "field.bowler";
 }
 
 // The batting-order slot group that best fits a player's primary role — a
@@ -63,6 +65,7 @@ interface RowProps {
 /** One batting-order position (1–11). Filled shows the player; empty is a
  * tappable "bat here" target while placing. */
 function LineupRow({ index, player, clickable, suggested, onClick }: RowProps) {
+  const { t } = useTranslation();
   const rank = index + 1;
   return (
     <div
@@ -99,7 +102,7 @@ function LineupRow({ index, player, clickable, suggested, onClick }: RowProps) {
             <PlayerAvatar player={player} size={34} className="ring-1 ring-accent/40" />
             <div className="min-w-0 flex-1">
               <p className="truncate text-sm font-bold leading-tight">{player.name}</p>
-              <p className="text-[10px] uppercase tracking-wide text-foreground-muted">{slotRoleLabel(index)}</p>
+              <p className="text-[10px] uppercase tracking-wide text-foreground-muted">{t(slotRoleLabel(index))}</p>
             </div>
           </motion.div>
         ) : clickable ? (
@@ -112,14 +115,14 @@ function LineupRow({ index, player, clickable, suggested, onClick }: RowProps) {
             transition={{ duration: 1.4, repeat: Infinity, ease: "easeInOut" }}
           >
             <span className={cn("text-sm font-bold", suggested ? "text-gold" : "text-accent")}>
-              {suggested ? "★ Bat here (suggested)" : "Tap to bat here"}
+              {suggested ? `★ ${t("field.batHereSuggested")}` : t("field.tapToBatHere")}
             </span>
-            <span className="text-[10px] uppercase tracking-wide text-foreground-muted">{slotRoleLabel(index)}</span>
+            <span className="text-[10px] uppercase tracking-wide text-foreground-muted">{t(slotRoleLabel(index))}</span>
           </motion.button>
         ) : (
           <div key={`empty-${index}`} className="flex min-w-0 flex-1 items-center justify-between">
             <span className="text-sm text-foreground-muted/70">—</span>
-            <span className="text-[10px] uppercase tracking-wide text-foreground-muted/60">{slotRoleLabel(index)}</span>
+            <span className="text-[10px] uppercase tracking-wide text-foreground-muted/60">{t(slotRoleLabel(index))}</span>
           </div>
         )}
       </AnimatePresence>
@@ -159,6 +162,7 @@ export function SquadField({
   impactPlayer,
   impactActive,
 }: SquadFieldProps) {
+  const { t } = useTranslation();
   const showImpact = impactPlayer !== undefined || impactActive !== undefined;
   const suggestedIndex = placing && suggest ? suggestedSlotIndex(pendingPlayer ?? null, slots) : null;
   const filled = slots.filter(Boolean).length;
@@ -166,7 +170,7 @@ export function SquadField({
   return (
     <div className="mx-auto w-full max-w-sm">
       <div className="mb-2 flex items-center justify-between px-1">
-        <span className="text-xs font-bold uppercase tracking-[0.2em] text-saffron">Batting Order</span>
+        <span className="text-xs font-bold uppercase tracking-[0.2em] text-saffron">{t("field.battingOrder")}</span>
         <span className="text-xs font-semibold tabular-nums text-foreground-muted">{filled}/{SQUAD_SIZE}</span>
       </div>
 
@@ -193,11 +197,11 @@ export function SquadField({
               <PlayerAvatar player={impactPlayer} size={34} className="ring-1 ring-gold/50" />
               <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-bold leading-tight">{impactPlayer.name}</p>
-                <p className="text-[10px] uppercase tracking-wide text-gold/80">Impact Player</p>
+                <p className="text-[10px] uppercase tracking-wide text-gold/80">{t("field.impactPlayer")}</p>
               </div>
             </div>
           ) : (
-            <span className="text-[10px] uppercase tracking-wide text-gold/80">Impact Player (bench)</span>
+            <span className="text-[10px] uppercase tracking-wide text-gold/80">{t("field.impactPlayerBench")}</span>
           )}
         </div>
       )}
