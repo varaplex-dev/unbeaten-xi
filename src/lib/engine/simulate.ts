@@ -368,8 +368,35 @@ function opponentXiFor(team: EraTeam): Player[] {
  * meets the same span of weak-to-elite opposition rather than just truncating
  * the fixture list and facing only the weakest sides.
  */
+// Per-phase innings swing for a real season (projectInnings' default is a much
+// tamer 0.08). Cranked up so a season plays like real T20: the stronger side is
+// favoured but genuinely loses games, upsets happen, and going 14-0 takes a
+// great squad AND luck rather than being a foregone conclusion for any strong
+// team. Kept out of the engine default so unit tests still exercise the tame,
+// deterministic baseline.
+const SEASON_INNINGS_VARIANCE = 0.22;
+
+// Credible international sides — full ICC members plus the associates that
+// actually reach T20 World Cups. Only the auto-generated NATIONAL era squads
+// (id "national-…") are gated against this: a marquee league shouldn't schedule
+// cricket minnows like Luxembourg or Slovenia, but franchises and the curated
+// historic legends are always credible and pass straight through. Default is to
+// exclude, so a new associate that appears in a data refresh stays out unless
+// it's added here on purpose.
+const MAJOR_CRICKET_NATIONS = new Set<string>([
+  "Afghanistan", "Australia", "Bangladesh", "Canada", "England", "Hong Kong",
+  "India", "Ireland Republic", "Namibia", "Nepal", "Netherlands", "New Zealand",
+  "Oman", "Pakistan", "Scotland", "South Africa", "Sri Lanka", "Uganda",
+  "United Arab Emirates", "United States of America", "West Indies", "Zimbabwe",
+]);
+
+function isEligibleOpponent(team: EraTeam): boolean {
+  if (!team.id.startsWith("national-")) return true;
+  return MAJOR_CRICKET_NATIONS.has(team.name);
+}
+
 function buildOpponentSchedule(rng: RandomFn, seasonLength: number): { name: string; xi: Player[] }[] {
-  const ranked = eraTeams().filter((t) => t.players.length >= 11)
+  const ranked = eraTeams().filter((t) => t.players.length >= 11 && isEligibleOpponent(t))
     .map((t) => ({ team: t, xi: opponentXiFor(t) }))
     .map((e) => ({ ...e, strength: teamStrength(e.xi) }))
     .sort((a, b) => a.strength - b.strength);
@@ -541,10 +568,12 @@ export function simulateSeason(
         pitchAdjustment: (pitch.runsAdjustment + suitability + teamBonus) / 20,
         eraScale,
         fieldingBonus,
+        variance: SEASON_INNINGS_VARIANCE,
       });
       const opponentInnings = projectInnings(rng, fixture.xi, xi, {
         pitchAdjustment: (pitch.runsAdjustment - suitability * 0.5 - opponentPenalty) / 20,
         eraScale,
+        variance: SEASON_INNINGS_VARIANCE,
       });
       teamScore = teamInnings.runs;
       opponentScore = opponentInnings.runs;
