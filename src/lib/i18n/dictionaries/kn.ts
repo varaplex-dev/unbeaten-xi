@@ -114,6 +114,9 @@ export const kn: Dictionary = {
   "field.batHereSuggested": "ಇಲ್ಲಿ ಬ್ಯಾಟಿಂಗ್ ಮಾಡಿ (ಸೂಚಿತ)",
   "field.impactPlayer": "ಇಂಪ್ಯಾಕ್ಟ್ ಪ್ಲೇಯರ್",
   "field.impactPlayerBench": "ಇಂಪ್ಯಾಕ್ಟ್ ಪ್ಲೇಯರ್ (ಬೆಂಚ್)",
+  "field.batter": "ಬ್ಯಾಟರ್",
+  "field.rightHand": "ಬಲ",
+  "field.leftHand": "ಎಡ",
 
   "h2h.notSetup": "ಆನ್‌ಲೈನ್ ಆಟ ಇನ್ನೂ ಸಿದ್ಧವಾಗಿಲ್ಲ",
   "h2h.notSetupBody": "ಹೆಡ್-ಟು-ಹೆಡ್‌ಗೆ ಆನ್‌ಲೈನ್ ಬ್ಯಾಕೆಂಡ್ ಕಾನ್ಫಿಗರ್ ಆಗಬೇಕು. ಶೀಘ್ರದಲ್ಲೇ ಮತ್ತೆ ನೋಡಿ.",

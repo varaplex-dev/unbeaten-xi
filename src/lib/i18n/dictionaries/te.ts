@@ -114,6 +114,9 @@ export const te: Dictionary = {
   "field.batHereSuggested": "ఇక్కడ బ్యాటింగ్ చేయండి (సూచించబడింది)",
   "field.impactPlayer": "ఇంపాక్ట్ ప్లేయర్",
   "field.impactPlayerBench": "ఇంపాక్ట్ ప్లేయర్ (బెంచ్)",
+  "field.batter": "బ్యాటర్",
+  "field.rightHand": "కుడి",
+  "field.leftHand": "ఎడమ",
 
   "h2h.notSetup": "ఆన్‌లైన్ ఆట ఇంకా సెటప్ కాలేదు",
   "h2h.notSetupBody": "హెడ్-టు-హెడ్‌కు ఆన్‌లైన్ బ్యాకెండ్ కాన్ఫిగర్ కావాలి. త్వరలో మళ్లీ చూడండి.",

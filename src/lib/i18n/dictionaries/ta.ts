@@ -114,6 +114,9 @@ export const ta: Dictionary = {
   "field.batHereSuggested": "இங்கே பேட் செய்யுங்கள் (பரிந்துரை)",
   "field.impactPlayer": "இம்பேக்ட் பிளேயர்",
   "field.impactPlayerBench": "இம்பேக்ட் பிளேயர் (பெஞ்ச்)",
+  "field.batter": "பேட்டர்",
+  "field.rightHand": "வலது",
+  "field.leftHand": "இடது",
 
   "h2h.notSetup": "ஆன்லைன் விளையாட்டு இன்னும் அமைக்கப்படவில்லை",
   "h2h.notSetupBody": "ஹெட்-டு-ஹெட்டுக்கு ஆன்லைன் பின்தளம் அமைக்கப்பட வேண்டும். விரைவில் மீண்டும் பாருங்கள்.",

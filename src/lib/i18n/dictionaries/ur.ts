@@ -114,6 +114,9 @@ export const ur: Dictionary = {
   "field.batHereSuggested": "یہاں بیٹنگ کریں (تجویز کردہ)",
   "field.impactPlayer": "امپیکٹ پلیئر",
   "field.impactPlayerBench": "امپیکٹ پلیئر (بینچ)",
+  "field.batter": "بلے باز",
+  "field.rightHand": "دایاں",
+  "field.leftHand": "بایاں",
 
   "h2h.notSetup": "آن لائن کھیل ابھی سیٹ اپ نہیں ہوا",
   "h2h.notSetupBody": "ہیڈ ٹو ہیڈ کے لیے آن لائن بیک اینڈ کنفیگر ہونا ضروری ہے۔ جلد دوبارہ دیکھیں۔",

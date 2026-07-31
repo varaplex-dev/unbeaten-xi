@@ -50,6 +50,8 @@ export default function TeamSetupPage() {
   const assignFieldingPosition = useGameStore((s) => s.assignFieldingPosition);
   const fieldingFormation = useGameStore((s) => s.fieldingFormation);
   const applyFieldingFormation = useGameStore((s) => s.applyFieldingFormation);
+  const fieldingBatterHand = useGameStore((s) => s.fieldingBatterHand);
+  const setFieldingBatterHand = useGameStore((s) => s.setFieldingBatterHand);
   const { t } = useTranslation();
   // eraTeamId itself is cleared after every spin-draft pick (it only holds
   // the team revealed for the round in progress), so "was this game built
@@ -324,9 +326,11 @@ export default function TeamSetupPage() {
               assignments={fieldingAssignments}
               formation={fieldingFormation}
               pendingPlayerId={pendingFieldingPlayerId}
+              batterHand={fieldingBatterHand}
               onSelectPlayer={selectPlayerForFielding}
               onSelectPosition={assignFieldingPosition}
               onApplyFormation={applyFieldingFormation}
+              onSetBatterHand={setFieldingBatterHand}
             />
           </div>
         )}

@@ -7,7 +7,7 @@ import {
   formationPositions,
   type FormationId,
 } from "@/lib/data/fieldingPositions";
-import { BOWLER_SLOT } from "@/lib/store/gameStore";
+import { BOWLER_SLOT, type BatterHand } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import type { TranslationKey } from "@/lib/i18n";
 import type { Player } from "@/lib/types";
@@ -37,9 +37,12 @@ interface FieldingBoardProps {
   assignments: Record<string, string>;
   formation: FormationId | null;
   pendingPlayerId: string | null;
+  /** The striker's hand the field is drawn for — a left-hander mirrors it. */
+  batterHand: BatterHand;
   onSelectPlayer: (playerId: string) => void;
   onSelectPosition: (positionId: string) => void;
   onApplyFormation: (id: FormationId) => void;
+  onSetBatterHand: (hand: BatterHand) => void;
 }
 
 /** Hardcore Mode's field-setting screen. The wicketkeeper stands behind the
@@ -53,9 +56,11 @@ export function FieldingBoard({
   assignments,
   formation,
   pendingPlayerId,
+  batterHand,
   onSelectPlayer,
   onSelectPosition,
   onApplyFormation,
+  onSetBatterHand,
 }: FieldingBoardProps) {
   const { t } = useTranslation();
   const byId = (id: string | undefined) => (id ? outfieldPlayers.find((p) => p.id === id) ?? null : null);
@@ -64,6 +69,10 @@ export function FieldingBoard({
   const activeBlurb = formation ? t(FORMATION_BLURB_KEY[formation]) : undefined;
   // A picked-up player who isn't currently on the field or bowling.
   const pending = pendingPlayerId ? byId(pendingPlayerId) : null;
+  // Positions are authored for a right-hander (off side = higher x). A
+  // left-hander's field is the mirror image, so flip x about the pitch. Purely
+  // visual — assignments are keyed by position id, unchanged by the flip.
+  const mx = (x: number) => (batterHand === "left" ? 100 - x : x);
 
   const handleSpot = (positionId: string, occupantId: string | undefined) => {
     if (pendingPlayerId) onSelectPosition(positionId);
@@ -72,6 +81,28 @@ export function FieldingBoard({
 
   return (
     <div className="mx-auto w-full max-w-sm">
+      {/* Batter hand — mirrors the field for a left-hander. */}
+      <div className="mb-2 flex items-center justify-center gap-2">
+        <span className="text-[10px] font-semibold uppercase tracking-wide text-foreground-muted">
+          {t("field.batter")}
+        </span>
+        <div className="inline-flex overflow-hidden rounded-full border border-border">
+          {(["right", "left"] as BatterHand[]).map((h) => (
+            <button
+              key={h}
+              type="button"
+              onClick={() => onSetBatterHand(h)}
+              className={cn(
+                "px-3 py-1 text-xs font-bold transition-colors",
+                batterHand === h ? "bg-accent/15 text-accent" : "text-foreground-muted hover:text-foreground"
+              )}
+            >
+              {t(h === "right" ? "field.rightHand" : "field.leftHand")}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Formation presets */}
       <div className="mb-3 flex flex-wrap justify-center gap-1.5">
         {FIELD_FORMATIONS.map((f) => (
@@ -136,7 +167,7 @@ export function FieldingBoard({
           const isCatching = pos.zone === "catching";
           const dropTarget = Boolean(pendingPlayerId);
           return (
-            <div key={pos.id} className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: `${pos.x}%`, top: `${pos.y}%` }}>
+            <div key={pos.id} className="absolute -translate-x-1/2 -translate-y-1/2" style={{ left: `${mx(pos.x)}%`, top: `${pos.y}%` }}>
               <button type="button" onClick={() => handleSpot(pos.id, assignments[pos.id])} className="flex flex-col items-center">
                 {player ? (
                   <>

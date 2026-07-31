@@ -114,6 +114,9 @@ export const ps: Dictionary = {
   "field.batHereSuggested": "دلته بټینګ وکړئ (وړاندیز شوی)",
   "field.impactPlayer": "امپیکټ پلیر",
   "field.impactPlayerBench": "امپیکټ پلیر (بنچ)",
+  "field.batter": "بټر",
+  "field.rightHand": "ښي",
+  "field.leftHand": "کیڼ",
 
   "h2h.notSetup": "آنلاین لوبه لا نه ده تنظیم شوې",
   "h2h.notSetupBody": "هیډ-ټو-هیډ ته د آنلاین بیک اینډ تنظیمول اړین دي. ژر بیا وګورئ.",

@@ -114,6 +114,9 @@ export const bn: Dictionary = {
   "field.batHereSuggested": "এখানে ব্যাট করুন (প্রস্তাবিত)",
   "field.impactPlayer": "ইমপ্যাক্ট প্লেয়ার",
   "field.impactPlayerBench": "ইমপ্যাক্ট প্লেয়ার (বেঞ্চ)",
+  "field.batter": "ব্যাটার",
+  "field.rightHand": "ডান",
+  "field.leftHand": "বাম",
 
   "h2h.notSetup": "অনলাইন খেলা এখনও সেট আপ করা হয়নি",
   "h2h.notSetupBody": "হেড-টু-হেডের জন্য অনলাইন ব্যাকএন্ড কনফিগার করা প্রয়োজন। শীঘ্রই আবার দেখুন।",

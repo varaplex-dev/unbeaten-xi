@@ -115,6 +115,9 @@ export const en = {
   "field.batHereSuggested": "Bat here (suggested)",
   "field.impactPlayer": "Impact Player",
   "field.impactPlayerBench": "Impact Player (bench)",
+  "field.batter": "Batter",
+  "field.rightHand": "Right",
+  "field.leftHand": "Left",
 
   "h2h.notSetup": "Online play isn't set up yet",
   "h2h.notSetupBody": "Head-to-Head needs the online backend configured. Check back soon.",

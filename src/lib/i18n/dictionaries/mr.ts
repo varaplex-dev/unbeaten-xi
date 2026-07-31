@@ -114,6 +114,9 @@ export const mr: Dictionary = {
   "field.batHereSuggested": "इथे फलंदाजी करा (सुचवलेले)",
   "field.impactPlayer": "इम्पॅक्ट प्लेयर",
   "field.impactPlayerBench": "इम्पॅक्ट प्लेयर (बेंच)",
+  "field.batter": "फलंदाज",
+  "field.rightHand": "उजवा",
+  "field.leftHand": "डावा",
 
   "h2h.notSetup": "ऑनलाइन खेळ अद्याप सेट अप केलेला नाही",
   "h2h.notSetupBody": "हेड-टू-हेडसाठी ऑनलाइन बॅकएंड कॉन्फिगर करणे आवश्यक आहे. लवकरच पुन्हा पहा.",

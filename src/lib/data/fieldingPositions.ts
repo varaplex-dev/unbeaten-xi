@@ -82,6 +82,30 @@ export const FIELD_FORMATIONS: FormationDef[] = [
   },
 ];
 
+// Law 41.5: no more than two fielders may stand behind the popping crease on
+// the LEG side. Because the field-setter is preset-only — tap-to-swap moves
+// players between a formation's fixed nine slots, never adds a slot — a user
+// can never build an illegal field; legality is a property of each preset. So
+// we just guarantee the presets themselves are legal. This throws at module
+// load (build/dev) if a future edit adds a third behind-square leg-side spot.
+// (The striker's popping crease is at y≈68; "behind" it is a larger y, toward
+// the striker's-end boundary. The wicketkeeper and bowler aren't counted.)
+const STRIKER_CREASE_Y = 68;
+function legSideBehindSquareCount(positionIds: string[]): number {
+  return positionIds.filter((id) => {
+    const p = POS[id];
+    return p && p.side === "leg" && p.y > STRIKER_CREASE_Y;
+  }).length;
+}
+for (const f of FIELD_FORMATIONS) {
+  const count = legSideBehindSquareCount(f.positionIds);
+  if (count > 2) {
+    throw new Error(
+      `Formation "${f.id}" is illegal: ${count} fielders behind square on the leg side (Law 41.5 allows at most 2).`
+    );
+  }
+}
+
 export function formationPositions(id: FormationId): FieldingPosition[] {
   const def = FIELD_FORMATIONS.find((f) => f.id === id) ?? FIELD_FORMATIONS[0];
   return def.positionIds.map((pid) => POS[pid]);

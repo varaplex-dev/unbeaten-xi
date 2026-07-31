@@ -24,6 +24,9 @@ import { DEFAULT_COMPETITION_ID, type CompetitionId } from "@/lib/engine/competi
  * India XI pool of real IPL franchise-season squads. */
 export type TeamScope = "full" | "nations" | "ipl";
 
+/** The striker's batting hand, used only to mirror the Hardcore field-setter. */
+export type BatterHand = "right" | "left";
+
 export function poolForScope(scope: TeamScope) {
   switch (scope) {
     case "nations":
@@ -138,6 +141,11 @@ export interface GameState {
   /** The preset field formation currently applied (Hardcore Mode). null until
    * one is chosen; the board applies the default on entry. */
   fieldingFormation: FormationId | null;
+  /** Which batter's hand the field is drawn for (Hardcore Mode). A left-hander
+   * mirrors the field — off and leg sides swap — so the captain can set it the
+   * way a real one would. Visual only: assignments are keyed by position id, so
+   * the flip never changes who's where or the catching bonus. */
+  fieldingBatterHand: BatterHand;
   /** A standing preference, not per-game progress — deliberately excluded
    * from initialState's reset-on-new-game spread (see hardcoreMode's
    * handling right below hasHydrated) so toggling it in Settings doesn't
@@ -179,6 +187,7 @@ interface GameActions {
   selectPlayerForFielding: (playerId: string) => void;
   assignFieldingPosition: (positionId: string) => void;
   applyFieldingFormation: (id: FormationId) => void;
+  setFieldingBatterHand: (hand: BatterHand) => void;
 }
 
 /** The bowler's pseudo-position id in fieldingAssignments — the one non-keeper
@@ -220,6 +229,7 @@ const initialState: Omit<GameState, "hasHydrated" | "hardcoreMode" | "bestSeason
   fieldingAssignments: {},
   pendingFieldingPlayerId: null,
   fieldingFormation: null,
+  fieldingBatterHand: "right",
 };
 
 function getXi(draftPicks: DraftPickRecord[], mode: GameMode): Player[] {
@@ -290,6 +300,8 @@ export const useGameStore = create<GameState & GameActions>()(
         if (bowler) assignments[BOWLER_SLOT] = bowler.id;
         set({ fieldingFormation: id, fieldingAssignments: assignments, pendingFieldingPlayerId: null });
       },
+
+      setFieldingBatterHand: (hand) => set({ fieldingBatterHand: hand }),
 
       startNewGame: (options) => {
         const seed = options?.seed ?? randomSeedString();
