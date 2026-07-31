@@ -402,6 +402,12 @@ export interface SeasonOptions {
   /** Which real competition's length this season runs to. Defaults to the
    * IPL-style league campaign, i.e. the original 14 matches. */
   competition?: CompetitionId;
+  /** Whether the interactive in-match decisions (pace-or-spin, defend-bowler,
+   * impact-player) exist this season. They're a Hardcore-Mode mechanic, so
+   * Classic passes false: no decision matches are created, which means no
+   * decision bonuses and — the visible fix — no "the gamble didn't come off"
+   * narratives for calls the player never made. Defaults to true. */
+  decisionsEnabled?: boolean;
 }
 
 export function simulateSeason(
@@ -413,7 +419,7 @@ export function simulateSeason(
   decisions: Record<number, string>,
   options: SeasonOptions = {}
 ): SeasonSimulationResult {
-  const { fieldingAssignments, averageEra, competition } = options;
+  const { fieldingAssignments, averageEra, competition, decisionsEnabled = true } = options;
   const seasonLength = matchesFor(competition);
   const rng = createRng(`${seed}::season`);
   const battingOrder = battingOrderIds
@@ -450,12 +456,17 @@ export function simulateSeason(
   ).sort((a, b) => a - b);
   const decisionTypes: DecisionType[] = ["pace-or-spin", "defend-bowler", "impact-player"];
   const decisionMatchMap = new Map<number, DecisionType>();
-  decisionMatchNumbers.forEach((matchNumber, i) => {
-    let type = decisionTypes[i] ?? "pace-or-spin";
-    if (type === "impact-player" && !impactPlayer) type = "pace-or-spin";
-    if (type === "defend-bowler" && bowlers.length < 2) type = "pace-or-spin";
-    decisionMatchMap.set(matchNumber, type);
-  });
+  // pickN above always runs so the match RNG stream is identical whether or not
+  // decisions exist — Classic just leaves the map empty, so its match results
+  // are the same minus the (now absent) decision bonuses.
+  if (decisionsEnabled) {
+    decisionMatchNumbers.forEach((matchNumber, i) => {
+      let type = decisionTypes[i] ?? "pace-or-spin";
+      if (type === "impact-player" && !impactPlayer) type = "pace-or-spin";
+      if (type === "defend-bowler" && bowlers.length < 2) type = "pace-or-spin";
+      decisionMatchMap.set(matchNumber, type);
+    });
+  }
 
   // A season of REAL opponents. Every era team is ranked by its net strength,
   // then the schedule takes an even spread across that range — so a season

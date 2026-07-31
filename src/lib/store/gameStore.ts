@@ -560,8 +560,13 @@ export const useGameStore = create<GameState & GameActions>()(
           ? Math.round(eraYears.reduce((sum, y) => sum + y, 0) / eraYears.length)
           : undefined;
 
-        let decisions = get().decisions;
-        let result = simulateSeason(
+        const decisions = get().decisions;
+        // In-match decisions are a Hardcore-Mode mechanic. Classic passes
+        // decisionsEnabled: false, so the season has no decision matches at
+        // all — no phantom bonuses and no "the gamble didn't come off"
+        // narratives for calls the player never made. Hardcore keeps them and
+        // pauses on each via the pendingDecision flow (see resolveDecision).
+        const result = simulateSeason(
           seed,
           xi,
           battingOrder,
@@ -572,21 +577,9 @@ export const useGameStore = create<GameState & GameActions>()(
             fieldingAssignments: hardcoreMode ? fieldingAssignments : undefined,
             averageEra,
             competition,
+            decisionsEnabled: hardcoreMode,
           }
         );
-
-        // Classic mode never surfaces in-match decisions — that interactive
-        // layer is Hardcore Mode's territory. Auto-resolve with the first
-        // option (a neutral default, not a claimed-optimal one) and keep
-        // re-running until the season actually finishes, so the user sees a
-        // single straight-through simulation with no further input needed.
-        while (result.pendingDecision && !hardcoreMode) {
-          decisions = { ...decisions, [result.pendingDecision.matchNumber]: result.pendingDecision.options[0].id };
-          result = simulateSeason(seed, xi, battingOrder, captainId, impactPlayer, decisions, {
-            averageEra,
-            competition,
-          });
-        }
 
         const { matches, stats, pendingDecision } = result;
         // The landing hero frames this record around the flagship 14-match
