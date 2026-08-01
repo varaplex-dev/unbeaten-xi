@@ -135,16 +135,28 @@ function attackBallsPerWicket(xi: Player[]): number {
   return best.reduce((s, r) => s + r, 0) / best.length;
 }
 
-/** How resistant this order is to losing wickets, relative to league norm. */
+/** How resistant this order is to losing wickets, relative to league norm.
+ * POSITION-WEIGHTED: the top of the order shields the innings far more than the
+ * lower middle, so a strong opener/№3 anchors it and a bunny promoted up top
+ * drags it down — which is what makes WHERE you bat a player actually matter,
+ * not just whether they're in the XI. */
 function battingResilience(order: Player[]): number {
-  const avgs = order
-    .slice(0, 7)
-    .map((p) => p.careerStats?.battingAverage)
-    .filter((a): a is number => a != null && a > 0);
-  if (avgs.length === 0) return 1;
-  const mean = avgs.reduce((s, a) => s + a, 0) / avgs.length;
-  // A top order averaging ~28 is league-typical; 40 survives noticeably longer.
-  return Math.max(0.7, Math.min(1.4, mean / 28));
+  const top = order.slice(0, 7);
+  let weighted = 0;
+  let weight = 0;
+  top.forEach((p, i) => {
+    const avg = p.careerStats?.battingAverage;
+    if (avg == null || avg <= 0) return;
+    const w = 1 / (i + 1); // №1 counts most, tapering down the order
+    weighted += avg * w;
+    weight += w;
+  });
+  if (weight === 0) return 1;
+  const mean = weighted / weight;
+  // A top order averaging ~28 is league-typical; ~40 up top survives markedly
+  // longer, a tail promoted to the top collapses. Range widened from the old
+  // ±0.3 so ordering has real bite.
+  return Math.max(0.55, Math.min(1.5, mean / 28));
 }
 
 export interface InningsResult {
