@@ -92,8 +92,8 @@ const MODES: ModeDef[] = [
     image: "/logos/badge-auction.png",
     tone: "gold",
     name: "Auction Mode",
-    description: "Bid for players with a salary cap.",
-    available: false,
+    description: "",
+    available: true,
   },
 ];
 
@@ -133,10 +133,16 @@ function HardcoreToggle() {
 export function ModeGrid() {
   const router = useRouter();
   const spinEraTeam = useGameStore((s) => s.spinEraTeam);
+  const startAuction = useGameStore((s) => s.startAuction);
   const { t } = useTranslation();
 
   function handleStart(mode: ModeDef) {
     if (!mode.available) return;
+    if (mode.id === "auction-mode") {
+      startAuction();
+      router.push("/auction");
+      return;
+    }
     if (mode.href) {
       router.push(mode.href);
       return;
@@ -160,7 +166,9 @@ export function ModeGrid() {
                     ? t("play.worldCupRun")
                     : mode.id === "india-xi"
                       ? t("play.indiaXi")
-                      : mode.name}
+                      : mode.id === "auction-mode"
+                        ? t("play.auctionMode")
+                        : mode.name}
               </CardTitle>
             </div>
             {!mode.available && <Badge variant="gold">{t("play.comingSoon")}</Badge>}
@@ -174,12 +182,14 @@ export function ModeGrid() {
                     ? t("play.worldCupRunDesc")
                     : mode.id === "india-xi"
                       ? t("play.indiaXiDesc")
-                      : mode.description}
+                      : mode.id === "auction-mode"
+                        ? t("play.auctionModeDesc")
+                        : mode.description}
               </p>
               {mode.available && (
                 <div className="flex shrink-0 gap-2">
                   <Button size="sm" onClick={() => handleStart(mode)}>
-                    {mode.href ? t("play.play") : t("play.spin")}
+                    {mode.href || mode.id === "auction-mode" ? t("play.play") : t("play.spin")}
                   </Button>
                 </div>
               )}

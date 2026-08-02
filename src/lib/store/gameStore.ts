@@ -50,6 +50,7 @@ import { autoAssignLineup, type BowlingPhase } from "@/lib/engine/lineup";
 import { simulateSeason, type MatchDecision, type MatchResult, type SeasonStats } from "@/lib/engine/simulate";
 import type { FieldingAssignments } from "@/lib/engine/fielding";
 import { generateRandomXI, spinImpactPlayer } from "@/lib/engine/draft";
+import { AUCTION_BUDGET, auctionListingOf, auctionSpend } from "@/lib/engine/auction";
 import { PLAYERS } from "@/lib/data/players";
 import { track } from "@/lib/analytics";
 
@@ -59,7 +60,7 @@ export interface DraftPickRecord {
   playerId: string;
 }
 
-export type GameStage = "draft" | "squad-select" | "impact-player" | "team-setup" | "season" | "results";
+export type GameStage = "draft" | "squad-select" | "impact-player" | "auction" | "team-setup" | "season" | "results";
 
 /** "fictional" is the original mock roster; "all-time-real" draws from the
  * real, stats-derived pool in realPlayers.ts — including, when eraTeamId is
@@ -114,6 +115,10 @@ export interface GameState {
    * season is played against era-appropriate opponents. Empty for the old
    * flat-draft modes, which then simulate with no era adjustment. */
   pickSourceYears: Record<string, number>;
+  /** Auction Mode: the player ids bought so far, in purchase order. Their
+   * prices and the purse live in engine/auction.ts; only the picks are state.
+   * Empty in every other mode. */
+  auctionPurchases: string[];
 
   battingOrder: string[];
   bowlingRoleAssignments: Record<string, BowlingPhase>;
@@ -166,6 +171,10 @@ interface GameActions {
   spinTheWheel: (mode: GameMode) => void;
   spinEraTeam: (competition?: CompetitionId, teamScope?: TeamScope) => void;
   spinNextTeam: () => void;
+  startAuction: () => void;
+  buyAuctionPlayer: (playerId: string) => void;
+  sellAuctionPlayer: (playerId: string) => void;
+  completeAuction: () => void;
   selectSquadPlayer: (player: Player) => void;
   placeSquadPlayer: (slotIndex: number) => void;
   draftPlayer: (player: Player, categoryId: DraftCategoryId) => void;
@@ -215,6 +224,7 @@ const initialState: Omit<GameState, "hasHydrated" | "hardcoreMode" | "bestSeason
   squadSlots: Array<string | null>(SQUAD_SIZE).fill(null),
   pendingPlayerId: null,
   pickSourceYears: {},
+  auctionPurchases: [],
   battingOrder: [],
   bowlingRoleAssignments: {},
   captainId: null,
@@ -390,6 +400,63 @@ export const useGameStore = create<GameState & GameActions>()(
         const eraTeam = pickNextEraTeam(seed, usedEraTeamIds, pool);
         if (!eraTeam) return; // data not loaded yet — spin is gated on it in the UI
         set({ eraTeamId: eraTeam.id });
+      },
+
+      /** Auction Mode: start a fresh salary-cap draft. */
+      startAuction: () => {
+        set({
+          ...initialState,
+          gameId: `game-${Date.now()}`,
+          seed: randomSeedString(),
+          mode: "all-time-real",
+          competition: DEFAULT_COMPETITION_ID,
+          teamScope: "full",
+          isDaily: false,
+          createdAt: new Date().toISOString(),
+          stage: "auction",
+          auctionPurchases: [],
+        });
+        track("game_started", { mode: "all-time-real", method: "auction" });
+      },
+
+      /** Buy a player, if the roster has room, the purse can cover the price,
+       * and neither this id nor another id for the same player is already in. */
+      buyAuctionPlayer: (playerId) => {
+        const { auctionPurchases } = get();
+        if (auctionPurchases.length >= SQUAD_SIZE) return;
+        if (auctionPurchases.includes(playerId)) return;
+        const listing = auctionListingOf(playerId);
+        if (!listing) return;
+        if (auctionSpend(auctionPurchases) + listing.price > AUCTION_BUDGET + 1e-9) return;
+        // Same cricketer can exist under several ids — block a duplicate by name.
+        const ownedNames = new Set(
+          auctionPurchases.map((id) => auctionListingOf(id)?.player.name).filter(Boolean)
+        );
+        if (ownedNames.has(listing.player.name)) return;
+        set({ auctionPurchases: [...auctionPurchases, playerId] });
+        track("player_selected", { categoryId: "auction", roundNumber: auctionPurchases.length + 1 });
+      },
+
+      sellAuctionPlayer: (playerId) => {
+        set({ auctionPurchases: get().auctionPurchases.filter((id) => id !== playerId) });
+      },
+
+      /** Lock in the bought XI and hand off to the shared team-setup → season
+       * flow, exactly like a completed spin draft (order = purchase order, soft
+       * composition — usedEraTeamIds marks it as a free-build squad). */
+      completeAuction: () => {
+        const { auctionPurchases } = get();
+        if (auctionPurchases.length !== SQUAD_SIZE) return;
+        set({
+          draftPicks: auctionPurchases.map(
+            (id, i): DraftPickRecord => ({ roundNumber: i + 1, categoryId: "wildcard", playerId: id })
+          ),
+          battingOrder: auctionPurchases.slice(),
+          squadSlots: auctionPurchases.slice(),
+          usedEraTeamIds: ["__auction__"],
+          stage: "team-setup",
+        });
+        track("draft_completed", { squadSize: SQUAD_SIZE, method: "auction" });
       },
 
       /** Marks a player as this spin's pick, pending a batting-order
