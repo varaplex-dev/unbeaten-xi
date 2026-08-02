@@ -31,6 +31,22 @@ function establishedEnough(p: Player): boolean {
   return (cs.innings ?? 0) >= MIN_INNINGS || cs.wickets >= MIN_WICKETS;
 }
 
+// The block is marquee only — full ICC Test nations. Tighter than the season's
+// opponent floor (which keeps WC-tier associates like Nepal/USA): an auction is
+// about pedigree, and a couple of associate all-rounders the data rates 99 off
+// inflated associate-cricket numbers shouldn't out-price internationals. Every
+// genuine marquee name plays for one of these; "Ireland"/"Ireland Republic"
+// both appear in the data.
+const MARQUEE_NATIONS = new Set<string>([
+  "Afghanistan", "Australia", "Bangladesh", "England", "India", "Ireland",
+  "Ireland Republic", "New Zealand", "Pakistan", "South Africa", "Sri Lanka",
+  "West Indies", "Zimbabwe",
+]);
+
+function marquee(p: Player): boolean {
+  return MARQUEE_NATIONS.has(p.country);
+}
+
 const MAX_PRICE = 20; // the single best player
 const MIN_PRICE = 1.5; // the cheapest on the block
 const PRICE_CURVE = 2.0; // >1 ⇒ the top end is disproportionately expensive
@@ -79,7 +95,7 @@ export function auctionMarket(): AuctionListing[] {
   if (pool.length === 0) return [];
 
   const unique = dedupeByName(pool)
-    .filter(establishedEnough)
+    .filter((p) => marquee(p) && establishedEnough(p))
     .sort((a, b) => valueScore(b) - valueScore(a));
   const selected = unique.slice(0, MARKET_SIZE);
   const keepersIn = selected.filter(isWicketkeeper).length;
