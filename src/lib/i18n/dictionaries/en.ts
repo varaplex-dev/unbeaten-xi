@@ -146,6 +146,8 @@ export const en = {
   "auction.buy": "Buy",
   "auction.tooDear": "Too dear",
   "auction.leave": "Leave the auction",
+  "auction.squadCost": "Squad Cost",
+  "auction.bestValue": "Best Value",
 
   "h2h.notSetup": "Online play isn't set up yet",
   "h2h.notSetupBody": "Head-to-Head needs the online backend configured. Check back soon.",

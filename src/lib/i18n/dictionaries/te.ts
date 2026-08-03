@@ -145,6 +145,8 @@ export const te: Dictionary = {
   "auction.buy": "కొను",
   "auction.tooDear": "చాలా ఖరీదు",
   "auction.leave": "వేలం నుండి నిష్క్రమించు",
+  "auction.squadCost": "జట్టు ఖర్చు",
+  "auction.bestValue": "బెస్ట్ వాల్యూ",
 
   "h2h.notSetup": "ఆన్‌లైన్ ఆట ఇంకా సెటప్ కాలేదు",
   "h2h.notSetupBody": "హెడ్-టు-హెడ్‌కు ఆన్‌లైన్ బ్యాకెండ్ కాన్ఫిగర్ కావాలి. త్వరలో మళ్లీ చూడండి.",

@@ -145,6 +145,8 @@ export const bn: Dictionary = {
   "auction.buy": "কিনুন",
   "auction.tooDear": "খুব দামি",
   "auction.leave": "নিলাম ছেড়ে যান",
+  "auction.squadCost": "দলের খরচ",
+  "auction.bestValue": "সেরা ভ্যালু",
 
   "h2h.notSetup": "অনলাইন খেলা এখনও সেট আপ করা হয়নি",
   "h2h.notSetupBody": "হেড-টু-হেডের জন্য অনলাইন ব্যাকএন্ড কনফিগার করা প্রয়োজন। শীঘ্রই আবার দেখুন।",

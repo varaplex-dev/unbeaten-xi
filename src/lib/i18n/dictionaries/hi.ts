@@ -145,6 +145,8 @@ export const hi: Dictionary = {
   "auction.buy": "खरीदें",
   "auction.tooDear": "बहुत महंगा",
   "auction.leave": "ऑक्शन छोड़ें",
+  "auction.squadCost": "टीम की लागत",
+  "auction.bestValue": "बेस्ट वैल्यू",
 
   "h2h.notSetup": "ऑनलाइन खेल अभी सेट अप नहीं है",
   "h2h.notSetupBody": "हेड-टू-हेड के लिए ऑनलाइन बैकएंड कॉन्फ़िगर होना ज़रूरी है। जल्द ही देखें।",

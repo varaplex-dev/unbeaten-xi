@@ -15,8 +15,9 @@ import { getPlayerById } from "@/lib/data/players";
 import { getRealPoolPlayerById } from "@/lib/data/gameData";
 import { useGameDataReady } from "@/lib/data/useGameData";
 import { seasonPoints } from "@/lib/engine/seasonPoints";
+import { AUCTION_BUDGET, auctionPriceOf, auctionSpend } from "@/lib/engine/auction";
 import type { MatchResult, DecisionOutcomeKind } from "@/lib/engine/simulate";
-import type { PitchType } from "@/lib/types";
+import { SQUAD_SIZE, type PitchType } from "@/lib/types";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import type { TranslationKey } from "@/lib/i18n";
 
@@ -86,6 +87,8 @@ export default function ResultsPage() {
   const spinEraTeam = useGameStore((s) => s.spinEraTeam);
   const usedEraTeamIds = useGameStore((s) => s.usedEraTeamIds);
   const competition = useGameStore((s) => s.competition);
+  const auctionPurchases = useGameStore((s) => s.auctionPurchases);
+  const startAuction = useGameStore((s) => s.startAuction);
   const user = useAuthStore((s) => s.user);
   const lookupPlayer = (id: string) =>
     mode === "all-time-real" ? getRealPoolPlayerById(id) : getPlayerById(id);
@@ -182,7 +185,37 @@ export default function ResultsPage() {
   const weakestPick = lookupPlayer(stats.weakestPickPlayerId);
   const unbeaten = stats.losses === 0;
 
+  // Auction Mode payoff: what the XI cost, and the standout bargain — the
+  // player who delivered the most output per credit spent.
+  const isAuction = auctionPurchases.length === SQUAD_SIZE;
+  const auctionSpent = isAuction ? auctionSpend(auctionPurchases) : 0;
+  const bestValue = (() => {
+    if (!isAuction) return null;
+    const totalsById = new Map(stats.playerTotals.map((pt) => [pt.playerId, pt]));
+    let best: { player: ReturnType<typeof lookupPlayer>; price: number } | null = null;
+    let bestRatio = -1;
+    for (const id of auctionPurchases) {
+      const price = auctionPriceOf(id);
+      const pt = totalsById.get(id);
+      if (!price || !pt) continue;
+      const output = pt.runs + pt.wickets * 20; // runs + wicket-equivalents
+      const ratio = output / price;
+      if (ratio > bestRatio) {
+        bestRatio = ratio;
+        best = { player: lookupPlayer(id), price };
+      }
+    }
+    return best;
+  })();
+
   function handlePlayAgain() {
+    // An auction squad → straight back into a fresh auction (it also carries a
+    // sentinel usedEraTeamIds, so this must be checked first).
+    if (isAuction) {
+      startAuction();
+      router.push("/auction");
+      return;
+    }
     // A spin-drafted squad (usedEraTeamIds non-empty) was built by spinning
     // into a fresh team per pick, not the category-based draft — Play Again
     // should hand the user straight into another spin, not the old picker.
@@ -273,6 +306,29 @@ export default function ResultsPage() {
               <span className="font-semibold">{weakestPick?.name ?? "—"}</span>
             </CardContent>
           </Card>
+          {isAuction && (
+            <>
+              <Card>
+                <CardContent className="flex items-center justify-between py-3">
+                  <span className="text-sm text-foreground-muted">{t("auction.squadCost")}</span>
+                  <span className="font-semibold tabular-nums text-gold">
+                    {auctionSpent.toFixed(1)} / {AUCTION_BUDGET}
+                  </span>
+                </CardContent>
+              </Card>
+              <Card>
+                <CardContent className="flex items-center justify-between py-3">
+                  <span className="text-sm text-foreground-muted">{t("auction.bestValue")}</span>
+                  <span className="font-semibold">
+                    {bestValue?.player?.name ?? "—"}
+                    {bestValue ? (
+                      <span className="text-foreground-muted"> ({bestValue.price.toFixed(1)})</span>
+                    ) : null}
+                  </span>
+                </CardContent>
+              </Card>
+            </>
+          )}
         </div>
 
         <div className="mt-8 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">

@@ -145,6 +145,8 @@ export const ta: Dictionary = {
   "auction.buy": "வாங்கு",
   "auction.tooDear": "மிக விலை",
   "auction.leave": "ஏலத்தை விட்டு வெளியேறு",
+  "auction.squadCost": "அணி செலவு",
+  "auction.bestValue": "சிறந்த மதிப்பு",
 
   "h2h.notSetup": "ஆன்லைன் விளையாட்டு இன்னும் அமைக்கப்படவில்லை",
   "h2h.notSetupBody": "ஹெட்-டு-ஹெட்டுக்கு ஆன்லைன் பின்தளம் அமைக்கப்பட வேண்டும். விரைவில் மீண்டும் பாருங்கள்.",

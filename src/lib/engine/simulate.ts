@@ -140,6 +140,9 @@ export interface SeasonStats {
   weakestPickPlayerId: string;
   teamRatingOutOf100: number;
   percentile: number;
+  /** Every player's season output — powers per-player callouts like Auction
+   * Mode's best-value award (most delivered per credit spent). */
+  playerTotals: PlayerSeasonTotals[];
 }
 
 export interface SeasonSimulationResult {
@@ -748,6 +751,11 @@ export function simulateSeason(
     weakestPickPlayerId,
     teamRatingOutOf100: ratings.overallRating,
     percentile,
+    playerTotals: xi.map((p) => ({
+      playerId: p.id,
+      runs: runTotals.get(p.id) ?? 0,
+      wickets: wicketTotals.get(p.id) ?? 0,
+    })),
   };
 
   return { matches, stats, pendingDecision: null };
