@@ -1,7 +1,7 @@
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import type { DraftCategoryId, Player } from "@/lib/types";
-import { SQUAD_SIZE, canBowl, isPaceBowler, isSpinner } from "@/lib/types";
+import { SQUAD_SIZE, MAX_OVERSEAS, canBowl, isPaceBowler, isSpinner } from "@/lib/types";
 import { getPlayerById } from "@/lib/data/players";
 import {
   formationPositions,
@@ -428,6 +428,13 @@ export const useGameStore = create<GameState & GameActions>()(
         const listing = auctionListingOf(playerId);
         if (!listing) return;
         if (auctionSpend(auctionPurchases) + listing.price > AUCTION_BUDGET + 1e-9) return;
+        // IPL-style overseas cap: at most MAX_OVERSEAS non-Indians in the XI.
+        if (listing.player.nationalityType === "overseas") {
+          const overseasOwned = auctionPurchases.filter(
+            (id) => auctionListingOf(id)?.player.nationalityType === "overseas"
+          ).length;
+          if (overseasOwned >= MAX_OVERSEAS) return;
+        }
         // Same cricketer can exist under several ids — block a duplicate by name.
         const ownedNames = new Set(
           auctionPurchases.map((id) => auctionListingOf(id)?.player.name).filter(Boolean)

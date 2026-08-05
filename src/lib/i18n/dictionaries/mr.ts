@@ -147,6 +147,8 @@ export const mr: Dictionary = {
   "auction.leave": "लिलाव सोडा",
   "auction.squadCost": "संघाची किंमत",
   "auction.bestValue": "बेस्ट व्हॅल्यू",
+  "auction.overseas": "परदेशी",
+  "auction.overseasFull": "परदेशी कोटा पूर्ण",
 
   "h2h.notSetup": "ऑनलाइन खेळ अद्याप सेट अप केलेला नाही",
   "h2h.notSetupBody": "हेड-टू-हेडसाठी ऑनलाइन बॅकएंड कॉन्फिगर करणे आवश्यक आहे. लवकरच पुन्हा पहा.",

@@ -12,7 +12,7 @@ import { useGameStore } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import { useGameDataReady } from "@/lib/data/useGameData";
 import { auctionMarket, auctionSpend, AUCTION_BUDGET, type AuctionListing } from "@/lib/engine/auction";
-import { SQUAD_SIZE, canBowl, isWicketkeeper, type Player, type PlayerRole } from "@/lib/types";
+import { SQUAD_SIZE, MAX_OVERSEAS, canBowl, isWicketkeeper, type Player, type PlayerRole } from "@/lib/types";
 import { cn } from "@/lib/utils";
 
 type RoleFilter = "all" | "bat" | "ar" | "wk" | "bowl";
@@ -72,6 +72,8 @@ export default function AuctionPage() {
   const ownedPlayers = owned.map((l) => l.player);
   const keeperCount = ownedPlayers.filter(isWicketkeeper).length;
   const bowlingCount = ownedPlayers.filter(canBowl).length;
+  const overseasCount = ownedPlayers.filter((p) => p.nationalityType === "overseas").length;
+  const overseasFull = overseasCount >= MAX_OVERSEAS;
 
   const filters: { id: RoleFilter; label: string }[] = [
     { id: "all", label: t("auction.filterAll") },
@@ -140,6 +142,7 @@ export default function AuctionPage() {
           <div className="mb-5 flex flex-wrap items-center gap-2 text-xs">
             <CompBadge ok={keeperCount >= 1} label={t("auction.keeper")} value={keeperCount >= 1 ? "✓" : "0"} />
             <CompBadge ok={bowlingCount >= 5} label={t("auction.bowling")} value={`${bowlingCount}/5`} />
+            <CompBadge ok={!overseasFull} label={t("auction.overseas")} value={`${overseasCount}/${MAX_OVERSEAS}`} />
           </div>
 
           {/* Roster */}
@@ -220,7 +223,8 @@ export default function AuctionPage() {
             ) : (
               visible.slice(0, 120).map((l) => {
                 const affordable = spent + l.price <= AUCTION_BUDGET + 1e-9;
-                const canBuy = !rosterFull && affordable;
+                const blockedByOverseas = l.player.nationalityType === "overseas" && overseasFull;
+                const canBuy = !rosterFull && affordable && !blockedByOverseas;
                 const stat = keyStat(l.player);
                 return (
                   <motion.div
@@ -253,7 +257,11 @@ export default function AuctionPage() {
                       onClick={() => buy(l.player.id)}
                       className="shrink-0"
                     >
-                      {!affordable && !rosterFull ? t("auction.tooDear") : t("auction.buy")}
+                      {blockedByOverseas && !rosterFull
+                        ? t("auction.overseasFull")
+                        : !affordable && !rosterFull
+                          ? t("auction.tooDear")
+                          : t("auction.buy")}
                     </Button>
                   </motion.div>
                 );

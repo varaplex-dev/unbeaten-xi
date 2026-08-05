@@ -147,6 +147,8 @@ export const ur: Dictionary = {
   "auction.leave": "آکشن چھوڑیں",
   "auction.squadCost": "ٹیم کی لاگت",
   "auction.bestValue": "بہترین ویلیو",
+  "auction.overseas": "غیر ملکی",
+  "auction.overseasFull": "غیر ملکی کوٹا مکمل",
 
   "h2h.notSetup": "آن لائن کھیل ابھی سیٹ اپ نہیں ہوا",
   "h2h.notSetupBody": "ہیڈ ٹو ہیڈ کے لیے آن لائن بیک اینڈ کنفیگر ہونا ضروری ہے۔ جلد دوبارہ دیکھیں۔",

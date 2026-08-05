@@ -147,6 +147,8 @@ export const ps: Dictionary = {
   "auction.leave": "لیلام پرېږدئ",
   "auction.squadCost": "د ټیم لګښت",
   "auction.bestValue": "غوره ارزښت",
+  "auction.overseas": "بهرنی",
+  "auction.overseasFull": "بهرنۍ کوټه ډکه",
 
   "h2h.notSetup": "آنلاین لوبه لا نه ده تنظیم شوې",
   "h2h.notSetupBody": "هیډ-ټو-هیډ ته د آنلاین بیک اینډ تنظیمول اړین دي. ژر بیا وګورئ.",

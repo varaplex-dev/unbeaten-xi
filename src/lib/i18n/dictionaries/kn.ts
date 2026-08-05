@@ -147,6 +147,8 @@ export const kn: Dictionary = {
   "auction.leave": "ಹರಾಜಿನಿಂದ ನಿರ್ಗಮಿಸಿ",
   "auction.squadCost": "ತಂಡದ ವೆಚ್ಚ",
   "auction.bestValue": "ಬೆಸ್ಟ್ ವ್ಯಾಲ್ಯೂ",
+  "auction.overseas": "ವಿದೇಶಿ",
+  "auction.overseasFull": "ವಿದೇಶಿ ಕೋಟಾ ಭರ್ತಿ",
 
   "h2h.notSetup": "ಆನ್‌ಲೈನ್ ಆಟ ಇನ್ನೂ ಸಿದ್ಧವಾಗಿಲ್ಲ",
   "h2h.notSetupBody": "ಹೆಡ್-ಟು-ಹೆಡ್‌ಗೆ ಆನ್‌ಲೈನ್ ಬ್ಯಾಕೆಂಡ್ ಕಾನ್ಫಿಗರ್ ಆಗಬೇಕು. ಶೀಘ್ರದಲ್ಲೇ ಮತ್ತೆ ನೋಡಿ.",
