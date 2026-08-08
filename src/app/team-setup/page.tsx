@@ -136,9 +136,9 @@ export default function TeamSetupPage() {
   if (!seed || !isSquadComplete) {
     return (
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-16 text-center">
-        <p className="text-foreground-muted mb-4">No completed draft yet.</p>
+        <p className="text-foreground-muted mb-4">{t("ts.noDraft")}</p>
         <Link href="/play">
-          <Button>Start a Draft</Button>
+          <Button>{t("ts.startDraft")}</Button>
         </Link>
       </main>
     );
@@ -159,16 +159,14 @@ export default function TeamSetupPage() {
   return (
     <main className="flex-1 flex flex-col">
       <PosterShell
-        kicker="Your XI"
-        digits={ratings ? [{ value: String(ratings.overallRating), label: "Team Rating" }] : []}
+        kicker={t("ts.kicker")}
+        digits={ratings ? [{ value: String(ratings.overallRating), label: t("ts.teamRating") }] : []}
       >
         <h1 className="text-stack-shadow text-4xl font-black italic tracking-tight mb-1">
-          Ready For Game Day
+          {t("ts.ready")}
         </h1>
         <p className="text-foreground-muted mb-6">
-          {isSpinDraft
-            ? "Set your batting order, captain, and keeper below — nothing's chosen for you."
-            : "We've set a lineup automatically — reorder the batting order, change your captain, keeper, or bowling roles below, then simulate when you're ready."}
+          {isSpinDraft ? t("ts.subtitleSpin") : t("ts.subtitleAuto")}
         </p>
 
         {composition && composition.issues.some((i) => i.severity === "error") && (
@@ -185,7 +183,7 @@ export default function TeamSetupPage() {
             spin into, so these are a "heads up", not a blocker. */}
         {composition && composition.issues.some((i) => i.severity === "warning") && (
           <div className="mb-4 rounded-xl border border-gold/40 bg-gold/5 px-4 py-3 text-sm">
-            <p className="mb-1 font-semibold text-gold">Heads up — your XI looks unbalanced</p>
+            <p className="mb-1 font-semibold text-gold">{t("ts.unbalanced")}</p>
             {composition.issues
               .filter((i) => i.severity === "warning")
               .map((issue) => (
@@ -199,19 +197,35 @@ export default function TeamSetupPage() {
         {(needsExplicitCaptain || needsExplicitKeeper) && (
           <div className="mb-4 rounded-xl border border-gold/40 bg-gold/5 px-4 py-3 text-sm">
             <p className="mb-1 flex items-center gap-2 font-semibold text-gold">
-              <Star className="h-4 w-4" fill="currentColor" /> Choose your leaders
+              <Star className="h-4 w-4" fill="currentColor" /> {t("ts.chooseLeaders")}
             </p>
             <p className="text-foreground-muted">
               {needsExplicitCaptain && (
                 <>
-                  Tap the <Star className="inline h-3.5 w-3.5 -mt-0.5 text-gold" /> next to a player to name your{" "}
-                  <span className="font-semibold text-foreground">captain</span>.
+                  {(() => {
+                    const [before, after] = t("ts.captainHint").split("{icon}");
+                    return (
+                      <>
+                        {before}
+                        <Star className="inline h-3.5 w-3.5 -mt-0.5 text-gold" />
+                        {after}
+                      </>
+                    );
+                  })()}
                 </>
               )}{" "}
               {needsExplicitKeeper && (
                 <>
-                  Tap the <Shield className="inline h-3.5 w-3.5 -mt-0.5 text-accent" /> to set your{" "}
-                  <span className="font-semibold text-foreground">wicketkeeper</span>.
+                  {(() => {
+                    const [before, after] = t("ts.keeperHint").split("{icon}");
+                    return (
+                      <>
+                        {before}
+                        <Shield className="inline h-3.5 w-3.5 -mt-0.5 text-accent" />
+                        {after}
+                      </>
+                    );
+                  })()}
                 </>
               )}
             </p>
@@ -234,7 +248,7 @@ export default function TeamSetupPage() {
                 <div className="flex shrink-0 flex-col">
                   <button
                     type="button"
-                    aria-label="Move up"
+                    aria-label={t("ts.moveUp")}
                     disabled={i === 0}
                     onClick={() => moveBattingOrderItem(player.id, "up")}
                     className="text-foreground-muted hover:text-foreground disabled:opacity-20"
@@ -243,7 +257,7 @@ export default function TeamSetupPage() {
                   </button>
                   <button
                     type="button"
-                    aria-label="Move down"
+                    aria-label={t("ts.moveDown")}
                     disabled={i === orderedXi.length - 1}
                     onClick={() => moveBattingOrderItem(player.id, "down")}
                     className="text-foreground-muted hover:text-foreground disabled:opacity-20"
@@ -262,8 +276,8 @@ export default function TeamSetupPage() {
                 <div className="flex shrink-0 items-center gap-1">
                   <button
                     type="button"
-                    aria-label="Set as captain"
-                    title="Set as captain"
+                    aria-label={t("ts.setCaptain")}
+                    title={t("ts.setCaptain")}
                     onClick={() => setCaptain(player.id)}
                     className={cn(
                       "rounded-full p-1.5 ring-1 transition-colors",
@@ -279,8 +293,8 @@ export default function TeamSetupPage() {
                   {eligibleKeeper && (
                     <button
                       type="button"
-                      aria-label="Set as wicketkeeper"
-                      title="Set as wicketkeeper"
+                      aria-label={t("ts.setKeeper")}
+                      title={t("ts.setKeeper")}
                       onClick={() => setWicketkeeper(player.id)}
                       className={cn(
                         "rounded-full p-1.5 ring-1 transition-colors",
@@ -296,7 +310,7 @@ export default function TeamSetupPage() {
                   )}
                   {bowlingEligible && (
                     <button type="button" onClick={() => cycleBowlingRole(player.id)}>
-                      <Badge>{bowlRole ?? "set role"}</Badge>
+                      <Badge>{bowlRole ?? t("ts.setRole")}</Badge>
                     </button>
                   )}
                 </div>
@@ -310,9 +324,9 @@ export default function TeamSetupPage() {
             <PlayerAvatar player={impactPlayer} size={36} />
             <div className="min-w-0 flex-1">
               <p className="truncate font-semibold leading-tight">{impactPlayer.name}</p>
-              <p className="text-xs text-foreground-muted">Impact Player (bench)</p>
+              <p className="text-xs text-foreground-muted">{t("ts.impactBench")}</p>
             </div>
-            <Badge variant="gold">Sub</Badge>
+            <Badge variant="gold">{t("ts.sub")}</Badge>
           </div>
         )}
 
@@ -337,14 +351,15 @@ export default function TeamSetupPage() {
 
         {!canSimulate && (
           <p className="mb-3 text-center text-sm text-danger">
-            {needsExplicitCaptain && "Pick a captain "}
-            {needsExplicitCaptain && needsExplicitKeeper && "and "}
-            {needsExplicitKeeper && "pick a wicketkeeper "}
-            before you simulate.
+            {needsExplicitCaptain && needsExplicitKeeper
+              ? t("ts.needBoth")
+              : needsExplicitCaptain
+                ? t("ts.needCaptain")
+                : t("ts.needKeeper")}
           </p>
         )}
         <Button size="lg" className="w-full" onClick={handleSimulate} disabled={!canSimulate}>
-          Simulate the Season
+          {t("ts.simulate")}
         </Button>
       </PosterShell>
     </main>
