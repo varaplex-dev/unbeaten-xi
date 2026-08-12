@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 // Geist is loaded from the `geist` package, which vendors the font files
 // locally, rather than from next/font/google. The Google Fonts loader fetches
 // the font at BUILD time, so a build (or CI) with no network route to
@@ -23,6 +23,24 @@ export const metadata: Metadata = {
   title: "The Unbeaten XI",
   description:
     "Draft a T20 Playing XI from real players and real career stats, then try to finish an undefeated season.",
+  applicationName: "The Unbeaten XI",
+  // iOS home-screen web app: run full-screen, dark status bar over the content.
+  appleWebApp: {
+    capable: true,
+    title: "Unbeaten XI",
+    statusBarStyle: "black-translucent",
+  },
+};
+
+// Mobile-first: theme the Android status bar / task switcher and the PWA splash
+// with the app background, and let content run under notches (safe areas are
+// handled in CSS). maximumScale left generous so pinch-zoom still works.
+export const viewport: Viewport = {
+  themeColor: "#070b10",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
 };
 
 export default function RootLayout({
