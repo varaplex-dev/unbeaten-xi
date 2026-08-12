@@ -12,6 +12,7 @@ import { FieldingBoard } from "@/components/draft/FieldingBoard";
 import { PosterShell } from "@/components/brand/PosterShell";
 import { useDraftedPlayers, useGameStore } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
+import { roleLabelKey } from "@/lib/i18n/roles";
 import type { BowlingPhase } from "@/lib/engine/lineup";
 import { computeTeamRatings } from "@/lib/engine/teamRatings";
 import { checkComposition } from "@/lib/engine/draft";
@@ -271,7 +272,7 @@ export default function TeamSetupPage() {
                 <PlayerAvatar player={player} size={36} />
                 <div className="min-w-0 flex-1">
                   <p className="truncate font-semibold leading-tight">{player.name}</p>
-                  <p className="text-xs text-foreground-muted">{player.primaryRole}</p>
+                  <p className="text-xs text-foreground-muted">{t(roleLabelKey(player.primaryRole))}</p>
                 </div>
                 <div className="flex shrink-0 items-center gap-1">
                   <button

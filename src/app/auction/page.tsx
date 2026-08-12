@@ -10,6 +10,7 @@ import { PosterShell } from "@/components/brand/PosterShell";
 import { Button } from "@/components/ui/button";
 import { useGameStore } from "@/lib/store/gameStore";
 import { useTranslation } from "@/lib/i18n/useTranslation";
+import { roleLabelKey } from "@/lib/i18n/roles";
 import { useGameDataReady } from "@/lib/data/useGameData";
 import { auctionMarket, auctionSpend, AUCTION_BUDGET, type AuctionListing } from "@/lib/engine/auction";
 import { SQUAD_SIZE, MAX_OVERSEAS, canBowl, isWicketkeeper, type Player, type PlayerRole } from "@/lib/types";
@@ -162,7 +163,7 @@ export default function AuctionPage() {
                   <div className="min-w-0 flex-1">
                     <p className="truncate text-sm font-bold leading-tight">{l.player.name}</p>
                     <p className="truncate text-[11px] text-foreground-muted">
-                      {l.player.primaryRole} · {l.player.country}
+                      {t(roleLabelKey(l.player.primaryRole))} · {l.player.country}
                     </p>
                   </div>
                   <span className="inline-flex items-center gap-1 text-sm font-black tabular-nums text-gold">
@@ -236,7 +237,7 @@ export default function AuctionPage() {
                     <div className="min-w-0 flex-1">
                       <p className="truncate text-sm font-bold leading-tight">{l.player.name}</p>
                       <p className="truncate text-[11px] text-foreground-muted">
-                        {l.player.primaryRole} · {l.player.country}
+                        {t(roleLabelKey(l.player.primaryRole))} · {l.player.country}
                         {stat ? ` · ${stat}` : ""}
                       </p>
                     </div>

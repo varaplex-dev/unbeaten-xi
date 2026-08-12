@@ -4,6 +4,7 @@ import type { Player } from "@/lib/types";
 import { Badge } from "@/components/ui/badge";
 import { PlayerAvatar } from "@/components/draft/PlayerAvatar";
 import { useTranslation } from "@/lib/i18n/useTranslation";
+import { roleLabelKey } from "@/lib/i18n/roles";
 import { cn } from "@/lib/utils";
 
 const RARITY_STYLES: Record<Player["rarityTier"], string> = {
@@ -11,22 +12,6 @@ const RARITY_STYLES: Record<Player["rarityTier"], string> = {
   uncommon: "border-accent/30",
   rare: "border-accent/60",
   legendary: "border-gold/70 shadow-gold/10 shadow-lg",
-};
-
-const ROLE_LABELS: Record<Player["primaryRole"], string> = {
-  opener: "Opener",
-  "top-order": "Top Order",
-  "middle-order": "Middle Order",
-  finisher: "Finisher",
-  "wicketkeeper-batter": "Wicketkeeper",
-  "batting-allrounder": "Batting All-Rounder",
-  "bowling-allrounder": "Bowling All-Rounder",
-  "fast-bowler": "Fast Bowler",
-  "swing-bowler": "Swing Bowler",
-  "death-bowler": "Death Bowler",
-  "leg-spinner": "Leg Spinner",
-  "off-spinner": "Off Spinner",
-  "left-arm-spinner": "Left-Arm Spinner",
 };
 
 interface PlayerCardProps {
@@ -86,7 +71,7 @@ export function PlayerCard({ player, onSelect, selected, disabled, hideStats }: 
       </div>
 
       <div className="mt-3 flex flex-wrap gap-1.5">
-        <Badge variant="accent">{ROLE_LABELS[player.primaryRole]}</Badge>
+        <Badge variant="accent">{t(roleLabelKey(player.primaryRole))}</Badge>
         <Badge>{player.nationalityType === "overseas" ? "Overseas" : "Indian"}</Badge>
         <Badge>{player.battingHand === "left" ? "LHB" : "RHB"}</Badge>
         {player.rarityTier === "legendary" && <Badge variant="gold">Elite</Badge>}

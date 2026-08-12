@@ -14,6 +14,7 @@ import { useGuestStore } from "@/lib/store/guestStore";
 import { isSupabaseConfigured } from "@/lib/supabase/client";
 import { useTranslation } from "@/lib/i18n/useTranslation";
 import type { TranslationKey } from "@/lib/i18n";
+import { roleLabelKey } from "@/lib/i18n/roles";
 import { useH2HMatch, type ChatMessage } from "@/lib/h2h/useH2HMatch";
 import {
   H2H_ROSTER_SIZE,
@@ -360,7 +361,7 @@ function LineupPanel({
               <PlayerAvatar player={p} size={28} />
               <div className="min-w-0 flex-1">
                 <p className="truncate text-sm font-semibold leading-tight">{p.name}</p>
-                <p className="text-[10px] text-foreground-muted">{p.primaryRole}</p>
+                <p className="text-[10px] text-foreground-muted">{t(roleLabelKey(p.primaryRole))}</p>
               </div>
               <div className="flex shrink-0 items-center gap-1">
                 <button
