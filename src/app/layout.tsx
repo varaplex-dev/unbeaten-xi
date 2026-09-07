@@ -12,6 +12,10 @@ import { TopNav } from "@/components/nav/TopNav";
 import { LocaleDirection } from "@/components/nav/LocaleDirection";
 import { GameDataPreload } from "@/lib/data/useGameData";
 import { GameSplash } from "@/components/brand/GameSplash";
+// Vercel Web Analytics — privacy-friendly visitor/pageview counts (no cookies,
+// so no consent banner needed). Only sends data on the Vercel deployment; a
+// no-op in local dev. Also enable it in the Vercel dashboard → Analytics tab.
+import { Analytics } from "@vercel/analytics/next";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -64,6 +68,7 @@ export default function RootLayout({
         <HomeButton />
         <TopNav />
         {children}
+        <Analytics />
       </body>
     </html>
   );
