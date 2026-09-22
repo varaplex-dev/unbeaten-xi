@@ -42,17 +42,12 @@ export default function LandingPage() {
             <HeroPlayerImage className="w-full drop-shadow-[0_16px_36px_rgba(0,0,0,0.6)]" />
           </div>
 
-          {/* Title with speed lines */}
-          <div className="relative z-20 mt-4 flex items-center justify-center gap-3">
-            <span className="teal-hairline hidden w-8 sm:block" />
-            <h1 className="text-stack-shadow text-center text-4xl font-black italic tracking-tight text-accent sm:text-5xl">
-              UNBEATEN GAME
-            </h1>
-            <span className="teal-hairline hidden w-8 sm:block" />
-          </div>
+          {/* The brand name is already in the logo emblem above, so we don't
+              repeat it as visible text — but keep an h1 for accessibility/SEO. */}
+          <h1 className="sr-only">The Unbeaten Game</h1>
 
           {/* Subtitle with flanking hairlines + dot */}
-          <div className="mt-3 flex items-center justify-center gap-2.5">
+          <div className="mt-4 flex items-center justify-center gap-2.5">
             <span className="gold-hairline w-6 sm:w-10" />
             <span className="h-1 w-1 rounded-full bg-gold" />
             <p className="text-base font-bold italic tracking-tight text-gold sm:text-lg">{t("landing.tagline")}</p>
