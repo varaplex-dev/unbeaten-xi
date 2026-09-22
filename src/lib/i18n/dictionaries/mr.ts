@@ -61,6 +61,7 @@ export const mr: Dictionary = {
   "settings.about": "आमच्याबद्दल",
   "settings.aboutTagline": "हा एक Varaplex Studios गेम आहे.",
   "settings.readMore": "अधिक वाचा",
+  "settings.deleteAccount": "खाते हटवा",
   "settings.language": "भाषा",
   "settings.languageDesc": "अ‍ॅपसाठी तुमची आवडती भाषा निवडा.",
   "settings.hardcoreMode": "हार्डकोर मोड",

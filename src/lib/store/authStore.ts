@@ -27,6 +27,11 @@ interface AuthState {
    * Requires "Anonymous sign-ins" to be enabled in the Supabase dashboard. */
   signInAsGuest: (guestId: string) => Promise<void>;
   signOut: () => Promise<void>;
+  /** Permanently deletes the current account and, by DB cascade, all of its
+   * data (profile, season results, H2H matches/ladder rows). Works for both
+   * full and guest/anonymous accounts. Requires the `delete_my_account` RPC
+   * (see supabase/delete_account.sql). Signs the user out on success. */
+  deleteAccount: () => Promise<{ ok: boolean; error?: string }>;
 }
 
 async function fetchProfile(userId: string): Promise<Profile | null> {
@@ -144,6 +149,24 @@ export const useAuthStore = create<AuthState>()((set, get) => {
       if (!supabase) return;
       await supabase.auth.signOut();
       set({ user: null, profile: null });
+    },
+
+    deleteAccount: async () => {
+      if (!supabase) {
+        return { ok: false, error: "Accounts aren't configured for this app yet." };
+      }
+      set({ authError: null });
+      // The RPC deletes the auth.users row as a privileged definer; every
+      // user-owned table cascades off it, so this removes all their data.
+      const { error } = await supabase.rpc("delete_my_account");
+      if (error) {
+        set({ authError: error.message });
+        return { ok: false, error: error.message };
+      }
+      // The session now points at a deleted user — end it and clear state.
+      await supabase.auth.signOut();
+      set({ user: null, profile: null });
+      return { ok: true };
     },
   };
 });

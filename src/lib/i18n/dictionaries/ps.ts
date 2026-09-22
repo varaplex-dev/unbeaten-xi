@@ -70,6 +70,7 @@ export const ps: Dictionary = {
   "settings.about": "زموږ په اړه",
   "settings.aboutTagline": "دا د Varaplex Studios لوبه ده.",
   "settings.readMore": "نور ولولئ",
+  "settings.deleteAccount": "حساب ړنګ کړئ",
   "settings.language": "ژبه",
   "settings.languageDesc": "د اپلیکیشن لپاره خپله خوښه ژبه وټاکئ.",
   "settings.hardcoreMode": "هارډکور موډ",

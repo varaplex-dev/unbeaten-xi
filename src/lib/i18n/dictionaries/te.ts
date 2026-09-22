@@ -61,6 +61,7 @@ export const te: Dictionary = {
   "settings.about": "మా గురించి",
   "settings.aboutTagline": "ఇది ఒక Varaplex Studios గేమ్.",
   "settings.readMore": "మరింత చదవండి",
+  "settings.deleteAccount": "ఖాతా తొలగించు",
   "settings.language": "భాష",
   "settings.languageDesc": "యాప్ కోసం మీకు నచ్చిన భాషను ఎంచుకోండి.",
   "settings.hardcoreMode": "హార్డ్‌కోర్ మోడ్",

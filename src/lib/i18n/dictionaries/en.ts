@@ -71,6 +71,7 @@ export const en = {
   "settings.about": "About",
   "settings.aboutTagline": "A Varaplex Studios game.",
   "settings.readMore": "Read More",
+  "settings.deleteAccount": "Delete account",
   "settings.language": "Language",
   "settings.languageDesc": "Choose your preferred language for the app.",
   "settings.hardcoreMode": "Hardcore Mode",

@@ -61,6 +61,7 @@ export const kn: Dictionary = {
   "settings.about": "ನಮ್ಮ ಬಗ್ಗೆ",
   "settings.aboutTagline": "ಇದು ಒಂದು Varaplex Studios ಆಟ.",
   "settings.readMore": "ಇನ್ನಷ್ಟು ಓದಿ",
+  "settings.deleteAccount": "ಖಾತೆ ಅಳಿಸಿ",
   "settings.language": "ಭಾಷೆ",
   "settings.languageDesc": "ಆ್ಯಪ್‌ಗಾಗಿ ನಿಮ್ಮ ಆದ್ಯತೆಯ ಭಾಷೆಯನ್ನು ಆಯ್ಕೆಮಾಡಿ.",
   "settings.hardcoreMode": "ಹಾರ್ಡ್‌ಕೋರ್ ಮೋಡ್",

@@ -258,6 +258,9 @@ export default function SettingsPage() {
               <Link href="/history" className="text-accent underline underline-offset-4">
                 {t("nav.myHistory")}
               </Link>
+              <Link href="/delete-account" className="text-danger underline underline-offset-4">
+                {t("settings.deleteAccount")}
+              </Link>
             </>
           )}
         </div>

@@ -61,6 +61,7 @@ export const ta: Dictionary = {
   "settings.about": "பற்றி",
   "settings.aboutTagline": "இது ஒரு Varaplex Studios விளையாட்டு.",
   "settings.readMore": "மேலும் படிக்க",
+  "settings.deleteAccount": "கணக்கை நீக்கு",
   "settings.language": "மொழி",
   "settings.languageDesc": "ஆப்ஸிற்கான உங்கள் விருப்பமான மொழியைத் தேர்ந்தெடுக்கவும்.",
   "settings.hardcoreMode": "ஹார்ட்கோர் முறை",

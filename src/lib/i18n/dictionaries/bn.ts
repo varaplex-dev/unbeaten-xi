@@ -61,6 +61,7 @@ export const bn: Dictionary = {
   "settings.about": "আমাদের সম্পর্কে",
   "settings.aboutTagline": "এটি একটি Varaplex Studios গেম।",
   "settings.readMore": "আরও পড়ুন",
+  "settings.deleteAccount": "অ্যাকাউন্ট মুছুন",
   "settings.language": "ভাষা",
   "settings.languageDesc": "অ্যাপের জন্য আপনার পছন্দের ভাষা বেছে নিন।",
   "settings.hardcoreMode": "হার্ডকোর মোড",
