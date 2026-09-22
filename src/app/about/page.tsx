@@ -3,14 +3,14 @@ import Link from "next/link";
 export default function AboutPage() {
   return (
     <main className="flex-1 px-4 py-10 max-w-2xl mx-auto w-full">
-      <h1 className="text-3xl font-black tracking-tight mb-6">About The Unbeaten XI</h1>
+      <h1 className="text-3xl font-black tracking-tight mb-6">About The Unbeaten Game</h1>
       <div className="space-y-4 text-foreground-muted text-sm">
         <p className="text-base font-semibold text-foreground">
           Build your ultimate cricket team and see if your squad has what it
           takes to go undefeated.
         </p>
         <p>
-          The Unbeaten XI is a fast-paced cricket team-building game where
+          The Unbeaten Game is a fast-paced cricket team-building game where
           every decision matters. Choose players from the world&apos;s top
           cricket leagues, balance your batting and bowling lineup, assign the
           right roles, and create a complete XI built to dominate.
@@ -30,7 +30,7 @@ export default function AboutPage() {
           Build your XI. Simulate the season. Stay unbeaten.
         </p>
         <p className="pt-2 text-xs text-foreground-muted">
-          The Unbeaten XI is a Varaplex Studios game.
+          The Unbeaten Game is a Varaplex Studios game.
         </p>
       </div>
       <Link href="/settings" className="inline-block mt-8 text-accent underline underline-offset-4">

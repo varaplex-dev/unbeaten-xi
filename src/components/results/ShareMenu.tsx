@@ -44,7 +44,7 @@ export function ShareMenu({ shareText, wins, losses, teamRating, netRunRate, mvp
     if (typeof navigator !== "undefined" && navigator.share) {
       logShare("native");
       try {
-        await navigator.share({ text: shareText, title: "The Unbeaten XI", url: siteUrl || undefined });
+        await navigator.share({ text: shareText, title: "The Unbeaten Game", url: siteUrl || undefined });
       } catch {
         // user cancelled the share sheet — nothing else to do
       }
@@ -68,13 +68,13 @@ export function ShareMenu({ shareText, wins, losses, teamRating, netRunRate, mvp
     setInstaState("working");
     try {
       const blob = await renderShareCard({ wins, losses, unbeaten, teamRating, netRunRate, mvpName, siteUrl });
-      const file = new File([blob], "unbeaten-xi-result.png", { type: "image/png" });
+      const file = new File([blob], "unbeaten-game-result.png", { type: "image/png" });
 
       const canShareFile =
         typeof navigator !== "undefined" && "canShare" in navigator && navigator.canShare?.({ files: [file] });
       if (canShareFile) {
         try {
-          await navigator.share({ files: [file], title: "The Unbeaten XI", text: shareText });
+          await navigator.share({ files: [file], title: "The Unbeaten Game", text: shareText });
         } catch {
           // user cancelled the share sheet — nothing else to do
         }
@@ -82,7 +82,7 @@ export function ShareMenu({ shareText, wins, losses, teamRating, netRunRate, mvp
         const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.href = url;
-        link.download = "unbeaten-xi-result.png";
+        link.download = "unbeaten-game-result.png";
         link.click();
         URL.revokeObjectURL(url);
       }

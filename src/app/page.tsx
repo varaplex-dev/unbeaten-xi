@@ -28,7 +28,7 @@ export default function LandingPage() {
 
   return (
     <main className="flex-1 flex flex-col">
-      <PosterShell kicker="Unbeaten XI">
+      <PosterShell kicker="Unbeaten Game">
         <div className="esports-frame relative mx-auto w-full max-w-md">
           {/* Decorative kicker with flanking hairlines */}
           <div className="mt-2 flex items-center justify-center gap-3">
@@ -46,7 +46,7 @@ export default function LandingPage() {
           <div className="relative z-20 mt-4 flex items-center justify-center gap-3">
             <span className="teal-hairline hidden w-8 sm:block" />
             <h1 className="text-stack-shadow text-center text-4xl font-black italic tracking-tight text-accent sm:text-5xl">
-              UNBEATEN XI
+              UNBEATEN GAME
             </h1>
             <span className="teal-hairline hidden w-8 sm:block" />
           </div>

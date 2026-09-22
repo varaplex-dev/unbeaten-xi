@@ -1,4 +1,4 @@
--- 14-0: Build the Unbeaten XI — accounts, history, leaderboards schema.
+-- 14-0: Build the Unbeaten Game — accounts, history, leaderboards schema.
 --
 -- This app has no backend of its own; Supabase is used only for auth +
 -- Postgres storage. Nothing here is applied automatically. To use it:

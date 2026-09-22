@@ -63,7 +63,7 @@ export async function renderShareCard(data: ShareCardData): Promise<Blob> {
   ctx.textBaseline = "alphabetic";
   ctx.save();
   ctx.letterSpacing = "8px";
-  ctx.fillText("THE UNBEATEN XI", SIZE / 2, 150);
+  ctx.fillText("THE UNBEATEN GAME", SIZE / 2, 150);
   ctx.restore();
 
   ctx.fillStyle = saffron;

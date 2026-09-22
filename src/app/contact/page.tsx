@@ -27,7 +27,7 @@ export default function ContactPage() {
           </p>
         </div>
         <p className="pt-2 text-xs text-foreground-muted">
-          The Unbeaten XI is a Varaplex Studios game.
+          The Unbeaten Game is a Varaplex Studios game.
         </p>
       </div>
       <Link href="/" className="inline-block mt-8 text-accent underline underline-offset-4">

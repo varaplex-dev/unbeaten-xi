@@ -5,8 +5,8 @@ import type { MetadataRoute } from "next";
  * Screen). Next serves this at /manifest.webmanifest and links it automatically. */
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: "The Unbeaten XI",
-    short_name: "Unbeaten XI",
+    name: "The Unbeaten Game",
+    short_name: "Unbeaten Game",
     description:
       "Draft a T20 Playing XI from real players and real career stats, then chase an undefeated season.",
     start_url: "/",

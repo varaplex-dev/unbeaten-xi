@@ -50,7 +50,7 @@ export const en = {
 
   "settings.title": "Settings",
   "settings.description":
-    "The Unbeaten XI saves your progress locally in this browser — nothing is sent anywhere unless you're signed in.",
+    "The Unbeaten Game saves your progress locally in this browser — nothing is sent anywhere unless you're signed in.",
   "settings.account": "Account",
   "settings.playingAsGuest": "Playing as guest",
   "settings.guestDesc": "Your progress is saved on this device. Sign in to save it to an account and appear on the leaderboard.",
@@ -258,7 +258,7 @@ export const en = {
 
   "htp.title": "How to Play",
   "htp.intro":
-    "The objective of The Unbeaten XI is to assemble a real cricket XI — spun together one player at a time from real teams — capable of an undefeated season. Your result is decided by a simulation engine that runs your squad's actual career stats against a full schedule, not an abstract rating.",
+    "The objective of The Unbeaten Game is to assemble a real cricket XI — spun together one player at a time from real teams — capable of an undefeated season. Your result is decided by a simulation engine that runs your squad's actual career stats against a full schedule, not an abstract rating.",
   "htp.s1.title": "1. Every Pick Comes From a Spin",
   "htp.s1.p1":
     "Hit Spin and the wheel lands on a real team — a specific past season of an IPL, BBL, or PSL franchise, a great historic national side, or a current national squad. Pick exactly one player from that team's actual roster.",
@@ -413,8 +413,8 @@ export const en = {
   "sim.dec.impactGood": "{name} made an instant impact.",
   "sim.dec.impactBad": "{name} got some overs in but didn't change the game.",
   "sim.dec.impactHold": "Held the Impact Player in reserve.",
-  "res.shareUnbeaten": "MY XI WENT {record} — UNBEATEN ALL SEASON.\nCan you go {perfect}? Draft your XI in The Unbeaten XI.",
-  "res.shareFinished": "MY XI FINISHED {record}.\nCan you go {perfect}? Draft your XI in The Unbeaten XI.",
+  "res.shareUnbeaten": "MY XI WENT {record} — UNBEATEN ALL SEASON.\nCan you go {perfect}? Draft your XI in The Unbeaten Game.",
+  "res.shareFinished": "MY XI FINISHED {record}.\nCan you go {perfect}? Draft your XI in The Unbeaten Game.",
 } satisfies Record<string, string>;
 
 // Keys are literal (drawn from `en`, the source of truth for what keys

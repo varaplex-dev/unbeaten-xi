@@ -24,14 +24,14 @@ export const metadata: Metadata = {
   // needed so og/twitter image URLs resolve to absolute paths instead of
   // warning at build time.
   metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000"),
-  title: "The Unbeaten XI",
+  title: "The Unbeaten Game",
   description:
     "Draft a T20 Playing XI from real players and real career stats, then try to finish an undefeated season.",
-  applicationName: "The Unbeaten XI",
+  applicationName: "The Unbeaten Game",
   // iOS home-screen web app: run full-screen, dark status bar over the content.
   appleWebApp: {
     capable: true,
-    title: "Unbeaten XI",
+    title: "Unbeaten Game",
     statusBarStyle: "black-translucent",
   },
 };

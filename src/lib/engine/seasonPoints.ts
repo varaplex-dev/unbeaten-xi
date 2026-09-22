@@ -3,7 +3,7 @@
 // A points total reads far better than a raw wins/losses sort: it turns a
 // season into one number a player can chase and compare. The formula is built
 // in the spirit of "chase perfection" games (go the whole season unbeaten),
-// tuned to this game's identity — it is called The Unbeaten XI, so going
+// tuned to this game's identity — it is called The Unbeaten Game, so going
 // undefeated is the thing it rewards most.
 //
 // Three principles, strictly ranked:

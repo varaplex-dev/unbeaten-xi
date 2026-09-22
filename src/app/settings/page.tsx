@@ -232,7 +232,7 @@ export default function SettingsPage() {
             <CardTitle>{t("settings.about")}</CardTitle>
           </CardHeader>
           <CardContent className="text-sm text-foreground-muted space-y-2">
-            <p>The Unbeaten XI</p>
+            <p>The Unbeaten Game</p>
             <p>{t("settings.aboutTagline")}</p>
             <Link href="/about" className="inline-block text-accent underline underline-offset-4">
               {t("settings.readMore")}

@@ -4,7 +4,7 @@ export function HeroPlayerImage({ className }: { className?: string }) {
   return (
     <Image
       src="/logos/logo-unbeaten.png"
-      alt="The Unbeaten XI emblem"
+      alt="The Unbeaten Game emblem"
       width={512}
       height={512}
       className={className}
