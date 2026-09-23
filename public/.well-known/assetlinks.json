@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.unbeatengame.app",
+      "sha256_cert_fingerprints": [
+        "8B:EA:20:E7:BF:9C:6F:CE:BE:DC:83:38:61:83:BA:DC:F6:C3:C6:9C:53:EC:81:E5:A2:A7:9A:72:2D:49:AA:BE"
+      ]
+    }
+  }
+]
