@@ -18,6 +18,13 @@ const nextConfig: NextConfig = {
       },
     ],
   },
+  async rewrites() {
+    return [
+      // Digital Asset Links for the Android TWA. Next can't serve a dot-folder
+      // from /public, so route the well-known path to a route handler.
+      { source: "/.well-known/assetlinks.json", destination: "/api/assetlinks" },
+    ];
+  },
 };
 
 export default nextConfig;
