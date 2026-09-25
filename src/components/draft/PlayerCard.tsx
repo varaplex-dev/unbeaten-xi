@@ -72,10 +72,10 @@ export function PlayerCard({ player, onSelect, selected, disabled, hideStats }: 
 
       <div className="mt-3 flex flex-wrap gap-1.5">
         <Badge variant="accent">{t(roleLabelKey(player.primaryRole))}</Badge>
-        <Badge>{player.nationalityType === "overseas" ? "Overseas" : "Indian"}</Badge>
+        <Badge>{player.nationalityType === "overseas" ? t("auction.overseas") : t("card.indian")}</Badge>
         <Badge>{player.battingHand === "left" ? "LHB" : "RHB"}</Badge>
-        {player.rarityTier === "legendary" && <Badge variant="gold">Elite</Badge>}
-        {player.tags.includes("legend") && <Badge variant="gold">Legend</Badge>}
+        {player.rarityTier === "legendary" && <Badge variant="gold">{t("card.elite")}</Badge>}
+        {player.tags.includes("legend") && <Badge variant="gold">{t("card.legend")}</Badge>}
       </div>
 
       {hideStats ? (

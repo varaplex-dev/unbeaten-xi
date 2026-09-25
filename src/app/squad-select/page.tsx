@@ -104,15 +104,17 @@ export default function SquadSelectPage() {
   if (mode !== "all-time-real") {
     return (
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-16 text-center">
-        <p className="text-foreground-muted mb-4">No spin started yet.</p>
+        <p className="text-foreground-muted mb-4">{t("sq.noSpinYet")}</p>
         <Link href="/play">
-          <Button>Back to Modes</Button>
+          <Button>{t("sq.backToModes")}</Button>
         </Link>
       </main>
     );
   }
 
-  const roundLabel = squadComplete ? "Impact Player" : `Pick ${filledCount + 1} of ${SQUAD_SIZE}`;
+  const roundLabel = squadComplete
+    ? t("sq.impactRound")
+    : t("sq.pickRound").replace("{n}", String(filledCount + 1)).replace("{total}", String(SQUAD_SIZE));
 
   function handleSpinClick() {
     if (!seed) return;
@@ -137,16 +139,14 @@ export default function SquadSelectPage() {
 
   return (
     <main className="flex-1 flex flex-col">
-      <PosterShell kicker="Spin & Pick" digits={[{ value: String(filledCount), label: `Of ${SQUAD_SIZE} Picked` }]}>
+      <PosterShell kicker={t("sq.kicker")} digits={[{ value: String(filledCount), label: t("sq.ofPicked").replace("{n}", String(SQUAD_SIZE)) }]}>
         <div className="mx-auto w-full max-w-2xl">
           <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase mb-1">{roundLabel}</p>
           <h1 className="text-stack-shadow text-4xl font-black italic tracking-tight mb-1">
-            {squadComplete ? "One Bonus Pick" : "Every Pick, A Different Team"}
+            {squadComplete ? t("sq.oneBonusPick") : t("sq.everyPick")}
           </h1>
           <p className="text-foreground-muted mb-6">
-            {squadComplete
-              ? "Spin one more time for a shot at an Impact Player — or skip it and lock in your XI."
-              : "Spin the wheel, land on a real team, pick a player from it — then place them in your batting order. Where you put them matters."}
+            {squadComplete ? t("sq.impactSubtitle") : t("sq.pickSubtitle")}
           </p>
 
           <div className="mb-6 h-1.5 w-full rounded-full bg-white/5 overflow-hidden">
@@ -167,25 +167,27 @@ export default function SquadSelectPage() {
             <SpinReel target={spinTarget} onComplete={handleSpinComplete} pool={spinPool} />
           ) : pendingPlayer ? (
             <div className="mb-6 flex flex-col items-center gap-1 rounded-2xl border border-accent/40 bg-accent/5 py-10 text-center">
-              <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase">Placing</p>
+              <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase">{t("sq.placing")}</p>
               <p className="text-2xl font-black italic tracking-tight">{pendingPlayer.name}</p>
               <p className="mt-1 max-w-xs text-sm text-foreground-muted">
-                Tap an open slot on the field below to set their spot in the batting order.
+                {t("sq.tapSlot")}
               </p>
             </div>
           ) : !eraTeam ? (
             <div className="mb-6 flex flex-col items-center gap-3 rounded-2xl border border-dashed border-border py-16 text-center">
               <p className="text-foreground-muted">
                 {squadComplete
-                  ? "Spin for a team to draw your Impact Player from."
-                  : `Spin for the team your ${filledCount === 0 ? "first" : "next"} pick comes from.`}
+                  ? t("sq.spinForImpact")
+                  : filledCount === 0
+                    ? t("sq.spinForFirst")
+                    : t("sq.spinForNext")}
               </p>
               <Button size="lg" onClick={handleSpinClick}>
-                Spin
+                {t("play.spin")}
               </Button>
               {squadComplete && (
                 <Button variant="ghost" onClick={skipImpactPlayer}>
-                  Skip — no Impact Player this season
+                  {t("sq.skipImpact")}
                 </Button>
               )}
             </div>
@@ -231,7 +233,7 @@ export default function SquadSelectPage() {
 
           {squadComplete && impactResolved && (
             <div className="mt-6 flex items-center justify-center gap-2">
-              <Badge variant="accent">Squad complete — moving to team setup</Badge>
+              <Badge variant="accent">{t("sq.squadComplete")}</Badge>
             </div>
           )}
         </div>
