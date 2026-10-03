@@ -12,9 +12,12 @@ import { NextResponse } from "next/server";
 //    full-screen. Get it from: Play Console → your app → the App signing /
 //    App bundle explorer page → "App signing key certificate" SHA-256.
 const SHA256_FINGERPRINTS = [
-  // PWABuilder upload key
+  // PWABuilder upload key (covers a raw .aab/.apk install built locally).
   "8B:EA:20:E7:BF:9C:6F:CE:BE:DC:83:38:61:83:BA:DC:F6:C3:C6:9C:53:EC:81:E5:A2:A7:9A:72:2D:49:AA:BE",
-  // Play App Signing key SHA-256 goes here once retrieved from Play Console.
+  // Play App Signing key — the cert Google re-signs with, so apps installed
+  // FROM Google Play verify and open full-screen. Extracted from the signed
+  // universal APK in the Play Console bundle explorer.
+  "78:8A:65:E5:74:AD:98:16:53:73:79:89:3B:DB:2A:97:69:A1:BE:41:A0:50:D4:69:AA:87:09:11:8F:E2:DF:14",
 ];
 
 export function GET() {
