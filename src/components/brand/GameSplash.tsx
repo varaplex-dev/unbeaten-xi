@@ -9,24 +9,6 @@ import { cn } from "@/lib/utils";
 const MIN_VISIBLE_MS = 1800; // let the clip get going before it can dismiss
 const MAX_VISIBLE_MS = 12000; // safety valve — never trap the user behind the splash
 
-/** True when the app is running as an INSTALLED app — a PWA launched from the
- * home screen (display-mode standalone/fullscreen) or an iOS home-screen web
- * app (the non-standard navigator.standalone flag) — rather than a normal
- * browser tab. Installed apps get the loader's sound automatically; browser
- * tabs start muted with a toggle, because (a) browsers block unmuted autoplay
- * on a cold load anyway and (b) an unexpected blast of audio from a page you
- * just opened in a tab is hostile. */
-function isStandaloneApp(): boolean {
-  if (typeof window === "undefined") return false;
-  const mm = window.matchMedia?.bind(window);
-  const displayApp = Boolean(
-    mm?.("(display-mode: standalone)")?.matches || mm?.("(display-mode: fullscreen)")?.matches
-  );
-  const iosStandalone =
-    (window.navigator as unknown as { standalone?: boolean }).standalone === true;
-  return displayApp || iosStandalone;
-}
-
 /**
  * First-load splash: plays the loader video (batter hitting the ball) while the
  * ~3MB player dataset downloads (see loadGameData), then fades out once it's
@@ -34,18 +16,17 @@ function isStandaloneApp(): boolean {
  * never mounts, and because it lives in the persistent root layout it isn't
  * re-shown on internal navigation, only on a full reload.
  *
- * Sound: automatic in the installed app, opt-in via an on-screen toggle in a
- * browser tab — see isStandaloneApp().
+ * Sound: ALWAYS starts muted (web and installed app alike) with an on-screen
+ * toggle — a splash that blasts audio on load is hostile; the user opts in.
  */
 export function GameSplash() {
   const dataReady = useGameDataReady();
   const { t } = useTranslation();
   // Decided once, at first mount: skip entirely if the data was already loaded.
   const [active] = useState(() => !dataReady);
-  // Installed app → the toggle is hidden and sound is on. Browser tab → show
-  // the toggle and start muted. Both decided once at mount.
-  const [appMode] = useState(isStandaloneApp);
-  const [muted, setMuted] = useState(() => !isStandaloneApp());
+  // Always start muted; the sound toggle is always available so the user can
+  // enable audio with a tap (which also satisfies the browser's gesture gate).
+  const [muted, setMuted] = useState(true);
   const [minElapsed, setMinElapsed] = useState(false);
   const [maxFired, setMaxFired] = useState(false);
   const [gone, setGone] = useState(false);
@@ -62,11 +43,9 @@ export function GameSplash() {
   }, [active]);
 
   // Keep the <video> element's muted flag in sync with our state and (re)start
-  // playback whenever it changes. In the installed app we start unmuted; if the
-  // platform still refuses to autoplay with sound, fall back to muted so the
-  // clip always plays. In a browser tab we start muted, which always autoplays;
-  // the user's tap on the toggle is a gesture that lets the unmuted play() go
-  // through.
+  // playback whenever it changes. We start muted, which always autoplays
+  // silently; the user's tap on the toggle is a gesture that lets a subsequent
+  // unmuted play() go through.
   useEffect(() => {
     if (!active) return;
     const v = videoRef.current;
@@ -121,17 +100,15 @@ export function GameSplash() {
       aria-hidden={hidden}
     >
       <video ref={videoRef} className="game-splash__video" src="/loader.mp4" playsInline preload="auto" />
-      {!appMode && (
-        <button
-          type="button"
-          onClick={toggleSound}
-          className="game-splash__sound"
-          aria-label={muted ? t("splash.unmute") : t("splash.mute")}
-        >
-          {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
-          <span>{muted ? t("splash.unmute") : t("splash.mute")}</span>
-        </button>
-      )}
+      <button
+        type="button"
+        onClick={toggleSound}
+        className="game-splash__sound"
+        aria-label={muted ? t("splash.unmute") : t("splash.mute")}
+      >
+        {muted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
+        <span>{muted ? t("splash.unmute") : t("splash.mute")}</span>
+      </button>
     </div>
   );
 }
