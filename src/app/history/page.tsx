@@ -5,6 +5,8 @@ import Link from "next/link";
 import { Badge } from "@/components/ui/badge";
 import { useAuthStore } from "@/lib/store/authStore";
 import { isSupabaseConfigured, supabase } from "@/lib/supabase/client";
+import { useTranslation } from "@/lib/i18n/useTranslation";
+import type { TranslationKey } from "@/lib/i18n";
 
 interface HistoryRow {
   id: string;
@@ -17,12 +19,13 @@ interface HistoryRow {
   created_at: string;
 }
 
-function modeLabel(row: HistoryRow): string {
-  if (row.is_daily) return "Daily Challenge";
-  return row.mode === "all-time-real" ? "All-Time XI" : "Fictional";
+function modeLabel(row: HistoryRow, t: (key: TranslationKey) => string): string {
+  if (row.is_daily) return t("landing.dailyChallenge");
+  return row.mode === "all-time-real" ? t("play.allTimeXi") : t("history.modeFictional");
 }
 
 export default function HistoryPage() {
+  const { t } = useTranslation();
   const hasLoaded = useAuthStore((s) => s.hasLoaded);
   const user = useAuthStore((s) => s.user);
   const [rows, setRows] = useState<HistoryRow[] | null>(null);
@@ -58,37 +61,37 @@ export default function HistoryPage() {
 
   return (
     <main className="flex-1 px-4 py-10 max-w-2xl mx-auto w-full">
-      <h1 className="text-3xl font-black tracking-tight mb-1">My History</h1>
-      <p className="text-foreground-muted mb-6">Every season you&apos;ve saved to your account.</p>
+      <h1 className="text-3xl font-black tracking-tight mb-1">{t("nav.myHistory")}</h1>
+      <p className="text-foreground-muted mb-6">{t("history.subtitle")}</p>
 
       {!isSupabaseConfigured ? (
         <p className="text-sm text-foreground-muted">
-          History needs an account.{" "}
+          {t("history.needAccount")}{" "}
           <Link href="/settings" className="text-accent underline underline-offset-4">
-            This isn&apos;t turned on yet
+            {t("lb.notOnYet")}
           </Link>{" "}
-          — check back soon.
+          {t("lb.checkBack")}
         </p>
       ) : !hasLoaded ? null : !user ? (
         <p className="text-sm text-foreground-muted">
           <Link href="/settings" className="text-accent underline underline-offset-4">
-            Sign in
+            {t("history.signIn")}
           </Link>{" "}
-          to see your saved seasons.
+          {t("history.signInSuffix")}
         </p>
       ) : (
         <>
           {error && <p className="text-sm text-danger">{error}</p>}
 
-          {!error && isLoading && <p className="text-sm text-foreground-muted">Loading…</p>}
+          {!error && isLoading && <p className="text-sm text-foreground-muted">{t("lb.loading")}</p>}
 
           {!isLoading && rows !== null && rows.length === 0 && (
             <p className="text-sm text-foreground-muted">
-              No saved seasons yet.{" "}
+              {t("history.noSeasons")}{" "}
               <Link href="/play" className="text-accent underline underline-offset-4">
-                Start a draft
+                {t("history.startDraft")}
               </Link>{" "}
-              to get on the board.
+              {t("history.startDraftSuffix")}
             </p>
           )}
 
@@ -100,9 +103,9 @@ export default function HistoryPage() {
                   className="flex items-center justify-between gap-3 rounded-xl border border-border bg-background-elevated px-4 py-3"
                 >
                   <div>
-                    <p className="text-sm font-semibold">{modeLabel(row)}</p>
+                    <p className="text-sm font-semibold">{modeLabel(row, t)}</p>
                     <p className="text-xs text-foreground-muted">
-                      {new Date(row.created_at).toLocaleDateString()} &middot; Rating {row.team_rating_out_of_100}
+                      {new Date(row.created_at).toLocaleDateString()} &middot; {t("lb.rating")} {row.team_rating_out_of_100}
                     </p>
                   </div>
                   <Badge variant={row.unbeaten ? "accent" : "default"}>

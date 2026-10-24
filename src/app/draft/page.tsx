@@ -13,9 +13,11 @@ import { PLAYERS } from "@/lib/data/players";
 import { realPlayers, getEraTeamById } from "@/lib/data/gameData";
 import { useGameDataReady } from "@/lib/data/useGameData";
 import { track } from "@/lib/analytics";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 
 export default function DraftPage() {
   const router = useRouter();
+  const { t } = useTranslation();
   const dataReady = useGameDataReady();
   const seed = useGameStore((s) => s.seed);
   const mode = useGameStore((s) => s.mode);
@@ -68,7 +70,7 @@ export default function DraftPage() {
   if (mode === "all-time-real" && !dataReady) {
     return (
       <main className="flex-1 flex flex-col items-center justify-center px-4 py-16">
-        <p className="text-foreground-muted">Loading…</p>
+        <p className="text-foreground-muted">{t("lb.loading")}</p>
       </main>
     );
   }
@@ -76,17 +78,16 @@ export default function DraftPage() {
   if (stage === "impact-player" && impactOptions) {
     return (
       <main className="flex-1 flex flex-col">
-        <PosterShell kicker="Impact Player">
+        <PosterShell kicker={t("sq.impactRound")}>
           <div className="mx-auto w-full max-w-2xl">
             <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase mb-1">
-              One Bonus Pick
+              {t("sq.oneBonusPick")}
             </p>
             <h1 className="text-stack-shadow text-3xl font-black italic tracking-tight mb-1">
-              Pick Your Impact Player
+              {t("draft.pickImpactTitle")}
             </h1>
             <p className="text-foreground-muted mb-6">
-              A substitute you can bring on mid-match for a spark — usually a
-              finisher or a death-overs specialist.
+              {t("draft.pickImpactSubtitle")}
             </p>
 
             <div className="grid gap-3">
@@ -100,7 +101,7 @@ export default function DraftPage() {
               className="mt-4 w-full"
               onClick={skipImpactPlayer}
             >
-              Skip — no Impact Player this season
+              {t("sq.skipImpact")}
             </Button>
           </div>
         </PosterShell>
@@ -110,13 +111,25 @@ export default function DraftPage() {
 
   if (!round) return null;
 
+  const stillNeeded = [
+    needs.wicketkeepersNeeded > 0 ? t("draft.needWk") : null,
+    needs.paceBowlersNeeded > 0 ? t("draft.needPace") : null,
+    needs.spinnersNeeded > 0 ? t("draft.needSpinner") : null,
+    needs.bowlingOptionsNeeded > 0
+      ? t("draft.needBowling").replace("{n}", String(needs.bowlingOptionsNeeded))
+      : null,
+    needs.overseasSlotsRemaining < 4
+      ? t("draft.overseasLeft").replace("{n}", String(needs.overseasSlotsRemaining))
+      : null,
+  ].filter(Boolean);
+
   return (
     <main className="flex-1 flex flex-col">
       <PosterShell
-        kicker={mode === "all-time-real" ? "All-Time XI Draft" : "Drafting"}
+        kicker={mode === "all-time-real" ? t("draft.kickerAllTime") : t("draft.kickerDrafting")}
         digits={[
-          { value: String(roundNumber), label: "Round" },
-          { value: String(SQUAD_SIZE - draftPicks.length), label: "To Go" },
+          { value: String(roundNumber), label: t("draft.round") },
+          { value: String(SQUAD_SIZE - draftPicks.length), label: t("draft.toGo") },
         ]}
       >
         <div className="mx-auto w-full max-w-2xl">
@@ -138,7 +151,7 @@ export default function DraftPage() {
               transition={{ duration: 0.25 }}
             >
               <p className="text-xs font-semibold tracking-[0.2em] text-accent uppercase mb-1">
-                Draft Category
+                {t("draft.category")}
               </p>
               <h1 className="text-stack-shadow text-3xl font-black italic tracking-tight mb-1">
                 {round.category.label}
@@ -159,13 +172,7 @@ export default function DraftPage() {
 
           <footer className="mt-8 pt-6 border-t border-border text-xs text-foreground-muted space-y-1">
             <p>
-              Still needed: {needs.wicketkeepersNeeded > 0 && "wicketkeeper · "}
-              {needs.paceBowlersNeeded > 0 && "pace bowler · "}
-              {needs.spinnersNeeded > 0 && "spinner · "}
-              {needs.bowlingOptionsNeeded > 0 &&
-                `${needs.bowlingOptionsNeeded} more bowling option(s) · `}
-              {needs.overseasSlotsRemaining < 4 &&
-                `${needs.overseasSlotsRemaining} overseas slot(s) left`}
+              {t("draft.stillNeeded")} {stillNeeded.join(" · ")}
             </p>
           </footer>
         </div>

@@ -441,4 +441,28 @@ export const ur: Dictionary = {
   "lb.competition": "مقابلہ",
   "lb.period": "مدت",
   "splash.loading": "لوڈ ہو رہا ہے",
+
+  "draft.pickImpactTitle": "اپنا امپیکٹ پلیئر منتخب کریں",
+  "draft.pickImpactSubtitle":
+    "ایک متبادل کھلاڑی جسے آپ میچ کے دوران نئی جان ڈالنے کے لیے میدان میں لا سکتے ہیں — عام طور پر ایک فنشر یا ڈیتھ اوورز کا ماہر۔",
+  "draft.kickerAllTime": "آل-ٹائم الیون ڈرافٹ",
+  "draft.kickerDrafting": "ڈرافٹنگ",
+  "draft.round": "راؤنڈ",
+  "draft.toGo": "باقی",
+  "draft.category": "ڈرافٹ زمرہ",
+  "draft.stillNeeded": "ابھی بھی درکار:",
+  "draft.needWk": "وکٹ کیپر",
+  "draft.needPace": "فاسٹ بولر",
+  "draft.needSpinner": "اسپنر",
+  "draft.needBowling": "{n} مزید بولنگ آپشن",
+  "draft.overseasLeft": "{n} غیر ملکی جگہیں باقی",
+
+  "history.subtitle": "آپ کے اکاؤنٹ میں محفوظ کیا گیا ہر سیزن۔",
+  "history.needAccount": "تاریخ کے لیے اکاؤنٹ درکار ہے۔",
+  "history.signIn": "سائن ان کریں",
+  "history.signInSuffix": "اپنے محفوظ سیزن دیکھنے کے لیے۔",
+  "history.noSeasons": "ابھی تک کوئی محفوظ سیزن نہیں۔",
+  "history.startDraft": "ڈرافٹ شروع کریں",
+  "history.startDraftSuffix": "بورڈ پر آنے کے لیے۔",
+  "history.modeFictional": "فرضی",
 };

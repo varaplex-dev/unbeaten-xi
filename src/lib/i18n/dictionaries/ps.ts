@@ -441,4 +441,28 @@ export const ps: Dictionary = {
   "lb.competition": "سیالي",
   "lb.period": "موده",
   "splash.loading": "بارېږي",
+
+  "draft.pickImpactTitle": "خپل امپیکټ لوبغاړی وټاکئ",
+  "draft.pickImpactSubtitle":
+    "یو بدیل لوبغاړی چې تاسو یې د لوبې په مینځ کې د نوي جوش لپاره راوستلی شئ — معمولاً یو فینشر یا د ډیت-اوورز ماهر.",
+  "draft.kickerAllTime": "د ټولو وختونو XI ډرافټ",
+  "draft.kickerDrafting": "ډرافټینګ",
+  "draft.round": "پړاو",
+  "draft.toGo": "پاتې",
+  "draft.category": "د ډرافټ کټګوري",
+  "draft.stillNeeded": "لاهم اړتیا ده:",
+  "draft.needWk": "ویکټ کیپر",
+  "draft.needPace": "چټک بالر",
+  "draft.needSpinner": "سپینر",
+  "draft.needBowling": "{n} نور بالنګ اختیارونه",
+  "draft.overseasLeft": "{n} بهرني ځایونه پاتې",
+
+  "history.subtitle": "ستاسو په حساب کې خوندي شوی هر فصل.",
+  "history.needAccount": "تاریخ ته حساب په کار دی.",
+  "history.signIn": "ننوځئ",
+  "history.signInSuffix": "خپل خوندي شوي فصلونه لیدلو لپاره.",
+  "history.noSeasons": "لا تر اوسه هیڅ خوندي شوی فصل نشته.",
+  "history.startDraft": "ډرافټ پیل کړئ",
+  "history.startDraftSuffix": "په تخته کې د ځای نیولو لپاره.",
+  "history.modeFictional": "خیالي",
 };

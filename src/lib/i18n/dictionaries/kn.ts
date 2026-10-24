@@ -441,4 +441,28 @@ export const kn: Dictionary = {
   "lb.competition": "ಸ್ಪರ್ಧೆ",
   "lb.period": "ಅವಧಿ",
   "splash.loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ",
+
+  "draft.pickImpactTitle": "ನಿಮ್ಮ ಇಂಪ್ಯಾಕ್ಟ್ ಪ್ಲೇಯರ್ ಆಯ್ಕೆಮಾಡಿ",
+  "draft.pickImpactSubtitle":
+    "ಪಂದ್ಯದ ಮಧ್ಯದಲ್ಲಿ ಹುರುಪು ತುಂಬಲು ನೀವು ಕಣಕ್ಕಿಳಿಸಬಹುದಾದ ಬದಲಿ ಆಟಗಾರ — ಸಾಮಾನ್ಯವಾಗಿ ಫಿನಿಷರ್ ಅಥವಾ ಡೆತ್-ಓವರ್ಸ್ ತಜ್ಞ.",
+  "draft.kickerAllTime": "ಆಲ್-ಟೈಮ್ XI ಡ್ರಾಫ್ಟ್",
+  "draft.kickerDrafting": "ಡ್ರಾಫ್ಟಿಂಗ್",
+  "draft.round": "ಸುತ್ತು",
+  "draft.toGo": "ಬಾಕಿ",
+  "draft.category": "ಡ್ರಾಫ್ಟ್ ವರ್ಗ",
+  "draft.stillNeeded": "ಇನ್ನೂ ಅಗತ್ಯವಿದೆ:",
+  "draft.needWk": "ವಿಕೆಟ್‌ಕೀಪರ್",
+  "draft.needPace": "ವೇಗದ ಬೌಲರ್",
+  "draft.needSpinner": "ಸ್ಪಿನ್ನರ್",
+  "draft.needBowling": "{n} ಹೆಚ್ಚು ಬೌಲಿಂಗ್ ಆಯ್ಕೆ",
+  "draft.overseasLeft": "{n} ವಿದೇಶಿ ಸ್ಥಾನ ಉಳಿದಿದೆ",
+
+  "history.subtitle": "ನಿಮ್ಮ ಖಾತೆಗೆ ಉಳಿಸಿದ ಪ್ರತಿ ಋತು.",
+  "history.needAccount": "ಇತಿಹಾಸಕ್ಕೆ ಖಾತೆ ಬೇಕು.",
+  "history.signIn": "ಸೈನ್ ಇನ್ ಮಾಡಿ",
+  "history.signInSuffix": "ನಿಮ್ಮ ಉಳಿಸಿದ ಋತುಗಳನ್ನು ನೋಡಲು.",
+  "history.noSeasons": "ಇನ್ನೂ ಯಾವುದೇ ಉಳಿಸಿದ ಋತುಗಳಿಲ್ಲ.",
+  "history.startDraft": "ಡ್ರಾಫ್ಟ್ ಪ್ರಾರಂಭಿಸಿ",
+  "history.startDraftSuffix": "ಪಟ್ಟಿಯಲ್ಲಿ ಸ್ಥಾನ ಪಡೆಯಲು.",
+  "history.modeFictional": "ಕಾಲ್ಪನಿಕ",
 };

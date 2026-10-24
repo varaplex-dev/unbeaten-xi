@@ -441,4 +441,28 @@ export const bn: Dictionary = {
   "lb.competition": "প্রতিযোগিতা",
   "lb.period": "সময়কাল",
   "splash.loading": "লোড হচ্ছে",
+
+  "draft.pickImpactTitle": "আপনার ইম্প্যাক্ট প্লেয়ার বেছে নিন",
+  "draft.pickImpactSubtitle":
+    "ম্যাচের মাঝপথে প্রাণ সঞ্চার করতে আপনি নামাতে পারেন এমন একজন বদলি খেলোয়াড় — সাধারণত একজন ফিনিশার বা ডেথ-ওভার্স বিশেষজ্ঞ।",
+  "draft.kickerAllTime": "অল-টাইম একাদশ ড্রাফট",
+  "draft.kickerDrafting": "ড্রাফটিং",
+  "draft.round": "রাউন্ড",
+  "draft.toGo": "বাকি",
+  "draft.category": "ড্রাফট বিভাগ",
+  "draft.stillNeeded": "এখনও দরকার:",
+  "draft.needWk": "উইকেটকিপার",
+  "draft.needPace": "ফাস্ট বোলার",
+  "draft.needSpinner": "স্পিনার",
+  "draft.needBowling": "{n} আরও বোলিং বিকল্প",
+  "draft.overseasLeft": "{n} বিদেশি স্থান বাকি",
+
+  "history.subtitle": "আপনার অ্যাকাউন্টে সংরক্ষিত প্রতিটি মৌসুম।",
+  "history.needAccount": "ইতিহাসের জন্য একটি অ্যাকাউন্ট দরকার।",
+  "history.signIn": "সাইন ইন করুন",
+  "history.signInSuffix": "আপনার সংরক্ষিত মৌসুম দেখতে।",
+  "history.noSeasons": "এখনও কোনো সংরক্ষিত মৌসুম নেই।",
+  "history.startDraft": "একটি ড্রাফট শুরু করুন",
+  "history.startDraftSuffix": "বোর্ডে জায়গা পেতে।",
+  "history.modeFictional": "কাল্পনিক",
 };

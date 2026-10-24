@@ -441,4 +441,28 @@ export const ta: Dictionary = {
   "lb.competition": "போட்டி",
   "lb.period": "காலம்",
   "splash.loading": "ஏற்றுகிறது",
+
+  "draft.pickImpactTitle": "உங்கள் இம்பாக்ட் பிளேயரை தேர்வு செய்யுங்கள்",
+  "draft.pickImpactSubtitle":
+    "போட்டியின் நடுவில் ஒரு தீப்பொறிக்காக நீங்கள் களமிறக்கக்கூடிய மாற்று வீரர் — பொதுவாக ஒரு ஃபினிஷர் அல்லது டெத்-ஓவர்ஸ் நிபுணர்.",
+  "draft.kickerAllTime": "ஆல்-டைம் XI டிராஃப்ட்",
+  "draft.kickerDrafting": "டிராஃப்டிங்",
+  "draft.round": "சுற்று",
+  "draft.toGo": "மீதம்",
+  "draft.category": "டிராஃப்ட் வகை",
+  "draft.stillNeeded": "இன்னும் தேவை:",
+  "draft.needWk": "விக்கெட்கீப்பர்",
+  "draft.needPace": "வேக பந்துவீச்சாளர்",
+  "draft.needSpinner": "ஸ்பின்னர்",
+  "draft.needBowling": "{n} கூடுதல் பந்துவீச்சு விருப்பம்",
+  "draft.overseasLeft": "{n} வெளிநாட்டு இடம் மீதம்",
+
+  "history.subtitle": "உங்கள் கணக்கில் சேமித்த ஒவ்வொரு சீசனும்.",
+  "history.needAccount": "வரலாற்றுக்கு ஒரு கணக்கு தேவை.",
+  "history.signIn": "உள்நுழையவும்",
+  "history.signInSuffix": "உங்கள் சேமித்த சீசன்களைக் காண.",
+  "history.noSeasons": "இதுவரை சேமித்த சீசன்கள் இல்லை.",
+  "history.startDraft": "டிராஃப்ட் தொடங்கு",
+  "history.startDraftSuffix": "பட்டியலில் இடம்பெற.",
+  "history.modeFictional": "கற்பனை",
 };

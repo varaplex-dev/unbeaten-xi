@@ -441,4 +441,28 @@ export const te: Dictionary = {
   "lb.competition": "పోటీ",
   "lb.period": "వ్యవధి",
   "splash.loading": "లోడ్ అవుతోంది",
+
+  "draft.pickImpactTitle": "మీ ఇంపాక్ట్ ప్లేయర్‌ను ఎంచుకోండి",
+  "draft.pickImpactSubtitle":
+    "మ్యాచ్ మధ్యలో ఉత్సాహం నింపడానికి మీరు రంగంలోకి దించగల ప్రత్యామ్నాయ ఆటగాడు — సాధారణంగా ఫినిషర్ లేదా డెత్-ఓవర్స్ నిపుణుడు.",
+  "draft.kickerAllTime": "ఆల్-టైమ్ XI డ్రాఫ్ట్",
+  "draft.kickerDrafting": "డ్రాఫ్టింగ్",
+  "draft.round": "రౌండ్",
+  "draft.toGo": "మిగిలినవి",
+  "draft.category": "డ్రాఫ్ట్ వర్గం",
+  "draft.stillNeeded": "ఇంకా కావాలి:",
+  "draft.needWk": "వికెట్‌కీపర్",
+  "draft.needPace": "ఫాస్ట్ బౌలర్",
+  "draft.needSpinner": "స్పిన్నర్",
+  "draft.needBowling": "{n} మరిన్ని బౌలింగ్ ఆప్షన్‌లు",
+  "draft.overseasLeft": "{n} విదేశీ స్థానాలు మిగిలాయి",
+
+  "history.subtitle": "మీ ఖాతాకు సేవ్ చేసిన ప్రతి సీజన్.",
+  "history.needAccount": "చరిత్రకు ఖాతా అవసరం.",
+  "history.signIn": "సైన్ ఇన్ చేయండి",
+  "history.signInSuffix": "మీ సేవ్ చేసిన సీజన్‌లను చూడటానికి.",
+  "history.noSeasons": "ఇంకా సేవ్ చేసిన సీజన్‌లు లేవు.",
+  "history.startDraft": "డ్రాఫ్ట్ ప్రారంభించండి",
+  "history.startDraftSuffix": "బోర్డుపై చోటు సంపాదించడానికి.",
+  "history.modeFictional": "కల్పిత",
 };

@@ -448,6 +448,32 @@ export const en = {
   "lb.competition": "Competition",
   "lb.period": "Period",
   "splash.loading": "Loading",
+
+  // Draft screen. {n} is substituted at render — keep the placeholder intact.
+  "draft.pickImpactTitle": "Pick Your Impact Player",
+  "draft.pickImpactSubtitle":
+    "A substitute you can bring on mid-match for a spark — usually a finisher or a death-overs specialist.",
+  "draft.kickerAllTime": "All-Time XI Draft",
+  "draft.kickerDrafting": "Drafting",
+  "draft.round": "Round",
+  "draft.toGo": "To Go",
+  "draft.category": "Draft Category",
+  "draft.stillNeeded": "Still needed:",
+  "draft.needWk": "wicketkeeper",
+  "draft.needPace": "pace bowler",
+  "draft.needSpinner": "spinner",
+  "draft.needBowling": "{n} more bowling option(s)",
+  "draft.overseasLeft": "{n} overseas slot(s) left",
+
+  // My History screen.
+  "history.subtitle": "Every season you've saved to your account.",
+  "history.needAccount": "History needs an account.",
+  "history.signIn": "Sign in",
+  "history.signInSuffix": "to see your saved seasons.",
+  "history.noSeasons": "No saved seasons yet.",
+  "history.startDraft": "Start a draft",
+  "history.startDraftSuffix": "to get on the board.",
+  "history.modeFictional": "Fictional",
 } satisfies Record<string, string>;
 
 // Keys are literal (drawn from `en`, the source of truth for what keys

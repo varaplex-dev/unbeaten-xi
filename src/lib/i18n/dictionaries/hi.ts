@@ -441,4 +441,28 @@ export const hi: Dictionary = {
   "lb.competition": "प्रतियोगिता",
   "lb.period": "अवधि",
   "splash.loading": "लोड हो रहा है",
+
+  "draft.pickImpactTitle": "अपना इम्पैक्ट प्लेयर चुनें",
+  "draft.pickImpactSubtitle":
+    "एक विकल्प खिलाड़ी जिसे आप मैच के बीच में जान फूँकने के लिए ला सकते हैं — आमतौर पर एक फिनिशर या डेथ-ओवर्स विशेषज्ञ।",
+  "draft.kickerAllTime": "ऑल-टाइम इलेवन ड्राफ्ट",
+  "draft.kickerDrafting": "ड्राफ्टिंग",
+  "draft.round": "राउंड",
+  "draft.toGo": "बाकी",
+  "draft.category": "ड्राफ्ट श्रेणी",
+  "draft.stillNeeded": "अब भी चाहिए:",
+  "draft.needWk": "विकेटकीपर",
+  "draft.needPace": "तेज़ गेंदबाज़",
+  "draft.needSpinner": "स्पिनर",
+  "draft.needBowling": "{n} और गेंदबाज़ी विकल्प",
+  "draft.overseasLeft": "{n} विदेशी स्थान बचे",
+
+  "history.subtitle": "आपके खाते में सहेजा गया हर सीज़न।",
+  "history.needAccount": "इतिहास के लिए खाता चाहिए।",
+  "history.signIn": "साइन इन करें",
+  "history.signInSuffix": "अपने सहेजे गए सीज़न देखने के लिए।",
+  "history.noSeasons": "अभी तक कोई सहेजा गया सीज़न नहीं।",
+  "history.startDraft": "ड्राफ्ट शुरू करें",
+  "history.startDraftSuffix": "बोर्ड पर आने के लिए।",
+  "history.modeFictional": "काल्पनिक",
 };
