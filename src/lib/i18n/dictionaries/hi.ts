@@ -430,4 +430,15 @@ export const hi: Dictionary = {
   "sim.dec.impactHold": "इम्पैक्ट प्लेयर को रिज़र्व में रखा।",
   "res.shareUnbeaten": "मेरी एकादश {record} रही — पूरे सीज़न अपराजित।\nक्या आप {perfect} कर सकते हैं? The Unbeaten Game में अपनी एकादश बनाएं।",
   "res.shareFinished": "मेरी एकादश {record} पर समाप्त हुई।\nक्या आप {perfect} कर सकते हैं? The Unbeaten Game में अपनी एकादश बनाएं।",
+
+  "share.result": "नतीजा शेयर करें",
+  "share.on": "{platform} पर शेयर करें",
+  "share.toInstagram": "Instagram पर शेयर करें",
+  "share.copy": "नतीजे का टेक्स्ट कॉपी करें",
+  "share.copied": "कॉपी हो गया",
+  "share.building": "आपका Instagram कार्ड बन रहा है…",
+  "nav.home": "होम",
+  "lb.competition": "प्रतियोगिता",
+  "lb.period": "अवधि",
+  "splash.loading": "लोड हो रहा है",
 };

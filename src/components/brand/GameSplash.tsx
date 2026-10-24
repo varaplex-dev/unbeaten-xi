@@ -117,7 +117,7 @@ export function GameSplash() {
     <div
       className={cn("game-splash", hidden && "game-splash--hidden")}
       role="status"
-      aria-label="Loading"
+      aria-label={t("splash.loading")}
       aria-hidden={hidden}
     >
       <video ref={videoRef} className="game-splash__video" src="/loader.mp4" playsInline preload="auto" />

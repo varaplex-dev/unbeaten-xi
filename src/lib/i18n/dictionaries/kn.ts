@@ -430,4 +430,15 @@ export const kn: Dictionary = {
   "sim.dec.impactHold": "ಇಂಪ್ಯಾಕ್ಟ್ ಪ್ಲೇಯರ್ ಅನ್ನು ಮೀಸಲಿನಲ್ಲಿ ಇರಿಸಲಾಯಿತು.",
   "res.shareUnbeaten": "ನನ್ನ ತಂಡ {record} ಆಯಿತು — ಇಡೀ ಋತು ಸೋಲಿಲ್ಲದೆ.\nನೀವು {perfect} ಮಾಡಬಹುದೇ? The Unbeaten Game ನಲ್ಲಿ ನಿಮ್ಮ ತಂಡ ಕಟ್ಟಿ.",
   "res.shareFinished": "ನನ್ನ ತಂಡ {record} ನಲ್ಲಿ ಮುಗಿಸಿತು.\nನೀವು {perfect} ಮಾಡಬಹುದೇ? The Unbeaten Game ನಲ್ಲಿ ನಿಮ್ಮ ತಂಡ ಕಟ್ಟಿ.",
+
+  "share.result": "ಫಲಿತಾಂಶ ಹಂಚಿಕೊಳ್ಳಿ",
+  "share.on": "{platform} ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ",
+  "share.toInstagram": "Instagram ನಲ್ಲಿ ಹಂಚಿಕೊಳ್ಳಿ",
+  "share.copy": "ಫಲಿತಾಂಶ ಪಠ್ಯವನ್ನು ನಕಲಿಸಿ",
+  "share.copied": "ನಕಲಿಸಲಾಗಿದೆ",
+  "share.building": "ನಿಮ್ಮ Instagram ಕಾರ್ಡ್ ರಚಿಸಲಾಗುತ್ತಿದೆ…",
+  "nav.home": "ಮುಖಪುಟ",
+  "lb.competition": "ಸ್ಪರ್ಧೆ",
+  "lb.period": "ಅವಧಿ",
+  "splash.loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ",
 };

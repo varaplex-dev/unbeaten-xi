@@ -430,4 +430,15 @@ export const te: Dictionary = {
   "sim.dec.impactHold": "ఇంపాక్ట్ ప్లేయర్‌ను రిజర్వ్‌లో ఉంచారు.",
   "res.shareUnbeaten": "నా జట్టు {record} అయింది — సీజన్ మొత్తం అపజయం లేకుండా.\nమీరు {perfect} చేయగలరా? The Unbeaten Game లో మీ జట్టును నిర్మించండి.",
   "res.shareFinished": "నా జట్టు {record} వద్ద ముగించింది.\nమీరు {perfect} చేయగలరా? The Unbeaten Game లో మీ జట్టును నిర్మించండి.",
+
+  "share.result": "ఫలితాన్ని షేర్ చేయండి",
+  "share.on": "{platform} లో షేర్ చేయండి",
+  "share.toInstagram": "Instagram లో షేర్ చేయండి",
+  "share.copy": "ఫలితం టెక్స్ట్‌ను కాపీ చేయండి",
+  "share.copied": "కాపీ చేయబడింది",
+  "share.building": "మీ Instagram కార్డ్ తయారవుతోంది…",
+  "nav.home": "హోమ్",
+  "lb.competition": "పోటీ",
+  "lb.period": "వ్యవధి",
+  "splash.loading": "లోడ్ అవుతోంది",
 };

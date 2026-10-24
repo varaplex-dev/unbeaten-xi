@@ -436,6 +436,18 @@ export const en = {
   "sim.dec.impactHold": "Held the Impact Player in reserve.",
   "res.shareUnbeaten": "MY XI WENT {record} — UNBEATEN ALL SEASON.\nCan you go {perfect}? Draft your XI in The Unbeaten Game.",
   "res.shareFinished": "MY XI FINISHED {record}.\nCan you go {perfect}? Draft your XI in The Unbeaten Game.",
+
+  // Share menu, home button, leaderboard tablists & splash loader.
+  "share.result": "Share Result",
+  "share.on": "Share on {platform}",
+  "share.toInstagram": "Share to Instagram",
+  "share.copy": "Copy result text",
+  "share.copied": "Copied",
+  "share.building": "Building your Instagram card…",
+  "nav.home": "Home",
+  "lb.competition": "Competition",
+  "lb.period": "Period",
+  "splash.loading": "Loading",
 } satisfies Record<string, string>;
 
 // Keys are literal (drawn from `en`, the source of truth for what keys

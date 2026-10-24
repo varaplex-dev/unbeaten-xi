@@ -7,6 +7,7 @@ import { XIcon, WhatsAppIcon, FacebookIcon, InstagramIcon } from "@/components/i
 import { renderShareCard } from "@/lib/shareCard";
 import { cn } from "@/lib/utils";
 import { track } from "@/lib/analytics";
+import { useTranslation } from "@/lib/i18n/useTranslation";
 
 interface ShareMenuProps {
   shareText: string;
@@ -29,6 +30,7 @@ const ICON_BUTTON =
  * button renders a branded result card (see shareCard.ts) and shares it as
  * a file via navigator.share, falling back to a plain download. */
 export function ShareMenu({ shareText, wins, losses, teamRating, netRunRate, mvpName }: ShareMenuProps) {
+  const { t } = useTranslation();
   const [copied, setCopied] = useState(false);
   const [instaState, setInstaState] = useState<"idle" | "working" | "done">("idle");
 
@@ -93,23 +95,25 @@ export function ShareMenu({ shareText, wins, losses, teamRating, netRunRate, mvp
     }
   }
 
+  const shareOn = (platform: string) => t("share.on").replace("{platform}", platform);
+
   const platformLinks = [
     {
-      label: "Share on X",
+      label: shareOn("X"),
       method: "twitter",
       href: `https://twitter.com/intent/tweet?text=${encodeURIComponent(fullText)}`,
       icon: XIcon,
       hoverClass: "hover:border-foreground/40 hover:bg-white/10",
     },
     {
-      label: "Share on WhatsApp",
+      label: shareOn("WhatsApp"),
       method: "whatsapp",
       href: `https://wa.me/?text=${encodeURIComponent(fullText)}`,
       icon: WhatsAppIcon,
       hoverClass: "hover:border-[#25D366]/50 hover:text-[#25D366]",
     },
     {
-      label: "Share on Facebook",
+      label: shareOn("Facebook"),
       method: "facebook",
       href: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(siteUrl)}&quote=${encodeURIComponent(shareText)}`,
       icon: FacebookIcon,
@@ -121,7 +125,7 @@ export function ShareMenu({ shareText, wins, losses, teamRating, netRunRate, mvp
     <div className="flex flex-col gap-3">
       <div className="flex flex-col gap-3 sm:flex-row">
         <Button size="lg" onClick={handleNativeShare} className="w-full sm:w-auto">
-          Share Result
+          {t("share.result")}
         </Button>
       </div>
       <div className="flex items-center gap-2">
@@ -143,8 +147,8 @@ export function ShareMenu({ shareText, wins, losses, teamRating, netRunRate, mvp
           type="button"
           onClick={handleInstagramShare}
           disabled={instaState === "working"}
-          aria-label="Share to Instagram"
-          title="Share to Instagram — builds an image card, since Instagram doesn't accept plain links"
+          aria-label={t("share.toInstagram")}
+          title={t("share.toInstagram")}
           className={cn(ICON_BUTTON, "hover:border-[#E1306C]/50 hover:text-[#E1306C]")}
         >
           {instaState === "done" ? <Check className="h-5 w-5 text-accent" /> : <InstagramIcon className="h-5 w-5" />}
@@ -152,15 +156,15 @@ export function ShareMenu({ shareText, wins, losses, teamRating, netRunRate, mvp
         <button
           type="button"
           onClick={handleCopy}
-          aria-label={copied ? "Copied" : "Copy result text"}
-          title={copied ? "Copied" : "Copy result text"}
+          aria-label={copied ? t("share.copied") : t("share.copy")}
+          title={copied ? t("share.copied") : t("share.copy")}
           className={cn(ICON_BUTTON, "hover:border-accent/50 hover:text-accent")}
         >
           {copied ? <Check className="h-5 w-5 text-accent" /> : <Copy className="h-5 w-5" />}
         </button>
       </div>
       {instaState === "working" && (
-        <p className="text-xs text-foreground-muted">Building your Instagram card…</p>
+        <p className="text-xs text-foreground-muted">{t("share.building")}</p>
       )}
     </div>
   );

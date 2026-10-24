@@ -141,7 +141,7 @@ export default function LeaderboardPage() {
               different competition lengths are not comparable. */}
           <div
             role="tablist"
-            aria-label="Competition"
+            aria-label={t("lb.competition")}
             className="mb-3 flex gap-1 rounded-xl border border-border bg-background-elevated p-1"
           >
             {COMPETITION_TABS.map((c) => (
@@ -166,7 +166,7 @@ export default function LeaderboardPage() {
           </p>
 
           {/* Period switcher within the selected competition. */}
-          <div role="tablist" aria-label="Period" className="mb-6 flex gap-2 overflow-x-auto">
+          <div role="tablist" aria-label={t("lb.period")} className="mb-6 flex gap-2 overflow-x-auto">
             {periods.map((p) => (
               <button
                 key={p.key}

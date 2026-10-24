@@ -430,4 +430,15 @@ export const ur: Dictionary = {
   "sim.dec.impactHold": "امپیکٹ پلیئر کو ریزرو میں رکھا۔",
   "res.shareUnbeaten": "میری الیون {record} رہی — پورا سیزن ناقابلِ شکست۔\nکیا آپ {perfect} کر سکتے ہیں؟ The Unbeaten Game میں اپنی الیون بنائیں۔",
   "res.shareFinished": "میری الیون {record} پر ختم ہوئی۔\nکیا آپ {perfect} کر سکتے ہیں؟ The Unbeaten Game میں اپنی الیون بنائیں۔",
+
+  "share.result": "نتیجہ شیئر کریں",
+  "share.on": "{platform} پر شیئر کریں",
+  "share.toInstagram": "Instagram پر شیئر کریں",
+  "share.copy": "نتیجے کا متن کاپی کریں",
+  "share.copied": "کاپی ہو گیا",
+  "share.building": "آپ کا Instagram کارڈ بن رہا ہے…",
+  "nav.home": "ہوم",
+  "lb.competition": "مقابلہ",
+  "lb.period": "مدت",
+  "splash.loading": "لوڈ ہو رہا ہے",
 };

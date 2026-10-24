@@ -430,4 +430,15 @@ export const ps: Dictionary = {
   "sim.dec.impactHold": "امپیکټ لوبغاړی په ریزرو کې وساته.",
   "res.shareUnbeaten": "زما لوبډله {record} شوه — ټول فصل ناماتې.\nآیا تاسو {perfect} کولی شئ؟ په The Unbeaten Game کې خپله لوبډله جوړه کړئ.",
   "res.shareFinished": "زما لوبډله په {record} پای ته ورسیده.\nآیا تاسو {perfect} کولی شئ؟ په The Unbeaten Game کې خپله لوبډله جوړه کړئ.",
+
+  "share.result": "پایله شریکه کړئ",
+  "share.on": "په {platform} کې شریک کړئ",
+  "share.toInstagram": "په Instagram کې شریک کړئ",
+  "share.copy": "د پایلې متن کاپي کړئ",
+  "share.copied": "کاپي شو",
+  "share.building": "ستاسو د Instagram کارت جوړیږي…",
+  "nav.home": "کور",
+  "lb.competition": "سیالي",
+  "lb.period": "موده",
+  "splash.loading": "بارېږي",
 };

@@ -430,4 +430,15 @@ export const ta: Dictionary = {
   "sim.dec.impactHold": "இம்பாக்ட் பிளேயரை ரிசர்வில் வைத்தது.",
   "res.shareUnbeaten": "எனது அணி {record} ஆகியது — சீசன் முழுவதும் தோல்வியின்றி.\nநீங்கள் {perfect} செய்ய முடியுமா? The Unbeaten Game-இல் உங்கள் அணியை உருவாக்குங்கள்.",
   "res.shareFinished": "எனது அணி {record}-இல் முடித்தது.\nநீங்கள் {perfect} செய்ய முடியுமா? The Unbeaten Game-இல் உங்கள் அணியை உருவாக்குங்கள்.",
+
+  "share.result": "முடிவைப் பகிர்",
+  "share.on": "{platform} இல் பகிர்",
+  "share.toInstagram": "Instagram இல் பகிர்",
+  "share.copy": "முடிவு உரையை நகலெடு",
+  "share.copied": "நகலெடுக்கப்பட்டது",
+  "share.building": "உங்கள் Instagram அட்டை உருவாக்கப்படுகிறது…",
+  "nav.home": "முகப்பு",
+  "lb.competition": "போட்டி",
+  "lb.period": "காலம்",
+  "splash.loading": "ஏற்றுகிறது",
 };
